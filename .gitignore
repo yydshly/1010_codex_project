@@ -1,0 +1,28 @@
+# Dependencies and build output (all subprojects)
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+.cache/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.log
+*.tsbuildinfo
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Downloaded upstream checkouts: record a URL and pinned revision instead
+vendor/
