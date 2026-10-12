@@ -1,0 +1,23 @@
+{
+  "name": "threejs-punk-research",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:lab": "vite --host 127.0.0.1 --port 5192 --strictPort",
+    "dev:upstream": "node scripts/upstream.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "pack:kit": "node scripts/pack-kit.mjs",
+    "test:kit-consumer": "node scripts/smoke-kit.mjs",
+    "research:sync": "node scripts/sync-research.mjs",
+    "research:check": "node scripts/sync-research.mjs --check",
+    "prebuild": "npm run research:check",
+    "build": "vite build",
+    "publication:check": "node scripts/check-publication.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 5194 --strictPort"
+  },
+  "dependencies": { "three": "0.185.1", "three-mesh-bvh": "0.9.13" },
+  "devDependencies": { "vite": "8.3.4" }
+}

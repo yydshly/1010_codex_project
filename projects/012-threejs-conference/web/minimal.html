@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>四个模块 · 最小接入示例</title></head>
+<body>
+  <header><a data-research-hub href="../001-sakura-crossing/research.html">← 统一研究入口</a><a href="./">雨夜研究台</a><span>RAIN KIT / 0.1.0</span><a href="./downloads/research-rain-kit-0.1.0.tgz" download>下载模块包 ↗</a></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">012 / FROM SCENE TO MODULES</p><h1>把这场雨，<br><em>带到你的场景里。</em></h1></div><p>一个雨棚，一块地面，一个材质样块。<br>四个模块接入独立场景，逐项开关、漫游，<br>也可以释放后重新接入。</p></section>
+    <section class="example" aria-label="可复用模块运行示例">
+      <div class="stage" id="stage"><canvas id="minimal-canvas" aria-label="最小示例实时三维场景" tabindex="0"></canvas><div class="stage-top"><span id="backend">初始化 WebGPU…</span><span>01 / MINIMAL SCENE</span></div><p class="stage-hint" id="scene-hint">选择下方机位观察 · 开启漫游后 WASD 移动、拖动环顾</p><div id="minimal-loading" role="status">正在接入四个模块…</div></div>
+      <aside class="controls" data-ui-block-look="true"><p class="eyebrow">LIVE MODULES</p><h2>四层，独立接入。</h2><p class="small">开关直接控制当前模块实例。水珠可在停雨后继续观察。</p>
+        <fieldset id="module-controls" disabled><legend class="sr">模块开关</legend>
+          <label class="effect"><span><b>01 天气</b><small>高度图 · GPU 雨滴与水花</small></span><input type="checkbox" id="minimal-weather" data-effect="weather" checked></label>
+          <label class="effect"><span><b>02 湿地反射</b><small>镜像相机 · 程序化涟漪</small></span><input type="checkbox" id="minimal-ground" data-effect="ground" checked></label>
+          <label class="effect"><span><b>03 表面水珠</b><small>原创掩码 · 法线与粗糙度</small></span><input type="checkbox" id="minimal-droplets" data-effect="droplets" checked></label>
+          <label class="effect"><span><b>04 第一人称漫游</b><small>BVH · 墙面滑行与地面探测</small></span><input type="checkbox" id="minimal-walk" data-effect="walk"></label>
+          <div class="views" role="group" aria-label="观察机位"><button data-view="wide">全景</button><button data-view="material">材质近景</button><button data-view="roof">雨棚</button></div>
+          <label class="density">可见雨滴 <output id="minimal-count-output">1500 / 2000</output><input id="minimal-count" aria-label="可见雨滴数量" type="range" min="500" max="2000" step="500" value="1500"></label>
+        </fieldset>
+        <button id="lifecycle" disabled>释放四个模块</button>
+        <p id="minimal-state" role="status">等待初始化</p><pre id="runtime" aria-label="模块实际运行状态"></pre>
+      </aside>
+    </section>
+    <section class="guide"><div><p class="eyebrow">INTEGRATE / 中文接入说明</p><h2>宿主给场景，<br>模块管自己的资源。</h2><p>复制模块文件夹或安装本地包，提供已有的 Three.js 场景、渲染器和相机。UI、模型、灯光和业务交互由你的子项目管理。</p><div class="doc-links"><a href="./docs/rain-kit-README.md" download>下载快速接入说明 ↓</a><a href="./docs/rain-kit-API.md" download>下载中文 API ↓</a><a href="./docs/rain-kit-PROVENANCE.md" download>来源与授权 ↓</a></div><p class="small">锁定 Three.js 0.185.1 / three-mesh-bvh 0.9.13。此天气模块目前实现降雨。TSL 材质使用 WebGPURenderer；传统 WebGLRenderer 需另做适配。</p></div>
+      <div class="code"><div><span>每帧调用顺序</span><button id="copy-code">复制示例</button></div><pre id="integration-code">import { createWeather, createWetGround,
+  createDropletMaterial, createWalkControls }
+  from '@research/rain-kit';
+
+// renderer 已 init，scene 中已有模型和灯光
+const ground = createWetGround({ scene, y: 0 });
+const drops = createDropletMaterial({ uvChannel: 0 });
+mesh.material = drops.material;
+const walk = createWalkControls({ camera,
+  domElement: renderer.domElement, ground: ground.mesh });
+walk.setActive(true);
+const weather = await createWeather({ scene, renderer, camera });
+
+let previous = performance.now();
+renderer.setAnimationLoop(now => {
+  const dt = Math.min((now - previous) / 1000, .05);
+  previous = now;
+  walk.update(dt);
+  weather.update(dt);
+  ground.update(dt); drops.update(dt);
+  scene.updateMatrixWorld(true);
+  camera.updateMatrixWorld(true);
+  ground.updateReflection(renderer, camera);
+  renderer.render(scene, camera);
+});
+
+// 页面卸载：先停循环，再释放模块与宿主资源
+renderer.setAnimationLoop(null);
+walk.dispose(); weather.dispose();
+ground.dispose(); drops.dispose();</pre></div>
+    </section>
+  </main><footer>本机可复用模块示例 · 程序生成几何与纹理 · 不包含原城市模型或原水珠图案</footer><script type="module" src="/src/minimal.js"></script>
+</body></html>

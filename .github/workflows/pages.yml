@@ -14,6 +14,7 @@ on:
       - 'projects/009-jevclip/**'
       - 'projects/010-cadence-foraging/**'
       - 'projects/011-segment-snap/**'
+      - 'projects/012-threejs-conference/**'
       - 'projects/013-model-video-studio/**'
       - 'projects/014-print-bench/**'
       - 'projects.json'
@@ -46,6 +47,9 @@ jobs:
         working-directory: projects/001-sakura-crossing/web
       - run: npm run research:sync && npm run build
         working-directory: projects/001-sakura-crossing/web
+      - name: Build and verify rain research and reusable modules
+        run: npm ci && npm run research:sync && npm test && npm run build && npm run publication:check
+        working-directory: projects/012-threejs-conference/web
       - name: Fetch pinned game for Room integration test
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:

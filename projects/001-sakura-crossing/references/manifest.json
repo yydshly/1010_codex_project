@@ -20,6 +20,12 @@
   ],
   "files": [
     {
+      "path": "012-threejs-conference/notes/research-summary.md",
+      "bytes": 11934,
+      "sha256": "db6a97d487cb5cd71e7d69311d1e61258178cbc26d5c848b20d12bdb655756a5",
+      "originalSha256": "db6a97d487cb5cd71e7d69311d1e61258178cbc26d5c848b20d12bdb655756a5"
+    },
+    {
       "path": "012-threejs-conference/web/modules/rain-kit/API.md",
       "bytes": 7521,
       "sha256": "ce5d66328c1f7045b56cb5bf0ec07caecb1dbb0622b78a3cd58ed120c4d6a211",
@@ -141,15 +147,15 @@
     },
     {
       "path": "012-threejs-conference/README.md",
-      "bytes": 9806,
-      "sha256": "95755817eb6c4d34116fb48bdde9bffba4a111434fb728fa0fa6e4919f68bb9c",
-      "originalSha256": "da0f71da2d72b56a635a7e49c50916bcd2600e893a18f4064946b799eb071d6f"
+      "bytes": 19879,
+      "sha256": "1e93872757a474b96dacb862ff9e7b18388284844f60ce21f7ea36a0cb69e578",
+      "originalSha256": "2f46aa379f67a122f059176176515ad04d40cdd6792d6218ce5280f68ac3696c"
     },
     {
       "path": "005-taohuayuan/README.md",
-      "bytes": 4037,
-      "sha256": "4ba273d5ee1adeef3b43cd48e285549f2fd9e9aaf2ac352d873f919c4a6f3dc1",
-      "originalSha256": "4ba273d5ee1adeef3b43cd48e285549f2fd9e9aaf2ac352d873f919c4a6f3dc1"
+      "bytes": 6384,
+      "sha256": "054552f5d71a631fd31d16fda85c36bfea6a61612f6dd63d355b60cc19dc3e50",
+      "originalSha256": "054552f5d71a631fd31d16fda85c36bfea6a61612f6dd63d355b60cc19dc3e50"
     }
   ]
 }

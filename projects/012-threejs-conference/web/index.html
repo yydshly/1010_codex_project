@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1015" />
+  <meta name="description" content="Threejs-Punk 中文雨夜渲染研究台：实时观察 GPU 雨滴碰撞、湿地反射和水珠材质，理解 WebGPU 与 TSL 的复用价值。" />
+  <title>雨夜渲染研究台 · Threejs-Punk</title>
+</head>
+<body>
+  <a class="skip-link" href="#principles">跳到技术说明</a>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">◈</span><span>雨夜研究台<small>THREEJS–PUNK / 012</small></span></a>
+    <nav aria-label="页面导航"><a href="./research.html">完整中文研究 ↗</a><a data-research-hub href="../001-sakura-crossing/research.html">统一研究入口 ↗</a><a href="#showcase">实时场景</a><a href="#capabilities">能力拆解</a><a href="#principles">底层原理</a><a href="./minimal.html">模块接入示例 ↗</a></nav>
+    <a class="source-link" href="https://github.com/ektogamat/threejs-conference" target="_blank" rel="noreferrer">上游仓库 <span>↗</span></a>
+  </header>
+  <main>
+    <section class="intro" id="showcase">
+      <div><p class="eyebrow"><span></span> REALTIME GRAPHICS · 浏览器实时渲染</p><h1>把雨夜，<em>放进浏览器。</em></h1></div>
+      <div class="intro-copy"><p>走进雨夜，穿过街巷。<br />从真实体验，读懂 WebGPU 与 TSL。</p><span class="study-label">固定原库体验 + 原创街区实验</span></div>
+    </section>
+    <div class="experience-bar"><div><b>走进去，体验这场雨。</b><span>原库城市接入中文控制 / 四层效果实时对照 · 自由漫游</span></div><button id="upstream-open">原库完整体验 ↗</button></div>
+    <p id="upstream-error" hidden role="status">原库服务尚未启动。在 web 目录运行 npm run dev，会同时启动研究台和原库体验；首次运行需要下载与安装依赖。</p>
+    <section class="lab" aria-label="雨夜效果互动实验">
+      <div class="viewport-wrap">
+        <div id="viewport" class="viewport" aria-label="实时三维雨夜街巷"><canvas id="scene" aria-label="拖动环顾、滚轮缩放的三维场景"></canvas></div>
+        <div class="scene-top"><span class="live-badge"><i></i><span id="engine-status">初始化渲染</span></span><span id="view-label">01 / 霓虹街巷</span></div>
+        <div class="loading" id="loading" role="status"><div class="loading-symbol">◈</div><strong>正在点亮雨夜</strong><p id="loading-detail">初始化 GPU 与材质</p></div>
+        <div class="scene-bottom"><span><b id="scene-title">雨落有处，霓虹有影。</b><small id="scene-caption">雨滴读取屋顶高度，湿地映出招牌与建筑。</small></span><button class="round-button" id="tour" aria-label="开启镜头导览" aria-pressed="false">▶</button></div>
+        <div class="height-panel" id="height-panel" hidden><canvas id="height-map" width="192" height="192" aria-label="GPU 高度纹理预览"></canvas><span>实时高度图 · 亮处更高</span></div>
+        <div id="walk-hud" hidden><div class="walk-crosshair">+</div><div class="walk-overlay-actions"><button id="walk-fullscreen">全屏体验 ⛶</button><button id="walk-exit">返回观察 ×</button></div><div class="walk-info"><b id="walk-location">霓虹街口</b><span id="position-readout"></span><small>WASD 移动 · Shift 快走 · C 蹲下 · 拖动看四周 · Esc 返回</small></div><div class="walk-pad" aria-label="漫游方向"><button data-move="forward" aria-label="向前走">↑</button><button data-move="left" aria-label="向左走">←</button><button data-move="backward" aria-label="向后走">↓</button><button data-move="right" aria-label="向右走">→</button></div></div>
+      </div>
+      <aside class="control-panel">
+        <div class="panel-heading"><span>观察与对照</span><span class="tiny-label">LIVE LAB</span></div>
+        <p class="control-intro">切换视角，再关闭一层效果。<br />看看雨夜是怎样叠出来的。</p>
+        <button id="walk-toggle" class="walk-enter" aria-pressed="false">进入第一人称漫游</button>
+        <div id="walk-tools" hidden><button id="walk-lock">鼠标锁定视角</button><label><input id="walk-sprint" type="checkbox" /> 快走</label><div class="destinations" aria-label="街区地点"><button data-destination="street">街口</button><button data-destination="market">市集</button><button data-destination="transit">站台</button><button data-destination="shelter">避雨亭</button></div></div>
+        <div class="view-tabs" role="group" aria-label="场景视角">
+          <button data-view="street" aria-pressed="true"><span>01</span> 霓虹街巷 <i>↗</i></button>
+          <button data-view="roof" aria-pressed="false"><span>02</span> 屋顶落雨 <i>↗</i></button>
+          <button data-view="ground" aria-pressed="false"><span>03</span> 湿地倒影 <i>↗</i></button>
+          <button data-view="surface" aria-pressed="false"><span>04</span> 车身水珠 <i>↗</i></button>
+        </div>
+        <div class="effect-switches">
+          <label><span><b>降雨</b><small>高度纹理 + GPU 粒子</small></span><input id="rain-toggle" type="checkbox" checked /><span class="switch" aria-hidden="true"></span></label>
+          <label><span><b>湿地反射</b><small>镜像相机 + 涟漪</small></span><input id="reflection-toggle" type="checkbox" checked /><span class="switch" aria-hidden="true"></span></label>
+          <label><span><b>霓虹辉光</b><small>半分辨率 Bloom</small></span><input id="bloom-toggle" type="checkbox" checked /><span class="switch" aria-hidden="true"></span></label>
+          <label><span><b>表面水珠</b><small>原创简化法线材质</small></span><input id="droplets-toggle" type="checkbox" checked /><span class="switch" aria-hidden="true"></span></label>
+        </div>
+        <label class="range-label" for="density">雨滴数量 <output id="density-output">3,000</output></label>
+        <input id="density" type="range" min="500" max="5000" step="500" value="3000" />
+        <div class="panel-actions"><button id="height-toggle" aria-pressed="false">查看高度图</button><button id="reset">重置</button></div>
+        <div class="render-status"><span id="frame-stat">等待采样</span><span id="input-hint">拖动环顾 · 滚轮缩放</span></div>
+      </aside>
+    </section>
+    <div class="provenance-line"><span><i></i> 原创街巷模型 · 上游核心算法改编 · 本地实时运行</span><a href="#sources">查看来源与实验范围 ↓</a></div>
+
+    <section class="section capabilities" id="capabilities">
+      <div class="section-heading"><p class="eyebrow">01 / WHAT IT CAN DO</p><h2>一条街，四层技术。</h2><p>画面的每一层，都有可以单独带走的方法。</p></div>
+      <div class="capability-grid">
+        <article><div class="tech-symbol rain-symbol">╱╱╱<br />╱╱╱</div><span class="card-number">01 — WEATHER</span><h3>让雨落在物体上</h3><p>雨滴遇到屋顶和车顶就回收重生，水花贴在表面。碰撞由高度图查询完成。</p><div class="card-footer"><span>上游算法改编</span><button data-focus="roof">观察屋顶 ↗</button></div></article>
+        <article><div class="tech-symbol mirror-symbol">▱<br />▱</div><span class="card-number">02 — REFLECTION</span><h3>让地面留下倒影</h3><p>镜像相机捕捉霓虹与建筑，粗糙度控制反射，程序化涟漪轻轻扰动水面。</p><div class="card-footer"><span>上游模块复用</span><button data-focus="ground">靠近湿地 ↗</button></div></article>
+        <article><div class="tech-symbol drop-symbol">◌ · ◦</div><span class="card-number">03 — MATERIAL</span><h3>让表面读起来像水</h3><p>水珠掩码改变法线与粗糙度。近看有凸起和移动感，无需建立逐颗水滴模型。</p><div class="card-footer"><span>本地简化实现</span><button data-focus="surface">看车身水珠 ↗</button></div></article>
+        <article><div class="tech-symbol light-symbol">✳</div><span class="card-number">04 — LOOK</span><h3>让整条街有氛围</h3><p>发光招牌、Bloom、雾与统一调色共同塑造雨夜。选择一种色彩，感受变化。</p><div class="card-footer"><span>独立 TSL 管线</span><button data-focus="street">回到街巷 ↗</button></div></article>
+      </div>
+      <div class="look-row"><div><span class="tiny-label">COLOR STUDY</span><p>同一场景，不同雨夜。</p></div><div class="look-options" role="group" aria-label="色彩预设"><button data-look="neon" aria-pressed="true"><i class="swatch neon"></i>霓虹雨夜</button><button data-look="amber" aria-pressed="false"><i class="swatch amber"></i>琥珀街灯</button><button data-look="blue" aria-pressed="false"><i class="swatch blue"></i>冷蓝迷雾</button></div></div>
+    </section>
+
+    <section class="section principles" id="principles">
+      <div class="section-heading"><p class="eyebrow">02 / UNDER THE SURFACE</p><h2>不用逐滴检测，<br /><em>先把世界变成一张图。</em></h2><p>这是上游最值得复用的技巧：把三维碰撞问题，变成 GPU 上的纹理查询。</p></div>
+      <div class="principle-layout">
+        <div class="pipeline"><div><span>01</span><strong>俯视场景</strong><small>正交相机看向屋顶与地面</small></div><b>↓</b><div><span>02</span><strong>写入高度纹理</strong><small>每个位置记录最高表面的 Y</small></div><b>↓</b><div><span>03</span><strong>GPU 并行更新</strong><small>移动雨滴 → 采样高度 → 碰撞回收</small></div><b>↓</b><div><span>04</span><strong>批量绘制雨丝</strong><small>实例化平面始终朝向镜头</small></div></div>
+        <div class="principle-detail"><div class="principle-tabs" role="tablist" aria-label="技术原理"><button id="tab-rain" role="tab" aria-selected="true" aria-controls="principle-content" data-principle="rain">雨滴碰撞</button><button id="tab-reflection" role="tab" aria-selected="false" aria-controls="principle-content" data-principle="reflection" tabindex="-1">湿地反射</button><button id="tab-material" role="tab" aria-selected="false" aria-controls="principle-content" data-principle="material" tabindex="-1">水珠材质</button><button id="tab-stack" role="tab" aria-selected="false" aria-controls="principle-content" data-principle="stack" tabindex="-1">渲染分工</button></div><div id="principle-content" role="tabpanel" aria-labelledby="tab-rain"></div></div>
+      </div>
+      <div class="boundary"><span>能力边界</span><p>高度图每个水平位置只保存最高表面，适合由上向下的雨。复杂多层空间、侧向飘雨和真实流体需要额外算法。水花与涟漪采用独立视觉动画，并未逐滴配对。</p></div>
+    </section>
+
+    <section class="section reuse" id="reuse">
+      <div class="section-heading"><p class="eyebrow">03 / TAKE IT FURTHER</p><h2>带走方法，<em>做你自己的场景。</em></h2><p>把环境效果拆成模块，接到已有内容与交互上。</p></div>
+      <div class="reuse-list">
+        <article><span>01</span><div><h3>雨夜研究街</h3><p>给现有樱花小街加入雨量、湿地和夜间招牌，让场景继续承载资料发现与阅读。</p></div><div class="reuse-tags">复用天气与风格<br /><small>需适配 WebGL / TSL 接口</small></div></article>
+        <article><span>02</span><div><h3>产品与材质展厅</h3><p>围绕一个产品切换干燥、湿润和灯光，展示表面质感，而不是堆叠整座城市。</p></div><div class="reuse-tags">复用材质与镜头<br /><small>需自有模型与材质参数</small></div></article>
+        <article><span>03</span><div><h3>天气效果实验台</h3><p>同一场景对照不同雨量、反射与光效，用真实设备记录表现和性能预算。</p></div><div class="reuse-tags">复用开关与预算<br /><small>需增加设备基准与结果导出</small></div></article>
+      </div>
+      <p class="reuse-note">以上是扩展方向。本页已实现效果实验，产品业务与商业收益尚未验证。</p>
+    </section>
+
+    <section class="sources section" id="sources">
+      <div><p class="eyebrow">04 / SOURCE & EVIDENCE</p><h2>知道效果从哪里来。</h2><p>上游源码固定在 <code>8cc2059</code>，研究日期 2026-10-11。<br />“原库完整体验”在本机运行该版本的城市、BVH 漫游、视频、音效、GTAO 与玻璃开场；本页保留独立的效果实验。</p><p>实验街区、车辆、招牌与纹理由本地代码生成。完整原库及素材单独保存在本机 <code>vendor/</code>，未纳入发布代码。其素材授权独立于 MIT；本地实验水珠继续使用原创简化算法。</p></div>
+      <div class="source-actions"><a href="https://github.com/ektogamat/threejs-conference/tree/8cc20593b2270e2ce832e7b7b44356705daddec4" target="_blank" rel="noreferrer">固定版本源码 <span>↗</span></a><a href="https://github.com/ektogamat/threejs-conference/blob/8cc20593b2270e2ce832e7b7b44356705daddec4/docs/techniques/collision-rain.md" target="_blank" rel="noreferrer">作者的技术拆解 <span>↗</span></a><a href="./notes/research.md" download>下载中文研究笔记 <span>↓</span></a><a href="https://threejspunk.vercel.app/" target="_blank" rel="noreferrer">作者当前在线演示 <span>↗</span></a><small>在线演示可能已更新，与固定源码版本不同。</small></div>
+    </section>
+  </main>
+  <footer><span>012 · 雨夜渲染研究台</span><span>Threejs-Punk / Anderson Mancini & Sunag</span><a href="#showcase">回到雨夜 ↑</a></footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

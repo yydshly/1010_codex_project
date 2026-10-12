@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-12",
+  "title": "从雨夜城市，到樱花小街",
+  "subtitle": "场景能力与复用研究全图",
+  "thesis": "场景负责表达内容，模块负责重复使用的能力。你的下一次创作，可以沿用渲染、天气、材质、漫游与交互方法，再换自己的世界与用户任务。",
+  "illustration": {"file":"assets/scene-map-banner.png", "label":"ImageGen 概念题图 · 不作为运行证据", "prompt":"notes/scene-map-imagegen-prompt.txt"},
+  "sources": [
+    {"id":"rain", "name":"012 · Threejs-Punk / threejs-conference", "url":"https://github.com/ektogamat/threejs-conference", "commit":"8cc20593b2270e2ce832e7b7b44356705daddec4", "license":"引入算法为 MIT；原水珠另含 CC BY-NC-SA 3.0，模型/音乐/纹理逐项授权。"},
+    {"id":"sakura", "name":"001 · Sakura Crossing", "url":"https://github.com/Kenton-GMI/sakura-crossing", "commit":"de01898e89c7f6ab3fad93fa802f0f5ac66fbd81", "license":"源代码 MIT；音乐单独授权，本地未引入原音乐。"}
+  ],
+  "originals": [
+    {
+      "title":"雨夜城市：天气、湿润材质与空间探索",
+      "file":"references/012-threejs-conference/assets/upstream-controls.jpg",
+      "label":"固定上游场景 · 本机实拍；中文面板为本地新增",
+      "points":["GPU 雨丝/水花、屋顶遮雨、地面倒影与涟漪、车漆水珠、玻璃雨开场。", "车辆、视频招牌、烟雾、飞行器、GTAO、Bloom、雾、色调与空间音效共同形成城市氛围。", "BVH 第一人称探索与设备预算。它是一套场景工程；业务、任务、多人不能从画面推定为现成。"],
+      "note":"中文面板已支持四项效果隔离、参数与机位切换。作者线上站点可能不同于研究 commit。"
+    },
+    {
+      "title":"樱花小街：程序化内容与动画风格",
+      "file":"assets/upstream-crossing.jpg",
+      "label":"作者发布图 · 固定版本 docs/hero-1-crossing.jpg",
+      "points":["代码生成日式建筑、道具、招牌与街区；分段光照、冷紫暗部、描线和调色统一视觉语言。", "球形世界、地形/碰撞、步行/奔跑、骑行、列车、铁路道口、店门与环境动画。", "本地主要提取风格方法、组件与交互思路；完整上游世界构建/加载已验证，全部漫游和骑行未实测。"],
+      "note":"动画观感来自形体、配色、光照、镜头与后处理的共同设计；单一滤镜不能替代这些约束。"
+    }
+  ],
+  "architecture":[
+    {"title":"内容与资产", "text":"几何、模型、纹理、招牌、声音、地点；由宿主决定世界表达什么。"},
+    {"title":"渲染与风格", "text":"场景/相机 → 材质/光照 → 渲染通道 → 描线/调色；风格有独立预算。"},
+    {"title":"环境能力", "text":"天气、平面镜像、水珠材质；接收宿主依赖，提供更新、开关与释放。"},
+    {"title":"输入与交互", "text":"漫游/碰撞、地点动作、物件编辑、镜头导览；控制器的相机所有权互斥。"},
+    {"title":"产品与规则", "text":"资料阅读、收藏、任务、存档、模型策略；定义用户目标和完成条件。"}
+  ],
+  "rainPrinciples":[
+    {"title":"高度图遮雨", "mechanism":"俯视正交相机 → 世界位置半浮点纹理 → 以 XZ 查最高 Y → 雨滴与表面比较。", "observe":"看雨棚或屋檐上方；隐藏天空、粒子和碰撞代理，确保高度输入正确。", "limit":"每个 XZ 只留最高面，属 2.5D；多层室内、洞穴和横向风雨需另做。"},
+    {"title":"GPU 雨丝与水花", "mechanism":"TSL 计算更新粒子缓冲 → delta 积分/重生 → 朝向镜头的实例平面批量绘制。", "observe":"停止降雨后计算/高度更新跳过。雨量倍率与可见数分别调节。", "limit":"capacity 决定分配/更新规模，count 只控绘制可见数。水花独立周期，不逐滴事件驱动。"},
+    {"title":"湿地镜像与雨纹", "mechanism":"地面镜像相机 → 斜裁剪 → 额外渲染倒影 → 粗糙度混合 → 程序雨纹扰动法线/UV。", "observe":"反射强度归零/恢复，比较招牌和樱花倒影；关雨后仍能单独保留湿地。", "limit":"透视相机、单平面近似；半分辨率/隔帧减少成本，不是流体或完整能量守恒模拟。"},
+    {"title":"表面水珠", "mechanism":"UV 掩码 → 有限差分梯度 → 改变法线与粗糙度 → 高光呈现凸起/滑动。", "observe":"固定近景并关闭 Bloom/雨，单独开关水珠；它属于表面材质能力。", "limit":"Rain Kit 为原创椭圆图案；未复制原库复杂拖尾、滑落和玻璃折射。glass 不自动产生折射。"},
+    {"title":"BVH 漫游", "mechanism":"输入目标 → 速度/步长 → BVH 加速射线 → 地面探测/墙体滑行 → 更新相机。", "observe":"WASD、拖动、Shift、C；进入屋檐/阅读亭，比较碰撞与角色眼高。", "limit":"静态代理几何需适配；几何变化重建/refit。它不是刚体引擎，模块未实现跳跃。"},
+    {"title":"后处理与性能", "mechanism":"Three.js 管资源，TSL 描述 GPU 程序，WebGPU 执行；GTAO/Bloom/雾/调色组织最终画面。", "observe":"把辉光关掉看基础发光，再开启观察扩散；逐层开关比只看最终画面更有用。", "limit":"Bloom 影响扩散，不替代灯光。反射/高度/后处理增加通道成本，必须实机测量。"}
+  ],
+  "rainParameters":"本地研究台参考：高度图 384²、80×80 米覆盖、每 2 帧更新；粒子容量 5000。平面反射/部分后处理按预算降采样。固定源码雨纹为 3×3 / 9 邻域，不能沿用文档中 5×5 的旧描述。参数属于指定实验，不是跨设备性能承诺。",
+  "toonPipeline":[
+    {"title":"程序形体", "text":"基础几何与 Canvas 纹理生成建筑、树、标线与招牌；统一形体比例与配色。"},
+    {"title":"量化光照", "text":"将连续光照分为色阶，冷紫暗部与暖色亮部形成动画块面。"},
+    {"title":"颜色与深度", "text":"渲染场景颜色/深度，深度二阶差分描线；重点物件可加外壳描边。"},
+    {"title":"调色与输出", "text":"暖色、饱和度与冷暖关系统一画面，保留正确 linear→sRGB 转换，再抗锯齿。"},
+    {"title":"世界与镜头", "text":"上游平面布局映到半径 160 米球面；可见地形、碰撞/高度一致。扩展也可只做平面街区。"}
+  ],
+  "modules":[
+    {"name":"天气", "api":"createWeather", "host":"scene / renderer / camera；雨区、高度覆盖与隐藏列表", "methods":"update · setEnabled · setIntensity · setDropCount · dispose", "reuse":"更换场景仍可下雨；接入屋顶/地面输入与粒子预算。", "status":"已打包 / 独立安装 / 樱花街接入"},
+    {"name":"湿地", "api":"createWetGround", "host":"scene；地面 size/y、贴图、粗糙度、镜像预算", "methods":"update · updateReflection · setReflectionEnabled · setReflectionStrength · dispose", "reuse":"保留宿主道路色彩，用镜像与小幅雨纹增加湿润观感。", "status":"已打包 / 独立安装 / 樱花街接入"},
+    {"name":"水珠", "api":"createDropletMaterial", "host":"自有 Mesh、对应 UV、环境光/材质参数", "methods":"material · update · setEnabled · setAmount · setSpeed · dispose", "reuse":"产品/车漆表面干湿对照；宿主负责赋材质与原材质管理。", "status":"已打包 / 最小例子验证；樱花街未接入"},
+    {"name":"漫游", "api":"createWalkControls / buildModelBvh", "host":"camera / canvas / ground / colliders；宿主几何与 BVH", "methods":"setActive · update · clearInput · setMoveAxes · dispose", "reuse":"共享输入与静态行走逻辑；宿主配置可达地面与简化墙体。", "status":"已打包 / 独立安装 / 樱花街接入"}
+  ],
+  "integration":{
+    "title":"真正的跨项目复用：同一个包，换一个世界",
+    "files":["assets/hub-sunny.jpg","assets/hub-rainy.jpg"],
+    "captions":["晴天 · 原程序街景、粉樱、色阶、描线与调色","雨天 · 同视角新增 GPU 雨线、湿地倒影与涟漪"],
+    "points":["001 安装 012 导出的同一个 tgz，复用天气/湿地/漫游；不是嵌入另一个演示页。", "原建筑、樱花、招牌、标线与美术约束保留；WebGPU 页以 TSL 适配色阶和描线，不主张逐像素等价。", "晴雨联动由宿主控制；雨滴与湿地可独立开关。漫游模块用本场景的可见地面和碰撞代理。", "Three.js 0.185.1 / three-mesh-bvh 0.9.13 固定；传统 WebGLRenderer 不能直接照搬节点材质。"],
+    "lifecycle":"初始化 renderer → 创建宿主场景/BVH → 移动相机 → 高度图/GPU 雨 → 材质时间 → 世界矩阵 → 镜像 → 主画面；退出先停循环，释放模块，再释放宿主资源。",
+    "ownership":"模块管理自己的资源，借用贴图默认不销毁；宿主负责场景、renderer、业务与共享几何。关雨不自动关闭水珠/镜像；联动、输入与相机切换由宿主决定。"
+  },
+  "gallery":[
+    {"title":"原创雨夜研究台", "file":"references/012-threejs-conference/assets/desktop.jpg", "text":"代码生成街区/车辆/纹理；四视角、独立效果开关、霓虹预设、第一人称。", "label":"本机 WebGPU 实拍"},
+    {"title":"四模块最小接入", "file":"references/012-threejs-conference/assets/modules-minimal.jpg", "text":"无原城市素材；模块独立开关、释放与重接，tgz 独立安装/构建。", "label":"独立消费者实拍"},
+    {"title":"材质水珠对照", "file":"references/012-threejs-conference/assets/modules-droplets-on.jpg", "text":"原创水珠单独调节；验证法线/粗糙度方法，不冒充原库复杂图案。", "label":"本机材质实拍"},
+    {"title":"研究街内容闭环", "file":"assets/business-shop.jpg", "text":"地点进入真实资料 → 阅读 → 本机收藏 → 阅读亭回看/取消收藏。", "label":"本机 WebGL 实拍"},
+    {"title":"同一积木，三种场景", "file":"assets/lab-forest.jpg", "text":"商业街/林间村落/广场共用组件与管线；种子、数量、风格与采样。", "label":"本机 WebGL 实拍"},
+    {"title":"小镇搭建器", "file":"assets/builder-desktop.jpg", "text":"增删、移动、旋转、撤销重做、本机保存与 JSON 备份；不是完整编辑器。", "label":"本机编辑实拍"},
+    {"title":"一分钟中文导览", "file":"assets/tour-voice-pavilion.jpg", "text":"MiniMax 本地音频的 currentTime 统一驱动镜头、字幕、店门与暂停。", "label":"语音版本机实拍"},
+    {"title":"AI 樱街守灯夜", "file":"assets/ai-town-decisions.png", "text":"有限任务与规则执行；本机真实模型记录含 OpenAI/MiniMax，静态页展示证据。", "label":"OpenAI 分工获胜实拍"}
+  ],
+  "applications":[
+    {"title":"研究小镇 / 作品集", "status":"基础闭环已跑通", "kind":"verified", "use":"把项目资料、作品与地点绑定，浏览 → 阅读 → 收藏/回看。", "next":"继续补多项目内容协议、搜索和可访问导航。"},
+    {"title":"可配置场景 / 搭建工具", "status":"最小搭建器已实现", "kind":"verified", "use":"复用房屋、树、道路与风格，编辑并保存自己的小镇。", "next":"对象尺寸/避让、路网、地形、素材导入与云存档。"},
+    {"title":"轻量探索 / 叙事游戏", "status":"本机规则与 AI 原型", "kind":"verified", "use":"漫游、地点动作、任务与有限 NPC 策略，变化落实到真实行动。", "next":"角色、完整任务状态、胜负反馈、玩法存档与持续试玩。"},
+    {"title":"品牌展厅 / 产品材质台", "status":"可扩展方案", "kind":"planned", "use":"用水珠、灯光、镜头和干湿对照讲清产品外观与材质。", "next":"自有授权模型、商品信息、参数编辑与用户咨询流程。"},
+    {"title":"教育文化 / 空间导览", "status":"导览技术已验证", "kind":"planned", "use":"把知识、空间路线、语音和字幕组织成可回看的讲解。", "next":"课程/文化内容、练习反馈、无障碍与学习效果评估。"},
+    {"title":"专注庭院 / 陪伴场景", "status":"可扩展方案", "kind":"planned", "use":"场景、天气、镜头和声音形成舒缓的空间表达。", "next":"专注计时、声音授权、低功耗模式；陪伴效果待验证。"},
+    {"title":"多人社区 / 活动空间", "status":"后续能力", "kind":"planned", "use":"共享场景、活动地点与内容，在同一个世界完成任务。", "next":"账号、同步、房间、消息与治理；当前不具备完整多人系统。"},
+    {"title":"网页背景 / 封面 / 分镜", "status":"实拍与配置可沿用", "kind":"verified", "use":"固定构图可作互动背景，导出实拍用于研究图或讲解素材。", "next":"控制点击可达、移动端预算与减少动态模式，逐项确认素材许可。"}
+  ],
+  "personalValues":[
+    {"title":"技术资产", "text":"天气、镜像、水珠、静态漫游已有真实包与 API。下次从最小例子开始，先替换宿主输入再扩内容。", "action":"直接起点：Rain Kit + minimal.html"},
+    {"title":"创作资产", "text":"保留自己的色阶、配色、描线和组件。雨夜方法能进入粉樱街，视觉风格与环境能力可以组合。", "action":"直接起点：三场景实验 + 风格参数"},
+    {"title":"产品方法", "text":"已跑通内容发现/收藏、编辑/存档、音频导览与规则约束模型。它们可以组合成你的小型互动产品。", "action":"直接起点：研究街 / 搭建器 / 导览"},
+    {"title":"研究与判断", "text":"源码版本、许可证、开关对照、GPU 回读、包安装和模型记录可回查。你能区分画面演示与真实业务能力。", "action":"直接起点：证据资料 + 对照实验"}
+  ],
+  "valueBoundary":"潜在价值是减少重复实现、统一视觉与缩短试验路径。节省工时、商业转化、教学成效、付费意愿和普遍性能尚无对照数据，不能把“好看”直接换算成收益。",
+  "roadmap":[
+    {"title":"现在能用", "status":"已实现 / 有实测", "kind":"verified", "text":"四模块与 tgz；晴雨樱花街；三场景实验；资料阅读收藏；最小搭建与 JSON；语音导览；本机 AI 守灯。"},
+    {"title":"优先完善", "status":"研究建议", "kind":"planned", "text":"固定宿主接口与风格预设；场景模板/地点动作协议；预算与真机测量；资产尺寸/避让；拿一条完整用户流程验收。"},
+    {"title":"继续扩展", "status":"尚待建设", "kind":"planned", "text":"受约束 AI 场景草案 → 校验 → 预览 → 人工编辑；内容后台、账号/云存档、多人、任务/NPC 与更完整游戏。"}
+  ],
+  "boundaries":[
+    {"title":"画面与物理", "text":"高度图仅最高面、湿地仅平面反射、水珠是材质法线、漫游是静态控制；这些不是流体/刚体模拟或自动开放世界。"},
+    {"title":"规模与设备", "text":"搭建器 40×40 米 / 60 物件 / 1 米吸附且允许重叠；移动真机、长时显存、热降频/耗电待测。旧 r180 性能不能推当前 WebGPU。"},
+    {"title":"模型与产品", "text":"模型只提有限策略，Schema 与本地规则执行；游戏需本机服务。当前不是任意自主 Agent 平台、内容后台或商业闭环。"},
+    {"title":"授权与发布", "text":"Rain Kit private / UNLICENSED，未发布公共 npm。原城市/复杂水珠仅本机 vendor；算法 MIT 和素材许可分开，不能整体视为 MIT。"}
+  ],
+  "evidence":[
+    {"title":"模块与 GPU", "text":"012 记录：15 项自动检查；雨棚加入/移除/恢复三态 GPU 回读；四模块、释放重接与 tgz 独立消费者实测。", "note":"references/012-threejs-conference/notes/module-extraction.md"},
+    {"title":"跨项目与浏览器", "text":"001 记录：4 项天气检查；实际 BVH 墙体/台阶/蹲下；晴雨、独立倒影、WASD、生产子路径与窄屏仿真。", "note":"notes/weather-reuse.md"},
+    {"title":"原场景与业务", "text":"012 中文四项控制/漫游/机位有实测。001 阅读收藏、搭建存档、语音时间线与真实模型记录分别留证，不相互替代。", "note":"references/012-threejs-conference/notes/upstream-controls.md"}
+  ],
+  "publication":"已有 001 静态研究/体验在线发布记录；012 完整原城市、独立应用与 AI 模型服务仍在本机。本轮研究全图为新增本地交付，尚未更新线上版本。",
+  "entry":"web/scene-map.html",
+  "hub":"web/research.html",
+  "evidenceNotes":["notes/research.md","notes/weather-reuse.md","notes/business.md","notes/lab.md","notes/builder.md","notes/tour.md","notes/ai-town.md","notes/ai-town-verification.md","references/012-threejs-conference/notes/research.md","references/012-threejs-conference/notes/module-extraction.md","references/012-threejs-conference/notes/upstream-controls.md","references/012-threejs-conference/web/modules/rain-kit/API.md","references/012-threejs-conference/web/THIRD_PARTY.md"]
+}

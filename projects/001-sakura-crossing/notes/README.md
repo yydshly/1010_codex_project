@@ -1,5 +1,7 @@
 # 001 · Sakura Crossing 研究笔记
 
+[最新联合研究全图](scene-map.md) 说明 001 × 012 的十个部分、12 张效果图、来源、维护与实测；[完整内容 JSON](scene-map-content.json) 为生成器的数据来源，[概念题图提示词](scene-map-imagegen-prompt.txt) 保留 ImageGen 使用记录。阅读入口为 `../web/scene-map.html`，并已接入统一手册；旧阶段长图继续保留。
+
 研究日期：2026-10-10。固定上游版本：`de01898e89c7f6ab3fad93fa802f0f5ac66fbd81`。
 
 - [最新完整研究汇总：全部入口、原理、复用价值与验证边界](research-summary.md)

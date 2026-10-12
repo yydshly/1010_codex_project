@@ -1,0 +1,19 @@
+{
+  "name": "@research/rain-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "本地可复用的 Three.js 天气、湿地、水珠和漫游模块",
+  "license": "UNLICENSED",
+  "exports": {
+    ".": "./index.js",
+    "./weather": "./weather.js",
+    "./ground": "./ground.js",
+    "./droplets": "./droplets.js",
+    "./walk": "./walk.js",
+    "./bvh": "./bvh.js",
+    "./examples/minimal": "./examples/minimal.js"
+  },
+  "files": ["*.js", "internal/", "licenses/", "README.md", "API.md", "PROVENANCE.md", "examples/"],
+  "peerDependencies": { "three": "0.185.1", "three-mesh-bvh": "0.9.13" }
+}

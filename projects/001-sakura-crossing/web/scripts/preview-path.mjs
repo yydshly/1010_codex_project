@@ -9,7 +9,7 @@ const prefix = '/1010_codex_project/001-sakura-crossing/';
 await stat(path.join(root, 'index.html')).catch(() => {
   throw new Error('缺少 dist/index.html，请先运行 npm run build。');
 });
-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.md': 'text/markdown; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.json': 'application/json' };
+const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.md': 'text/markdown; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.json': 'application/json' };
 const server = createServer(async (req, res) => {
   try {
     const pathname = new URL(req.url, 'http://127.0.0.1').pathname;

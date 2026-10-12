@@ -30,6 +30,11 @@ for (const item of data.entries) {
   requireFile(imagePath(item.image));
   if (item.href.startsWith('./')) requireFile(item.href.split('#')[0].slice(2), path.join(projectRoot, 'web'));
   else if (!/^http:\/\/127\.0\.0\.1:\d+\//.test(item.href)) errors.push(`演示地址应为实际本地入口：${item.href}`);
+  if (item.publicHref) {
+    if (!/^\.\.\/\d{3}-[a-z0-9-]+\/[a-z-]+\.html$/.test(item.publicHref)) errors.push(`公开入口路径错误：${item.publicHref}`);
+    const [slug, page] = item.publicHref.slice(3).split('/');
+    requireFile(page, path.join(projectsRoot, slug, 'web'));
+  }
 }
 for (const item of data.comparisons) {
   requireFile(imagePath(item.before)); requireFile(imagePath(item.after));

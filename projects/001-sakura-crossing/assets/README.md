@@ -1,5 +1,18 @@
 # 演示截图与研究图
 
+## 联合研究全图（2026-10-12）
+
+| 文件 | 内容与来源 |
+| --- | --- |
+| [scene-research-map.png](scene-research-map.png) | 3840 × 20042 完整中文图，汇总 001 × 012 的源库效果、原理、能力、复用、探索、用途、个人价值与边界；含 12 张实拍/作者发布图 |
+| [scene-research-map.svg](scene-research-map.svg) | 1920 × 10021，原图内嵌，中文文字可编辑，可离线阅读 |
+| [scene-map-preview.webp](scene-map-preview.webp) | 960 像素宽的顶部封面预览；首页及根索引使用，点击进入完整长图 |
+| [scene-map-banner.png](scene-map-banner.png) | 内置 ImageGen 概念题图，非源库或本地运行截图；图内明确标记 |
+| [scene-map-export.json](scene-map-export.json) | 图稿尺寸、章节坐标、全部来源图片和 PNG/SVG/预览 SHA-256 |
+| [scene-map-browser.jpg](scene-map-browser.jpg) | 默认 1280 × 720 桌面视口下的全页实拍，包含阅读工具栏和完整图稿；不是移动端验证 |
+
+雨夜完整城市图使用固定上游本机实拍，中文面板由本地新增；樱花道口图来自固定作者版本；晴雨对照与八项扩展使用对应原实拍。正文排版和遮雨/镜像示意为 SVG 代码生成，保持准确中文。完整提示词见 [scene-map-imagegen-prompt.txt](../notes/scene-map-imagegen-prompt.txt)，数据见 [scene-map-content.json](../notes/scene-map-content.json)，维护/验收见 [scene-map.md](../notes/scene-map.md)。新全图尚未更新到线上版本。
+
 ## 完整摘要与线上发布（2026-10-12）
 
 首页使用已生成总览图作引导；research-guide.webp 仅缩放压缩原 PNG，为网页预览，高清 PNG 与可编辑 SVG 保留。research-guide-export.json 记录尺寸及源图/输出 SHA-256。

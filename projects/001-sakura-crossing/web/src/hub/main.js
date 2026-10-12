@@ -5,13 +5,14 @@ import measurements from '../../../notes/lab-measurements.json';
 import registry from '../../../../../projects.json';
 import kitUrl from '../../packages/research-rain-kit-0.1.0.tgz?url&no-inline';
 import summaryUrl from '../../../notes/research-summary.md?url&no-inline';
-import guideUrl from '../../../assets/research-guide.webp?url&no-inline';
+import guideUrl from '../../../assets/scene-map-preview.webp?url&no-inline';
 
 // Vite copies referenced material into this project's production assets. Text is
 // fetched on demand; the research reader does not depend on another dev server.
 const imageImports = import.meta.glob([
   '../../../../001-sakura-crossing/assets/{hub-sunny,hub-rainy,business-cover,tour-shop,lab-street,builder-desktop,directions-overview,cover,ink-off}.jpg',
   '../../../../001-sakura-crossing/assets/{ai-town-decisions,overview-banner}.png',
+  '../../../assets/scene-map-preview.webp',
   '../../../references/012-threejs-conference/assets/{upstream-controls,desktop,modules-minimal,modules-gpu-check,reflection-off,reflection-on,modules-droplets-off,modules-droplets-on,upstream-bloom-off}.jpg',
 ], { eager: true, query: '?url', import: 'default' });
 const fileImports = import.meta.glob([
@@ -51,10 +52,11 @@ $('#updated-at').textContent = `更新于 ${research.updatedAt}`;
 $('#conclusion').textContent = research.conclusion;
 $('#hero-image').src = guideUrl;
 const localHost = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
-const onlineEntry = item => item.href.startsWith('./') && item.id !== 'sakura-game';
-const entryHref = item => localHost || onlineEntry(item) ? item.href : '#local-services';
+const onlineEntry = item => Boolean(item.publicHref) || (item.href.startsWith('./') && item.id !== 'sakura-game');
+const entryHref = item => localHost ? item.href : onlineEntry(item) ? item.publicHref || item.href : '#local-services';
+const entryService = item => !localHost && onlineEntry(item) ? '在线静态页面 / 三维效果依设备能力' : item.service;
 $('#executive-summary').innerHTML = research.executiveSummary.map((item, index) => `<article class="summary-card" id="summary-${item.id}"><span class="summary-number">${String(index + 1).padStart(2, '0')}</span><h3>${escape(item.title)}</h3>${item.paragraphs.map(text => `<p>${escape(text)}</p>`).join('')}</article>`).join('');
-$('#publication-note').textContent = localHost ? '当前为本地预览。静态发布包括研究摘要、资料、研究街、技术实验、搭建器、导览与晴雨漫游；模型游戏和 012 独立场景需要本机服务。' : '已发布静态研究网页：摘要、引导图、资料、研究街、技术实验、搭建器、导览与晴雨漫游可在线打开。AI 游戏和 012 独立演示请按本机运行说明启动。';
+$('#publication-note').textContent = localHost ? '当前为本地预览。公开内容包括联合全图、完整摘要、资料、001静态场景与012原创雨夜/最小例子/GPU现场；原库完整城市和模型游戏仍在本机。' : '在线提供联合全图、完整摘要与资料、001静态场景，以及012原创雨夜、最小例子和GPU检查页。原库完整城市/独立素材与AI模型服务仍在本机。图内制作时的发布状态原样保留，当前范围以本网页为准。';
 $('#kit-download').href = kitUrl;
 $('#summary-download').href = summaryUrl;
 
@@ -73,7 +75,7 @@ function renderEntries() {
     <a class="entry-picture" href="${escape(entryHref(item))}"><img src="${escape(images.get(item.image))}" alt="${escape(item.title)} · ${escape(item.imageNote || '实际运行画面')}" loading="lazy" /><span class="entry-engine">${escape(item.renderer)}${item.imageNote ? ` · ${escape(item.imageNote)}` : ''}</span></a>
     <div class="entry-content"><p class="entry-kicker">${escape(groupLabels[item.group])} / ${escape(item.status)}</p><h3>${escape(item.title)}</h3><p class="entry-subtitle">${escape(item.subtitle)}</p><p class="entry-description">${escape(item.description)}</p>
     <div class="entry-actions"><a class="button" href="${escape(entryHref(item))}">${localHost || onlineEntry(item) ? '打开体验 ↗' : '查看本机运行说明 ↓'}</a>${item.live && (localHost || onlineEntry(item)) ? `<button class="text-link" data-live="${item.id}">在本页体验 ↓</button>` : ''}</div>
-    <details><summary>观察方法与启动方式</summary><p>${escape(item.observe)}</p><p>${escape(item.service)} · ${onlineEntry(item) ? '可静态发布' : '需本机服务'}</p><pre>${escape(runCommand(item))}</pre></details></div></article>`).join('');
+    <details><summary>观察方法与启动方式</summary><p>${escape(item.observe)}</p><p>${escape(entryService(item))} · ${onlineEntry(item) ? '可静态发布' : '需本机服务'}</p><pre>${escape(runCommand(item))}</pre></details></div></article>`).join('');
 }
 $('#entry-filters').innerHTML = Object.entries(groupLabels).map(([key, name]) => `<button data-filter="${key}" aria-pressed="${key === entryGroup}">${name}</button>`).join('');
 $('#entry-filters').addEventListener('click', event => {
@@ -148,13 +150,13 @@ function startLive() {
   iframe.title = `${item.title} · 实时体验`;
   iframe.allow = 'fullscreen; gamepad';
   iframe.allowFullscreen = true;
-  iframe.src = item.id === 'sakura-weather' ? './weather.html?embed=1' : item.href;
+  iframe.src = item.id === 'sakura-weather' ? './weather.html?embed=1' : entryHref(item);
   $('#live-placeholder').hidden = true;
   $('#live-start').hidden = true;
   $('#live-close').hidden = false;
   $('#live-frame').classList.toggle('is-weather', item.id === 'sakura-weather');
   $('#iframe-slot').append(iframe); liveFrame = iframe;
-  $('#live-status').textContent = `正在打开 ${item.title} · ${item.service}。渲染状态见场景内提示；若无法呈现，展开下方启动说明。`;
+  $('#live-status').textContent = `正在打开 ${item.title} · ${entryService(item)}。渲染状态见场景内提示；若无法呈现，展开下方启动说明。`;
   iframe.addEventListener('load', () => {
     if (liveFrame === iframe) $('#live-status').textContent = `${item.title} 的页面已打开。可在场景内操作；结束体验会卸载此页面。若独立服务未运行，请查看下方启动说明。`;
   }, { once: true });

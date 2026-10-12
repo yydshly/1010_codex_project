@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f3eb" />
+  <meta name="description" content="一张中文全图汇总雨夜城市与樱花小街的源库效果、原理、四模块、跨项目复用、扩展实拍、使用价值、路线和证据边界。" />
+  <title>场景能力与复用 · 研究全图</title>
+  <style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e8ece4;color:#263d38;font:14px/1.8 "Microsoft YaHei",sans-serif}a{color:inherit}button{font:inherit;cursor:pointer}header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 4%;background:#fffdf7f5;backdrop-filter:blur(12px);border-bottom:1px solid #d7ded4}header strong{font-size:18px}header small{display:block;font-size:11px;color:#62736c}header nav,.zoom-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center}header nav a{text-decoration:none;font-size:12px;padding:5px 9px}.zoom-tools button{border:1px solid #cad7c5;background:#f5f3eb;border-radius:6px;padding:6px 10px;font-size:12px;color:inherit}.zoom-tools button[aria-pressed=true]{background:#426c58;color:#fff}#zoom-status{min-width:40px;font-size:11px;color:#62736c}button:focus-visible,a:focus-visible{outline:3px solid #7aa1b6;outline-offset:3px}.intro{padding:22px 4% 0;margin:0;max-width:1100px;color:#62736c;font-size:12px}.chapters{display:flex;gap:7px;flex-wrap:wrap;padding:15px 4%}.chapters button{border:1px solid #d7ded4;background:#f8f8ef;border-radius:5px;padding:6px 9px;font-size:12px;color:inherit}.viewer{overflow-x:auto;margin:0 4%;background:#f5f3eb;box-shadow:0 8px 30px #3c55401a}.poster{display:block;width:100%;height:auto;max-width:none}.details{padding:22px 4%;color:#62736c;font-size:12px}.details details{padding:18px 0;border-top:1px solid #d7ded4}.details summary{cursor:pointer;font-size:14px;color:#263d38}.source-text p{overflow-wrap:anywhere}.source-text li{margin:6px 0}.viewer-note{padding-top:10px;margin:0}footer{padding:0 4% 28px;font-size:12px;color:#62736c}@media(max-width:700px){header{padding:11px 4%;gap:9px}header strong{font-size:15px}header nav a{padding:3px 5px}.zoom-tools button{font-size:11px;padding:4px 7px}.chapters button{font-size:11px}.intro{padding-top:16px}.details{font-size:12px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header id="toolbar"><div><strong>场景能力与复用 · 研究全图</strong><small>001 樱花小街 × 012 雨夜渲染 · 2026-10-12</small></div><nav aria-label="研究全图入口"><a href="./research.html">返回完整研究手册 ↗</a><a href="./weather.html">晴雨漫游 ↗</a><a id="download-png" download="scene-research-map.png">下载高清 PNG ↓</a><a id="download-svg" download="scene-research-map.svg">下载 SVG 源图 ↓</a></nav><div class="zoom-tools" role="group" aria-label="研究全图缩放"><button data-zoom="100" aria-pressed="true">适应宽度</button><button data-zoom="150" aria-pressed="false">放大 1.5×</button><button data-zoom="200" aria-pressed="false">放大 2×</button><button data-zoom="300" aria-pressed="false">放大 3×</button><span id="zoom-status" role="status">100%</span></div></header>
+  <p class="intro">一张完整长图，集中看源库效果、技术原理、可复用接口与我们的探索。点章节跳到对应位置，或放大后在图框内横向阅读。真实实拍、作者发布图、概念题图和扩展方案分别标记。</p>
+  <nav class="chapters" id="chapters" aria-label="图中章节"></nav>
+  <main class="viewer" id="viewer" aria-label="可横向滚动的研究全图"><img class="poster" id="poster" alt="场景研究全图：雨夜城市与樱花小街源库效果、能力分层、六项雨夜原理、三渲二管线、Rain Kit 四模块、晴雨跨项目对照、八项扩展实拍、八种用途、个人价值及路线/证据/授权。" /></main>
+  <section class="details"><p class="viewer-note" id="dimensions"></p><details><summary>文字索引与固定来源</summary><div class="source-text" id="source-text"></div></details><p>图内发布范围保留 2026-10-12 制图时的记录。本次网页提供联合全图、完整理解与 012 原创雨夜/最小接入/GPU现场；原库完整城市素材与 AI 模型服务仍在本机。<a href="./overview.html">查看 2026-10-10 历史长图</a>。</p></section>
+  <footer>SVG 内嵌原图并保留中文文字，可离线查看和继续编辑；PNG 可分享与放大。来源、许可、运行限制和原始证据在 <a href="./research.html#library">完整研究资料</a> 中。</footer>
+  <script type="module">
+    import svgUrl from '../assets/scene-research-map.svg?url&no-inline';
+    import pngUrl from '../assets/scene-research-map.png?url&no-inline';
+    import meta from '../assets/scene-map-export.json';
+    import data from '../notes/scene-map-content.json';
+    const image=document.getElementById('poster'),viewer=document.getElementById('viewer');
+    image.src=svgUrl;
+    document.getElementById('download-png').href=pngUrl;
+    document.getElementById('download-svg').href=svgUrl;
+    document.getElementById('dimensions').textContent=`高清 PNG：${meta.width} × ${meta.height}；SVG：${meta.svgWidth} × ${meta.svgHeight}。12 张实际效果/作者发布图；顶部概念题图单独标注。`;
+    const buttons=[...document.querySelectorAll('[data-zoom]')];
+    for(const button of buttons) button.addEventListener('click',()=>{
+      image.style.width=button.dataset.zoom+'%';
+      document.getElementById('zoom-status').textContent=button.dataset.zoom+'%';
+      buttons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+      if(button.dataset.zoom==='100') viewer.scrollLeft=0;
+    });
+    const labels=['源库效果','能力分层','雨夜原理','三渲二','四个模块','跨项目复用','扩展实拍','应用方向','个人价值','路线与边界'];
+    for(const [index,section] of meta.sections.entries()) {
+      const button=document.createElement('button');button.type='button';button.textContent=section.id+' '+labels[index];
+      button.addEventListener('click',()=>{
+        const box=image.getBoundingClientRect(), toolbar=document.getElementById('toolbar');
+        window.scrollTo({top:window.scrollY+box.top+section.y*box.width/meta.svgWidth-toolbar.offsetHeight-10,behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});
+      });
+      document.getElementById('chapters').append(button);
+    }
+    const text=document.getElementById('source-text');
+    const thesis=document.createElement('p');thesis.textContent=data.thesis;text.append(thesis);
+    const list=document.createElement('ol');for(const section of meta.sections){const li=document.createElement('li');li.textContent=section.title;list.append(li);}text.append(list);
+    for(const source of data.sources){const p=document.createElement('p'),a=document.createElement('a');a.href=source.url+'/tree/'+source.commit;a.textContent=source.name+' · '+source.commit;p.append(a,document.createTextNode('。'+source.license));text.append(p);}
+  </script>
+</body>
+</html>

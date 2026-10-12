@@ -1,10 +1,25 @@
 # 春日研究街 · 三渲二业务场景演示
 
+## 最新联合研究全图
+
+`scene-map.html` 将 001 × 012 的效果、原理、模块、跨项目复用、真实扩展、个人价值和边界汇总为一张长图，已接入研究首屏与目录。十章跳转、适应宽度/1.5×/2×/3× 放大、高清 PNG 和 SVG 下载；SVG 内嵌实拍，正文文字保持可编辑。完整图 3840 × 20042 PNG / 1920 × 10021 SVG；首页只加载轻量封面预览。原图保留制作时状态，本次发布范围与结果见项目发布记录。
+
+数据 `../notes/scene-map-content.json`，生成器 `scripts/render-scene-map.mjs`；题图由内置 ImageGen 生成，提示词与概念标签保留。真实效果均复用原始实拍/作者发布图，不使用生成图片作为功能证据。
+
+```powershell
+node scripts/render-scene-map.mjs --png --sharp-module '<absolute-path-to-sharp>'
+npm.cmd run scene-map:check
+npm.cmd run research:sync
+npm.cmd run build
+```
+
+使用可用的 sharp 路径导出 PNG/预览，未新增项目依赖；`scene-map:check` 已加入 prebuild，检查数据、实拍摘要、SVG/PNG/预览、尺寸与来源引用。维护与实际验收见 [全图说明](../notes/scene-map.md)。
+
 ## 统一研究手册
 
 先打开 `http://127.0.0.1:5188/research.html`（`npm.cmd run dev:weather`）。新入口为普通网页，初始不启动三维渲染；实拍对照、全部入口、技术原理、模块分工、产品价值、验证边界与完整资料统一接入。页内实时场景一次加载一个，结束或切换时卸载 iframe；晴雨页在不可见时停止帧更新并清空移动输入。
 
-`research.html` / `src/hub/` 使用 `../notes/research-hub.json`，同时读取产品方向数据、历史性能记录和根 `projects.json`。27 份资料和 13 个项目 README 作为构建资源打包，阅读时按需请求，生产目录无需其他开发服务也能读取。跨项目演示链接仍需 012 的 5192/5195 服务和 AI 游戏 5197 服务，不构建或发布这些独立应用。
+`research.html` / `src/hub/` 使用 `../notes/research-hub.json`，同时读取产品方向数据、历史性能记录和根 `projects.json`。30 份资料和登记表内的项目 README 作为构建资源打包，阅读时按需请求，生产目录无需其他开发服务也能读取。012 原创研究台/最小接入/GPU页接入公开站点；原城市5195与AI游戏5197继续本机运行。
 
 ```powershell
 npm.cmd run research:sync   # 数据 → 完整中文汇总 Markdown

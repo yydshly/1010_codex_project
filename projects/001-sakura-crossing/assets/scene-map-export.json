@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-12",
+  "width": 3840,
+  "height": 20042,
+  "svgWidth": 1920,
+  "svgHeight": 10021,
+  "sections": [
+    {
+      "id": "01",
+      "title": "两条源库研究线：看到什么，具备什么",
+      "y": 551
+    },
+    {
+      "id": "02",
+      "title": "能力的分层：什么能搬走，什么必须自己提供",
+      "y": 1624
+    },
+    {
+      "id": "03",
+      "title": "雨夜技术底层：六条从输入到画面的路径",
+      "y": 2098
+    },
+    {
+      "id": "04",
+      "title": "三渲二管线：真实 3D，呈现动画背景的观感",
+      "y": 3527
+    },
+    {
+      "id": "05",
+      "title": "已经提取的四个模块：公开接口与宿主责任",
+      "y": 4035
+    },
+    {
+      "id": "06",
+      "title": "真正的跨项目复用：同一个包，换一个世界",
+      "y": 4937
+    },
+    {
+      "id": "07",
+      "title": "我们的扩展探索：从研究演示，到可用的用户流程",
+      "y": 6123
+    },
+    {
+      "id": "08",
+      "title": "用途与可扩展方向：让场景服务一个具体任务",
+      "y": 7377
+    },
+    {
+      "id": "09",
+      "title": "对你的价值：形成下一次创作的起点",
+      "y": 8151
+    },
+    {
+      "id": "10",
+      "title": "下一步与边界：保留能用的成果，按增量推进",
+      "y": 8669
+    }
+  ],
+  "svgSha256": "ba711d609b41dd5d2f0aa4793b7aa322a4f2f4b0fa7a9a08234399f15587dcbb",
+  "pngSha256": "4abb63c2ec1823e5e9bfc2efae91182fa7bcbc5e1b466898e52c8d3518a826fd",
+  "previewSha256": "50cafc11a7abf3b501e2f71c161bb226085b9590974721cef57beb7478f16da3",
+  "inputs": {
+    "assets/scene-map-banner.png": "d349a8000f4335ce5b5268e5f57fcafbf6e31504607d3a870abfa9d9727b0a3a",
+    "references/012-threejs-conference/assets/upstream-controls.jpg": "42a6074aea95d55e3d1af0d69e8e3ef6fb215929cce295dfd06e9c158fc030b0",
+    "assets/upstream-crossing.jpg": "11bf80eee49852a20d7810244bb54248880c9bb6055dc151f4b2aa4c9338d197",
+    "assets/hub-sunny.jpg": "7a9e38502a923ea76c039f06ca5f6e4bc587d8726fc5833eefe8ebe467d155d0",
+    "assets/hub-rainy.jpg": "7d76714f7fe277452b547d7b42145211bce0ddd9af7c12d3ab4ee96553dfed6e",
+    "references/012-threejs-conference/assets/desktop.jpg": "06ac6c4f9adac65540888213bf69fdf77f8955eccba0697360d2f3937544e76e",
+    "references/012-threejs-conference/assets/modules-minimal.jpg": "dde5933911a69ad03d0e8932de5d0f4c777da82ddde49e7a6d193ab3005b0b7b",
+    "references/012-threejs-conference/assets/modules-droplets-on.jpg": "0e8f61e9f3a8637c1a3c0c285d2cd3ae2c5692265b3da5e0f25aa4aa0974a718",
+    "assets/business-shop.jpg": "bf6f275cf9ac580181aee1ce8698043b8d2eec59e76d346e428c00874cc67743",
+    "assets/lab-forest.jpg": "b91b9cd798c6afc35e8e847efe812454953d91633509650d7e05d7363e3ad842",
+    "assets/builder-desktop.jpg": "6524c0ed3aeb283f465f372e9870aa69beaa7918d453987ee7105f9cfca89694",
+    "assets/tour-voice-pavilion.jpg": "42996c29ea8fca081afcdf2701370db805433bd928addea09e6c74e450eaf72a",
+    "assets/ai-town-decisions.png": "5928740f17828989982fc5bd40cd37cba91f839362b3f45db3bed064810b682f"
+  }
+}

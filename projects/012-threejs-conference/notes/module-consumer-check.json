@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-11T09:01:25.141Z",
+  "package": "@research/rain-kit@0.1.0",
+  "archiveSha256": "e72613d271757f8b17c641fd61cdec3f8085bd9a79304ba8990d88a489008643",
+  "archiveBytes": 28348,
+  "consumer": ".kit-smoke/consumer-PgRl2P",
+  "installation": "passed",
+  "exports": "passed",
+  "independentBuild": "passed",
+  "browserForConsumerBuild": "passed: served installed-package production build; rain, reflection and sample visible; no captured warning/error",
+  "passed": true
+}

@@ -15,6 +15,7 @@ export default defineConfig({
         game: fileURLToPath(new URL('./game.html', import.meta.url)),
         weather: fileURLToPath(new URL('./weather.html', import.meta.url)),
         hub: fileURLToPath(new URL('./research.html', import.meta.url)),
+        sceneMap: fileURLToPath(new URL('./scene-map.html', import.meta.url)),
       },
       output: {
         manualChunks(id) {

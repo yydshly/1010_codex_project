@@ -1,0 +1,27 @@
+{
+  "backend": "WebGPU",
+  "cases": [
+    {
+      "roofEnabled": true,
+      "heightAtCenter": 3.1,
+      "particlesInsideRoofFootprint": 25,
+      "particlesBelowRoof": 0,
+      "passed": true
+    },
+    {
+      "roofEnabled": false,
+      "heightAtCenter": 0,
+      "particlesInsideRoofFootprint": 33,
+      "particlesBelowRoof": 5,
+      "passed": true
+    },
+    {
+      "roofEnabled": true,
+      "heightAtCenter": 3.1,
+      "particlesInsideRoofFootprint": 24,
+      "particlesBelowRoof": 0,
+      "passed": true
+    }
+  ],
+  "passed": true
+}
