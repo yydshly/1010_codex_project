@@ -34,3 +34,9 @@ npm.cmd run publication:check
 结构化记录见 [publication-verification.json](publication-verification.json)、[publication-http.json](publication-http.json) 与 [publication-routes.json](publication-routes.json)。记录分别保存首轮验收与最终发布文件检查的时间、版本和范围；不把记录提交版本自动当作部署版本。
 
 窄屏为浏览器视口验证，未测试真实手机。浏览器原生下载辅助操作超时，未据此宣称下载保存成功；同一公开下载资源的HTTP、完整大小和哈希已核验。原作者外部媒体不是静态文件完整性清单的一部分，继续保留原站入口。没有下载或运行上游模型，也没有跨项目动作接入与机器人执行。
+
+## 最终发布复验
+
+最终网页产物对应 commit `589e455c5b614d71f68d0ff206da8bbb07894f4c`，[Actions 38271032660](https://github.com/yydshly/1010_codex_project/actions/runs/38271032660) 的构建、部署均成功。再次核对32项文件的HTTP、大小和SHA-256全部一致；站点首页与12个已发布项目入口返回HTTP 200。最终报告见 [publication-final.json](publication-final.json)。
+
+窄屏重新核对实际 `innerWidth=390`、`innerHeight=844`、`clientWidth=scrollWidth=375`，正文为单列。原窄屏截图曾捕获视口同步前的缩小桌面画面，已更正为真实窄屏截图；未修改网页布局或既有引导图。最终线上首页截图和报告保存后，浏览器恢复普通视口。此后的审计提交仅补证据与验证器网络重试，不改变已发布的网页资源。

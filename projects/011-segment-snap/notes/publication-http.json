@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-12T15:22:34.766Z",
+  "checkedAt": "2026-10-12T15:38:53.046Z",
   "base": "https://yydshly.github.io/1010_codex_project/011-segment-snap/",
   "status": "passed",
   "fileCount": 32,
@@ -86,7 +86,7 @@
       "path": "publication-manifest.json",
       "status": 200,
       "bytes": 4983,
-      "sha256": "c9c72dd2076e6c1cb237ecf2482938c6205666ef66a1047adb15bacbeaee6f79"
+      "sha256": "44952aeb1f8140593bdbcf5831b81cb6b38cd91df993a12e8889e6c6af862ac8"
     },
     {
       "path": "research.css",
@@ -109,8 +109,8 @@
     {
       "path": "research/assets/README.md",
       "status": 200,
-      "bytes": 2075,
-      "sha256": "9d7e1661e08f0a761e75a30f6d0a168167a175571c2d011254d0e2b22e598dc5"
+      "bytes": 2553,
+      "sha256": "563df487bd44f02874e1f8c7b13708eef0f1347dba554d8bdd83ae198141da1f"
     },
     {
       "path": "research/assets/research-overview-layout.json",
@@ -157,20 +157,20 @@
     {
       "path": "research/publication.json",
       "status": 200,
-      "bytes": 1127,
-      "sha256": "d834df0b5578e7af7f4f3b5cd36038b710b18351b170e8c57424c52a32cf299c"
+      "bytes": 4522,
+      "sha256": "55c14ffa04a5d92ac66a0d5afe2cdc90b9b7c149763e0212b10fb3a57c25f517"
     },
     {
       "path": "research/README.md",
       "status": 200,
-      "bytes": 8565,
-      "sha256": "5fe7818849c4ffda02c53f499c2507eece691418451602fc32d65ba7f68e89b2"
+      "bytes": 8885,
+      "sha256": "50c8b5833342c78b60950e2269963774919ef14db9726b12243e55494f697fa9"
     },
     {
       "path": "research/THIRD_PARTY.md",
       "status": 200,
-      "bytes": 2243,
-      "sha256": "746c2f54d69e0158f6a8439c99868346a93fa198e3b69d331f8efe851cb35431"
+      "bytes": 2299,
+      "sha256": "02ea67fc221dbd0e2ac28b214cbfc25d563dfc6fdf53cbc2aee41d15ecdf8726"
     },
     {
       "path": "research/tools/build-overview.mjs",
@@ -181,8 +181,8 @@
     {
       "path": "research/tools/README.md",
       "status": 200,
-      "bytes": 1778,
-      "sha256": "579b871cba6c1ff975cc0a73e19ae4341c205296796d134e61565ec4eb7b24fa"
+      "bytes": 2533,
+      "sha256": "9f64899380199a6a5ca5a680d2741e7a703b317789f3dec96b8119aeccf37eee"
     },
     {
       "path": "research/web/data/evidence.json",
@@ -196,5 +196,7 @@
       "bytes": 20885,
       "sha256": "9b73444bac964f20657252dd1a7bb82899ae13876fdc1a793bd4ab7dcf69ac10"
     }
-  ]
+  ],
+  "deployedContentCommit": "589e455c5b614d71f68d0ff206da8bbb07894f4c",
+  "workflowRun": "https://github.com/yydshly/1010_codex_project/actions/runs/38271032660"
 }

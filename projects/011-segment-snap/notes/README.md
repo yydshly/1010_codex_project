@@ -13,3 +13,4 @@
 - [结构化线上验收](publication-verification.json)
 - [全部公开文件 HTTP 与哈希核对](publication-http.json)
 - [站点与已发布项目入口核对](publication-routes.json)
+- [最终部署复验与窄屏核对](publication-final.json)

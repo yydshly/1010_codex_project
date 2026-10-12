@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-10-12T15:40:18.446Z",
+  "status": "passed",
+  "release": {
+    "deployedContentCommit": "589e455c5b614d71f68d0ff206da8bbb07894f4c",
+    "workflowRun": "https://github.com/yydshly/1010_codex_project/actions/runs/38271032660",
+    "build": "success",
+    "deploy": "success"
+  },
+  "researchUrl": "https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html",
+  "http": {
+    "status": "passed",
+    "fileCount": 32,
+    "checkedAt": "2026-10-12T15:38:53.046Z",
+    "checks": [
+      "HTTP 200",
+      "完整字节大小",
+      "SHA-256"
+    ],
+    "report": "publication-http.json"
+  },
+  "routes": {
+    "status": "passed",
+    "count": 13,
+    "rootHas011": true,
+    "report": "publication-routes.json"
+  },
+  "browser": {
+    "initialInteractionReport": "publication-verification.json",
+    "finalHomepage": {
+      "title": "Segment–Snap · 完整理解与交互研究",
+      "width": 1280,
+      "height": 720,
+      "topics": 9,
+      "paragraphs": 36,
+      "guideNaturalWidth": 3600,
+      "scrollY": 0
+    },
+    "narrowRecheck": {
+      "innerWidth": 390,
+      "innerHeight": 844,
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "heroWidth": 342.66668701171875,
+      "heroGrid": "342.667px",
+      "horizontalOverflow": false,
+      "realDevice": false
+    },
+    "screenshotCorrection": "早期窄屏截图捕获了视口同步前的缩小桌面画面；复核实际390×844视口、单列布局和无横向溢出后，重新保存真实截图。",
+    "finalTabKeptOpen": true
+  },
+  "screenshots": [
+    {
+      "path": "assets/publication-desktop.jpg",
+      "bytes": 98986,
+      "sha256": "4da5b03a28f4f5fc51edff146480cdba0509de19d2651e6b883e8e16b155adef"
+    },
+    {
+      "path": "assets/publication-mobile.jpg",
+      "bytes": 49272,
+      "sha256": "50a836451af2f3225b3e82e2cb39f65d38343908872da0c4c61cfd1cc01cbd41"
+    },
+    {
+      "path": "assets/publication-lab.jpg",
+      "bytes": 68072,
+      "sha256": "ed9028481bd08c0bf0b098743ef689b5ba0697066577ce290949707eff45321f"
+    }
+  ],
+  "sourceAudit": "此记录、HTTP报告、路线报告及线上截图属于发布后的源码验收，不改变32项网页产物；审计提交跳过重复CI。",
+  "unverified": [
+    "上游训练与GPU推理",
+    "真实手机",
+    "跨项目Agent动作接入",
+    "机器人实物操作",
+    "浏览器原生下载保存路径"
+  ]
+}

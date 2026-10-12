@@ -13,14 +13,27 @@ const manifest=JSON.parse(fs.readFileSync(path.join(dist,'publication-manifest.j
 const files=[...manifest.files,{path:'publication-manifest.json',bytes:fs.statSync(path.join(dist,'publication-manifest.json')).size,sha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(dist,'publication-manifest.json'))).digest('hex')}];
 const results=[];
 let next=0;
+async function requestFile(url,file){
+  for(let attempt=1;attempt<=3;attempt++){
+    try{
+      const response=await fetch(url,{signal:AbortSignal.timeout(20000),headers:{'Cache-Control':'no-cache'}});
+      const body=Buffer.from(await response.arrayBuffer());
+      if([429,502,503,504].includes(response.status) && attempt<3) throw new Error(`临时HTTP ${response.status}`);
+      return {response,body};
+    }catch(error){
+      if(attempt===3) throw new Error(`${file.path}: 3次请求仍失败：${error.message}`,{cause:error});
+      console.warn(`${file.path}: 第${attempt}次网络请求失败，稍后重试。`);
+      await new Promise(resolve=>setTimeout(resolve,attempt*1000));
+    }
+  }
+}
 async function worker(){
   while(next<files.length){
     const file=files[next++];
     const url=new URL(file.path,base);
     url.searchParams.set('verify',file.sha256.slice(0,12));
-    const response=await fetch(url,{signal:AbortSignal.timeout(40000),headers:{'Cache-Control':'no-cache'}});
+    const {response,body}=await requestFile(url,file);
     assert.equal(response.status,200,`${file.path}: HTTP ${response.status}`);
-    const body=Buffer.from(await response.arrayBuffer());
     const hash=crypto.createHash('sha256').update(body).digest('hex');
     assert.equal(body.length,file.bytes,`${file.path}: 大小不同`);
     assert.equal(hash,file.sha256,`${file.path}: SHA256不同`);
