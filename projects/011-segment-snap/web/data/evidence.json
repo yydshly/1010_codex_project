@@ -1,0 +1,73 @@
+{
+  "checkedAt": "2026-10-11",
+  "upstream": {
+    "url": "https://github.com/HyoKong/Segment-Snap",
+    "commit": "67ccf8765a9c409ad400ae4d6ed151f9449c8ed9",
+    "license": "MIT",
+    "method": "https://github.com/HyoKong/Segment-Snap/blob/67ccf8765a9c409ad400ae4d6ed151f9449c8ed9/docs/METHOD.md",
+    "results": "https://github.com/HyoKong/Segment-Snap/blob/67ccf8765a9c409ad400ae4d6ed151f9449c8ed9/docs/RESULTS_VAL.md",
+    "data": "https://github.com/HyoKong/Segment-Snap/blob/67ccf8765a9c409ad400ae4d6ed151f9449c8ed9/docs/DATA.md",
+    "paper": "https://arxiv.org/html/2609.25247v2"
+  },
+  "authorPage": {
+    "url": "https://hyokong.github.io/segment-snap-page/",
+    "repository": "https://github.com/HyoKong/segment-snap-page",
+    "commit": "f56ef799456c6b41c7d7fc4473415d240b72c2d6",
+    "mediaBase": "https://raw.githubusercontent.com/HyoKong/segment-snap-page/f56ef799456c6b41c7d7fc4473415d240b72c2d6/assets/",
+    "mediaPolicy": "原始图片外部引用作者公开页面仓库的固定 commit，视频外部引用作者网站，未下载原始媒体文件；此前实际网页截图与研究总图包含已显示的作者预测裁切，保留原归属。本地 teaser.svg 来自 MIT 授权主仓库。"
+  },
+  "protocol": {
+    "trainingScenes": 195,
+    "validationScenes": 42,
+    "validationUsedForSelection": true,
+    "unit": "AP 百分数；差值以百分点计",
+    "maskIoU": 0.5,
+    "axisGateDegrees": 15,
+    "originGateMetres": 0.25,
+    "translationOriginEvaluated": false,
+    "localInferenceVerified": false
+  },
+  "metrics": {
+    "partAP50": 47.93,
+    "motionCentroid": 13.74,
+    "motionHandleGuided": 40.98,
+    "motionGainPP": 27.25,
+    "denseHandleAP50": 24.63,
+    "unionHandleAP50": 29.65,
+    "correctedHandleAP50": 30.99,
+    "proposalGainPP": 5.01,
+    "correctionGainPP": 1.34
+  },
+  "scenes": [
+    {
+      "id": "61adeff7d5",
+      "label": "场景 01 · 室内柜体",
+      "annotatedParts": 31,
+      "displayedPredictions": 15,
+      "matchedDisplayedPredictions": 10,
+      "description": "展示的 15 个预测中，10 个同时匹配部件与运动。场景有 31 个标注部件，仍有遗漏。"
+    },
+    {
+      "id": "419cbe7c11",
+      "label": "场景 02 · 室内家具",
+      "annotatedParts": 13,
+      "displayedPredictions": 10,
+      "matchedDisplayedPredictions": 10,
+      "description": "展示的 10 个预测均匹配部件与运动；场景有 13 个标注部件，展示结果不能理解为全部找齐。"
+    }
+  ],
+  "qualitative": {
+    "centroidOriginErrorMetres": 0.42,
+    "guidedOriginErrorMetres": 0.05,
+    "selection": "从把手引导改善的案例中选择的示例，不是平均误差；两图投影方向不同。",
+    "gallerySelection": "作者按展示真阳性优势选择的有利案例；预测显示阈值为置信度至少 0.50，不能代表整体效果。"
+  },
+  "runtime": {
+    "checkpointsGBApprox": 4.9,
+    "python": "3.12",
+    "pytorch": "2.8.0",
+    "cuda": "12.8",
+    "reportedPartMotionMedianSeconds": 33.78,
+    "timingScope": "作者 RTX 5070 Ti 上的部件运动路径，含两个模型与超点处理，不含第三个联合把手预测器。"
+  }
+}

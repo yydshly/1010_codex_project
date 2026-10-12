@@ -13,6 +13,7 @@ on:
       - 'projects/008-pdoom-video/**'
       - 'projects/009-jevclip/**'
       - 'projects/010-cadence-foraging/**'
+      - 'projects/011-segment-snap/**'
       - 'projects/013-model-video-studio/**'
       - 'projects/014-print-bench/**'
       - 'projects.json'
@@ -85,6 +86,9 @@ jobs:
       - name: Build and verify print-bench research
         run: npm run research:sync && npm run check && npm run build && npm run publication:check
         working-directory: projects/014-print-bench/web
+      - name: Build and verify Segment-Snap research and illustrative interactions
+        run: npm run research:sync && npm run check && npm run build && npm run publication:check
+        working-directory: projects/011-segment-snap/web
       - run: npm run site:assemble
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4

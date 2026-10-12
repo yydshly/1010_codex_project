@@ -1,0 +1,16 @@
+{
+  "name": "segment-snap-observatory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Segment–Snap 中文能力说明、作者效果与可操作原理示意",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "research:sync": "node scripts/research-sync.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist",
+    "check": "node --check app.js && node --check lab.js && node --check research.js && node --check scripts/research-sync.mjs && node scripts/check.mjs",
+    "publication:check": "node scripts/publication-check.mjs"
+  }
+}

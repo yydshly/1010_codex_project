@@ -1,0 +1,80 @@
+[
+  {
+    "source": "README.md",
+    "title": "项目说明",
+    "description": "项目定位、能力、效果和运行范围",
+    "url": "research/README.md"
+  },
+  {
+    "source": "THIRD_PARTY.md",
+    "title": "来源与授权",
+    "description": "固定版本、作者媒体及本地内容归属",
+    "url": "research/THIRD_PARTY.md"
+  },
+  {
+    "source": "notes/research-summary.md",
+    "title": "完整理解摘要",
+    "description": "九主题正文，与网页和根索引同步",
+    "url": "research/notes/research-summary.md"
+  },
+  {
+    "source": "notes/research-summary.json",
+    "title": "统一内容数据",
+    "description": "全部段落、模块与扩展路线",
+    "url": "research/notes/research-summary.json"
+  },
+  {
+    "source": "notes/essence-and-value.md",
+    "title": "原理本质与复用价值",
+    "description": "关系消歧、职责分工和个人项目判断",
+    "url": "research/notes/essence-and-value.md"
+  },
+  {
+    "source": "notes/capabilities.md",
+    "title": "能力与算法细节",
+    "description": "输入合同、模型、阈值和评估范围",
+    "url": "research/notes/capabilities.md"
+  },
+  {
+    "source": "notes/verification.md",
+    "title": "本地验证记录",
+    "description": "原观察台的实际交互、截图及图像检查",
+    "url": "research/notes/verification.md"
+  },
+  {
+    "source": "assets/README.md",
+    "title": "图片与素材说明",
+    "description": "实际截图、总图和媒体类型说明",
+    "url": "research/assets/README.md"
+  },
+  {
+    "source": "web/data/evidence.json",
+    "title": "来源与指标记录",
+    "description": "公开 AP、样例选择与运行口径",
+    "url": "research/web/data/evidence.json"
+  },
+  {
+    "source": "assets/research-overview-layout.json",
+    "title": "引导图文字布局",
+    "description": "图像尺寸、截图来源与正文位置",
+    "url": "research/assets/research-overview-layout.json"
+  },
+  {
+    "source": "tools/README.md",
+    "title": "研究图生成方法",
+    "description": "确定性 SVG 排版与 Sharp 导出",
+    "url": "research/tools/README.md"
+  },
+  {
+    "source": "tools/build-overview.mjs",
+    "title": "研究图生成脚本",
+    "description": "仅供阅读；网页不执行此脚本",
+    "url": "research/tools/build-overview.mjs"
+  },
+  {
+    "source": "assets/UPSTREAM-LICENSE.txt",
+    "title": "上游 MIT 许可证",
+    "description": "完整原文及第三方归属",
+    "url": "research/assets/UPSTREAM-LICENSE.txt"
+  }
+]

@@ -125,3 +125,12 @@ AI 守灯游戏使用本机 `town-server.mjs`、官方 CLI 登录或本机模型
 [GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) · [GitHub Pages REST API](https://docs.github.com/en/rest/pages/pages)
 
 实际发布和线上检查记录保留在 001 笔记中。后续增加项目时继续沿用固定编号路径，并为其增加独立构建、来源授权和验证记录。
+
+
+## 2026-10-12 · 011 Segment–Snap 研究发布接入
+
+011沿用既有3600×5000理解总图，原PNG/SVG不改，统一九主题36段完整摘要、11组职责模块、三个学习预测器与固定几何语义规则、作者AP和本地门抽屉示意、训练推理分工、使用场景、个人价值及五阶段扩展。13份原始资料可页内阅读和下载；两页互相导航。
+
+固定路径为 `011-segment-snap/research.html`，原观察台为同目录 `index.html`。子项目执行 `npm run research:sync`、`npm run check`、`npm run build`、`npm run publication:check`；根目录同步登记、检查并组装。32项静态文件含逐文件SHA-256清单，CI不生成图、不下载模型、不训练。现有11个项目发布路径保留。
+
+仅发布静态研究与自有几何交互，不部署上游GPU推理、数据上传或机器人执行。旧图及笔记保留阶段状态；正式HTTPS与资源验收通过后才登记实际demo。实际部署及验证见011的 `notes/publication-verification.json`。
