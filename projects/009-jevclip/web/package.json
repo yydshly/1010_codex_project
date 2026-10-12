@@ -1,0 +1,16 @@
+{
+  "name": "jevclip-research-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist",
+    "test": "node --test tests/*.test.mjs",
+    "research:sync": "node scripts/sync-research.mjs --catalog",
+    "check": "node --check scripts/build.mjs && node --check scripts/research-page.mjs && node --check src/research.mjs && node --check src/app.mjs && node --check src/core.mjs",
+    "publication:check": "node scripts/publication-check.mjs"
+  }
+}

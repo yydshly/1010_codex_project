@@ -1,0 +1,68 @@
+{
+  "project": "009-jevclip",
+  "checkedAt": "2026-10-12",
+  "upstreamRevision": "3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a",
+  "guide": "assets/jevclip-overview-2026-10-12.png",
+  "guideDimensions": [
+    2400,
+    7397
+  ],
+  "summary": {
+    "topics": 9,
+    "paragraphs": 32,
+    "modules": 9,
+    "readableDocuments": 15
+  },
+  "local": {
+    "url": "http://127.0.0.1:5299/1010_codex_project/009-jevclip/research.html",
+    "dataTests": {
+      "passed": 15,
+      "failed": 0
+    },
+    "publicationIntegrity": "passed",
+    "browser": {
+      "guideLoaded": [
+        2400,
+        7397
+      ],
+      "search": "缓存 -> 3/9; 清除 -> 9/9",
+      "posterDialog": true,
+      "fullMIT": true,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "documentWidth": 375
+      },
+      "subtitleImport": {
+        "file": "demo.srt",
+        "segments": 10,
+        "kept": 8
+      },
+      "focus": {
+        "name": "方法步骤",
+        "kept": 3,
+        "ids": [
+          "S3",
+          "S5",
+          "S8"
+        ]
+      },
+      "citation": {
+        "id": "S3",
+        "videoTime": 40,
+        "sourceVisible": true
+      },
+      "consoleWarningsAndErrors": []
+    },
+    "screenshots": [
+      "assets/research-desktop.png",
+      "assets/research-mobile.png"
+    ]
+  },
+  "deployment": {
+    "status": "awaiting-publication",
+    "intendedURL": "https://yydshly.github.io/1010_codex_project/009-jevclip/research.html"
+  },
+  "modelApiCalled": false,
+  "clippedVideoExport": false
+}

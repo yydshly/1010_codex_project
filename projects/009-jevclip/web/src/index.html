@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="片刻视频研究助手：导入字幕、筛选关注点、预览时间线，让每条摘录都能回到原文。" />
+  <title>片刻 · 视频研究助手</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="片刻首页"><span class="brand-mark"><i></i><i></i><i></i></span><span>片刻<span class="brand-en">FRAME NOTES</span></span></a>
+    <span class="top-divider"></span><span class="workspace-label">视频研究工作台</span>
+    <div class="top-actions"><span class="local-badge"><span></span> 本地处理</span><a class="guide-nav" href="./research.html">全景研究手册 ↗</a><a class="guide-nav" href="#principles">原理与能力</a><button id="about-button" class="quiet-button">项目说明 <span>↗</span></button><button id="export-button" class="dark-button"><span>↓</span> 导出笔记</button></div>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar">
+      <div class="sidebar-heading"><span class="eyebrow">RESEARCH WORKSPACE</span><h2>你的研究素材</h2></div>
+      <button id="sample-button" class="source-card"><span class="source-icon">▤</span><span><strong>字幕研究入门</strong><small>内置示例 · 03:20</small></span><span class="source-arrow">↗</span></button>
+      <div class="import-zone" id="drop-zone">
+        <span class="import-symbol">＋</span><strong>从一份字幕开始</strong><p>拖入文件，或从本机选择</p>
+        <button id="subtitle-button" class="outline-button">导入字幕 / 文字稿</button>
+        <small>SRT · VTT · JSON · TXT · MD</small>
+        <input id="subtitle-file" type="file" accept=".srt,.vtt,.json,.txt,.md" hidden />
+      </div>
+      <div class="section-label"><span>关注点</span><button id="clear-focus" class="text-button">清空</button></div>
+      <p class="sidebar-help">只留下你正在研究的内容。</p>
+      <form id="focus-form" class="focus-input"><input id="focus-input" aria-label="输入关注点" placeholder="例如：本地部署" maxlength="80" /><button aria-label="添加关注点" type="submit">＋</button></form>
+      <div id="focus-chips" class="focus-chips"></div>
+      <div class="suggestions"><span>试试</span><button data-focus="方法步骤">方法步骤 ＋</button><button data-focus="实测数据">实测数据 ＋</button><button data-focus="底层原理">底层原理 ＋</button></div>
+      <p class="microcopy">关键词匹配 · 最多 5 个 · 任一命中</p>
+      <div class="sidebar-rule"></div>
+      <label class="toggle-label"><span><strong>过滤寒暄与推广</strong><small>可在时间线中逐段修正</small></span><input id="hide-filler" type="checkbox" checked /><span class="toggle"></span></label>
+      <button id="reset-overrides" class="text-button reset-button">重置人工取舍</button>
+      <div class="privacy-note"><span>◈</span><div><strong>材料留在这台设备</strong><p>当前演示不上传字幕和视频。<br />字幕与取舍自动保存在此浏览器。</p><button id="clear-storage" class="text-button">清除本机记录</button></div></div>
+      <div class="sidebar-footer">009 / JEVCLIP LAB <span>v0.1</span></div>
+    </aside>
+    <main class="main-content">
+      <section class="library-guide" id="principles" aria-labelledby="guide-title">
+        <div class="guide-heading"><div><span class="eyebrow">理解 JEVCLIP · 上游库的能力</span><h2 id="guide-title">字幕驱动的自动剪辑与摘要</h2></div><a class="guide-workbench-link" href="#research-workbench">继续体验 ↓</a></div>
+        <p class="guide-lead">Jevclip 先判断每段字幕有没有研究价值，再选择视频片段。<strong>自动剪辑是它的一项输出</strong>；它还可以生成带出处的摘要、字幕和判断报告。只有文字稿，也能做内容研究。</p>
+        <details class="pipeline-details" id="pipeline-details" open>
+          <summary><span>从字幕到成品，底层怎么工作</span><span class="details-hint">展开 / 收起</span></summary>
+          <ol class="pipeline-stages" aria-label="上游内容筛选流程">
+            <li><span class="stage-number">01</span><h3>把字幕组织成片段</h3><p>读取原文和时间戳，按停顿与句子边界组织约 20 秒片段，保存它们在原视频中的位置。</p></li>
+            <li><span class="stage-number">02</span><h3>Jev 做结构化判断</h3><p>判断数据、方法、讲解、寒暄或推广等类型，并返回信息密度、关注点相关性、夸大和独立性等判断值。</p></li>
+            <li><span class="stage-number">03</span><h3>代码决定保留哪些</h3><p>把判断值组合成价值分，用门槛决定取舍；高亮用背包算法控制时长，去水完整版采用更保守的删除条件。</p></li>
+          </ol>
+          <div class="pipeline-branch-label">同一批判断结果，进入两条输出流程 <span>↙ ↘</span></div>
+          <div class="pipeline-outputs">
+            <article><span class="output-label">视频输出</span><h3>FFmpeg 按源时间剪辑</h3><p>精选高亮挑重点，去水完整版尽量保留上下文。按原顺序切割、拼接视频，并重新对齐输出字幕。</p></article>
+            <article><span class="output-label">知识输出</span><h3>摘要模型写结论，代码映射出处</h3><p>独立的摘要模型读取保留段，引用片段编号；代码把编号换成原视频时间或文字稿段落，供读者核查。</p></article>
+          </div>
+          <div class="guide-comparison">
+            <table><caption>上游库与当前网页，各自做到了哪一步</caption><thead><tr><th scope="col">能力</th><th scope="col">Jevclip 上游库</th><th scope="col">当前演示网页</th></tr></thead><tbody>
+              <tr><th scope="row">内容筛选</th><td>调用 Jev 模型做语义判断</td><td>本地关键词匹配 + 人工取舍</td></tr>
+              <tr><th scope="row">视频处理</th><td>按预算选段，导出真实剪辑成品</td><td>预览原视频、跳转时间；未接剪辑后端</td></tr>
+              <tr><th scope="row">摘要与依据</th><td>独立模型生成摘要，引用映射到源位置</td><td>摘录原句，点击引用回查原文和视频</td></tr>
+            </tbody></table>
+          </div>
+          <p class="guide-boundary"><strong>理解边界：</strong>上游读取字幕，不读取视频画面，也不自带语音转写。判断概率不等于事实准确率，摘要有引用也仍需核对上下文。当前网页未调用模型，不能用于评估 Jev 的识别效果。</p>
+          <div class="guide-sources"><span>适合教程、技术讲解与访谈研究</span><a href="./research/notes/research.md" target="_blank">完整中文研究 ↗</a><a href="https://github.com/cclank/jevclip/tree/3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a" target="_blank" rel="noreferrer">固定版本源码 ↗</a></div>
+        </details>
+      </section>
+      <div class="project-heading" id="research-workbench"><div><div class="eyebrow">每个观点，都有出处</div><h1 id="document-title">把长视频，变成可回查的知识</h1><div class="project-meta"><span id="source-name">原创合成示例.srt</span><span>·</span><span id="mode-label">本地规则筛选</span><span class="sample-tag" id="sample-tag">演示素材</span></div></div><button id="video-button" class="outline-button compact">＋ 关联本地视频</button><input id="video-file" type="file" accept="video/*,.mp4,.webm,.mov,.m4v,.mkv" hidden /></div>
+      <div class="stats-strip"><div><span class="stat-icon">▤</span><span><strong id="stat-total">10</strong><small>内容片段</small></span></div><div><span class="stat-icon green">✓</span><span><strong id="stat-kept">8</strong><small>当前保留</small></span></div><div><span class="stat-icon amber">◷</span><span><strong id="stat-duration">02:40</strong><small>保留片段时长</small></span></div><div class="stat-evidence"><span class="evidence-dot"></span><span id="stat-evidence">每条摘录均关联原文</span></div></div>
+      <div class="research-grid">
+        <section class="view-column" aria-label="视频与字幕时间线">
+          <div class="player-shell">
+            <video id="video" src="./demo.mp4" controls playsinline preload="metadata" aria-label="研究视频播放器"></video>
+            <div class="no-video" id="no-video" hidden><span>▷</span><strong>字幕已就绪，随时回查</strong><p>关联对应视频，即可按时间播放。<br />只有文字稿也可以继续研究。</p><button id="empty-video-button" class="light-button">关联本地视频</button></div>
+          </div>
+          <div class="player-caption"><span><span class="tiny-dot"></span><span id="video-name">原创合成示例 · 无配音</span></span><span id="playhead-label">00:00 / 03:20</span></div>
+          <div class="timeline-overview"><div class="overview-label"><span>内容分布</span><div class="legend"><span><i class="keep-dot"></i>保留</span><span><i class="drop-dot"></i>舍弃</span></div></div><div class="overview-track" id="overview-track"></div><div class="overview-scale"><span>00:00</span><span id="overview-mid">01:40</span><span id="overview-end">03:20</span></div></div>
+          <section class="transcript-panel"><div class="panel-heading"><h2>字幕时间线 <span id="visible-count">10</span></h2><span class="panel-hint">点击片段回查</span></div><div class="timeline-toolbar"><div class="filter-tabs" role="group" aria-label="片段显示范围"><button data-filter="all" class="active" aria-pressed="true">全部</button><button data-filter="kept" aria-pressed="false">保留</button><button data-filter="dropped" aria-pressed="false">舍弃</button></div><label class="search-input"><span>⌕</span><input id="search-input" placeholder="搜索原文" aria-label="搜索字幕原文" /></label></div><div id="timeline-list" class="timeline-list"></div></section>
+        </section>
+        <aside class="evidence-panel" aria-label="摘要与原文依据"><div class="evidence-heading"><div><span class="eyebrow">EVIDENCE FIRST</span><h2>让结论落到原文</h2></div><span class="evidence-symbol">↙</span></div><div class="evidence-tabs" role="group" aria-label="笔记面板"><button data-panel="summary" class="active" aria-pressed="true">摘录摘要</button><button data-panel="source" aria-pressed="false">原文依据</button></div><div id="summary-panel"><div class="summary-intro"><span class="extract-badge">原文摘录</span><p>从保留片段提取原句。点击时间引用，回到对应的字幕和视频。</p></div><div class="summary-count"><span>研究要点</span><span id="summary-count">8 条</span></div><div id="summary-list" class="summary-list"></div></div><div id="source-panel" hidden></div><div class="evidence-footer"><span>↳</span> 原文摘录保留表达，结论仍需结合上下文核对。</div></aside>
+      </div>
+      <footer class="main-footer"><span>片刻 · 把观看变成积累</span><a href="https://github.com/cclank/jevclip" target="_blank" rel="noreferrer">研究灵感：cclank / jevclip ↗</a></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="about-dialog"><div class="dialog-heading"><span class="eyebrow">009 / RESEARCH NOTES</span><button id="close-about" aria-label="关闭项目说明">×</button></div><h2>片刻 · 视频研究助手</h2><p>一个受 jevclip 启发的原创浏览器演示：从字幕导入，到关注点筛选，再到摘要与原文回查。</p><div class="about-grid"><div><strong>当前可用</strong><p>字幕解析、关键词筛选、人工取舍、视频定位、原文摘录、Markdown 导出与本机恢复。</p></div><div><strong>模型接入边界</strong><p>当前未调用 Jev 或摘要模型。可导入上游 segments.json 查看真实判断；关注点仍按本地关键词匹配。</p></div></div><p>合成视频与字幕为本项目原创，没有配音。它们用于体验交互，不代表 Jev 的识别准确率。无时间文字稿以段落定位，不估造视频时间。</p><p class="about-meta">上游：MIT · 0.1.1 Alpha<br />研究版本：3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a<br />研究日期：2026-10-11 · 静态公开版，真实模型未接入</p><div class="dialog-links"><a href="./research/notes/research.md" target="_blank">中文研究笔记 ↗</a><a href="./research/notes/verification.md" target="_blank">验证记录 ↗</a><a href="https://github.com/cclank/jevclip" target="_blank" rel="noreferrer">上游仓库 ↗</a></div></dialog>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

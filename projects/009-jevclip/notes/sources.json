@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "repository": "https://github.com/cclank/jevclip",
+  "commit": "3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a",
+  "version": "0.1.1",
+  "license": "MIT",
+  "sources": [
+    { "url": "https://github.com/cclank/jevclip/tree/3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a", "use": "固定版本源码与原始测试" },
+    { "url": "https://github.com/cclank/jevclip/blob/3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a/README.md", "use": "作者运行说明、有限样本与边界" },
+    { "url": "https://github.com/cclank/jevclip/blob/3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a/LICENSE", "use": "授权核对" },
+    { "url": "https://docs.typesafe.ai/concepts/system-one", "use": "结构化判断和文本输入定位" },
+    { "url": "https://docs.typesafe.ai/introduction/machine-learning-primer", "use": "公开 RLCD 概述，不推断完整训练细节" }
+  ],
+  "modelApiCalled": false,
+  "deployed": false
+}

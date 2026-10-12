@@ -1,5 +1,13 @@
 # Web 部署与发布范围
 
+## 2026-10-12 · 009 Jevclip 视频研究发布接入
+
+009使用既有2400×7397中文全景图作为网页导读，统一九主题32段完整摘要、九组固定源码职责、两条模型与工具输出分工、源库与演示对照、场景、个人价值和扩展验证路线。15份研究、原始测试、浏览器记录及MIT资料可页内完整阅读和下载；原字幕导入、关键词筛选、时间线、人工取舍、摘要回查与Markdown导出工作台保留。
+
+固定路径为 `009-jevclip/research.html` 与 `009-jevclip/index.html`。在009的web目录执行 `npm run research:sync`、`npm run check`、`npm test`、`npm run build`、`npm run publication:check`；根执行 `npm run catalog:sync`、`npm run check`，GitHub Pages CI执行完整站点构建与组装。登记表新增固定009条目，不重编号既有项目；真实HTTPS入口只在部署与线上验收成功后登记。
+
+公开静态研究与浏览器本机处理，不接入Jev、摘要模型、ASR、画面理解或FFmpeg后台，不上传导入字幕及视频。CI不生成图片，不需要模型密钥；既有图、笔记、许可与示例按白名单保留，产物逐文件SHA-256登记。实际状态、版本、浏览器与资源验收以009的 `notes/publication-verification.json` 为准。
+
 ## 2026-10-12 · 008 PDoomVideo 与纸间 MV 研究发布接入
 
 已实际发布 [008完整中文研究与真实样片](https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html)。首次部署提交 `2d1d4a71fadf09678fb91b918e981f09525d6260`，Actions `38249354069` 构建与部署均成功；39项资源的HTTP、大小和SHA-256全部一致，正式网页23项浏览器检查通过，包括两支视频实际播放、总图缩放、中文检索、完整MIT阅读和390px窄屏布局。既有八个公开研究入口均为HTTP200，新入口已接入站点首页。记录与线上实拍在008的 `notes/publication-verification.json`、`notes/publication-resource-verification.json` 和 `notes/research-live-verification.json`；登记表在验收后更新。公开原始资料保留首次部署版本快照，最新发布状态与原始验收记录在GitHub项目资料中持续保存。

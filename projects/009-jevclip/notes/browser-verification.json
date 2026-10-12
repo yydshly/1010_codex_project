@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-11",
+  "browser": "Codex In-app Browser (Chromium)",
+  "checks": [
+    {
+      "case": "invalid-input",
+      "message": "第 1 条字幕的起止时间无效",
+      "title": "demo"
+    },
+    {
+      "case": "upstream-format",
+      "kept": "1",
+      "mode": "Jevclip 判断结果 · 本地关注点",
+      "pending": 1
+    },
+    {
+      "case": "untimed-script",
+      "duration": "—",
+      "source": "S2 · ¶2\n方法步骤\n\n第一步，导入字幕，保留原始文本与出处。\n\n✓ 当前保留\n未命中寒暄与推广关键词\n保留这一段\n舍弃这一段"
+    },
+    {
+      "case": "untrusted-subtitle",
+      "injectedImages": 0,
+      "literal": "原文里出现 <img src=x onerror=\"alert('should-not-run')\">，只展示为文字，不执行。"
+    },
+    {
+      "case": "empty-focus",
+      "empty": "暂时没有保留的片段。\n调整关注点，或在时间线中人工保留内容。",
+      "kept": "0"
+    },
+    {
+      "case": "text-search",
+      "visible": 1
+    },
+    {
+      "case": "citation-clears-search",
+      "query": "",
+      "selected": "S4",
+      "time": 60
+    },
+    {
+      "case": "latest-citation-sync",
+      "pageY": 558,
+      "query": "",
+      "selected": "S4",
+      "source": "S4 · 01:00–01:20概念讲解底层原理是把判断拆开：模型返回内容类型、信息密度与概率，代码用明确规则决定取舍。概率表示不确定性，不是事实真假的保证。✓ 当前保留未命中寒暄与推广关键词保留这一段舍弃这一段",
+      "videoTime": 60
+    },
+    {
+      "case": "mobile-layout",
+      "bodyWidth": 375,
+      "citations": 8,
+      "videoTime": 60,
+      "viewport": 390
+    },
+    {
+      "case": "subpath-browser",
+      "cssLoaded": "flex",
+      "duration": 200,
+      "kept": "8",
+      "path": "/1010_codex_project/009-jevclip/",
+      "readyState": 4,
+      "time": 60,
+      "total": "10"
+    }
+  ]
+}

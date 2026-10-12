@@ -1,0 +1,8 @@
+{
+  "title": "结构测试夹具；非真实 Jev 输出",
+  "segments": [
+    { "id": "S1", "start": 0, "end": 20, "text": "第一步，导入字幕并检查时间位置。", "status": "ok", "keep": true, "kind": "method", "value": 0.8, "reasons": [] },
+    { "id": "S2", "start": 20, "end": 40, "text": "点赞和订阅。", "status": "ok", "keep": false, "kind": "promo", "value": 0.1, "reasons": ["结构测试：推广内容"] },
+    { "id": "S3", "start": 40, "end": 60, "text": "尚未取得服务端判断。", "status": "error", "keep": null, "error": "timeout", "reasons": ["未判断（timeout）"] }
+  ]
+}

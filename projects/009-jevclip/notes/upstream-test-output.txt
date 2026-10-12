@@ -1,0 +1,33 @@
+................................................................F.......F............................
+======================================================================
+FAIL: test_moved_files_update_without_a_new_version (test_jevclip.Storing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\yun68\AppData\Local\Temp\codex-jevclip-research-247941ca3ad04acf9aeb690d19a7b029\tests\test_jevclip.py", line 307, in test_moved_files_update_without_a_new_version
+    self.assertEqual(moved.video, "/new/place/talk.mp4")
+AssertionError: 'C:\\new\\place\\talk.mp4' != '/new/place/talk.mp4'
+- C:\new\place\talk.mp4
+? ^^^   ^     ^
++ /new/place/talk.mp4
+? ^   ^     ^
+
+
+======================================================================
+FAIL: test_srt_with_bom_crlf_tags_and_multiline (test_jevclip.Subtitles)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\yun68\AppData\Local\Temp\codex-jevclip-research-247941ca3ad04acf9aeb690d19a7b029\tests\test_jevclip.py", line 89, in test_srt_with_bom_crlf_tags_and_multiline
+    self.assertEqual([(c.start, c.end, c.text) for c in cues],
+AssertionError: Lists differ: [] != [(1.0, 3.5, '第一行 第二行'), (4.0, 6.0, '下一句 & 结束')]
+
+Second list contains 2 additional elements.
+First extra element 0:
+(1.0, 3.5, '第一行 第二行')
+
+- []
++ [(1.0, 3.5, '第一行 第二行'), (4.0, 6.0, '下一句 & 结束')]
+
+----------------------------------------------------------------------
+Ran 101 tests in 16.587s
+
+FAILED (failures=2)
