@@ -1,5 +1,7 @@
 # 008 · PDoomVideo · 可编程动画与 MV 工具研究
 
+**[在线完整研究网页](https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html)**：以已有总览图引导，九主题37段完整摘要、九组模块、六步执行链、源库效果、本地工具与三画风、15秒和30秒真实样片、使用价值与扩展路线，以及21份可阅读下载的资料。2026-10-12 已部署并验收，39项资源哈希和23项线上浏览器检查通过；上传音乐、角色创作和编码仍由本地服务执行。
+
 PDoomVideo 展示了用 AI 编写分镜和 JavaScript、用 p5.js 与 p5.brush 绘制角色动画、再用 Chrome 和 ffmpeg 导出音乐 MV 的完整案例。最值得复用的是角色参数化、按时间计算画面、节拍同步和逐帧渲染。
 
 **本地工具「纸间 MV」已可运行：参数化角色、上传音乐与歌词、三种画风、自动分镜、预览和 MP4 导出。15 秒水彩版与 30 秒素描版已实测输出。** 默认使用本地规则分镜，真实模型适配器已实现但尚未实测。任意图片角色绑定、任意画风和准确唱歌口型仍需扩展。
@@ -25,7 +27,7 @@ npm.cmd run dev
 | 研究日期 | 2026-10-10 首次分析与九帧渲染；2026-10-11 收录、方案整理、本地工具实现与短片验收 |
 | 上游许可证 | PDoomVideo 的 package.json 标注 ISC，未见独立 LICENSE；ClaudeAnimationBase 有明确 MIT 原文。见 [来源记录](UPSTREAM.md) |
 | 研究状态 | 本地最小工具已实现，15 秒/720p 和 30 秒/1080p MP4 导出通过；真实模型、声学对齐待验证 |
-| 在线演示 | 尚未部署，登记表 `demo` 为 `null` |
+| 在线演示 | [完整中文研究与真实样片](https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html)，2026-10-12 已发布并验收 |
 
 ## 能力与边界
 
@@ -87,6 +89,7 @@ node render.mjs --encode --out=out/pdoom.mp4
 
 ## 研究材料
 
+- [发布与验收说明](notes/publication-verification.json) · [逐文件资源核验](notes/publication-resource-verification.json) · [正式网页交互与实拍](notes/research-live-verification.json)
 - [完整中文摘要：九主题、37 段](notes/research-summary.md) · [结构化内容与模块数据](notes/research-summary.json)
 - [研究总览图、图片说明与生成提示词](notes/overview-poster.md)
 - [能力、效果、原理、场景与价值](notes/research.md)

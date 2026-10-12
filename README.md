@@ -23,7 +23,7 @@
 | 005 | [桃源 · 豁然开朗](projects/005-taohuayuan/README.md) · [上游](https://github.com/JimLiu/taohuayuan) | 桃源文学三维叙事的完整中文研究：涵盖 28 幕导览与十处景致、世界/渲染/导演/内容/漫游模块、程序化造景与音频时间线原理、桃林—山洞—田野的真实效果、001 MiniMax 一分钟导览迁移、使用场景、个人价值、复用与扩展路线；以既有总览图引导，保留笔记、截图、来源授权与实测边界，原版三维复现继续用于本地学习。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/005-taohuayuan/research.html) |
 | 006 | [Telegram Media Downloader · 媒体观察台](projects/006-telegram-media-downloader/README.md) · [上游](https://github.com/Neet-Nestor/Telegram-Media-Downloader) | Telegram 网页媒体增强工具的完整中文理解：用既有总图引导，涵盖四类媒体、WebK/WebA 差异、九个逻辑模块、账号与网页及脚本分工、官方下载与自有 Range/Blob 保存路径、输出与使用边界、资料和开发价值、五阶段扩展；保留交互示意、12项受控实验、原始文件及来源许可，真实 Telegram 下载未实测，队列与 AI 尚未实现。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html) |
 | 007 | [Google Vids · 实际制作与成品对照](projects/007-google-vids/README.md) · [官方产品](https://workspace.google.com/products/vids/) | Google Vids 与映序的完整中文研究：既有总图引导，保留118秒AI初稿与69秒人工编辑成片，结合原创工作台的中文配音、画布时间轴和音乐混音，完整说明能力、模块、流程原理、人机分工、使用价值、介绍模板、剧情与口型扩展及验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/007-google-vids/research.html) |
-| 008 | [PDoomVideo · 可编程动画与 MV 工具研究](projects/008-pdoom-video/README.md) · [上游](https://github.com/JohnHeibel/PDoomVideo) | PDoomVideo 与纸间 MV 的完整中文研究：以既有总览图引导，涵盖源库九章角色动画、水彩效果、九组模块、时间与节拍驱动、AI 与程序分工、音乐歌词上传、三画风与可编辑分镜、15 秒/720p 和 30 秒/1080p 真实成片、使用场景、个人价值及产品化路线；保留截图、代码、来源与验证资料，自动音乐分析、真实模型实测、图片角色绑定与口型仍待扩展。 | 研究中 | — |
+| 008 | [PDoomVideo · 可编程动画与 MV 工具研究](projects/008-pdoom-video/README.md) · [上游](https://github.com/JohnHeibel/PDoomVideo) | PDoomVideo 与纸间 MV 的完整中文研究：以既有总览图引导，涵盖源库九章角色动画、水彩效果、九组模块、时间与节拍驱动、AI 与程序分工、音乐歌词上传、三画风与可编辑分镜、15 秒/720p 和 30 秒/1080p 真实成片、使用场景、个人价值及产品化路线；保留截图、代码、来源与验证资料，自动音乐分析、真实模型实测、图片角色绑定与口型仍待扩展。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html) |
 | 013 | [映序 · 多模型视频工作台](projects/013-model-video-studio/README.md) · [官方产品](https://workspace.google.com/products/vids/) | 完整中文研究与真实成片对照：Google Vids 的可编辑初稿、映序的六路独立模型与场景编辑、故事和角色、中文口播、音乐混音、渲染导出、使用价值、项目介绍模板及视频与口型扩展；以既有研究总图引导，保留原始视频、截图、笔记、接口协议和验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html) |
 | 014 | [print-bench · Issue 驱动的 3D 模型自动化](projects/014-print-bench/README.md) · [上游](https://github.com/shaiss/print-bench) | Issue 驱动的参数化 3D 自动化完整中文研究：以既有理解总图引导，涵盖源库能力与模型效果、九个模块、任务筛选与代理/工具/CI 分工、真实 Issue #398 / PR #424 与本机几何复现、直接对话价值比较、适用场景、现有项目候选流程、Codex 接入与工具扩展；保留固定源码、许可证、原图、实验与验证边界。公开网页用于研究阅读，自有仓库的 AI 修改模型流程尚未接入。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/014-print-bench/research.html) |
 
@@ -553,7 +553,7 @@ PDoomVideo 与纸间 MV 的完整中文研究：以既有总览图引导，涵�
 
 PDoomVideo 与纸间 MV 中文总览：源库效果、模块与时间节拍原理、本地成片、价值和扩展路线
 
-[研究说明](projects/008-pdoom-video/README.md) · [上游仓库](https://github.com/JohnHeibel/PDoomVideo)
+[研究说明](projects/008-pdoom-video/README.md) · [上游仓库](https://github.com/JohnHeibel/PDoomVideo) · [在线演示](https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html)
 
 #### 013 · 映序 · 多模型视频工作台
 

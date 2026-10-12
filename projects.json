@@ -658,8 +658,8 @@
       "slug": "pdoom-video",
       "name": "PDoomVideo · 可编程动画与 MV 工具研究",
       "source": "https://github.com/JohnHeibel/PDoomVideo",
-      "status": "researching",
-      "demo": null,
+      "status": "demo-ready",
+      "demo": "https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html",
       "summary": "PDoomVideo 与纸间 MV 的完整中文研究：以既有总览图引导，涵盖源库九章角色动画、水彩效果、九组模块、时间与节拍驱动、AI 与程序分工、音乐歌词上传、三画风与可编辑分镜、15 秒/720p 和 30 秒/1080p 真实成片、使用场景、个人价值及产品化路线；保留截图、代码、来源与验证资料，自动音乐分析、真实模型实测、图片角色绑定与口型仍待扩展。",
       "summarySections": [
         {

@@ -4,6 +4,8 @@
 
 | 材料 | 内容 |
 | --- | --- |
+| [发布说明](publication-verification.json) / [资源核验](publication-resource-verification.json) / [线上交互](research-live-verification.json) | 实际公开地址、Actions、39项资源哈希、23项浏览器检查及桌面/窄屏实拍 |
+| [站点导航核验](publication-navigation-verification.json) | 新入口已接入，既有八个公开研究入口继续可访问 |
 | [完整中文摘要](research-summary.md) / [结构化数据](research-summary.json) | 九主题、37 段，统一能力、模块、原理、效果、价值、用途、扩展与验证边界 |
 | [理解总览图](overview-poster.md) | 既有生成图片、实测参考、图文说明与完整提示词 |
 | [能力研究](research.md) | 能力、视觉效果、代码原理、应用场景与项目价值 |

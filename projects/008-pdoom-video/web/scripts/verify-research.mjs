@@ -14,7 +14,7 @@ const assert=(v,name)=>{checks.push({name,passed:!!v});if(!v)throw Error(name+' 
 const suffix=values.live?'live':'local';
 try{
  await page.setViewport({width:1440,height:1000,deviceScaleFactor:1});
- await page.goto(url,{waitUntil:'networkidle0',timeout:60000});
+ await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
  assert((await page.$$eval('.summary-section',n=>n.length))===9,'九主题摘要');
  assert((await page.$$eval('.summary-section p',n=>n.length))===37,'37 段正文完整');
  assert((await page.$$eval('.module',n=>n.length))===9,'九组模块');
@@ -54,7 +54,7 @@ try{
  const imagePath=path.join(project,'assets/research-'+suffix+'-desktop.png');
  await page.screenshot({path:imagePath});
  await page.setViewport({width:390,height:844,deviceScaleFactor:1});
- await page.goto(url,{waitUntil:'networkidle0',timeout:60000});
+ await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
  // Scroll through sections to load lazy assets, then measure the actual page.
  await page.evaluate(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=650){window.scrollTo({top:y,behavior:'instant'});await new Promise(r=>setTimeout(r,60))}window.scrollTo({top:0,behavior:'instant'})});
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'390px 窄屏无横向溢出');

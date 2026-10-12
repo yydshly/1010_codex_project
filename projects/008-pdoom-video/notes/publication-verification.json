@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-12",
+  "checkedAt": "2026-10-12T12:40:10.499Z",
+  "url": "https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html",
+  "commit": "2d1d4a71fadf09678fb91b918e981f09525d6260",
+  "actions": {
+    "id": "38249354069",
+    "url": "https://github.com/yydshly/1010_codex_project/actions/runs/38249354069",
+    "build": "success",
+    "deploy": "success"
+  },
+  "scope": "完整静态研究、原始图文与原创样片；本地创作服务未云端部署",
+  "content": {
+    "topics": 9,
+    "paragraphs": 37,
+    "modules": 9,
+    "documents": 21,
+    "guide": "assets/pdoom-mv-overview.png",
+    "guidePreserved": true
+  },
+  "resources": {
+    "passed": 39,
+    "total": 39,
+    "failed": 0,
+    "detail": "publication-resource-verification.json"
+  },
+  "browser": {
+    "passed": 23,
+    "errors": [],
+    "failures": [],
+    "detail": "research-live-verification.json",
+    "screenshots": [
+      "assets/research-live-desktop.png",
+      "assets/research-live-mobile.png"
+    ]
+  },
+  "navigation": {
+    "allPassed": true,
+    "newEntryLinked": true,
+    "detail": "publication-navigation-verification.json"
+  },
+  "checks": {
+    "unitTests": 10,
+    "toolBuild": true,
+    "publicationMediaDecode": true,
+    "rootCatalogCheck": true,
+    "siteAssemble": true
+  },
+  "snapshots": "公开资料按2d1d4a7首次部署保留；发布登记、线上实拍和最新验收记录作为后续源码提交保存。"
+}

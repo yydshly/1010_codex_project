@@ -14,6 +14,8 @@
 
 ## 本地样片公开副本
 
+`research-local-desktop.png`、`research-local-mobile.png` 为2026-10-12本机完整Pages路径预览实拍；`research-live-desktop.png`、`research-live-mobile.png` 为同日正式HTTPS网页实拍。分别为1440px桌面与390px窄屏视口，使用Chrome取得，未使用生成图片替代网页实拍。交互与视频播放结果见相应 `notes/research-*-verification.json`；实拍保留在源码资料中。
+
 `local-demo-15s.mp4` 与 `local-demo-30s-ink.mp4` 是本地忽略目录 `out/` 中已验证影片的逐字节副本，2026-10-12 收录供研究网页播放与下载。尺寸分别为 1280×720／15 秒／360 帧与 1920×1080／30 秒／720 帧；均为 24 fps、H.264 视频＋AAC 音频。角色、场景与合成伴奏为本项目新增内容，动作公式保留 MIT 来源。未公开上游原歌曲或上游短片。
 
 ## 研究总览图说明

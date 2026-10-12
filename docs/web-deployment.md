@@ -2,6 +2,8 @@
 
 ## 2026-10-12 · 008 PDoomVideo 与纸间 MV 研究发布接入
 
+已实际发布 [008完整中文研究与真实样片](https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html)。首次部署提交 `2d1d4a71fadf09678fb91b918e981f09525d6260`，Actions `38249354069` 构建与部署均成功；39项资源的HTTP、大小和SHA-256全部一致，正式网页23项浏览器检查通过，包括两支视频实际播放、总图缩放、中文检索、完整MIT阅读和390px窄屏布局。既有八个公开研究入口均为HTTP200，新入口已接入站点首页。记录与线上实拍在008的 `notes/publication-verification.json`、`notes/publication-resource-verification.json` 和 `notes/research-live-verification.json`；登记表在验收后更新。公开原始资料保留首次部署版本快照，最新发布状态与原始验收记录在GitHub项目资料中持续保存。
+
 沿用已生成的 1024×1536 中文总览图作为首页引导，统一九主题37段完整摘要、九组模块、六步执行链、源库原图、本地工具截图、三画风和两支可播放真实成片。21份研究、实现、实验、工程示例和 MIT 资料可页内阅读及下载；源库能力、本地验证与产品目标分别标注。
 
 静态产物位于 projects/008-pdoom-video/web/dist-public/，固定路径 008-pdoom-video/research.html，index.html 为同页别名。执行子项目 npm ci、npm test、npm run build、npm run build:research 和 npm run publication:check，再执行根 npm run catalog:sync、npm run check、npm run site:assemble。预生成引导图原样发布，CI不调用图片生成或真实模型。逐文件白名单与 SHA-256 清单保护原图、原文和样片；影片规格与完整解码重新核验。

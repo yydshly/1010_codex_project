@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-12",
+  "checkedAt": "2026-10-12T12:36:09.826Z",
+  "root": "https://yydshly.github.io/1010_codex_project/",
+  "entries": [
+    {
+      "id": "001-sakura-crossing",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "002-18-floors-of-mayhem",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "004-muster-ww2",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "005-taohuayuan",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "006-telegram-media-downloader",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "007-google-vids",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "008-pdoom-video",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "013-model-video-studio",
+      "status": 200,
+      "passed": true
+    },
+    {
+      "id": "014-print-bench",
+      "status": 200,
+      "passed": true
+    }
+  ],
+  "newEntryLinked": true
+}
