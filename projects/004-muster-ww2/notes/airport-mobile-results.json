@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-11T10:22:46.348Z",
+  "base": "http://127.0.0.1:5198/",
+  "checks": [
+    {
+      "name": "本地生产入口、四阶段简报、真实模型与独立任务初始状态",
+      "passed": true,
+      "detail": {
+        "render": {
+          "calls": 1028,
+          "triangles": 3532095
+        },
+        "mission": {
+          "phase": 0,
+          "phaseAt": 0,
+          "integrity": 100,
+          "cargo": 0,
+          "deliveries": 0,
+          "headquartersDeliveries": 0,
+          "charges": 0,
+          "wave": 0,
+          "nextWaveAt": 0,
+          "secure": 0,
+          "selectedSquad": "alpha",
+          "failure": "",
+          "recon": [
+            {
+              "id": "north",
+              "name": "北侧来袭通道",
+              "x": 3,
+              "z": -11,
+              "radius": 5,
+              "progress": 0,
+              "done": false
+            },
+            {
+              "id": "east",
+              "name": "东侧来袭通道",
+              "x": 24,
+              "z": 6,
+              "radius": 5,
+              "progress": 0,
+              "done": false
+            }
+          ],
+          "squads": [
+            {
+              "id": "alpha",
+              "name": "一班",
+              "members": [
+                100,
+                101
+              ],
+              "order": "hold",
+              "target": {
+                "x": -7,
+                "z": 8
+              }
+            },
+            {
+              "id": "bravo",
+              "name": "二班",
+              "members": [
+                102,
+                103
+              ],
+              "order": "hold",
+              "target": {
+                "x": -7,
+                "z": 11
+              }
+            }
+          ],
+          "seen": []
+        }
+      }
+    },
+    {
+      "name": "390px本地触控界面、下令/驾驶/补给按钮、切车与自动暂停",
+      "passed": true,
+      "detail": {
+        "size": [
+          390,
+          844
+        ],
+        "layout": {
+          "panelBottom": 433,
+          "padTop": 444,
+          "padBottom": 596,
+          "footerTop": 606
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "screenshots": [
+    "airport-briefing.png",
+    "airport-mobile-briefing.png",
+    "airport-mobile-playing.png"
+  ],
+  "passed": true,
+  "browser": "Edg/155.0.4283.45",
+  "finished": "2026-10-11T10:23:19.965Z",
+  "scope": "入口与窄屏复验"
+}

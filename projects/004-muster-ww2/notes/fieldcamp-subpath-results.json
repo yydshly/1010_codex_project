@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-11T02:20:32.579Z",
+  "prefix": "/1010_codex_project/004-muster-ww2/",
+  "passed": true,
+  "failures": [],
+  "result": {
+    "assets": 74,
+    "rendered": 1,
+    "issues": [],
+    "stylesheets": [
+      "http://127.0.0.1:62455/1010_codex_project/004-muster-ww2/assets/interaction-B_VMY_PD.css",
+      "http://127.0.0.1:62455/1010_codex_project/004-muster-ww2/assets/archive-CSWvfYDs.css"
+    ]
+  },
+  "camp": {
+    "catalog": 74,
+    "counts": {
+      "total": {
+        "personnel": 17,
+        "vehicles": 5,
+        "artillery": 2,
+        "aircraft": 2,
+        "looseEquipment": 0
+      },
+      "byFaction": {
+        "usa": {
+          "personnel": 17,
+          "vehicles": 5,
+          "artillery": 2,
+          "aircraft": 2,
+          "looseEquipment": 0
+        }
+      },
+      "models": 26,
+      "groups": 8
+    },
+    "stylesheets": [
+      "http://127.0.0.1:62455/1010_codex_project/004-muster-ww2/assets/interaction-B_VMY_PD.css",
+      "http://127.0.0.1:62455/1010_codex_project/004-muster-ww2/assets/main-YSYI7EwL.css"
+    ]
+  }
+}

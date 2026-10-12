@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-11",
+  "sourceCommit": "7d2fa86ebc3b999eaf085831cdcd5dccefea63d4",
+  "base": "http://127.0.0.1:5198",
+  "note": "审查器单次输出；drawCalls 为合并模型的材质批次，耗时不是重复基准。Removed 运行期间另有子目录检查浏览器。",
+  "models": [
+    {
+      "id": "de-panzer-iv-h",
+      "config": { "schuerzen": "fitted" },
+      "screenshot": "../assets/panzer-fitted.png",
+      "triangles": 364742,
+      "drawCalls": 14,
+      "size": { "w": 3.2960000038146973, "h": 2.678039789199829, "l": 7.034765005111694 },
+      "minY": 0,
+      "buildMs": 860.3999999761581,
+      "bakeMs": 595.1999999880791
+    },
+    {
+      "id": "de-panzer-iv-h",
+      "config": { "schuerzen": "removed" },
+      "screenshot": "../assets/panzer-removed.png",
+      "triangles": 353990,
+      "drawCalls": 14,
+      "size": { "w": 3.247999906539917, "h": 2.678039789199829, "l": 7.034765005111694 },
+      "minY": 0,
+      "buildMs": 25755.69999998808,
+      "bakeMs": 662.3000000119209
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-11T03:42:34.269Z",
+  "base": "http://127.0.0.1:5198/",
+  "node": "v22.15.0",
+  "checks": [
+    {
+      "name": "真实场景：8 类素材、26 个实例、74 条目录",
+      "passed": true,
+      "detail": {
+        "counts": {
+          "total": {
+            "personnel": 17,
+            "vehicles": 5,
+            "artillery": 2,
+            "aircraft": 2,
+            "looseEquipment": 0
+          },
+          "byFaction": {
+            "usa": {
+              "personnel": 17,
+              "vehicles": 5,
+              "artillery": 2,
+              "aircraft": 2,
+              "looseEquipment": 0
+            }
+          },
+          "models": 26,
+          "groups": 8
+        },
+        "modelStats": [
+          {
+            "key": "us-p51d|",
+            "buildMs": 343,
+            "bakeMs": 346,
+            "triangles": 179046,
+            "drawCalls": 21
+          },
+          {
+            "key": "us-m4a3-sherman|sandShields=false;star=true;stowage=true",
+            "buildMs": 863,
+            "bakeMs": 595,
+            "triangles": 315532,
+            "drawCalls": 17
+          },
+          {
+            "key": "us-m18-hellcat|gun=m1a2;star=true;stowage=true",
+            "buildMs": 249,
+            "bakeMs": 402,
+            "triangles": 283610,
+            "drawCalls": 17
+          },
+          {
+            "key": "us-willys-mb|star=true;windscreen=up",
+            "buildMs": 1001,
+            "bakeMs": 383,
+            "triangles": 295008,
+            "drawCalls": 19
+          },
+          {
+            "key": "us-m2a1-howitzer|trails=deployed",
+            "buildMs": 621,
+            "bakeMs": 302,
+            "triangles": 183782,
+            "drawCalls": 10
+          },
+          {
+            "key": "us-rifleman|haversack=true;pose=port-arms",
+            "buildMs": 4487,
+            "bakeMs": 162,
+            "triangles": 176192,
+            "drawCalls": 18
+          },
+          {
+            "key": "us-squad-leader|haversack=false",
+            "buildMs": 2881,
+            "bakeMs": 145,
+            "triangles": 141190,
+            "drawCalls": 18
+          },
+          {
+            "key": "us-bar-gunner|haversack=false;pose=low-ready",
+            "buildMs": 2579,
+            "bakeMs": 130,
+            "triangles": 152734,
+            "drawCalls": 18
+          }
+        ]
+      }
+    },
+    {
+      "name": "分区镜头：停机坪与 P-51D",
+      "passed": true,
+      "detail": {
+        "camera": {
+          "target": [
+            -18,
+            1.1,
+            -8
+          ],
+          "distance": 48,
+          "yaw": 28,
+          "pitch": 29
+        }
+      }
+    },
+    {
+      "name": "谢尔曼挡板：控件改变配置并构建新几何",
+      "passed": true,
+      "detail": {
+        "beforeTriangles": 315532,
+        "afterTriangles": 316756
+      }
+    },
+    {
+      "name": "炮班：炮架收拢配置实际生成",
+      "passed": true,
+      "detail": {
+        "config": {
+          "trails": "closed"
+        },
+        "model": {
+          "key": "us-m2a1-howitzer|trails=closed",
+          "buildMs": 468,
+          "bakeMs": 226,
+          "triangles": 183782,
+          "drawCalls": 10
+        }
+      }
+    },
+    {
+      "name": "步兵：编队、数量、间距、撤销与重做",
+      "passed": true,
+      "detail": {
+        "group": {
+          "id": "squad",
+          "assetId": "us-rifleman",
+          "config": {
+            "pose": "port-arms",
+            "haversack": true
+          },
+          "quantity": 8,
+          "formation": "line",
+          "spacing": 1.7,
+          "columns": 4,
+          "heading": 90,
+          "anchor": {
+            "x": 13,
+            "z": 12.4
+          },
+          "instances": [
+            {
+              "slot": 0,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            },
+            {
+              "slot": 1,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            },
+            {
+              "slot": 2,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            },
+            {
+              "slot": 3,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            },
+            {
+              "slot": 4,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            },
+            {
+              "slot": 5,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            },
+            {
+              "slot": 6,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            },
+            {
+              "slot": 7,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "鼠标拖动单个模型与 Q 旋转",
+      "passed": true,
+      "detail": {
+        "group": {
+          "id": "transport",
+          "assetId": "us-willys-mb",
+          "config": {
+            "windscreen": "up",
+            "star": true
+          },
+          "quantity": 2,
+          "formation": "line",
+          "spacing": 5,
+          "columns": "auto",
+          "heading": 90,
+          "anchor": {
+            "x": -3,
+            "z": 13
+          },
+          "instances": [
+            {
+              "slot": 0,
+              "offset": {
+                "dx": 0.395,
+                "dz": -0.029
+              },
+              "headingOffset": -15
+            },
+            {
+              "slot": 1,
+              "offset": {
+                "dx": 0,
+                "dz": 0
+              },
+              "headingOffset": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "光线、俯视、纯净画面与可暂停导览",
+      "passed": true,
+      "detail": {
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "distance": 118,
+          "yaw": 28,
+          "pitch": 48
+        },
+        "light": "warm"
+      }
+    },
+    {
+      "name": "导出文件、恢复预设、撤销、导入原布局",
+      "passed": true,
+      "detail": {
+        "exportedModels": 22,
+        "importedModels": 22
+      }
+    },
+    {
+      "name": "刷新恢复与原展柜存储隔离",
+      "passed": true,
+      "detail": {
+        "counts": {
+          "total": {
+            "personnel": 13,
+            "vehicles": 5,
+            "artillery": 2,
+            "aircraft": 2,
+            "looseEquipment": 0
+          },
+          "byFaction": {
+            "usa": {
+              "personnel": 13,
+              "vehicles": 5,
+              "artillery": 2,
+              "aircraft": 2,
+              "looseEquipment": 0
+            }
+          },
+          "models": 22,
+          "groups": 8
+        },
+        "camera": {
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "distance": 118,
+          "yaw": 28,
+          "pitch": 48
+        }
+      }
+    },
+    {
+      "name": "窄屏布局与可见画布",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390,
+        "canvasWidth": 390,
+        "canvasHeight": 470,
+        "note": "桌面浏览器窄屏模拟，未测试真实手机性能"
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "screenshots": [
+    "fieldcamp-overview.png",
+    "fieldcamp-flight.png",
+    "fieldcamp-armor.png",
+    "fieldcamp-battery.png",
+    "fieldcamp-squad.png",
+    "fieldcamp-evening.png",
+    "fieldcamp-restored.png",
+    "fieldcamp-mobile.png"
+  ],
+  "passed": true,
+  "browser": "Edg/155.0.4283.45",
+  "finished": "2026-10-11T03:43:39.670Z"
+}

@@ -1,0 +1,77 @@
+/** PPSh-41 submachine gun - standalone catalog entry on the shared weapon display stand. */
+import type { AssetDef } from '../../core/types';
+import { buildPpsh41, ppshSectionLocal, ppshJacketSectionLocal } from './weapons/ppsh41.model';
+import { presentOnStand } from './weapons/common/stand';
+
+const def: AssetDef = {
+  id: 'su-ppsh41',
+  name: 'PPSh-41',
+  subtitle: 'Submachine gun, 7.62 x 25 mm Tokarev',
+  faction: 'soviet',
+  category: 'Weapons',
+  countAs: 'looseEquipment',
+  summary:
+    'Designed by Georgy Shpagin in 1941, the PPSh-41 is a blowback-operated, open-bolt submachine gun built largely ' +
+    'from stamped steel on a wooden stock, with a perforated barrel jacket that ends in a slanted muzzle compensator. ' +
+    'It fed from a 71-round drum or a 35-round box magazine; about six million were made.',
+  facts: [
+    { label: 'Calibre', value: '7.62 x 25 mm Tokarev' },
+    { label: 'Action', value: 'Blowback, open bolt, selective fire' },
+    { label: 'Length', value: '843 mm' },
+    { label: 'Barrel', value: '269 mm' },
+    { label: 'Weight', value: '3.63 kg empty; 5.45 kg with a loaded drum' },
+    { label: 'Magazine', value: '71-round drum or 35-round box' },
+    { label: 'Sights', value: 'Hooded post; L-type flip rear sight, 100 / 200 m' },
+    { label: 'Produced', value: '1941-1947, approx. 6 million' },
+  ],
+  status: 'available',
+  footprint: { w: 0.14, l: 0.86 },
+  spacing: { default: 0.34, min: 0.2, max: 1.5 },
+  maxQuantity: 40,
+  view: { yaw: 40, pitch: 16 },
+  order: 20,
+  options: [
+    {
+      kind: 'select',
+      id: 'magazine',
+      label: 'Magazine',
+      choices: [
+        { id: 'drum', label: '71-round drum' },
+        { id: 'box', label: '35-round box' },
+      ],
+      default: 'drum',
+    },
+    { kind: 'toggle', id: 'sling', label: 'Sling', default: true, note: 'Canvas sling on the left-side swivels' },
+  ],
+  build(config) {
+    const smg = buildPpsh41({ magazine: config.magazine === 'box' ? 'box' : 'drum' });
+    const [rear, front] = smg.restPoints;
+    return presentOnStand(smg, {
+      rest: [
+        { p: rear, contour: ppshSectionLocal(330) },
+        { p: front, contour: ppshJacketSectionLocal() },
+      ],
+      sling: config.sling !== false,
+      slingSlack: 0.03,
+      clearance: 0.02,
+      overhang: 0.07,
+    });
+  },
+  provenance: {
+    method: 'Procedurally modelled in TypeScript for this project (no external meshes).',
+    author: 'Muster project',
+    license: 'Project-owned; created for this project.',
+    textures: 'Procedural, generated in code at runtime.',
+    references: [
+      'https://en.wikipedia.org/wiki/PPSh-41',
+      'https://modernfirearms.net/en/submachine-guns/russia-submachine-guns/ppsh-41-eng/',
+      'https://www.historicalfirearms.info/post/101038117079/what-is-the-proper-way-to-hold-a-ppsh-41-when',
+    ],
+    notes:
+      'Represents a later-production PPSh-41 with the L-type flip rear sight. Overall and barrel lengths follow the ' +
+      'references; receiver and jacket diameters, the jacket slot pattern, drum size and stock profile are close ' +
+      'approximations from photographs. The drum and box magazine are shown closed (no internal spiral or cartridges); ' +
+      'the bolt is visible through the ejection port and handle slot, other internals are omitted. Markings are omitted.',
+  },
+};
+export default def;

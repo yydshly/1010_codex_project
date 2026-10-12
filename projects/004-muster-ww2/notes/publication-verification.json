@@ -1,0 +1,6 @@
+{
+  "date": "2026-10-12",
+  "status": "pending",
+  "scope": "准备接入既有 GitHub Pages；首次部署和 HTTPS 实测尚未完成。完成后以实际 Actions 和浏览器记录替换本条。",
+  "checks": []
+}

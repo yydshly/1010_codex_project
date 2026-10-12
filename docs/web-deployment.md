@@ -1,5 +1,13 @@
 # Web 部署与发布范围
 
+## 2026-10-12 · 004 发布接入
+
+本轮为 `004-muster-ww2/` 新增独立构建与资料打包，继续保留 001、002 路径。首页采用既有中文理解总图，发布完整摘要、五个实际应用、八个页面及全部笔记、图片、音频、布局和报告。机场与演习是浏览器内规则电脑玩法，无服务器、账号或模型密钥。
+
+在 004 的 web 目录执行 `npm ci`、`npm run test:battle`、`npm run test:airport`、`npm run build`、`npm run publication:check`。Pages 工作流增加其路径和步骤，根组装器新增固定项目目录及首页入口。预生成 PNG/SVG 随资料发布，CI 不生成图片。
+
+本轮整理时尚待首次部署与 HTTPS 实测；实际成功版本、地址及范围记录在 `projects/004-muster-ww2/notes/publication-verification.json`。验证后才登记公开演示地址。图及旧笔记保留制作时状态。
+
 ## 2026-10-12 · 002 已发布并验证
 
 首次部署 Actions 38217076338 成功；HTTPS 页面、3840×14460 总图及原始资料已实际核对，记录见 002 的 `notes/publication-verification.json`。

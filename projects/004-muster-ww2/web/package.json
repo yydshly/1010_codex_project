@@ -1,0 +1,42 @@
+{
+  "name": "muster-ww2-model-archive",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A hands-on 3D archive of WWII military models: browse, configure, place and inspect.",
+  "type": "module",
+  "scripts": {
+    "research:sync": "node scripts/sync-research.mjs",
+    "dev": "npm run research:sync && vite --port 5199 --strictPort",
+    "build": "npm run research:sync && tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview --port 5198",
+    "snap": "node scripts/snap.mjs",
+    "verify": "node scripts/verify.mjs",
+    "verify:camp": "node scripts/verify-camp.mjs",
+    "verify:motion": "node scripts/verify-motion.mjs",
+    "verify:subpath": "node scripts/verify-subpath.mjs",
+    "verify:realism": "node scripts/verify-realism.mjs",
+    "test:battle": "node scripts/test-battle.mjs",
+    "verify:battle": "node scripts/verify-battle.mjs",
+    "test:airport": "node scripts/test-airport.mjs",
+    "verify:airport": "node scripts/verify-airport.mjs",
+    "verify:hub": "node scripts/verify-hub.mjs",
+    "publication:check": "node scripts/check-publication.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "n8ao": "^2.0.1",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "puppeteer-core": "^25.11.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kenton-GMI/muster-ww2.git"
+  }
+}

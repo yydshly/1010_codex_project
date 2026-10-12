@@ -1,0 +1,445 @@
+{
+  "date": "2026-10-11T05:29:04.381Z",
+  "base": "http://127.0.0.1:5198/",
+  "checks": [
+    {
+      "name": "生产入口实际构建4辆机械装甲车与停机飞机；首次进入可开始演习",
+      "passed": true,
+      "detail": {
+        "render": {
+          "calls": 1023,
+          "triangles": 2703537
+        },
+        "tanks": [
+          {
+            "wheels": 16,
+            "tracks": [
+              79,
+              79,
+              79,
+              79,
+              79,
+              79
+            ],
+            "turrets": 1
+          },
+          {
+            "wheels": 14,
+            "tracks": [
+              83,
+              83,
+              83,
+              83
+            ],
+            "turrets": 1
+          },
+          {
+            "wheels": 14,
+            "tracks": [
+              83,
+              83,
+              83,
+              83
+            ],
+            "turrets": 1
+          },
+          {
+            "wheels": 14,
+            "tracks": [
+              83,
+              83,
+              83,
+              83
+            ],
+            "turrets": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "键盘驾驶与转向改变真实模型、轮角和履带；电脑主动运动",
+      "passed": true,
+      "detail": {
+        "player": {
+          "id": 0,
+          "team": "blue",
+          "x": -7.31151803196262,
+          "z": 9.865649095224253,
+          "hp": 220,
+          "maxHp": 220,
+          "heading": 1.8182963267948973,
+          "aim": 1.6045105243493083,
+          "speed": 6.149999999999997,
+          "distance": 4.700000000000002,
+          "turn": 0.24749999999999997,
+          "reload": 0,
+          "brain": "玩家",
+          "stuck": 0
+        },
+        "enemy": {
+          "id": 1,
+          "team": "red",
+          "x": 14.936049614833903,
+          "z": 8.18424557787288,
+          "hp": 80,
+          "maxHp": 80,
+          "heading": -1.8269212549796925,
+          "aim": -1.4953627716519773,
+          "speed": 3.2,
+          "distance": 4.150833333333336,
+          "turn": -0.25612492818479626,
+          "reload": 3.3333333333333384,
+          "brain": "瞄准交战",
+          "stuck": 0
+        },
+        "audio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "running",
+          "currentTime": 2.08,
+          "gain": 0.3499999940395355,
+          "rms": 0.0035346536260404435,
+          "engines": 4,
+          "activeSteps": 0,
+          "footsteps": 0,
+          "effects": 0,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "暂停同时冻结弹丸、车轮、AI、装填与音频时钟；继续和静音有效",
+      "passed": true,
+      "detail": {
+        "paused": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 3.752,
+          "gain": 0,
+          "rms": 0,
+          "engines": 4,
+          "activeSteps": 0,
+          "footsteps": 0,
+          "effects": 0,
+          "issue": ""
+        },
+        "resumed": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "running",
+          "currentTime": 4.192,
+          "gain": 0.3499999940395355,
+          "rms": 0.003804132263690669,
+          "engines": 4,
+          "activeSteps": 0,
+          "footsteps": 0,
+          "effects": 0,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "真实鼠标瞄准与连续开火：命中扣血、装填、击败全部红队并显示胜利",
+      "passed": true,
+      "detail": {
+        "time": 13.30000000000024,
+        "kills": 3,
+        "playerHP": 175,
+        "history": [
+          {
+            "kind": "shot",
+            "unit": 1,
+            "x": 4.2583589023040895,
+            "z": 7.013871870952753,
+            "text": "红队 1 开火",
+            "time": 4.816666666666655
+          },
+          {
+            "kind": "shot",
+            "unit": 0,
+            "x": -9.07152326498468,
+            "z": 9.905533008547893,
+            "text": "主炮开火",
+            "time": 4.949999999999988
+          },
+          {
+            "kind": "hit",
+            "unit": 1,
+            "target": 0,
+            "x": -10.377145383463791,
+            "z": 9.701934749447181,
+            "text": "装甲受击",
+            "time": 5.033333333333321
+          },
+          {
+            "kind": "shot",
+            "unit": 2,
+            "x": 10.04099345591173,
+            "z": 4.213952017152931,
+            "text": "红队 2 开火",
+            "time": 5.616666666666652
+          },
+          {
+            "kind": "hit",
+            "unit": 2,
+            "target": 0,
+            "x": -10.404074014135073,
+            "z": 9.581048633322364,
+            "text": "装甲受击",
+            "time": 5.933333333333318
+          },
+          {
+            "kind": "shot",
+            "unit": 0,
+            "x": -9.118203625718023,
+            "z": 9.470708343939515,
+            "text": "主炮开火",
+            "time": 6.299999999999983
+          },
+          {
+            "kind": "shot",
+            "unit": 3,
+            "x": 2.953478217278683,
+            "z": 1.9985711234805215,
+            "text": "红队 3 开火",
+            "time": 6.416666666666649
+          },
+          {
+            "kind": "hit",
+            "unit": 0,
+            "target": 1,
+            "x": 6.52051984832015,
+            "z": 6.598386787803182,
+            "text": "命中红队 1 · −40",
+            "time": 6.5333333333333155
+          },
+          {
+            "kind": "hit",
+            "unit": 3,
+            "target": 0,
+            "x": -10.545179044959822,
+            "z": 9.221542558147215,
+            "text": "装甲受击",
+            "time": 6.649999999999982
+          },
+          {
+            "kind": "shot",
+            "unit": 0,
+            "x": -9.118203625718023,
+            "z": 9.470708343939515,
+            "text": "主炮开火",
+            "time": 7.649999999999978
+          },
+          {
+            "kind": "hit",
+            "unit": 0,
+            "target": 1,
+            "x": 6.52051984832015,
+            "z": 6.598386787803182,
+            "text": "命中红队 1 · −40",
+            "time": 7.883333333333311
+          },
+          {
+            "kind": "destroyed",
+            "unit": 1,
+            "x": 8.143374499466528,
+            "z": 6.300321725689944,
+            "text": "红队 1 已退出演习",
+            "time": 7.883333333333311
+          },
+          {
+            "kind": "shot",
+            "unit": 0,
+            "x": -9.180013180902229,
+            "z": 9.204654578114114,
+            "text": "主炮开火",
+            "time": 9.000000000000027
+          },
+          {
+            "kind": "hit",
+            "unit": 0,
+            "target": 2,
+            "x": 8.08357380627817,
+            "z": 4.335654913790998,
+            "text": "命中红队 2 · −40",
+            "time": 9.266666666666707
+          },
+          {
+            "kind": "shot",
+            "unit": 0,
+            "x": -9.147516343454706,
+            "z": 9.330494967052534,
+            "text": "主炮开火",
+            "time": 10.350000000000094
+          },
+          {
+            "kind": "shot",
+            "unit": 2,
+            "x": 4.120274973726104,
+            "z": 6.216417699045184,
+            "text": "红队 2 开火",
+            "time": 10.433333333333431
+          },
+          {
+            "kind": "hit",
+            "unit": 0,
+            "target": 2,
+            "x": 6.359426079941341,
+            "z": 5.690868154724344,
+            "text": "命中红队 2 · −40",
+            "time": 10.583333333333439
+          },
+          {
+            "kind": "destroyed",
+            "unit": 2,
+            "x": 7.9657733915952065,
+            "z": 5.313842539755814,
+            "text": "红队 2 已退出演习",
+            "time": 10.583333333333439
+          },
+          {
+            "kind": "hit",
+            "unit": 2,
+            "target": 0,
+            "x": -10.393652559624298,
+            "z": 9.622974933461405,
+            "text": "装甲受击",
+            "time": 10.650000000000109
+          },
+          {
+            "kind": "shot",
+            "unit": 3,
+            "x": 2.9534782172786627,
+            "z": 1.9985711234805075,
+            "text": "红队 3 开火",
+            "time": 11.233333333333471
+          },
+          {
+            "kind": "hit",
+            "unit": 3,
+            "target": 0,
+            "x": -10.545179044959823,
+            "z": 9.221542558147211,
+            "text": "装甲受击",
+            "time": 11.466666666666816
+          },
+          {
+            "kind": "shot",
+            "unit": 0,
+            "x": -9.41659063482128,
+            "z": 8.617648361701377,
+            "text": "主炮开火",
+            "time": 11.700000000000161
+          },
+          {
+            "kind": "hit",
+            "unit": 0,
+            "target": 3,
+            "x": 4.981410673866675,
+            "z": 0.9134490328762228,
+            "text": "命中红队 3 · −40",
+            "time": 11.950000000000173
+          },
+          {
+            "kind": "shot",
+            "unit": 0,
+            "x": -9.41659063482128,
+            "z": 8.617648361701377,
+            "text": "主炮开火",
+            "time": 13.050000000000228
+          },
+          {
+            "kind": "hit",
+            "unit": 0,
+            "target": 3,
+            "x": 4.981410673866675,
+            "z": 0.9134490328762228,
+            "text": "命中红队 3 · −40",
+            "time": 13.30000000000024
+          },
+          {
+            "kind": "destroyed",
+            "unit": 3,
+            "x": 6.436231412677874,
+            "z": 0.13499118692383227,
+            "text": "红队 3 已退出演习",
+            "time": 13.30000000000024
+          },
+          {
+            "kind": "won",
+            "unit": 0,
+            "id": 0,
+            "team": "blue",
+            "x": -12,
+            "z": 10,
+            "hp": 175,
+            "maxHp": 220,
+            "heading": 1.5707963267948966,
+            "aim": 2.062118834220511,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 1.100000000000001,
+            "brain": "玩家",
+            "stuck": 0,
+            "text": "红队全部退出，演习胜利！",
+            "time": 13.30000000000024
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "volume": 0.55,
+          "context": "suspended",
+          "currentTime": 22.36,
+          "gain": 0,
+          "rms": 0,
+          "engines": 4,
+          "activeSteps": 0,
+          "footsteps": 0,
+          "effects": 26,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "重开恢复完整初始战况；标准模式真实电脑射击导致失败",
+      "passed": true,
+      "detail": {
+        "time": 12.533333333333536,
+        "hits": 8
+      }
+    },
+    {
+      "name": "切换后台自动暂停；390px触控驾驶、瞄准与开火控件实际可用",
+      "passed": true,
+      "detail": {
+        "hidden": "paused",
+        "mobile": [
+          390,
+          844
+        ],
+        "playerDistance": 1.575000000000001
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "screenshots": [
+    "battle-ready.png",
+    "battle-driving.png",
+    "battle-paused.png",
+    "battle-combat.png",
+    "battle-victory.png",
+    "battle-defeat.png",
+    "battle-mobile-ready.png",
+    "battle-mobile.png"
+  ],
+  "passed": true,
+  "browser": "Edg/155.0.4283.45",
+  "finished": "2026-10-11T05:30:09.986Z"
+}

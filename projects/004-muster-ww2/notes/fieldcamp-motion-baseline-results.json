@@ -1,0 +1,545 @@
+{
+  "date": "2026-10-11T03:04:22.517Z",
+  "base": "http://127.0.0.1:5198/",
+  "checks": [
+    {
+      "name": "静态布置与 26 个真实实例",
+      "passed": true,
+      "detail": {
+        "instances": 26,
+        "groups": 8
+      }
+    },
+    {
+      "name": "启动：5 辆车、12 名巡逻士兵、2 架飞机使用现有模型",
+      "passed": true,
+      "detail": {
+        "time": [
+          0.1665,
+          1.508300000000003
+        ],
+        "actors": [
+          {
+            "groupId": "transport",
+            "slot": 0,
+            "assetId": "us-willys-mb",
+            "kind": "jeep",
+            "position": [
+              -11.379128037938246,
+              0,
+              4.293263807092611
+            ],
+            "quaternion": [
+              0,
+              0.7568941992546442,
+              0,
+              0.6535374290235189
+            ],
+            "gaitOrPropeller": 0
+          },
+          {
+            "groupId": "transport",
+            "slot": 1,
+            "assetId": "us-willys-mb",
+            "kind": "jeep",
+            "position": [
+              0.18460066226069333,
+              0,
+              14.490149897023267
+            ],
+            "quaternion": [
+              0,
+              -0.6403560056503994,
+              0,
+              0.7680782421260647
+            ],
+            "gaitOrPropeller": 0
+          },
+          {
+            "groupId": "armor",
+            "slot": 0,
+            "assetId": "us-m4a3-sherman",
+            "kind": "armor",
+            "position": [
+              14.292292587934194,
+              0,
+              -5.351709489628597
+            ],
+            "quaternion": [
+              0,
+              0.7700401699657965,
+              0,
+              0.6379954048729874
+            ],
+            "gaitOrPropeller": 0
+          },
+          {
+            "groupId": "armor",
+            "slot": 1,
+            "assetId": "us-m4a3-sherman",
+            "kind": "armor",
+            "position": [
+              27.512827813454564,
+              0,
+              -4.750277420160802
+            ],
+            "quaternion": [
+              0,
+              0.5045268807294685,
+              0,
+              0.863395984830479
+            ],
+            "gaitOrPropeller": 0
+          },
+          {
+            "groupId": "recon",
+            "slot": 0,
+            "assetId": "us-m18-hellcat",
+            "kind": "armor",
+            "position": [
+              19.042098801766087,
+              0,
+              -0.24201232869035394
+            ],
+            "quaternion": [
+              0,
+              -0.7140886395389696,
+              0,
+              0.7000552941599567
+            ],
+            "gaitOrPropeller": 0
+          },
+          {
+            "groupId": "squad",
+            "slot": 0,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              13.158444492468705,
+              0.04572233810978861,
+              6.682838650335242
+            ],
+            "quaternion": [
+              -0.0051575484363162935,
+              0.7696039689093129,
+              -0.004278855646755276,
+              0.6384863523424089
+            ],
+            "gaitOrPropeller": 10.52992044313221
+          },
+          {
+            "groupId": "squad",
+            "slot": 1,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              16.139273923970674,
+              0.04667199651836465,
+              6.398897916984332
+            ],
+            "quaternion": [
+              -0.005234002207146146,
+              0.7174655136510183,
+              -0.005081463385483196,
+              0.696555827390912
+            ],
+            "gaitOrPropeller": 11.22992044313221
+          },
+          {
+            "groupId": "squad",
+            "slot": 2,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              19.13365425104448,
+              0.042132132584377285,
+              6.466948013270153
+            ],
+            "quaternion": [
+              -0.0030249201152421426,
+              0.678596488627696,
+              -0.0032741062430786364,
+              0.7344977438418492
+            ],
+            "gaitOrPropeller": 11.929920443132211
+          },
+          {
+            "groupId": "squad",
+            "slot": 3,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              22.064948643498887,
+              0.035762084746688454,
+              7.0276261038157095
+            ],
+            "quaternion": [
+              0.00026085406029093325,
+              0.547664110477511,
+              0.0003985218414871842,
+              0.8366981506077192
+            ],
+            "gaitOrPropeller": 12.62992044313221
+          },
+          {
+            "groupId": "squad",
+            "slot": 4,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              24.057558778274434,
+              0.04329788171348396,
+              9.154046738591669
+            ],
+            "quaternion": [
+              0.0008341835931086591,
+              0.1608460844436171,
+              0.005118624701356551,
+              0.9869658762784337
+            ],
+            "gaitOrPropeller": 13.32992044313221
+          },
+          {
+            "groupId": "squad",
+            "slot": 5,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              23.426326633914066,
+              0.04693105525244963,
+              11.94617380553639
+            ],
+            "quaternion": [
+              -0.002531664164041557,
+              -0.33949952428971103,
+              0.007013925127275562,
+              0.9405766680807733
+            ],
+            "gaitOrPropeller": 14.02992044313221
+          },
+          {
+            "groupId": "squad",
+            "slot": 6,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              20.841555507531304,
+              0.04495286707830735,
+              13.317161349664756
+            ],
+            "quaternion": [
+              -0.0039717946937000235,
+              -0.6384883362913223,
+              0.00478743037928757,
+              0.7696063602759621
+            ],
+            "gaitOrPropeller": 14.72992044313221
+          },
+          {
+            "groupId": "squad",
+            "slot": 7,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              17.860726076029334,
+              0.0382936899993991,
+              13.601102083015668
+            ],
+            "quaternion": [
+              -0.0014339364936850215,
+              -0.6965728861852736,
+              0.001476981373967241,
+              0.7174830845279008
+            ],
+            "gaitOrPropeller": 15.429920443132211
+          },
+          {
+            "groupId": "squad",
+            "slot": 8,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              14.866345748955517,
+              0.039914560951552436,
+              13.533051986729847
+            ],
+            "quaternion": [
+              0.0022561025736095855,
+              -0.734501576228168,
+              -0.0020843948089307326,
+              0.6786000293381915
+            ],
+            "gaitOrPropeller": 16.12992044313221
+          },
+          {
+            "groupId": "squad",
+            "slot": 9,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              11.935051356501122,
+              0.0458114170948557,
+              12.972373896184294
+            ],
+            "quaternion": [
+              0.00565364054837577,
+              -0.8366791442354727,
+              -0.0037006129625561392,
+              0.5476516697807541
+            ],
+            "gaitOrPropeller": 16.82992044313221
+          },
+          {
+            "groupId": "squad",
+            "slot": 10,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              9.94244122172557,
+              0.04662349484539625,
+              10.845953261408342
+            ],
+            "quaternion": [
+              0.0071700288418539175,
+              -0.9869531052400864,
+              -0.0011685014571266913,
+              0.16084400314498068
+            ],
+            "gaitOrPropeller": 17.529920443132212
+          },
+          {
+            "groupId": "squad",
+            "slot": 11,
+            "assetId": "us-rifleman",
+            "kind": "patrol",
+            "position": [
+              10.57367336608593,
+              0.04196886134803002,
+              8.053826194463614
+            ],
+            "quaternion": [
+              -0.004096818691271348,
+              0.940593897365136,
+              -0.0014787396328082183,
+              0.3395057431696452
+            ],
+            "gaitOrPropeller": 18.229920443132208
+          },
+          {
+            "groupId": "flight",
+            "slot": 0,
+            "assetId": "us-p51d",
+            "kind": "aircraft",
+            "position": [
+              -25.94163931885199,
+              0,
+              -5.053586243890782
+            ],
+            "quaternion": [
+              0,
+              -0.3794056297114132,
+              0,
+              0.9252304405623963
+            ],
+            "gaitOrPropeller": 66.33849879173293
+          },
+          {
+            "groupId": "flight",
+            "slot": 1,
+            "assetId": "us-p51d",
+            "kind": "aircraft",
+            "position": [
+              -10.5,
+              0,
+              -8
+            ],
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "gaitOrPropeller": 66.33849879173293
+          }
+        ],
+        "render": {
+          "frames": 17,
+          "lastMs": 28.2,
+          "avgMs": 163.9,
+          "maxMs": 1589.2
+        }
+      }
+    },
+    {
+      "name": "暂停冻结全部位置、朝向、步态与桨叶；继续保持时间",
+      "passed": true,
+      "detail": {
+        "pausedAt": 1.699800000000003,
+        "resumedAt": 2.466400000000002
+      }
+    },
+    {
+      "name": "真实起降阶段、飞机跟随视角与实际截图",
+      "passed": true,
+      "detail": {
+        "takeoff": {
+          "groupId": "flight",
+          "slot": 0,
+          "assetId": "us-p51d",
+          "kind": "aircraft",
+          "position": [
+            -6.613585424364523,
+            1.238727899065045,
+            -36
+          ],
+          "quaternion": [
+            -0.027414427903812193,
+            0.7065751546316262,
+            0.02741442790381219,
+            0.7065751546316263
+          ],
+          "gaitOrPropeller": 1099.5574287564277
+        },
+        "flight": {
+          "groupId": "flight",
+          "slot": 0,
+          "assetId": "us-p51d",
+          "kind": "aircraft",
+          "position": [
+            24.034229644093593,
+            14.251375653611541,
+            -30.269775271122285
+          ],
+          "quaternion": [
+            -0.051577696988838115,
+            0.39245631384848245,
+            0.047283265303333724,
+            0.9171052697024719
+          ],
+          "gaitOrPropeller": 1407.4335088082273
+        },
+        "approach": {
+          "groupId": "flight",
+          "slot": 0,
+          "assetId": "us-p51d",
+          "kind": "aircraft",
+          "position": [
+            -38.98512390537816,
+            4.258422919098268,
+            -36
+          ],
+          "quaternion": [
+            0.19880902964684705,
+            0.6785830603035115,
+            -0.19880902964684702,
+            0.6785830603035116
+          ],
+          "gaitOrPropeller": 2506.990937564655
+        },
+        "landing": {
+          "groupId": "flight",
+          "slot": 0,
+          "assetId": "us-p51d",
+          "kind": "aircraft",
+          "position": [
+            -13.551024594572544,
+            0,
+            -36
+          ],
+          "quaternion": [
+            0,
+            0.7071067811865475,
+            0,
+            0.7071067811865476
+          ],
+          "gaitOrPropeller": 2858.8493147667114
+        },
+        "returned": {
+          "groupId": "flight",
+          "slot": 0,
+          "assetId": "us-p51d",
+          "kind": "aircraft",
+          "position": [
+            -25.5,
+            0,
+            -8.000500000000002
+          ],
+          "quaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "gaitOrPropeller": 3870.4421492226247
+        }
+      }
+    },
+    {
+      "name": "倍速、90 秒循环接缝与重播",
+      "passed": true,
+      "detail": {
+        "loopTime": 1.4668000000000092,
+        "restartedAt": 0,
+        "render": {
+          "frames": 71,
+          "lastMs": 30.8,
+          "avgMs": 62.06,
+          "maxMs": 1589.2
+        }
+      }
+    },
+    {
+      "name": "返回布置恢复原位，动态不污染保存，刷新保持静态编辑",
+      "passed": true,
+      "detail": {
+        "groupsUnchanged": true,
+        "posesRestored": true
+      }
+    },
+    {
+      "name": "窄屏暂停、继续与控件可用",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390,
+        "controls": [
+          {
+            "left": 23,
+            "right": 150
+          },
+          {
+            "left": 155,
+            "right": 205
+          },
+          {
+            "left": 210,
+            "right": 270
+          },
+          {
+            "left": 309,
+            "right": 367
+          }
+        ],
+        "note": "桌面 Edge 窄屏模拟，未测试真实手机性能"
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "screenshots": [
+    "fieldcamp-motion-takeoff.png",
+    "fieldcamp-motion-flight.png",
+    "fieldcamp-motion-approach.png",
+    "fieldcamp-motion-landing.png",
+    "fieldcamp-motion-patrol.png",
+    "fieldcamp-motion-convoy.png",
+    "fieldcamp-motion-mobile.png"
+  ],
+  "passed": true,
+  "browser": "Edg/155.0.4283.45",
+  "finished": "2026-10-11T03:05:47.441Z"
+}

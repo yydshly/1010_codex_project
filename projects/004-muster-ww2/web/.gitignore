@@ -1,0 +1,16 @@
+node_modules
+dist
+public/research/
+.snaps
+*.log
+.snaps-devserver.log
+
+# local video/audio recordings (not part of the project)
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.m4a
+HANDOFF.md

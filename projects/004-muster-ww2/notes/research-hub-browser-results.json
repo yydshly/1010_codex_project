@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-11T11:09:30.218Z",
+  "base": "http://127.0.0.1:5198/",
+  "scope": "网页资料、入口、全文、五个真实内嵌体验与窄屏",
+  "checks": [
+    {
+      "name": "资料清单覆盖源目录，所有打包文件保持原始 SHA-256",
+      "passed": true,
+      "ms": 926,
+      "detail": {
+        "files": 127,
+        "counts": {
+          "document": 32,
+          "image": 66,
+          "audio": 1,
+          "report": 28
+        }
+      }
+    },
+    {
+      "name": "首页引导、六问、五个体验入口与全部资料 HTTP 可达",
+      "passed": true,
+      "ms": 1023,
+      "detail": {
+        "links": 29,
+        "resources": 163
+      }
+    },
+    {
+      "name": "全部文档在网页全文阅读，中文笔记、规范与完整许可证无截断",
+      "passed": true,
+      "ms": 1606,
+      "detail": {
+        "documents": 32
+      }
+    },
+    {
+      "name": "全部截图、阶段检索与原始报告网页完整呈现",
+      "passed": true,
+      "ms": 2662,
+      "detail": {
+        "images": 66,
+        "reports": 28
+      }
+    },
+    {
+      "name": "首页实际录音可以解码与播放，非占位音频",
+      "passed": true,
+      "ms": 74,
+      "detail": {
+        "duration": 2.632,
+        "readyState": 4,
+        "paused": false
+      }
+    },
+    {
+      "name": "首页内嵌动态营地：真实模型与19个动作，父页面暂停继续及离开体验停声",
+      "passed": true,
+      "ms": 22212,
+      "detail": {
+        "catalog": 74,
+        "models": 26,
+        "actors": 19,
+        "pausedAudio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 6.450666666666667,
+          "gain": 0,
+          "rms": 0,
+          "engines": 7,
+          "activeSteps": 0,
+          "footsteps": 30,
+          "effects": 0,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "首页内嵌机场任务：真实小队下令、切车、暂停继续与声音同步",
+      "passed": true,
+      "ms": 20873,
+      "detail": {
+        "mode": "airport",
+        "squadOrder": "move",
+        "selected": 0,
+        "pausedAudio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 1.3413333333333333,
+          "gain": 0,
+          "rms": 0,
+          "engines": 8,
+          "activeSteps": 0,
+          "footsteps": 10,
+          "effects": 0,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "首页内嵌协同自由演习：独立入口、三车切换与真实战斗状态",
+      "passed": true,
+      "ms": 23009,
+      "detail": {
+        "mode": "skirmish",
+        "models": 6,
+        "soldiers": 10,
+        "aircraft": 2
+      }
+    },
+    {
+      "name": "首页内嵌完整模型目录与展柜，使用独立单模型布局检查真实渲染",
+      "passed": true,
+      "ms": 8005,
+      "detail": {
+        "catalog": 74,
+        "rendered": 1,
+        "issues": []
+      }
+    },
+    {
+      "name": "首页六视图审查与真实侧裙配置，配置后几何统计改变",
+      "passed": true,
+      "ms": 4876,
+      "detail": {
+        "fitted": 364742,
+        "removed": 353990
+      }
+    },
+    {
+      "name": "390px首页、研究全文与证据页面无横向溢出，所有体验入口保留",
+      "passed": true,
+      "ms": 1153,
+      "detail": [
+        {
+          "page": "./",
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "page": "research.html?doc=notes%2Fairport-defense.md",
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "page": "evidence.html",
+          "width": 390,
+          "scrollWidth": 390
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "passed": true,
+  "materialCounts": {
+    "document": 32,
+    "image": 66,
+    "audio": 1,
+    "report": 28
+  },
+  "finished": "2026-10-11T11:10:57.192Z"
+}

@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-12T07:33:35.080Z",
+  "method": "本地原生排版；原始 PNG 直接嵌入；内置 imagegen 两次网络失败后未使用 API 回退",
+  "passed": true,
+  "checks": [
+    {
+      "name": "首页总图预览与下载入口，输出尺寸一致",
+      "passed": true,
+      "width": 3840,
+      "height": 4886
+    },
+    {
+      "name": "390px 首页无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "可编辑 SVG 实际渲染，九个模块与十张截图，无裁切或溢出",
+      "passed": true,
+      "height": 4886
+    },
+    {
+      "name": "浏览器无运行错误",
+      "passed": true
+    },
+    {
+      "name": "十张嵌入 PNG 与原始文件二进制完全一致",
+      "passed": true
+    },
+    {
+      "name": "生产网页图片字节与最终源文件一致",
+      "passed": true
+    }
+  ],
+  "originals": [
+    {
+      "name": "cover.png",
+      "bytes": 628209,
+      "sha256": "efb128010eaa05d2bf3f17f5cafd7c02cbd2b488de6f29e1547625b5854af6e0"
+    },
+    {
+      "name": "panzer-fitted.png",
+      "bytes": 743776,
+      "sha256": "c90f00f3334fcebe8042009242dba8d6be62d372ee94663426c8e728d4ebee3b"
+    },
+    {
+      "name": "fieldcamp-overview.png",
+      "bytes": 597292,
+      "sha256": "d69992b31b754386c2164291593a0eff7d88897935ea0d1e9688e6f24a6492d1"
+    },
+    {
+      "name": "fieldcamp-realism-convoy.png",
+      "bytes": 959818,
+      "sha256": "3fd457fd916a6534d5b1752cc2e75706999cbdc1df6f766882062caac92e4ef4"
+    },
+    {
+      "name": "battle-combined-combat.png",
+      "bytes": 680661,
+      "sha256": "6ef14af91e428030da582c348c313e197a3c2642ed88d39854d275e33fa46bd3"
+    },
+    {
+      "name": "airport-wave-two.png",
+      "bytes": 540107,
+      "sha256": "dd667197f5b4c52471aecb8a2ecdcdf941b48192e29a334dd69ebf08dc435280"
+    },
+    {
+      "name": "fieldcamp-realism-gear-down.png",
+      "bytes": 270858,
+      "sha256": "5f3d83949512286fec74e13f88b986379f98a06ca45ca8750c6532742e7579c5"
+    },
+    {
+      "name": "fieldcamp-realism-gear-up.png",
+      "bytes": 577650,
+      "sha256": "f6627decb52aeb63fc4f84aeb75af65dcc24b057b8fa68bee661e0a114a36dcb"
+    },
+    {
+      "name": "fieldcamp-realism-patrol.png",
+      "bytes": 820774,
+      "sha256": "a80b234fdb770fb2fed06d5421fb52e6069c95fa75a056e5a8ed4c912573fffd"
+    },
+    {
+      "name": "airport-supply-loaded.png",
+      "bytes": 483757,
+      "sha256": "802c368bed5880eb0474223f29d8d10b7938652dbb1a6a2ce68679bbf9d00b0e"
+    }
+  ],
+  "output": {
+    "png": {
+      "name": "research-hub-overview.png",
+      "width": 3840,
+      "height": 4886,
+      "bytes": 3250040,
+      "sha256": "c83b72a0b575c66886586d6ba3cbe8025da478f6f88e20f71593ce3bde8b5e8b"
+    },
+    "svg": {
+      "name": "research-hub-overview-source.svg",
+      "bytes": 8424755,
+      "sha256": "e51dcf07c3989a7dd42be8d10f34389cd5e20453b937216774559c4682563aed"
+    }
+  },
+  "finished": "2026-10-12T07:33:40.158Z"
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Review Harness</title>
+    <style>
+      html, body { margin: 0; background: #1b1a18; color: #e8e2d6; font: 12px/1.4 system-ui, sans-serif; }
+      #out { display: block; max-width: 100%; height: auto; }
+      nav { padding: 12px; display: flex; gap: 20px; }
+      nav a { color: #cfdbb9; }
+      #log { padding: 8px 12px; white-space: pre-wrap; }
+    </style>
+  </head>
+  <body>
+    <nav aria-label="相关页面"><a href="./">研究首页</a><a href="./archive.html">模型资料库</a></nav>
+    <canvas id="out"></canvas>
+    <div id="log"></div>
+    <script type="module" src="/src/harness/main.ts"></script>
+  </body>
+</html>

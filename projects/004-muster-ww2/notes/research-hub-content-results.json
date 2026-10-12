@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-12T07:30:56.364Z",
+  "base": "http://127.0.0.1:5198/",
+  "scope": "网页资料、入口、全文与窄屏（不重复3D）",
+  "checks": [
+    {
+      "name": "资料清单覆盖源目录，所有打包文件保持原始 SHA-256",
+      "passed": true,
+      "ms": 4194,
+      "detail": {
+        "files": 134,
+        "counts": {
+          "document": 33,
+          "image": 70,
+          "audio": 1,
+          "report": 30
+        }
+      }
+    },
+    {
+      "name": "首页引导、六问、五个体验入口与全部资料 HTTP 可达",
+      "passed": true,
+      "ms": 12802,
+      "detail": {
+        "links": 37,
+        "resources": 178
+      }
+    },
+    {
+      "name": "全部文档在网页全文阅读，中文笔记、规范与完整许可证无截断",
+      "passed": true,
+      "ms": 8874,
+      "detail": {
+        "documents": 33
+      }
+    },
+    {
+      "name": "全部截图、阶段检索与原始报告网页完整呈现",
+      "passed": true,
+      "ms": 13621,
+      "detail": {
+        "images": 70,
+        "reports": 30
+      }
+    },
+    {
+      "name": "首页实际录音可以解码与播放，非占位音频",
+      "passed": true,
+      "ms": 283,
+      "detail": {
+        "duration": 2.632,
+        "readyState": 4,
+        "paused": false
+      }
+    },
+    {
+      "name": "390px首页、研究全文与证据页面无横向溢出，所有体验入口保留",
+      "passed": true,
+      "ms": 4380,
+      "detail": [
+        {
+          "page": "./",
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "page": "research.html?doc=notes%2Fairport-defense.md",
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "page": "evidence.html",
+          "width": 390,
+          "scrollWidth": 390
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "warnings": [],
+  "passed": true,
+  "materialCounts": {
+    "document": 33,
+    "image": 70,
+    "audio": 1,
+    "report": 30
+  },
+  "finished": "2026-10-12T07:31:41.737Z"
+}

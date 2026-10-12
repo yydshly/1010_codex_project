@@ -1,0 +1,1073 @@
+{
+  "date": "2026-10-11T09:24:25.789Z",
+  "base": "http://127.0.0.1:5198/",
+  "checks": [
+    {
+      "name": "生产入口构建6辆机械车辆、10名持枪步兵与2架空袭飞机",
+      "passed": true,
+      "detail": {
+        "render": {
+          "calls": 1608,
+          "triangles": 7287213
+        },
+        "vehicles": [
+          {
+            "id": 0,
+            "team": "blue",
+            "kind": "sherman",
+            "x": -12,
+            "z": 10,
+            "hp": 220,
+            "maxHp": 220,
+            "heading": 1.5707963267948966,
+            "aim": 1.5707963267948966,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 0,
+            "brain": "玩家",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 1,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 19,
+            "z": 9,
+            "hp": 80,
+            "maxHp": 80,
+            "heading": -1.5707963267948966,
+            "aim": -1.5707963267948966,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 4.8,
+            "brain": "争夺通信区",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 2,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 24,
+            "z": -9,
+            "hp": 80,
+            "maxHp": 80,
+            "heading": -1.5707963267948966,
+            "aim": -1.5707963267948966,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 5.6,
+            "brain": "争夺通信区",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 3,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 8,
+            "z": -13,
+            "hp": 80,
+            "maxHp": 80,
+            "heading": -1.5707963267948966,
+            "aim": -1.5707963267948966,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 6.4,
+            "brain": "争夺通信区",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 4,
+            "team": "blue",
+            "kind": "hellcat",
+            "x": -18,
+            "z": 14,
+            "hp": 150,
+            "maxHp": 150,
+            "heading": 1.5707963267948966,
+            "aim": 1.5707963267948966,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 0,
+            "brain": "留守掩护",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 5,
+            "team": "blue",
+            "kind": "jeep",
+            "x": -20,
+            "z": 7,
+            "hp": 90,
+            "maxHp": 90,
+            "heading": 1.5707963267948966,
+            "aim": 1.5707963267948966,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 0,
+            "brain": "留守掩护",
+            "stuck": 0,
+            "assistReadyAt": 0
+          }
+        ],
+        "soldiers": [
+          {
+            "id": 100,
+            "team": "blue",
+            "x": -5,
+            "z": 5,
+            "hp": 45,
+            "maxHp": 45,
+            "heading": 1.5707963267948966,
+            "reload": 0.7,
+            "distance": 0,
+            "speed": 0,
+            "phase": 0,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 101,
+            "team": "blue",
+            "x": -5,
+            "z": 8,
+            "hp": 45,
+            "maxHp": 45,
+            "heading": 1.5707963267948966,
+            "reload": 0.87,
+            "distance": 0,
+            "speed": 0,
+            "phase": 3.141592653589793,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 102,
+            "team": "blue",
+            "x": -9,
+            "z": 5,
+            "hp": 45,
+            "maxHp": 45,
+            "heading": 1.5707963267948966,
+            "reload": 1.04,
+            "distance": 0,
+            "speed": 0,
+            "phase": 6.283185307179586,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 103,
+            "team": "blue",
+            "x": -9,
+            "z": 8,
+            "hp": 45,
+            "maxHp": 45,
+            "heading": 1.5707963267948966,
+            "reload": 1.21,
+            "distance": 0,
+            "speed": 0,
+            "phase": 9.42477796076938,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 104,
+            "team": "red",
+            "x": 8,
+            "z": 6,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.5707963267948966,
+            "reload": 1.38,
+            "distance": 0,
+            "speed": 0,
+            "phase": 12.566370614359172,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 105,
+            "team": "red",
+            "x": 11,
+            "z": 8,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.5707963267948966,
+            "reload": 1.55,
+            "distance": 0,
+            "speed": 0,
+            "phase": 15.707963267948966,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 106,
+            "team": "red",
+            "x": 14,
+            "z": 7,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.5707963267948966,
+            "reload": 1.72,
+            "distance": 0,
+            "speed": 0,
+            "phase": 18.84955592153876,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 107,
+            "team": "red",
+            "x": 16,
+            "z": 11,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.5707963267948966,
+            "reload": 1.8900000000000001,
+            "distance": 0,
+            "speed": 0,
+            "phase": 21.991148575128552,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 108,
+            "team": "red",
+            "x": 16,
+            "z": 14,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.5707963267948966,
+            "reload": 2.06,
+            "distance": 0,
+            "speed": 0,
+            "phase": 25.132741228718345,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 109,
+            "team": "red",
+            "x": 11,
+            "z": 13,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.5707963267948966,
+            "reload": 2.23,
+            "distance": 0,
+            "speed": 0,
+            "phase": 28.274333882308138,
+            "firing": 0,
+            "brain": "接近通信区"
+          }
+        ]
+      }
+    },
+    {
+      "name": "步兵真的交火、移动、推进步态；弹道命中扣血，有枪声和脚步",
+      "passed": true,
+      "detail": {
+        "infantry": [
+          {
+            "id": 100,
+            "team": "blue",
+            "x": -5,
+            "z": 5,
+            "hp": 45,
+            "maxHp": 45,
+            "heading": 1.3854483767992019,
+            "reload": 0.4166666666666661,
+            "distance": 0,
+            "speed": 0,
+            "phase": 0,
+            "firing": 0,
+            "brain": "步兵交火"
+          },
+          {
+            "id": 101,
+            "team": "blue",
+            "x": -5,
+            "z": 8,
+            "hp": 45,
+            "maxHp": 45,
+            "heading": 1.5707963267948966,
+            "reload": 0.7500000000000008,
+            "distance": 0,
+            "speed": 0,
+            "phase": 3.141592653589793,
+            "firing": 0,
+            "brain": "步兵交火"
+          },
+          {
+            "id": 102,
+            "team": "blue",
+            "x": -8.459165558488547,
+            "z": 4.9584016170783105,
+            "hp": 45,
+            "maxHp": 45,
+            "heading": 1.6521190973645377,
+            "reload": 0.6166666666666659,
+            "distance": 0.5424999999999904,
+            "speed": 1.549999999999971,
+            "phase": 9.123708664800313,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 103,
+            "team": "blue",
+            "x": -8.380034027646131,
+            "z": 7.9987190631606,
+            "hp": 45,
+            "maxHp": 45,
+            "heading": 1.5707005918488688,
+            "reload": 0.933333333333334,
+            "distance": 0.6199999999999909,
+            "speed": 1.5499999999999785,
+            "phase": 12.67109036947878,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 104,
+            "team": "red",
+            "x": 8,
+            "z": 6,
+            "hp": 0,
+            "maxHp": 36,
+            "heading": -1.6475682180646747,
+            "reload": 0.16333333333333305,
+            "distance": 0,
+            "speed": 0,
+            "phase": 12.566370614359172,
+            "firing": 0,
+            "brain": "步兵交火"
+          },
+          {
+            "id": 105,
+            "team": "red",
+            "x": 11,
+            "z": 8,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.5707963267948966,
+            "reload": 0.016666666666667215,
+            "distance": 0,
+            "speed": 0,
+            "phase": 15.707963267948966,
+            "firing": 0,
+            "brain": "步兵交火"
+          },
+          {
+            "id": 106,
+            "team": "red",
+            "x": 11.938880436862219,
+            "z": 6.326043371843002,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.6489209973719074,
+            "reload": 0.1866666666666677,
+            "distance": 2.169999999999988,
+            "speed": 0,
+            "phase": 30.21164935202167,
+            "firing": 0,
+            "brain": "步兵交火"
+          },
+          {
+            "id": 107,
+            "team": "red",
+            "x": 13.322224481595871,
+            "z": 10.656087551535656,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.9522393435580343,
+            "reload": 0.3566666666666684,
+            "distance": 2.754647131372453,
+            "speed": 1.5499999999999683,
+            "phase": 35.25740949186683,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 108,
+            "team": "red",
+            "x": 14.105111023964199,
+            "z": 12.590758639588824,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -2.2425204759012662,
+            "reload": 0.526666666666669,
+            "distance": 2.376666666666686,
+            "speed": 1.5500000000000154,
+            "phase": 37.57693879543788,
+            "firing": 0,
+            "brain": "接近通信区"
+          },
+          {
+            "id": 109,
+            "team": "red",
+            "x": 11,
+            "z": 13,
+            "hp": 36,
+            "maxHp": 36,
+            "heading": -1.873681195169868,
+            "reload": 0.69666666666667,
+            "distance": 0,
+            "speed": 0,
+            "phase": 28.274333882308138,
+            "firing": 0,
+            "brain": "步兵交火"
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "running",
+          "currentTime": 2.3813333333333335,
+          "gain": 0.3499999940395355,
+          "rms": 0.014278325564242094,
+          "engines": 8,
+          "activeSteps": 2,
+          "footsteps": 11,
+          "effects": 8,
+          "issue": ""
+        },
+        "hits": [
+          {
+            "kind": "hit",
+            "unit": 100,
+            "target": 104,
+            "x": 7.656762312511269,
+            "z": 6.205396908173878,
+            "y": 1.1,
+            "text": "红队步兵受击 · −12",
+            "time": 0.8166666666666675
+          },
+          {
+            "kind": "hit",
+            "unit": 101,
+            "target": 104,
+            "x": 7.712465885803872,
+            "z": 6.278072172598138,
+            "y": 1.1,
+            "text": "红队步兵受击 · −12",
+            "time": 1.0000000000000013
+          },
+          {
+            "kind": "hit",
+            "unit": 102,
+            "target": 104,
+            "x": 7.660433134256295,
+            "z": 6.211410367978955,
+            "y": 1.1,
+            "text": "红队步兵受击 · −12",
+            "time": 1.2166666666666672
+          }
+        ]
+      }
+    },
+    {
+      "name": "1/2/3接管独立车辆，M18与吉普可实际驾驶，切回保留血量/坐标/装填",
+      "passed": true,
+      "detail": {
+        "hellcat": {
+          "id": 4,
+          "team": "blue",
+          "kind": "hellcat",
+          "x": -18,
+          "z": 14,
+          "hp": 150,
+          "maxHp": 150,
+          "heading": 1.5707963267948966,
+          "aim": 1.6052654277944047,
+          "speed": 0,
+          "distance": 0,
+          "turn": 0,
+          "reload": 0,
+          "brain": "玩家",
+          "stuck": 0,
+          "assistReadyAt": 4.3500000000000005
+        },
+        "jeep": {
+          "id": 5,
+          "team": "blue",
+          "kind": "jeep",
+          "x": -18.335,
+          "z": 7,
+          "hp": 90,
+          "maxHp": 90,
+          "heading": 1.5707963267948966,
+          "aim": 1.5347671949039448,
+          "speed": 5.400000000000002,
+          "distance": 1.6649999999999991,
+          "turn": 0,
+          "reload": 0,
+          "brain": "玩家",
+          "stuck": 0,
+          "assistReadyAt": 4.216666666666667
+        }
+      }
+    },
+    {
+      "name": "F呼叫P-51：目标预警、真实飞行/螺旋桨/收起起落架、3枚落弹与空袭伤害",
+      "passed": true,
+      "detail": {
+        "target": {
+          "id": 3,
+          "team": "red",
+          "kind": "hellcat",
+          "x": 6.66850397531669,
+          "z": -11.78055734217327,
+          "hp": 80,
+          "maxHp": 80,
+          "heading": -0.6357963267948976,
+          "aim": -0.6076040981620441,
+          "speed": 0.05000000000000132,
+          "distance": 1.8533333333333337,
+          "turn": 0.9349999999999993,
+          "reload": 5.200000000000005,
+          "brain": "瞄准交战",
+          "stuck": 0,
+          "assistReadyAt": 0
+        },
+        "flying": {
+          "bombs": [
+            {
+              "id": 25,
+              "raid": 0,
+              "team": "blue",
+              "x": 4.26850318022635,
+              "z": -22.563890397644016,
+              "y": 8.025166666666669,
+              "vy": -12.576666666666677,
+              "vz": 14
+            },
+            {
+              "id": 27,
+              "raid": 0,
+              "team": "blue",
+              "x": 6.66850318022635,
+              "z": -20.913890397644025,
+              "y": 9.813666666666672,
+              "vy": -11.106666666666671,
+              "vz": 14
+            },
+            {
+              "id": 29,
+              "raid": 0,
+              "team": "blue",
+              "x": 9.06850318022635,
+              "z": -19.263890397644033,
+              "y": 11.381666666666671,
+              "vy": -9.636666666666665,
+              "vz": 14
+            }
+          ],
+          "planes": [
+            {
+              "team": "blue",
+              "active": true,
+              "position": [
+                6.66850318022635,
+                14,
+                -10.197223730977708
+              ],
+              "quaternion": [
+                0.08715574274765817,
+                0,
+                0,
+                0.9961946980917455
+              ],
+              "phase": 264.8362606976189,
+              "joints": {
+                "wheels": [],
+                "gear": [
+                  {
+                    "kind": "gear",
+                    "angle": -1.5707963267948966,
+                    "visible": false,
+                    "quaternion": [
+                      0,
+                      -0.12278780396897282,
+                      -0.6963642403200189,
+                      0.7071067811865476
+                    ]
+                  },
+                  {
+                    "kind": "door",
+                    "angle": 1.117010721276371,
+                    "visible": true,
+                    "quaternion": [
+                      0,
+                      0.09201951454469656,
+                      0.5218685998873851,
+                      0.848048096156426
+                    ]
+                  },
+                  {
+                    "kind": "gear",
+                    "angle": 1.5707963267948966,
+                    "visible": false,
+                    "quaternion": [
+                      0,
+                      0.12278780396897282,
+                      0.6963642403200189,
+                      0.7071067811865476
+                    ]
+                  },
+                  {
+                    "kind": "door",
+                    "angle": -1.117010721276371,
+                    "visible": true,
+                    "quaternion": [
+                      0,
+                      -0.09201951454469656,
+                      -0.5218685998873851,
+                      0.848048096156426
+                    ]
+                  },
+                  {
+                    "kind": "tail-gear",
+                    "angle": -1.5707963267948966,
+                    "visible": false,
+                    "quaternion": [
+                      -0.7071067811865475,
+                      0,
+                      0,
+                      0.7071067811865476
+                    ]
+                  },
+                  {
+                    "kind": "tail-door",
+                    "angle": -1.2341215074081695,
+                    "visible": true,
+                    "quaternion": [
+                      0,
+                      -0.10047986225666998,
+                      -0.5698496160539441,
+                      0.8155827440327885
+                    ]
+                  },
+                  {
+                    "kind": "tail-door",
+                    "angle": 1.2341215074081695,
+                    "visible": true,
+                    "quaternion": [
+                      0,
+                      0.10047986225666998,
+                      0.5698496160539441,
+                      0.8155827440327885
+                    ]
+                  }
+                ],
+                "turrets": [],
+                "tracks": []
+              }
+            },
+            {
+              "team": "red",
+              "active": false,
+              "position": [
+                0,
+                0,
+                0
+              ],
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "phase": 0,
+              "joints": {
+                "wheels": [],
+                "gear": [
+                  {
+                    "kind": "gear",
+                    "angle": -1.5707963267948966,
+                    "visible": false,
+                    "quaternion": [
+                      0,
+                      -0.12278780396897282,
+                      -0.6963642403200189,
+                      0.7071067811865476
+                    ]
+                  },
+                  {
+                    "kind": "door",
+                    "angle": 1.117010721276371,
+                    "visible": true,
+                    "quaternion": [
+                      0,
+                      0.09201951454469656,
+                      0.5218685998873851,
+                      0.848048096156426
+                    ]
+                  },
+                  {
+                    "kind": "gear",
+                    "angle": 1.5707963267948966,
+                    "visible": false,
+                    "quaternion": [
+                      0,
+                      0.12278780396897282,
+                      0.6963642403200189,
+                      0.7071067811865476
+                    ]
+                  },
+                  {
+                    "kind": "door",
+                    "angle": -1.117010721276371,
+                    "visible": true,
+                    "quaternion": [
+                      0,
+                      -0.09201951454469656,
+                      -0.5218685998873851,
+                      0.848048096156426
+                    ]
+                  },
+                  {
+                    "kind": "tail-gear",
+                    "angle": -1.5707963267948966,
+                    "visible": false,
+                    "quaternion": [
+                      -0.7071067811865475,
+                      0,
+                      0,
+                      0.7071067811865476
+                    ]
+                  },
+                  {
+                    "kind": "tail-door",
+                    "angle": -1.2341215074081695,
+                    "visible": true,
+                    "quaternion": [
+                      0,
+                      -0.10047986225666998,
+                      -0.5698496160539441,
+                      0.8155827440327885
+                    ]
+                  },
+                  {
+                    "kind": "tail-door",
+                    "angle": 1.2341215074081695,
+                    "visible": true,
+                    "quaternion": [
+                      0,
+                      0.10047986225666998,
+                      0.5698496160539441,
+                      0.8155827440327885
+                    ]
+                  }
+                ],
+                "turrets": [],
+                "tracks": []
+              }
+            }
+          ]
+        },
+        "pausedAudio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 25.112,
+          "gain": 0,
+          "rms": 0,
+          "engines": 8,
+          "activeSteps": 0,
+          "footsteps": 64,
+          "effects": 125,
+          "issue": ""
+        },
+        "impact": [
+          {
+            "kind": "bomb",
+            "unit": -1,
+            "x": 4.26850318022635,
+            "z": -15.097223730977326,
+            "y": 0.1,
+            "text": "蓝队炸弹落地",
+            "time": 6.566666666666649
+          },
+          {
+            "kind": "hit",
+            "unit": -1,
+            "target": 3,
+            "x": 6.66850397531669,
+            "z": -11.78055734217327,
+            "y": 1.7,
+            "text": "红队车辆受空袭 · −30",
+            "time": 6.566666666666649
+          },
+          {
+            "kind": "bomb",
+            "unit": -1,
+            "x": 6.66850318022635,
+            "z": -11.347223730977355,
+            "y": 0.1,
+            "text": "蓝队炸弹落地",
+            "time": 6.716666666666648
+          },
+          {
+            "kind": "hit",
+            "unit": -1,
+            "target": 3,
+            "x": 6.6547743616956705,
+            "z": -11.75966953511153,
+            "y": 1.7,
+            "text": "红队车辆受空袭 · −61",
+            "time": 6.716666666666648
+          },
+          {
+            "kind": "bomb",
+            "unit": -1,
+            "x": 9.06850318022635,
+            "z": -7.597223730977383,
+            "y": 0.1,
+            "text": "蓝队炸弹落地",
+            "time": 6.866666666666648
+          }
+        ],
+        "cooldown": 18.416666666666984
+      }
+    },
+    {
+      "name": "红队自动空袭有提前预警并实际落弹；声音随暂停冻结/恢复",
+      "passed": true,
+      "detail": {
+        "warning": [
+          {
+            "x": -12,
+            "z": 10,
+            "id": 0,
+            "team": "red",
+            "age": 0.06666666666666667,
+            "dropped": 0
+          }
+        ],
+        "enemyAirHits": [
+          {
+            "kind": "hit",
+            "unit": -1,
+            "target": 0,
+            "x": -12,
+            "z": 10,
+            "y": 1.7,
+            "text": "蓝队车辆受空袭 · −14",
+            "time": 27.199999999999736
+          },
+          {
+            "kind": "hit",
+            "unit": -1,
+            "target": 4,
+            "x": -18,
+            "z": 14,
+            "y": 1.7,
+            "text": "蓝队车辆受空袭 · −15",
+            "time": 27.199999999999736
+          },
+          {
+            "kind": "hit",
+            "unit": -1,
+            "target": 0,
+            "x": -12,
+            "z": 10,
+            "y": 1.7,
+            "text": "蓝队车辆受空袭 · −28",
+            "time": 27.349999999999728
+          },
+          {
+            "kind": "hit",
+            "unit": -1,
+            "target": 0,
+            "x": -12,
+            "z": 10,
+            "y": 1.7,
+            "text": "蓝队车辆受空袭 · −11",
+            "time": 27.49999999999972
+          }
+        ]
+      }
+    },
+    {
+      "name": "实际鼠标主炮射击配合空袭，完成红队装甲+步兵全歼胜利",
+      "passed": true,
+      "detail": {
+        "time": 8.033333333333312,
+        "kills": 3,
+        "infantryKills": 6,
+        "vehicles": [
+          {
+            "id": 0,
+            "team": "blue",
+            "kind": "sherman",
+            "x": -12,
+            "z": 10,
+            "hp": 220,
+            "maxHp": 220,
+            "heading": 1.5707963267948966,
+            "aim": 2.432980825645719,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 0.9833333333333346,
+            "brain": "玩家",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 1,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 15.442795232539202,
+            "z": 8.31839283759804,
+            "hp": 0,
+            "maxHp": 80,
+            "heading": -1.8112639120722054,
+            "aim": -1.5863698867219915,
+            "speed": 0,
+            "distance": 3.6266666666666674,
+            "turn": -0.2404675852773089,
+            "reload": 2.1833333333333425,
+            "brain": "瞄准交战",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 2,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 15.433226229284148,
+            "z": 2.96070275244926,
+            "hp": 0,
+            "maxHp": 80,
+            "heading": -1.318546874586068,
+            "aim": -1.487018218355306,
+            "speed": 0,
+            "distance": 15.770833333333341,
+            "turn": 0.2522494522088272,
+            "reload": 0.2833333333333478,
+            "brain": "瞄准交战",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 3,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 6.66850397531669,
+            "z": -11.78055734217327,
+            "hp": 0,
+            "maxHp": 80,
+            "heading": -0.6357963267948976,
+            "aim": -0.5078380385254421,
+            "speed": 0,
+            "distance": 1.8533333333333337,
+            "turn": 0.9349999999999993,
+            "reload": 3.183333333333339,
+            "brain": "瞄准交战",
+            "stuck": 0,
+            "assistReadyAt": 0
+          },
+          {
+            "id": 4,
+            "team": "blue",
+            "kind": "hellcat",
+            "x": -18,
+            "z": 14,
+            "hp": 150,
+            "maxHp": 150,
+            "heading": 1.5707963267948966,
+            "aim": 2.378234014327976,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 0,
+            "brain": "自主掩护",
+            "stuck": 0,
+            "assistReadyAt": 8.566666666666656
+          },
+          {
+            "id": 5,
+            "team": "blue",
+            "kind": "jeep",
+            "x": -20,
+            "z": 7,
+            "hp": 90,
+            "maxHp": 90,
+            "heading": 1.5707963267948966,
+            "aim": 2.1843504855501945,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 0,
+            "brain": "自主掩护",
+            "stuck": 0,
+            "assistReadyAt": 8.433333333333323
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 92.86133333333333,
+          "gain": 0,
+          "rms": 0,
+          "engines": 8,
+          "activeSteps": 0,
+          "footsteps": 154,
+          "effects": 315,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "重开恢复三车十步兵/清空空袭；390px触控切车、驾驶和空袭可用",
+      "passed": true,
+      "detail": {
+        "reset": {
+          "vehicles": 6,
+          "infantry": 10
+        },
+        "mobile": [
+          390,
+          844
+        ],
+        "distance": 1.0875000000000021
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "screenshots": [
+    "battle-combined-ready.png",
+    "battle-infantry-combat.png",
+    "battle-jeep-driving.png",
+    "battle-airstrike-flight.png",
+    "battle-combined-paused.png",
+    "battle-airstrike-impact.png",
+    "battle-enemy-air-raid.png",
+    "battle-combined-combat.png",
+    "battle-combined-victory.png",
+    "battle-combined-mobile-ready.png",
+    "battle-combined-mobile.png"
+  ],
+  "passed": true,
+  "browser": "Edg/155.0.4283.45",
+  "finished": "2026-10-11T09:26:40.981Z"
+}

@@ -6,6 +6,7 @@ on:
     paths:
       - 'projects/001-sakura-crossing/**'
       - 'projects/002-18-floors-of-mayhem/**'
+      - 'projects/004-muster-ww2/**'
       - 'projects.json'
       - 'scripts/**'
       - '.github/workflows/pages.yml'
@@ -50,6 +51,10 @@ jobs:
         working-directory: projects/002-18-floors-of-mayhem/vendor/upstream
       - run: npm run check && npm test && npm run references:check && npm run guide:check && npm run build && npm run publication:check
         working-directory: projects/002-18-floors-of-mayhem/web
+      - run: npm ci
+        working-directory: projects/004-muster-ww2/web
+      - run: npm run test:battle && npm run test:airport && npm run build && npm run publication:check
+        working-directory: projects/004-muster-ww2/web
       - run: npm run site:assemble
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4

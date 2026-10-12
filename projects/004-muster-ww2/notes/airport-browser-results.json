@@ -1,0 +1,1011 @@
+{
+  "date": "2026-10-11T10:09:35.602Z",
+  "base": "http://127.0.0.1:5198/",
+  "checks": [
+    {
+      "name": "本地生产入口、四阶段简报、真实模型与独立任务初始状态",
+      "passed": true,
+      "detail": {
+        "render": {
+          "calls": 1028,
+          "triangles": 3532095
+        },
+        "mission": {
+          "phase": 0,
+          "phaseAt": 0,
+          "integrity": 100,
+          "cargo": 0,
+          "deliveries": 0,
+          "headquartersDeliveries": 0,
+          "charges": 0,
+          "wave": 0,
+          "nextWaveAt": 0,
+          "secure": 0,
+          "selectedSquad": "alpha",
+          "failure": "",
+          "recon": [
+            {
+              "id": "north",
+              "name": "北侧来袭通道",
+              "x": 3,
+              "z": -11,
+              "radius": 5,
+              "progress": 0,
+              "done": false
+            },
+            {
+              "id": "east",
+              "name": "东侧来袭通道",
+              "x": 24,
+              "z": 6,
+              "radius": 5,
+              "progress": 0,
+              "done": false
+            }
+          ],
+          "squads": [
+            {
+              "id": "alpha",
+              "name": "一班",
+              "members": [
+                100,
+                101
+              ],
+              "order": "hold",
+              "target": {
+                "x": -7,
+                "z": 8
+              }
+            },
+            {
+              "id": "bravo",
+              "name": "二班",
+              "members": [
+                102,
+                103
+              ],
+              "order": "hold",
+              "target": {
+                "x": -7,
+                "z": 11
+              }
+            }
+          ],
+          "seen": []
+        }
+      }
+    },
+    {
+      "name": "真实按钮与右键命令，步兵移动、驻守、跟随；暂停同时冻结任务和声音",
+      "passed": true,
+      "detail": {
+        "orders": [
+          {
+            "id": "alpha",
+            "name": "一班",
+            "members": [
+              100,
+              101
+            ],
+            "order": "move",
+            "target": {
+              "x": 0,
+              "z": 10.999999832507076
+            }
+          },
+          {
+            "id": "bravo",
+            "name": "二班",
+            "members": [
+              102,
+              103
+            ],
+            "order": "hold",
+            "target": {
+              "x": -7,
+              "z": 11
+            }
+          }
+        ],
+        "pausedAudio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 4.56,
+          "gain": 0,
+          "rms": 0,
+          "engines": 8,
+          "activeSteps": 0,
+          "footsteps": 18,
+          "effects": 0,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "真实驾驶吉普到D装货、两通道停车侦察，阶段切到部署",
+      "passed": true,
+      "detail": {
+        "recon": [
+          {
+            "id": "north",
+            "name": "北侧来袭通道",
+            "x": 3,
+            "z": -11,
+            "radius": 5,
+            "progress": 2.0166666666666644,
+            "done": true
+          },
+          {
+            "id": "east",
+            "name": "东侧来袭通道",
+            "x": 24,
+            "z": 6,
+            "radius": 5,
+            "progress": 2.0166666666666644,
+            "done": true
+          }
+        ],
+        "jeep": {
+          "id": 5,
+          "team": "blue",
+          "kind": "jeep",
+          "x": 23.21181591693077,
+          "z": 5.993159836998321,
+          "hp": 90,
+          "maxHp": 90,
+          "heading": -4.919203673205109,
+          "aim": -1.4845530658200143,
+          "speed": 0,
+          "distance": 85.96916666666675,
+          "turn": -6.490000000000023,
+          "reload": 0,
+          "brain": "玩家",
+          "stuck": 0,
+          "assistReadyAt": 0,
+          "ammo": 0
+        }
+      }
+    },
+    {
+      "name": "分别部署两个小队；吉普实际送达HQ，补给落地后第一波进攻开始",
+      "passed": true,
+      "detail": {
+        "phase": {
+          "phase": 2,
+          "phaseAt": 39.6666666666657,
+          "integrity": 100,
+          "cargo": 1,
+          "deliveries": 1,
+          "headquartersDeliveries": 1,
+          "charges": 2,
+          "wave": 1,
+          "nextWaveAt": 0,
+          "secure": 0,
+          "selectedSquad": "bravo",
+          "failure": "",
+          "recon": [
+            {
+              "id": "north",
+              "name": "北侧来袭通道",
+              "x": 3,
+              "z": -11,
+              "radius": 5,
+              "progress": 2.0166666666666644,
+              "done": true
+            },
+            {
+              "id": "east",
+              "name": "东侧来袭通道",
+              "x": 24,
+              "z": 6,
+              "radius": 5,
+              "progress": 2.0166666666666644,
+              "done": true
+            }
+          ],
+          "squads": [
+            {
+              "id": "alpha",
+              "name": "一班",
+              "members": [
+                100,
+                101
+              ],
+              "order": "move",
+              "target": {
+                "x": 3,
+                "z": 8
+              }
+            },
+            {
+              "id": "bravo",
+              "name": "二班",
+              "members": [
+                102,
+                103
+              ],
+              "order": "move",
+              "target": {
+                "x": 3,
+                "z": -10
+              }
+            }
+          ],
+          "seen": [
+            {
+              "id": 1,
+              "x": 24,
+              "z": 7,
+              "time": 39.88333333333235
+            },
+            {
+              "id": 104,
+              "x": 21.666726820415665,
+              "z": 3.958966815086737,
+              "time": 39.88333333333235
+            },
+            {
+              "id": 105,
+              "x": 23.663307695034735,
+              "z": 3.900959254873953,
+              "time": 39.88333333333235
+            },
+            {
+              "id": 106,
+              "x": 20.59674898340789,
+              "z": 6.933429987625639,
+              "time": 39.88333333333235
+            },
+            {
+              "id": 107,
+              "x": 20.598203496518934,
+              "z": 6.764939871374537,
+              "time": 39.88333333333235
+            }
+          ]
+        },
+        "people": [
+          {
+            "id": 100,
+            "team": "blue",
+            "x": 1.5253320666529457,
+            "z": 8.066004652301984,
+            "hp": 75,
+            "maxHp": 75,
+            "heading": -4.6148665287019215,
+            "reload": 1.0500000000000007,
+            "distance": 10.255833333333257,
+            "speed": 0,
+            "phase": 53.69941776073492,
+            "firing": 0,
+            "brain": "一班 · 驻守交火",
+            "ammo": 29
+          },
+          {
+            "id": 101,
+            "team": "blue",
+            "x": 3.131834820556536,
+            "z": 8.13828216770418,
+            "hp": 75,
+            "maxHp": 75,
+            "heading": 1.7748732868021297,
+            "reload": 1.2000000000000008,
+            "distance": 9.35166666666658,
+            "speed": 0,
+            "phase": 52.10680481829037,
+            "firing": 0,
+            "brain": "一班 · 驻守交火",
+            "ammo": 29
+          },
+          {
+            "id": 102,
+            "team": "blue",
+            "x": 1.505375437041893,
+            "z": -6.347074168326058,
+            "hp": 75,
+            "maxHp": 75,
+            "heading": -3.3295048429789955,
+            "reload": 0,
+            "distance": 24.205833333333615,
+            "speed": 1.5499999999999883,
+            "phase": 133.02463226387647,
+            "firing": 0,
+            "brain": "二班 · 执行移动",
+            "ammo": 30
+          },
+          {
+            "id": 103,
+            "team": "blue",
+            "x": 3.107915396979421,
+            "z": -6.350383904883467,
+            "hp": 75,
+            "maxHp": 75,
+            "heading": -3.3289995577415348,
+            "reload": 0,
+            "distance": 24.15416666666697,
+            "speed": 1.5500000000000034,
+            "phase": 135.89569888340705,
+            "firing": 0,
+            "brain": "二班 · 执行移动",
+            "ammo": 30
+          },
+          {
+            "id": 104,
+            "team": "red",
+            "x": 21.666726820415665,
+            "z": 3.958966815086737,
+            "hp": 30,
+            "maxHp": 30,
+            "heading": -1.6979523784582138,
+            "reload": 1.783333333333334,
+            "distance": 0.33583333333333154,
+            "speed": 1.5499999999999872,
+            "phase": 14.32478983574346,
+            "firing": 0,
+            "brain": "接近通信区",
+            "ammo": 30
+          },
+          {
+            "id": 105,
+            "team": "red",
+            "x": 23.663307695034735,
+            "z": 3.900959254873953,
+            "hp": 18,
+            "maxHp": 30,
+            "heading": -1.5680726884214298,
+            "reload": 2.083333333333334,
+            "distance": 0.41339036769676907,
+            "speed": 1.5500000000000191,
+            "phase": 17.4881991049832,
+            "firing": 0,
+            "brain": "接近通信区",
+            "ammo": 30
+          },
+          {
+            "id": 106,
+            "team": "red",
+            "x": 20.59674898340789,
+            "z": 6.933429987625639,
+            "hp": 30,
+            "maxHp": 30,
+            "heading": -1.786807572198542,
+            "reload": 2.383333333333334,
+            "distance": 1.4100020338571104,
+            "speed": 1.5500000000000922,
+            "phase": 20.62979175857306,
+            "firing": 0,
+            "brain": "接近通信区",
+            "ammo": 30
+          },
+          {
+            "id": 107,
+            "team": "red",
+            "x": 20.598203496518934,
+            "z": 6.764939871374537,
+            "hp": 18,
+            "maxHp": 30,
+            "heading": -1.6630124997661682,
+            "reload": 2.683333333333334,
+            "distance": 3.4099999999999993,
+            "speed": 1.5499999999999994,
+            "phase": 23.771384412162785,
+            "firing": 0,
+            "brain": "接近通信区",
+            "ammo": 30
+          },
+          {
+            "id": 108,
+            "team": "red",
+            "x": 22,
+            "z": 10,
+            "hp": 0,
+            "maxHp": 30,
+            "heading": -1.5707963267948966,
+            "reload": 3.2,
+            "distance": 0,
+            "speed": 0,
+            "phase": 25.132741228718345,
+            "firing": 0,
+            "brain": "接近通信区",
+            "ammo": 30
+          },
+          {
+            "id": 109,
+            "team": "red",
+            "x": 24,
+            "z": 10,
+            "hp": 0,
+            "maxHp": 30,
+            "heading": -1.5707963267948966,
+            "reload": 3.5,
+            "distance": 0,
+            "speed": 0,
+            "phase": 28.274333882308138,
+            "firing": 0,
+            "brain": "接近通信区",
+            "ammo": 30
+          }
+        ]
+      }
+    },
+    {
+      "name": "接管谢尔曼主动交火、步兵守阵地、有限空袭，实际击退两波进攻",
+      "passed": true,
+      "detail": {
+        "time": 70.1999999999973,
+        "mission": {
+          "phase": 3,
+          "phaseAt": 70.1999999999973,
+          "integrity": 100,
+          "cargo": 1,
+          "deliveries": 1,
+          "headquartersDeliveries": 1,
+          "charges": 0,
+          "wave": 2,
+          "nextWaveAt": 0,
+          "secure": 0,
+          "selectedSquad": "bravo",
+          "failure": "",
+          "recon": [
+            {
+              "id": "north",
+              "name": "北侧来袭通道",
+              "x": 3,
+              "z": -11,
+              "radius": 5,
+              "progress": 2.0166666666666644,
+              "done": true
+            },
+            {
+              "id": "east",
+              "name": "东侧来袭通道",
+              "x": 24,
+              "z": 6,
+              "radius": 5,
+              "progress": 2.0166666666666644,
+              "done": true
+            }
+          ],
+          "squads": [
+            {
+              "id": "alpha",
+              "name": "一班",
+              "members": [
+                100,
+                101
+              ],
+              "order": "move",
+              "target": {
+                "x": 3,
+                "z": 8
+              }
+            },
+            {
+              "id": "bravo",
+              "name": "二班",
+              "members": [
+                102,
+                103
+              ],
+              "order": "move",
+              "target": {
+                "x": 3,
+                "z": -10
+              }
+            }
+          ],
+          "seen": [
+            {
+              "id": 1,
+              "x": 20,
+              "z": -11,
+              "time": 67.41666666666413
+            },
+            {
+              "id": 104,
+              "x": 9,
+              "z": -15,
+              "time": 61.91666666666443
+            },
+            {
+              "id": 105,
+              "x": 11,
+              "z": -15,
+              "time": 61.91666666666443
+            },
+            {
+              "id": 106,
+              "x": 13,
+              "z": -15,
+              "time": 63.316666666664354
+            },
+            {
+              "id": 107,
+              "x": 15,
+              "z": -15,
+              "time": 63.64999999999767
+            },
+            {
+              "id": 2,
+              "x": 23.723775059640257,
+              "z": -4.027249640129244,
+              "time": 70.18333333333064
+            },
+            {
+              "id": 108,
+              "x": 17,
+              "z": -15,
+              "time": 64.71666666666428
+            },
+            {
+              "id": 109,
+              "x": 19,
+              "z": -15,
+              "time": 64.93333333333094
+            },
+            {
+              "id": 3,
+              "x": 21.9151317378441,
+              "z": 6.419131817916113,
+              "time": 69.44999999999735
+            }
+          ]
+        },
+        "kills": 5,
+        "infantryKills": 10,
+        "units": [
+          {
+            "id": 0,
+            "team": "blue",
+            "kind": "sherman",
+            "x": 2.9510156264476377,
+            "z": -7.36671664478086,
+            "hp": 219,
+            "maxHp": 220,
+            "heading": 3.0282963267948926,
+            "aim": 1.4113983063487205,
+            "speed": 0,
+            "distance": 35.80249999999997,
+            "turn": 1.4575000000000005,
+            "reload": 1.100000000000001,
+            "brain": "玩家",
+            "stuck": 0,
+            "assistReadyAt": 43.88333333333237,
+            "ammo": 5
+          },
+          {
+            "id": 1,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 20,
+            "z": -11,
+            "hp": 0,
+            "maxHp": 65,
+            "heading": -1.5707963267948966,
+            "aim": -1.5266684666172432,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 2.7333333333333405,
+            "brain": "瞄准交战",
+            "stuck": 0,
+            "assistReadyAt": 0,
+            "ammo": 18
+          },
+          {
+            "id": 2,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 23.723775059640257,
+            "z": -4.027249640129244,
+            "hp": 0,
+            "maxHp": 65,
+            "heading": -0.8048294627102013,
+            "aim": -1.8780090705091705,
+            "speed": 0,
+            "distance": 9.599999999999996,
+            "turn": 0.9113987188691632,
+            "reload": 1.1666666666666794,
+            "brain": "瞄准交战",
+            "stuck": 0,
+            "assistReadyAt": 0,
+            "ammo": 18
+          },
+          {
+            "id": 3,
+            "team": "red",
+            "kind": "hellcat",
+            "x": 21.9151317378441,
+            "z": 6.419131817916113,
+            "hp": 0,
+            "maxHp": 65,
+            "heading": -1.7108383953295638,
+            "aim": -1.4881958402156654,
+            "speed": 0,
+            "distance": 5.120000000000004,
+            "turn": -0.140042068534668,
+            "reload": 3.100000000000006,
+            "brain": "瞄准交战",
+            "stuck": 0,
+            "assistReadyAt": 0,
+            "ammo": 18
+          },
+          {
+            "id": 4,
+            "team": "blue",
+            "kind": "hellcat",
+            "x": -19,
+            "z": 17,
+            "hp": 150,
+            "maxHp": 150,
+            "heading": 1.5707963267948966,
+            "aim": 2.028158251609889,
+            "speed": 0,
+            "distance": 0,
+            "turn": 0,
+            "reload": 0.36666666666666736,
+            "brain": "自主掩护",
+            "stuck": 0,
+            "assistReadyAt": 73.11666666666405,
+            "ammo": 13
+          },
+          {
+            "id": 5,
+            "team": "blue",
+            "kind": "jeep",
+            "x": -11.724615057104462,
+            "z": 1.9947031615772113,
+            "hp": 90,
+            "maxHp": 90,
+            "heading": -7.559203673205138,
+            "aim": 1.7390693117606246,
+            "speed": 0,
+            "distance": 121.41250000000005,
+            "turn": -9.130000000000052,
+            "reload": 0,
+            "brain": "自主掩护",
+            "stuck": 0,
+            "assistReadyAt": 72.99999999999739,
+            "ammo": 0
+          }
+        ],
+        "infantry": [
+          {
+            "id": 100,
+            "team": "blue",
+            "x": 1.5287993061324159,
+            "z": 8.1068929850979,
+            "hp": 46,
+            "maxHp": 75,
+            "heading": 1.7287264353512661,
+            "reload": 0,
+            "distance": 25.357562175541986,
+            "speed": 0,
+            "phase": 104.17374644743226,
+            "firing": 0,
+            "brain": "一班 · 驻守",
+            "ammo": 17
+          },
+          {
+            "id": 101,
+            "team": "blue",
+            "x": 7.7247579444309515,
+            "z": 5.564763901297035,
+            "hp": 0,
+            "maxHp": 75,
+            "heading": 5.265737383960768,
+            "reload": 0,
+            "distance": 15.848420358508163,
+            "speed": 0,
+            "phase": 65.76113819253683,
+            "firing": 0,
+            "brain": "一班 · 执行移动",
+            "ammo": 27
+          },
+          {
+            "id": 102,
+            "team": "blue",
+            "x": 1.7666442019704647,
+            "z": -10.231548983484455,
+            "hp": 60,
+            "maxHp": 75,
+            "heading": -5.203111130555076,
+            "reload": 0.299999999999999,
+            "distance": 28.193216678217812,
+            "speed": 0,
+            "phase": 152.41583519966838,
+            "firing": 0,
+            "brain": "二班 · 驻守交火",
+            "ammo": 13
+          },
+          {
+            "id": 103,
+            "team": "blue",
+            "x": 3.9758155438289333,
+            "z": -10.292427691575346,
+            "hp": 25,
+            "maxHp": 75,
+            "heading": -0.5413215194611642,
+            "reload": 0.8500000000000004,
+            "distance": 28.19596519103735,
+            "speed": 0,
+            "phase": 155.38134948735532,
+            "firing": 0,
+            "brain": "二班 · 驻守交火",
+            "ammo": 15
+          },
+          {
+            "id": 104,
+            "team": "red",
+            "x": 9,
+            "z": -15,
+            "hp": 0,
+            "maxHp": 30,
+            "heading": -0.8179206071508355,
+            "reload": 0.4166666666666687,
+            "distance": 2.867499999999984,
+            "speed": 0,
+            "phase": 27.580565504640255,
+            "firing": 0,
+            "brain": "步兵交火",
+            "ammo": 30
+          },
+          {
+            "id": 105,
+            "team": "red",
+            "x": 11,
+            "z": -15,
+            "hp": 0,
+            "maxHp": 30,
+            "heading": -0.9803551047072091,
+            "reload": 0.7166666666666702,
+            "distance": 4.495057034363499,
+            "speed": 0,
+            "phase": 38.85975579565416,
+            "firing": 0,
+            "brain": "步兵交火",
+            "ammo": 30
+          },
+          {
+            "id": 106,
+            "team": "red",
+            "x": 13,
+            "z": -15,
+            "hp": 0,
+            "maxHp": 30,
+            "heading": -1.0899698326473772,
+            "reload": 0.8833333333333339,
+            "distance": 1.952502033857144,
+            "speed": 0,
+            "phase": 23.47031511619401,
+            "firing": 0,
+            "brain": "步兵交火",
+            "ammo": 30
+          },
+          {
+            "id": 107,
+            "team": "red",
+            "x": 15,
+            "z": -15,
+            "hp": 0,
+            "maxHp": 30,
+            "heading": -1.1672140433203153,
+            "reload": 1.0000000000000016,
+            "distance": 3.9525,
+            "speed": 0,
+            "phase": 26.611907769783585,
+            "firing": 0,
+            "brain": "步兵交火",
+            "ammo": 30
+          },
+          {
+            "id": 108,
+            "team": "red",
+            "x": 17,
+            "z": -15,
+            "hp": 0,
+            "maxHp": 30,
+            "heading": -1.2239590009448744,
+            "reload": 1.0333333333333337,
+            "distance": 0,
+            "speed": 0,
+            "phase": 25.132741228718345,
+            "firing": 0.11333333333333334,
+            "brain": "步兵交火",
+            "ammo": 30
+          },
+          {
+            "id": 109,
+            "team": "red",
+            "x": 19,
+            "z": -15,
+            "hp": 0,
+            "maxHp": 30,
+            "heading": -1.267152777895098,
+            "reload": 0.16666666666666613,
+            "distance": 0,
+            "speed": 0,
+            "phase": 28.274333882308138,
+            "firing": 0,
+            "brain": "步兵交火",
+            "ammo": 30
+          }
+        ]
+      }
+    },
+    {
+      "name": "第二箱补给送到HQ、小队真实警戒8秒，完整机场任务胜利与重开",
+      "passed": true,
+      "detail": {
+        "time": 86.23333333332972,
+        "mission": {
+          "phase": 3,
+          "phaseAt": 70.1999999999973,
+          "integrity": 100,
+          "cargo": 0,
+          "deliveries": 2,
+          "headquartersDeliveries": 2,
+          "charges": 0,
+          "wave": 2,
+          "nextWaveAt": 0,
+          "secure": 8,
+          "selectedSquad": "alpha",
+          "failure": "",
+          "recon": [
+            {
+              "id": "north",
+              "name": "北侧来袭通道",
+              "x": 3,
+              "z": -11,
+              "radius": 5,
+              "progress": 2.0166666666666644,
+              "done": true
+            },
+            {
+              "id": "east",
+              "name": "东侧来袭通道",
+              "x": 24,
+              "z": 6,
+              "radius": 5,
+              "progress": 2.0166666666666644,
+              "done": true
+            }
+          ],
+          "squads": [
+            {
+              "id": "alpha",
+              "name": "一班",
+              "members": [
+                100,
+                101
+              ],
+              "order": "move",
+              "target": {
+                "x": -11,
+                "z": 2
+              }
+            },
+            {
+              "id": "bravo",
+              "name": "二班",
+              "members": [
+                102,
+                103
+              ],
+              "order": "move",
+              "target": {
+                "x": 3,
+                "z": -10
+              }
+            }
+          ],
+          "seen": [
+            {
+              "id": 1,
+              "x": 20,
+              "z": -11,
+              "time": 67.41666666666413
+            },
+            {
+              "id": 104,
+              "x": 9,
+              "z": -15,
+              "time": 61.91666666666443
+            },
+            {
+              "id": 105,
+              "x": 11,
+              "z": -15,
+              "time": 61.91666666666443
+            },
+            {
+              "id": 106,
+              "x": 13,
+              "z": -15,
+              "time": 63.316666666664354
+            },
+            {
+              "id": 107,
+              "x": 15,
+              "z": -15,
+              "time": 63.64999999999767
+            },
+            {
+              "id": 2,
+              "x": 23.723775059640257,
+              "z": -4.027249640129244,
+              "time": 70.18333333333064
+            },
+            {
+              "id": 108,
+              "x": 17,
+              "z": -15,
+              "time": 64.71666666666428
+            },
+            {
+              "id": 109,
+              "x": 19,
+              "z": -15,
+              "time": 64.93333333333094
+            },
+            {
+              "id": 3,
+              "x": 21.9151317378441,
+              "z": 6.419131817916113,
+              "time": 69.44999999999735
+            }
+          ]
+        },
+        "audio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 111.02133333333333,
+          "gain": 0,
+          "rms": 0,
+          "engines": 8,
+          "activeSteps": 0,
+          "footsteps": 177,
+          "effects": 169,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "390px本地触控界面、下令/驾驶/补给按钮、切车与自动暂停",
+      "passed": true,
+      "detail": {
+        "size": [
+          390,
+          844
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "screenshots": [
+    "airport-briefing.png",
+    "airport-squad-orders.png",
+    "airport-paused.png",
+    "airport-supply-loaded.png",
+    "airport-recon-north.png",
+    "airport-recon-complete.png",
+    "airport-deployed.png",
+    "airport-wave-one.png",
+    "airport-air-support.png",
+    "airport-wave-two.png",
+    "airport-counterattack-complete.png",
+    "airport-victory.png",
+    "airport-mobile-briefing.png",
+    "airport-mobile-playing.png"
+  ],
+  "passed": true,
+  "browser": "Edg/155.0.4283.45",
+  "finished": "2026-10-11T10:13:04.586Z"
+}

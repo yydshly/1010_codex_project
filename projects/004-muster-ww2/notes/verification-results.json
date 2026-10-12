@@ -1,0 +1,2469 @@
+{
+  "date": "2026-10-11T01:25:21.835Z",
+  "base": "http://127.0.0.1:5198",
+  "node": "v22.15.0",
+  "checks": [
+    {
+      "name": "生产页面、完整目录与默认展台",
+      "passed": true,
+      "detail": {
+        "listed": 74,
+        "models": 280,
+        "loadIssues": 0
+      }
+    },
+    {
+      "name": "国家筛选与文本搜索不改变展台",
+      "passed": true,
+      "detail": {
+        "faction": "germany",
+        "search": "Panzer IV",
+        "result": "de-panzer-iv-h",
+        "displayModels": 280
+      }
+    },
+    {
+      "name": "鼠标选中模型与侧裙配置更新",
+      "passed": true,
+      "detail": {
+        "schuerzen": "removed",
+        "selected": true
+      }
+    },
+    {
+      "name": "数量、网格编队与键盘撤销重做",
+      "passed": true,
+      "detail": {
+        "quantity": 3,
+        "formation": "grid",
+        "undo": "line",
+        "redo": "grid"
+      }
+    },
+    {
+      "name": "鼠标拖动、旋转、复制与删除",
+      "passed": true,
+      "detail": {
+        "dragged": true,
+        "rotated": true,
+        "duplicated": true,
+        "deleted": true
+      }
+    },
+    {
+      "name": "添加新编队并自动保存",
+      "passed": true,
+      "detail": {
+        "groups": 1,
+        "quantity": 3,
+        "formation": "grid",
+        "schuerzen": "removed"
+      }
+    },
+    {
+      "name": "刷新后恢复真实保存的布局",
+      "passed": true,
+      "detail": {
+        "restoredGroups": 1,
+        "restoredModels": 3,
+        "configurationAndPositionsMatch": true
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value",
+    "THREE.BufferGeometry.toNonIndexed(): BufferGeometry is already non-indexed."
+  ],
+  "networkFailures": [],
+  "screenshots": [
+    "cover.png",
+    "configured-grid.png",
+    "restored-layout.png"
+  ],
+  "passed": true,
+  "browser": "Edg/155.0.4283.45",
+  "catalog": [
+    {
+      "id": "de-bf109-g6",
+      "name": "Messerschmitt Bf 109 G-6",
+      "faction": "germany",
+      "category": "Aircraft",
+      "countAs": "aircraft",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 14,
+        "min": 11,
+        "max": 24
+      },
+      "footprint": {
+        "w": 9.93,
+        "l": 8.97
+      },
+      "options": []
+    },
+    {
+      "id": "de-feldflasche-31",
+      "name": "Feldflasche 31",
+      "faction": "germany",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 60,
+      "spacing": {
+        "default": 0.3,
+        "min": 0.18,
+        "max": 1.5
+      },
+      "footprint": {
+        "w": 0.2,
+        "l": 0.14
+      },
+      "options": []
+    },
+    {
+      "id": "de-entrenching-tool",
+      "name": "Entrenching Tool with Bayonet",
+      "faction": "germany",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.5,
+        "min": 0.3,
+        "max": 2
+      },
+      "footprint": {
+        "w": 0.24,
+        "l": 0.64
+      },
+      "options": []
+    },
+    {
+      "id": "de-flak-36",
+      "name": "8.8 cm Flak 36",
+      "faction": "germany",
+      "category": "Artillery",
+      "countAs": "artillery",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 8,
+      "spacing": {
+        "default": 10,
+        "min": 6.5,
+        "max": 18
+      },
+      "footprint": {
+        "w": 5,
+        "l": 6.4
+      },
+      "options": [
+        {
+          "id": "elevation",
+          "kind": "select",
+          "choices": [
+            "aa",
+            "low"
+          ]
+        },
+        {
+          "id": "shield",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "de-fw190-a8",
+      "name": "Focke-Wulf Fw 190 A-8",
+      "faction": "germany",
+      "category": "Aircraft",
+      "countAs": "aircraft",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 14.5,
+        "min": 12,
+        "max": 26
+      },
+      "footprint": {
+        "w": 10.51,
+        "l": 9
+      },
+      "options": []
+    },
+    {
+      "id": "de-kar98k",
+      "name": "Kar98k",
+      "faction": "germany",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.2,
+        "max": 1.8
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 1.14
+      },
+      "options": [
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "de-m40-helmet",
+      "name": "M40 Steel Helmet",
+      "faction": "germany",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.6,
+        "min": 0.4,
+        "max": 2
+      },
+      "footprint": {
+        "w": 0.32,
+        "l": 0.36
+      },
+      "options": []
+    },
+    {
+      "id": "de-kubelwagen",
+      "name": "Kubelwagen (Type 82)",
+      "faction": "germany",
+      "category": "Vehicles",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 6,
+        "min": 4.2,
+        "max": 12
+      },
+      "footprint": {
+        "w": 1.6,
+        "l": 3.74
+      },
+      "options": []
+    },
+    {
+      "id": "de-mg42",
+      "name": "MG 42",
+      "faction": "germany",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 30,
+      "spacing": {
+        "default": 0.6,
+        "min": 0.3,
+        "max": 2.5
+      },
+      "footprint": {
+        "w": 0.3,
+        "l": 1.26
+      },
+      "options": [
+        {
+          "id": "display",
+          "kind": "select",
+          "choices": [
+            "stand",
+            "bipod"
+          ]
+        },
+        {
+          "id": "drum",
+          "kind": "toggle"
+        },
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "de-machine-gunner",
+      "name": "MG 42 Gunner (1943-44)",
+      "faction": "germany",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.3,
+        "min": 0.9,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.7,
+        "l": 0.9
+      },
+      "options": [
+        {
+          "id": "pack",
+          "kind": "toggle"
+        },
+        {
+          "id": "breadbag",
+          "kind": "toggle"
+        },
+        {
+          "id": "shovel",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "de-mp40",
+      "name": "MP 40",
+      "faction": "germany",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.2,
+        "max": 1.5
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 0.86
+      },
+      "options": [
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "de-opel-blitz",
+      "name": "Opel Blitz 3.6-36S",
+      "faction": "germany",
+      "category": "Vehicles",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 8,
+      "spacing": {
+        "default": 8,
+        "min": 6.5,
+        "max": 16
+      },
+      "footprint": {
+        "w": 2.27,
+        "l": 6.1
+      },
+      "options": [
+        {
+          "id": "cover",
+          "kind": "select",
+          "choices": [
+            "canvas",
+            "bows",
+            "open"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-pak40",
+      "name": "7.5 cm PaK 40",
+      "faction": "germany",
+      "category": "Artillery",
+      "countAs": "artillery",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 7.5,
+        "min": 4.5,
+        "max": 14
+      },
+      "footprint": {
+        "w": 3.6,
+        "l": 5.9
+      },
+      "options": [
+        {
+          "id": "trails",
+          "kind": "select",
+          "choices": [
+            "deployed",
+            "closed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-rifleman",
+      "name": "Rifleman (1943-44)",
+      "faction": "germany",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.5
+      },
+      "options": [
+        {
+          "id": "pack",
+          "kind": "toggle"
+        },
+        {
+          "id": "breadbag",
+          "kind": "toggle"
+        },
+        {
+          "id": "shovel",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "de-panther-g",
+      "name": "Panther Ausf. G",
+      "faction": "germany",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 10,
+        "min": 7.5,
+        "max": 18
+      },
+      "footprint": {
+        "w": 3.42,
+        "l": 6.87
+      },
+      "options": [
+        {
+          "id": "schuerzen",
+          "kind": "select",
+          "choices": [
+            "fitted",
+            "removed"
+          ]
+        },
+        {
+          "id": "paint",
+          "kind": "select",
+          "choices": [
+            "dunkelgelb",
+            "camo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-panzer-iv-h",
+      "name": "Panzer IV Ausf. H",
+      "faction": "germany",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 9,
+        "min": 6.5,
+        "max": 16
+      },
+      "footprint": {
+        "w": 3.29,
+        "l": 5.89
+      },
+      "options": [
+        {
+          "id": "schuerzen",
+          "kind": "select",
+          "choices": [
+            "fitted",
+            "removed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-squad-leader",
+      "name": "Squad Leader (1943-44)",
+      "faction": "germany",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.6
+      },
+      "options": [
+        {
+          "id": "pack",
+          "kind": "toggle"
+        },
+        {
+          "id": "breadbag",
+          "kind": "toggle"
+        },
+        {
+          "id": "shovel",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "de-stielhandgranate-24",
+      "name": "Stielhandgranate 24",
+      "faction": "germany",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 60,
+      "spacing": {
+        "default": 0.3,
+        "min": 0.15,
+        "max": 1.5
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 0.42
+      },
+      "options": []
+    },
+    {
+      "id": "de-stug-iii-g",
+      "name": "StuG III Ausf. G",
+      "faction": "germany",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 9,
+        "min": 6.5,
+        "max": 16
+      },
+      "footprint": {
+        "w": 3.12,
+        "l": 5.5
+      },
+      "options": [
+        {
+          "id": "schuerzen",
+          "kind": "select",
+          "choices": [
+            "fitted",
+            "removed"
+          ]
+        },
+        {
+          "id": "mgShield",
+          "kind": "select",
+          "choices": [
+            "raised",
+            "folded"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "de-tiger-i",
+      "name": "Tiger I Ausf. E",
+      "faction": "germany",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 10,
+        "min": 7.5,
+        "max": 18
+      },
+      "footprint": {
+        "w": 3.56,
+        "l": 6.32
+      },
+      "options": []
+    },
+    {
+      "id": "it-m13-40",
+      "name": "Carro Armato M13/40",
+      "faction": "italy",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 14,
+      "spacing": {
+        "default": 8,
+        "min": 5.5,
+        "max": 14
+      },
+      "footprint": {
+        "w": 2.28,
+        "l": 4.92
+      },
+      "options": [
+        {
+          "id": "markings",
+          "kind": "toggle"
+        },
+        {
+          "id": "spareLinks",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "jp-type99-rifle",
+      "name": "Arisaka Type 99",
+      "faction": "japan",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.2,
+        "max": 1.8
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 1.15
+      },
+      "options": [
+        {
+          "id": "sling",
+          "kind": "toggle"
+        },
+        {
+          "id": "dustCover",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "jp-chi-ha",
+      "name": "Type 97 Chi-Ha",
+      "faction": "japan",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 8,
+        "min": 5.5,
+        "max": 14
+      },
+      "footprint": {
+        "w": 2.33,
+        "l": 5.5
+      },
+      "options": [
+        {
+          "id": "antenna",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "jp-type99-lmg",
+      "name": "Type 99 Light Machine Gun",
+      "faction": "japan",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 0.5,
+        "min": 0.32,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.3,
+        "l": 1.22
+      },
+      "options": [
+        {
+          "id": "display",
+          "kind": "select",
+          "choices": [
+            "stand",
+            "bipod"
+          ]
+        },
+        {
+          "id": "sling",
+          "kind": "toggle"
+        },
+        {
+          "id": "magazine",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-glass-flask",
+      "name": "Glass Water Flask",
+      "faction": "soviet",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.45,
+        "min": 0.34,
+        "max": 1.2
+      },
+      "footprint": {
+        "w": 0.32,
+        "l": 0.3
+      },
+      "options": []
+    },
+    {
+      "id": "su-dp27",
+      "name": "DP-27",
+      "faction": "soviet",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 0.5,
+        "min": 0.32,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.3,
+        "l": 1.3
+      },
+      "options": [
+        {
+          "id": "display",
+          "kind": "select",
+          "choices": [
+            "stand",
+            "bipod"
+          ]
+        },
+        {
+          "id": "barrel",
+          "kind": "select",
+          "choices": [
+            "plain",
+            "finned"
+          ]
+        },
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-f1-grenade",
+      "name": "F-1 Hand Grenade",
+      "faction": "soviet",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 60,
+      "spacing": {
+        "default": 0.22,
+        "min": 0.14,
+        "max": 0.8
+      },
+      "footprint": {
+        "w": 0.13,
+        "l": 0.13
+      },
+      "options": []
+    },
+    {
+      "id": "su-gaz67b",
+      "name": "GAZ-67B",
+      "faction": "soviet",
+      "category": "Vehicles",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 6,
+        "min": 4,
+        "max": 14
+      },
+      "footprint": {
+        "w": 1.69,
+        "l": 3.35
+      },
+      "options": []
+    },
+    {
+      "id": "su-il2",
+      "name": "Ilyushin Il-2",
+      "faction": "soviet",
+      "category": "Aircraft",
+      "countAs": "aircraft",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 6,
+      "spacing": {
+        "default": 19,
+        "min": 15,
+        "max": 30
+      },
+      "footprint": {
+        "w": 14.6,
+        "l": 11.6
+      },
+      "options": []
+    },
+    {
+      "id": "su-kv-1",
+      "name": "KV-1 Model 1941",
+      "faction": "soviet",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 9.5,
+        "min": 5,
+        "max": 20
+      },
+      "footprint": {
+        "w": 3.5,
+        "l": 7.4
+      },
+      "options": [
+        {
+          "id": "tanks",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-is-2",
+      "name": "IS-2 Model 1944",
+      "faction": "soviet",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 10.5,
+        "min": 5,
+        "max": 20
+      },
+      "footprint": {
+        "w": 3.2,
+        "l": 9.83
+      },
+      "options": [
+        {
+          "id": "aa",
+          "kind": "toggle"
+        },
+        {
+          "id": "tanks",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-mosin-9130",
+      "name": "Mosin-Nagant M1891/30",
+      "faction": "soviet",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.2,
+        "max": 1.6
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 1.26
+      },
+      "options": [
+        {
+          "id": "bayonet",
+          "kind": "select",
+          "choices": [
+            "none",
+            "fixed"
+          ]
+        },
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-machine-gunner",
+      "name": "DP-27 Gunner (1943-44)",
+      "faction": "soviet",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.3,
+        "min": 0.9,
+        "max": 3.5
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.9
+      },
+      "options": [
+        {
+          "id": "footwear",
+          "kind": "select",
+          "choices": [
+            "boots",
+            "obmotki"
+          ]
+        },
+        {
+          "id": "veshmeshok",
+          "kind": "toggle"
+        },
+        {
+          "id": "skatka",
+          "kind": "toggle"
+        },
+        {
+          "id": "canteen",
+          "kind": "toggle"
+        },
+        {
+          "id": "shovel",
+          "kind": "toggle"
+        },
+        {
+          "id": "grenades",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-su-76m",
+      "name": "SU-76M",
+      "faction": "soviet",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 16,
+      "spacing": {
+        "default": 8,
+        "min": 3.5,
+        "max": 18
+      },
+      "footprint": {
+        "w": 2.75,
+        "l": 5.05
+      },
+      "options": [
+        {
+          "id": "tarp",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-zis3",
+      "name": "ZiS-3",
+      "faction": "soviet",
+      "category": "Artillery",
+      "countAs": "artillery",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 7.5,
+        "min": 4.5,
+        "max": 14
+      },
+      "footprint": {
+        "w": 3.6,
+        "l": 5.8
+      },
+      "options": [
+        {
+          "id": "trails",
+          "kind": "select",
+          "choices": [
+            "deployed",
+            "closed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "su-t34-85",
+      "name": "T-34-85",
+      "faction": "soviet",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 9.5,
+        "min": 4,
+        "max": 18
+      },
+      "footprint": {
+        "w": 3,
+        "l": 8.15
+      },
+      "options": [
+        {
+          "id": "tanks",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-zis-5",
+      "name": "ZiS-5V",
+      "faction": "soviet",
+      "category": "Vehicles",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 8,
+      "spacing": {
+        "default": 8,
+        "min": 6.5,
+        "max": 16
+      },
+      "footprint": {
+        "w": 2.24,
+        "l": 6.06
+      },
+      "options": []
+    },
+    {
+      "id": "uk-churchill-vii",
+      "name": "Churchill Mk VII",
+      "faction": "uk",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 10,
+        "min": 4.5,
+        "max": 18
+      },
+      "footprint": {
+        "w": 3.25,
+        "l": 7.44
+      },
+      "options": []
+    },
+    {
+      "id": "uk-cromwell",
+      "name": "Cromwell Mk IV",
+      "faction": "uk",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 9,
+        "min": 4,
+        "max": 16
+      },
+      "footprint": {
+        "w": 2.92,
+        "l": 6.35
+      },
+      "options": []
+    },
+    {
+      "id": "uk-qf-25pdr",
+      "name": "QF 25-pounder Mk II",
+      "faction": "uk",
+      "category": "Artillery",
+      "countAs": "artillery",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 7,
+        "min": 4,
+        "max": 14
+      },
+      "footprint": {
+        "w": 2.3,
+        "l": 4.7
+      },
+      "options": []
+    },
+    {
+      "id": "uk-spitfire-ix",
+      "name": "Supermarine Spitfire LF Mk IXc",
+      "faction": "uk",
+      "category": "Aircraft",
+      "countAs": "aircraft",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 15,
+        "min": 12,
+        "max": 26
+      },
+      "footprint": {
+        "w": 11.23,
+        "l": 9.47
+      },
+      "options": []
+    },
+    {
+      "id": "uk-sherman-firefly",
+      "name": "Sherman Firefly Vc",
+      "faction": "uk",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 10,
+        "min": 8.5,
+        "max": 18
+      },
+      "footprint": {
+        "w": 2.62,
+        "l": 6.1
+      },
+      "options": [
+        {
+          "id": "turret",
+          "kind": "select",
+          "choices": [
+            "forward",
+            "travel"
+          ]
+        },
+        {
+          "id": "countershade",
+          "kind": "toggle"
+        },
+        {
+          "id": "stowage",
+          "kind": "toggle"
+        },
+        {
+          "id": "sandShields",
+          "kind": "toggle"
+        },
+        {
+          "id": "star",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "uk-universal-carrier",
+      "name": "Universal Carrier Mk II",
+      "faction": "uk",
+      "category": "Vehicles",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 16,
+      "spacing": {
+        "default": 6,
+        "min": 4,
+        "max": 12
+      },
+      "footprint": {
+        "w": 2.06,
+        "l": 3.66
+      },
+      "options": [
+        {
+          "id": "bren",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "us-m18-hellcat",
+      "name": "M18 Hellcat",
+      "faction": "usa",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 9,
+        "min": 7,
+        "max": 16
+      },
+      "footprint": {
+        "w": 2.87,
+        "l": 5.28
+      },
+      "options": [
+        {
+          "id": "gun",
+          "kind": "select",
+          "choices": [
+            "m1a2",
+            "m1a1"
+          ]
+        },
+        {
+          "id": "stowage",
+          "kind": "toggle"
+        },
+        {
+          "id": "star",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "us-m3a1-halftrack",
+      "name": "M3A1 Half-track",
+      "faction": "usa",
+      "category": "Vehicles",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 10,
+      "spacing": {
+        "default": 8,
+        "min": 6.5,
+        "max": 18
+      },
+      "footprint": {
+        "w": 2.22,
+        "l": 6.16
+      },
+      "options": []
+    },
+    {
+      "id": "us-m2a1-howitzer",
+      "name": "105 mm Howitzer M2A1",
+      "faction": "usa",
+      "category": "Artillery",
+      "countAs": "artillery",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 7.5,
+        "min": 4.5,
+        "max": 14
+      },
+      "footprint": {
+        "w": 4,
+        "l": 5.6
+      },
+      "options": [
+        {
+          "id": "trails",
+          "kind": "select",
+          "choices": [
+            "deployed",
+            "closed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us-m4a3-sherman",
+      "name": "M4A3(75)W Sherman",
+      "faction": "usa",
+      "category": "Armor",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 9,
+        "min": 6.5,
+        "max": 16
+      },
+      "footprint": {
+        "w": 2.62,
+        "l": 5.9
+      },
+      "options": [
+        {
+          "id": "sandShields",
+          "kind": "toggle"
+        },
+        {
+          "id": "stowage",
+          "kind": "toggle"
+        },
+        {
+          "id": "star",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "us-p51d",
+      "name": "North American P-51D Mustang",
+      "faction": "usa",
+      "category": "Aircraft",
+      "countAs": "aircraft",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 15,
+        "min": 12,
+        "max": 26
+      },
+      "footprint": {
+        "w": 11.28,
+        "l": 9.7
+      },
+      "options": []
+    },
+    {
+      "id": "us-willys-mb",
+      "name": "Willys MB",
+      "faction": "usa",
+      "category": "Vehicles",
+      "countAs": "vehicles",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 12,
+      "spacing": {
+        "default": 6,
+        "min": 4,
+        "max": 14
+      },
+      "footprint": {
+        "w": 1.575,
+        "l": 3.37
+      },
+      "options": [
+        {
+          "id": "windscreen",
+          "kind": "select",
+          "choices": [
+            "up",
+            "folded"
+          ]
+        },
+        {
+          "id": "star",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-mpl50-shovel",
+      "name": "MPL-50 Infantry Shovel",
+      "faction": "soviet",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.45,
+        "min": 0.3,
+        "max": 1.2
+      },
+      "footprint": {
+        "w": 0.28,
+        "l": 0.58
+      },
+      "options": [
+        {
+          "id": "display",
+          "kind": "select",
+          "choices": [
+            "cover",
+            "apart"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "su-ssh40-helmet",
+      "name": "SSh-40 Steel Helmet",
+      "faction": "soviet",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.5,
+        "min": 0.36,
+        "max": 1.2
+      },
+      "footprint": {
+        "w": 0.32,
+        "l": 0.4
+      },
+      "options": []
+    },
+    {
+      "id": "uk-entrenching-tool",
+      "name": "Entrenching Tool, 1937 Pattern",
+      "faction": "uk",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.62,
+        "min": 0.56,
+        "max": 1.6
+      },
+      "footprint": {
+        "w": 0.54,
+        "l": 0.24
+      },
+      "options": []
+    },
+    {
+      "id": "uk-lee-enfield-no4",
+      "name": "Rifle No. 4 Mk I",
+      "faction": "uk",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.2,
+        "max": 1.8
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 1.16
+      },
+      "options": [
+        {
+          "id": "sling",
+          "kind": "toggle"
+        },
+        {
+          "id": "bayonet",
+          "kind": "select",
+          "choices": [
+            "none",
+            "fixed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uk-mk2-helmet",
+      "name": "Helmet, Steel, Mk II",
+      "faction": "uk",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.62,
+        "min": 0.52,
+        "max": 1.4
+      },
+      "footprint": {
+        "w": 0.5,
+        "l": 0.53
+      },
+      "options": []
+    },
+    {
+      "id": "uk-no36-grenade",
+      "name": "Grenade, No. 36M Mk I",
+      "faction": "uk",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 60,
+      "spacing": {
+        "default": 0.22,
+        "min": 0.15,
+        "max": 0.8
+      },
+      "footprint": {
+        "w": 0.13,
+        "l": 0.13
+      },
+      "options": []
+    },
+    {
+      "id": "uk-sten-mk2",
+      "name": "Sten Mk II",
+      "faction": "uk",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.42,
+        "min": 0.28,
+        "max": 1.8
+      },
+      "footprint": {
+        "w": 0.26,
+        "l": 0.8
+      },
+      "options": [
+        {
+          "id": "sling",
+          "kind": "toggle"
+        },
+        {
+          "id": "magazine",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "uk-water-bottle-37",
+      "name": "Water Bottle Mk VII, 1937 Pattern Carrier",
+      "faction": "uk",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.26,
+        "max": 1
+      },
+      "footprint": {
+        "w": 0.24,
+        "l": 0.16
+      },
+      "options": []
+    },
+    {
+      "id": "us-bar-m1918a2",
+      "name": "BAR M1918A2",
+      "faction": "usa",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 30,
+      "spacing": {
+        "default": 0.42,
+        "min": 0.25,
+        "max": 2.2
+      },
+      "footprint": {
+        "w": 0.18,
+        "l": 1.26
+      },
+      "options": [
+        {
+          "id": "display",
+          "kind": "select",
+          "choices": [
+            "stand",
+            "bipod"
+          ]
+        },
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "us-m1910-canteen",
+      "name": "M1910 Canteen, Cup and Cover",
+      "faction": "usa",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.5,
+        "min": 0.3,
+        "max": 1.5
+      },
+      "footprint": {
+        "w": 0.36,
+        "l": 0.26
+      },
+      "options": [
+        {
+          "id": "display",
+          "kind": "select",
+          "choices": [
+            "set",
+            "cover",
+            "apart"
+          ]
+        },
+        {
+          "id": "metal",
+          "kind": "select",
+          "choices": [
+            "aluminium",
+            "stainless"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us-m1943-entrenching-tool",
+      "name": "M1943 Entrenching Tool",
+      "faction": "usa",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.55,
+        "min": 0.35,
+        "max": 1.8
+      },
+      "footprint": {
+        "w": 0.3,
+        "l": 0.62
+      },
+      "options": [
+        {
+          "id": "display",
+          "kind": "select",
+          "choices": [
+            "carrier",
+            "apart"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us-m1-garand",
+      "name": "M1 Garand",
+      "faction": "usa",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.2,
+        "max": 1.8
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 1.14
+      },
+      "options": [
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "us-m1-helmet",
+      "name": "M1 Steel Helmet",
+      "faction": "usa",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.55,
+        "min": 0.38,
+        "max": 1.5
+      },
+      "footprint": {
+        "w": 0.32,
+        "l": 0.44
+      },
+      "options": [
+        {
+          "id": "chinstrap",
+          "kind": "select",
+          "choices": [
+            "laid",
+            "none"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "us-mk2-grenade",
+      "name": "Mk 2 Fragmentation Grenade",
+      "faction": "usa",
+      "category": "Equipment",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 60,
+      "spacing": {
+        "default": 0.25,
+        "min": 0.16,
+        "max": 1
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 0.14
+      },
+      "options": []
+    },
+    {
+      "id": "us-thompson-m1a1",
+      "name": "Thompson M1A1",
+      "faction": "usa",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.2,
+        "max": 1.6
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 0.86
+      },
+      "options": [
+        {
+          "id": "magazine",
+          "kind": "select",
+          "choices": [
+            "30",
+            "20",
+            "none"
+          ]
+        },
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-ppsh41",
+      "name": "PPSh-41",
+      "faction": "soviet",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 40,
+      "spacing": {
+        "default": 0.34,
+        "min": 0.2,
+        "max": 1.5
+      },
+      "footprint": {
+        "w": 0.14,
+        "l": 0.86
+      },
+      "options": [
+        {
+          "id": "magazine",
+          "kind": "select",
+          "choices": [
+            "drum",
+            "box"
+          ]
+        },
+        {
+          "id": "sling",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "uk-bren-mk2",
+      "name": "Bren Mk II",
+      "faction": "uk",
+      "category": "Weapons",
+      "countAs": "looseEquipment",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 0.5,
+        "min": 0.32,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.3,
+        "l": 1.2
+      },
+      "options": [
+        {
+          "id": "display",
+          "kind": "select",
+          "choices": [
+            "stand",
+            "bipod"
+          ]
+        },
+        {
+          "id": "sling",
+          "kind": "toggle"
+        },
+        {
+          "id": "magazine",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "us-bar-gunner",
+      "name": "BAR Gunner (1944)",
+      "faction": "usa",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.2,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.7
+      },
+      "options": [
+        {
+          "id": "pose",
+          "kind": "select",
+          "choices": [
+            "low-ready",
+            "shoulder-carry"
+          ]
+        },
+        {
+          "id": "haversack",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "us-rifleman",
+      "name": "Rifleman (1944)",
+      "faction": "usa",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.5
+      },
+      "options": [
+        {
+          "id": "pose",
+          "kind": "select",
+          "choices": [
+            "port-arms",
+            "order-arms"
+          ]
+        },
+        {
+          "id": "haversack",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "us-squad-leader",
+      "name": "Squad Leader (1944)",
+      "faction": "usa",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.6
+      },
+      "options": [
+        {
+          "id": "haversack",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-rifleman",
+      "name": "Rifleman (1943-44)",
+      "faction": "soviet",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.5
+      },
+      "options": [
+        {
+          "id": "bayonet",
+          "kind": "select",
+          "choices": [
+            "fixed",
+            "none"
+          ]
+        },
+        {
+          "id": "footwear",
+          "kind": "select",
+          "choices": [
+            "boots",
+            "obmotki"
+          ]
+        },
+        {
+          "id": "veshmeshok",
+          "kind": "toggle"
+        },
+        {
+          "id": "canteen",
+          "kind": "toggle"
+        },
+        {
+          "id": "shovel",
+          "kind": "toggle"
+        },
+        {
+          "id": "grenades",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "su-submachine-gunner",
+      "name": "Submachine Gunner (1943-44)",
+      "faction": "soviet",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.6
+      },
+      "options": [
+        {
+          "id": "magazine",
+          "kind": "select",
+          "choices": [
+            "drum",
+            "box"
+          ]
+        },
+        {
+          "id": "footwear",
+          "kind": "select",
+          "choices": [
+            "boots",
+            "obmotki"
+          ]
+        },
+        {
+          "id": "veshmeshok",
+          "kind": "toggle"
+        },
+        {
+          "id": "canteen",
+          "kind": "toggle"
+        },
+        {
+          "id": "shovel",
+          "kind": "toggle"
+        },
+        {
+          "id": "grenades",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "uk-bren-gunner",
+      "name": "Bren Gunner (1944)",
+      "faction": "uk",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.5
+      },
+      "options": [
+        {
+          "id": "pose",
+          "kind": "select",
+          "choices": [
+            "low-ready",
+            "shoulder-carry"
+          ]
+        },
+        {
+          "id": "pack",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "uk-rifleman",
+      "name": "Rifleman (1944)",
+      "faction": "uk",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.5
+      },
+      "options": [
+        {
+          "id": "pose",
+          "kind": "select",
+          "choices": [
+            "port-arms",
+            "order-arms"
+          ]
+        },
+        {
+          "id": "pack",
+          "kind": "toggle"
+        }
+      ]
+    },
+    {
+      "id": "uk-section-leader",
+      "name": "Section Leader (1944)",
+      "faction": "uk",
+      "category": "Infantry",
+      "countAs": "personnel",
+      "status": "available",
+      "placeable": true,
+      "hidden": false,
+      "listed": true,
+      "unavailableReason": null,
+      "maxQuantity": 24,
+      "spacing": {
+        "default": 1.1,
+        "min": 0.8,
+        "max": 3
+      },
+      "footprint": {
+        "w": 0.6,
+        "l": 0.5
+      },
+      "options": [
+        {
+          "id": "weapon",
+          "kind": "select",
+          "choices": [
+            "sten",
+            "no4"
+          ]
+        },
+        {
+          "id": "pose",
+          "kind": "select",
+          "choices": [
+            "low-ready",
+            "port-arms",
+            "order-arms"
+          ]
+        },
+        {
+          "id": "pack",
+          "kind": "toggle"
+        }
+      ]
+    }
+  ],
+  "initialCounts": {
+    "personnel": 192,
+    "vehicles": 24,
+    "artillery": 12,
+    "aircraft": 4,
+    "looseEquipment": 48,
+    "total": 280,
+    "groups": 96,
+    "byFaction": {
+      "germany": {
+        "personnel": 48,
+        "vehicles": 6,
+        "artillery": 3,
+        "aircraft": 1,
+        "looseEquipment": 12
+      },
+      "soviet": {
+        "personnel": 48,
+        "vehicles": 6,
+        "artillery": 3,
+        "aircraft": 1,
+        "looseEquipment": 12
+      },
+      "usa": {
+        "personnel": 48,
+        "vehicles": 6,
+        "artillery": 3,
+        "aircraft": 1,
+        "looseEquipment": 12
+      },
+      "uk": {
+        "personnel": 48,
+        "vehicles": 6,
+        "artillery": 3,
+        "aircraft": 1,
+        "looseEquipment": 12
+      }
+    }
+  },
+  "timings": {
+    "catalogMs": 1088,
+    "displayMs": 53862,
+    "readyAt": 59018
+  },
+  "finishedAt": "2026-10-11T01:27:03.821Z"
+}

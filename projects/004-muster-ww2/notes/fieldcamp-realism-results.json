@@ -1,0 +1,491 @@
+{
+  "date": "2026-10-11T03:45:34.991Z",
+  "base": "http://127.0.0.1:5198/",
+  "checks": [
+    {
+      "name": "启动真实部件动画：车轮角度与逐节履带矩阵实际改变",
+      "passed": true,
+      "detail": {
+        "actors": [
+          {
+            "assetId": "us-willys-mb",
+            "wheels": 4,
+            "tracks": []
+          },
+          {
+            "assetId": "us-willys-mb",
+            "wheels": 4,
+            "tracks": []
+          },
+          {
+            "assetId": "us-m4a3-sherman",
+            "wheels": 16,
+            "tracks": [
+              79,
+              79,
+              79,
+              79,
+              79,
+              79
+            ]
+          },
+          {
+            "assetId": "us-m4a3-sherman",
+            "wheels": 16,
+            "tracks": [
+              79,
+              79,
+              79,
+              79,
+              79,
+              79
+            ]
+          },
+          {
+            "assetId": "us-m18-hellcat",
+            "wheels": 14,
+            "tracks": [
+              83,
+              83,
+              83,
+              83
+            ]
+          },
+          {
+            "assetId": "us-p51d",
+            "wheels": 0,
+            "tracks": []
+          },
+          {
+            "assetId": "us-p51d",
+            "wheels": 0,
+            "tracks": []
+          }
+        ],
+        "audio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "running",
+          "currentTime": 9.021333333333333,
+          "gain": 0.3499999940395355,
+          "rms": 0.0032156815491282105,
+          "engines": 7,
+          "activeSteps": 9,
+          "footsteps": 28,
+          "issue": ""
+        },
+        "render": {
+          "frames": 16,
+          "lastMs": 26.4,
+          "avgMs": 228.52,
+          "maxMs": 2381.6
+        }
+      }
+    },
+    {
+      "name": "起落架支柱折叠、舱门合拢、进场前展开；停机飞机保持展开",
+      "passed": true,
+      "detail": {
+        "folding": [
+          {
+            "kind": "gear",
+            "angle": -1.0737865515199487,
+            "visible": true,
+            "quaternion": [
+              0,
+              -0.08881563381195329,
+              -0.5036984893355546,
+              0.8593018183570085
+            ]
+          },
+          {
+            "kind": "door",
+            "angle": 0.10721308262250874,
+            "visible": true,
+            "quaternion": [
+              0,
+              0.009304220518926085,
+              0.052766856674699554,
+              0.9985635134117443
+            ]
+          },
+          {
+            "kind": "gear",
+            "angle": 1.0737865515199487,
+            "visible": true,
+            "quaternion": [
+              0,
+              0.08881563381195329,
+              0.5036984893355546,
+              0.8593018183570085
+            ]
+          },
+          {
+            "kind": "door",
+            "angle": -0.10721308262250874,
+            "visible": true,
+            "quaternion": [
+              0,
+              -0.009304220518926085,
+              -0.052766856674699554,
+              0.9985635134117443
+            ]
+          },
+          {
+            "kind": "tail-gear",
+            "angle": -1.0737865515199487,
+            "visible": true,
+            "quaternion": [
+              -0.5114688504379703,
+              0,
+              0,
+              0.8593018183570085
+            ]
+          },
+          {
+            "kind": "tail-door",
+            "angle": -0.11845362682712333,
+            "visible": true,
+            "quaternion": [
+              0,
+              -0.010278616509858285,
+              -0.05829293094318173,
+              0.9982466049252042
+            ]
+          },
+          {
+            "kind": "tail-door",
+            "angle": 0.11845362682712333,
+            "visible": true,
+            "quaternion": [
+              0,
+              0.010278616509858285,
+              0.05829293094318173,
+              0.9982466049252042
+            ]
+          }
+        ],
+        "stowed": [
+          {
+            "kind": "gear",
+            "angle": -1.5707963267948966,
+            "visible": false,
+            "quaternion": [
+              0,
+              -0.12278780396897282,
+              -0.6963642403200189,
+              0.7071067811865476
+            ]
+          },
+          {
+            "kind": "door",
+            "angle": 1.117010721276371,
+            "visible": true,
+            "quaternion": [
+              0,
+              0.09201951454469656,
+              0.5218685998873851,
+              0.848048096156426
+            ]
+          },
+          {
+            "kind": "gear",
+            "angle": 1.5707963267948966,
+            "visible": false,
+            "quaternion": [
+              0,
+              0.12278780396897282,
+              0.6963642403200189,
+              0.7071067811865476
+            ]
+          },
+          {
+            "kind": "door",
+            "angle": -1.117010721276371,
+            "visible": true,
+            "quaternion": [
+              0,
+              -0.09201951454469656,
+              -0.5218685998873851,
+              0.848048096156426
+            ]
+          },
+          {
+            "kind": "tail-gear",
+            "angle": -1.5707963267948966,
+            "visible": false,
+            "quaternion": [
+              -0.7071067811865475,
+              0,
+              0,
+              0.7071067811865476
+            ]
+          },
+          {
+            "kind": "tail-door",
+            "angle": -1.2341215074081695,
+            "visible": true,
+            "quaternion": [
+              0,
+              -0.10047986225666998,
+              -0.5698496160539441,
+              0.8155827440327885
+            ]
+          },
+          {
+            "kind": "tail-door",
+            "angle": 1.2341215074081695,
+            "visible": true,
+            "quaternion": [
+              0,
+              0.10047986225666998,
+              0.5698496160539441,
+              0.8155827440327885
+            ]
+          }
+        ],
+        "deployed": [
+          {
+            "kind": "gear",
+            "angle": 0,
+            "visible": true,
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "door",
+            "angle": 0,
+            "visible": true,
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "gear",
+            "angle": 0,
+            "visible": true,
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "door",
+            "angle": 0,
+            "visible": true,
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "tail-gear",
+            "angle": 0,
+            "visible": true,
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "tail-door",
+            "angle": 0,
+            "visible": true,
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "kind": "tail-door",
+            "angle": 0,
+            "visible": true,
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "脚掌支撑与抬脚、膝盖弯曲；脚步事件随巡逻播放",
+      "passed": true,
+      "detail": {
+        "support": [
+          {
+            "stance": true,
+            "z": 0.16775984402167646,
+            "lift": 0
+          },
+          {
+            "stance": true,
+            "z": 0.08787420401135548,
+            "lift": 0
+          }
+        ],
+        "swing": {
+          "stance": false,
+          "z": -0.019532906671716404,
+          "lift": 0.10962429423073373
+        },
+        "footsteps": [
+          41,
+          67
+        ],
+        "audio": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "running",
+          "currentTime": 10.850666666666667,
+          "gain": 0.3499999940395355,
+          "rms": 0.009065083160863352,
+          "engines": 7,
+          "activeSteps": 5,
+          "footsteps": 67,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "暂停同时静音并冻结音频时钟；继续、静音开关与音量有效",
+      "passed": true,
+      "detail": {
+        "paused": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 11.061333333333334,
+          "gain": 0,
+          "rms": 0,
+          "engines": 7,
+          "activeSteps": 0,
+          "footsteps": 71,
+          "issue": ""
+        },
+        "resumed": {
+          "enabled": true,
+          "volume": 0.35,
+          "context": "running",
+          "currentTime": 11.72,
+          "gain": 0.3499999940395355,
+          "rms": 0.02067044640706601,
+          "engines": 7,
+          "activeSteps": 5,
+          "footsteps": 85,
+          "issue": ""
+        },
+        "muted": {
+          "enabled": false,
+          "volume": 0.35,
+          "context": "suspended",
+          "currentTime": 11.96,
+          "gain": 0,
+          "rms": 0,
+          "engines": 7,
+          "activeSteps": 0,
+          "footsteps": 90,
+          "issue": ""
+        },
+        "volume": {
+          "enabled": true,
+          "volume": 0.6,
+          "context": "running",
+          "currentTime": 12.4,
+          "gain": 0.6000000238418579,
+          "rms": 0.01427944065017583,
+          "engines": 7,
+          "activeSteps": 3,
+          "footsteps": 97,
+          "issue": ""
+        }
+      }
+    },
+    {
+      "name": "录下实际输出的发动机与脚步声；时间轴暂停后无旧脚步突发",
+      "passed": true,
+      "detail": {
+        "recording": "assets/fieldcamp-realism-audio.wav",
+        "seconds": 2.7093333333333334,
+        "rate": 48000,
+        "peak": 0.2287549376487732
+      }
+    },
+    {
+      "name": "切换后台标签页自动暂停画面与声音，返回后手动继续",
+      "passed": true,
+      "detail": {
+        "pausedAt": 20.912499999999998,
+        "audio": {
+          "enabled": true,
+          "volume": 0.6,
+          "context": "suspended",
+          "currentTime": 16.570666666666668,
+          "gain": 0,
+          "rms": 0,
+          "engines": 7,
+          "activeSteps": 0,
+          "footsteps": 185,
+          "issue": ""
+        },
+        "resumed": true
+      }
+    },
+    {
+      "name": "退出恢复保存布局与模型；窄屏声音控制和重新进入",
+      "passed": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390,
+        "items": [
+          {
+            "left": 23,
+            "right": 109.234375
+          },
+          {
+            "left": 115.234375,
+            "right": 178.234375
+          },
+          {
+            "left": 327,
+            "right": 367
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision",
+    "THREE.WebGLProgram: Program Info Log: (85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value\n(85,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value"
+  ],
+  "failures": [],
+  "screenshots": [
+    "fieldcamp-realism-gear-folding.png",
+    "fieldcamp-realism-gear-up.png",
+    "fieldcamp-realism-gear-down.png",
+    "fieldcamp-realism-patrol.png",
+    "fieldcamp-realism-convoy.png",
+    "fieldcamp-realism-mobile.png"
+  ],
+  "passed": true,
+  "browser": "Edg/155.0.4283.45",
+  "finished": "2026-10-11T03:46:45.119Z"
+}

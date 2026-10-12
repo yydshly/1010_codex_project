@@ -1,0 +1,341 @@
+{
+  "kind": "muster-fieldcamp",
+  "v": 1,
+  "groups": [
+    {
+      "id": "flight",
+      "assetId": "us-p51d",
+      "config": {},
+      "quantity": 2,
+      "formation": "line",
+      "spacing": 15,
+      "columns": "auto",
+      "heading": 0,
+      "anchor": {
+        "x": -18,
+        "z": -8
+      },
+      "instances": [
+        {
+          "slot": 0,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 1,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        }
+      ]
+    },
+    {
+      "id": "armor",
+      "assetId": "us-m4a3-sherman",
+      "config": {
+        "sandShields": true,
+        "stowage": true,
+        "star": true
+      },
+      "quantity": 2,
+      "formation": "line",
+      "spacing": 8,
+      "columns": "auto",
+      "heading": 180,
+      "anchor": {
+        "x": 22,
+        "z": -2
+      },
+      "instances": [
+        {
+          "slot": 0,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 1,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        }
+      ]
+    },
+    {
+      "id": "recon",
+      "assetId": "us-m18-hellcat",
+      "config": {
+        "gun": "m1a2",
+        "stowage": true,
+        "star": true
+      },
+      "quantity": 1,
+      "formation": "single",
+      "spacing": 9,
+      "columns": "auto",
+      "heading": 180,
+      "anchor": {
+        "x": 11,
+        "z": -3
+      },
+      "instances": [
+        {
+          "slot": 0,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "assetId": "us-willys-mb",
+      "config": {
+        "windscreen": "up",
+        "star": true
+      },
+      "quantity": 2,
+      "formation": "line",
+      "spacing": 5,
+      "columns": "auto",
+      "heading": 90,
+      "anchor": {
+        "x": -3,
+        "z": 13
+      },
+      "instances": [
+        {
+          "slot": 0,
+          "offset": {
+            "dx": 0.395,
+            "dz": -0.029
+          },
+          "headingOffset": -15
+        },
+        {
+          "slot": 1,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        }
+      ]
+    },
+    {
+      "id": "battery",
+      "assetId": "us-m2a1-howitzer",
+      "config": {
+        "trails": "closed"
+      },
+      "quantity": 2,
+      "formation": "line",
+      "spacing": 11,
+      "columns": "auto",
+      "heading": 180,
+      "anchor": {
+        "x": 22,
+        "z": -16
+      },
+      "instances": [
+        {
+          "slot": 0,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 1,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        }
+      ]
+    },
+    {
+      "id": "squad",
+      "assetId": "us-rifleman",
+      "config": {
+        "pose": "port-arms",
+        "haversack": true
+      },
+      "quantity": 8,
+      "formation": "line",
+      "spacing": 1.7,
+      "columns": 4,
+      "heading": 90,
+      "anchor": {
+        "x": 13,
+        "z": 12.4
+      },
+      "instances": [
+        {
+          "slot": 0,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 1,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 2,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 3,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 4,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 5,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 6,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 7,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        }
+      ]
+    },
+    {
+      "id": "leader",
+      "assetId": "us-squad-leader",
+      "config": {
+        "haversack": false
+      },
+      "quantity": 2,
+      "formation": "line",
+      "spacing": 2,
+      "columns": "auto",
+      "heading": 270,
+      "anchor": {
+        "x": 9,
+        "z": 13
+      },
+      "instances": [
+        {
+          "slot": 0,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 1,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        }
+      ]
+    },
+    {
+      "id": "bar",
+      "assetId": "us-bar-gunner",
+      "config": {
+        "pose": "low-ready",
+        "haversack": false
+      },
+      "quantity": 3,
+      "formation": "line",
+      "spacing": 2,
+      "columns": "auto",
+      "heading": 180,
+      "anchor": {
+        "x": 26,
+        "z": 11
+      },
+      "instances": [
+        {
+          "slot": 0,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 1,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        },
+        {
+          "slot": 2,
+          "offset": {
+            "dx": 0,
+            "dz": 0
+          },
+          "headingOffset": 0
+        }
+      ]
+    }
+  ],
+  "camera": {
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "distance": 118,
+    "yaw": 28,
+    "pitch": 48
+  }
+}
