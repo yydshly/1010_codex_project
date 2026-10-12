@@ -7,6 +7,7 @@ export const web=fileURLToPath(new URL('../',import.meta.url));
 export const project=path.resolve(web,'..');
 export const dist=path.join(web,'dist-public');
 export const documents=[
+ ['提交与交付摘要','notes/submission-summary.md','研究'],
  ['完整中文研究摘要','notes/research-summary.md','研究'],
  ['摘要与模块数据','notes/research-summary.json','研究'],
  ['源库能力与原理','notes/research.md','研究'],
@@ -39,6 +40,7 @@ export const assets=[
 const E=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const section=(id,n,title,intro)=>'<section class="section" id="'+id+'"><div class="section-title"><span>'+n+'</span><div><h2>'+E(title)+'</h2><p>'+E(intro)+'</p></div></div>';
 const card=(title,text)=>'<article class="card"><h3>'+E(title)+'</h3><p>'+E(text)+'</p></article>';
+const summaryParagraph=(text,label)=>'<p><strong class="paragraph-label">'+E(label)+'</strong>'+E(text)+'</p>';
 const rootSource='https://github.com/yydshly/1010_codex_project/blob/main/projects/008-pdoom-video/web/';
 const close='</section>';
 export async function build(){
@@ -65,12 +67,12 @@ export async function build(){
  h+=section('studio','05','纸间 MV：本地工具已经可以怎么用？','参数化主角、音乐歌词、三种画风、分镜编辑、音乐同步预览与成片导出。');
  h+='<div class="studio-layout"><div><img src="./assets/mv-studio-desktop.png" loading="lazy" alt="纸间 MV 实际本地工具全页截图：角色参数、音乐、预览、分镜和导出"></div><div class="studio-copy"><span class="status verified">完整本地闭环</span><h3>把一个主角，编排成一支短片。</h3><ol><li>设置名字、配色、比例、眼睛、头饰与情绪。</li><li>上传 MP3／WAV，选取 15～30 秒并导入歌词。</li><li>选择画风、BPM 和首拍偏移，生成规则草案。</li><li>修改场景、动作、镜头与字幕，随音乐预览。</li><li>保存工程，导出 720p／1080p MP4。</li></ol><p>支持草稿恢复、JSON 导入导出、任务进度、取消和继续。当前一个主角、六类场景、六动作、五情绪、三个镜头运动。</p><a class="button" href="#run-local">查看本地启动方法</a></div></div>';
  h+='<div class="style-switch"><div class="style-controls" role="group" aria-label="查看真实画风"><h3>三种画风，真实画布对照</h3>'+data.styles.map((s,i)=>'<button class="style-button'+(i===0?' active':'')+'" data-style="'+i+'" aria-pressed="'+(i===0)+'" type="button">'+E(s.title)+'</button>').join('')+'<p id="styleDescription">'+E(data.styles[0].description)+'</p></div><img id="styleImage" src="./'+data.styles[0].file+'" loading="lazy" alt="'+E(data.styles[0].title)+'实际效果"></div>'+close;
- h+=section('value','06','价值与用途：先想清楚要表达什么','从特定 MV 抽出可复用模块，让技术探索成为下一次创作的起点。');
+ h+=section('value','06','价值与意义：让角色和创作流程持续复用','角色积累视觉身份，分镜保存创作意图，模块保留工程方法，让完成的一次作品成为下一次创作的起点。');
  h+='<div class="value-grid">'+card('自有 IP 与系列内容','让同一主角持续出现在不同歌曲、故事与介绍中，积累自己的视觉身份、动作、场景和画风。')+card('可检查、可修改','分镜、时间、动作与镜头是明确的数据；模型只提出计划，用户可以调整，程序执行和验证输出。')+card('研究与技术表达','可规划为项目介绍与科普短片，用角色解释搭建、观察、决策和输出；具体内容迁移目前尚未实现。')+card('创作资产与工程起点','可复用歌词解析、角色协议、模板动作、作业与验收。模板表达有限，下一阶段用实际内容检验改进。')+'</div><div class="use-cases"><strong>适用方向</strong><span>音乐片段</span><span>技术科普</span><span>研究介绍</span><span>动态绘本</span><span>品牌故事</span><span>活动祝福</span></div><p class="caption">效率、传播、教学与商业收益尚无实测对照。先验证一位主角、15～30 秒、有因果关系的镜头，再增加复杂度。</p>'+close;
  h+=section('roadmap','07','可扩展方向：让音乐参与真正的创作','最终目标：定制角色 → 上传歌曲（歌词可选）→ 选择画风 → 音乐理解与剧情编排 → 调整预览 → 导出专属 MV。');
  h+='<div class="roadmap">'+data.roadmap.map((r,i)=>'<article><span class="status planned">规划 · '+(i+1)+'</span><h3>'+E(r.phase)+'</h3><ul>'+r.items.map(t=>'<li>'+E(t)+'</li>').join('')+'</ul><p>'+E(r.criterion)+'</p></article>').join('')+'</div><p class="caption">生成式视频作为独立后端探索，不能从当前 Canvas 工具推断为已经拥有。音频分析、角色绑定和口型分别需要数据、算法和验收方法。</p>'+close;
  h+=section('complete-summary','08','九主题完整摘要','完整正文与结构化数据共用同一来源。检索主题、模块或资料，不省略关键原理与能力边界。');
- h+='<div class="search"><label for="researchSearch">检索理解与资料</label><input id="researchSearch" type="search" placeholder="例如：节拍、角色、AI、价值、口型、缓存" autocomplete="off"><button id="clearSearch" type="button" class="text-button" hidden>清除</button></div><p id="searchStatus" class="caption" aria-live="polite">9 个主题 · '+data.sections.reduce((n,s)=>n+s.body.length,0)+' 段正文</p><div class="summaries">'+data.sections.map(s=>'<details class="summary-section" open id="summary-'+s.id+'"><summary><h3>'+E(s.title)+'</h3><span>'+s.body.length+' 段</span></summary><div>'+s.body.map(t=>'<p>'+E(t)+'</p>').join('')+'</div></details>').join('')+'</div><p id="summaryEmpty" hidden>没有找到相关内容，可缩短关键词或清除检索。</p><div class="hero-actions"><a class="button" href="./notes/research-summary.md" download>下载完整摘要</a><a class="button" href="./notes/research-summary.json" download>下载结构化数据</a></div>'+close;
+ h+='<div class="search"><label for="researchSearch">检索理解与资料</label><input id="researchSearch" type="search" placeholder="例如：节拍、角色、AI、价值、口型、缓存" autocomplete="off"><button id="clearSearch" type="button" class="text-button" hidden>清除</button></div><p id="searchStatus" class="caption" aria-live="polite">9 个主题 · '+data.sections.reduce((n,s)=>n+s.body.length,0)+' 段正文</p><div class="summaries">'+data.sections.map(s=>'<details class="summary-section" open id="summary-'+s.id+'"><summary><h3>'+E(s.title)+'</h3><span>'+s.body.length+' 段</span></summary><div>'+s.body.map((t,i)=>summaryParagraph(t,s.labels[i])).join('')+'</div></details>').join('')+'</div><p id="summaryEmpty" hidden>没有找到相关内容，可缩短关键词或清除检索。</p><div class="hero-actions"><a class="button" href="./notes/research-summary.md" download>下载完整摘要</a><a class="button" href="./notes/research-summary.json" download>下载结构化数据</a></div>'+close;
  h+=section('library','09','原始资料、来源与验证证据','保留研究笔记、工程示例、媒体验证、原图说明与 MIT 原文。点击阅读原文，或下载继续研究。');
  h+='<div class="doc-filters" role="group" aria-label="资料分类">'+['全部','研究','验证','图与来源','工具'].map((f,i)=>'<button class="filter'+(i===0?' active':'')+'" type="button" data-filter="'+E(f)+'" aria-pressed="'+(i===0)+'">'+E(f)+'</button>').join('')+'</div><div class="documents">'+documents.map(([t,f,g])=>'<article class="document" data-group="'+E(g)+'"><span>'+E(g)+'</span><h3>'+E(t)+'</h3><small>'+E(f)+'</small><div><button class="text-button" data-doc="./'+f+'" data-title="'+E(t)+'" type="button">阅读原文 ↗</button><a href="./'+f+'" download>下载</a></div></article>').join('')+'</div><p id="docEmpty" hidden>当前分类或关键词没有匹配资料。</p>'+close;
  h+=section('run-local','10','在本机继续创作','公开页用于阅读研究、查看证据和播放成片。上传、模型请求与编码需要运行仓库里的本地服务。');

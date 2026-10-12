@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "checkedAt": "2026-10-12T12:26:05.417Z",
+  "checkedAt": "2026-10-12T12:58:52.664Z",
   "url": "http://127.0.0.1:5198/1010_codex_project/008-pdoom-video/research.html",
   "mode": "本地 Pages 路径预览",
   "browser": "Chrome/154.0.8037.99",
@@ -22,11 +22,23 @@
       "passed": true
     },
     {
-      "name": "21 份资料入口",
+      "name": "22 份资料入口",
       "passed": true
     },
     {
       "name": "完整研究正文已呈现",
+      "passed": true
+    },
+    {
+      "name": "37 个独立段落标签",
+      "passed": true
+    },
+    {
+      "name": "价值与意义分项呈现",
+      "passed": true
+    },
+    {
+      "name": "交付摘要真实换行与分项",
       "passed": true
     },
     {

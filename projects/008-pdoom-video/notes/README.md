@@ -4,6 +4,7 @@
 
 | 材料 | 内容 |
 | --- | --- |
+| [提交与交付摘要](submission-summary.md) | 分项说明源库、本地能力、模块、原理、价值、意义和扩展；补充两条原有发布提交的用途与验证边界 |
 | [发布说明](publication-verification.json) / [资源核验](publication-resource-verification.json) / [线上交互](research-live-verification.json) | 实际公开地址、Actions、39项资源哈希、23项浏览器检查及桌面/窄屏实拍 |
 | [站点导航核验](publication-navigation-verification.json) | 新入口已接入，既有八个公开研究入口继续可访问 |
 | [完整中文摘要](research-summary.md) / [结构化数据](research-summary.json) | 九主题、37 段，统一能力、模块、原理、效果、价值、用途、扩展与验证边界 |

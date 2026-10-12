@@ -18,9 +18,15 @@ try{
  assert((await page.$$eval('.summary-section',n=>n.length))===9,'九主题摘要');
  assert((await page.$$eval('.summary-section p',n=>n.length))===37,'37 段正文完整');
  assert((await page.$$eval('.module',n=>n.length))===9,'九组模块');
- assert((await page.$$eval('.document',n=>n.length))===21,'21 份资料入口');
+ assert((await page.$$eval('.document',n=>n.length))===22,'22 份资料入口');
  const heights=await page.evaluate(()=>({page:document.documentElement.scrollHeight,viewport:window.innerHeight}));
  assert(heights.page>heights.viewport*4,'完整研究正文已呈现');
+ assert((await page.$$eval('.summary-section .paragraph-label',n=>n.filter(x=>x.textContent.trim()).length))===37,'37 个独立段落标签');
+ assert((await page.$eval('#summary-value',n=>n.textContent)).includes('创作与方法意义'),'价值与意义分项呈现');
+ await page.click('[data-doc="./notes/submission-summary.md"]');
+ await page.waitForFunction(()=>document.querySelector('#documentText').textContent.includes('## 5. 意义'));
+ assert((await page.$eval('#documentText',n=>n.textContent)).includes('\n\n- **创作与交付：**'),'交付摘要真实换行与分项');
+ await page.keyboard.press('Escape');
  for(const v of ['#video15','#video30']){
   await page.waitForFunction(selector=>{const video=document.querySelector(selector);return video.readyState>=1&&video.duration>0}, {timeout:30000},v);
   const before=await page.$eval(v,n=>({duration:n.duration,width:n.videoWidth,height:n.videoHeight}));
