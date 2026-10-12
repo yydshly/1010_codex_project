@@ -408,6 +408,441 @@
         "bytes": 100,
         "contentRange": "bytes 100-199/370857"
       }
+    },
+    {
+      "checkedAt": "2026-10-12T13:53:13.467Z",
+      "deployedCommit": "99e6c9ee1fdb9e1c56f78503edadd771317ce0dc",
+      "url": "https://yydshly.github.io/1010_codex_project/009-jevclip/research.html",
+      "upstreamRevision": "3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a",
+      "files": [
+        {
+          "path": "app.mjs",
+          "bytes": 18644,
+          "sha256": "747891365013ff08cbf58850da810d7731915d63c2106591e1298dc0cd02c77a",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/src/app.mjs",
+          "sourceVerified": true
+        },
+        {
+          "path": "core.mjs",
+          "bytes": 9976,
+          "sha256": "5f643e9e0351a56a9049de52809df1bfbb9b4d675076fac48d587256cb8c969d",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/src/core.mjs",
+          "sourceVerified": true
+        },
+        {
+          "path": "demo.mp4",
+          "bytes": 370857,
+          "sha256": "d81fc3753907daae92a2068804fadae4709df074a1906177ccb3d3e4af65ed33",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/demo.mp4",
+          "sourceVerified": true
+        },
+        {
+          "path": "favicon.svg",
+          "bytes": 215,
+          "sha256": "67416649a92e335c2dede4d3ffd39003f2acaf2e792293e7606fb18fa0c21d9f",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/src/favicon.svg",
+          "sourceVerified": true
+        },
+        {
+          "path": "index.html",
+          "bytes": 13050,
+          "sha256": "c7d4dcf8df82edaff7a5cf81274d2ebc296d95a7248da80c7419cd90caa898d4",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/src/index.html",
+          "sourceVerified": true
+        },
+        {
+          "path": "research.css",
+          "bytes": 11751,
+          "sha256": "fdd1da86a94390ff684522dbcd06294e75f8b303e1b67272558e974ea78c78de",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/src/research.css",
+          "sourceVerified": true
+        },
+        {
+          "path": "research.html",
+          "bytes": 28795,
+          "sha256": "994b183beef6458f7110ac2d040620336ae8604e31de60226a4217199c855def",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": null,
+          "sourceVerified": null
+        },
+        {
+          "path": "research.mjs",
+          "bytes": 2198,
+          "sha256": "6012966d91d998561e5966bf28fd2f1cfafcaf1eb540350914d3b3ec5801734c",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/src/research.mjs",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/README.md",
+          "bytes": 7684,
+          "sha256": "f4ea4020e81f6f3a4c80f4292a31e9ba9193f29ee36e121b71fca6d5a89acaee",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/README.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/THIRD_PARTY.md",
+          "bytes": 1088,
+          "sha256": "588a3ff6bbbd6d27e7d126da628372cef39ab2ccda1fd94467dda9490ba1ded7",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/THIRD_PARTY.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/README.md",
+          "bytes": 1453,
+          "sha256": "efc6c32973252272ee36f5400eaf74d82d14581718f91d65172664497851a20e",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/README.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/demo.mp4",
+          "bytes": 370857,
+          "sha256": "d81fc3753907daae92a2068804fadae4709df074a1906177ccb3d3e4af65ed33",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/demo.mp4",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/demo.srt",
+          "bytes": 1902,
+          "sha256": "00b7806ec1064815fa26a3ec74ff0d2cd2206ca6d004984387d0989ca3a26464",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/demo.srt",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/jevclip-overview-2026-10-12.png",
+          "bytes": 1659559,
+          "sha256": "dded19f8698eff959af0381dcf2f4639af82e73cc84818fef51dd346488b51d1",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/jevclip-overview-2026-10-12.png",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/jevclip-overview-2026-10-12.svg",
+          "bytes": 30534,
+          "sha256": "14fa96e100615d3647c1806dff8d41a8a3123feaeab6a3abfee0bc4cec2f2e11",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/jevclip-overview-2026-10-12.svg",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/principles-desktop.jpg",
+          "bytes": 110670,
+          "sha256": "ee5201274b504a2493bb7d85f3ea77ff42e98e6f225f1c52b363053283673182",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/principles-desktop.jpg",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/principles-mobile.jpg",
+          "bytes": 163185,
+          "sha256": "55e6b667365fb3c215c4feed46a0521661a4664961a6d826c9db6df03c295e77",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/principles-mobile.jpg",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/research-desktop.png",
+          "bytes": 88896,
+          "sha256": "7a92d1eeb98bb86ceb59ad9c7ad777ffbbdad348cbd33900e0b14b2e3c3ffecb",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/research-desktop.png",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/research-live-desktop.png",
+          "bytes": 88916,
+          "sha256": "aa26c68e320e8b33be9b3584b4e8de8882db9730d92efce205d64ac5f1090287",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/research-live-desktop.png",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/research-live-mobile.png",
+          "bytes": 793190,
+          "sha256": "a44ce4e6d40f2e77f7711630558cc05471b95169482ae4b85516535371e7d46a",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/research-live-mobile.png",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/research-mobile.png",
+          "bytes": 793727,
+          "sha256": "8e7145430362ea14c642a99da663472e946683d0cf1fd638df3a4483cc8e3c7f",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/research-mobile.png",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/showcase-desktop.jpg",
+          "bytes": 141878,
+          "sha256": "09002b0f38a84e2fa9d7007ef8cc5d1bc0b4fc9c11d57ed1c759b9989cb26036",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/showcase-desktop.jpg",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/showcase-mobile.jpg",
+          "bytes": 119662,
+          "sha256": "f0ad3c11081e3c346b2b3d3c24c5fe65764cecb20846a33c89dca3bdb4314a9c",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/showcase-mobile.jpg",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/assets/source-review.jpg",
+          "bytes": 129933,
+          "sha256": "ab01fec282ef28f490003b91d7765382f3a5f0e2c5b8fe88ea305d98d30ecb75",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/assets/source-review.jpg",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/licenses/UPSTREAM-MIT.txt",
+          "bytes": 1077,
+          "sha256": "56117eeb6cbb078af58fd09e2bd707946392570443c6131c18d11b6b507e1416",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/licenses/UPSTREAM-MIT.txt",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/README.md",
+          "bytes": 744,
+          "sha256": "30320fee096fd7fbdb73818c9985f4bae81e98d4c90a0c3e1f2eea88a42eba02",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/README.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/browser-verification.json",
+          "bytes": 1960,
+          "sha256": "53dc32f63b430569d87e1d5251397447d9e1c0f471ff13d4306b260e822b6e08",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/browser-verification.json",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/infographic-prompt.md",
+          "bytes": 10013,
+          "sha256": "b68d4c768b05567e5689651d033db6bd398f0892b8ef9544e8005fa815dcce8f",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/infographic-prompt.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/infographic.md",
+          "bytes": 4145,
+          "sha256": "563f2a13add72972e9c56ed00b0dd4ab83d2648fc980141388037dd8ee93acf2",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/infographic.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/publication-resource-verification.json",
+          "bytes": 15345,
+          "sha256": "4765e2f0504e8f6c3fbe331ac69a779f6cb905ceb036ff65db7f86ce701627f7",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/publication-resource-verification.json",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/publication-verification.json",
+          "bytes": 3593,
+          "sha256": "64cb076da01d8950a2cf3c376a703f86cea26df9979ef0abfad311fa577fdb11",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/publication-verification.json",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/research-summary.json",
+          "bytes": 13942,
+          "sha256": "4121b788f2104fd20c7f932d3a7197a905d7c47b058423a2f625a62d762f4830",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/research-summary.json",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/research-summary.md",
+          "bytes": 11214,
+          "sha256": "cda9e6fd2c3eadab6f3b30d0d66ee65f689b111e51effbb893abf95f41a831b0",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/research-summary.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/research.md",
+          "bytes": 8175,
+          "sha256": "e2b8c554043ded16a8e62580d29674f00c26f92713acd2f479e7fba4ad0a8774",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/research.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/sample-export.md",
+          "bytes": 3603,
+          "sha256": "d1f0cc1433d225b12d709b3a5f0811c890d6e7593139162a30fba8b905c897b4",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/sample-export.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/sources.json",
+          "bytes": 962,
+          "sha256": "ddb318c56c5869c40d423e61264713067a3f408d0ac1d6eb9d515fc12e3ca44c",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/sources.json",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/upstream-test-output.txt",
+          "bytes": 1631,
+          "sha256": "1bb2c2eb197aee8339e7ef47b24a272978d92005961bf3080c5bd72a3a4d0888",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/upstream-test-output.txt",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/notes/verification.md",
+          "bytes": 10538,
+          "sha256": "602bb3e52e626e3d30070df77a8f6ff0f64e89668ebf1163b80583e07a0a64a1",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/notes/verification.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/scripts/render-overview.py",
+          "bytes": 15824,
+          "sha256": "e1744f018dcb6639353028adef3661aa7c8f6d47490af99c4e43ac883205983f",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/scripts/render-overview.py",
+          "sourceVerified": true
+        },
+        {
+          "path": "research/web/README.md",
+          "bytes": 5220,
+          "sha256": "18aa6cf7b6c2e8a8c521dfc1ee8bed792399bd87163fc167002f3147159ca63b",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/README.md",
+          "sourceVerified": true
+        },
+        {
+          "path": "sample.mjs",
+          "bytes": 2401,
+          "sha256": "bf9c1517e73cb2c2b3932d038daae20d8b66fc891f44a959d04566cee26d4968",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/src/sample.mjs",
+          "sourceVerified": true
+        },
+        {
+          "path": "style.css",
+          "bytes": 26218,
+          "sha256": "f1a92b93e1a3bf0c515a555de9cf010b9dfb26291844f7b4d0d69ed864a9a586",
+          "status": 200,
+          "manifestVerified": true,
+          "committedSource": "projects/009-jevclip/web/src/style.css",
+          "sourceVerified": true
+        }
+      ],
+      "resourceCount": 42,
+      "guideSha256": "dded19f8698eff959af0381dcf2f4639af82e73cc84818fef51dd346488b51d1",
+      "siteIndex": {
+        "status": 200,
+        "entryPresent": true
+      },
+      "previousPages": [
+        {
+          "path": "001-sakura-crossing/research.html",
+          "status": 200
+        },
+        {
+          "path": "002-18-floors-of-mayhem/research.html",
+          "status": 200
+        },
+        {
+          "path": "004-muster-ww2/",
+          "status": 200
+        },
+        {
+          "path": "005-taohuayuan/research.html",
+          "status": 200
+        },
+        {
+          "path": "006-telegram-media-downloader/research.html",
+          "status": 200
+        },
+        {
+          "path": "007-google-vids/research.html",
+          "status": 200
+        },
+        {
+          "path": "008-pdoom-video/research.html",
+          "status": 200
+        },
+        {
+          "path": "013-model-video-studio/research.html",
+          "status": 200
+        },
+        {
+          "path": "014-print-bench/research.html",
+          "status": 200
+        }
+      ],
+      "videoRange": {
+        "status": 206,
+        "bytes": 100,
+        "contentRange": "bytes 100-199/370857"
+      }
     }
   ]
 }
