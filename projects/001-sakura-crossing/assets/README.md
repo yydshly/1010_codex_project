@@ -6,6 +6,8 @@
 
 [scope-correction-local.jpg](scope-correction-local.jpg) 是纠正后的本地生产子路径首屏实拍。下列联合图和旧版截图保留各自制作时的内容与状态，作为跨项目资料和历史证据。
 
+[scope-correction-online.jpg](scope-correction-online.jpg) 是纠正后正式 HTTPS 页面的首屏实拍，内容视口 869 × 871。对应发布与九项资源一致性核验见页面纠正记录。
+
 ## 跨项目联合研究全图（2026-10-12）
 
 | 文件 | 内容与来源 |

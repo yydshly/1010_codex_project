@@ -19,4 +19,10 @@
 
 本轮只纠正资料与展示归属，没有重新生成引导图、音频或调用模型。3D 场景与游戏逻辑沿用已有实现。
 
-线上发布结果和实际 HTTPS 截图在发布后补充；本地实拍为 `assets/scope-correction-local.jpg`。
+## 正式发布与线上验证
+
+已实际发布 [001 樱花小街研究手册](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html)。网页提交 `865a9b48519557bdb4698b0b299cdbfedaea9c5f`，[Actions 38280408008](https://github.com/yydshly/1010_codex_project/actions/runs/38280408008) 构建和部署均成功。
+
+正式 HTTPS 页面确认专属图与 `overview.html` 放大入口、六组 26 段摘要、六组职责、八项 001 目录、十六份 001 资料、默认描线与研究街，以及默认折叠的跨项目接入。下载名为 `sakura-research-summary.md`，资料区明确以樱花小街为主线。九项相关 HTML、脚本、样式、引导图与研究资料的 HTTP、字节长度和 SHA-256 与本地生产产物一致；完整结果见 [资源记录](scope-correction-resources.json) 和 [浏览器记录](scope-correction-browser.json)。
+
+本地实拍为 `assets/scope-correction-local.jpg`；正式实拍为 `assets/scope-correction-online.jpg`，实际浏览器内容视口 869 × 871。截图保留源图原样，未使用生成图代替线上页面。本次未重新测试全部场景功能或手机硬件。

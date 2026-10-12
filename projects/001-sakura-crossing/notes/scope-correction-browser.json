@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-10-12T16:56:07.149Z",
+  "sourceRevision": "865a9b48519557bdb4698b0b299cdbfedaea9c5f",
+  "checks": {
+    "comparison": "少量线条，让三维形体更接近动画。",
+    "documentCount": "16",
+    "entries": [
+      "sakura-street",
+      "sakura-lab",
+      "sakura-builder",
+      "sakura-tour",
+      "sakura-weather",
+      "sakura-game",
+      "sakura-directions",
+      "sakura-overview"
+    ],
+    "firstCapability": "Sakura Crossing 是以 Three.js 和 Vite 实现的可交互三维场景作品。代码生成日式街区、房屋、招牌、树木、道路和道具，结合布局、灯光与渲染，获得接近二维日式动画背景的观感。",
+    "guide": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/assets/research-guide-CZcAZ0Iw.webp",
+    "guideHref": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/overview.html",
+    "hero": "樱花小街：\n风格、场景与交互。",
+    "libraryScope": "这份手册以樱花小街为主线，雨夜渲染单列为跨项目参考。其他子项目从登记表自动读取，可在本页打开完整 README、了解其已做工作及启动方式；各自演示仍由对应子项目管理。",
+    "liveChoice": "sakura-street",
+    "moduleCount": 6,
+    "relatedReuseOpen": false,
+    "summaryDownload": "sakura-research-summary.md",
+    "summaryHeadings": [
+      "能力：程序化生成、三渲二呈现与小世界探索",
+      "模块：场景、风格、交互、编辑、导览与规则",
+      "原理：真实 3D 经由多层风格处理成为动画画面",
+      "使用场景：展示内容、搭建空间与轻量互动",
+      "对你的价值：留下下一次创作的积木和方法",
+      "扩展方向与边界：围绕樱花小街逐层完善"
+    ],
+    "summaryParagraphs": 26,
+    "title": "Sakura Crossing · 樱花小街研究手册",
+    "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html",
+    "viewport": {
+      "height": 871,
+      "width": 869
+    }
+  }
+}

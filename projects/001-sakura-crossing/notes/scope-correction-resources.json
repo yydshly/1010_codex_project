@@ -1,0 +1,82 @@
+{
+  "verifiedAt": "2026-10-12T16:55:09.416Z",
+  "project": "001",
+  "sourceRevision": "865a9b48519557bdb4698b0b299cdbfedaea9c5f",
+  "workflow": "https://github.com/yydshly/1010_codex_project/actions/runs/38280408008",
+  "deployment": "success",
+  "page": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html",
+  "resources": [
+    {
+      "file": "research.html",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html",
+      "status": 200,
+      "bytes": 18318,
+      "sha256": "6a81babbc4ef997fb4fe43f9d13e8a5d52270416694816ba0e68acbf62ba8b44",
+      "match": true
+    },
+    {
+      "file": "overview.html",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/overview.html",
+      "status": 200,
+      "bytes": 3403,
+      "sha256": "43d2b28767091b2dcb447b04714f558148a2e62dce371bc9eee28d071d7f590a",
+      "match": true
+    },
+    {
+      "file": "assets/hub-Ccsog4pV.js",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/assets/hub-Ccsog4pV.js",
+      "status": 200,
+      "bytes": 296283,
+      "sha256": "4f16cf0985d73afcbdbae35f6a5cf8a82ff12051ae53655b9d5e7152da6a28f4",
+      "match": true
+    },
+    {
+      "file": "assets/hub-z_87qDCQ.css",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/assets/hub-z_87qDCQ.css",
+      "status": 200,
+      "bytes": 32303,
+      "sha256": "153dc1e3702ad2f27aaf4d9b680c4e3d183ee5c74c4c21fa4657fbe9590e0a64",
+      "match": true
+    },
+    {
+      "file": "assets/research-guide-CZcAZ0Iw.webp",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/assets/research-guide-CZcAZ0Iw.webp",
+      "status": 200,
+      "bytes": 447926,
+      "sha256": "90c57116ff4e48c206d464393cc5e0cadc5e9c73e20bf8756bfbfa055dc0fc8c",
+      "match": true
+    },
+    {
+      "file": "assets/research-hub-BG3BnYJR.json",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/assets/research-hub-BG3BnYJR.json",
+      "status": 200,
+      "bytes": 58976,
+      "sha256": "03739e5c8b718d10daba1265a0d4b951712acffe0da28f10bc30ef7a3d39d432",
+      "match": true
+    },
+    {
+      "file": "assets/research-hub-validation-B_RGWSnj.md",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/assets/research-hub-validation-B_RGWSnj.md",
+      "status": 200,
+      "bytes": 6143,
+      "sha256": "5e29555a4cda4f2a03d17f805f1bf325c1f13cc18437f61cc9e721a61b05f68e",
+      "match": true
+    },
+    {
+      "file": "assets/research-summary-Bj9BySxl.md",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/assets/research-summary-Bj9BySxl.md",
+      "status": 200,
+      "bytes": 11934,
+      "sha256": "db6a97d487cb5cd71e7d69311d1e61258178cbc26d5c848b20d12bdb655756a5",
+      "match": true
+    },
+    {
+      "file": "assets/research-summary-qYUaOzSU.md",
+      "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/assets/research-summary-qYUaOzSU.md",
+      "status": 200,
+      "bytes": 55702,
+      "sha256": "f79a884746335f0d57cb03412be64a6f43c79ab882c1d4cb9037bd75afe5e9ba",
+      "match": true
+    }
+  ]
+}
