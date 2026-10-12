@@ -1,0 +1,420 @@
+{
+  "date": "2026-10-12",
+  "checkedAt": "2026-10-12T13:10:56.971Z",
+  "url": "https://yydshly.github.io/1010_codex_project/008-pdoom-video/",
+  "commit": "8bcd63760c2ae650d8e9673f01c8efe7579105c8",
+  "actionsRun": "38252893535",
+  "files": 40,
+  "passed": 40,
+  "failed": 0,
+  "results": [
+    {
+      "path": "assets/local-demo-15s.mp4",
+      "bytes": 1944956,
+      "sha256": "1afcac93d88b33efc5ae1c10e3e3d98af6320f6171be72b0e47ec13b84f415e5",
+      "status": 200,
+      "contentType": "video/mp4",
+      "actualBytes": 1944956,
+      "actualSha256": "1afcac93d88b33efc5ae1c10e3e3d98af6320f6171be72b0e47ec13b84f415e5",
+      "passed": true
+    },
+    {
+      "path": "assets/local-demo-30s-ink.mp4",
+      "bytes": 7349918,
+      "sha256": "9da602ee2d24143f4f8330d21601f1dea3d6dd23494767a44b48bd753bb5cf96",
+      "status": 200,
+      "contentType": "video/mp4",
+      "actualBytes": 7349918,
+      "actualSha256": "9da602ee2d24143f4f8330d21601f1dea3d6dd23494767a44b48bd753bb5cf96",
+      "passed": true
+    },
+    {
+      "path": "assets/local-mv-contact-sheet.jpg",
+      "bytes": 28534,
+      "sha256": "6ac57439596555d0e25d19404277f3736f2625c009aa54ef5b522554cc7eacd4",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "actualBytes": 28534,
+      "actualSha256": "6ac57439596555d0e25d19404277f3736f2625c009aa54ef5b522554cc7eacd4",
+      "passed": true
+    },
+    {
+      "path": "assets/mv-studio-complete.png",
+      "bytes": 358203,
+      "sha256": "09e0fc56accc026ee95da6949fdb64a7685e31b5dbef58a412b88e41b7ab37bf",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 358203,
+      "actualSha256": "09e0fc56accc026ee95da6949fdb64a7685e31b5dbef58a412b88e41b7ab37bf",
+      "passed": true
+    },
+    {
+      "path": "assets/mv-studio-cover.png",
+      "bytes": 232952,
+      "sha256": "086058538d892553ccba4426310de0d4717fcb0c26c0a57e8511f8d689a28511",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 232952,
+      "actualSha256": "086058538d892553ccba4426310de0d4717fcb0c26c0a57e8511f8d689a28511",
+      "passed": true
+    },
+    {
+      "path": "assets/mv-studio-desktop.png",
+      "bytes": 383154,
+      "sha256": "038ff9cc28cf2f1a02c287c7aba06411c39eb0833bcd597fe51fc8753e25057b",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 383154,
+      "actualSha256": "038ff9cc28cf2f1a02c287c7aba06411c39eb0833bcd597fe51fc8753e25057b",
+      "passed": true
+    },
+    {
+      "path": "assets/mv-studio-mobile.png",
+      "bytes": 196448,
+      "sha256": "665f07f7830b4272419a27ca69de21c924d77c485e221cedb9a127980c108a4c",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 196448,
+      "actualSha256": "665f07f7830b4272419a27ca69de21c924d77c485e221cedb9a127980c108a4c",
+      "passed": true
+    },
+    {
+      "path": "assets/mv-style-flat.png",
+      "bytes": 54253,
+      "sha256": "2e943d860922b529ed0e92b835de47bbaf69b5f1ea7a2511d2fc9611c8e380da",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 54253,
+      "actualSha256": "2e943d860922b529ed0e92b835de47bbaf69b5f1ea7a2511d2fc9611c8e380da",
+      "passed": true
+    },
+    {
+      "path": "assets/mv-style-ink.png",
+      "bytes": 203522,
+      "sha256": "1cc597fad5b942c9b7af9a644316214d1b162ea3f15bd85799b16b1c3fb43731",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 203522,
+      "actualSha256": "1cc597fad5b942c9b7af9a644316214d1b162ea3f15bd85799b16b1c3fb43731",
+      "passed": true
+    },
+    {
+      "path": "assets/pdoom-mv-overview.png",
+      "bytes": 2401371,
+      "sha256": "9d5dc8d312fb6803180f01fa0192277aabd6949b16481f51443c133da435da9e",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 2401371,
+      "actualSha256": "9d5dc8d312fb6803180f01fa0192277aabd6949b16481f51443c133da435da9e",
+      "passed": true
+    },
+    {
+      "path": "assets/README.md",
+      "bytes": 3084,
+      "sha256": "dfe6a7bd6a87d084416224f7d83fda8f72d61ff176c5ca61b31ce2bff8458338",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 3084,
+      "actualSha256": "dfe6a7bd6a87d084416224f7d83fda8f72d61ff176c5ca61b31ce2bff8458338",
+      "passed": true
+    },
+    {
+      "path": "assets/upstream-contact-sheet.jpg",
+      "bytes": 293273,
+      "sha256": "b369461cd45f3d48b8a99819b853bc3b6f97cdbac683130b3fe426ee9f6f59d5",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "actualBytes": 293273,
+      "actualSha256": "b369461cd45f3d48b8a99819b853bc3b6f97cdbac683130b3fe426ee9f6f59d5",
+      "passed": true
+    },
+    {
+      "path": "examples/local-demo-project.json",
+      "bytes": 2690,
+      "sha256": "6c49c2fd1d0b88730b30b71fe174240163c79c59bf1c05850dfef688b2b28dbf",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 2690,
+      "actualSha256": "6c49c2fd1d0b88730b30b71fe174240163c79c59bf1c05850dfef688b2b28dbf",
+      "passed": true
+    },
+    {
+      "path": "examples/storyboard.example.json",
+      "bytes": 2486,
+      "sha256": "1f330ef46ade5646ed1510307e1b39d7d7bffd078ee9140fdd7f3f7ebcac018c",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 2486,
+      "actualSha256": "1f330ef46ade5646ed1510307e1b39d7d7bffd078ee9140fdd7f3f7ebcac018c",
+      "passed": true
+    },
+    {
+      "path": "favicon.svg",
+      "bytes": 316,
+      "sha256": "9f146f653877546470dfd65cdd76d1cc359138acbdb852ffc5225663b2672138",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "actualBytes": 316,
+      "actualSha256": "9f146f653877546470dfd65cdd76d1cc359138acbdb852ffc5225663b2672138",
+      "passed": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 51313,
+      "sha256": "f55748a02f45d39a16dc373699bbf80f51a39374679c9585d7e77d8223f393d5",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "actualBytes": 51313,
+      "actualSha256": "f55748a02f45d39a16dc373699bbf80f51a39374679c9585d7e77d8223f393d5",
+      "passed": true
+    },
+    {
+      "path": "notes/experiment.md",
+      "bytes": 4995,
+      "sha256": "bac8cb0ff10d5c19ccbd2cba38a909afd9e2938af8c03c00b2e25f2a22f32a94",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 4995,
+      "actualSha256": "bac8cb0ff10d5c19ccbd2cba38a909afd9e2938af8c03c00b2e25f2a22f32a94",
+      "passed": true
+    },
+    {
+      "path": "notes/local-tool-integration.json",
+      "bytes": 4288,
+      "sha256": "0b24bb7b8084f9fdf07fd63b8c3d46cae840bd4c28c4cff40c9faa904b57477c",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 4288,
+      "actualSha256": "0b24bb7b8084f9fdf07fd63b8c3d46cae840bd4c28c4cff40c9faa904b57477c",
+      "passed": true
+    },
+    {
+      "path": "notes/local-tool-verification.json",
+      "bytes": 4751,
+      "sha256": "28e0a7086b42aa33572c4cd26802cce7753c80bcf040b6b081765d6412b2f994",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 4751,
+      "actualSha256": "28e0a7086b42aa33572c4cd26802cce7753c80bcf040b6b081765d6412b2f994",
+      "passed": true
+    },
+    {
+      "path": "notes/local-tool.md",
+      "bytes": 7525,
+      "sha256": "08b6d9bd3335165e8b01c5d4fb0a05cdcb3fbb458db9fe39949e3ff95c6e888e",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 7525,
+      "actualSha256": "08b6d9bd3335165e8b01c5d4fb0a05cdcb3fbb458db9fe39949e3ff95c6e888e",
+      "passed": true
+    },
+    {
+      "path": "notes/mv-tool-plan.md",
+      "bytes": 11622,
+      "sha256": "f637a6fe320dd22ce69259eb44ee2e211e3eca63b15f3d0f685917bbd7cfadf6",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 11622,
+      "actualSha256": "f637a6fe320dd22ce69259eb44ee2e211e3eca63b15f3d0f685917bbd7cfadf6",
+      "passed": true
+    },
+    {
+      "path": "notes/overview-poster.md",
+      "bytes": 12017,
+      "sha256": "1791ec8a3d06c0a3514b240d48c1dbdffb10f4378114bef06443251c812a6ef0",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 12017,
+      "actualSha256": "1791ec8a3d06c0a3514b240d48c1dbdffb10f4378114bef06443251c812a6ef0",
+      "passed": true
+    },
+    {
+      "path": "notes/README.md",
+      "bytes": 2341,
+      "sha256": "c8bf0b7721de695ee613b6e3755d00da5744a3fb1a6647b350d73e04e3caabf8",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 2341,
+      "actualSha256": "c8bf0b7721de695ee613b6e3755d00da5744a3fb1a6647b350d73e04e3caabf8",
+      "passed": true
+    },
+    {
+      "path": "notes/research-summary.json",
+      "bytes": 22222,
+      "sha256": "23c6e13b5c5f0fefecbb0da04c8e1c81c3e6318b649fedb0cf264276658d0829",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 22222,
+      "actualSha256": "23c6e13b5c5f0fefecbb0da04c8e1c81c3e6318b649fedb0cf264276658d0829",
+      "passed": true
+    },
+    {
+      "path": "notes/research-summary.md",
+      "bytes": 14313,
+      "sha256": "11705b70f707dad0dd6c15719350e652e5115f1dd9727e0b7f08d4b8b66b3754",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 14313,
+      "actualSha256": "11705b70f707dad0dd6c15719350e652e5115f1dd9727e0b7f08d4b8b66b3754",
+      "passed": true
+    },
+    {
+      "path": "notes/research.md",
+      "bytes": 7501,
+      "sha256": "3eee15d247e67c137841f03a55f0850607914fdf6736091f3f21eaa3c514f236",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 7501,
+      "actualSha256": "3eee15d247e67c137841f03a55f0850607914fdf6736091f3f21eaa3c514f236",
+      "passed": true
+    },
+    {
+      "path": "notes/storyboard-contract.md",
+      "bytes": 5694,
+      "sha256": "fc32f92de324e33635db4b8abe2fa9bc7b7779e3acfbe5c804da6e986c01a642",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 5694,
+      "actualSha256": "fc32f92de324e33635db4b8abe2fa9bc7b7779e3acfbe5c804da6e986c01a642",
+      "passed": true
+    },
+    {
+      "path": "notes/submission-summary.md",
+      "bytes": 5646,
+      "sha256": "81f6aefc0aa05f70fb4ce399c0ffd9aa892215dfe2202784d31cabe47379d47f",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 5646,
+      "actualSha256": "81f6aefc0aa05f70fb4ce399c0ffd9aa892215dfe2202784d31cabe47379d47f",
+      "passed": true
+    },
+    {
+      "path": "notes/verification-results.json",
+      "bytes": 1906,
+      "sha256": "8a9453a0c4172acf00c981527b88e9bf6078609335c7f6d06d0a16732e7422ba",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 1906,
+      "actualSha256": "8a9453a0c4172acf00c981527b88e9bf6078609335c7f6d06d0a16732e7422ba",
+      "passed": true
+    },
+    {
+      "path": "publication-manifest.json",
+      "bytes": 6302,
+      "sha256": "8ca51cbed1f450187e815f7586f2b748c28cbe1093b84875ec0ddd5d29460ed3",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 6302,
+      "actualSha256": "8ca51cbed1f450187e815f7586f2b748c28cbe1093b84875ec0ddd5d29460ed3",
+      "passed": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 10280,
+      "sha256": "da37943a2d509f0b0ab59e8d2f05a898e616bba0f90237ee9689a8aa4a063346",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 10280,
+      "actualSha256": "da37943a2d509f0b0ab59e8d2f05a898e616bba0f90237ee9689a8aa4a063346",
+      "passed": true
+    },
+    {
+      "path": "research-data.json",
+      "bytes": 2305,
+      "sha256": "0260a39872e823b7a59c7299df065fcd7431b35a502a01baba0359d7e7bb72c4",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 2305,
+      "actualSha256": "0260a39872e823b7a59c7299df065fcd7431b35a502a01baba0359d7e7bb72c4",
+      "passed": true
+    },
+    {
+      "path": "research.css",
+      "bytes": 14698,
+      "sha256": "dd532cb4e77699072c52a85136788be034bef8b8763a4a95324b5d31ddda357c",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "actualBytes": 14698,
+      "actualSha256": "dd532cb4e77699072c52a85136788be034bef8b8763a4a95324b5d31ddda357c",
+      "passed": true
+    },
+    {
+      "path": "research.html",
+      "bytes": 51313,
+      "sha256": "f55748a02f45d39a16dc373699bbf80f51a39374679c9585d7e77d8223f393d5",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "actualBytes": 51313,
+      "actualSha256": "f55748a02f45d39a16dc373699bbf80f51a39374679c9585d7e77d8223f393d5",
+      "passed": true
+    },
+    {
+      "path": "research.js",
+      "bytes": 3804,
+      "sha256": "92bf4771b3ec3d801bc18fa086ca4810474c8b3c313ce5f8c5dac3e6785a7467",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "actualBytes": 3804,
+      "actualSha256": "92bf4771b3ec3d801bc18fa086ca4810474c8b3c313ce5f8c5dac3e6785a7467",
+      "passed": true
+    },
+    {
+      "path": "UPSTREAM.md",
+      "bytes": 3214,
+      "sha256": "80f13dc017fbf7636e9b9b869c208dfca58decf1fd126a192fcb14d091fea9fc",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 3214,
+      "actualSha256": "80f13dc017fbf7636e9b9b869c208dfca58decf1fd126a192fcb14d091fea9fc",
+      "passed": true
+    },
+    {
+      "path": "web/README.md",
+      "bytes": 7606,
+      "sha256": "e1b54827eadfce4478565c296543a518b6720043c26133f65acc28caf77bda2a",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 7606,
+      "actualSha256": "e1b54827eadfce4478565c296543a518b6720043c26133f65acc28caf77bda2a",
+      "passed": true
+    },
+    {
+      "path": "web/scripts/demo.ts",
+      "bytes": 1363,
+      "sha256": "f024a0dd70a864a170f00b576045c4c48af1f86767faaefc5fae83db87af56c8",
+      "status": 200,
+      "contentType": "video/mp2t",
+      "actualBytes": 1363,
+      "actualSha256": "f024a0dd70a864a170f00b576045c4c48af1f86767faaefc5fae83db87af56c8",
+      "passed": true
+    },
+    {
+      "path": "web/tests/demo.lrc",
+      "bytes": 353,
+      "sha256": "bd111cad780dfb166db203c266dc73a3bece04c22c8fb42dcb064ebb5ae0a55a",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "actualBytes": 353,
+      "actualSha256": "bd111cad780dfb166db203c266dc73a3bece04c22c8fb42dcb064ebb5ae0a55a",
+      "passed": true
+    },
+    {
+      "path": "web/THIRD_PARTY_NOTICES.md",
+      "bytes": 2044,
+      "sha256": "76d685bc5459f0c5fad282e45a08d5577bc9451ce669aa829747e6977084ba99",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 2044,
+      "actualSha256": "76d685bc5459f0c5fad282e45a08d5577bc9451ce669aa829747e6977084ba99",
+      "passed": true
+    }
+  ],
+  "retries": [
+    {
+      "path": "assets/local-demo-30s-ink.mp4",
+      "initialError": "The operation was aborted due to timeout",
+      "recheckedAt": "2026-10-12T13:10:56.970Z",
+      "passed": true
+    }
+  ]
+}

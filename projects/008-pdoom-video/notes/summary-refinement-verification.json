@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-12",
+  "checkedAt": "2026-10-12T13:12:15.641Z",
+  "scope": "仅 008 PDoomVideo 的研究摘要、交付说明、提交正文与对应网页呈现",
+  "sourceCommit": "8bcd63760c2ae650d8e9673f01c8efe7579105c8",
+  "commitUrl": "https://github.com/yydshly/1010_codex_project/commit/8bcd63760c2ae650d8e9673f01c8efe7579105c8",
+  "actionsRun": "38252893535",
+  "actionsUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38252893535",
+  "url": "https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html",
+  "changes": [
+    "简介以用途和价值开篇",
+    "九主题、37 段正文分别添加标签与段落间距",
+    "价值、意义、AI 分工与扩展边界明确分项",
+    "新增提交与交付摘要，补充首次发布及验收登记的用途",
+    "根索引与 008 站点卡片同步分项展示",
+    "新提交使用真实换行、六组分项正文及验证记录"
+  ],
+  "content": {
+    "topics": 9,
+    "paragraphs": 37,
+    "paragraphLabels": 37,
+    "modules": 9,
+    "documents": 22,
+    "styles": 3,
+    "sourceVersions": [
+      "PDoomVideo @ fa546a3",
+      "ClaudeAnimationBase @ 0ac8bf2"
+    ],
+    "localFilms": [
+      "15s / 1280×720 / 24fps / 360 frames / H.264 + AAC",
+      "30s / 1920×1080 / 24fps / 720 frames / H.264 + AAC"
+    ],
+    "guideImage": "既有 1024×1536 引导图原样保留"
+  },
+  "verification": {
+    "rootCheck": "primary 14 项、独立远端工作区 9 项均通过",
+    "researchBuild": true,
+    "publicationWhitelist": true,
+    "originalImageAndFilmBytesPreserved": true,
+    "fullMediaDecode": true,
+    "localBrowserChecks": 26,
+    "liveBrowserChecks": 26,
+    "liveResourceFiles": 40,
+    "liveResourcePassed": 40,
+    "liveResourceFailed": 0,
+    "portal": {
+      "url": "https://yydshly.github.io/1010_codex_project/",
+      "status": 200,
+      "paragraphs": 4,
+      "passed": true
+    },
+    "gitCommitParagraphBreaks": 14
+  },
+  "reports": {
+    "browser": "summary-refinement-browser-verification.json",
+    "resources": "summary-refinement-resource-verification.json"
+  },
+  "screenshots": [
+    "assets/summary-refinement-desktop.png",
+    "assets/summary-refinement-mobile.png",
+    "assets/summary-refinement-live-desktop.png",
+    "assets/summary-refinement-live-mobile.png"
+  ],
+  "verificationNotes": [
+    "以已提交 Git 的原始文件字节重建发布清单，排除 Windows CRLF 差异",
+    "交互检查等待网页模块初始化完成",
+    "30 秒 MP4 首次下载超时后单独重试，大小与 SHA-256 一致"
+  ],
+  "boundaries": [
+    "规则分镜由歌词关键词与手动 BPM 规划，未自动分析音频",
+    "真实模型适配器已实现，未配置真实模型实测",
+    "图片角色绑定、口型、多角色与生成式视频后端仍属扩展方向",
+    "公开静态研究与成片，创作服务仍在本机"
+  ],
+  "evidenceVersion": "本次静态发布对应 8bcd637；后续提交仅补充验收与检查脚本，首次发布证据保留在原文件。"
+}

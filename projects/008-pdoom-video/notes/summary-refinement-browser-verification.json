@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-12",
+  "checkedAt": "2026-10-12T13:08:56.966Z",
+  "url": "https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html",
+  "mode": "线上",
+  "browser": "Chrome/154.0.8037.99",
+  "viewportChecks": [
+    1440,
+    390
+  ],
+  "checks": [
+    {
+      "name": "九主题摘要",
+      "passed": true
+    },
+    {
+      "name": "37 段正文完整",
+      "passed": true
+    },
+    {
+      "name": "九组模块",
+      "passed": true
+    },
+    {
+      "name": "22 份资料入口",
+      "passed": true
+    },
+    {
+      "name": "完整研究正文已呈现",
+      "passed": true
+    },
+    {
+      "name": "37 个独立段落标签",
+      "passed": true
+    },
+    {
+      "name": "价值与意义分项呈现",
+      "passed": true
+    },
+    {
+      "name": "交付摘要真实换行与分项",
+      "passed": true
+    },
+    {
+      "name": "#video15 元数据",
+      "passed": true
+    },
+    {
+      "name": "#video15 实际播放",
+      "passed": true
+    },
+    {
+      "name": "#video30 元数据",
+      "passed": true
+    },
+    {
+      "name": "#video30 实际播放",
+      "passed": true
+    },
+    {
+      "name": "执行链交互",
+      "passed": true
+    },
+    {
+      "name": "实际素描画风切换",
+      "passed": true
+    },
+    {
+      "name": "实际平涂画风切换",
+      "passed": true
+    },
+    {
+      "name": "完整 MIT 原文页内阅读",
+      "passed": true
+    },
+    {
+      "name": "资料弹窗 Escape 关闭",
+      "passed": true
+    },
+    {
+      "name": "中文摘要检索",
+      "passed": true
+    },
+    {
+      "name": "清除检索恢复完整摘要",
+      "passed": true
+    },
+    {
+      "name": "资料分类",
+      "passed": true
+    },
+    {
+      "name": "引导图放大",
+      "passed": true
+    },
+    {
+      "name": "总览图缩放",
+      "passed": true
+    },
+    {
+      "name": "390px 窄屏无横向溢出",
+      "passed": true
+    },
+    {
+      "name": "全部图片加载",
+      "passed": true
+    },
+    {
+      "name": "浏览器无运行错误",
+      "passed": true
+    },
+    {
+      "name": "页面资源无 HTTP 失败",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "screenshots": [
+    "assets/summary-refinement-live-desktop.png",
+    "assets/summary-refinement-live-mobile.png"
+  ],
+  "sourceCommit": "8bcd63760c2ae650d8e9673f01c8efe7579105c8",
+  "actionsRun": "38252893535"
+}

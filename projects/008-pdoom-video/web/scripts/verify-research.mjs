@@ -15,6 +15,8 @@ const suffix=values.live?'live':'local';
 try{
  await page.setViewport({width:1440,height:1000,deviceScaleFactor:1});
  await page.goto(url,{waitUntil:'domcontentloaded',timeout:60000});
+ // DOMContentLoaded can precede the module's initial JSON fetch on a remote site.
+ await page.evaluate(async()=>{await import(new URL('./research.js',location.href).href)});
  assert((await page.$$eval('.summary-section',n=>n.length))===9,'九主题摘要');
  assert((await page.$$eval('.summary-section p',n=>n.length))===37,'37 段正文完整');
  assert((await page.$$eval('.module',n=>n.length))===9,'九组模块');
