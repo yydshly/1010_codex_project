@@ -1,5 +1,13 @@
 # Web 部署与发布范围
 
+## 2026-10-12 · 010 Cadence 研究与真实计算回放接入
+
+010使用已有3200×6700理解总图，原PNG/SVG不改，统一九主题36段摘要、12组机制、14个场景与业务、用法、价值和六阶段扩展。公开六个入口：完整研究（index同页）、真实回放、能力地图、中文指南和EP数字/动画。四店2400轮、街区8640趟、捕鱼8次运行的全部留出鱼以及NPC28帧内部分步均来自已有Python记录；点击不进行新训练。
+
+固定路径为 `010-cadence-foraging/research.html` 与 `010-cadence-foraging/replay.html`。独立产物位于 `web/dist-public/`，本机API版仍由 `npm run build` 生成。CI执行010的npm ci、check、build:public、publication:check，核验原结果与源码哈希、EP七项数值测试及逐文件清单，不启动Python、不生成图。静态导航映射到回放，原文和原始源码资源保持字节一致；固定Cadence commit与GPL-3.0、MIT片段授权保留。
+
+实时Cadence训练、手动搬奖励、新种子与原3D场景需本机Python，后台尚未云端部署。正式HTTPS、全部资源SHA-256和浏览器验收成功后才登记demo-ready与实际URL，结果记录在010的 `notes/publication-verification.json`；现有十个发布项目路径保持。
+
 ## 2026-10-12 · 009 Jevclip 视频研究发布接入
 
 009使用既有2400×7397中文全景图作为网页导读，统一九主题32段完整摘要、九组固定源码职责、两条模型与工具输出分工、源库与演示对照、场景、个人价值和扩展验证路线。15份研究、原始测试、浏览器记录及MIT资料可页内完整阅读和下载；原字幕导入、关键词筛选、时间线、人工取舍、摘要回查与Markdown导出工作台保留。

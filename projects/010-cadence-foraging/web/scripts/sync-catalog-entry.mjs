@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const project=path.resolve(import.meta.dirname,'../..'),root=path.resolve(project,'../..');
+const summary=JSON.parse(await fs.readFile(path.join(project,'notes/research-summary.json'),'utf8'));
+const target=path.join(root,'projects.json'),catalog=JSON.parse(await fs.readFile(target,'utf8'));
+const old=catalog.projects.find(p=>p.id===10);
+if(old&&old.slug!=='cadence-foraging')throw new Error('固定编号010发生冲突');
+const entry={id:10,slug:'cadence-foraging',name:'Cadence · 学习与记忆实验',summary:summary.summary,source:'https://github.com/muellerberndt/cadence',status:old?.status||'researching',tags:['持续学习','平衡传播 EP','奖励学习','时序预测','记忆与规划'],cover:{path:'projects/010-cadence-foraging/'+summary.poster,alt:'Cadence四类能力、12组算法、真实探索效果、14个场景、扩展与价值总图'},demo:old?.demo||null,summarySections:summary.sections.map(s=>({title:s.title,body:s.body}))};
+catalog.projects=catalog.projects.filter(p=>p.id!==10);catalog.projects.push(entry);catalog.projects.sort((a,b)=>a.id-b.id);await fs.writeFile(target,JSON.stringify(catalog,null,2)+'\n');
+console.log('010完整摘要已同步到登记表；原状态和公开地址保留，其他项目不变。');

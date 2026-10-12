@@ -1,0 +1,6 @@
+runtime/.pytest-local-*/
+runtime/.pytest_cache/
+web/public/research/
+web/src/research-resources.json
+web/dist-public/
+assets/understanding-map-qa/

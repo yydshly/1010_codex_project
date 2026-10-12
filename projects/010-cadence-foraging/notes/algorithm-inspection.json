@@ -1,0 +1,841 @@
+{
+  "schema": "sakura-cadence-algorithm-inspection/1",
+  "seed": 7,
+  "cadence_version": "0.80.0",
+  "installed_git_commit": "19bee92756d1842176ad30b1cd01edbfbfa3f14c",
+  "graph": {
+    "neurons": 42,
+    "synapses": 450,
+    "populations": {
+      "sensory": 8,
+      "association": 16,
+      "prefrontal": 16,
+      "motor": 2,
+      "motor/actions": 2
+    }
+  },
+  "neuron_model": {
+    "dt": 1.0,
+    "slope": 1.0,
+    "threshold": 0.0,
+    "gain": 1.0,
+    "stimulus_amplitude": 1.0,
+    "adaptation": null,
+    "leak": 0.1
+  },
+  "learning_config": {
+    "beta": 0.1,
+    "eta": 0.5,
+    "eta_bias": 0.05,
+    "centered": true,
+    "free_steps": 1024,
+    "nudged_steps": 12,
+    "tolerance": 0.003,
+    "nudge": "cross_entropy",
+    "temperature": 0.2,
+    "normalize": 0.0,
+    "normalize_floor": 0.001,
+    "momentum": 0.9,
+    "decay": 0.0,
+    "scale_cap": 8.0,
+    "qualified": false,
+    "damping": 3
+  },
+  "actor_config": {
+    "gamma": 0.9,
+    "lam": 0.8,
+    "eta": 0.1,
+    "eta_bias": 0.01,
+    "eta_critic": 0.3,
+    "normalize": 0.0,
+    "momentum": 0.0,
+    "dopamine_cap": 1.0,
+    "dopamine_center": 0.0,
+    "dopamine_floor": 0.0,
+    "center_scale": true,
+    "critic_normalize": true,
+    "critic_signal": "auto",
+    "eligibility_steps": 12
+  },
+  "critic_target": "modulated",
+  "arousal_config": {
+    "threshold": 0.2,
+    "decay": 0.9,
+    "tolerance": 2.0,
+    "floor": 0.1,
+    "fast": 0.05,
+    "slow": 0.005,
+    "heat": 2.0,
+    "youth": 100,
+    "value_surprise": 1.0,
+    "record_surprise": 0.0,
+    "need": 0.0
+  },
+  "working_memory": {
+    "decay": 0.2,
+    "amplitude": 0.3,
+    "focus": 0.0,
+    "source": "association",
+    "target": "prefrontal",
+    "neurons": 16
+  },
+  "associative_memory": {
+    "pre": 8,
+    "post": 2,
+    "decay": 0.9,
+    "rate": 1.0,
+    "amplitude": 1.0,
+    "normalize": false,
+    "replace": false,
+    "rule": "delta",
+    "separator": null,
+    "writes": 2,
+    "kind": "consolidating",
+    "consolidation": 0.25,
+    "persistent_parameters": 16
+  },
+  "memory_key_scope": "raw external observation; not the working trace",
+  "aliased_fork_observations": [
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "source": {
+    "composition": {
+      "file": "generic.py",
+      "line": 746,
+      "source_sha256": "ba295551f5cb9190d035d9294f9cfa8a553f86e8b5936b17048a380ae9030621"
+    },
+    "input_and_recall": {
+      "file": "generic.py",
+      "line": 1055,
+      "source_sha256": "ba295551f5cb9190d035d9294f9cfa8a553f86e8b5936b17048a380ae9030621"
+    },
+    "live": {
+      "file": "generic.py",
+      "line": 1305,
+      "source_sha256": "ba295551f5cb9190d035d9294f9cfa8a553f86e8b5936b17048a380ae9030621"
+    },
+    "wait": {
+      "file": "generic.py",
+      "line": 1483,
+      "source_sha256": "ba295551f5cb9190d035d9294f9cfa8a553f86e8b5936b17048a380ae9030621"
+    },
+    "reward_dispatch": {
+      "file": "generic.py",
+      "line": 1744,
+      "source_sha256": "ba295551f5cb9190d035d9294f9cfa8a553f86e8b5936b17048a380ae9030621"
+    },
+    "witnessed_memory_write": {
+      "file": "generic.py",
+      "line": 1824,
+      "source_sha256": "ba295551f5cb9190d035d9294f9cfa8a553f86e8b5936b17048a380ae9030621"
+    },
+    "neural_settlement": {
+      "file": "brain.py",
+      "line": 1084,
+      "source_sha256": "e6b56689d77ebd79a51f3def27d50369719cee0ebd802d74d8f134933dfab594"
+    },
+    "action_and_eligibility": {
+      "file": "plasticity.py",
+      "line": 442,
+      "source_sha256": "e02fe1340bc412dc2fb33fd766935a1bc76fbce883d9841fe46513c3942c9772"
+    },
+    "reward_update": {
+      "file": "plasticity.py",
+      "line": 648,
+      "source_sha256": "e02fe1340bc412dc2fb33fd766935a1bc76fbce883d9841fe46513c3942c9772"
+    },
+    "critic_update": {
+      "file": "plasticity.py",
+      "line": 816,
+      "source_sha256": "e02fe1340bc412dc2fb33fd766935a1bc76fbce883d9841fe46513c3942c9772"
+    },
+    "local_parameter_application": {
+      "file": "learning.py",
+      "line": 589,
+      "source_sha256": "0c8f4a21147ba6af28d5bef2ed1205238081e1fd22e9ebed8f9a9a135faf9381"
+    },
+    "working_trace": {
+      "file": "stream.py",
+      "line": 166,
+      "source_sha256": "1f9c8cccf4b33a321dc3c86f843a7ae0a59ca0583df718583a92d40a8ca6b586"
+    },
+    "associative_memory": {
+      "file": "memory.py",
+      "line": 72,
+      "source_sha256": "454b4bab1e16979708366046d20f4268fd5a8469d3a1ce6cb9842a8f47a4a2ff"
+    },
+    "arousal_outcome": {
+      "file": "arousal.py",
+      "line": 264,
+      "source_sha256": "58ee6088631ecd163143de0e1b0e114080347b37aae01b702fb609106a8a3c08"
+    }
+  },
+  "one_trip": [
+    {
+      "world_tick": 0,
+      "completed_trips": 0,
+      "next_stage": 0,
+      "decision_id": 1,
+      "next_action": 1,
+      "pending_feedback": true,
+      "actor_updates": 0,
+      "memory_writes": 0,
+      "waits": 0,
+      "arousal_mode": "aroused",
+      "graph_parameters_sha256": "bec6f4648f03dd880ad6aced4b1dcf22e7b99f38b1a5a8fb1894ca9b8be4b255",
+      "critic_parameters_sha256": "b707241545a346265aab1ffb32ff64b55bf8f8dc1b56a46ef33ce3d15db11d33",
+      "memory_parameters_sha256": "38723a2e5e8a17aa7950dc008209944e898f69a7bd10a23c839d341e935fd5ca",
+      "working_trace_norm": 0.10913100577197297,
+      "eligibility_norm": 0,
+      "last_learning": {},
+      "public_observation": [
+        [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "world_tick": 1,
+      "completed_trips": 0,
+      "next_stage": 1,
+      "decision_id": 2,
+      "next_action": 1,
+      "pending_feedback": true,
+      "actor_updates": 1,
+      "memory_writes": 1,
+      "waits": 0,
+      "arousal_mode": "aroused",
+      "graph_parameters_sha256": "bec6f4648f03dd880ad6aced4b1dcf22e7b99f38b1a5a8fb1894ca9b8be4b255",
+      "critic_parameters_sha256": "b707241545a346265aab1ffb32ff64b55bf8f8dc1b56a46ef33ce3d15db11d33",
+      "memory_parameters_sha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "working_trace_norm": 0.20525881590776,
+      "eligibility_norm": 0.012259205428656224,
+      "last_learning": {
+        "scale_step": 0.0,
+        "bias_step": 0.0,
+        "delta": 0.0,
+        "dopamine": 0.0,
+        "td_error": 0.0,
+        "capped": 0.0,
+        "value": 0.0,
+        "free_steps": 4.0,
+        "saturation": 1.0,
+        "trace": 0.00015900792742618155
+      },
+      "public_observation": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "world_tick": 2,
+      "completed_trips": 0,
+      "next_stage": 2,
+      "decision_id": 2,
+      "next_action": 1,
+      "pending_feedback": true,
+      "actor_updates": 1,
+      "memory_writes": 1,
+      "waits": 0,
+      "arousal_mode": "aroused",
+      "graph_parameters_sha256": "bec6f4648f03dd880ad6aced4b1dcf22e7b99f38b1a5a8fb1894ca9b8be4b255",
+      "critic_parameters_sha256": "b707241545a346265aab1ffb32ff64b55bf8f8dc1b56a46ef33ce3d15db11d33",
+      "memory_parameters_sha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "working_trace_norm": 0.20525881590776,
+      "eligibility_norm": 0.012259205428656224,
+      "last_learning": {
+        "scale_step": 0.0,
+        "bias_step": 0.0,
+        "delta": 0.0,
+        "dopamine": 0.0,
+        "td_error": 0.0,
+        "capped": 0.0,
+        "value": 0.0,
+        "free_steps": 4.0,
+        "saturation": 1.0,
+        "trace": 0.00015900792742618155
+      },
+      "public_observation": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "world_tick": 3,
+      "completed_trips": 0,
+      "next_stage": 3,
+      "decision_id": 2,
+      "next_action": 1,
+      "pending_feedback": true,
+      "actor_updates": 1,
+      "memory_writes": 1,
+      "waits": 1,
+      "arousal_mode": "aroused",
+      "graph_parameters_sha256": "bec6f4648f03dd880ad6aced4b1dcf22e7b99f38b1a5a8fb1894ca9b8be4b255",
+      "critic_parameters_sha256": "b707241545a346265aab1ffb32ff64b55bf8f8dc1b56a46ef33ce3d15db11d33",
+      "memory_parameters_sha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1",
+      "working_trace_norm": 0.3177404002830012,
+      "eligibility_norm": 0.012259205428656224,
+      "last_learning": {
+        "scale_step": 0.0,
+        "bias_step": 0.0,
+        "delta": 0.0,
+        "dopamine": 0.0,
+        "td_error": 0.0,
+        "capped": 0.0,
+        "value": 0.0,
+        "free_steps": 4.0,
+        "saturation": 1.0,
+        "trace": 0.00015900792742618155
+      },
+      "public_observation": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "world_tick": 4,
+      "completed_trips": 1,
+      "next_stage": 0,
+      "decision_id": 3,
+      "next_action": 1,
+      "pending_feedback": true,
+      "actor_updates": 2,
+      "memory_writes": 2,
+      "waits": 2,
+      "arousal_mode": "aroused",
+      "graph_parameters_sha256": "1ae8b35d35a4f78da56d7c9e7a4fbc45362a0b1421b68e3c03be28da869915f1",
+      "critic_parameters_sha256": "942e775cd2fc17c4242c1990346d9d2e6c9b281f248ef52bef03803fd8566163",
+      "memory_parameters_sha256": "5df07e109ef2eddfc2a69fc3fa1034f225d9e10cb0ed3fcbaf16b179ae7b369b",
+      "working_trace_norm": 0.10912438172398818,
+      "eligibility_norm": 0.0,
+      "last_learning": {
+        "scale_step": 0.00012014425681807473,
+        "bias_step": 0.00011397784146967764,
+        "delta": 1.0,
+        "dopamine": 1.0,
+        "td_error": 1.0,
+        "capped": 0.0,
+        "value": 0.0,
+        "free_steps": 4.0,
+        "saturation": 1.0,
+        "trace": 0.0
+      },
+      "public_observation": [
+        [
+          0.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "events": [
+    {
+      "tick": 1,
+      "episode": 1,
+      "stage": 0,
+      "cue": 1,
+      "target": 3,
+      "agents": {
+        "cadence": {
+          "action": 1,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            1
+          ],
+          "outcome_received": true,
+          "operation": "transition"
+        },
+        "rule": {
+          "action": 0,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            0
+          ],
+          "outcome_received": true,
+          "operation": "transition"
+        },
+        "q": {
+          "action": 1,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            1
+          ],
+          "outcome_received": true,
+          "operation": "transition"
+        }
+      }
+    },
+    {
+      "tick": 2,
+      "episode": 1,
+      "stage": 1,
+      "cue": 1,
+      "target": 3,
+      "agents": {
+        "cadence": {
+          "action": 1,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            1,
+            1
+          ],
+          "outcome_received": false,
+          "operation": "travel"
+        },
+        "rule": {
+          "action": 0,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            0,
+            0
+          ],
+          "outcome_received": false,
+          "operation": "travel"
+        },
+        "q": {
+          "action": 1,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            1,
+            1
+          ],
+          "outcome_received": false,
+          "operation": "travel"
+        }
+      }
+    },
+    {
+      "tick": 3,
+      "episode": 1,
+      "stage": 2,
+      "cue": 1,
+      "target": 3,
+      "agents": {
+        "cadence": {
+          "action": null,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            1,
+            1
+          ],
+          "outcome_received": false,
+          "operation": "wait"
+        },
+        "rule": {
+          "action": null,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            0,
+            0
+          ],
+          "outcome_received": false,
+          "operation": "wait"
+        },
+        "q": {
+          "action": null,
+          "reward": 0.0,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            1,
+            1
+          ],
+          "outcome_received": false,
+          "operation": "wait"
+        }
+      }
+    },
+    {
+      "tick": 4,
+      "episode": 1,
+      "stage": 3,
+      "cue": 1,
+      "target": 3,
+      "agents": {
+        "cadence": {
+          "action": null,
+          "reward": 1.0,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            1,
+            1
+          ],
+          "outcome_received": true,
+          "operation": "transition"
+        },
+        "rule": {
+          "action": null,
+          "reward": -0.25,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            0,
+            0
+          ],
+          "outcome_received": true,
+          "operation": "transition"
+        },
+        "q": {
+          "action": null,
+          "reward": 1.0,
+          "observation": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "next_observation": [
+            [
+              0.0,
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "route_so_far": [
+            1,
+            1
+          ],
+          "outcome_received": true,
+          "operation": "transition"
+        }
+      }
+    }
+  ],
+  "checks": {
+    "wait_preserves_graph_critic_memory_pending_and_eligibility": true,
+    "terminal_feedback_consumed_once": true,
+    "brief_fork_keys_alias": true
+  },
+  "scope": "source inspection and one witnessed seed-7 sparse trip; not a new benchmark"
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f3ed" />
+    <meta name="description" content="Cadence 中文研究总入口：底层算法、EP、强化学习、Q-learning、不规则运动与无人机建模；四店、街区、真实算法单步、捕鱼预测及完整研究资料。" />
+    <title>Cadence 中文研究室 · 理解指南与全部演示</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html"><span class="flower" aria-hidden="true">✿</span> Cadence <span class="brand-note">中文研究室</span></a>
+      <nav aria-label="页面导航"><a href="./guide.html">理解指南</a><a href="./applications.html">能力与业务</a><a href="#demos">全部演示</a><a href="#experiment">四店实验</a><a href="./route.html#route-experiment">街区线索</a><a href="./route.html#algorithm">算法单步</a><a href="./fishing.html">捕鱼预测</a><a href="#resources">全部资料</a><span class="edition">No. 010</span></nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div><p class="eyebrow">CADENCE / 理解、观察、比较</p><h1>从一次反馈，<span>读懂一个学习系统。</span></h1></div>
+        <p class="intro-note">先分清它学什么，再看真实结果。<br>神经网络、规则与价值表，都接受同条件对照。</p>
+      </section>
+      <section class="hub-overview" id="demos" aria-labelledby="demos-title">
+        <p class="hub-lead">把讨论中的能力、原理、算法、使用场景和价值整理到同一个入口。NPC 用奖励学动作，捕鱼用真实轨迹学预测；EP 是参数学习机制，历史与操作是输入信息。无人机方案仍是建模分析。</p>
+        <div class="hub-links"><a class="hub-primary" href="./applications.html#research-map">一张总图看懂 Cadence →</a><a class="hub-secondary" href="./applications.html">能力、算法与业务地图 →</a><a class="hub-secondary" href="./guide.html">从头读懂 Cadence →</a><a class="hub-secondary" href="./fish-ep.html#ep-contrast-animation">为什么两侧相减？八幕动画 →</a><a class="hub-secondary" href="./fish-ep.html#ep-player">一条鱼的 EP · 实际数字 →</a><a class="hub-secondary" href="./fish-ep.html#ep-understanding">EP 九章推导与独立核验 →</a><a class="hub-secondary" href="./guide.html#drone">不规则运动与无人机 →</a></div>
+        <h2 id="demos-title">四个真实演示入口</h2><p class="hub-section-label">推荐顺序：四店反馈 → 街区记忆 → 算法内部 → 时序预测。演示需要本机 Python；讲解示意在指南中单独标注。</p>
+        <div class="hub-grid">
+          <article class="hub-demo"><img src="../assets/desktop-complete.jpg" alt="四店觅食完成后的真实网页截图" loading="lazy"><div class="hub-demo-content"><small>01 / 奖励反转</small><h3>四店觅食</h3><p>食物搬家后继续同一个脑，观察 Cadence、规则巡查和 Q-learning 如何改选店铺。</p><a href="#experiment">进入本页实验 ↓</a></div></article>
+          <article class="hub-demo"><img src="../assets/route-desktop-complete.jpg" alt="街区线索和多步奖励实验实拍" loading="lazy"><div class="hub-demo-content"><small>02 / 线索与延迟反馈</small><h3>街区觅食</h3><p>路牌、两次岔口选择、等待与终点奖励；比较短暂线索、持续线索和途中反馈。</p><a href="./route.html#route-experiment">进入街区实验 ↗</a></div></article>
+          <article class="hub-demo"><img src="../assets/algorithm-update.png" alt="真实算法帧与参数更新播放器截图" loading="lazy"><div class="hub-demo-content"><small>03 / 看参数怎样更新</small><h3>真实算法单步</h3><p>观察输入、神经活动、动作概率、正负扰动、资格迹和奖励到达后的参数变化。</p><a href="./route.html#algorithm">打开内部播放器 ↗</a></div></article>
+          <article class="hub-demo"><img src="../assets/fish-inertia-desktop.jpg" alt="捕鱼预测经过真实训练后的留出评估实拍" loading="lazy"><div class="hub-demo-content"><small>04 / 从历史学预测</small><h3>捕鱼预测</h3><p>随机转弯与加速；对照匀速、匀加速度和零位移，看轨迹误差与射击命中。</p><a href="./fishing.html">进入预测实验 ↗</a></div></article>
+        </div>
+      </section>
+      <section class="hub-map" id="capabilities"><p class="eyebrow">新增理解汇总 / 12 组机制 · 14 个场景</p><h2>历史轨迹预测，只是其中一种用途</h2><p class="hub-lead">从业务问题进入：输入什么、输出什么、实际反馈怎样改变下次结果。详细地图把本地已测、上游机制和待验证业务分开，支持筛选、检索与五步闭环回看。</p><div class="topic-links"><a href="./applications.html#scope"><b>预测与判断</b><br>鱼、无人机操作响应、设备趋势、数值分类</a><a href="./applications.html#scene-npc"><b>选择动作</b><br>NPC、宠物、难度调整、有限工具路由</a><a href="./applications.html#scene-recall"><b>记住与回查</b><br>短暂线索、结果关联、事件补全和干扰</a><a href="./applications.html#scene-robot"><b>学习后果与规划</b><br>有界模拟控制、目标与重新测量</a><a href="./applications.html#algorithms">算法是什么、本质是什么</a><a href="./applications.html#scenarios">14 个完整场景设计与五步闭环</a><a href="./applications.html#integration">如何接入与评估</a><a href="./applications.html#extensions">下一步扩展的顺序与证据</a></div></section>
+      <section class="hub-map" aria-labelledby="guide-title"><p class="eyebrow">讨论整理 / 13 个章节</p><h2 id="guide-title">按问题阅读，不必先背算法名词</h2><div class="topic-links"><a href="./guide.html#overview">能力与模块边界</a><a href="./guide.html#layers">输入、模型、目标、学习机制</a><a href="./guide.html#ep">EP、反向传播与其他学习方法</a><a href="./guide.html#npc">奖励、Actor–Critic 与资格迹</a><a href="./guide.html#q-learning">Q-learning 与规则的差异</a><a href="./guide.html#prediction">鱼怎样从历史预测位置</a><a href="./guide.html#drone">不规则运动与驾驶无人机</a><a href="./guide.html#alternatives">滤波、多模型与多轨迹预测</a><a href="./guide.html#scenarios">哪些场景值得尝试</a><a href="./guide.html#usage">实际接口与接入步骤</a><a href="./guide.html#value">价值、限制与扩展方向</a><a href="./guide.html#glossary">中英技术词典与检索</a><a href="./guide.html#sources">原始文档、代码与证据</a></div></section>
+      <section class="hub-summary" id="findings"><p class="eyebrow">本机四种子 / 保留简单方法的优势</p><h2>看过机制，还要看任务结果</h2><div class="hub-table-wrap"><table class="hub-table"><thead><tr><th>觅食条件</th><th>Cadence</th><th>规则</th><th>Q-learning</th></tr></thead><tbody><tr><td>四店即时奖励 · 2400 轮</td><td>86.71%</td><td>99.33%</td><td>88.00%</td></tr><tr><td>街口线索 + 终点奖励</td><td>40.56%</td><td>98.06%</td><td>81.81%</td></tr><tr><td>持续线索 + 终点奖励</td><td>71.94%</td><td>98.06%</td><td>81.81%</td></tr><tr><td>街口线索 + 途中反馈</td><td>74.31%</td><td>98.06%</td><td>84.24%</td></tr><tr><td>持续线索 + 途中反馈</td><td>75.21%</td><td>98.06%</td><td>84.24%</td></tr></tbody></table></div><p class="hub-note">街区每主条件 1440 趟，另有关闭工作轨迹对照；当前未测出总体优势，消融也未证明工作轨迹收益。<a href="./route.html#results">看完整条件与判断 ↗</a></p><div class="hub-table-wrap"><table class="hub-table"><thead><tr><th>捕鱼四种子 · 每条件 192 条留出鱼</th><th>Cadence</th><th>关键对照</th></tr></thead><tbody><tr><td>有惯性 · 平均轨迹误差 ADE</td><td>未训练 75.57 → 17.72 px</td><td>匀速 21.34、匀加速度 20.25 px</td></tr><tr><td>有惯性 · 射击命中</td><td>189 / 192</td><td>匀加速度 190 / 192</td></tr><tr><td>独立随机 · 平均轨迹误差 ADE</td><td>19.27 px</td><td>无需训练的零位移参考 18.60 px</td></tr></tbody></table></div><p class="hub-note">这些是固定配置的开发实验，不是一般排名或独立确认。捕鱼误差与命中率不是同一指标；无人机没有实测，不能套用捕鱼成绩。<a href="./guide.html#value">怎样判断对自己的价值 ↗</a></p></section>
+      <h2>原场景 · 四店即时奖励</h2><p class="hub-section-label">可在本页直接开始。只反馈动作结果，食物坐标不传给控制器；角色步行是表现层。</p>
+      <section id="experiment" class="experiment" aria-label="NPC 觅食对照实验">
+        <div class="street-column">
+          <div class="scene-shell">
+            <div class="scene-heading"><span><i class="live-dot"></i> 春日觅食广场</span><span id="engine-badge" class="engine-badge">正在连接引擎…</span></div>
+            <div id="street" aria-label="四家店与三位居民的实时三维街景"></div>
+            <div id="shop-labels" class="shop-labels" aria-hidden="true"></div>
+            <div class="scene-footer"><span>✿ 食物光圈仅向观看者显示</span><span id="animation-note">每次出发对应一次真实决策</span></div>
+          </div>
+          <div id="agent-cards" class="agent-cards"></div>
+        </div>
+        <aside class="control-panel" aria-label="实验控制">
+          <div class="panel-top"><span class="eyebrow">ONE BRAIN, ONE LIFE</span><span id="status" role="status">连接中</span></div>
+          <h2>观察一个学习过程</h2>
+          <p class="panel-lead">找到食物得 <b>+1</b>，空手而归得 <b>−0.25</b>。角色只收到自己行动后的奖励。</p>
+          <div class="trial-number"><span id="trial">000</span><span>/ 600 轮 <small id="phase-name">初次探索</small></span></div>
+          <div class="phase-track" aria-label="自动实验阶段"><span id="phase-0">① 学习 · 团子</span><span id="phase-1">② 迁移 · 饭团</span><span id="phase-2">③ 返回 · 团子</span></div>
+          <div class="progress"><i id="progress-fill"></i></div>
+          <div class="play-controls"><button id="play" class="primary" disabled>▶ 开始观察</button><button id="step" class="secondary" disabled>前进一步</button></div>
+          <label class="speed-row">观察速度<select id="speed"><option value="1">1× · 逐轮行走</option><option value="8" selected>8× · 快速学习</option><option value="32">32× · 看完整过程</option></select></label>
+          <div class="control-divider"></div>
+          <div class="move-title"><h3>把食物搬到另一家店</h3><span>保留记忆</span></div>
+          <div id="move-buttons" class="move-buttons"></div>
+          <p class="hint" id="schedule-note">第 201 轮自动迁移，第 401 轮返回。也可以手动移动，随后按你的安排继续。</p>
+          <div class="reset-row"><label>种子<input id="seed" type="number" min="0" max="99999" value="7" aria-label="随机种子" /></label><button id="reset" class="text-button" disabled>↻ 重置实验</button></div>
+          <p class="error" id="error" role="alert" hidden></p>
+        </aside>
+      </section>
+      <section class="evidence-section" aria-labelledby="evidence-title">
+        <div class="section-heading"><div><p class="eyebrow">BEHAVIOR, NOT JUST A SETTLED ANSWER</p><h2 id="evidence-title">把变化画出来</h2></div><button id="export" class="outline-button" disabled>↓ 导出本次记录</button></div>
+        <div class="evidence-grid">
+          <div class="chart-panel"><div class="chart-title"><h3>近期找到食物的比例</h3><span>滑动窗口 · 最近 30 轮</span></div><div id="chart" class="chart" role="img" aria-label="三个控制器最近 30 轮命中率随实验轮次的变化"></div><div class="chart-legend"><span class="c">● Cadence</span><span class="r">● 规则巡查</span><span class="q">● Q-learning</span><span>虚线 = 食物迁移</span></div></div>
+          <div class="activity-panel"><div class="chart-title"><h3>Cadence 内部活动</h3><span id="activity-count">—</span></div><canvas id="activity" width="420" height="180" aria-label="真实神经单元活动读数"></canvas><p id="brain-readout" class="hint">等待真实网络状态。</p><p class="hint">颜色深浅对应当前活动。收敛表示方程得到满足；是否找到食物，要看实际行动。</p></div>
+        </div>
+        <div class="log-panel"><div class="chart-title"><h3>刚刚发生了什么</h3><span>每轮同时比较 · 不竞争同一份食物</span></div><div id="event-log" aria-live="off"><p class="empty-note">开始后，这里会记录三位居民各自去了哪家店。</p></div></div>
+      </section>
+      <section id="reading" class="reading-section">
+        <p class="eyebrow">FIELD NOTES / 研究笔记</p><h2>三种方式，怎样决定下一步？</h2>
+        <div class="reading-grid">
+          <article><span class="reading-number c">01</span><h3>Cadence · 从反馈改变关系</h3><p>真实 Python Brain 持续运行，联想记忆影响神经网络的求解；唤醒时探索和学习，平静时沿用已有知识。迁移后继续使用同一个脑。</p><p class="reading-foot">当前任务参数：16 个处理单元、工作轨迹幅度 0、巩固率 0.25、奖励学习率 0.1。属于本实验配置。</p></article>
+          <article><span class="reading-number r">02</span><h3>规则巡查 · 明确的行动规则</h3><p>有食物就下次再来，没食物就按店铺顺序往下找。它保留一个行动位置，不训练神经连接或价值表。</p><p class="reading-foot">这个简单任务中，规则可能适应得更快。对照保留这项优势，不预设学习算法胜出。</p></article>
+          <article><span class="reading-number q">03</span><h3>Q-learning · 更新行动价值</h3><p>四个 Q 值记录在这条街选择各家店的长期价值。大多数时候选择最高值，12% 的时候随机探索；一次落空会降低旧选择的价值。</p><p class="reading-foot">α = 0.3，γ = 0.9，ε = 0.12；并列最高值随机选择。初始四个值都为 0。</p></article>
+        </div>
+        <div class="scope-note"><b>这次实验能说明什么？</b><p>它展示有限行动空间中的学习、奖励反转与持续状态。四家店是四个动作，控制器收到固定街区观察，食物坐标被隐藏；步行只用于呈现，不涉及学习寻路。需要多种子、不同环境和独立确认，才能讨论一般性能。</p><a href="https://github.com/muellerberndt/cadence/tree/19bee92756d1842176ad30b1cd01edbfbfa3f14c" target="_blank" rel="noreferrer">固定上游源码 ↗</a><a id="notes-download" href="#">下载中文研究笔记 ↓</a></div>
+      </section>
+      <section class="resources-section" id="resources" aria-labelledby="resources-title"><p class="eyebrow">完整资料 / 原文、数据、代码与实拍</p><h2 id="resources-title">研究资料库</h2><p class="hub-note">按类型筛选或搜索文件。全文查看保留 Markdown／代码／JSON 原文；原始大数据按需读取，启动首页不加载全部轨迹。当前会话的最新记录请使用各演示的导出按钮。</p><div id="resource-library"></div><div class="hub-source"><a href="https://github.com/muellerberndt/cadence/tree/19bee92756d1842176ad30b1cd01edbfbfa3f14c">固定上游源码 ↗</a><a href="./guide.html#sources">来源与研究边界 ↗</a><a href="./research/THIRD_PARTY.md" download>来源说明 ↓</a></div></section>
+    </main>
+    <footer><span>✿ 樱花小街行为研究室</span><span>本地研究演示 · Cadence 0.80.0 · 无外部模型调用</span></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

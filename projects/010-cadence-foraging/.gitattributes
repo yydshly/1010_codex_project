@@ -1,0 +1,3 @@
+# Frozen computation/source receipts use byte-level SHA-256, including line endings.
+# Preserve files exactly on Windows and Linux; upstream checksums must remain valid.
+** -text

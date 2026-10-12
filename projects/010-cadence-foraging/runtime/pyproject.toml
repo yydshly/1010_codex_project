@@ -1,0 +1,15 @@
+[project]
+name = "cadence-foraging-experiment"
+version = "1.0.0"
+description = "A measured Sakura Street foraging comparison using the real Cadence Brain."
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==2.5.3",
+  "cadence-net @ git+https://github.com/muellerberndt/cadence.git@19bee92756d1842176ad30b1cd01edbfbfa3f14c",
+]
+
+[dependency-groups]
+dev = ["pytest==9.1.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

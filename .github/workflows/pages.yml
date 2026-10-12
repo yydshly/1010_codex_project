@@ -12,6 +12,7 @@ on:
       - 'projects/007-google-vids/**'
       - 'projects/008-pdoom-video/**'
       - 'projects/009-jevclip/**'
+      - 'projects/010-cadence-foraging/**'
       - 'projects/013-model-video-studio/**'
       - 'projects/014-print-bench/**'
       - 'projects.json'
@@ -78,6 +79,9 @@ jobs:
       - name: Verify studio and build Vids research publication
         run: npm ci && npm run check && npm run build:research && npm run publication:check
         working-directory: projects/013-model-video-studio/web
+      - name: Build and verify Cadence research and real computation replay
+        run: npm ci && npm run check && npm run build:public && npm run publication:check
+        working-directory: projects/010-cadence-foraging/web
       - name: Build and verify print-bench research
         run: npm run research:sync && npm run check && npm run build && npm run publication:check
         working-directory: projects/014-print-bench/web

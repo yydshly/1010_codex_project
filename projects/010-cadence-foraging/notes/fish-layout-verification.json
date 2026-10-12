@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-11",
+  "desktop": {
+    "canvas": [
+      869,
+      521
+    ],
+    "client": 1265,
+    "scroll": 1265,
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "mobile": {
+    "canvas": [
+      343,
+      206
+    ],
+    "client": 375,
+    "scroll": 375,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  "override_reset": true
+}

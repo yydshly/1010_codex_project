@@ -1,0 +1,75 @@
+{
+  "schema": "cadence-algorithm-browser-verification/1",
+  "date": "2026-10-11",
+  "seed": 7,
+  "reward_mode": "sparse",
+  "world_ticks": 4,
+  "observed_frames": 28,
+  "frame_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "all_vectors_and_scalars_match_python": true,
+  "terminal_update_changed_weights": 386,
+  "plus_minus_display_differs": true,
+  "replay_preserves_environment": true,
+  "auto_play_advances_frame": true,
+  "slider_visits_first_and_last": true,
+  "responsive_checks": [
+    {
+      "viewport": [
+        1280,
+        960
+      ],
+      "client_width": 1265,
+      "scroll_width": 1265,
+      "algorithm_columns": 2
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "client_width": 375,
+      "scroll_width": 375,
+      "algorithm_columns": 1
+    }
+  ],
+  "source_sha256": {
+    "runtime/algorithm_trace.py": "3b2c8fa6b15b9783aefc35f3da24fc15ec13e0b11fe052aeba0153b11ae6b4ef",
+    "runtime/server.py": "bae62e2ad66b621dcb0a4b56f5bc8898841c62b18979a39fdd6f9920ce9457bc",
+    "web/src/algorithm-player.js": "a53f2e45f57c18accd7b3deb9f604f9be54d63da780b001f67007a7e3d9a19f9",
+    "web/src/algorithm-style.css": "53590f10e7e6bd95449775b1110f9c49ea9f059fffc0918bde010cb5051a53d2"
+  },
+  "screenshot_sha256": {
+    "assets/algorithm-update.png": "06984ea2a9caefbe90b2de1d72714a109e2535bdf01a818c9cf30467ee1312b2",
+    "assets/algorithm-mobile.png": "b9116ba6594bb1cca7cf1d2715a23858c5de301b5d6b91e33c9daf67c1f42066"
+  },
+  "limitations": "Free/nudged states and update boundaries only; replay does not rerun internal solver iterations."
+}

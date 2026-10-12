@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#183b46">
+  <meta name="description" content="用一条真实训练鱼的实际数字，逐步检查 EP 的输入、自由态、正负扰动、局部量、参数更新与无答案重算。">
+  <title>一条鱼的 EP 学习全过程 · 实际数字单步</title>
+</head>
+<body>
+  <header><strong>CADENCE / 一条鱼的学习记录</strong><nav aria-label="站点导航"><a href="./index.html">研究首页</a><a href="./applications.html">能力与业务</a><a href="./fishing.html">捕鱼预测</a><a href="#ep-contrast-animation">相减动画</a><a href="#ep-understanding">理解汇总</a><a href="./guide.html#ep">EP 理解指南</a><a href="./route.html#algorithm">NPC 算法</a><a href="./index.html#resources">全部资料</a></nav></header>
+  <main>
+    <div class="intro"><div><div class="eyebrow">One real training sample · Every number can be checked</div><h1>一条鱼，EP 究竟怎样学？</h1><p>先看模型自己的预测，再轻轻改变内部活动。比较两种变化，得到参数该往哪里改；最后拿掉答案，用相同输入重算。</p></div><span class="tag">真实 Python 计算记录</span></div>
+    <div class="ep-context"><strong id="ep-provenance">正在读取真实训练记录…</strong><p>这是已采集训练鱼的单样本检查：独立冷启动模型、1 条鱼、7 个历史时刻、24 个输出、288 个参数。主捕鱼演示仍每批训练 8 条鱼。这里只回看同一次已执行计算，点击不会重新训练，也不改变你的捕鱼会话。</p><div class="ep-reading-links"><a href="#ep-player">看八步数字 ↓</a><a href="#ep-understanding">从头读理解汇总 ↓</a><a href="#ep-gradient">为什么两侧相减？ ↓</a><a href="#ep-check">看独立数值核验 ↓</a></div></div>
+    <div class="ep-reading-links"><a href="#ep-contrast-animation">还没看懂为什么相减？用这条鱼逐幕看动画 ↓</a></div>
+    <div class="ep-context ep-scope-entry"><strong>这条鱼说明一种学习机制；它只是库的一种用途。</strong><p>我们已把讨论整理成能力与业务地图：12 组算法与机制、14 个场景，逐项说明输入、输出、反馈、基线和证据。可先看一个业务的五步闭环，再回到这里核验 EP 数字。</p><div class="ep-reading-links"><a href="./applications.html#scope">先理解库能做什么 →</a><a href="./applications.html#scenarios">场景与业务怎么设计 →</a><a href="./applications.html#algorithms">算法各自负责什么 →</a></div></div>
+    <div id="ep-error" class="error" role="alert" hidden></div>
+    <section id="ep-contrast-animation" class="ep-contrast" aria-labelledby="ep-contrast-title" hidden>
+      <span class="eyebrow">同一条真实鱼 / 专门拆开“相减为什么有用”</span>
+      <h2 id="ep-contrast-title">先让导数带上误差，再从两侧响应得到方向</h2>
+      <p class="ep-contrast-intro">固定看 0.40 s 截止、未来 +0.20 s 的 x、C[2,0]。先看答案怎样进入内部差，再把两侧各自除回教学系数，最后发现“相减”就是两个斜率估计的平均。每幕可以停下重看。</p>
+      <p id="ep-beta-bridge" class="ep-bridge-entry"><a href="#ep-beta-bridge" data-bridge-jump>为什么 g≈βG？直达第⑤幕的七步数字推导 ↓</a></p>
+      <div class="ep-contrast-stages" data-contrast="stages" aria-label="正负对比动画阶段"></div>
+      <div class="ep-contrast-controls"><button type="button" data-contrast="previous">← 上一幕</button><output data-contrast="position" aria-live="polite">1 / 8</output><button type="button" data-contrast="next">下一幕 →</button><button type="button" class="primary" data-contrast="play">播放整段动画</button><button type="button" data-contrast="replay">重播这一幕</button></div>
+      <div class="ep-beta-bridge" data-contrast="bridge" hidden></div>
+      <div class="ep-contrast-progress" aria-hidden="true"><i data-contrast="progress"></i></div>
+      <div class="ep-contrast-content"><figure><div class="ep-contrast-figure" data-contrast="figure"></div><figcaption data-contrast="caption"></figcaption></figure><article class="ep-contrast-script"><div aria-live="polite"><h3 data-contrast="title"></h3><p data-contrast="text"></p></div><div data-contrast="math"></div><p class="ep-contrast-takeaway" data-contrast="takeaway"></p><div class="ep-contrast-extra" data-contrast="extra"></div></article></div>
+      <p class="ep-contrast-boundary">所有端点数字来自同一真实 Python 记录；动画只放大或连接端点，屏幕移动不表示实际求解迭代，也不会训练模型。⑤先对这条 C 读出权重解释；一般 A/B 的 EP 原理与条件见下方汇总。<a href="#ep-understanding">完整理解汇总 ↓</a> · <a href="#ep-player">全部八步数字与任意连接 ↓</a></p>
+    </section>
+    <section id="ep-player" class="ep-record-player" aria-labelledby="ep-player-title" hidden>
+      <h2 id="ep-player-title" class="visually-hidden">EP 实际数字单步播放器</h2>
+      <div class="ep-sticky-controls"><div id="ep-stage-buttons" class="ep-stage-buttons" aria-label="EP 计算阶段"></div>
+      <div class="ep-player-controls"><button id="ep-back">← 上一步</button><output id="ep-step-count"></output><button id="ep-forward" class="primary">下一步 →</button><button id="ep-autoplay">自动讲解</button><a href="./research/notes/fish-ep-sample.json" download>下载全部实际数字 ↓</a></div></div>
+      <div class="ep-selectors"><label>观察截止 <select id="ep-time"></select></label><label>预测多远 <select id="ep-horizon"></select></label><label>跟踪输出 <select id="ep-axis"><option value="0">x 位移</option><option value="1">y 位移</option></select></label><label>跟踪隐藏单元 <select id="ep-neuron"></select></label></div>
+      <p class="ep-view-note">默认看 0.40 秒截止、未来 +0.20 秒；跟踪 C[2,0]（隐藏单元 0 → 该 x 位移输出）。选择器只改变查看位置，不重训。C 是隐藏活动读出位移的权重，编号从 0 开始。</p>
+      <div class="ep-workspace"><article class="panel ep-step-panel"><div id="ep-step-tag" class="eyebrow"></div><h2 id="ep-step-title"></h2><p id="ep-step-meaning"></p><div id="ep-current-numbers" aria-live="polite"></div></article>
+        <aside class="ep-visual"><svg id="ep-track" viewBox="0 0 460 315" role="img" aria-label="该训练鱼的历史、真实未来、自由预测及当前阶段轨迹"></svg><div class="ep-track-legend"><span>灰：历史</span><span>白：真实旧记录</span><span>紫：旧参数自由预测</span><span>青：当前查看阶段</span></div><p>正负扰动只用于教学，位移差很小，图中几乎重合；精确变化看左侧数字。只有“更新后重算”才使用新参数。</p><div id="ep-phase-comparison"></div></aside></div>
+      <details class="panel ep-all-numbers"><summary>核对全部输入、隐藏状态、输出及 288 个参数</summary><p>页面数字经过四舍五入；下载 JSON 保留浮点完整精度。隐藏预激活 h 与活动 a=tanh(h) 是不同的数。</p><div id="ep-input-audit"></div><div id="ep-hidden-audit"></div><div id="ep-output-audit"></div><div id="ep-parameter-audit"></div></details>
+    </section>
+    <section id="ep-understanding" class="ep-summary" aria-labelledby="ep-summary-title">
+      <div class="ep-summary-intro"><span class="eyebrow">讨论整理 / 从动作到数字，再到理由</span><h2 id="ep-summary-title">正负扰动，究竟怎样变成学习？</h2><p>最容易混淆的是：教学系数 β、隐藏活动 h/a、局部导数 g 和持久权重 w 属于不同层。沿着同一条鱼，把这四层连接起来。</p><p><a href="#ep-contrast-animation">先用八幕动画看“为什么相减” ↑</a></p><p id="ep-fixed-context" class="ep-clarify">以下固定跟踪 C[2,0]，数字来自同一份真实训练记录。</p></div>
+      <nav class="ep-lesson-nav" aria-label="EP 理解汇总章节"><a href="#ep-terms">1 数字与符号</a><a href="#ep-nudge">2 扰动操作</a><a href="#ep-state">3 活动求解</a><a href="#ep-local">4 局部导数</a><a href="#ep-gradient">5 相减的理由</a><a href="#ep-check">6 独立核验</a><a href="#ep-update">7 真正更新</a><a href="#ep-practice">8 能力与用法</a><a href="#ep-questions">9 常见疑问</a></nav>
+      <ol class="ep-process"><li><small>① 固定输入与旧权重</small><strong>自由预测</strong></li><li><small>② β 取正与负</small><strong>活动分别重算</strong></li><li><small>③ 同一连接</small><strong>两侧导数作差</strong></li><li><small>④ 检查候选损失</small><strong>提交新权重</strong></li></ol>
+      <section id="ep-terms" class="ep-lesson"><span class="eyebrow">01 / 先认清每个数字</span><h2>活动、输出、答案与权重，各是什么？</h2><p>位置先转换成速度／加速度特征。隐藏活动是网络当前计算中的数值；权重决定这些数值怎样互相作用。活动每次预测都可变化，训练接受后保存的是 A/B/C 权重。</p><div id="ep-term-numbers"></div><p>这里 24 个输出是未来 0.1 到 1.2 秒的 12 组 x/y 位移。7 个输入时刻共享同一套参数；并非为每个时间点各设一条 C[2,0]。</p><button class="ep-example-link" data-ep-example-stage="1">回到②：查看自由态读出</button></section>
+      <section id="ep-nudge" class="ep-lesson"><span class="eyebrow">02 / 正负扰动具体做什么</span><h2>改教学目标的系数，让活动重新平衡</h2><p>E 是内部方程的不一致代价，L 是与已知训练答案的半均方误差。教学程序给 L 加一个很小的正系数或负系数，重新求内部活动。正号提供靠近答案的作用，负号提供相反作用；两次都从同一自由路径开始。</p><div id="ep-nudge-numbers"></div><p>这条 y 公式只是在给定当前隐藏活动时，对输出求平衡。隐藏活动还要一起解，所以 q 也会变化。库先把输出按公式消去，再用 Newton 方法解隐藏路径，最后得到上表的 y。</p><p class="ep-clarify">④⑤的输入、初始边界、旧 A/B/C 完全相同。β 的正负调整本次活动；C[2,0] 始终为旧值 −0.3654595952。被改变的数不是鱼的实际位置，也不是人为给权重加随机噪声。</p><button class="ep-example-link" data-ep-example-stage="3">回到④：逐项代入正扰动</button> <button class="ep-example-link" data-ep-example-stage="4">回到⑤：逐项代入负扰动</button></section>
+      <section id="ep-state" class="ep-lesson"><span class="eyebrow">03 / 隐藏活动怎样算出来</span><h2>一次求解 56 个相互联系的隐藏坐标</h2><p>这条训练片段有 7 个时刻，每刻 8 个隐藏坐标，共 56 个。Newton 方法根据目标的梯度与曲率求一步活动调整；前后时刻相连，不能把某个隐藏单元单独除一下就当成整个结果。</p><div id="ep-state-numbers"></div><details><summary>梯度、Hessian、Newton、阻尼是什么意思？</summary><p>梯度 ∇hF 是“各活动增加一点时目标怎样变”的向量；Hessian H 描述这些斜率怎样随活动变化；Newton 方向通过 HΔh=−∇hF 联立求得。状态步长决定走这一步的多少，阻尼用于改善求解的曲率条件。本次状态步长为 1、阻尼为 0，它们与更新权重用的学习率 5 是不同量。</p><p>内部收敛说明该数学目标解得足够好。自由态内部残差几乎为零，鱼的位置仍能错 22.31 像素；收敛不是预测准确度。</p></details><p class="ep-clarify">本样本正负各接受 1 个 Newton 步；其他样本可能需要更多步或被拒绝。上表方向用原参数快照只读复算，并逐元素核对真实返回路径。没有改写库的求解器。</p></section>
+      <section id="ep-local" class="ep-lesson"><span class="eyebrow">04 / 局部导数从哪里来</span><h2>为什么是 −r×a？为什么还要加七次？</h2><p>算这次局部导数时固定当前活动和输出。权重 w 增加一点 dw，读出 q 就增加 a×dw；内部差 r=y−q 因此减少 a×dw。平方代价 ½r² 对这条权重的斜率就是 r×(−a)=−r×a。</p><div id="ep-local-numbers"></div><p>表中每一行是同一权重在该时刻的贡献。七个时刻共用 w，必须相加，得到 g⁺ 和 g⁻。它们是各自活动状态下 E 对这条权重的局部导数，还不是最终的预测损失梯度。</p><p class="ep-clarify">r=y−q 衡量内部输出一致性；y−z 衡量预测对答案的误差。自由态 y=q，r 可以等于零，y−z 却仍很大。EP 让教学作用产生小小的 r，再利用它计算响应。</p><button class="ep-example-link" data-ep-example-stage="5">回到⑥：查看全部七次乘积</button></section>
+      <section id="ep-gradient" class="ep-lesson"><span class="eyebrow">05 / 相减为什么有意义</span><h2>两侧响应除以教学系数的距离，估计损失斜率</h2><p>斜率 G 的意思是：这条权重增加一点，整体预测损失增加还是减少。对当前这条读出权重，自由态的隐藏活动不依赖 C，可以直接写出 G=Σ₇[(q⁰−z)×a⁰]/168。</p><p><a href="#ep-beta-bridge">还没看懂 g≈βG？看第⑤幕七步推导：从平方展开到实际 0.0223% 差异 ↑</a></p><div class="ep-equation">由输出公式：r = b(z−q)/(1+b)
+局部导数：gβ = Σ₇[−r×a]
+              = β/(168+β) × Σ₇[(qβ−z)×aβ]
+
+当 β 很小，qβ 和 aβ 接近自由态：
+gβ ≈ β×G
+所以 g⁺≈+βG，g⁻≈−βG
+(g⁺−g⁻)/(2β) ≈ G</div><div id="ep-gradient-numbers"></div><p>相减的是同一条权重的两个局部导数；再除以 +β 到 −β 之间的距离 2β，去掉教学作用的尺度。对称取两侧也能抵消展开中偶次的偏差项；在平滑、稳定、同一平衡分支上，通常比单侧差更准确。</p><details><summary>更一般的 A/B 权重，为什么也能这样学？</summary><p>把所有活动和输出统称 s，平衡条件为 ∂s[E(w,s)+βL(s)]=0。对 β 求导，活动响应满足 H·ds/dβ=−∂sL；对 w 求导，自由活动响应满足 H·ds⁰/dw=−∂swE。同一个平滑能量的 Hessian 对称，所以 d/dβ[∂wE(w,sβ)] 在 β=0 时，等于自由预测损失对 w 的总导数。这是 EP 的关键联系。</p><div class="ep-equation">C 的局部导数：−Σ r×当前活动
+A 的局部导数：−Σ 时间方程残差 e×前一活动
+B 的局部导数：−Σ e×当前输入
+各自都取正负活动下的导数差 / 2β。</div><p>库不对求解器逐步做反向传播，而用活动求解和局部乘积对比估计损失梯度。两种方法都可以优化预测误差；实现路径和成本不同。</p></details><p class="ep-clarify">这是有限 β 的近似，求解误差、曲率和跳到另一平衡分支都可能影响方向。库检查正负是否围绕自由态足够对称，必要时减半 β 或拒绝；一个样本的数值接近不能证明所有任务都可靠。</p><p class="ep-sources"><a href="https://github.com/muellerberndt/cadence/blob/19bee92756d1842176ad30b1cd01edbfbfa3f14c/docs/temporal.md">固定实现的目标与对比公式 ↗</a> · <a href="https://arxiv.org/abs/1602.05179">EP 原始论文 ↗</a></p></section>
+      <section id="ep-check" class="ep-lesson"><span class="eyebrow">06 / 用另一种方法核对</span><h2>只改这一项权重，损失真的向那个方向变化吗？</h2><p>另外取旧参数的独立副本，只把 C[2,0] 加／减 0.001，保持所有其他参数不变，用同一输入、零边界作不传答案的 imagine。评分程序在外部用旧记录算损失。这是方向核验，区别于④⑤调整活动的 EP 教学阶段。</p><div id="ep-probe-numbers"></div><p>这次 w 增加，整体损失确实下降。直接改权重的数值斜率与 EP 活动对比估计非常接近。读出权重的自由输出对 w 呈线性，所以本例的二次损失中心差在浮点误差内也等于解析斜率；不能据此推断任意网络或步长都这么精确。</p><p class="ep-clarify">只把这一项改到 EP 新值时，x 从 502.415065 到 502.438759；完整 288 项一起更新才到 507.615227。整次学习的改善来自共同变化，不可全部归给这条连接。表中所有数来自真实 Python 独立复算，浏览器只回看。</p></section>
+      <section id="ep-update" class="ep-lesson"><span class="eyebrow">07 / 真正保存学习</span><h2>负斜率，为什么让权重增加？</h2><p>负斜率意味着在当前附近，增加权重能降低损失。梯度下降沿斜率反方向走：w新=w旧−rate×G。减去负数就变成增加；正斜率则会让权重减少。</p><div id="ep-update-numbers"></div><p>β 决定试探活动的强弱，rate 决定实际权重沿估计方向走多远。方向正确也可能走过头，所以本例 backtrack=True 会用候选新参数作无答案重算，检查当前训练样本的整体损失是否下降；失败可缩步长或拒绝。</p><p>最后再拿同一历史、相同零边界，用新参数作自由预测。评分仍需真实记录，但模型调用中没有 target。学到并保留下来的，是参数变化；扰动态不成为下一次预测的隐藏边界。</p><button class="ep-example-link" data-ep-example-stage="6">回到⑦：查看提交更新</button> <button class="ep-example-link" data-ep-example-stage="7">回到⑧：查看无答案重算</button></section>
+      <section id="ep-practice" class="ep-lesson"><span class="eyebrow">08 / 放回能力、场景与用法</span><h2>这套算法能为你做什么？</h2><p>EP 是学习参数的方法。当前 TemporalPatchNet 使用历史位置产生的特征，学“此前运动与此后位移”的联系；真实后续是训练标签。它在捕鱼页属于监督时序预测。NPC 页用奖励学动作，另有 Actor–Critic 和资格迹；Q-learning 则学习动作价值表。</p><div class="ep-table-wrap"><table><thead><tr><th>你的任务</th><th>先明确什么</th><th>这里的适用边界</th></tr></thead><tbody><tr><td>捕鱼拦截</td><td>预测未来位置，再按弹速求相遇点</td><td>能读取鱼脚本时先直接算轨迹；只有观测时先比较平滑运动公式</td></tr><tr><td>鱼持续转弯、加速或切换模式</td><td>变化是否有重复结构，历史能否提供线索</td><td>可学习统计联系；本项目尚未证明优于滤波或普通时序网络</td></tr><tr><td>独立随机转弯</td><td>误差范围与合理的平均预测</td><td>不能知道随机抽签结果；本机零位移校验更准，学习并非必需</td></tr><tr><td>你驾驶无人机</td><td>历史位置、姿态、当前摇杆、模式和计划是否可见</td><td>可研究操纵响应和惯性；尚未观测的新操作仍不可确定，本项目无飞行验证</td></tr><tr><td>NPC 觅食</td><td>要学动作而不是只预测位置；反馈是否延迟</td><td>选用奖励学习接口，与强规则、合适的有记忆基线对照</td></tr></tbody></table></div><p>是否值得采用，由未见样本的误差、射击命中、计算成本、适应速度和旧技能保留决定。EP 提供一种可研究的学习机制，数学成立不会自动带来任务优势。</p><details><summary>最小接入流程与实际接口</summary><p>先采集历史与已经发生的后续；用历史构造输入 1×7×4，用后续构造标签 1×7×24，训练/留出轨迹分开。以下展示本项目的调用形状；特征与标签构造见可下载记录器。</p><pre class="ep-equation">net = TemporalPatchNet(inputs=4, hidden=8, outputs=24, seed=7)
+report = net.observe(inputs, targets, beta=0.003,
+                     rate=5.0, backtrack=True)
+prediction = net.imagine(inputs, state=np.zeros((1, 8)))
+# prediction.output：7 个时刻 × 24 个未来位移
+# 位置 = 对应时刻位置 + output × 150
+# imagine 的参数里没有 targets。</pre><p>beta/rate 是本例设置，换任务需要调参与独立验证。预测阶段给已知历史；标签在之后收集供学习和评分。真实接入还需处理噪声、采样间隔、延迟、模式覆盖与存档。</p></details><p class="ep-reading-links"><a href="./fishing.html">不同鱼的预测与射击对照 ↗</a><a href="./guide.html#drone">无人机与不规则运动 ↗</a><a href="./guide.html#alternatives">滤波和其他模型路线 ↗</a><a href="./route.html#algorithm">NPC 奖励学习内部过程 ↗</a></p></section>
+      <section id="ep-questions" class="ep-lesson"><span class="eyebrow">09 / 容易混淆的地方</span><h2>把最后几个疑问放到一起</h2><div class="ep-faq">
+        <details><summary>正负扰动是在给鱼或输入加随机噪声吗？</summary><p>本例改的是求解目标中标签损失的系数 ±β。输入、旧参数和自由起点保持一致，鱼的实际旧轨迹也没改。</p></details>
+        <details><summary>正扰动为什么某个隐藏活动反而变小？</summary><p>要降低的是全路径损失，并非让每个活动都增加。各权重有正负号且状态互相联系；比如 a₀ 乘着负 C[2,0]，活动变小可以让这项负贡献变弱，但最后 q 仍是八项贡献的总和。</p></details>
+        <details><summary>相减的是两次位置，还是两个误差？</summary><p>相减的是同一参数的 ∂wE：这里为 g⁺=−Σr⁺a⁺、g⁻=−Σr⁻a⁻。再除以 2β，才估计预测损失的斜率。位置差用于展示活动响应，不能直接拿来更新全部权重。</p></details>
+        <details><summary>为什么不直接把输出填成答案？</summary><p>教学输出要兼顾内部关系与标签作用；小 β 只造成小偏移。测试时真实未来不可用。真正有用的是调整权重后，只给历史也能产生更好的自由预测。</p></details>
+        <details><summary>知道训练答案，算不算预测时偷看未来？</summary><p>训练使用已经采集的旧轨迹后续作为标签；留出预测和更新后 imagine 调用不传标签。评估程序知道答案用于计分，与模型输入分开。</p></details>
+        <details><summary>EP、反向传播、强化学习是什么关系？</summary><p>EP 和反向传播是求学习梯度的不同方法。监督学习或强化学习描述任务如何提供目标／反馈。捕鱼使用标签监督；NPC 使用奖励，不能把 EP 本身直接等同于强化学习。</p></details>
+        <details><summary>E 是物理电能吗？自由态残差小意味着模型很准吗？</summary><p>E 是代码中定义的数学代价，不是耗电测量。自由态因果递推可满足自身方程而预测错误；准确度须与真实后续位置比较。</p></details>
+        <details><summary>负扰动故意让结果更差，有什么价值？</summary><p>另一侧提供围绕自由态的对称响应，帮助估计导数并减少某些单侧偏差。它是内部教学计算，不作为无答案预测或动作执行。</p></details>
+        <details><summary>一次训练点更准，能证明新鱼也更准吗？</summary><p>不能。此处展示单样本机制，所有参数同时改变。泛化要看独立轨迹与模式、适应与保留测试；捕鱼页保留了成功、失败和简单基线优势。</p></details>
+        <details><summary>历史、最近行为、EP，是三种互斥预测方法吗？</summary><p>历史位置与已知操纵是输入信息；运动模型、时序网络是预测结构；EP 是学习参数的方法。它们属于不同层，可以组合；其他路线见中文指南。</p></details>
+      </div><p class="ep-sources">数据：<a href="./research/notes/fish-ep-sample.json" download>全部实际数字与独立核验 ↓</a> · <a href="./research/runtime/record_fish_ep.py" download>生成与核验源码 ↓</a> · <a href="./research/notes/fish-research.md" download>中文研究笔记 ↓</a>。固定 Cadence 0.80.0 / GPL-3.0；源码 commit 保留在原始记录中。</p></section>
+    </section>
+    <div class="panel ep-footnote"><h2>本次究竟证明了什么？</h2><p>它展示真实 EP 如何用已知答案计算学习方向，并实际提交一次更新。末步检查的是同一条训练鱼，不是留出成绩；某个点改善不代表每个点改善，训练损失下降也不保证新鱼预测更准。</p><p>内部残差衡量方程是否解好；位置误差衡量有没有预测对。自由态内部残差可以接近 0，同时位置仍相差几十像素。</p><a href="./fishing.html">回到不同鱼上的学习与对照 ↗</a> · <a href="./research/runtime/record_fish_ep.py" download>查看记录器源码 ↓</a> · <a href="https://github.com/muellerberndt/cadence/blob/19bee92756d1842176ad30b1cd01edbfbfa3f14c/src/cadence/temporal.py">固定版本算法源码 ↗</a>
+    </div>
+  </main>
+  <script type="module" src="/src/fish-ep-main.js"></script>
+</body>
+</html>
+

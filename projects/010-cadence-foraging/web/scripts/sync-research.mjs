@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { createHash } from 'node:crypto';
+const project = path.resolve(import.meta.dirname,'../..');
+const data = JSON.parse(await fs.readFile(path.join(project,'notes/research-summary.json'),'utf8'));
+if (data.sections.length !== 9 || new Set(data.sections.map(s=>s.id)).size !== 9) throw new Error('摘要章节不完整');
+if (createHash('sha256').update(await fs.readFile(path.join(project,data.poster))).digest('hex') !== data.posterSha256) throw new Error('原引导图改变');
+const markdown = `# Cadence 完整中文理解与发布摘要\n\n固定版本 ${data.version} / ${data.revision}\n\n${data.summary}\n\n` + data.sections.map(s=>`## ${s.title}\n\n${s.body.join('\n\n')}`).join('\n\n') + '\n';
+await fs.writeFile(path.join(project,'notes/research-summary.md'),markdown);
+console.log(`摘要同步：${data.sections.length}主题 / ${data.sections.reduce((n,s)=>n+s.body.length,0)}段；原图SHA-256一致。`);

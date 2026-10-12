@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-11",
+  "checks": [
+    {
+      "mode": "inertia",
+      "cases": 48,
+      "all_forecasts_errors_shots_equal_offline": true,
+      "cold_forecasts_equal": true,
+      "metrics_and_parameters_equal": true,
+      "all_errors_and_collisions_recomputed": true,
+      "replay_does_not_train": true,
+      "file_sha256": "0fac001f78522e312f42616184eb26aa2d765799204bf950e052caf9261d3984"
+    },
+    {
+      "mode": "independent",
+      "cases": 48,
+      "all_forecasts_errors_shots_equal_offline": true,
+      "cold_forecasts_equal": true,
+      "metrics_and_parameters_equal": true,
+      "all_errors_and_collisions_recomputed": true,
+      "replay_does_not_train": true,
+      "file_sha256": "49c101900e8201ac703ee574201394ddf8855e805f219c5d25f45da22a70f6d1"
+    }
+  ],
+  "source_sha256": {
+    "runtime/fish_experiment.py": "c8d5d4bd6a57bceddc58bcce96fc8c39d634009663b711b6241fdf735d115e30",
+    "runtime/server.py": "b51c82f30704c9c13b14f1ae4a3ba022e1e68391400b003c339edd0b7a94ae66",
+    "runtime/verify_fish_browser.py": "3906e39757b30bfce20490412f05af04f1d62f53519e03ce9d318cf701fd42a6",
+    "web/src/fishing-main.js": "08fc91dfd7cb2553774fb7c952d17c565e3555a2318b5ea65ec0a92f28fd8516",
+    "web/src/fishing-style.css": "36cc424f418104943ac1188ad952fbaf7d28d34fda0699c435f482f8665567ba"
+  },
+  "verification": "actual in-app browser downloads; frozen evaluation; replay kept 192 updates"
+}

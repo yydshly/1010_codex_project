@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-12",
+  "scope": "Research figure composed from existing screenshots and frozen results; no new accuracy experiment.",
+  "upstream_commit": "19bee92756d1842176ad30b1cd01edbfbfa3f14c",
+  "dimensions": [
+    3200,
+    6700
+  ],
+  "font": "msyh.ttc",
+  "text_lines": 231,
+  "text_bounds": "all contained in declared layout region",
+  "media": [
+    {
+      "path": "assets/cover.jpg",
+      "sha256": "1450348a498aad88863be3c664e337e662c40ec350e2fc6d9453f016dc2fe43f",
+      "original_size": [
+        1265,
+        712
+      ],
+      "crop": null,
+      "placement": [
+        248,
+        2703,
+        657,
+        370
+      ],
+      "link": "http://127.0.0.1:8190/index.html#experiment"
+    },
+    {
+      "path": "assets/route-cover.jpg",
+      "sha256": "aebe36a78763aaf45984177d903e2fd6dec7bd193f97f26e8757a3f51ec0eda0",
+      "original_size": [
+        767,
+        855
+      ],
+      "crop": [
+        0,
+        0,
+        767,
+        665
+      ],
+      "placement": [
+        1387,
+        2703,
+        427,
+        370
+      ],
+      "link": "http://127.0.0.1:8190/route.html#results"
+    },
+    {
+      "path": "assets/algorithm-update.png",
+      "sha256": "06984ea2a9caefbe90b2de1d72714a109e2535bdf01a818c9cf30467ee1312b2",
+      "original_size": [
+        1265,
+        1440
+      ],
+      "crop": [
+        40,
+        326,
+        1233,
+        1163
+      ],
+      "placement": [
+        2360,
+        2703,
+        527,
+        370
+      ],
+      "link": "http://127.0.0.1:8190/route.html#algorithm"
+    },
+    {
+      "path": "assets/fish-inertia-desktop.jpg",
+      "sha256": "2250890f88fb832d84ea527a70c6c69488d5c949954ea1b5e817f55915948efb",
+      "original_size": [
+        1264,
+        2593
+      ],
+      "crop": [
+        25,
+        318,
+        1240,
+        1090
+      ],
+      "placement": [
+        286,
+        3518,
+        582,
+        370
+      ],
+      "link": "http://127.0.0.1:8190/fishing.html"
+    },
+    {
+      "path": "assets/fish-independent-desktop.jpg",
+      "sha256": "f691e1dcc8142c2f1b2af66d676b49af4fbb22e9415b13d6ba08c4ca5efbe222",
+      "original_size": [
+        1264,
+        2616
+      ],
+      "crop": [
+        25,
+        318,
+        1240,
+        1090
+      ],
+      "placement": [
+        1309,
+        3518,
+        582,
+        370
+      ],
+      "link": "http://127.0.0.1:8190/fishing.html#principle"
+    },
+    {
+      "path": "assets/ep-weight-check.png",
+      "sha256": "d9be3c63bd1a293e6ad32e2e43cc8c3b2eb22a0e5cc8b82caa276d2a42e27fde",
+      "original_size": [
+        1265,
+        712
+      ],
+      "crop": [
+        142,
+        171,
+        1098,
+        633
+      ],
+      "placement": [
+        2240,
+        3518,
+        766,
+        370
+      ],
+      "link": "http://127.0.0.1:8190/fish-ep.html#ep-check"
+    },
+    {
+      "path": "assets/ep-beta-factor-desktop.png",
+      "sha256": "4b8a0795db4a3579bbda398b298fbda043b5da3b57ca25a7bd3933cc4119dcf2",
+      "original_size": [
+        1265,
+        889
+      ],
+      "crop": [
+        49,
+        492,
+        1213,
+        873
+      ],
+      "placement": [
+        1166,
+        4366,
+        868,
+        284
+      ],
+      "link": "http://127.0.0.1:8190/fish-ep.html#ep-beta-bridge"
+    },
+    {
+      "path": "assets/ep-contrast-scale-desktop.png",
+      "sha256": "5ced447a4209d9e8422aea74a6ae8710373b3fc3f7ab6af2c6069d9541c1247c",
+      "original_size": [
+        1265,
+        889
+      ],
+      "crop": [
+        46,
+        310,
+        1219,
+        660
+      ],
+      "placement": [
+        2147,
+        4366,
+        952,
+        284
+      ],
+      "link": "http://127.0.0.1:8190/fish-ep.html#ep-contrast-animation"
+    },
+    {
+      "path": "assets/capabilities-explorer-desktop.jpg",
+      "sha256": "0a4a225a218790c8b4503c7931901d115e24fd7a0ae72990e4a3da679b799e4e",
+      "original_size": [
+        812,
+        855
+      ],
+      "crop": [
+        219,
+        240,
+        768,
+        700
+      ],
+      "placement": [
+        2585,
+        5380,
+        270,
+        226
+      ],
+      "link": "http://127.0.0.1:8190/applications.html#scene-drone"
+    }
+  ],
+  "data_sources": [
+    {
+      "path": "notes/evaluation-results.json",
+      "sha256": "be580c346e295c4a76545a9ee377d190ca28bc44f61edd0d00ebc28b1cea38e4"
+    },
+    {
+      "path": "notes/route-evaluation-results.json",
+      "sha256": "ab2940a38dbd1252a18ebcbe3cf277ce7b8967fbe1ecc0426e7d2498727b5807"
+    },
+    {
+      "path": "notes/fish-evaluation-results.json",
+      "sha256": "e22f748f76d5ad41cb4ee5b0fdd901a3ce64e7a909a7a0c653f9569b39bcce4e"
+    },
+    {
+      "path": "notes/fish-ep-sample.json",
+      "sha256": "0d63d3d131fb7c32556e635a7b4d8160291ac4aa2d62b5b003a41092b8fd9c0e"
+    },
+    {
+      "path": "notes/algorithm-browser-frames.json",
+      "sha256": "49ded903dc3f2b7530cedade980a2eee15ac6356a6bb41a4aa96adff44cba741"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "assets/cadence-understanding-map.png",
+      "sha256": "e7a01f496facb50ea3edfa774969ebd8202a606f1d6abccccb504dadc329ead9"
+    },
+    {
+      "path": "assets/cadence-understanding-map.svg",
+      "sha256": "f4bbe4ac749cbbcb5bc176f8d926639959f9ce24bd56e4902119d36381b01648"
+    }
+  ]
+}

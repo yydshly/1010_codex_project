@@ -1,0 +1,900 @@
+{
+  "date": "2026-10-12",
+  "url": "http://127.0.0.1:8190/applications.html",
+  "purpose": "网页说明交互检查，不是新业务学习实验",
+  "sceneQa": [
+    {
+      "title": "捕鱼 / 运动目标短时预测",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "取最近位置并编码成差分；只使用预测时刻已知信息。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "TemporalPatchNet 自由计算未来位移；此时没有真实未来答案。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "游戏用预测决定射击。实际鱼继续运动；预测轨迹与实际轨迹分开。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "收集完成的训练鱼真实未来，计算预测误差；留出鱼仅评分。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "observe 在旧训练数据上做正负教学与参数更新；下次预测仍只给历史。"
+        }
+      ]
+    },
+    {
+      "title": "你驾驶的无人机 / 操作响应预测",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "采集历史状态与已发操作，定义未来控制假设。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "自由预测操作之后的短时状态；这是对后果的估计。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "真实飞行按原控制继续，模型不替驾驶者作未授权决定。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "实际遥测到达后，与先前预测对齐评分。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "在训练日志上学习重复响应；测试飞行冻结参数评估。"
+        }
+      ]
+    },
+    {
+      "title": "设备温度 / 负载与传感器趋势",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "构造最近工况与传感器窗口，明确缺测标记。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "模型输出未来读数估计。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "设备继续运行，应用只展示预测趋势。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "新读数到达后计算各时长误差。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "只用训练段修正模型，保留跨天 / 跨设备测试。"
+        }
+      ]
+    },
+    {
+      "title": "数值分类 / 回归判断",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "应用提供数值特征，声明输出含义。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "模型无标签计算自己的类别或数值。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "业务使用或展示判断，记录本次模型版本。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "取得独立确认的标签或数值答案。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "用监督更新相应模块；新样本仍不带标签。"
+        }
+      ]
+    },
+    {
+      "title": "游戏 NPC / 奖励变化后改行为",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "环境只给公开观察，不给当前答案。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "Brain 计算活动与动作概率，抽样实际动作。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "应用执行选择，记录等待结果的动作。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "环境给该动作的真实奖励及下一观察。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "TD、资格迹和联想写入改变后续偏好；同一个模型继续。"
+        }
+      ]
+    },
+    {
+      "title": "多步任务 / 短暂线索与延迟奖励",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "街口出现线索，模型形成当前活动与短期状态。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "第一次选择后，下一观察可以已不含路牌。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "执行第二次选择并等待；参与记录与线索记忆各自保留。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "实际结果抵达，只结算对应的待奖动作。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "资格迹参与奖励更新，检查哪类旧路线被保留或破坏。"
+        }
+      ]
+    },
+    {
+      "title": "虚拟宠物 / 个体行为偏好",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "把状态和互动编码成有限数值。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "策略选一个允许行为。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "宠物系统执行，产生真实模拟状态变化。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "获取状态变化及明确评价，不补写未观察反馈。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "更新偏好与关联，回查旧需求是否仍能满足。"
+        }
+      ]
+    },
+    {
+      "title": "动态难度 / 游戏参数调整",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "收集刚发生的一段游戏统计。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "选一个允许的档位。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "下一段游戏使用该档位，保持效果归属。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "段落结束得到可定义的评价。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "据结果更新策略，检查档位稳定性与目标偏差。"
+        }
+      ]
+    },
+    {
+      "title": "有限工具 / 策略或服务选项路由",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "应用编码请求及环境条件。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "控制器在允许选项中选一个。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "应用执行该选项并记录调用 ID。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "真实结果回来后计算已声明的反馈。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "更新选项偏好；未知选项结果保持未知。"
+        }
+      ]
+    },
+    {
+      "title": "个性化界面 / 提示方式选择",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "输入任务情境与已得到的反馈统计。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "从允许提示中选一种。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "界面显示该提示并记录实际呈现。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "用户给明确评价或产生已声明事件。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "更新个体关联；跨人或跨任务迁移另外评估。"
+        }
+      ]
+    },
+    {
+      "title": "模拟机器人 / 学后果再规划",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "先采实际执行的状态 / 动作 / 后果序列训练模型。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "给定当前状态与目标，plan 调整声明的可控端口。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "应用执行允许的第一段动作，不把整段预测当现实。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "测量实际状态，比较目标偏差与预测偏差。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "把真实后果用于后续训练；按新状态重规划，参数与控制输入分别管理。"
+        }
+      ]
+    },
+    {
+      "title": "模拟环境调节 / 温控与资源档位",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "声明状态、可控档位和目标。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "直接策略选档，或后果模型内搜索候选。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "模拟器执行允许控制。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "读取温度、耗用和目标偏差。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "监督后果模型或更新奖励策略，分别记录两条路径成本。"
+        }
+      ]
+    },
+    {
+      "title": "事件回查 / 快记忆与慢模型研究",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "应用记录真实事件字段与来源。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "用部分线索读出关联或修复内部状态。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "应用把读出标成估计，事实仍由独立事件记录确认。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "取得真实字段后评分并纠正关联。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "比较局部写入与慢参数学习 / 可选巩固，对旧事件再次测试。"
+        }
+      ]
+    },
+    {
+      "title": "异常线索 / 预测偏差提示",
+      "steps": [
+        {
+          "nextDisabled": false,
+          "position": "1 / 5",
+          "pressed": 1,
+          "previousDisabled": true,
+          "text": "用正常工况历史自由预测新读数。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "2 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "模型提供预测，而非直接给故障结论。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "3 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "新真实测量到达，应用对齐并算偏差。"
+        },
+        {
+          "nextDisabled": false,
+          "position": "4 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "用独立标签判断提示是否正确。"
+        },
+        {
+          "nextDisabled": true,
+          "position": "5 / 5",
+          "pressed": 1,
+          "previousDisabled": false,
+          "text": "控制训练数据与阈值更新，防止异常被无条件学入正常模型。"
+        }
+      ]
+    }
+  ],
+  "filterQa": [
+    {
+      "family": "prediction",
+      "count": 5,
+      "selected": 1,
+      "title": "异常线索 / 预测偏差提示"
+    },
+    {
+      "family": "action",
+      "count": 6,
+      "selected": 1,
+      "title": "游戏 NPC / 奖励变化后改行为"
+    },
+    {
+      "family": "memory",
+      "count": 1,
+      "selected": 1,
+      "title": "事件回查 / 快记忆与慢模型研究"
+    },
+    {
+      "family": "control",
+      "count": 2,
+      "selected": 1,
+      "title": "模拟机器人 / 学后果再规划"
+    },
+    {
+      "family": "all",
+      "count": 14,
+      "selected": 1,
+      "title": "模拟机器人 / 学后果再规划"
+    }
+  ],
+  "searchQa": [
+    {
+      "count": 1,
+      "hidden": false,
+      "query": "无人机",
+      "selected": 1,
+      "status": "显示 1 / 14 个场景 · 三类本地场景已验证，其余为上游机制或业务候选"
+    },
+    {
+      "count": 6,
+      "hidden": false,
+      "query": "EP",
+      "selected": 1,
+      "status": "显示 6 / 14 个场景 · 三类本地场景已验证，其余为上游机制或业务候选"
+    },
+    {
+      "count": 0,
+      "hidden": true,
+      "query": "不存在的场景",
+      "selected": 0,
+      "status": "显示 0 / 14 个场景 · 三类本地场景已验证，其余为上游机制或业务候选"
+    },
+    {
+      "count": 14,
+      "hidden": false,
+      "query": "",
+      "selected": 1,
+      "status": "显示 14 / 14 个场景 · 三类本地场景已验证，其余为上游机制或业务候选"
+    }
+  ],
+  "algorithmQa": [
+    {
+      "open": true,
+      "text": 183,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 200,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 230,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 170,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 173,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 162,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 149,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 174,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 136,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 165,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 152,
+      "title": "适用条件、边界与可选公式"
+    },
+    {
+      "open": true,
+      "text": 179,
+      "title": "适用条件、边界与可选公式"
+    }
+  ],
+  "viewportQa": [
+    {
+      "width": 390,
+      "cases": [
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "捕鱼 / 运动目标短时预测"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "你驾驶的无人机 / 操作响应预测"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "设备温度 / 负载与传感器趋势"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "数值分类 / 回归判断"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "游戏 NPC / 奖励变化后改行为"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "多步任务 / 短暂线索与延迟奖励"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "虚拟宠物 / 个体行为偏好"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "动态难度 / 游戏参数调整"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "有限工具 / 策略或服务选项路由"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "个性化界面 / 提示方式选择"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "模拟机器人 / 学后果再规划"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "模拟环境调节 / 温控与资源档位"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "事件回查 / 快记忆与慢模型研究"
+        },
+        {
+          "client": 375,
+          "scroll": 375,
+          "title": "异常线索 / 预测偏差提示"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "cases": [
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "捕鱼 / 运动目标短时预测"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "你驾驶的无人机 / 操作响应预测"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "设备温度 / 负载与传感器趋势"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "数值分类 / 回归判断"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "游戏 NPC / 奖励变化后改行为"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "多步任务 / 短暂线索与延迟奖励"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "虚拟宠物 / 个体行为偏好"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "动态难度 / 游戏参数调整"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "有限工具 / 策略或服务选项路由"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "个性化界面 / 提示方式选择"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "模拟机器人 / 学后果再规划"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "模拟环境调节 / 温控与资源档位"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "事件回查 / 快记忆与慢模型研究"
+        },
+        {
+          "client": 305,
+          "scroll": 305,
+          "title": "异常线索 / 预测偏差提示"
+        }
+      ]
+    }
+  ],
+  "entranceQa": [
+    {
+      "from": "index.html",
+      "layout": {
+        "client": 375,
+        "scroll": 375
+      },
+      "to": "http://127.0.0.1:8190/applications.html",
+      "title": "预测鱼的位置，\n\n只是其中一件事。"
+    },
+    {
+      "from": "guide.html",
+      "layout": {
+        "client": 375,
+        "scroll": 375
+      },
+      "to": "http://127.0.0.1:8190/applications.html",
+      "title": "预测鱼的位置，\n\n只是其中一件事。"
+    },
+    {
+      "from": "route.html",
+      "layout": {
+        "client": 375,
+        "scroll": 375
+      },
+      "to": "http://127.0.0.1:8190/applications.html",
+      "title": "预测鱼的位置，\n\n只是其中一件事。"
+    },
+    {
+      "from": "fishing.html",
+      "layout": {
+        "client": 375,
+        "scroll": 375
+      },
+      "to": "http://127.0.0.1:8190/applications.html",
+      "title": "预测鱼的位置，\n\n只是其中一件事。"
+    },
+    {
+      "from": "fish-ep.html",
+      "layout": {
+        "client": 375,
+        "scroll": 375
+      },
+      "to": "http://127.0.0.1:8190/applications.html",
+      "title": "预测鱼的位置，\n\n只是其中一件事。"
+    }
+  ],
+  "console": [],
+  "defaultViewport": {
+    "client": 812,
+    "scroll": 812
+  },
+  "download": {
+    "filename": "capabilities-scenarios.md",
+    "verified_sha256_at_download": "346146b595c26ab0061681d1430d46a770ec8c0c8782b3a66d97eaad6a225db8",
+    "matches_source": true
+  }
+}

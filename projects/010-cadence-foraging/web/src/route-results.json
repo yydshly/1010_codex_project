@@ -1,0 +1,534 @@
+{
+  "schema": "sakura-route-summary/1",
+  "seeds": [
+    7,
+    41,
+    42,
+    43
+  ],
+  "phase_length": 120,
+  "source_sha256": {
+    "route_experiment.py": "c14ec22fad4564e11f7b05954e800c4ce6c8ccbed702290ebd9e732499aad07b",
+    "evaluate_routes.py": "ea6bb81be5901ad36fcb825b130293c8674e5d955c961889cad3dc854c0084c3",
+    "experiment.py": "f6d886d4c8c3dc664d8efdf283dd5c2716a73012ee18ad5b982da8764ebe1921"
+  },
+  "upstream_commit": "19bee92756d1842176ad30b1cd01edbfbfa3f14c",
+  "modes": [
+    {
+      "cue_mode": "brief",
+      "reward_mode": "sparse",
+      "trace_amplitude": 0.3,
+      "seeds": [
+        7,
+        41,
+        42,
+        43
+      ],
+      "trips": 1440,
+      "controllers": {
+        "cadence": {
+          "hit_rate": 0.40555555555555556,
+          "average_trip_ms": 13.251318540804075,
+          "phases": [
+            {
+              "hit_rate": 0.2708333333333333,
+              "last40": 0.25625,
+              "cue0_last20": 0.2875,
+              "cue1_last20": 0.2625
+            },
+            {
+              "hit_rate": 0.56875,
+              "last40": 0.6375,
+              "cue0_last20": 0.75,
+              "cue1_last20": 0.5
+            },
+            {
+              "hit_rate": 0.3770833333333333,
+              "last40": 0.3125,
+              "cue0_last20": 0.5375,
+              "cue1_last20": 0.1375
+            }
+          ]
+        },
+        "rule": {
+          "hit_rate": 0.9805555555555555,
+          "average_trip_ms": 0.04683118168031797,
+          "phases": [
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.9916666666666667,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            }
+          ]
+        },
+        "q": {
+          "hit_rate": 0.8180555555555555,
+          "average_trip_ms": 0.293630833766656,
+          "phases": [
+            {
+              "hit_rate": 0.8520833333333334,
+              "last40": 0.8625,
+              "cue0_last20": 0.8999999999999999,
+              "cue1_last20": 0.8125
+            },
+            {
+              "hit_rate": 0.8208333333333333,
+              "last40": 0.8625,
+              "cue0_last20": 0.875,
+              "cue1_last20": 0.85
+            },
+            {
+              "hit_rate": 0.78125,
+              "last40": 0.88125,
+              "cue0_last20": 0.8875,
+              "cue1_last20": 0.8875
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cue_mode": "visible",
+      "reward_mode": "sparse",
+      "trace_amplitude": 0.3,
+      "seeds": [
+        7,
+        41,
+        42,
+        43
+      ],
+      "trips": 1440,
+      "controllers": {
+        "cadence": {
+          "hit_rate": 0.7194444444444446,
+          "average_trip_ms": 12.18579027707973,
+          "phases": [
+            {
+              "hit_rate": 0.7416666666666667,
+              "last40": 0.8875,
+              "cue0_last20": 1,
+              "cue1_last20": 0.75
+            },
+            {
+              "hit_rate": 0.6354166666666666,
+              "last40": 0.75,
+              "cue0_last20": 0.575,
+              "cue1_last20": 0.925
+            },
+            {
+              "hit_rate": 0.78125,
+              "last40": 0.8625,
+              "cue0_last20": 0.75,
+              "cue1_last20": 1
+            }
+          ]
+        },
+        "rule": {
+          "hit_rate": 0.9805555555555555,
+          "average_trip_ms": 0.05170180536677233,
+          "phases": [
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.9916666666666667,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            }
+          ]
+        },
+        "q": {
+          "hit_rate": 0.8180555555555555,
+          "average_trip_ms": 0.28907604149329325,
+          "phases": [
+            {
+              "hit_rate": 0.8520833333333334,
+              "last40": 0.8625,
+              "cue0_last20": 0.8999999999999999,
+              "cue1_last20": 0.8125
+            },
+            {
+              "hit_rate": 0.8208333333333333,
+              "last40": 0.8625,
+              "cue0_last20": 0.875,
+              "cue1_last20": 0.85
+            },
+            {
+              "hit_rate": 0.78125,
+              "last40": 0.88125,
+              "cue0_last20": 0.8875,
+              "cue1_last20": 0.8875
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cue_mode": "brief",
+      "reward_mode": "waypoints",
+      "trace_amplitude": 0.3,
+      "seeds": [
+        7,
+        41,
+        42,
+        43
+      ],
+      "trips": 1440,
+      "controllers": {
+        "cadence": {
+          "hit_rate": 0.7430555555555556,
+          "average_trip_ms": 11.058537081690803,
+          "phases": [
+            {
+              "hit_rate": 0.6083333333333333,
+              "last40": 0.75625,
+              "cue0_last20": 0.5,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.9395833333333334,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.6812499999999999,
+              "last40": 0.8375,
+              "cue0_last20": 0.7125,
+              "cue1_last20": 0.9500000000000001
+            }
+          ]
+        },
+        "rule": {
+          "hit_rate": 0.9805555555555555,
+          "average_trip_ms": 0.03971659785343541,
+          "phases": [
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.9916666666666667,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            }
+          ]
+        },
+        "q": {
+          "hit_rate": 0.8423611111111111,
+          "average_trip_ms": 0.2579204180720909,
+          "phases": [
+            {
+              "hit_rate": 0.875,
+              "last40": 0.8625,
+              "cue0_last20": 0.875,
+              "cue1_last20": 0.8625
+            },
+            {
+              "hit_rate": 0.8354166666666667,
+              "last40": 0.8625,
+              "cue0_last20": 0.8124999999999999,
+              "cue1_last20": 0.9125000000000001
+            },
+            {
+              "hit_rate": 0.8166666666666667,
+              "last40": 0.8812500000000001,
+              "cue0_last20": 0.9125000000000001,
+              "cue1_last20": 0.8500000000000001
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cue_mode": "visible",
+      "reward_mode": "waypoints",
+      "trace_amplitude": 0.3,
+      "seeds": [
+        7,
+        41,
+        42,
+        43
+      ],
+      "trips": 1440,
+      "controllers": {
+        "cadence": {
+          "hit_rate": 0.7520833333333333,
+          "average_trip_ms": 13.42316270775983,
+          "phases": [
+            {
+              "hit_rate": 0.8520833333333334,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.6333333333333334,
+              "last40": 0.875,
+              "cue0_last20": 0.825,
+              "cue1_last20": 0.925
+            },
+            {
+              "hit_rate": 0.7708333333333334,
+              "last40": 0.8625,
+              "cue0_last20": 0.75,
+              "cue1_last20": 1
+            }
+          ]
+        },
+        "rule": {
+          "hit_rate": 0.9805555555555555,
+          "average_trip_ms": 0.05615611048091927,
+          "phases": [
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.9916666666666667,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            }
+          ]
+        },
+        "q": {
+          "hit_rate": 0.8423611111111111,
+          "average_trip_ms": 0.30234771131492577,
+          "phases": [
+            {
+              "hit_rate": 0.875,
+              "last40": 0.8625,
+              "cue0_last20": 0.875,
+              "cue1_last20": 0.8625
+            },
+            {
+              "hit_rate": 0.8354166666666667,
+              "last40": 0.8625,
+              "cue0_last20": 0.8124999999999999,
+              "cue1_last20": 0.9125000000000001
+            },
+            {
+              "hit_rate": 0.8166666666666667,
+              "last40": 0.8812500000000001,
+              "cue0_last20": 0.9125000000000001,
+              "cue1_last20": 0.8500000000000001
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cue_mode": "brief",
+      "reward_mode": "sparse",
+      "trace_amplitude": 0,
+      "seeds": [
+        7,
+        41,
+        42,
+        43
+      ],
+      "trips": 1440,
+      "controllers": {
+        "cadence": {
+          "hit_rate": 0.5076388888888889,
+          "average_trip_ms": 12.673893748109952,
+          "phases": [
+            {
+              "hit_rate": 0.35833333333333334,
+              "last40": 0.36875,
+              "cue0_last20": 0.5,
+              "cue1_last20": 0.25
+            },
+            {
+              "hit_rate": 0.59375,
+              "last40": 0.59375,
+              "cue0_last20": 0.75,
+              "cue1_last20": 0.5
+            },
+            {
+              "hit_rate": 0.5708333333333334,
+              "last40": 0.56875,
+              "cue0_last20": 0.8,
+              "cue1_last20": 0.3875
+            }
+          ]
+        },
+        "rule": {
+          "hit_rate": 0.9805555555555555,
+          "average_trip_ms": 0.049061738698381104,
+          "phases": [
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.9916666666666667,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            }
+          ]
+        },
+        "q": {
+          "hit_rate": 0.8180555555555555,
+          "average_trip_ms": 0.3088271535994459,
+          "phases": [
+            {
+              "hit_rate": 0.8520833333333334,
+              "last40": 0.8625,
+              "cue0_last20": 0.8999999999999999,
+              "cue1_last20": 0.8125
+            },
+            {
+              "hit_rate": 0.8208333333333333,
+              "last40": 0.8625,
+              "cue0_last20": 0.875,
+              "cue1_last20": 0.85
+            },
+            {
+              "hit_rate": 0.78125,
+              "last40": 0.88125,
+              "cue0_last20": 0.8875,
+              "cue1_last20": 0.8875
+            }
+          ]
+        }
+      }
+    },
+    {
+      "cue_mode": "brief",
+      "reward_mode": "waypoints",
+      "trace_amplitude": 0,
+      "seeds": [
+        7,
+        41,
+        42,
+        43
+      ],
+      "trips": 1440,
+      "controllers": {
+        "cadence": {
+          "hit_rate": 0.75,
+          "average_trip_ms": 11.45652527435838,
+          "phases": [
+            {
+              "hit_rate": 0.6125,
+              "last40": 0.75625,
+              "cue0_last20": 0.5,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.9229166666666666,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.7145833333333333,
+              "last40": 0.9750000000000001,
+              "cue0_last20": 0.9625,
+              "cue1_last20": 0.9500000000000001
+            }
+          ]
+        },
+        "rule": {
+          "hit_rate": 0.9805555555555555,
+          "average_trip_ms": 0.044262361027196884,
+          "phases": [
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.9916666666666667,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            },
+            {
+              "hit_rate": 0.975,
+              "last40": 1,
+              "cue0_last20": 1,
+              "cue1_last20": 1
+            }
+          ]
+        },
+        "q": {
+          "hit_rate": 0.8423611111111111,
+          "average_trip_ms": 0.27813590289345785,
+          "phases": [
+            {
+              "hit_rate": 0.875,
+              "last40": 0.8625,
+              "cue0_last20": 0.875,
+              "cue1_last20": 0.8625
+            },
+            {
+              "hit_rate": 0.8354166666666667,
+              "last40": 0.8625,
+              "cue0_last20": 0.8124999999999999,
+              "cue1_last20": 0.9125000000000001
+            },
+            {
+              "hit_rate": 0.8166666666666667,
+              "last40": 0.8812500000000001,
+              "cue0_last20": 0.9125000000000001,
+              "cue1_last20": 0.8500000000000001
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

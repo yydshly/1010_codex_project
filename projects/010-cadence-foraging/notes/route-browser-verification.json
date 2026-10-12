@@ -1,0 +1,48 @@
+{
+  "schema": "sakura-route-browser-verification/1",
+  "verified_at_utc": "2026-10-11T03:15:42.990662+00:00",
+  "offline_sha256": "ab2940a38dbd1252a18ebcbe3cf277ce7b8967fbe1ecc0426e7d2498727b5807",
+  "source_sha256": {
+    "route_experiment.py": "c14ec22fad4564e11f7b05954e800c4ce6c8ccbed702290ebd9e732499aad07b",
+    "evaluate_routes.py": "ea6bb81be5901ad36fcb825b130293c8674e5d955c961889cad3dc854c0084c3",
+    "experiment.py": "f6d886d4c8c3dc664d8efdf283dd5c2716a73012ee18ad5b982da8764ebe1921"
+  },
+  "browser": [
+    {
+      "file": "browser-route-brief-sparse-seed-7-360.json",
+      "sha256": "574a9a075e182211fe9143efe828296d51aac630e17778812580133b37f76973",
+      "seed": 7,
+      "cue_mode": "brief",
+      "reward_mode": "sparse",
+      "trips": 360,
+      "world_steps": 1440,
+      "offline_history_equal": true,
+      "actions_rewards_observations_verified": true,
+      "hits": {
+        "cadence": 141,
+        "rule": 353,
+        "q": 292
+      },
+      "cadence_waits": 720,
+      "q_updates": 720
+    },
+    {
+      "file": "browser-route-brief-waypoints-seed-7-360.json",
+      "sha256": "099c8e302ae54ca3363b532c9389bc3cf601652d102167039c01d0e140c74b4f",
+      "seed": 7,
+      "cue_mode": "brief",
+      "reward_mode": "waypoints",
+      "trips": 360,
+      "world_steps": 1440,
+      "offline_history_equal": true,
+      "actions_rewards_observations_verified": true,
+      "hits": {
+        "cadence": 257,
+        "rule": 353,
+        "q": 313
+      },
+      "cadence_waits": 720,
+      "q_updates": 720
+    }
+  ]
+}
