@@ -1,0 +1,619 @@
+{
+  "date": "2026-10-12",
+  "checkedAt": "2026-10-12T11:51:26.481Z",
+  "url": "https://yydshly.github.io/1010_codex_project/014-print-bench/",
+  "commit": "01d73006dd6d0221b28fc6994bdabe1dc3328a82",
+  "actionsRun": "38244822695",
+  "expectedResources": 39,
+  "passed": 39,
+  "failed": 0,
+  "manifest": {
+    "schema": 1,
+    "project": "014-print-bench",
+    "date": "2026-10-12",
+    "summaryTopics": 9,
+    "summaryParagraphs": 31,
+    "modules": 9,
+    "documents": 23,
+    "upstream": {
+      "url": "https://github.com/shaiss/print-bench",
+      "revision": "74b1f94de6ff536cc29ae233ee9929d3249caa85",
+      "license": "CC-BY-SA-4.0"
+    },
+    "poster": {
+      "path": "assets/research-overview.png",
+      "width": 3600,
+      "height": 10169,
+      "sha256": "46aa7d804124d2e9dbd1ed0a238bed41dd9ecf394e6473e8a2da262416f6c973"
+    },
+    "files": [
+      {
+        "path": "app.js",
+        "bytes": 4900,
+        "sha256": "edb2e5dc88459e6203eb6e07f91c3f5362e22aac6ec7670a6888026905ba0f2c"
+      },
+      {
+        "path": "assets/README.md",
+        "bytes": 2825,
+        "sha256": "139c571f41a04414162147da04986e17e5e086b75746ac349309f6c20124ca0d"
+      },
+      {
+        "path": "assets/extensions/jevclip-workbench.jpg",
+        "bytes": 141878,
+        "sha256": "09002b0f38a84e2fa9d7007ef8cc5d1bc0b4fc9c11d57ed1c759b9989cb26036"
+      },
+      {
+        "path": "assets/extensions/muster-fieldcamp.png",
+        "bytes": 597292,
+        "sha256": "d69992b31b754386c2164291593a0eff7d88897935ea0d1e9688e6f24a6492d1"
+      },
+      {
+        "path": "assets/extensions/paper-mv.png",
+        "bytes": 358203,
+        "sha256": "09e0fc56accc026ee95da6949fdb64a7685e31b5dbef58a412b88e41b7ab37bf"
+      },
+      {
+        "path": "assets/extensions/yingxu-overview.jpg",
+        "bytes": 59133,
+        "sha256": "58138f099e73842a92fb1a358a8408ba849ec8adcf9c8853514548b779321570"
+      },
+      {
+        "path": "assets/local/teardrop-after.png",
+        "bytes": 6904,
+        "sha256": "0ccb4cbd8136f2065cd3ba29c3a3f70a8b927ca5801065e3f7dff41db9e75b51"
+      },
+      {
+        "path": "assets/local/teardrop-before.png",
+        "bytes": 6911,
+        "sha256": "dad094de2c24084872aeda9a0b1aba4d95d4154faa6a84a8a429ca5439749760"
+      },
+      {
+        "path": "assets/overview-export.json",
+        "bytes": 1861,
+        "sha256": "3db8d9b0cb675e307611a40f1e69eb09a518bdd5210186e19ca895db3fbad9c7"
+      },
+      {
+        "path": "assets/overview-preview.png",
+        "bytes": 898089,
+        "sha256": "89459c17a58ffa10af37baf0e4be7c4c501c40061edf8341568041c6b90ac6b3"
+      },
+      {
+        "path": "assets/research-overview.png",
+        "bytes": 3430154,
+        "sha256": "46aa7d804124d2e9dbd1ed0a238bed41dd9ecf394e6473e8a2da262416f6c973"
+      },
+      {
+        "path": "assets/research-overview.svg",
+        "bytes": 2680002,
+        "sha256": "37057680839cd43eef20806d0cf40323a226b0df6280ebd87fc1788d2fda523d"
+      },
+      {
+        "path": "assets/source/nuggs-den-cutaway.png",
+        "bytes": 51693,
+        "sha256": "44487ee9e96460d16a8383b498a5c0c98db37715b20d2d392480ddc61efe0abe"
+      },
+      {
+        "path": "assets/source/nuggs-den-hero.png",
+        "bytes": 57222,
+        "sha256": "aad6fb6a34fc53ef1e8f07bee6a83ddcdc4e59e1fcd6a0945dc47510c23dc04b"
+      },
+      {
+        "path": "assets/source/pip-piano-hinge-hero.png",
+        "bytes": 750743,
+        "sha256": "a1d93d63a0dadb8849b52b97d880cb899fc6773a6bd11e07e9956647c92fb26d"
+      },
+      {
+        "path": "experiments/teardrop/README.md",
+        "bytes": 2744,
+        "sha256": "52f00b608b2aa3904ff54cb141896674b0a9cbe9d9cdb4097bb21badca8a4992"
+      },
+      {
+        "path": "experiments/teardrop/after/case.scad",
+        "bytes": 115,
+        "sha256": "9ed74edf3120cbdeeabe152820fd5fcdc97fc40ea56de0a1b23a924fdbd7e684"
+      },
+      {
+        "path": "experiments/teardrop/after/case.stl",
+        "bytes": 12884,
+        "sha256": "6dab8c743f5db61e552cc46c97a3585ebf319efc1a17476a85286e5f4c7302bf"
+      },
+      {
+        "path": "experiments/teardrop/after/printability.scad",
+        "bytes": 5082,
+        "sha256": "98443b538138dd0d63e9425a5d71cf57d6fa02d22cc76b2729887566f207b649"
+      },
+      {
+        "path": "experiments/teardrop/before/case.scad",
+        "bytes": 115,
+        "sha256": "9ed74edf3120cbdeeabe152820fd5fcdc97fc40ea56de0a1b23a924fdbd7e684"
+      },
+      {
+        "path": "experiments/teardrop/before/case.stl",
+        "bytes": 12884,
+        "sha256": "5d60c14b6c29ad7bf40f45c108d84cbc96e9e6989e0d825415981beb54af87cb"
+      },
+      {
+        "path": "experiments/teardrop/before/printability.scad",
+        "bytes": 4855,
+        "sha256": "2f8c19159f215f87728feb1ff3a7d679a69211bf64d7ce5226c2c5d7595045fd"
+      },
+      {
+        "path": "experiments/teardrop/geometry-measurements.json",
+        "bytes": 346,
+        "sha256": "c1b475ab4168bc652bd32acbeae9838e5af576b9e2ca8f7d9f25437ee6ad5920"
+      },
+      {
+        "path": "experiments/teardrop/measure-stl.py",
+        "bytes": 1081,
+        "sha256": "efe74df221ea0e22c77ccc5d28b5d06d9f80d1c9d36d3257c8a62f66030dc6a7"
+      },
+      {
+        "path": "experiments/teardrop/source-verification.json",
+        "bytes": 882,
+        "sha256": "a36ebb5679d52b138fa95ad9efce7b135930698a9983f4c9759cb382f753003b"
+      },
+      {
+        "path": "index.html",
+        "bytes": 45036,
+        "sha256": "5c5b15ee946f7249a1ecb6ae822d161de68b9ca93fd363322f7dbe836a158d18"
+      },
+      {
+        "path": "licenses/ARTIFACT-LICENSE.md",
+        "bytes": 712,
+        "sha256": "75088b8d12d366fcc5bace862572a2816ba83c4c495a6a32dd675277eb4d4c5a"
+      },
+      {
+        "path": "licenses/MUSTER-MIT.txt",
+        "bytes": 1089,
+        "sha256": "4d842dfde1ff03125b123934836ee1194cf7c9aea2fc91bdd1de38622b77f65f"
+      },
+      {
+        "path": "licenses/UPSTREAM-CC-BY-SA-4.0.txt",
+        "bytes": 24996,
+        "sha256": "1a86543f525eefc81365c17024dc98726acc1c12ca9ba10162e8cbf083867d04"
+      },
+      {
+        "path": "notes/README.md",
+        "bytes": 1031,
+        "sha256": "fce794eb046242e21399a8098483c8e1f9ca457b0e50b2f1c0b5483ca74f2d78"
+      },
+      {
+        "path": "notes/infographic.md",
+        "bytes": 2844,
+        "sha256": "c9700ec903bfa93f6d151cd9aa9474478c0ce860fee335e4646acf529e9e800f"
+      },
+      {
+        "path": "notes/overview-content.json",
+        "bytes": 10678,
+        "sha256": "78efc0cad821a10d68be3c901d6764ca4545078478c930a5cabdd910e80b9ed8"
+      },
+      {
+        "path": "notes/overview-layout.json",
+        "bytes": 34127,
+        "sha256": "08860b355bfdd96098600b2991cbc5d8548ba89d5a357f382c9541d1f00645ba"
+      },
+      {
+        "path": "notes/research-summary.json",
+        "bytes": 15383,
+        "sha256": "1965cdec75e6f0f86c75d20b9e3aea8e4d4e8376d92100d2befb5a79063a73d3"
+      },
+      {
+        "path": "notes/research-summary.md",
+        "bytes": 12652,
+        "sha256": "20de3198d102693e3eda52ebec7ca4c040bbb27d88040eb430631a64f0f45fc6"
+      },
+      {
+        "path": "notes/research.md",
+        "bytes": 7612,
+        "sha256": "af4c62d4f64db36fb658bf692ac2a0b90198d342b48afd43317880df10889b00"
+      },
+      {
+        "path": "notes/verification.json",
+        "bytes": 1598,
+        "sha256": "ddd6295215e72f60ec46f3203b60091ec1f408ba9bbb5ec9f40397efaf66d150"
+      },
+      {
+        "path": "research.html",
+        "bytes": 45036,
+        "sha256": "5c5b15ee946f7249a1ecb6ae822d161de68b9ca93fd363322f7dbe836a158d18"
+      },
+      {
+        "path": "style.css",
+        "bytes": 11722,
+        "sha256": "8a76a2f42e407b1e22a789a2a5e8bd2196621dfd7cca37e8c15cc1cf1a0bed88"
+      }
+    ]
+  },
+  "results": [
+    {
+      "path": "app.js",
+      "bytes": 4900,
+      "sha256": "edb2e5dc88459e6203eb6e07f91c3f5362e22aac6ec7670a6888026905ba0f2c",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "actualBytes": 4900,
+      "actualSha256": "edb2e5dc88459e6203eb6e07f91c3f5362e22aac6ec7670a6888026905ba0f2c",
+      "passed": true
+    },
+    {
+      "path": "assets/extensions/jevclip-workbench.jpg",
+      "bytes": 141878,
+      "sha256": "09002b0f38a84e2fa9d7007ef8cc5d1bc0b4fc9c11d57ed1c759b9989cb26036",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "actualBytes": 141878,
+      "actualSha256": "09002b0f38a84e2fa9d7007ef8cc5d1bc0b4fc9c11d57ed1c759b9989cb26036",
+      "passed": true
+    },
+    {
+      "path": "assets/extensions/muster-fieldcamp.png",
+      "bytes": 597292,
+      "sha256": "d69992b31b754386c2164291593a0eff7d88897935ea0d1e9688e6f24a6492d1",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 597292,
+      "actualSha256": "d69992b31b754386c2164291593a0eff7d88897935ea0d1e9688e6f24a6492d1",
+      "passed": true
+    },
+    {
+      "path": "assets/extensions/paper-mv.png",
+      "bytes": 358203,
+      "sha256": "09e0fc56accc026ee95da6949fdb64a7685e31b5dbef58a412b88e41b7ab37bf",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 358203,
+      "actualSha256": "09e0fc56accc026ee95da6949fdb64a7685e31b5dbef58a412b88e41b7ab37bf",
+      "passed": true
+    },
+    {
+      "path": "assets/extensions/yingxu-overview.jpg",
+      "bytes": 59133,
+      "sha256": "58138f099e73842a92fb1a358a8408ba849ec8adcf9c8853514548b779321570",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "actualBytes": 59133,
+      "actualSha256": "58138f099e73842a92fb1a358a8408ba849ec8adcf9c8853514548b779321570",
+      "passed": true
+    },
+    {
+      "path": "assets/local/teardrop-after.png",
+      "bytes": 6904,
+      "sha256": "0ccb4cbd8136f2065cd3ba29c3a3f70a8b927ca5801065e3f7dff41db9e75b51",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 6904,
+      "actualSha256": "0ccb4cbd8136f2065cd3ba29c3a3f70a8b927ca5801065e3f7dff41db9e75b51",
+      "passed": true
+    },
+    {
+      "path": "assets/local/teardrop-before.png",
+      "bytes": 6911,
+      "sha256": "dad094de2c24084872aeda9a0b1aba4d95d4154faa6a84a8a429ca5439749760",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 6911,
+      "actualSha256": "dad094de2c24084872aeda9a0b1aba4d95d4154faa6a84a8a429ca5439749760",
+      "passed": true
+    },
+    {
+      "path": "assets/overview-export.json",
+      "bytes": 1861,
+      "sha256": "3db8d9b0cb675e307611a40f1e69eb09a518bdd5210186e19ca895db3fbad9c7",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 1861,
+      "actualSha256": "3db8d9b0cb675e307611a40f1e69eb09a518bdd5210186e19ca895db3fbad9c7",
+      "passed": true
+    },
+    {
+      "path": "assets/overview-preview.png",
+      "bytes": 898089,
+      "sha256": "89459c17a58ffa10af37baf0e4be7c4c501c40061edf8341568041c6b90ac6b3",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 898089,
+      "actualSha256": "89459c17a58ffa10af37baf0e4be7c4c501c40061edf8341568041c6b90ac6b3",
+      "passed": true
+    },
+    {
+      "path": "assets/README.md",
+      "bytes": 2825,
+      "sha256": "139c571f41a04414162147da04986e17e5e086b75746ac349309f6c20124ca0d",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 2825,
+      "actualSha256": "139c571f41a04414162147da04986e17e5e086b75746ac349309f6c20124ca0d",
+      "passed": true
+    },
+    {
+      "path": "assets/research-overview.png",
+      "bytes": 3430154,
+      "sha256": "46aa7d804124d2e9dbd1ed0a238bed41dd9ecf394e6473e8a2da262416f6c973",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 3430154,
+      "actualSha256": "46aa7d804124d2e9dbd1ed0a238bed41dd9ecf394e6473e8a2da262416f6c973",
+      "passed": true
+    },
+    {
+      "path": "assets/research-overview.svg",
+      "bytes": 2680002,
+      "sha256": "37057680839cd43eef20806d0cf40323a226b0df6280ebd87fc1788d2fda523d",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "actualBytes": 2680002,
+      "actualSha256": "37057680839cd43eef20806d0cf40323a226b0df6280ebd87fc1788d2fda523d",
+      "passed": true
+    },
+    {
+      "path": "assets/source/nuggs-den-cutaway.png",
+      "bytes": 51693,
+      "sha256": "44487ee9e96460d16a8383b498a5c0c98db37715b20d2d392480ddc61efe0abe",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 51693,
+      "actualSha256": "44487ee9e96460d16a8383b498a5c0c98db37715b20d2d392480ddc61efe0abe",
+      "passed": true
+    },
+    {
+      "path": "assets/source/nuggs-den-hero.png",
+      "bytes": 57222,
+      "sha256": "aad6fb6a34fc53ef1e8f07bee6a83ddcdc4e59e1fcd6a0945dc47510c23dc04b",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 57222,
+      "actualSha256": "aad6fb6a34fc53ef1e8f07bee6a83ddcdc4e59e1fcd6a0945dc47510c23dc04b",
+      "passed": true
+    },
+    {
+      "path": "assets/source/pip-piano-hinge-hero.png",
+      "bytes": 750743,
+      "sha256": "a1d93d63a0dadb8849b52b97d880cb899fc6773a6bd11e07e9956647c92fb26d",
+      "status": 200,
+      "contentType": "image/png",
+      "actualBytes": 750743,
+      "actualSha256": "a1d93d63a0dadb8849b52b97d880cb899fc6773a6bd11e07e9956647c92fb26d",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/after/case.scad",
+      "bytes": 115,
+      "sha256": "9ed74edf3120cbdeeabe152820fd5fcdc97fc40ea56de0a1b23a924fdbd7e684",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "actualBytes": 115,
+      "actualSha256": "9ed74edf3120cbdeeabe152820fd5fcdc97fc40ea56de0a1b23a924fdbd7e684",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/after/case.stl",
+      "bytes": 12884,
+      "sha256": "6dab8c743f5db61e552cc46c97a3585ebf319efc1a17476a85286e5f4c7302bf",
+      "status": 200,
+      "contentType": "application/vnd.ms-pki.stl",
+      "actualBytes": 12884,
+      "actualSha256": "6dab8c743f5db61e552cc46c97a3585ebf319efc1a17476a85286e5f4c7302bf",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/after/printability.scad",
+      "bytes": 5082,
+      "sha256": "98443b538138dd0d63e9425a5d71cf57d6fa02d22cc76b2729887566f207b649",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "actualBytes": 5082,
+      "actualSha256": "98443b538138dd0d63e9425a5d71cf57d6fa02d22cc76b2729887566f207b649",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/before/case.scad",
+      "bytes": 115,
+      "sha256": "9ed74edf3120cbdeeabe152820fd5fcdc97fc40ea56de0a1b23a924fdbd7e684",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "actualBytes": 115,
+      "actualSha256": "9ed74edf3120cbdeeabe152820fd5fcdc97fc40ea56de0a1b23a924fdbd7e684",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/before/case.stl",
+      "bytes": 12884,
+      "sha256": "5d60c14b6c29ad7bf40f45c108d84cbc96e9e6989e0d825415981beb54af87cb",
+      "status": 200,
+      "contentType": "application/vnd.ms-pki.stl",
+      "actualBytes": 12884,
+      "actualSha256": "5d60c14b6c29ad7bf40f45c108d84cbc96e9e6989e0d825415981beb54af87cb",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/before/printability.scad",
+      "bytes": 4855,
+      "sha256": "2f8c19159f215f87728feb1ff3a7d679a69211bf64d7ce5226c2c5d7595045fd",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "actualBytes": 4855,
+      "actualSha256": "2f8c19159f215f87728feb1ff3a7d679a69211bf64d7ce5226c2c5d7595045fd",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/geometry-measurements.json",
+      "bytes": 346,
+      "sha256": "c1b475ab4168bc652bd32acbeae9838e5af576b9e2ca8f7d9f25437ee6ad5920",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 346,
+      "actualSha256": "c1b475ab4168bc652bd32acbeae9838e5af576b9e2ca8f7d9f25437ee6ad5920",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/measure-stl.py",
+      "bytes": 1081,
+      "sha256": "efe74df221ea0e22c77ccc5d28b5d06d9f80d1c9d36d3257c8a62f66030dc6a7",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "actualBytes": 1081,
+      "actualSha256": "efe74df221ea0e22c77ccc5d28b5d06d9f80d1c9d36d3257c8a62f66030dc6a7",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/README.md",
+      "bytes": 2744,
+      "sha256": "52f00b608b2aa3904ff54cb141896674b0a9cbe9d9cdb4097bb21badca8a4992",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 2744,
+      "actualSha256": "52f00b608b2aa3904ff54cb141896674b0a9cbe9d9cdb4097bb21badca8a4992",
+      "passed": true
+    },
+    {
+      "path": "experiments/teardrop/source-verification.json",
+      "bytes": 882,
+      "sha256": "a36ebb5679d52b138fa95ad9efce7b135930698a9983f4c9759cb382f753003b",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 882,
+      "actualSha256": "a36ebb5679d52b138fa95ad9efce7b135930698a9983f4c9759cb382f753003b",
+      "passed": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 45036,
+      "sha256": "5c5b15ee946f7249a1ecb6ae822d161de68b9ca93fd363322f7dbe836a158d18",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "actualBytes": 45036,
+      "actualSha256": "5c5b15ee946f7249a1ecb6ae822d161de68b9ca93fd363322f7dbe836a158d18",
+      "passed": true
+    },
+    {
+      "path": "licenses/ARTIFACT-LICENSE.md",
+      "bytes": 712,
+      "sha256": "75088b8d12d366fcc5bace862572a2816ba83c4c495a6a32dd675277eb4d4c5a",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 712,
+      "actualSha256": "75088b8d12d366fcc5bace862572a2816ba83c4c495a6a32dd675277eb4d4c5a",
+      "passed": true
+    },
+    {
+      "path": "licenses/MUSTER-MIT.txt",
+      "bytes": 1089,
+      "sha256": "4d842dfde1ff03125b123934836ee1194cf7c9aea2fc91bdd1de38622b77f65f",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "actualBytes": 1089,
+      "actualSha256": "4d842dfde1ff03125b123934836ee1194cf7c9aea2fc91bdd1de38622b77f65f",
+      "passed": true
+    },
+    {
+      "path": "licenses/UPSTREAM-CC-BY-SA-4.0.txt",
+      "bytes": 24996,
+      "sha256": "1a86543f525eefc81365c17024dc98726acc1c12ca9ba10162e8cbf083867d04",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "actualBytes": 24996,
+      "actualSha256": "1a86543f525eefc81365c17024dc98726acc1c12ca9ba10162e8cbf083867d04",
+      "passed": true
+    },
+    {
+      "path": "notes/infographic.md",
+      "bytes": 2844,
+      "sha256": "c9700ec903bfa93f6d151cd9aa9474478c0ce860fee335e4646acf529e9e800f",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 2844,
+      "actualSha256": "c9700ec903bfa93f6d151cd9aa9474478c0ce860fee335e4646acf529e9e800f",
+      "passed": true
+    },
+    {
+      "path": "notes/overview-content.json",
+      "bytes": 10678,
+      "sha256": "78efc0cad821a10d68be3c901d6764ca4545078478c930a5cabdd910e80b9ed8",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 10678,
+      "actualSha256": "78efc0cad821a10d68be3c901d6764ca4545078478c930a5cabdd910e80b9ed8",
+      "passed": true
+    },
+    {
+      "path": "notes/overview-layout.json",
+      "bytes": 34127,
+      "sha256": "08860b355bfdd96098600b2991cbc5d8548ba89d5a357f382c9541d1f00645ba",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 34127,
+      "actualSha256": "08860b355bfdd96098600b2991cbc5d8548ba89d5a357f382c9541d1f00645ba",
+      "passed": true
+    },
+    {
+      "path": "notes/README.md",
+      "bytes": 1031,
+      "sha256": "fce794eb046242e21399a8098483c8e1f9ca457b0e50b2f1c0b5483ca74f2d78",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 1031,
+      "actualSha256": "fce794eb046242e21399a8098483c8e1f9ca457b0e50b2f1c0b5483ca74f2d78",
+      "passed": true
+    },
+    {
+      "path": "notes/research-summary.json",
+      "bytes": 15383,
+      "sha256": "1965cdec75e6f0f86c75d20b9e3aea8e4d4e8376d92100d2befb5a79063a73d3",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 15383,
+      "actualSha256": "1965cdec75e6f0f86c75d20b9e3aea8e4d4e8376d92100d2befb5a79063a73d3",
+      "passed": true
+    },
+    {
+      "path": "notes/research-summary.md",
+      "bytes": 12652,
+      "sha256": "20de3198d102693e3eda52ebec7ca4c040bbb27d88040eb430631a64f0f45fc6",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 12652,
+      "actualSha256": "20de3198d102693e3eda52ebec7ca4c040bbb27d88040eb430631a64f0f45fc6",
+      "passed": true
+    },
+    {
+      "path": "notes/research.md",
+      "bytes": 7612,
+      "sha256": "af4c62d4f64db36fb658bf692ac2a0b90198d342b48afd43317880df10889b00",
+      "status": 200,
+      "contentType": "text/markdown; charset=utf-8",
+      "actualBytes": 7612,
+      "actualSha256": "af4c62d4f64db36fb658bf692ac2a0b90198d342b48afd43317880df10889b00",
+      "passed": true
+    },
+    {
+      "path": "notes/verification.json",
+      "bytes": 1598,
+      "sha256": "ddd6295215e72f60ec46f3203b60091ec1f408ba9bbb5ec9f40397efaf66d150",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "actualBytes": 1598,
+      "actualSha256": "ddd6295215e72f60ec46f3203b60091ec1f408ba9bbb5ec9f40397efaf66d150",
+      "passed": true
+    },
+    {
+      "path": "research.html",
+      "bytes": 45036,
+      "sha256": "5c5b15ee946f7249a1ecb6ae822d161de68b9ca93fd363322f7dbe836a158d18",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "actualBytes": 45036,
+      "actualSha256": "5c5b15ee946f7249a1ecb6ae822d161de68b9ca93fd363322f7dbe836a158d18",
+      "passed": true
+    },
+    {
+      "path": "style.css",
+      "bytes": 11722,
+      "sha256": "8a76a2f42e407b1e22a789a2a5e8bd2196621dfd7cca37e8c15cc1cf1a0bed88",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "actualBytes": 11722,
+      "actualSha256": "8a76a2f42e407b1e22a789a2a5e8bd2196621dfd7cca37e8c15cc1cf1a0bed88",
+      "passed": true
+    }
+  ]
+}

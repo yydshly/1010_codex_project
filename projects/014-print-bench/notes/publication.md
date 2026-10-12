@@ -16,3 +16,5 @@
 本机实拍保存在 assets/publication/。线上部署版本、Actions、逐文件结果与实拍见 publication-verification.json 和 publication-resource-verification.json。部署尚未成功时不填写演示地址。
 
 公开研究页面不包含模型密钥、官方登录、本机服务或自动修改模型的工作流；项目已部署不等于AI流程已接入。原视频源码仍未确认，完整上游设计与实物打印未实测。
+
+已于2026-10-12实际部署并验证[完整中文研究](https://yydshly.github.io/1010_codex_project/014-print-bench/research.html)。Actions 38244822695 成功，39/39项资源匹配，线上浏览器和总图下载验证通过。源码版本和范围见 publication-verification.json。

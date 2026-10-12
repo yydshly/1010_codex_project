@@ -13,7 +13,7 @@
 | 上游许可证 | 第一方树 CC-BY-SA-4.0；BOSL2 为 BSD-2-Clause，NopSCADlib 为 GPL-3.0；[完整上游声明](licenses/UPSTREAM-CC-BY-SA-4.0.txt) |
 | 验证范围 | 上游 Issue / PR / Actions 公开证据，本机 OpenSCAD 最小几何复现；不是本仓库远端全链路运行 |
 | 自动化接入 | 尚未接入本仓库，没有新增远端任务、模型凭据或 PR 工作流 |
-| 在线演示 | 本项目尚未部署 |
+| 在线研究 | [完整中文研究网页](https://yydshly.github.io/1010_codex_project/014-print-bench/research.html)，2026-10-12 已部署并验证 |
 
 ## 中文研究网页
 
@@ -23,7 +23,7 @@
 - [网页运行与交付](web/README.md)
 - [发布范围与实测](notes/publication.md)
 
-网页正在准备发布，实际线上版本以发布记录为准；AI修改模型流程尚未接入。
+已发布[完整中文研究网页](https://yydshly.github.io/1010_codex_project/014-print-bench/research.html)。首次部署 Actions 38244822695 成功，39项资源HTTP/大小/SHA-256全部一致；线上已验证九主题31段、九模块、资料阅读、总图缩放下载与窄屏布局。具体版本和实拍见[发布记录](notes/publication-verification.json)。AI修改模型流程尚未接入。
 
 ## 一张图
 

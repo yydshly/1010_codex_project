@@ -24,7 +24,7 @@
 | 006 | [Telegram Media Downloader · 媒体观察台](projects/006-telegram-media-downloader/README.md) · [上游](https://github.com/Neet-Nestor/Telegram-Media-Downloader) | Telegram 网页媒体增强工具的完整中文理解：用既有总图引导，涵盖四类媒体、WebK/WebA 差异、九个逻辑模块、账号与网页及脚本分工、官方下载与自有 Range/Blob 保存路径、输出与使用边界、资料和开发价值、五阶段扩展；保留交互示意、12项受控实验、原始文件及来源许可，真实 Telegram 下载未实测，队列与 AI 尚未实现。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html) |
 | 007 | [Google Vids · 实际制作与成品对照](projects/007-google-vids/README.md) · [官方产品](https://workspace.google.com/products/vids/) | Google Vids 与映序的完整中文研究：既有总图引导，保留118秒AI初稿与69秒人工编辑成片，结合原创工作台的中文配音、画布时间轴和音乐混音，完整说明能力、模块、流程原理、人机分工、使用价值、介绍模板、剧情与口型扩展及验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/007-google-vids/research.html) |
 | 013 | [映序 · 多模型视频工作台](projects/013-model-video-studio/README.md) · [官方产品](https://workspace.google.com/products/vids/) | 完整中文研究与真实成片对照：Google Vids 的可编辑初稿、映序的六路独立模型与场景编辑、故事和角色、中文口播、音乐混音、渲染导出、使用价值、项目介绍模板及视频与口型扩展；以既有研究总图引导，保留原始视频、截图、笔记、接口协议和验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html) |
-| 014 | [print-bench · Issue 驱动的 3D 模型自动化](projects/014-print-bench/README.md) · [上游](https://github.com/shaiss/print-bench) | Issue 驱动的参数化 3D 自动化完整中文研究：以既有理解总图引导，涵盖源库能力与模型效果、九个模块、任务筛选与代理/工具/CI 分工、真实 Issue #398 / PR #424 与本机几何复现、直接对话价值比较、适用场景、现有项目候选流程、Codex 接入与工具扩展；保留固定源码、许可证、原图、实验与验证边界。公开网页用于研究阅读，自有仓库的 AI 修改模型流程尚未接入。 | 研究中 | — |
+| 014 | [print-bench · Issue 驱动的 3D 模型自动化](projects/014-print-bench/README.md) · [上游](https://github.com/shaiss/print-bench) | Issue 驱动的参数化 3D 自动化完整中文研究：以既有理解总图引导，涵盖源库能力与模型效果、九个模块、任务筛选与代理/工具/CI 分工、真实 Issue #398 / PR #424 与本机几何复现、直接对话价值比较、适用场景、现有项目候选流程、Codex 接入与工具扩展；保留固定源码、许可证、原图、实验与验证边界。公开网页用于研究阅读，自有仓库的 AI 修改模型流程尚未接入。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/014-print-bench/research.html) |
 
 ### 项目预览
 
@@ -612,7 +612,7 @@ Issue 驱动的参数化 3D 自动化完整中文研究：以既有理解总图�
 
 print-bench 完整研究引导图：模型效果、六步执行链、真实修复、价值、适用场景、现有项目和扩展
 
-[研究说明](projects/014-print-bench/README.md) · [上游仓库](https://github.com/shaiss/print-bench)
+[研究说明](projects/014-print-bench/README.md) · [上游仓库](https://github.com/shaiss/print-bench) · [在线演示](https://yydshly.github.io/1010_codex_project/014-print-bench/research.html)
 
 
 <!-- PROJECTS:END -->

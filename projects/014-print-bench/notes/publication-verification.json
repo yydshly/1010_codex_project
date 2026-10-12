@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-12",
+  "sourceCommit": "01d73006dd6d0221b28fc6994bdabe1dc3328a82",
+  "actionsRun": 38244822695,
+  "actionsUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38244822695",
+  "conclusion": "success",
+  "url": "https://yydshly.github.io/1010_codex_project/014-print-bench/research.html",
+  "summaryTopics": 9,
+  "summaryParagraphs": 31,
+  "modules": 9,
+  "documents": 23,
+  "resourceVerification": {
+    "expected": 39,
+    "passed": 39,
+    "failed": 0,
+    "report": "publication-resource-verification.json"
+  },
+  "browser": {
+    "summaryTopics": 9,
+    "paragraphs": 31,
+    "modules": 9,
+    "documents": 23,
+    "stepGenerationVerified": true,
+    "batchDecision": "先用脚本或普通 Actions",
+    "experimentDocumentReadable": true,
+    "posterDialogVerified": true,
+    "downloadedPosterSha256": "46aa7d804124d2e9dbd1ed0a238bed41dd9ecf394e6473e8a2da262416f6c973",
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobileClientWidth": 375,
+    "mobileScrollWidth": 375,
+    "consoleErrors": [],
+    "screenshots": [
+      "assets/publication/online-overview.jpg",
+      "assets/publication/online-mobile.jpg"
+    ]
+  },
+  "boundaries": [
+    "公开静态研究，不接入AI修改模型或远端建模后台。",
+    "原视频作者与源码尚未确认，以print-bench为可核验类似项目。",
+    "引导图保持制作阶段原样，当前发布状态以本记录与项目README为准。",
+    "本机实验仅验证一个具体几何改动，未实物打印、未跑自有仓库Issue-to-PR全链路。"
+  ],
+  "verificationFixes": [
+    "补充资料后重新构建本地资源对照清单；最终39项哈希全部一致。",
+    "首次SVG请求超时，复验成功。",
+    "窄屏长commit文本允许换行，消除横向溢出。"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "conclusion": "success",
+  "headSha": "01d73006dd6d0221b28fc6994bdabe1dc3328a82",
+  "jobs": [
+    {
+      "completedAt": "2026-10-12T11:47:59Z",
+      "conclusion": "success",
+      "databaseId": 114795970617,
+      "name": "build",
+      "startedAt": "2026-10-12T11:46:34Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-12T11:46:36Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-12T11:46:35Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:42Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "number": 2,
+          "startedAt": "2026-10-12T11:46:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:44Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38",
+          "number": 3,
+          "startedAt": "2026-10-12T11:46:42Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:44Z",
+          "conclusion": "success",
+          "name": "Run npm run check",
+          "number": 4,
+          "startedAt": "2026-10-12T11:46:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:47Z",
+          "conclusion": "success",
+          "name": "Run npm ci",
+          "number": 5,
+          "startedAt": "2026-10-12T11:46:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:49Z",
+          "conclusion": "success",
+          "name": "Run npm run research:sync && npm run build",
+          "number": 6,
+          "startedAt": "2026-10-12T11:46:47Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:50Z",
+          "conclusion": "success",
+          "name": "Fetch pinned game for Room integration test",
+          "number": 7,
+          "startedAt": "2026-10-12T11:46:49Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:51Z",
+          "conclusion": "success",
+          "name": "Run npm ci",
+          "number": 8,
+          "startedAt": "2026-10-12T11:46:50Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:55Z",
+          "conclusion": "success",
+          "name": "Run npm run check && npm test && npm run references:check && npm run guide:check && npm run build && npm run publication:check",
+          "number": 9,
+          "startedAt": "2026-10-12T11:46:51Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:46:58Z",
+          "conclusion": "success",
+          "name": "Run npm ci",
+          "number": 10,
+          "startedAt": "2026-10-12T11:46:55Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:12Z",
+          "conclusion": "success",
+          "name": "Run npm run test:battle -- --no-report && npm run test:airport -- --no-report && npm run build && npm run publication:check",
+          "number": 11,
+          "startedAt": "2026-10-12T11:46:58Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:13Z",
+          "conclusion": "success",
+          "name": "Run npm ci && npm run research:sync && npm test && npm run build:research && npm run publication:check",
+          "number": 12,
+          "startedAt": "2026-10-12T11:47:12Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:14Z",
+          "conclusion": "success",
+          "name": "Build and verify Telegram media research",
+          "number": 13,
+          "startedAt": "2026-10-12T11:47:13Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:44Z",
+          "conclusion": "success",
+          "name": "Prepare video verification tools",
+          "number": 14,
+          "startedAt": "2026-10-12T11:47:14Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:47Z",
+          "conclusion": "success",
+          "name": "Verify studio and build Vids research publication",
+          "number": 15,
+          "startedAt": "2026-10-12T11:47:44Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:48Z",
+          "conclusion": "success",
+          "name": "Build and verify print-bench research",
+          "number": 16,
+          "startedAt": "2026-10-12T11:47:47Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:49Z",
+          "conclusion": "success",
+          "name": "Run npm run site:assemble",
+          "number": 17,
+          "startedAt": "2026-10-12T11:47:48Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:49Z",
+          "conclusion": "success",
+          "name": "Run actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b",
+          "number": 18,
+          "startedAt": "2026-10-12T11:47:49Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:56Z",
+          "conclusion": "success",
+          "name": "Run actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b",
+          "number": 19,
+          "startedAt": "2026-10-12T11:47:49Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:57Z",
+          "conclusion": "success",
+          "name": "Post Fetch pinned game for Room integration test",
+          "number": 36,
+          "startedAt": "2026-10-12T11:47:56Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:57Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38",
+          "number": 37,
+          "startedAt": "2026-10-12T11:47:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:57Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+          "number": 38,
+          "startedAt": "2026-10-12T11:47:57Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:47:57Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 39,
+          "startedAt": "2026-10-12T11:47:57Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/yydshly/1010_codex_project/actions/runs/38244822695/job/114795970617"
+    },
+    {
+      "completedAt": "2026-10-12T11:48:15Z",
+      "conclusion": "success",
+      "databaseId": 114796485982,
+      "name": "deploy",
+      "startedAt": "2026-10-12T11:48:02Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-12T11:48:03Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-12T11:48:03Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:48:14Z",
+          "conclusion": "success",
+          "name": "Deploy static research",
+          "number": 2,
+          "startedAt": "2026-10-12T11:48:03Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-12T11:48:14Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 3,
+          "startedAt": "2026-10-12T11:48:14Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/yydshly/1010_codex_project/actions/runs/38244822695/job/114796485982"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/yydshly/1010_codex_project/actions/runs/38244822695"
+}

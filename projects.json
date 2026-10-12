@@ -754,7 +754,7 @@
       "name": "print-bench · Issue 驱动的 3D 模型自动化",
       "summary": "Issue 驱动的参数化 3D 自动化完整中文研究：以既有理解总图引导，涵盖源库能力与模型效果、九个模块、任务筛选与代理/工具/CI 分工、真实 Issue #398 / PR #424 与本机几何复现、直接对话价值比较、适用场景、现有项目候选流程、Codex 接入与工具扩展；保留固定源码、许可证、原图、实验与验证边界。公开网页用于研究阅读，自有仓库的 AI 修改模型流程尚未接入。",
       "source": "https://github.com/shaiss/print-bench",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "OpenSCAD",
         "GitHub Actions",
@@ -766,7 +766,7 @@
         "path": "projects/014-print-bench/assets/research-overview.png",
         "alt": "print-bench 完整研究引导图：模型效果、六步执行链、真实修复、价值、适用场景、现有项目和扩展"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/014-print-bench/research.html",
       "summarySections": [
         {
           "title": "能力：把可执行需求交付为可审查的模型改动",

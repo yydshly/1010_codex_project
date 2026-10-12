@@ -8,6 +8,8 @@
 
 公开静态研究，不接入模型、建模后台或Issue自动改代码；CI不重新生成引导图。原X视频源码未确认，不把print-bench视为原帖项目。
 
+已实际发布[014完整中文研究](https://yydshly.github.io/1010_codex_project/014-print-bench/research.html)，首次Actions 38244822695成功。39项资源HTTP、大小和SHA-256全部一致；线上确认九主题31段、九模块、原文阅读、任务判断、总图缩放下载与窄屏布局。记录和实拍保留在014的 notes/publication-verification.json。
+
 
 ## 2026-10-12 · 006 Telegram 媒体研究发布接入
 
