@@ -60,7 +60,9 @@
       "passed": 38,
       "failed": 0,
       "method": "HTTP状态、大小、SHA-256与本地已提交字节构建一致",
-      "record": "notes/publication-resource-verification.json"
+      "record": "notes/publication-resource-verification.json",
+      "commit": "52ec17418ff6fcd1c647ebaac25f5094439f0571",
+      "actionsRun": 38241805483
     },
     "onlineBrowser": {
       "url": "https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html",
@@ -77,7 +79,28 @@
         "overflow": false
       },
       "brokenImages": 0,
-      "consoleErrors": []
+      "consoleErrors": [],
+      "originalInteractions": {
+        "WebA_voice": "保存示意禁用，明确未覆盖",
+        "WebK_video": "恢复保存示意入口",
+        "controlledDurations": {
+          "mp4": 4,
+          "fullOgg": 9.932458,
+          "truncatedOgg": 1
+        }
+      }
+    },
+    "preservedResearchPaths": {
+      "001": 200,
+      "002": 200,
+      "004": 200,
+      "005": 200,
+      "007": 200,
+      "013": 200
+    },
+    "homepage": {
+      "status": 200,
+      "contains006": true
     }
   },
   "screenshots": [
@@ -100,9 +123,23 @@
     "窄屏检查是桌面浏览器视口模拟，手机真机未验证。"
   ],
   "deployment": {
-    "commit": "e55762cd88499b3ea9cd0d60c00206ab0c8e2d2b",
-    "actionsRun": 38241355803,
-    "actionsUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38241355803",
+    "commit": "52ec17418ff6fcd1c647ebaac25f5094439f0571",
+    "actionsRun": 38241805483,
+    "actionsUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38241805483",
     "conclusion": "success"
-  }
+  },
+  "deployments": [
+    {
+      "commit": "e55762cd88499b3ea9cd0d60c00206ab0c8e2d2b",
+      "actionsRun": 38241355803,
+      "actionsUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38241355803",
+      "conclusion": "success"
+    },
+    {
+      "commit": "52ec17418ff6fcd1c647ebaac25f5094439f0571",
+      "actionsRun": 38241805483,
+      "actionsUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38241805483",
+      "conclusion": "success"
+    }
+  ]
 }
