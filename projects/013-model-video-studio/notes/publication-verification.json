@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "status": "local-verified-awaiting-deployment",
+  "status": "deployed-verified",
   "scope": "静态研究与作品；制作服务仍在本机",
   "sourceBranch": "codex/vids-research-publish",
   "local": {
@@ -37,7 +37,1125 @@
       "files": 309,
       "credentialFindings": 0,
       "privateRuntimeIncluded": false
+    },
+    "rootProjectCount": 14,
+    "isolatedPublicationProjectCount": 6,
+    "playbackNavigationRegression": [
+      "pending play resolves after navigation",
+      "pending play rejects after navigation",
+      "active playback still updates status"
+    ]
+  },
+  "online": {
+    "verifiedAt": "2026-10-12T10:43:04.664Z",
+    "sourceCommit": "c2a69a5b62ceb4de82b4b27c5152c2600c856e2f",
+    "workflowRun": 38237779053,
+    "base": "https://yydshly.github.io/1010_codex_project/",
+    "manifests": 2,
+    "files": 134,
+    "rangeRequests": 18,
+    "method": "从已提交源文件导出，按Linux检出换行重建；逐项HTTPS获取并核对字节数与SHA-256；二进制证据按原始字节保留。",
+    "results": [
+      {
+        "project": "007-google-vids",
+        "path": "actual.css",
+        "status": 200,
+        "bytes": 5896,
+        "sha256": "8c8e83f86e3f2bc6df4559c2fd91339d51d8e8d8fe0e63fbe73b0f1d2dc92b84"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "actual.html",
+        "status": 200,
+        "bytes": 9398,
+        "sha256": "19336c954ff7da79951ab1bfbe4717c99ba33b792934e817d2d199791237a70d"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "actual.js",
+        "status": 200,
+        "bytes": 4883,
+        "sha256": "afa5440f14d82f6078948f2498dfca335bb9317dedec453590a9d7d6b9d2f4c6"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "app.js",
+        "status": 200,
+        "bytes": 2626,
+        "sha256": "627ead437f58e3e0af25f15d417e5b7e12fa0ff7f1901a627bbf47327782b540"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/01-ai-outline.jpg",
+        "status": 200,
+        "bytes": 66841,
+        "sha256": "d1061fc870e1de0f7d57306bdd9b6ac4a37ff54a4d4da163734c3561b1010d66"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/02-ai-draft-editor.jpg",
+        "status": 200,
+        "bytes": 74540,
+        "sha256": "b81a28cb6e383f68b606f453b781ca5fe3dcefb42fe21227937fc429551be507"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/03-ai-export-complete.jpg",
+        "status": 200,
+        "bytes": 74452,
+        "sha256": "55c1d1e733a9e910f7a9e5671df0ad83b79d1a866d210c5a976fe387077d63f7"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/04-edited-video.jpg",
+        "status": 200,
+        "bytes": 70427,
+        "sha256": "37953fa6420f6ac190e30ae6ef1e11a253ee41c4bbe131bd02cb48d66f9fd149"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/05-comparison-page.jpg",
+        "status": 200,
+        "bytes": 86645,
+        "sha256": "bd1127c37955911f584747590ca926811ecbf13b1ff61a3fd19edf346a143243"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/06-comparison-mobile.jpg",
+        "status": 200,
+        "bytes": 41008,
+        "sha256": "482d6d6ed1ef9bb9f2df735df8ce45669b13bccf228e46c504250c4397b411df"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/ai-draft-poster.jpg",
+        "status": 200,
+        "bytes": 82991,
+        "sha256": "25c1c42cdce8a6e5884e4235685ad082c16971b21f8ed1964677dc2f4407caf9"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/ai-draft.mp4",
+        "status": 200,
+        "bytes": 10670095,
+        "sha256": "ede63a554b1f25668a724aeb16cb695acd93f942d44bf7f49f1aeb247f61b1a5"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/edited-captions.vtt",
+        "status": 200,
+        "bytes": 2166,
+        "sha256": "cbda6c111052dc9b21c2b2b81c5c89d6a005412a2a88aa062b3d4b33293cb30b"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/edited-contact-sheet.jpg",
+        "status": 200,
+        "bytes": 104680,
+        "sha256": "c5e224c761a1f0906f529149b7c30c18854a387324f71ac384ed71456ecda35d"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/edited-final-poster.jpg",
+        "status": 200,
+        "bytes": 77774,
+        "sha256": "86bd9dc9db3ba6a1a5915c4633583d372b00d0cf79cc197c1f802afe1d3f53c6"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/edited-final.mp4",
+        "status": 200,
+        "bytes": 5999262,
+        "sha256": "ce70e16c3ced268e08be8aaee9dee99c0de0fc20ee7c4a810de3cacb02176496"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/avatar-result.jpg",
+        "status": 200,
+        "bytes": 55635,
+        "sha256": "7a6b3e613f96776ffb4c426c8645f1bcd1d2ca30310f1574d0cc045df3236af4"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/avatar-selection.jpg",
+        "status": 200,
+        "bytes": 18529,
+        "sha256": "4877aa907e07c77b3a3e1404a09e47b0738e42889d975a1e9db10c78690162e9"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/research-overview.png",
+        "status": 200,
+        "bytes": 2258752,
+        "sha256": "cc0515ea5cb34db6e1109f99ae11cd24760f6d3d9e2d9654c64d3c0b17527330"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/showcase-desktop.jpg",
+        "status": 200,
+        "bytes": 74603,
+        "sha256": "eac1d813f34e838349c4f66486c5758515aef0cd9145c05a12ac4f9023448a61"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/showcase-mobile.jpg",
+        "status": 200,
+        "bytes": 152268,
+        "sha256": "87f69ce3bbf8819d9b056fe8dd61f9452d8ccfe0ff27916f09876860697f2f08"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "catalog.json",
+        "status": 200,
+        "bytes": 18841,
+        "sha256": "93c0729db399a9e7203bfd4407b8e78d68d72caf82225467ff9bc3873ab1ddb9"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "content.json",
+        "status": 200,
+        "bytes": 12769,
+        "sha256": "008558a34f2598378d25cf1becf8257fbb705eddf1eb7947c1b5210a32e22b3e"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "data.js",
+        "status": 200,
+        "bytes": 4560,
+        "sha256": "5b376db4322d0d18285ffa65dae6cda8358790bbb7758b7558813e9914b90d25"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "index.html",
+        "status": 200,
+        "bytes": 2638,
+        "sha256": "1a51025869124a1fc9ca7a1e1834e604f12ca1252177d8d5cad99ba793788095"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/chinese-voice.mp3",
+        "status": 200,
+        "bytes": 156660,
+        "sha256": "f220a7e6e1cc2bd59933adc8d175484a834012d7680586581116f85b64e7e0f3"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/editor-verification.json",
+        "status": 200,
+        "bytes": 1999,
+        "sha256": "382347d1d78e84aa96a2122477675f596f295ac66c99957f901eb53a9831764d"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-draft.mp4",
+        "status": 200,
+        "bytes": 10670095,
+        "sha256": "ede63a554b1f25668a724aeb16cb695acd93f942d44bf7f49f1aeb247f61b1a5"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-edits.json",
+        "status": 200,
+        "bytes": 621,
+        "sha256": "add7dc1c5495e82182358afde95132a42b933b87448bfa5542e558d6cb4060b8"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-final.mp4",
+        "status": 200,
+        "bytes": 5999262,
+        "sha256": "ce70e16c3ced268e08be8aaee9dee99c0de0fc20ee7c4a810de3cacb02176496"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-license.md",
+        "status": 200,
+        "bytes": 1622,
+        "sha256": "b80c6ea01b7744c506a957a76a6933d6ca3710a37d8dc4962c2d536871a01299"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-metadata.json",
+        "status": 200,
+        "bytes": 1818,
+        "sha256": "a4f8ad229747bfbabd9642edc172c2a51f0333ff273528d0dbe867f7911a5d59"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-narration.txt",
+        "status": 200,
+        "bytes": 3379,
+        "sha256": "8a34c005bd482e96ef378a972a30487137cca24fc37020dc7e213c31926a450e"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-notes.md",
+        "status": 200,
+        "bytes": 2895,
+        "sha256": "404af59d3c686f8fb85965638b620db8cb1d2c75c4f7dc40d1038d1b4a81af07"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-observation.json",
+        "status": 200,
+        "bytes": 280,
+        "sha256": "60113196d0b896f7228611cedbdab9ba1beaa0e3482e7865805c483677b346e0"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-outline.txt",
+        "status": 200,
+        "bytes": 389,
+        "sha256": "222a3c06fe58109512df19ab2b2f4faad81fd733680abbfeed0c5ce6823b6636"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-process.md",
+        "status": 200,
+        "bytes": 4834,
+        "sha256": "ba0af76c07cce3e1a83e6f1706dd7deba552eea73a18cfdacce2ad011b97b70a"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-prompt.txt",
+        "status": 200,
+        "bytes": 1761,
+        "sha256": "34f7cbef363d3c5b5ce6aefb23cfc33f50f1f280fd2ed8c25f03494f834f9c69"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-readme.md",
+        "status": 200,
+        "bytes": 5797,
+        "sha256": "5c326ba5441e1d560fefcf9d026ff0aa063892b6a23990cf3b1d3938edfd90a8"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-screen.jpg",
+        "status": 200,
+        "bytes": 70427,
+        "sha256": "37953fa6420f6ac190e30ae6ef1e11a253ee41c4bbe131bd02cb48d66f9fd149"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-sheet.jpg",
+        "status": 200,
+        "bytes": 104680,
+        "sha256": "c5e224c761a1f0906f529149b7c30c18854a387324f71ac384ed71456ecda35d"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-summary.json",
+        "status": 200,
+        "bytes": 9051,
+        "sha256": "01c12b5a9b052e881044976f453f9f8bef0890248e73baedcdcfb4291b046030"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-verification.md",
+        "status": 200,
+        "bytes": 3584,
+        "sha256": "b60195b3760579d2e1b836cbf8c21bac719f33bc8165a15a0817f9b28e086b85"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/image-provenance.json",
+        "status": 200,
+        "bytes": 8618,
+        "sha256": "cdd996e666acf1785d1b4dc89a31acfe509febd1bf733ebcb1bc75f173986789"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/lipsync-request.json",
+        "status": 200,
+        "bytes": 2454,
+        "sha256": "54229e0fd1fda732024a2cad886910e8577f32dabdb7871595873c918c3bedc7"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/music-request.json",
+        "status": 200,
+        "bytes": 349,
+        "sha256": "ad307c776439936fada5d09dc6d3147a00154f7b164aa423093ed6321ca4063f"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/music-verification.json",
+        "status": 200,
+        "bytes": 2331,
+        "sha256": "b53ab635f135675b6ed6d695c805c5a358c38cbcc5bbc180c71c162ae1eed2f1"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/original-music.wav",
+        "status": 200,
+        "bytes": 1536044,
+        "sha256": "52be4269d89639f4d4f63200ae6430aab32023c3e2d9647dcc62d3d36cec60a2"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/overview-prompt.txt",
+        "status": 200,
+        "bytes": 7272,
+        "sha256": "cf9b1c5f9d7523227538665e3c77ac5ea80dc9dc9b36ff40e7464f03f80745a9"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/overview-verification.json",
+        "status": 200,
+        "bytes": 1183,
+        "sha256": "80f2e90f76773e5a183a579e81dfe6db7f65bcdfe310618ce6594215782784ef"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/preserved-music.json",
+        "status": 200,
+        "bytes": 5096,
+        "sha256": "787d1a9ac78873eab617706cd2b31f5dcc6888e367134b63bb0759067f7da51d"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/preserved-original.json",
+        "status": 200,
+        "bytes": 10091,
+        "sha256": "6158d53f1910cf3ea33a045328f6a0d4383b18799ddee631a15e24b217c89d6f"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/production-verification.json",
+        "status": 200,
+        "bytes": 1676,
+        "sha256": "fdc69c3b6820d47452d0895d71c0f270a4bfd5d3e9dd2ba23880ac0e6a6a9bce"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/publication-scope.json",
+        "status": 200,
+        "bytes": 1625,
+        "sha256": "e0a5b9c254c8841a006b450010c15532bd1a4a913e4aa38814dc88cb5b92b84a"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/research-guide.md",
+        "status": 200,
+        "bytes": 5524,
+        "sha256": "54efc032cad8848f60611d2d3b5acfd907507f79ed4c5a74b61346b75b66a269"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/research-poster-source.json",
+        "status": 200,
+        "bytes": 3976,
+        "sha256": "53c6257367350e78c97096d3a4a96dbce325e5893d16aff26ca6fbd0391dc990"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/research-poster.png",
+        "status": 200,
+        "bytes": 2258752,
+        "sha256": "cc0515ea5cb34db6e1109f99ae11cd24760f6d3d9e2d9654c64d3c0b17527330"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/research-summary.json",
+        "status": 200,
+        "bytes": 10140,
+        "sha256": "9cf32eb196a687e5d50ffeaa22acd7cca48f9f917b4e38f5f66e3da44643e65a"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-adapters.md",
+        "status": 200,
+        "bytes": 6950,
+        "sha256": "648886f7dddca9fcacc7b21ae836880feaabab710201902971eb29fd925c29cc"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-architecture.md",
+        "status": 200,
+        "bytes": 3350,
+        "sha256": "2a14d7be457df02cfab23336b15a3867a93ba07d1a86161761fc0d3337e43185"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-control.md",
+        "status": 200,
+        "bytes": 4708,
+        "sha256": "15ecfe907569a5a358e2afe9a5588724d7e2ef1c34aefe83930c3988349aeee5"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-draft.mp4",
+        "status": 200,
+        "bytes": 3264344,
+        "sha256": "ea3798c131f913f83d3a3a33834db6d93dbb0400f733ae21ced44bff6ed6491e"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-editor.mp4",
+        "status": 200,
+        "bytes": 4010299,
+        "sha256": "057ac5589c9c1c77c7f1af0fe75e01c6866314c73dd2de875049c9461ea8ff3b"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-final.mp4",
+        "status": 200,
+        "bytes": 3379430,
+        "sha256": "b0e5518d772a651cd0ff2c362d621628c6028db1f95a596e176ca36ab9db685e"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-mixing.md",
+        "status": 200,
+        "bytes": 4524,
+        "sha256": "d36c4cc89f12b2c5c3a99f0ac4434292f87e00874927d42726209678c6ddcc7b"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-music.mp4",
+        "status": 200,
+        "bytes": 4405763,
+        "sha256": "f0a6dba8920448876e3af2ad5f30f6cbae00df8061eb237e72ddcdee91098d19"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-outline.json",
+        "status": 200,
+        "bytes": 4013,
+        "sha256": "9d3009a10aa6bd02d31ce85e01b03e799e6c1faf725ef6b1a83ca9708ce73f4c"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-poster.png",
+        "status": 200,
+        "bytes": 952809,
+        "sha256": "671a6a3cdba0adfe4084e8a1a9ef11f31f6a9771310e1bff32c7b4c855a0d704"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-project.json",
+        "status": 200,
+        "bytes": 48137,
+        "sha256": "8ec2dcb86ec15ad95a8cd5c4e257e9ff67100abe86ff68544644dbbab814f873"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-readme.md",
+        "status": 200,
+        "bytes": 12275,
+        "sha256": "aac8d2a1236b2e5970524d4754567be4e0abeba176ceb05b9e398d1121c10e54"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-runtime.md",
+        "status": 200,
+        "bytes": 7267,
+        "sha256": "ca160653cde8c830fab56471b3773394cf03d63ae1577bf368d1384d81512280"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-screen.jpg",
+        "status": 200,
+        "bytes": 70558,
+        "sha256": "421c7c539b0a93aac0eb7c805deb8289d2329d54561326fb6b0a8018be380dfe"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-verification.json",
+        "status": 200,
+        "bytes": 6583,
+        "sha256": "d2503cf40a7924f529c2436a03c41fd32223b5326c63fc2ac76d76053411b449"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "official.html",
+        "status": 200,
+        "bytes": 7686,
+        "sha256": "4271871818a7b6788d245214648a8284cbdedb218bc7d88f8cf9f18bcf595243"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "research-data.js",
+        "status": 200,
+        "bytes": 26288,
+        "sha256": "f68f0b3a013eb5dbc63de34a709cedee6952516ac5d001589cfd6b46da5a08b3"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "research.css",
+        "status": 200,
+        "bytes": 10706,
+        "sha256": "9f2cc3ed253e390a1956b6507417511f21a6d50ce0f4b22b1be73c549f415e61"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "research.html",
+        "status": 200,
+        "bytes": 2638,
+        "sha256": "1a51025869124a1fc9ca7a1e1834e604f12ca1252177d8d5cad99ba793788095"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "research.js",
+        "status": 200,
+        "bytes": 22050,
+        "sha256": "866ab4b4063efe7e8ab2997d0332eb9eda1e2b887ffc24cb6a60d1589b91f748"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "styles.css",
+        "status": 200,
+        "bytes": 9876,
+        "sha256": "dcbf192e2ec95fc503d452c71a63345c72c5f226bd2fdf9842a0fbe7b419b1e2"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "catalog.json",
+        "status": 200,
+        "bytes": 18841,
+        "sha256": "87a133ad24f4de18c0637cf9d567f4be4f50a140a41a4b5b358675f88710f78c"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "content.json",
+        "status": 200,
+        "bytes": 12769,
+        "sha256": "008558a34f2598378d25cf1becf8257fbb705eddf1eb7947c1b5210a32e22b3e"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "index.html",
+        "status": 200,
+        "bytes": 2638,
+        "sha256": "1a51025869124a1fc9ca7a1e1834e604f12ca1252177d8d5cad99ba793788095"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/chinese-voice.mp3",
+        "status": 200,
+        "bytes": 156660,
+        "sha256": "f220a7e6e1cc2bd59933adc8d175484a834012d7680586581116f85b64e7e0f3"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/editor-verification.json",
+        "status": 200,
+        "bytes": 1999,
+        "sha256": "382347d1d78e84aa96a2122477675f596f295ac66c99957f901eb53a9831764d"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-draft.mp4",
+        "status": 200,
+        "bytes": 10670095,
+        "sha256": "ede63a554b1f25668a724aeb16cb695acd93f942d44bf7f49f1aeb247f61b1a5"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-edits.json",
+        "status": 200,
+        "bytes": 621,
+        "sha256": "add7dc1c5495e82182358afde95132a42b933b87448bfa5542e558d6cb4060b8"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-final.mp4",
+        "status": 200,
+        "bytes": 5999262,
+        "sha256": "ce70e16c3ced268e08be8aaee9dee99c0de0fc20ee7c4a810de3cacb02176496"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-license.md",
+        "status": 200,
+        "bytes": 1622,
+        "sha256": "b80c6ea01b7744c506a957a76a6933d6ca3710a37d8dc4962c2d536871a01299"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-metadata.json",
+        "status": 200,
+        "bytes": 1818,
+        "sha256": "a4f8ad229747bfbabd9642edc172c2a51f0333ff273528d0dbe867f7911a5d59"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-narration.txt",
+        "status": 200,
+        "bytes": 3379,
+        "sha256": "8a34c005bd482e96ef378a972a30487137cca24fc37020dc7e213c31926a450e"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-notes.md",
+        "status": 200,
+        "bytes": 2895,
+        "sha256": "404af59d3c686f8fb85965638b620db8cb1d2c75c4f7dc40d1038d1b4a81af07"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-observation.json",
+        "status": 200,
+        "bytes": 280,
+        "sha256": "60113196d0b896f7228611cedbdab9ba1beaa0e3482e7865805c483677b346e0"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-outline.txt",
+        "status": 200,
+        "bytes": 389,
+        "sha256": "222a3c06fe58109512df19ab2b2f4faad81fd733680abbfeed0c5ce6823b6636"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-process.md",
+        "status": 200,
+        "bytes": 4834,
+        "sha256": "ba0af76c07cce3e1a83e6f1706dd7deba552eea73a18cfdacce2ad011b97b70a"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-prompt.txt",
+        "status": 200,
+        "bytes": 1761,
+        "sha256": "34f7cbef363d3c5b5ce6aefb23cfc33f50f1f280fd2ed8c25f03494f834f9c69"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-readme.md",
+        "status": 200,
+        "bytes": 5797,
+        "sha256": "5c326ba5441e1d560fefcf9d026ff0aa063892b6a23990cf3b1d3938edfd90a8"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-screen.jpg",
+        "status": 200,
+        "bytes": 70427,
+        "sha256": "37953fa6420f6ac190e30ae6ef1e11a253ee41c4bbe131bd02cb48d66f9fd149"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-sheet.jpg",
+        "status": 200,
+        "bytes": 104680,
+        "sha256": "c5e224c761a1f0906f529149b7c30c18854a387324f71ac384ed71456ecda35d"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-summary.json",
+        "status": 200,
+        "bytes": 9051,
+        "sha256": "01c12b5a9b052e881044976f453f9f8bef0890248e73baedcdcfb4291b046030"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-verification.md",
+        "status": 200,
+        "bytes": 3584,
+        "sha256": "b60195b3760579d2e1b836cbf8c21bac719f33bc8165a15a0817f9b28e086b85"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/image-provenance.json",
+        "status": 200,
+        "bytes": 8618,
+        "sha256": "cdd996e666acf1785d1b4dc89a31acfe509febd1bf733ebcb1bc75f173986789"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/lipsync-request.json",
+        "status": 200,
+        "bytes": 2454,
+        "sha256": "54229e0fd1fda732024a2cad886910e8577f32dabdb7871595873c918c3bedc7"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/music-request.json",
+        "status": 200,
+        "bytes": 349,
+        "sha256": "ad307c776439936fada5d09dc6d3147a00154f7b164aa423093ed6321ca4063f"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/music-verification.json",
+        "status": 200,
+        "bytes": 2331,
+        "sha256": "b53ab635f135675b6ed6d695c805c5a358c38cbcc5bbc180c71c162ae1eed2f1"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/original-music.wav",
+        "status": 200,
+        "bytes": 1536044,
+        "sha256": "52be4269d89639f4d4f63200ae6430aab32023c3e2d9647dcc62d3d36cec60a2"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/overview-prompt.txt",
+        "status": 200,
+        "bytes": 7272,
+        "sha256": "cf9b1c5f9d7523227538665e3c77ac5ea80dc9dc9b36ff40e7464f03f80745a9"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/overview-verification.json",
+        "status": 200,
+        "bytes": 1183,
+        "sha256": "80f2e90f76773e5a183a579e81dfe6db7f65bcdfe310618ce6594215782784ef"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/preserved-music.json",
+        "status": 200,
+        "bytes": 5096,
+        "sha256": "787d1a9ac78873eab617706cd2b31f5dcc6888e367134b63bb0759067f7da51d"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/preserved-original.json",
+        "status": 200,
+        "bytes": 10091,
+        "sha256": "6158d53f1910cf3ea33a045328f6a0d4383b18799ddee631a15e24b217c89d6f"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/production-verification.json",
+        "status": 200,
+        "bytes": 1676,
+        "sha256": "fdc69c3b6820d47452d0895d71c0f270a4bfd5d3e9dd2ba23880ac0e6a6a9bce"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/publication-scope.json",
+        "status": 200,
+        "bytes": 1625,
+        "sha256": "e0a5b9c254c8841a006b450010c15532bd1a4a913e4aa38814dc88cb5b92b84a"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/research-guide.md",
+        "status": 200,
+        "bytes": 5524,
+        "sha256": "54efc032cad8848f60611d2d3b5acfd907507f79ed4c5a74b61346b75b66a269"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/research-poster-source.json",
+        "status": 200,
+        "bytes": 3976,
+        "sha256": "53c6257367350e78c97096d3a4a96dbce325e5893d16aff26ca6fbd0391dc990"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/research-poster.png",
+        "status": 200,
+        "bytes": 2258752,
+        "sha256": "cc0515ea5cb34db6e1109f99ae11cd24760f6d3d9e2d9654c64d3c0b17527330"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/research-summary.json",
+        "status": 200,
+        "bytes": 10140,
+        "sha256": "9cf32eb196a687e5d50ffeaa22acd7cca48f9f917b4e38f5f66e3da44643e65a"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-adapters.md",
+        "status": 200,
+        "bytes": 6950,
+        "sha256": "648886f7dddca9fcacc7b21ae836880feaabab710201902971eb29fd925c29cc"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-architecture.md",
+        "status": 200,
+        "bytes": 3350,
+        "sha256": "2a14d7be457df02cfab23336b15a3867a93ba07d1a86161761fc0d3337e43185"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-control.md",
+        "status": 200,
+        "bytes": 4708,
+        "sha256": "15ecfe907569a5a358e2afe9a5588724d7e2ef1c34aefe83930c3988349aeee5"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-draft.mp4",
+        "status": 200,
+        "bytes": 3264344,
+        "sha256": "ea3798c131f913f83d3a3a33834db6d93dbb0400f733ae21ced44bff6ed6491e"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-editor.mp4",
+        "status": 200,
+        "bytes": 4010299,
+        "sha256": "057ac5589c9c1c77c7f1af0fe75e01c6866314c73dd2de875049c9461ea8ff3b"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-final.mp4",
+        "status": 200,
+        "bytes": 3379430,
+        "sha256": "b0e5518d772a651cd0ff2c362d621628c6028db1f95a596e176ca36ab9db685e"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-mixing.md",
+        "status": 200,
+        "bytes": 4524,
+        "sha256": "d36c4cc89f12b2c5c3a99f0ac4434292f87e00874927d42726209678c6ddcc7b"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-music.mp4",
+        "status": 200,
+        "bytes": 4405763,
+        "sha256": "f0a6dba8920448876e3af2ad5f30f6cbae00df8061eb237e72ddcdee91098d19"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-outline.json",
+        "status": 200,
+        "bytes": 4013,
+        "sha256": "9d3009a10aa6bd02d31ce85e01b03e799e6c1faf725ef6b1a83ca9708ce73f4c"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-poster.png",
+        "status": 200,
+        "bytes": 952809,
+        "sha256": "671a6a3cdba0adfe4084e8a1a9ef11f31f6a9771310e1bff32c7b4c855a0d704"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-project.json",
+        "status": 200,
+        "bytes": 48137,
+        "sha256": "8ec2dcb86ec15ad95a8cd5c4e257e9ff67100abe86ff68544644dbbab814f873"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-readme.md",
+        "status": 200,
+        "bytes": 12275,
+        "sha256": "aac8d2a1236b2e5970524d4754567be4e0abeba176ceb05b9e398d1121c10e54"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-runtime.md",
+        "status": 200,
+        "bytes": 7267,
+        "sha256": "ca160653cde8c830fab56471b3773394cf03d63ae1577bf368d1384d81512280"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-screen.jpg",
+        "status": 200,
+        "bytes": 70558,
+        "sha256": "421c7c539b0a93aac0eb7c805deb8289d2329d54561326fb6b0a8018be380dfe"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-verification.json",
+        "status": 200,
+        "bytes": 6583,
+        "sha256": "d2503cf40a7924f529c2436a03c41fd32223b5326c63fc2ac76d76053411b449"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "research-data.js",
+        "status": 200,
+        "bytes": 26288,
+        "sha256": "f68f0b3a013eb5dbc63de34a709cedee6952516ac5d001589cfd6b46da5a08b3"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "research.css",
+        "status": 200,
+        "bytes": 10706,
+        "sha256": "9f2cc3ed253e390a1956b6507417511f21a6d50ce0f4b22b1be73c549f415e61"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "research.html",
+        "status": 200,
+        "bytes": 2638,
+        "sha256": "1a51025869124a1fc9ca7a1e1834e604f12ca1252177d8d5cad99ba793788095"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "research.js",
+        "status": 200,
+        "bytes": 22050,
+        "sha256": "866ab4b4063efe7e8ab2997d0332eb9eda1e2b887ffc24cb6a60d1589b91f748"
+      }
+    ],
+    "ranges": [
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/ai-draft.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/10670095"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "assets/actual-production/edited-final.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/5999262"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/chinese-voice.mp3",
+        "status": 206,
+        "contentRange": "bytes 0-1023/156660"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-draft.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/10670095"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/google-final.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/5999262"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/original-music.wav",
+        "status": 206,
+        "contentRange": "bytes 0-1023/1536044"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-draft.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/3264344"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-editor.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/4010299"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-final.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/3379430"
+      },
+      {
+        "project": "007-google-vids",
+        "path": "media/studio-music.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/4405763"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/chinese-voice.mp3",
+        "status": 206,
+        "contentRange": "bytes 0-1023/156660"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-draft.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/10670095"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/google-final.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/5999262"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/original-music.wav",
+        "status": 206,
+        "contentRange": "bytes 0-1023/1536044"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-draft.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/3264344"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-editor.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/4010299"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-final.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/3379430"
+      },
+      {
+        "project": "013-model-video-studio",
+        "path": "media/studio-music.mp4",
+        "status": 206,
+        "contentRange": "bytes 0-1023/4405763"
+      }
+    ],
+    "workflowConclusion": "success",
+    "workflowUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38237779053",
+    "urls": {
+      "google": "https://yydshly.github.io/1010_codex_project/007-google-vids/research.html",
+      "studio": "https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html",
+      "originalProduction": "https://yydshly.github.io/1010_codex_project/007-google-vids/actual.html"
+    },
+    "firstDeployment": {
+      "commit": "3aa353d70ddd3a72ddd0b0b4d09d5f93f98ab83f",
+      "workflowRun": 38236351667,
+      "conclusion": "success"
+    },
+    "browser": {
+      "summarySections": 9,
+      "summaryParagraphs": 27,
+      "googleFinal": {
+        "duration": 69.032925,
+        "chapter": 37.12,
+        "readyState": 4
+      },
+      "studioMusic": {
+        "duration": 67.354362,
+        "chapter": 33.333333,
+        "readyState": 4,
+        "playing": true
+      },
+      "mixComparison": {
+        "beforeAndAfterTime": 38.184706,
+        "duration": 67.354362,
+        "paused": true
+      },
+      "sourceDocumentRead": true,
+      "downloadedPosterSha256": "cc0515ea5cb34db6e1109f99ae11cd24760f6d3d9e2d9654c64d3c0b17527330",
+      "errorsAfterFinalReload": [],
+      "finalReloadAt": "2026-10-12T10:42:51.361Z",
+      "screenshots": [
+        "assets/publication/online-overview.jpg",
+        "assets/publication/online-music.jpg",
+        "assets/publication/online-vids.jpg"
+      ]
     }
   },
-  "online": null
+  "fixedDuringVerification": [
+    "原始证据与保留快照按原始字节入库，避免换行转换改变哈希。",
+    "对资料目录排序，确保不同系统构建结果一致。",
+    "播放 Promise 完成前切换栏目时，确认播放器仍属于当前页面再更新提示；已验证成功、失败与正常播放三种分支。"
+  ],
+  "boundaries": [
+    "公开部署为研究、媒体与资料阅读；模型制作、项目编辑保存和FFmpeg渲染仍在本机。",
+    "没有将模型密钥、Codex登录信息或.local运行目录提交或部署。",
+    "既有总图保持原样；图中缩图是AI重绘，真实截图与导出作品单独保留。",
+    "本记录及线上实拍属于验收资料；报告提交不更改已部署的代码，实际部署版本由online.sourceCommit固定。"
+  ]
 }
