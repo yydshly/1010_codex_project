@@ -29,14 +29,25 @@
   "online": {
     "verified": true,
     "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html",
-    "deploymentRun": "https://github.com/yydshly/1010_codex_project/actions/runs/38211615567",
-    "validatedRevision": "fad00c36bf5f1dd7101531c5cb698786c8d89134",
+    "deploymentRun": "https://github.com/yydshly/1010_codex_project/actions/runs/38212439002",
+    "validatedRevision": "3eaea2a8baa3c4bd2ac15934bdc88bfa3360edea",
     "summarySections": 6,
     "paragraphs": 18,
     "guideLoaded": true,
     "localhostAnchorCount": 0,
     "liveChoices": 4,
-    "scope": "本机模型服务和 012 独立应用不随静态发布上线"
+    "scope": "本机模型服务和 012 独立应用不随静态发布上线",
+    "referenceReader": true,
+    "kitDownloadSha256": "e72613d271757f8b17c641fd61cdec3f8085bd9a79304ba8990d88a489008643",
+    "builder": "默认 13 物件，添加树木到 14，撤销后回到 13；未覆盖浏览器存档。",
+    "weather": "WebGPU 实际渲染完成，切换雨天后显示 1800 雨滴、涟漪与湿地倒影开启，三渲二风格保留。",
+    "game": "公开静态页面显示本机服务说明，开始按钮禁用；未调用模型 API。",
+    "screenshots": [
+      "assets/publication-home.jpg",
+      "assets/publication-summary.jpg",
+      "assets/publication-weather.jpg"
+    ],
+    "screenshotCondition": "真实 HTTPS 页面、默认桌面浏览器视口 1280 × 720；摘要截取对应页面区域。图片像素可能与视口不同。"
   },
   "crossPlatformFix": "引用文本统一 LF，快照与原文件 SHA-256 分别保存；首次失败后已修复并部署成功。"
 }

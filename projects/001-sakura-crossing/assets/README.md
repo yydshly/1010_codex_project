@@ -6,6 +6,14 @@
 
 网页已有六组摘要、18 个独立段落，线上与本机服务明确区分。实际发布记录见 [publication-verification.json](../notes/publication-verification.json)。
 
+| 文件 | 条件与用途 |
+| --- | --- |
+| [publication-home.jpg](publication-home.jpg) | 实际 HTTPS 首页，默认桌面视口 1280 × 720；使用我们生成的总览图作引导 |
+| [publication-summary.jpg](publication-summary.jpg) | 相同线上页面中六组摘要的区域截图，保留标题、独立段落与发布说明 |
+| [publication-weather.jpg](publication-weather.jpg) | 线上 WebGPU 晴雨街实际渲染，雨天、1800 雨滴、涟漪与湿地倒影开启 |
+
+这些截图来自 GitHub Pages 实际页面，未用生成图代替运行证据。截图像素尺寸可能与视口不同；本轮未验证手机真机或长时性能。
+
 ## 统一研究入口（2026-10-11）
 
 以下为本地浏览器真实截图。统一页将樱花小街、雨夜城市、模块提取与后续扩展汇总在同一入口，效果图来自实际渲染；未使用生成图替代运行证据。

@@ -146,7 +146,7 @@ src/
     └── outline.js          # 反向外壳描边
 ```
 
-研究渲染时先修改 `rendering/`，改造视觉内容时先修改 `scene/street.js`，业务路径在 `business.js`。`content.js` 直接打包项目的真实笔记与旧实验截图，不请求外部内容服务。Three.js 固定为 r180，因为 toon shader 补丁依赖该版本的 shader chunk；升级依赖需要重新检查画面和控制台。
+研究渲染时先修改 `rendering/`，改造视觉内容时先修改 `scene/street.js`，业务路径在 `business.js`。`content.js` 直接打包项目的真实笔记与旧实验截图，不请求外部内容服务。早期 WebGL 实验使用 Three.js r180；当前依赖固定为 0.185.1，与 Rain Kit 接入版本一致。toon shader 补丁依赖 shader chunk，升级依赖仍需重新检查画面和控制台。
 
 收藏使用键 `sakura-research-lane:collection:v1`，只保存三个已知章节 ID，读取时过滤未知 ID。无法访问浏览器存储时显示临时收藏提示。页面离开街景区域后暂停其绘制；减少动态效果、后台暂停与存储不可用分支仍待独立测试。
 
@@ -163,7 +163,7 @@ npm.cmd run preview:path
 
 同一子目录下的 `lab.html` 是技术实验页，`directions.html` 是理解与扩展页；页面资源、相互入口、下载与许可证链接均使用相对地址。
 
-目前尚未部署；根登记表 `demo` 保持 `null`。后续按 [多 Web 部署约定](../../../docs/web-deployment.md) 汇总 `dist/` 后，再填写真实可访问的 HTTPS 地址。
+2026-10-12 已按 [Web 部署约定](../../../docs/web-deployment.md) 发布到 GitHub Pages，根登记表 `demo` 已填写实际验证的 [HTTPS 研究入口](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html)。静态场景与资料在线可用，模型 API 和 012 独立应用仍需本机服务。
 
 ## 产品方向内容的复用
 

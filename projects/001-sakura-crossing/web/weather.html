@@ -38,6 +38,6 @@
       <article><span>03 / WALK</span><h3>场景有了人的尺度。</h3><p>共享漫游模块管理拖动视角、加减速、蹲下、地面探测和墙体碰撞。樱花街只需提供自己的地面与静态碰撞代理。</p><small>复用 createWalkControls + buildModelBvh · 无需锁定鼠标</small></article>
     </div><details><summary>接入方式与复用边界 <span>＋</span></summary><div class="integration-note"><p>本项目安装了与 012 相同的 <code>@research/rain-kit 0.1.0</code> 本地包。天气、湿地与漫游直接调用包 API；街景来自原有 <code>buildStreet()</code>，几何、招牌、樱花和店门动画共用。</p><p>新增节点材质适配器，把原色阶、冷紫暗部、外壳描边与深度二阶差分描线接到 GPU 管线。原研究街、搭建器与 AI 小镇继续使用各自的 WebGL 页面。晴天停止雨滴和涟漪，默认关闭倒影；可以单独开启湿地，模拟雨后晴天。</p><p><a id="notes-link" href="#">阅读完整中文接入笔记 ↗</a> · <a href="./index.html">返回研究街 ↗</a></p></div></details></section>
   </main>
-  <footer><span>樱花小街 · 晴雨漫游</span><p>Sakura Crossing / MIT · Rain Kit 来源 threejs-conference / MIT<br />本地程序化场景与接入实现 · 尚未部署</p><a href="./directions.html#reuse">查看其他复用方向 ↗</a></footer>
+  <footer><span>樱花小街 · 晴雨漫游</span><p>Sakura Crossing / MIT · Rain Kit 来源 threejs-conference / MIT<br />在线静态体验 · 设备需支持 WebGPU · 本地新增实现按来源说明复用</p><a href="./directions.html#reuse">查看其他复用方向 ↗</a></footer>
   <script type="module" src="/src/weather/main.js"></script>
 </body></html>
