@@ -1,5 +1,15 @@
 # Web 部署与发布范围
 
+## 2026-10-12 · 扩展到 002（发布验证进行中）
+
+在既有 GitHub Pages 站点新增 `002-18-floors-of-mayhem/research.html`，保留 001 路径。站点首页改为两个研究入口。002 原效果页位于同目录 `index.html`；图像、中文资料与必要跨项目证据快照由其独立构建复制。
+
+002 构建无额外依赖：在 `projects/002-18-floors-of-mayhem/web` 执行 `npm run check`、`npm test`、`npm run references:check`、`npm run guide:check`、`npm run build`、`npm run publication:check`；之后根 `npm run site:assemble` 组装 001 与 002。Actions 增加 002 路径触发及校验步骤。
+
+仅部署静态研究、效果与保存的真实记录；3182/3183 游戏房间、模型调用、官方 Codex 登录和 MiniMax 外部配置不部署。002 引用 003/001 的必要文本、JSON 与截图为固定快照，不要求公开 003 应用或其他未提交研究。
+
+以下为首次 001 发布记录，保持其阶段和证据。后续真实部署状态以各项目 `notes/publication-verification.json` 为准。
+
 2026-10-12 为 001 樱花小街配置 GitHub Pages。GitHub Actions 已成功部署，线上页面和引导图已实际打开；验证记录见 001 的 notes/publication-verification.json。
 
 ## 一个站点，稳定项目路径

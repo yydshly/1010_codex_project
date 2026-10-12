@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI 对战观察室 · 18 Floors of Mayhem</title><link rel="stylesheet" href="/battle.css"></head>
+<body>
+<header><a href="http://127.0.0.1:5182/">← 深渊观察室</a><span>002 / LIVE AGENT LAB</span><span id="connection">检查模型接口…</span></header>
+<main>
+<div class="intro"><div><p class="eyebrow">从一次选择，到一个真实落点</p><h1>看 AI 如何下这一步。</h1><p>MiniMax / OpenAI 选择平台与道具，本地控制器执行按键。普通电脑用固定评分规则直接行动。</p></div><div class="badge" id="mode-label">真实模型 · 同房对照</div></div>
+<section class="toolbar" aria-label="对局设置">
+<label>参赛模型<select id="provider"><option value="minimax">MiniMax vs 普通电脑</option><option value="codex">OpenAI（当前 Codex 登录）vs 普通电脑</option><option value="both">MiniMax + OpenAI + 普通电脑</option></select></label>
+<label>模型策略<select id="persona"><option value="安全生存，血量低先回血，谨慎选落点">稳健生存</option><option value="优先生存；尽量收集毒果，选择时机攻击对手">道具进攻</option></select></label>
+<label>观察方式<select id="observation-mode"><option value="step">逐步观察 · 等回复时暂停整个房间</option><option value="live">实时对照 · 不暂停</option></select></label>
+<button id="start" class="primary" disabled>开始真实模型观察</button><button id="stop" disabled>停止本局</button><button id="replay" disabled>回放上次实测</button><button id="realtime-report">看实时对照实测</button><button id="export" disabled>导出战报</button>
+<p class="limit">逐步模式每模型最多 4 次决策、180 秒内结束；实时模式最多 12 次、60 秒内结束。停止 / 淘汰即停止请求。会使用 MiniMax API 额度和当前 Codex 额度。</p>
+</section>
+<div class="lab-grid">
+<section class="arena-card"><div class="card-head"><h2>真实游戏画面</h2><span id="match-status">准备就绪后点击开始</span></div><iframe id="game" title="原游戏实时观战画面" src="/game.html?lab=1"></iframe><div class="playbar"><button id="playback" disabled>暂停回放</button><input id="seek" type="range" min="0" max="0" value="0" disabled aria-label="回放进度"><span id="clock">0.0 s</span></div><p class="arena-note">原版引擎与画面 · 服务端判定物理与伤害 · 30 Hz 状态驱动两类选手输入</p><div id="scores" class="scores"></div></section>
+<section class="decision-card"><div class="card-head"><h2>观察 → 决策 → 执行</h2><select id="focus" aria-label="观察选手"></select></div><p id="source" class="source">模型接口就绪后可开始</p><div class="stage"><span class="number">01</span><div><h3>它看到了什么</h3><p id="observation">血量、背包、最多 8 个可达平台与可见对手。</p><div id="platforms" class="platforms"></div></div></div><div class="stage"><span class="number">02</span><div><h3>它选了什么，为什么</h3><p id="decision">等待真实模型回复…</p><p id="why" class="muted">这里显示模型返回的简短行动理由。</p><p id="alternative" class="muted"></p></div></div><div class="stage"><span class="number">03</span><div><h3>游戏实际按了什么</h3><div id="keys" class="keys">—</div><p id="landing">落点和道具结果由游戏状态记录。</p></div></div><details><summary>查看本次模型输入 / 行动 JSON</summary><pre id="raw">尚无模型响应</pre></details><p class="honesty">逐步模式会暂停所有选手，便于看清因果；不代表实时成绩。模型选目标，本地执行器会修正移动。过期目标会拒绝；模型等待或失败时标记“本地接管”。Boss 阶段使用原版规则控制器。</p></section>
+</div>
+<section class="evidence"><div class="card-head"><h2>本局证据流</h2><span>点击模型决策，查看当时观察与行动</span></div><div id="feed" class="feed"><p class="muted">启动后展示真实请求、模型回复、按键、落地与道具事件。</p></div></section>
+<section class="comparison"><h2>和普通电脑的区别在哪里？</h2><div><article><h3>普通电脑 / CPU</h3><p>宽度、距离、机关与道具有固定权重，立刻选落点。近身攻击、炸弹、回血按固定条件触发；没有模型请求。</p></article><article><h3>模型 / Agent</h3><p>把有限的游戏状态交给模型，返回落点、道具动作、阶段计划和简短理由。改变策略提示可以改变取舍；网络等待期间仍靠本地控制器行动。</p></article><article><h3>这次对照能说明什么</h3><p>能验证模型确实接入、怎样影响行动，以及延迟与过期目标。单局随机地图和不同战斗能力，不能证明哪种模型更强。</p></article></div></section>
+<footer>上游 <a href="https://github.com/andyhuo520/18-floors-of-mayhem">18-floors-of-mayhem</a> · 固定版本 99d7215 · 源码 MIT · 本机实验，未部署 · <a href="http://127.0.0.1:3182/credits.html">上游素材署名</a></footer>
+</main><script type="module" src="/battle.js"></script></body></html>

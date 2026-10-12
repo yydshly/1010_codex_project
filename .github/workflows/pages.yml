@@ -1,10 +1,11 @@
-name: Publish Sakura research
+name: Publish research pages
 
 on:
   push:
     branches: [main]
     paths:
       - 'projects/001-sakura-crossing/**'
+      - 'projects/002-18-floors-of-mayhem/**'
       - 'projects.json'
       - 'scripts/**'
       - '.github/workflows/pages.yml'
@@ -35,6 +36,20 @@ jobs:
         working-directory: projects/001-sakura-crossing/web
       - run: npm run build
         working-directory: projects/001-sakura-crossing/web
+      - name: Fetch pinned game for Room integration test
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: andyhuo520/18-floors-of-mayhem
+          ref: 99d7215966762a13b17b54d36f9ae3e3b96f98df
+          path: projects/002-18-floors-of-mayhem/vendor/upstream
+          sparse-checkout: |
+            shared
+            public
+          persist-credentials: false
+      - run: npm ci
+        working-directory: projects/002-18-floors-of-mayhem/vendor/upstream
+      - run: npm run check && npm test && npm run references:check && npm run guide:check && npm run build && npm run publication:check
+        working-directory: projects/002-18-floors-of-mayhem/web
       - run: npm run site:assemble
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4

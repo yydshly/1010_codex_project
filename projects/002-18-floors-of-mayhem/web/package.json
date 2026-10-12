@@ -1,0 +1,21 @@
+{
+  "name": "mayhem-research-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/app.js && node --check src/content.js && node --check src/battle.js && node --check src/battle-agents.js && node --check scripts/battle-server.mjs && node --check scripts/model-bridge.mjs && node --check scripts/lab-rooms.mjs && node --check scripts/start-battle.mjs && node --check src/research.js && node --check src/research-content.js",
+    "preview": "node scripts/serve.mjs --dist --port 5183",
+    "preview:path": "node scripts/serve.mjs --dist --port 5184 --base /1010_codex_project/002-18-floors-of-mayhem/",
+    "battle": "node scripts/start-battle.mjs",
+    "test": "node --test scripts/battle.test.mjs",
+    "references:check": "node scripts/snapshot-references.mjs --check",
+    "guide:check": "node scripts/render-guide.mjs --check",
+    "publication:check": "node scripts/check-publication.mjs"
+  }
+}

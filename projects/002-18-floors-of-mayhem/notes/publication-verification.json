@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-12",
+  "status": "pending",
+  "scope": "项目 002 静态研究、效果与必要跨项目证据；真实模型和房间仍在本机。",
+  "local": {
+    "rootCheck": true,
+    "childCheck": true,
+    "battleTests": 6,
+    "references": 9,
+    "summarySections": 6,
+    "paragraphs": 18,
+    "modules": 8,
+    "cases": 3,
+    "roles": 6,
+    "guideScreenshots": 6,
+    "guideWidth": 3840,
+    "guideHeight": 14460,
+    "fileReferences": 49,
+    "desktopOverflow": false,
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobileOverflow": false,
+    "interactions": [
+      "五步环节",
+      "案例筛选",
+      "资料搜索",
+      "原文阅读",
+      "总图放大"
+    ],
+    "consoleErrors": 0
+  },
+  "online": {
+    "verified": false
+  }
+}

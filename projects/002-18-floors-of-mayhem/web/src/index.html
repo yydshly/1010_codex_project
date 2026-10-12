@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11171c">
+  <meta name="description" content="18 Floors of Mayhem 中文研究展示：像素游戏效果、多人玩法、模型 Agent 原理和可扩展价值。">
+  <title>深渊观察室 · 18 Floors of Mayhem</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="深渊观察室首页"><span class="brand-mark" aria-hidden="true">18<span>↓</span></span><span>深渊观察室<small>MAYHEM / RESEARCH 002</small></span></a>
+    <nav aria-label="主要导航"><a href="./research.html">完整研究手册</a><a href="#effects">游戏效果</a><a href="#capabilities">玩法能力</a><a href="#agents">AI 如何参与</a><a href="#value">扩展价值</a></nav>
+    <a class="header-link" href="https://github.com/andyhuo520/18-floors-of-mayhem" target="_blank" rel="noopener noreferrer">上游仓库 <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <p class="eyebrow"><span class="status-dot"></span> 18 FLOORS OF MAYHEM</p>
+        <h1 id="hero-title">下得更深，<br><span>想得更远。</span></h1>
+        <p class="hero-lead">一场像素冒险，<br>一套可以继续生长的 AI 游戏思路。</p>
+        <p class="hero-copy">从寻找落点到迎战妖王，从朋友搭子到模型选手。先看效果，再看它为什么值得复用。</p>
+        <div class="hero-actions"><button class="button button-primary" id="show-motion">看游玩片段 <span aria-hidden="true">▶</span></button><button class="button button-outline" id="local-play" hidden>进入本机试玩 <span aria-hidden="true">↗</span></button><a class="button button-outline" id="battle-link" hidden>看真实 AI 对战 ↗</a></div>
+        <a class="text-link" href="https://combos.game/play?post_id=09d6a46e602dfeffd3f77178a6091f8c" target="_blank" rel="noopener noreferrer">作者公开试玩 <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span>CANVAS 2D</span><span>MULTIPLAYER</span><span>MODEL AGENTS</span></div>
+      </div>
+      <div class="showcase" id="effects">
+        <div class="showcase-toolbar"><span><i aria-hidden="true"></i> <span id="gallery-tag">01 / BOSS BATTLE</span></span><div><button id="motion-toggle" hidden>停止动态</button><button id="expand-image" aria-label="放大当前游戏画面">放大 ↗</button></div></div>
+        <figure class="showcase-figure"><img id="gallery-image" src="./media/upstream-boss.png" alt="孙悟空平台战：角色、横版平台与 Boss 生命和架势条" fetchpriority="high"><figcaption><span id="gallery-title">下落之后，横版开打。</span><small id="gallery-source">上游作者提供的孙悟空平台战截图</small></figcaption></figure>
+        <div class="gallery-selector" id="gallery-selector" role="group" aria-label="选择游戏效果"></div>
+        <p class="gallery-description" id="gallery-description">看起手、躲攻击、打破架势。探索会切换为封闭平台战，战利品带进下一境。</p>
+      </div>
+    </section>
+
+    <div class="facts section-shell" aria-label="当前项目能力概览">
+      <div><strong>09<span>章</span></strong><p>九个章末妖王</p></div><div><strong>12<span>人</span></strong><p>朋友房间玩家上限</p></div><div><strong>06<span>席</span></strong><p>本地模型配置</p></div><div><strong>196<span>项</span></strong><p>研究时上游测试通过</p></div>
+    </div>
+
+    <section class="capabilities section-shell" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / THE GAME LOOP</p><h2 id="capabilities-title">一局游戏，<br>不止一种参与方式。</h2></div><p>同一套规则，连接冒险、竞争、协作与模型决策。<br>点击玩法，看看各自的体验循环。</p></div>
+      <div class="mode-layout">
+        <div class="mode-list" id="mode-list" role="group" aria-label="选择玩法"></div>
+        <div class="mode-detail" id="mode-detail" aria-live="polite"></div>
+      </div>
+      <div class="capability-bottom"><span>让动作有结果，让结果有反馈。</span><p>角色选择 / 地图与机关 / 技能与补给 / 事件与结算 / 本机记录</p></div>
+    </section>
+
+    <section class="agent-section" id="agents" aria-labelledby="agents-title">
+      <div class="section-shell">
+        <div class="section-heading"><div><p class="eyebrow">02 / THINK · ACT · LEARN</p><h2 id="agents-title">AI 的判断，<br>真的进入游戏。</h2></div><p>普通电脑用规则算法。模型选手通过外部 API 选择策略，<br>由本地控制器完成连续动作。</p></div>
+        <div class="agent-steps" id="agent-steps" role="group" aria-label="选择 AI 决策环节"></div>
+        <div class="agent-explainer">
+          <div class="agent-copy"><p class="eyebrow" id="agent-role"></p><h3 id="agent-title"></h3><p id="agent-body"></p><button class="text-link" id="next-step">下一步 <span aria-hidden="true">→</span></button></div>
+          <div class="observation"><div class="observation-header"><span id="agent-example-label"></span><span class="demo-label">流程示意 · 未调用模型</span></div><pre id="agent-example" aria-live="polite"></pre><div class="signal-track" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div></div>
+        </div>
+        <div class="agent-boundaries"><p><span>01</span> 高级模型对战仅本地版提供</p><p><span>02</span> Boss 阶段主要由规则控制器执行</p><p><span>03</span> 复盘是提示词记忆，收益仍待对照验证</p></div>
+      </div>
+    </section>
+
+    <section class="value-section" id="value" aria-labelledby="value-title">
+      <div class="section-shell">
+        <div class="section-heading"><div><p class="eyebrow">03 / WHAT WE CAN BUILD NEXT</p><h2 id="value-title">把一个游戏，<br>变成更多可能。</h2></div><p>最值得带走的是任务、事件与决策循环。<br>下面是可以继续实现的方向。</p></div>
+        <div class="value-list">
+          <article class="value-row"><span class="value-number">01</span><div><span class="direction-tag">优先尝试 / 与樱花小街结合</span><h3>让街景拥有可以完成的任务。</h3><p>探索三个地点、收集资料、获得称号，把“看场景”变成“参与场景”。</p><details><summary>查看最小方案 <span aria-hidden="true">＋</span></summary><p>复用任务状态、事件记录和奖励机制；沿用小镇的三渲二画面。先完成真实操作触发进度、重复操作不重复奖励、刷新后恢复这三个条件。</p></details></div><span class="value-icon" aria-hidden="true">↳</span></article>
+          <article class="value-row"><span class="value-number">02</span><div><span class="direction-tag">继续扩展 / 多人体验</span><h3>让朋友一起进入同一个世界。</h3><p>共享收集进度、分工探索或互相帮助，用房间连接一段共同经历。</p><details><summary>查看最小方案 <span aria-hidden="true">＋</span></summary><p>先同步任务事件，再增加角色移动。借鉴房间、权限和重连机制；小镇的坐标与交互需要另行实现。验证两台真实设备的状态一致。</p></details></div><span class="value-icon" aria-hidden="true">↔</span></article>
+          <article class="value-row"><span class="value-number">03</span><div><span class="direction-tag">研究方向 / Agent 实验</span><h3>让 NPC 不只是说话，也能行动。</h3><p>模型选择地点与任务，本地执行器完成移动和交互，用结果评价策略。</p><details><summary>查看最小方案 <span aria-hidden="true">＋</span></summary><p>把平台观察替换为地点与任务资源。相同初始条件下，对照规则、模型无记忆、模型带记忆；记录完成率、耗时与调用量。</p></details></div><span class="value-icon" aria-hidden="true">↗</span></article>
+        </div>
+        <p class="value-note">2026-10-12 更新：樱街守灯夜已实现任务、伙伴和行动 NPC；机甲动态指挥已实测。多人小镇仍为方案。<a href="./research.html#cases">查看独立扩展与完整证据 ↗</a></p>
+      </div>
+    </section>
+
+    <section class="resources section-shell" aria-labelledby="resources-title">
+      <div><p class="eyebrow">KEEP EXPLORING</p><h2 id="resources-title">先玩一局，再拆开看看。</h2><p>效果展示来自真实运行截图与上游素材。完整研究保留来源、版本和验证边界。</p></div>
+      <div class="resource-actions"><a class="button button-primary" href="./research.md" download="18-floors-research.md">下载中文研究笔记 <span aria-hidden="true">↓</span></a><a class="button button-outline" href="./reuse-roadmap.md" download="mayhem-reuse-roadmap.md">下载扩展路线 <span aria-hidden="true">↓</span></a></div>
+      <details class="evidence"><summary>来源与验证记录 <span aria-hidden="true">＋</span></summary><div class="evidence-grid"><p><strong>已验证</strong>本地大厅、单人短局、结算、重开与 AI 配置；MiniMax 与 OpenAI 真实决策、执行及回放；研究时 196 项上游测试通过。</p><p><strong>待验证</strong>模型胜率与复盘收益、完整真人通关、真实触屏设备与公网性能。</p><p><strong>固定版本</strong><a href="https://github.com/andyhuo520/18-floors-of-mayhem/tree/99d7215966762a13b17b54d36f9ae3e3b96f98df" target="_blank" rel="noopener noreferrer">99d7215 ↗</a> · 研究日期 2026-10-10</p><p><strong>素材来源</strong>图片来源标注在画面下方。源码 MIT，素材另按来源说明。<a href="./THIRD_PARTY.md" target="_blank" rel="noopener noreferrer">查看来源记录 ↗</a></p></div></details>
+    </section>
+  </main>
+  <footer class="site-footer section-shell"><span>深渊观察室 <small>PROJECT 002</small></span><p>18 Floors of Mayhem · 上游作者 Andy Hu 与贡献者</p><a href="#top">回到顶部 ↑</a></footer>
+
+  <dialog id="image-dialog" class="image-dialog" aria-labelledby="image-dialog-title"><div class="dialog-header"><h2 id="image-dialog-title">游戏画面</h2><button class="dialog-close" data-close="image-dialog" autofocus aria-label="关闭大图">×</button></div><img id="dialog-image" alt=""><p id="dialog-image-source"></p></dialog>
+  <dialog id="play-dialog" class="play-dialog" aria-labelledby="play-dialog-title"><div class="dialog-header"><h2 id="play-dialog-title">原游戏 · 本机试玩</h2><div><a id="game-new-tab" target="_blank" rel="noopener noreferrer">新窗口打开 ↗</a><button class="dialog-close" data-close="play-dialog" autofocus aria-label="关闭本机试玩">×</button></div></div><iframe id="game-frame" title="18 Floors of Mayhem 原游戏本机试玩" src="about:blank" allow="autoplay"></iframe><p>这里运行原游戏。模型对战需要在原游戏中配置自己的有效 API。</p></dialog>
+</body>
+</html>

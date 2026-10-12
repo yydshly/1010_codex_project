@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "date": "2026-10-12",
+  "purpose": "项目 002 研究所需的跨项目实拍和原始证据快照；不发布其他项目应用或模型后端。",
+  "files": [
+    {
+      "source": "001-sakura-crossing/notes/ai-town.md",
+      "target": "references/001-sakura-crossing/notes/ai-town.md",
+      "bytes": 7007,
+      "sha256": "c79f8f3c17140d2e0b372835c02a702b209b94b2eeceaa19c85ea90c6bdb0539",
+      "originalSha256": "c79f8f3c17140d2e0b372835c02a702b209b94b2eeceaa19c85ea90c6bdb0539"
+    },
+    {
+      "source": "001-sakura-crossing/notes/ai-town-verification.md",
+      "target": "references/001-sakura-crossing/notes/ai-town-verification.md",
+      "bytes": 2660,
+      "sha256": "52bbc4699d21071c9ce2c58e72e095cd5c610da1c6f9be942f2b321f63a85303",
+      "originalSha256": "52bbc4699d21071c9ce2c58e72e095cd5c610da1c6f9be942f2b321f63a85303"
+    },
+    {
+      "source": "001-sakura-crossing/notes/ai-town-openai-session.json",
+      "target": "references/001-sakura-crossing/notes/ai-town-openai-session.json",
+      "bytes": 30015,
+      "sha256": "6b9443129eba560941e51d3c57a071665e4ce5e067c57f0df413cd184ea9bbe3",
+      "originalSha256": "6b9443129eba560941e51d3c57a071665e4ce5e067c57f0df413cd184ea9bbe3"
+    },
+    {
+      "source": "001-sakura-crossing/notes/ai-town-minimax-boundary.json",
+      "target": "references/001-sakura-crossing/notes/ai-town-minimax-boundary.json",
+      "bytes": 27657,
+      "sha256": "d1200e3aff2a33eb5125ed7edb7cc037c140b28bb95ba3adb49fb96a8d9b0937",
+      "originalSha256": "d1200e3aff2a33eb5125ed7edb7cc037c140b28bb95ba3adb49fb96a8d9b0937"
+    },
+    {
+      "source": "003-fog-harbor/README.md",
+      "target": "references/003-fog-harbor/README.md",
+      "bytes": 6159,
+      "sha256": "15a7e9c1c3ce6677e6701d06f59a67f0ac56de11174e663163f7456c56dd8920",
+      "originalSha256": "c910a345bb43e6bceec7704fdd5fe8aa84d8d2fed54f834bc2e76d384352b0fb"
+    },
+    {
+      "source": "003-fog-harbor/notes/openai-dynamic-browser-2026-10-11.json",
+      "target": "references/003-fog-harbor/notes/openai-dynamic-browser-2026-10-11.json",
+      "bytes": 142823,
+      "sha256": "0cb08c503e909568213b32776db633979590c426c04e4e57d03f36813a561c0e",
+      "originalSha256": "0cb08c503e909568213b32776db633979590c426c04e4e57d03f36813a561c0e"
+    },
+    {
+      "source": "001-sakura-crossing/assets/ai-town-decisions.png",
+      "target": "assets/ai-town-decisions.png",
+      "bytes": 94725,
+      "sha256": "5928740f17828989982fc5bd40cd37cba91f839362b3f45db3bed064810b682f",
+      "originalSha256": "5928740f17828989982fc5bd40cd37cba91f839362b3f45db3bed064810b682f"
+    },
+    {
+      "source": "003-fog-harbor/assets/neon-openai-dynamic-log.png",
+      "target": "assets/neon-openai-dynamic-log.png",
+      "bytes": 46587,
+      "sha256": "3e9488d30d4c60b6eef9cf1efcf783de70339c21d50545996dc6db8842a28d49",
+      "originalSha256": "3e9488d30d4c60b6eef9cf1efcf783de70339c21d50545996dc6db8842a28d49"
+    },
+    {
+      "source": "003-fog-harbor/assets/neon-rift-combat.png",
+      "target": "assets/neon-rift-combat.png",
+      "bytes": 88998,
+      "sha256": "072470b6bb4fdd2e771af3dab0d557f619711cc3595294726c7e086319ee4b91",
+      "originalSha256": "072470b6bb4fdd2e771af3dab0d557f619711cc3595294726c7e086319ee4b91"
+    }
+  ]
+}

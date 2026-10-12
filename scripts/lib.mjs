@@ -72,6 +72,10 @@ export function validateCatalog(catalog, { checkFiles = true } = {}) {
         ensure(Array.isArray(section.body) && section.body.length > 0,
           `${label}.summarySections.body 必须是非空段落数组`);
         section.body.forEach(text => textField(text, `${label}.summarySections.body`));
+        if (section.labels !== undefined) {
+          ensure(Array.isArray(section.labels) && section.labels.length === section.body.length, `${label}.summarySections.labels 必须与段落数量一致`);
+          section.labels.forEach(text => textField(text, `${label}.summarySections.labels`));
+        }
       }
     }
     ensure(project.sourceKind === undefined || ['upstream', 'inspiration', 'product'].includes(project.sourceKind),
@@ -142,7 +146,10 @@ export function renderIndex(catalog) {
     for (const project of projects) {
       lines.push(`#### ${numberFor(project)} · ${markdown(project.name)}`, '', markdown(project.summary), '');
       for (const section of project.summarySections || []) {
-        lines.push(`##### ${markdown(section.title)}`, '', ...section.body.map(text => `- ${markdown(text)}`), '');
+        const paragraphs = section.labels
+          ? section.body.flatMap((text, i) => [`- **${markdown(section.labels[i])}：** ${markdown(text)}`, ''])
+          : section.body.map(text => `- ${markdown(text)}`);
+        lines.push(`##### ${markdown(section.title)}`, '', ...paragraphs, '');
       }
       if (project.tags.length) lines.push(`标签：${project.tags.map(markdown).join(' · ')}`, '');
       if (project.cover) {

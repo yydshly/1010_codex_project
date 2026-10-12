@@ -1,0 +1,5468 @@
+{
+  "title": "霓虹裂隙 · 实际指挥记录",
+  "recordedAt": "2026-10-11T02:02:53.219Z",
+  "provider": "codex",
+  "mode": "dynamic",
+  "maxCalls": 18,
+  "calls": 4,
+  "plans": [
+    {
+      "kind": "plan",
+      "wave": 1,
+      "formation": "pincer",
+      "focus": "left",
+      "pace": "aggressive",
+      "plan": "双翼向西侧合围，封住撤向中央掩体的路线。",
+      "why": "玩家位于西侧且尚未使用冲刺与脉冲，立即合围可迫使其提前消耗机动与控场手段。",
+      "taunt": "西侧已封死，准备迎接夹击！",
+      "source": "model",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "ms": 15330,
+      "usage": {
+        "in": 5311,
+        "out": 146
+      },
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": -5,
+          "z": 3,
+          "hp": 100,
+          "shield": 35
+        },
+        "style": {
+          "shots": 0,
+          "hits": 0,
+          "dashes": 0,
+          "pulses": 0
+        },
+        "previous": null
+      },
+      "raw": "{\"formation\":\"pincer\",\"focus\":\"left\",\"pace\":\"aggressive\",\"plan\":\"双翼向西侧合围，封住撤向中央掩体的路线。\",\"why\":\"玩家位于西侧且尚未使用冲刺与脉冲，立即合围可迫使其提前消耗机动与控场手段。\",\"taunt\":\"西侧已封死，准备迎接夹击！\"}",
+      "requestedAt": "2026-10-11T02:00:32.513Z",
+      "returnedAt": "2026-10-11T02:00:47.844Z",
+      "calls": 1,
+      "maxCalls": 18
+    }
+  ],
+  "adjustments": [
+    {
+      "kind": "adapt",
+      "wave": 1,
+      "revision": 1,
+      "formation": "siege",
+      "focus": "right",
+      "pace": "defensive",
+      "plan": "仅存侦察兵转向东侧，保持距离实施远程压制。",
+      "why": "最近3.03秒内玩家位于东侧终点(3.2,-2.7)，6射5中，并各使用1次冲刺与脉冲；当前仅余1名侦察兵，不再维持双翼包夹。",
+      "taunt": "包围散了，但锁定还在。",
+      "source": "model",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "ms": 14167,
+      "usage": {
+        "in": 5879,
+        "out": 204
+      },
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": 3.2,
+          "z": -2.7,
+          "hp": 100,
+          "shield": 35
+        },
+        "style": {
+          "shots": 6,
+          "hits": 5,
+          "dashes": 1,
+          "pulses": 1
+        },
+        "previous": {
+          "formation": "pincer",
+          "focus": "left",
+          "pace": "aggressive"
+        },
+        "revision": 1,
+        "recent": {
+          "duration": 3.03,
+          "samples": [
+            {
+              "time": 0.01,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 0,
+              "hits": 0,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 0.51,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 2,
+              "hits": 1,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 1.02,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 1.53,
+              "x": -3.1,
+              "z": 1.7,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 2.03,
+              "x": -0.5,
+              "z": -0.1,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 1,
+              "pulses": 0
+            },
+            {
+              "time": 2.53,
+              "x": 3,
+              "z": -2.6,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 1,
+              "pulses": 0
+            },
+            {
+              "time": 3.04,
+              "x": 3.2,
+              "z": -2.7,
+              "hp": 100,
+              "shield": 35,
+              "shots": 6,
+              "hits": 5,
+              "dashes": 1,
+              "pulses": 1
+            }
+          ],
+          "delta": {
+            "shots": 6,
+            "hits": 5,
+            "dashes": 1,
+            "pulses": 1
+          },
+          "distance": 10,
+          "dominantSide": "left"
+        },
+        "enemies": [
+          {
+            "id": 3,
+            "type": "scout",
+            "x": -2,
+            "z": 3.5,
+            "hp": 65
+          }
+        ]
+      },
+      "raw": "{\"formation\":\"siege\",\"focus\":\"right\",\"pace\":\"defensive\",\"plan\":\"仅存侦察兵转向东侧，保持距离实施远程压制。\",\"why\":\"最近3.03秒内玩家位于东侧终点(3.2,-2.7)，6射5中，并各使用1次冲刺与脉冲；当前仅余1名侦察兵，不再维持双翼包夹。\",\"taunt\":\"包围散了，但锁定还在。\"}",
+      "requestedAt": "2026-10-11T02:01:37.265Z",
+      "returnedAt": "2026-10-11T02:01:51.432Z",
+      "calls": 2,
+      "maxCalls": 18
+    },
+    {
+      "kind": "adapt",
+      "wave": 1,
+      "revision": 2,
+      "formation": "pincer",
+      "focus": "left",
+      "pace": "aggressive",
+      "plan": "双侦察机向西侧目标分路包夹，主动压缩其活动空间。",
+      "why": "玩家最近连续停在西侧 x=-5、z=-0.2，护盾仅19；窗口内冲刺增加2次、脉冲增加1次，现有两名侦察机可立即转向西侧夹击。",
+      "taunt": "西侧已锁定——你无处可退。",
+      "source": "model",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "ms": 11636,
+      "usage": {
+        "in": 6691,
+        "out": 204
+      },
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": -5,
+          "z": -0.2,
+          "hp": 100,
+          "shield": 19
+        },
+        "style": {
+          "shots": 81,
+          "hits": 38,
+          "dashes": 4,
+          "pulses": 2
+        },
+        "previous": {
+          "formation": "siege",
+          "focus": "right",
+          "pace": "defensive"
+        },
+        "revision": 2,
+        "recent": {
+          "duration": 11.58,
+          "samples": [
+            {
+              "time": 5.58,
+              "x": -3.2,
+              "z": -3.1,
+              "hp": 100,
+              "shield": 19,
+              "shots": 20,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 6.08,
+              "x": -1.9,
+              "z": -3.7,
+              "hp": 100,
+              "shield": 19,
+              "shots": 23,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 6.59,
+              "x": -1.3,
+              "z": -4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 26,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 7.09,
+              "x": -1.3,
+              "z": -4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 29,
+              "hits": 17,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 7.6,
+              "x": -1.2,
+              "z": -3.8,
+              "hp": 100,
+              "shield": 19,
+              "shots": 32,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 8.1,
+              "x": -1.2,
+              "z": -3.4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 35,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 8.61,
+              "x": -0.7,
+              "z": -2.9,
+              "hp": 100,
+              "shield": 19,
+              "shots": 38,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 9.11,
+              "x": 1.5,
+              "z": -2.1,
+              "hp": 100,
+              "shield": 19,
+              "shots": 42,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 9.61,
+              "x": 3.5,
+              "z": -0.6,
+              "hp": 100,
+              "shield": 31,
+              "shots": 45,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 10.12,
+              "x": 4.3,
+              "z": 0.2,
+              "hp": 100,
+              "shield": 31,
+              "shots": 48,
+              "hits": 18,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 10.63,
+              "x": 3.9,
+              "z": 0.4,
+              "hp": 100,
+              "shield": 31,
+              "shots": 51,
+              "hits": 18,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 11.13,
+              "x": 3,
+              "z": 2.1,
+              "hp": 100,
+              "shield": 31,
+              "shots": 54,
+              "hits": 19,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 11.63,
+              "x": 1.1,
+              "z": 3.7,
+              "hp": 100,
+              "shield": 31,
+              "shots": 57,
+              "hits": 22,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 12.13,
+              "x": -1.1,
+              "z": 3.9,
+              "hp": 100,
+              "shield": 27,
+              "shots": 60,
+              "hits": 24,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 12.63,
+              "x": -2.5,
+              "z": 3.4,
+              "hp": 100,
+              "shield": 27,
+              "shots": 63,
+              "hits": 26,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 13.13,
+              "x": -3.7,
+              "z": 2.7,
+              "hp": 100,
+              "shield": 27,
+              "shots": 66,
+              "hits": 27,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 13.63,
+              "x": -4.5,
+              "z": 1.7,
+              "hp": 100,
+              "shield": 19,
+              "shots": 69,
+              "hits": 30,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 14.13,
+              "x": -5,
+              "z": 0.4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 72,
+              "hits": 32,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 14.63,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 15.13,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 15.64,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 16.14,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 74,
+              "hits": 34,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 16.65,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 77,
+              "hits": 36,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 17.16,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 80,
+              "hits": 38,
+              "dashes": 4,
+              "pulses": 2
+            }
+          ],
+          "delta": {
+            "shots": 60,
+            "hits": 23,
+            "dashes": 2,
+            "pulses": 1
+          },
+          "distance": 22.6,
+          "dominantSide": "left"
+        },
+        "enemies": [
+          {
+            "id": 375,
+            "type": "scout",
+            "x": 6.1,
+            "z": 4.5,
+            "hp": 65
+          },
+          {
+            "id": 376,
+            "type": "scout",
+            "x": 6.4,
+            "z": -3.9,
+            "hp": 65
+          }
+        ]
+      },
+      "raw": "{\"formation\":\"pincer\",\"focus\":\"left\",\"pace\":\"aggressive\",\"plan\":\"双侦察机向西侧目标分路包夹，主动压缩其活动空间。\",\"why\":\"玩家最近连续停在西侧 x=-5、z=-0.2，护盾仅19；窗口内冲刺增加2次、脉冲增加1次，现有两名侦察机可立即转向西侧夹击。\",\"taunt\":\"西侧已锁定——你无处可退。\"}",
+      "requestedAt": "2026-10-11T02:01:51.479Z",
+      "returnedAt": "2026-10-11T02:02:03.115Z",
+      "calls": 3,
+      "maxCalls": 18
+    }
+  ],
+  "adaptErrors": [
+    {
+      "error": "战术调整已取消或超时，敌人继续执行已有命令。",
+      "code": "COMMAND_CANCELLED",
+      "kind": "adapt",
+      "wave": 1,
+      "revision": 3,
+      "ms": 17846,
+      "requestedAt": "2026-10-11T02:02:03.139Z",
+      "returnedAt": "2026-10-11T02:02:20.985Z",
+      "calls": 4,
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": 4.4,
+          "z": -1.7,
+          "hp": 63,
+          "shield": 0
+        },
+        "style": {
+          "shots": 132,
+          "hits": 72,
+          "dashes": 8,
+          "pulses": 2
+        },
+        "previous": {
+          "formation": "pincer",
+          "focus": "left",
+          "pace": "aggressive"
+        },
+        "revision": 3,
+        "recent": {
+          "duration": 11.59,
+          "samples": [
+            {
+              "time": 17.16,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 80,
+              "hits": 38,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 17.66,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 84,
+              "hits": 40,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 18.16,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 11,
+              "shots": 87,
+              "hits": 44,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 18.66,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 3,
+              "shots": 90,
+              "hits": 46,
+              "dashes": 5,
+              "pulses": 2
+            },
+            {
+              "time": 19.16,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 3,
+              "shots": 90,
+              "hits": 46,
+              "dashes": 5,
+              "pulses": 2
+            },
+            {
+              "time": 19.68,
+              "x": -3.8,
+              "z": -0.1,
+              "hp": 95,
+              "shield": 0,
+              "shots": 90,
+              "hits": 46,
+              "dashes": 5,
+              "pulses": 2
+            },
+            {
+              "time": 20.18,
+              "x": -1.4,
+              "z": 0.4,
+              "hp": 95,
+              "shield": 0,
+              "shots": 92,
+              "hits": 46,
+              "dashes": 5,
+              "pulses": 2
+            },
+            {
+              "time": 20.68,
+              "x": 1.9,
+              "z": 1.9,
+              "hp": 95,
+              "shield": 0,
+              "shots": 95,
+              "hits": 49,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 21.19,
+              "x": 2.2,
+              "z": 3.6,
+              "hp": 95,
+              "shield": 0,
+              "shots": 98,
+              "hits": 52,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 21.69,
+              "x": 0.6,
+              "z": 4,
+              "hp": 95,
+              "shield": 0,
+              "shots": 101,
+              "hits": 54,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 22.2,
+              "x": -0.9,
+              "z": 4,
+              "hp": 87,
+              "shield": 0,
+              "shots": 104,
+              "hits": 54,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 22.7,
+              "x": -2.3,
+              "z": 3.6,
+              "hp": 87,
+              "shield": 0,
+              "shots": 107,
+              "hits": 57,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 23.2,
+              "x": -3.6,
+              "z": 2.8,
+              "hp": 87,
+              "shield": 0,
+              "shots": 108,
+              "hits": 58,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 23.71,
+              "x": -4.5,
+              "z": 1.8,
+              "hp": 87,
+              "shield": 0,
+              "shots": 108,
+              "hits": 58,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 24.21,
+              "x": -4.9,
+              "z": 0.5,
+              "hp": 87,
+              "shield": 0,
+              "shots": 110,
+              "hits": 58,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 24.71,
+              "x": -5,
+              "z": -0.2,
+              "hp": 87,
+              "shield": 0,
+              "shots": 113,
+              "hits": 60,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 25.22,
+              "x": -4.8,
+              "z": -0.2,
+              "hp": 87,
+              "shield": 0,
+              "shots": 116,
+              "hits": 62,
+              "dashes": 6,
+              "pulses": 2
+            },
+            {
+              "time": 25.72,
+              "x": -4.8,
+              "z": -0.2,
+              "hp": 87,
+              "shield": 0,
+              "shots": 119,
+              "hits": 65,
+              "dashes": 7,
+              "pulses": 2
+            },
+            {
+              "time": 26.23,
+              "x": -4.8,
+              "z": -0.2,
+              "hp": 79,
+              "shield": 0,
+              "shots": 122,
+              "hits": 66,
+              "dashes": 7,
+              "pulses": 2
+            },
+            {
+              "time": 26.73,
+              "x": -4.8,
+              "z": -0.2,
+              "hp": 71,
+              "shield": 0,
+              "shots": 125,
+              "hits": 69,
+              "dashes": 7,
+              "pulses": 2
+            },
+            {
+              "time": 27.23,
+              "x": -4.8,
+              "z": -0.2,
+              "hp": 71,
+              "shield": 0,
+              "shots": 126,
+              "hits": 70,
+              "dashes": 7,
+              "pulses": 2
+            },
+            {
+              "time": 27.74,
+              "x": -3.2,
+              "z": -0.8,
+              "hp": 63,
+              "shield": 0,
+              "shots": 126,
+              "hits": 70,
+              "dashes": 8,
+              "pulses": 2
+            },
+            {
+              "time": 28.24,
+              "x": 1.3,
+              "z": -2.5,
+              "hp": 63,
+              "shield": 0,
+              "shots": 128,
+              "hits": 70,
+              "dashes": 8,
+              "pulses": 2
+            },
+            {
+              "time": 28.75,
+              "x": 3.8,
+              "z": -2.2,
+              "hp": 63,
+              "shield": 0,
+              "shots": 131,
+              "hits": 72,
+              "dashes": 8,
+              "pulses": 2
+            }
+          ],
+          "delta": {
+            "shots": 51,
+            "hits": 34,
+            "dashes": 4,
+            "pulses": 0
+          },
+          "distance": 27.8,
+          "dominantSide": "left"
+        },
+        "enemies": [
+          {
+            "id": 648,
+            "type": "scout",
+            "x": -7.5,
+            "z": 5.7,
+            "hp": 65
+          },
+          {
+            "id": 649,
+            "type": "scout",
+            "x": 7.8,
+            "z": 5.1,
+            "hp": 65
+          },
+          {
+            "id": 650,
+            "type": "scout",
+            "x": -7.5,
+            "z": -6,
+            "hp": 25
+          }
+        ]
+      }
+    }
+  ],
+  "game": {
+    "status": "waveclear",
+    "wave": 1,
+    "score": 3525,
+    "kills": 34,
+    "stats": {
+      "shots": 211,
+      "hits": 128,
+      "dashes": 12,
+      "pulses": 3
+    },
+    "player": {
+      "x": -2.6149613768907924,
+      "z": -2.9436770311607052,
+      "hp": 91,
+      "maxHp": 100,
+      "shield": 20,
+      "maxShield": 35,
+      "aim": 0.6804331274787324,
+      "shot": 0.10580000000001745,
+      "dash": 1.766600000000005,
+      "dashTime": 0,
+      "pulse": 0,
+      "invincible": 0
+    },
+    "dynamicEncounter": {
+      "elapsed": 46.5912000000006,
+      "duration": 45,
+      "maxEnemies": 3,
+      "spawnInterval": 4,
+      "nextSpawnAt": 48,
+      "reinforcements": 31,
+      "batches": 11
+    }
+  },
+  "clientPlans": [
+    {
+      "kind": "plan",
+      "wave": 1,
+      "formation": "pincer",
+      "focus": "left",
+      "pace": "aggressive",
+      "plan": "双翼向西侧合围，封住撤向中央掩体的路线。",
+      "why": "玩家位于西侧且尚未使用冲刺与脉冲，立即合围可迫使其提前消耗机动与控场手段。",
+      "taunt": "西侧已封死，准备迎接夹击！",
+      "source": "model",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "ms": 15330,
+      "usage": {
+        "in": 5311,
+        "out": 146
+      },
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": -5,
+          "z": 3,
+          "hp": 100,
+          "shield": 35
+        },
+        "style": {
+          "shots": 0,
+          "hits": 0,
+          "dashes": 0,
+          "pulses": 0
+        },
+        "previous": null
+      },
+      "raw": "{\"formation\":\"pincer\",\"focus\":\"left\",\"pace\":\"aggressive\",\"plan\":\"双翼向西侧合围，封住撤向中央掩体的路线。\",\"why\":\"玩家位于西侧且尚未使用冲刺与脉冲，立即合围可迫使其提前消耗机动与控场手段。\",\"taunt\":\"西侧已封死，准备迎接夹击！\"}",
+      "requestedAt": "2026-10-11T02:00:32.513Z",
+      "returnedAt": "2026-10-11T02:00:47.844Z",
+      "calls": 1,
+      "maxCalls": 18,
+      "application": {
+        "state": "deployed",
+        "appliedAt": "2026-10-11T02:01:34.201Z",
+        "combatTime": 0,
+        "observedAgeMs": 61688
+      }
+    },
+    {
+      "kind": "adapt",
+      "wave": 1,
+      "revision": 1,
+      "formation": "siege",
+      "focus": "right",
+      "pace": "defensive",
+      "plan": "仅存侦察兵转向东侧，保持距离实施远程压制。",
+      "why": "最近3.03秒内玩家位于东侧终点(3.2,-2.7)，6射5中，并各使用1次冲刺与脉冲；当前仅余1名侦察兵，不再维持双翼包夹。",
+      "taunt": "包围散了，但锁定还在。",
+      "source": "model",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "ms": 14167,
+      "usage": {
+        "in": 5879,
+        "out": 204
+      },
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": 3.2,
+          "z": -2.7,
+          "hp": 100,
+          "shield": 35
+        },
+        "style": {
+          "shots": 6,
+          "hits": 5,
+          "dashes": 1,
+          "pulses": 1
+        },
+        "previous": {
+          "formation": "pincer",
+          "focus": "left",
+          "pace": "aggressive"
+        },
+        "revision": 1,
+        "recent": {
+          "duration": 3.03,
+          "samples": [
+            {
+              "time": 0.01,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 0,
+              "hits": 0,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 0.51,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 2,
+              "hits": 1,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 1.02,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 1.53,
+              "x": -3.1,
+              "z": 1.7,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 2.03,
+              "x": -0.5,
+              "z": -0.1,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 1,
+              "pulses": 0
+            },
+            {
+              "time": 2.53,
+              "x": 3,
+              "z": -2.6,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 1,
+              "pulses": 0
+            },
+            {
+              "time": 3.04,
+              "x": 3.2,
+              "z": -2.7,
+              "hp": 100,
+              "shield": 35,
+              "shots": 6,
+              "hits": 5,
+              "dashes": 1,
+              "pulses": 1
+            }
+          ],
+          "delta": {
+            "shots": 6,
+            "hits": 5,
+            "dashes": 1,
+            "pulses": 1
+          },
+          "distance": 10,
+          "dominantSide": "left"
+        },
+        "enemies": [
+          {
+            "id": 3,
+            "type": "scout",
+            "x": -2,
+            "z": 3.5,
+            "hp": 65
+          }
+        ]
+      },
+      "raw": "{\"formation\":\"siege\",\"focus\":\"right\",\"pace\":\"defensive\",\"plan\":\"仅存侦察兵转向东侧，保持距离实施远程压制。\",\"why\":\"最近3.03秒内玩家位于东侧终点(3.2,-2.7)，6射5中，并各使用1次冲刺与脉冲；当前仅余1名侦察兵，不再维持双翼包夹。\",\"taunt\":\"包围散了，但锁定还在。\"}",
+      "requestedAt": "2026-10-11T02:01:37.265Z",
+      "returnedAt": "2026-10-11T02:01:51.432Z",
+      "calls": 2,
+      "maxCalls": 18,
+      "sessionId": "36d0121d-9539-477d-9ff2-3cf4efca6b02",
+      "application": {
+        "state": "applied",
+        "appliedAt": "2026-10-11T02:01:51.458Z",
+        "combatTime": 17.23839999999999,
+        "observedAgeMs": 14192,
+        "before": {
+          "formation": "pincer",
+          "focus": "left",
+          "pace": "aggressive"
+        },
+        "after": {
+          "formation": "siege",
+          "focus": "right",
+          "pace": "defensive"
+        },
+        "changed": [
+          "formation",
+          "focus",
+          "pace"
+        ],
+        "targetsBefore": [
+          {
+            "id": 375,
+            "x": -9,
+            "z": -3.16
+          },
+          {
+            "id": 376,
+            "x": -1.98,
+            "z": 2.84
+          }
+        ],
+        "targetsAfter": [
+          {
+            "id": 375,
+            "x": 4.01,
+            "z": 0.03
+          },
+          {
+            "id": 376,
+            "x": -7.28,
+            "z": 4.57
+          }
+        ]
+      }
+    },
+    {
+      "kind": "adapt",
+      "wave": 1,
+      "revision": 2,
+      "formation": "pincer",
+      "focus": "left",
+      "pace": "aggressive",
+      "plan": "双侦察机向西侧目标分路包夹，主动压缩其活动空间。",
+      "why": "玩家最近连续停在西侧 x=-5、z=-0.2，护盾仅19；窗口内冲刺增加2次、脉冲增加1次，现有两名侦察机可立即转向西侧夹击。",
+      "taunt": "西侧已锁定——你无处可退。",
+      "source": "model",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "ms": 11636,
+      "usage": {
+        "in": 6691,
+        "out": 204
+      },
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": -5,
+          "z": -0.2,
+          "hp": 100,
+          "shield": 19
+        },
+        "style": {
+          "shots": 81,
+          "hits": 38,
+          "dashes": 4,
+          "pulses": 2
+        },
+        "previous": {
+          "formation": "siege",
+          "focus": "right",
+          "pace": "defensive"
+        },
+        "revision": 2,
+        "recent": {
+          "duration": 11.58,
+          "samples": [
+            {
+              "time": 5.58,
+              "x": -3.2,
+              "z": -3.1,
+              "hp": 100,
+              "shield": 19,
+              "shots": 20,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 6.08,
+              "x": -1.9,
+              "z": -3.7,
+              "hp": 100,
+              "shield": 19,
+              "shots": 23,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 6.59,
+              "x": -1.3,
+              "z": -4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 26,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 7.09,
+              "x": -1.3,
+              "z": -4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 29,
+              "hits": 17,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 7.6,
+              "x": -1.2,
+              "z": -3.8,
+              "hp": 100,
+              "shield": 19,
+              "shots": 32,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 8.1,
+              "x": -1.2,
+              "z": -3.4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 35,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 8.61,
+              "x": -0.7,
+              "z": -2.9,
+              "hp": 100,
+              "shield": 19,
+              "shots": 38,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 9.11,
+              "x": 1.5,
+              "z": -2.1,
+              "hp": 100,
+              "shield": 19,
+              "shots": 42,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 9.61,
+              "x": 3.5,
+              "z": -0.6,
+              "hp": 100,
+              "shield": 31,
+              "shots": 45,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 10.12,
+              "x": 4.3,
+              "z": 0.2,
+              "hp": 100,
+              "shield": 31,
+              "shots": 48,
+              "hits": 18,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 10.63,
+              "x": 3.9,
+              "z": 0.4,
+              "hp": 100,
+              "shield": 31,
+              "shots": 51,
+              "hits": 18,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 11.13,
+              "x": 3,
+              "z": 2.1,
+              "hp": 100,
+              "shield": 31,
+              "shots": 54,
+              "hits": 19,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 11.63,
+              "x": 1.1,
+              "z": 3.7,
+              "hp": 100,
+              "shield": 31,
+              "shots": 57,
+              "hits": 22,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 12.13,
+              "x": -1.1,
+              "z": 3.9,
+              "hp": 100,
+              "shield": 27,
+              "shots": 60,
+              "hits": 24,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 12.63,
+              "x": -2.5,
+              "z": 3.4,
+              "hp": 100,
+              "shield": 27,
+              "shots": 63,
+              "hits": 26,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 13.13,
+              "x": -3.7,
+              "z": 2.7,
+              "hp": 100,
+              "shield": 27,
+              "shots": 66,
+              "hits": 27,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 13.63,
+              "x": -4.5,
+              "z": 1.7,
+              "hp": 100,
+              "shield": 19,
+              "shots": 69,
+              "hits": 30,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 14.13,
+              "x": -5,
+              "z": 0.4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 72,
+              "hits": 32,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 14.63,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 15.13,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 15.64,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 16.14,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 74,
+              "hits": 34,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 16.65,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 77,
+              "hits": 36,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 17.16,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 80,
+              "hits": 38,
+              "dashes": 4,
+              "pulses": 2
+            }
+          ],
+          "delta": {
+            "shots": 60,
+            "hits": 23,
+            "dashes": 2,
+            "pulses": 1
+          },
+          "distance": 22.6,
+          "dominantSide": "left"
+        },
+        "enemies": [
+          {
+            "id": 375,
+            "type": "scout",
+            "x": 6.1,
+            "z": 4.5,
+            "hp": 65
+          },
+          {
+            "id": 376,
+            "type": "scout",
+            "x": 6.4,
+            "z": -3.9,
+            "hp": 65
+          }
+        ]
+      },
+      "raw": "{\"formation\":\"pincer\",\"focus\":\"left\",\"pace\":\"aggressive\",\"plan\":\"双侦察机向西侧目标分路包夹，主动压缩其活动空间。\",\"why\":\"玩家最近连续停在西侧 x=-5、z=-0.2，护盾仅19；窗口内冲刺增加2次、脉冲增加1次，现有两名侦察机可立即转向西侧夹击。\",\"taunt\":\"西侧已锁定——你无处可退。\"}",
+      "requestedAt": "2026-10-11T02:01:51.479Z",
+      "returnedAt": "2026-10-11T02:02:03.115Z",
+      "calls": 3,
+      "maxCalls": 18,
+      "sessionId": "36d0121d-9539-477d-9ff2-3cf4efca6b02",
+      "application": {
+        "state": "applied",
+        "appliedAt": "2026-10-11T02:02:03.122Z",
+        "combatTime": 28.90089999999972,
+        "observedAgeMs": 11642,
+        "before": {
+          "formation": "siege",
+          "focus": "right",
+          "pace": "defensive"
+        },
+        "after": {
+          "formation": "pincer",
+          "focus": "left",
+          "pace": "aggressive"
+        },
+        "changed": [
+          "formation",
+          "focus",
+          "pace"
+        ],
+        "targetsBefore": [
+          {
+            "id": 648,
+            "x": 9,
+            "z": 3.21
+          },
+          {
+            "id": 649,
+            "x": -0.61,
+            "z": -1.87
+          },
+          {
+            "id": 650,
+            "x": 9,
+            "z": -6
+          }
+        ],
+        "targetsAfter": [
+          {
+            "id": 648,
+            "x": -2.61,
+            "z": -4.73
+          },
+          {
+            "id": 649,
+            "x": 7.39,
+            "z": 1.27
+          },
+          {
+            "id": 650,
+            "x": -2.61,
+            "z": 1.27
+          }
+        ]
+      }
+    }
+  ],
+  "applications": [
+    {
+      "kind": "adapt",
+      "wave": 1,
+      "revision": 1,
+      "formation": "siege",
+      "focus": "right",
+      "pace": "defensive",
+      "plan": "仅存侦察兵转向东侧，保持距离实施远程压制。",
+      "why": "最近3.03秒内玩家位于东侧终点(3.2,-2.7)，6射5中，并各使用1次冲刺与脉冲；当前仅余1名侦察兵，不再维持双翼包夹。",
+      "taunt": "包围散了，但锁定还在。",
+      "source": "model",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "ms": 14167,
+      "usage": {
+        "in": 5879,
+        "out": 204
+      },
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": 3.2,
+          "z": -2.7,
+          "hp": 100,
+          "shield": 35
+        },
+        "style": {
+          "shots": 6,
+          "hits": 5,
+          "dashes": 1,
+          "pulses": 1
+        },
+        "previous": {
+          "formation": "pincer",
+          "focus": "left",
+          "pace": "aggressive"
+        },
+        "revision": 1,
+        "recent": {
+          "duration": 3.03,
+          "samples": [
+            {
+              "time": 0.01,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 0,
+              "hits": 0,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 0.51,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 2,
+              "hits": 1,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 1.02,
+              "x": -5,
+              "z": 3,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 1.53,
+              "x": -3.1,
+              "z": 1.7,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 0,
+              "pulses": 0
+            },
+            {
+              "time": 2.03,
+              "x": -0.5,
+              "z": -0.1,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 1,
+              "pulses": 0
+            },
+            {
+              "time": 2.53,
+              "x": 3,
+              "z": -2.6,
+              "hp": 100,
+              "shield": 35,
+              "shots": 5,
+              "hits": 4,
+              "dashes": 1,
+              "pulses": 0
+            },
+            {
+              "time": 3.04,
+              "x": 3.2,
+              "z": -2.7,
+              "hp": 100,
+              "shield": 35,
+              "shots": 6,
+              "hits": 5,
+              "dashes": 1,
+              "pulses": 1
+            }
+          ],
+          "delta": {
+            "shots": 6,
+            "hits": 5,
+            "dashes": 1,
+            "pulses": 1
+          },
+          "distance": 10,
+          "dominantSide": "left"
+        },
+        "enemies": [
+          {
+            "id": 3,
+            "type": "scout",
+            "x": -2,
+            "z": 3.5,
+            "hp": 65
+          }
+        ]
+      },
+      "raw": "{\"formation\":\"siege\",\"focus\":\"right\",\"pace\":\"defensive\",\"plan\":\"仅存侦察兵转向东侧，保持距离实施远程压制。\",\"why\":\"最近3.03秒内玩家位于东侧终点(3.2,-2.7)，6射5中，并各使用1次冲刺与脉冲；当前仅余1名侦察兵，不再维持双翼包夹。\",\"taunt\":\"包围散了，但锁定还在。\"}",
+      "requestedAt": "2026-10-11T02:01:37.265Z",
+      "returnedAt": "2026-10-11T02:01:51.432Z",
+      "calls": 2,
+      "maxCalls": 18,
+      "sessionId": "36d0121d-9539-477d-9ff2-3cf4efca6b02",
+      "application": {
+        "state": "applied",
+        "appliedAt": "2026-10-11T02:01:51.458Z",
+        "combatTime": 17.23839999999999,
+        "observedAgeMs": 14192,
+        "before": {
+          "formation": "pincer",
+          "focus": "left",
+          "pace": "aggressive"
+        },
+        "after": {
+          "formation": "siege",
+          "focus": "right",
+          "pace": "defensive"
+        },
+        "changed": [
+          "formation",
+          "focus",
+          "pace"
+        ],
+        "targetsBefore": [
+          {
+            "id": 375,
+            "x": -9,
+            "z": -3.16
+          },
+          {
+            "id": 376,
+            "x": -1.98,
+            "z": 2.84
+          }
+        ],
+        "targetsAfter": [
+          {
+            "id": 375,
+            "x": 4.01,
+            "z": 0.03
+          },
+          {
+            "id": 376,
+            "x": -7.28,
+            "z": 4.57
+          }
+        ]
+      }
+    },
+    {
+      "kind": "adapt",
+      "wave": 1,
+      "revision": 2,
+      "formation": "pincer",
+      "focus": "left",
+      "pace": "aggressive",
+      "plan": "双侦察机向西侧目标分路包夹，主动压缩其活动空间。",
+      "why": "玩家最近连续停在西侧 x=-5、z=-0.2，护盾仅19；窗口内冲刺增加2次、脉冲增加1次，现有两名侦察机可立即转向西侧夹击。",
+      "taunt": "西侧已锁定——你无处可退。",
+      "source": "model",
+      "provider": "codex",
+      "model": "gpt-5.6-sol",
+      "ms": 11636,
+      "usage": {
+        "in": 6691,
+        "out": 204
+      },
+      "observation": {
+        "wave": 1,
+        "arena": {
+          "width": 22,
+          "depth": 16,
+          "cover": [
+            {
+              "x": -4.8,
+              "z": -1.5
+            },
+            {
+              "x": 4.8,
+              "z": 1.5
+            },
+            {
+              "x": 0,
+              "z": -4
+            }
+          ]
+        },
+        "player": {
+          "x": -5,
+          "z": -0.2,
+          "hp": 100,
+          "shield": 19
+        },
+        "style": {
+          "shots": 81,
+          "hits": 38,
+          "dashes": 4,
+          "pulses": 2
+        },
+        "previous": {
+          "formation": "siege",
+          "focus": "right",
+          "pace": "defensive"
+        },
+        "revision": 2,
+        "recent": {
+          "duration": 11.58,
+          "samples": [
+            {
+              "time": 5.58,
+              "x": -3.2,
+              "z": -3.1,
+              "hp": 100,
+              "shield": 19,
+              "shots": 20,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 6.08,
+              "x": -1.9,
+              "z": -3.7,
+              "hp": 100,
+              "shield": 19,
+              "shots": 23,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 6.59,
+              "x": -1.3,
+              "z": -4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 26,
+              "hits": 15,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 7.09,
+              "x": -1.3,
+              "z": -4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 29,
+              "hits": 17,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 7.6,
+              "x": -1.2,
+              "z": -3.8,
+              "hp": 100,
+              "shield": 19,
+              "shots": 32,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 8.1,
+              "x": -1.2,
+              "z": -3.4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 35,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 8.61,
+              "x": -0.7,
+              "z": -2.9,
+              "hp": 100,
+              "shield": 19,
+              "shots": 38,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 9.11,
+              "x": 1.5,
+              "z": -2.1,
+              "hp": 100,
+              "shield": 19,
+              "shots": 42,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 9.61,
+              "x": 3.5,
+              "z": -0.6,
+              "hp": 100,
+              "shield": 31,
+              "shots": 45,
+              "hits": 18,
+              "dashes": 2,
+              "pulses": 1
+            },
+            {
+              "time": 10.12,
+              "x": 4.3,
+              "z": 0.2,
+              "hp": 100,
+              "shield": 31,
+              "shots": 48,
+              "hits": 18,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 10.63,
+              "x": 3.9,
+              "z": 0.4,
+              "hp": 100,
+              "shield": 31,
+              "shots": 51,
+              "hits": 18,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 11.13,
+              "x": 3,
+              "z": 2.1,
+              "hp": 100,
+              "shield": 31,
+              "shots": 54,
+              "hits": 19,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 11.63,
+              "x": 1.1,
+              "z": 3.7,
+              "hp": 100,
+              "shield": 31,
+              "shots": 57,
+              "hits": 22,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 12.13,
+              "x": -1.1,
+              "z": 3.9,
+              "hp": 100,
+              "shield": 27,
+              "shots": 60,
+              "hits": 24,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 12.63,
+              "x": -2.5,
+              "z": 3.4,
+              "hp": 100,
+              "shield": 27,
+              "shots": 63,
+              "hits": 26,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 13.13,
+              "x": -3.7,
+              "z": 2.7,
+              "hp": 100,
+              "shield": 27,
+              "shots": 66,
+              "hits": 27,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 13.63,
+              "x": -4.5,
+              "z": 1.7,
+              "hp": 100,
+              "shield": 19,
+              "shots": 69,
+              "hits": 30,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 14.13,
+              "x": -5,
+              "z": 0.4,
+              "hp": 100,
+              "shield": 19,
+              "shots": 72,
+              "hits": 32,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 14.63,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 15.13,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 3,
+              "pulses": 2
+            },
+            {
+              "time": 15.64,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 73,
+              "hits": 34,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 16.14,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 74,
+              "hits": 34,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 16.65,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 77,
+              "hits": 36,
+              "dashes": 4,
+              "pulses": 2
+            },
+            {
+              "time": 17.16,
+              "x": -5,
+              "z": -0.2,
+              "hp": 100,
+              "shield": 19,
+              "shots": 80,
+              "hits": 38,
+              "dashes": 4,
+              "pulses": 2
+            }
+          ],
+          "delta": {
+            "shots": 60,
+            "hits": 23,
+            "dashes": 2,
+            "pulses": 1
+          },
+          "distance": 22.6,
+          "dominantSide": "left"
+        },
+        "enemies": [
+          {
+            "id": 375,
+            "type": "scout",
+            "x": 6.1,
+            "z": 4.5,
+            "hp": 65
+          },
+          {
+            "id": 376,
+            "type": "scout",
+            "x": 6.4,
+            "z": -3.9,
+            "hp": 65
+          }
+        ]
+      },
+      "raw": "{\"formation\":\"pincer\",\"focus\":\"left\",\"pace\":\"aggressive\",\"plan\":\"双侦察机向西侧目标分路包夹，主动压缩其活动空间。\",\"why\":\"玩家最近连续停在西侧 x=-5、z=-0.2，护盾仅19；窗口内冲刺增加2次、脉冲增加1次，现有两名侦察机可立即转向西侧夹击。\",\"taunt\":\"西侧已锁定——你无处可退。\"}",
+      "requestedAt": "2026-10-11T02:01:51.479Z",
+      "returnedAt": "2026-10-11T02:02:03.115Z",
+      "calls": 3,
+      "maxCalls": 18,
+      "sessionId": "36d0121d-9539-477d-9ff2-3cf4efca6b02",
+      "application": {
+        "state": "applied",
+        "appliedAt": "2026-10-11T02:02:03.122Z",
+        "combatTime": 28.90089999999972,
+        "observedAgeMs": 11642,
+        "before": {
+          "formation": "siege",
+          "focus": "right",
+          "pace": "defensive"
+        },
+        "after": {
+          "formation": "pincer",
+          "focus": "left",
+          "pace": "aggressive"
+        },
+        "changed": [
+          "formation",
+          "focus",
+          "pace"
+        ],
+        "targetsBefore": [
+          {
+            "id": 648,
+            "x": 9,
+            "z": 3.21
+          },
+          {
+            "id": 649,
+            "x": -0.61,
+            "z": -1.87
+          },
+          {
+            "id": 650,
+            "x": 9,
+            "z": -6
+          }
+        ],
+        "targetsAfter": [
+          {
+            "id": 648,
+            "x": -2.61,
+            "z": -4.73
+          },
+          {
+            "id": 649,
+            "x": 7.39,
+            "z": 1.27
+          },
+          {
+            "id": 650,
+            "x": -2.61,
+            "z": 1.27
+          }
+        ]
+      }
+    }
+  ],
+  "autopilot": true,
+  "observing": true,
+  "dynamic": true,
+  "watchSpeed": 1,
+  "waves": [
+    {
+      "wave": 1,
+      "comparison": {
+        "baseline": {
+          "formation": "rush",
+          "focus": "center",
+          "pace": "balanced",
+          "plan": "按波次预设进攻，保持固定射击节奏。",
+          "why": "固定规则，不读取玩家风格。",
+          "taunt": "入侵者，离开裂隙核心。",
+          "source": "rules",
+          "model": "普通电脑",
+          "ms": 0
+        },
+        "changes": [
+          "阵型：正面突击 → 双翼包夹",
+          "进攻侧：中央压制 → 西侧切入",
+          "节奏：交替推进 → 主动推进"
+        ],
+        "summary": "阵型：正面突击 → 双翼包夹；进攻侧：中央压制 → 西侧切入；节奏：交替推进 → 主动推进"
+      },
+      "navigationAtDeployment": [
+        {
+          "id": 1,
+          "position": {
+            "x": -8,
+            "z": -5
+          },
+          "modelGoal": {
+            "x": -9,
+            "z": 0
+          },
+          "rulesGoal": {
+            "x": -6.3,
+            "z": 0.20000000000000018
+          }
+        },
+        {
+          "id": 2,
+          "position": {
+            "x": 8,
+            "z": -4
+          },
+          "modelGoal": {
+            "x": -2,
+            "z": 6
+          },
+          "rulesGoal": {
+            "x": -3.7,
+            "z": 0.20000000000000018
+          }
+        },
+        {
+          "id": 3,
+          "position": {
+            "x": 5,
+            "z": 6
+          },
+          "modelGoal": {
+            "x": -9,
+            "z": 6
+          },
+          "rulesGoal": {
+            "x": -6.3,
+            "z": 0.20000000000000018
+          }
+        }
+      ],
+      "movementSamples": [
+        {
+          "time": 61.91920000000342,
+          "combatTime": 0.21250000000000008,
+          "targets": [
+            {
+              "id": 1,
+              "position": {
+                "x": -8.110646271993277,
+                "z": -4.44676864003363
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 0
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 7.601059192889317,
+                "z": -3.6010591928893154
+              },
+              "modelGoal": {
+                "x": -2,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -3.7,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 4.435812499999998,
+                "z": 6
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            }
+          ]
+        },
+        {
+          "time": 62.14000000000347,
+          "combatTime": 0.43330000000001767,
+          "targets": [
+            {
+              "id": 1,
+              "position": {
+                "x": -8.225614257198531,
+                "z": -3.871928714007348
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 0
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 7.186536227194982,
+                "z": -3.186536227194982
+              },
+              "modelGoal": {
+                "x": -2,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -3.7,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 3.849588499999946,
+                "z": 6
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            }
+          ]
+        },
+        {
+          "time": 62.32750000000349,
+          "combatTime": 0.6208000000000176,
+          "targets": [
+            {
+              "id": 1,
+              "position": {
+                "x": -8.323243320722007,
+                "z": -3.3837833963899593
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 0
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 6.834529632685559,
+                "z": -2.8345296326855545
+              },
+              "modelGoal": {
+                "x": -2,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -3.7,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 3.351775999999944,
+                "z": 6
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            }
+          ]
+        },
+        {
+          "time": 62.53590000000351,
+          "combatTime": 0.8292000000000117,
+          "targets": [
+            {
+              "id": 1,
+              "position": {
+                "x": -8.431754770526233,
+                "z": -2.841226147368836
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 0
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 2,
+              "position": {
+                "x": 6.443286036441497,
+                "z": -2.443286036441487
+              },
+              "modelGoal": {
+                "x": -2,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -3.7,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 2.7984739999999584,
+                "z": 6
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            }
+          ]
+        },
+        {
+          "time": 62.748400000003535,
+          "combatTime": 1.0417000000000116,
+          "targets": [
+            {
+              "id": 2,
+              "position": {
+                "x": 6.044345229330815,
+                "z": -2.0443452293308035
+              },
+              "modelGoal": {
+                "x": -2,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -3.7,
+                "z": 0.20000000000000018
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 2.2342864999999574,
+                "z": 6
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -6.3,
+                "z": 0.20000000000000018
+              }
+            }
+          ]
+        },
+        {
+          "time": 62.96920000000355,
+          "combatTime": 1.2625000000000006,
+          "targets": [
+            {
+              "id": 2,
+              "position": {
+                "x": 5.633007907027147,
+                "z": -1.6266730237136293
+              },
+              "modelGoal": {
+                "x": -1.1972200000000495,
+                "z": 5.441970000000033
+              },
+              "rulesGoal": {
+                "x": -2.8972200000000496,
+                "z": -0.3580299999999661
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 1.6483009751014095,
+                "z": 5.986255247937401
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 5.441970000000033
+              },
+              "rulesGoal": {
+                "x": -5.497220000000049,
+                "z": -0.3580299999999661
+              }
+            }
+          ]
+        },
+        {
+          "time": 63.1691000000036,
+          "combatTime": 1.462400000000024,
+          "targets": [
+            {
+              "id": 2,
+              "position": {
+                "x": 5.268509076293302,
+                "z": -1.2409167573772597
+              },
+              "modelGoal": {
+                "x": -0.3776299999999555,
+                "z": 4.872254999999967
+              },
+              "rulesGoal": {
+                "x": -2.077629999999955,
+                "z": -0.9277450000000322
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 1.119291715307838,
+                "z": 5.944306182179231
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 4.872254999999967
+              },
+              "rulesGoal": {
+                "x": -4.677629999999955,
+                "z": -0.9277450000000322
+              }
+            }
+          ]
+        },
+        {
+          "time": 63.37760000000362,
+          "combatTime": 1.6709000000000238,
+          "targets": [
+            {
+              "id": 2,
+              "position": {
+                "x": 4.8993642120018395,
+                "z": -0.8284327753908671
+              },
+              "modelGoal": {
+                "x": 0.4772200000000435,
+                "z": 4.278029999999967
+              },
+              "rulesGoal": {
+                "x": -1.2227799999999565,
+                "z": -1.5219700000000322
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": 0.5709213994236602,
+                "z": 5.869216502201238
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 4.278029999999967
+              },
+              "rulesGoal": {
+                "x": -3.8227799999999563,
+                "z": -1.5219700000000322
+              }
+            }
+          ]
+        },
+        {
+          "time": 63.6067000000036,
+          "combatTime": 1.900000000000001,
+          "targets": [
+            {
+              "id": 2,
+              "position": {
+                "x": 4.512937190370461,
+                "z": -0.3587841799487295
+              },
+              "modelGoal": {
+                "x": 1.3656899999999714,
+                "z": 3.6604350000000174
+              },
+              "rulesGoal": {
+                "x": -0.33431000000002875,
+                "z": -2.1395649999999824
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": -0.024848285851385765,
+                "z": 5.747332736210266
+              },
+              "modelGoal": {
+                "x": -8.634310000000028,
+                "z": 3.6604350000000174
+              },
+              "rulesGoal": {
+                "x": -2.934310000000029,
+                "z": -2.1395649999999824
+              }
+            }
+          ]
+        },
+        {
+          "time": 63.86510000000364,
+          "combatTime": 2.158400000000026,
+          "targets": [
+            {
+              "id": 2,
+              "position": {
+                "x": 4.2327609898892415,
+                "z": 0.1432860208339335
+              },
+              "modelGoal": {
+                "x": 4.545568000000062,
+                "z": 1.4500319999999547
+              },
+              "rulesGoal": {
+                "x": 2.8455680000000614,
+                "z": -4.349968000000045
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": -0.6470684498552995,
+                "z": 5.477000604910744
+              },
+              "modelGoal": {
+                "x": -5.454431999999938,
+                "z": 1.4500319999999547
+              },
+              "rulesGoal": {
+                "x": 0.24556800000006151,
+                "z": -4.349968000000045
+              }
+            }
+          ]
+        },
+        {
+          "time": 64.20250000000368,
+          "combatTime": 2.495800000000021,
+          "targets": [
+            {
+              "id": 2,
+              "position": {
+                "x": 4.259626091371801,
+                "z": 0.1432860208339335
+              },
+              "modelGoal": {
+                "x": 5.928908000000037,
+                "z": 0.4884419999999725
+              },
+              "rulesGoal": {
+                "x": 4.228908000000037,
+                "z": -5.311558000000027
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": -1.2402020166457106,
+                "z": 4.810065799219471
+              },
+              "modelGoal": {
+                "x": -4.071091999999963,
+                "z": 0.4884419999999725
+              },
+              "rulesGoal": {
+                "x": 1.628908000000037,
+                "z": -5.311558000000027
+              }
+            }
+          ]
+        },
+        {
+          "time": 64.52770000000373,
+          "combatTime": 2.821000000000005,
+          "targets": [
+            {
+              "id": 2,
+              "position": {
+                "x": 4.259626091371801,
+                "z": 0.1432860208339335
+              },
+              "modelGoal": {
+                "x": 6.168348000000013,
+                "z": 0.3220019999999888
+              },
+              "rulesGoal": {
+                "x": 4.468348000000013,
+                "z": -5.477998000000011
+              }
+            },
+            {
+              "id": 3,
+              "position": {
+                "x": -1.6745546174592525,
+                "z": 4.063934512653888
+              },
+              "modelGoal": {
+                "x": -3.8316519999999867,
+                "z": 0.3220019999999888
+              },
+              "rulesGoal": {
+                "x": 1.8683480000000132,
+                "z": -5.477998000000011
+              }
+            }
+          ]
+        },
+        {
+          "time": 64.86760000000383,
+          "combatTime": 3.16090000000003,
+          "targets": [
+            {
+              "id": 3,
+              "position": {
+                "x": -2.1252533374734055,
+                "z": 3.2821041662436414
+              },
+              "modelGoal": {
+                "x": -3.8316519999999867,
+                "z": 0.3220019999999888
+              },
+              "rulesGoal": {
+                "x": 1.8683480000000132,
+                "z": -5.477998000000011
+              }
+            }
+          ]
+        },
+        {
+          "time": 65.16760000000386,
+          "combatTime": 3.46090000000003,
+          "targets": [
+            {
+              "id": 3,
+              "position": {
+                "x": -2.5230456764090836,
+                "z": 2.5920509037456783
+              },
+              "modelGoal": {
+                "x": -3.8316519999999867,
+                "z": 0.3220019999999888
+              },
+              "rulesGoal": {
+                "x": 1.8683480000000132,
+                "z": -5.477998000000011
+              }
+            }
+          ]
+        },
+        {
+          "time": 65.44670000000387,
+          "combatTime": 3.7400000000000078,
+          "targets": [
+            {
+              "id": 3,
+              "position": {
+                "x": -2.8931251490655447,
+                "z": 1.95007135186846
+              },
+              "modelGoal": {
+                "x": -3.8316519999999867,
+                "z": 0.3220019999999888
+              },
+              "rulesGoal": {
+                "x": 1.8683480000000132,
+                "z": -5.477998000000011
+              }
+            }
+          ]
+        },
+        {
+          "time": 65.91760000000397,
+          "combatTime": 4.210900000000032,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.777453988806188,
+                "z": 5.493145947856926
+              },
+              "modelGoal": {
+                "x": -4.1094037336848634,
+                "z": -5.587907627538563
+              },
+              "rulesGoal": {
+                "x": 1.5905962663151365,
+                "z": -5.387907627538562
+              }
+            },
+            {
+              "id": 73,
+              "position": {
+                "x": -8.489462574358482,
+                "z": -5.786027280601531
+              },
+              "modelGoal": {
+                "x": 5.8905962663151366,
+                "z": 0.4120923724614376
+              },
+              "rulesGoal": {
+                "x": 4.190596266315136,
+                "z": -5.387907627538562
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.447657284704174,
+                "z": 0.03657885723748286
+              },
+              "modelGoal": {
+                "x": -4.1094037336848634,
+                "z": 0.4120923724614376
+              },
+              "rulesGoal": {
+                "x": 1.5905962663151365,
+                "z": -5.387907627538562
+              }
+            }
+          ]
+        },
+        {
+          "time": 66.13000000000402,
+          "combatTime": 4.423300000000023,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.583575367126654,
+                "z": 4.964027556853283
+              },
+              "modelGoal": {
+                "x": -5.922493059505768,
+                "z": -5.098927609049043
+              },
+              "rulesGoal": {
+                "x": -0.22249305950576792,
+                "z": -4.898927609049043
+              }
+            },
+            {
+              "id": 73,
+              "position": {
+                "x": -7.978513653378684,
+                "z": -5.547749032395377
+              },
+              "modelGoal": {
+                "x": 4.077506940494232,
+                "z": 0.901072390950957
+              },
+              "rulesGoal": {
+                "x": 2.377506940494232,
+                "z": -4.898927609049043
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -7.893019442402217,
+                "z": 0.12950119013288144
+              },
+              "modelGoal": {
+                "x": -5.922493059505768,
+                "z": 0.901072390950957
+              },
+              "rulesGoal": {
+                "x": -0.22249305950576792,
+                "z": -4.898927609049043
+              }
+            }
+          ]
+        },
+        {
+          "time": 66.43670000000405,
+          "combatTime": 4.730000000000004,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.557684954408295,
+                "z": 4.153933003032597
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -4.4390479648889105
+              },
+              "rulesGoal": {
+                "x": -3.70861853591523,
+                "z": -4.23904796488891
+              }
+            },
+            {
+              "id": 73,
+              "position": {
+                "x": -7.320269311567825,
+                "z": -5.070924789169365
+              },
+              "modelGoal": {
+                "x": 0.5913814640847708,
+                "z": 1.5609520351110893
+              },
+              "rulesGoal": {
+                "x": -1.1086185359152296,
+                "z": -4.23904796488891
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.121055686486669,
+                "z": 0.7339206993358124
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 1.5609520351110893
+              },
+              "rulesGoal": {
+                "x": -3.70861853591523,
+                "z": -4.23904796488891
+              }
+            }
+          ]
+        },
+        {
+          "time": 66.78680000000409,
+          "combatTime": 5.080100000000008,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.604845855801559,
+                "z": 3.2256148938932374
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -4.790734746846144
+              },
+              "rulesGoal": {
+                "x": -4.761388836442143,
+                "z": -4.5907347468461435
+              }
+            },
+            {
+              "id": 73,
+              "position": {
+                "x": -6.634060244492075,
+                "z": -4.444136263313233
+              },
+              "modelGoal": {
+                "x": -0.46138883644214346,
+                "z": 1.2092652531538566
+              },
+              "rulesGoal": {
+                "x": -2.1613888364421436,
+                "z": -4.5907347468461435
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.55162857988465,
+                "z": 1.1153324489403673
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 1.2092652531538566
+              },
+              "rulesGoal": {
+                "x": -4.761388836442143,
+                "z": -4.5907347468461435
+              }
+            }
+          ]
+        },
+        {
+          "time": 67.09920000000415,
+          "combatTime": 5.392500000000003,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.643454059605986,
+                "z": 2.3970931647905083
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -5.708553690675842
+              },
+              "rulesGoal": {
+                "x": -5.013941530647565,
+                "z": -5.508553690675841
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.766134700483445,
+                "z": 0.8009157031394809
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 0.2914463093241584
+              },
+              "rulesGoal": {
+                "x": -5.013941530647565,
+                "z": -5.508553690675841
+              }
+            }
+          ]
+        },
+        {
+          "time": 67.41170000000419,
+          "combatTime": 5.705000000000001,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.678891167309285,
+                "z": 1.5681628722620762
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -6
+              },
+              "rulesGoal": {
+                "x": -4.242062613782423,
+                "z": -6
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.913755538703722,
+                "z": 0.26932047735938114
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -0.24111491972636712
+              },
+              "rulesGoal": {
+                "x": -4.242062613782423,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 67.70760000000425,
+          "combatTime": 6.000899999999994,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.712193964532135,
+                "z": 0.7832545551272919
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -6
+              },
+              "rulesGoal": {
+                "x": -3.4012632763566204,
+                "z": -6
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.954581136183325,
+                "z": -0.08188171976096606
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -0.6296654331005125
+              },
+              "rulesGoal": {
+                "x": -3.4012632763566204,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 68.06600000000431,
+          "combatTime": 6.359299999999987,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.69504491707895,
+                "z": -0.16725234278322196
+              },
+              "modelGoal": {
+                "x": -8.258867450399748,
+                "z": -6
+              },
+              "rulesGoal": {
+                "x": -2.5588674503997484,
+                "z": -6
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.673896686416708,
+                "z": -0.5385419008429471
+              },
+              "modelGoal": {
+                "x": -8.258867450399748,
+                "z": -0.8971866164159024
+              },
+              "rulesGoal": {
+                "x": -2.5588674503997484,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 68.42420000000435,
+          "combatTime": 6.717499999999999,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.624124839162418,
+                "z": -1.1156253100220461
+              },
+              "modelGoal": {
+                "x": -8.258867450399748,
+                "z": -6
+              },
+              "rulesGoal": {
+                "x": -2.5588674503997484,
+                "z": -6
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.617841202210021,
+                "z": -0.5909093683843051
+              },
+              "modelGoal": {
+                "x": -8.258867450399748,
+                "z": -0.9756333849215948
+              },
+              "rulesGoal": {
+                "x": -2.5588674503997484,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 68.72020000000441,
+          "combatTime": 7.013499999999997,
+          "targets": [
+            {
+              "id": 72,
+              "position": {
+                "x": -8.565519749650154,
+                "z": -1.8993170975783913
+              },
+              "modelGoal": {
+                "x": -8.258867450399748,
+                "z": -6
+              },
+              "rulesGoal": {
+                "x": -2.5588674503997484,
+                "z": -6
+              }
+            },
+            {
+              "id": 74,
+              "position": {
+                "x": -8.617841202210021,
+                "z": -0.5909093683843051
+              },
+              "modelGoal": {
+                "x": -8.258867450399748,
+                "z": -0.9737723901730173
+              },
+              "rulesGoal": {
+                "x": -2.5588674503997484,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 69.00760000000444,
+          "combatTime": 7.30089999999999,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -8.617841202210021,
+                "z": -0.5909093683843051
+              },
+              "modelGoal": {
+                "x": -8.258867450399748,
+                "z": -0.9145775336830866
+              },
+              "rulesGoal": {
+                "x": -2.5588674503997484,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 69.25350000000448,
+          "combatTime": 7.546799999999984,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -8.617841202210021,
+                "z": -0.5909093683843051
+              },
+              "modelGoal": {
+                "x": -8.258867450399748,
+                "z": -0.8191711727383328
+              },
+              "rulesGoal": {
+                "x": -2.5588674503997484,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 69.52430000000453,
+          "combatTime": 7.817600000000001,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -8.617841202210021,
+                "z": -0.5909093683843051
+              },
+              "modelGoal": {
+                "x": -8.217617907189783,
+                "z": -0.6659915317041127
+              },
+              "rulesGoal": {
+                "x": -2.517617907189783,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 69.77850000000457,
+          "combatTime": 8.071799999999982,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -8.617841202210021,
+                "z": -0.5909093683843051
+              },
+              "modelGoal": {
+                "x": -8.156319693017185,
+                "z": -0.4756458650999815
+              },
+              "rulesGoal": {
+                "x": -2.4563196930171842,
+                "z": -6
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 8.854878904438845,
+                "z": 5.898510082498733
+              },
+              "modelGoal": {
+                "x": -8.156319693017185,
+                "z": -6
+              },
+              "rulesGoal": {
+                "x": -2.4563196930171842,
+                "z": -6
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -8.848110966573067,
+                "z": 5.9089505273965015
+              },
+              "modelGoal": {
+                "x": 1.843680306982816,
+                "z": -0.4756458650999815
+              },
+              "rulesGoal": {
+                "x": 0.14368030698281586,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 70.01170000000464,
+          "combatTime": 8.304999999999993,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -8.489655552721368,
+                "z": -0.5263328919931513
+              },
+              "modelGoal": {
+                "x": -8.031578305443825,
+                "z": -0.2601882235128872
+              },
+              "rulesGoal": {
+                "x": -2.3315783054438253,
+                "z": -6
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 8.348053414743537,
+                "z": 5.542885001525916
+              },
+              "modelGoal": {
+                "x": -8.031578305443825,
+                "z": -6
+              },
+              "rulesGoal": {
+                "x": -2.3315783054438253,
+                "z": -6
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -8.313450777486906,
+                "z": 5.596754987798577
+              },
+              "modelGoal": {
+                "x": 1.968421694556175,
+                "z": -0.2601882235128872
+              },
+              "rulesGoal": {
+                "x": 0.26842169455617504,
+                "z": -6
+              }
+            }
+          ]
+        },
+        {
+          "time": 70.25340000000467,
+          "combatTime": 8.546699999999976,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -8.201185689528305,
+                "z": -0.32131397489232244
+              },
+              "modelGoal": {
+                "x": -7.785496956857889,
+                "z": 0.008461410999655694
+              },
+              "rulesGoal": {
+                "x": -2.0854969568578894,
+                "z": -5.791538589000345
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 7.824756281109541,
+                "z": 5.171462958597314
+              },
+              "modelGoal": {
+                "x": -7.785496956857889,
+                "z": -5.991538589000344
+              },
+              "rulesGoal": {
+                "x": -2.0854969568578894,
+                "z": -5.791538589000345
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -7.751181214216738,
+                "z": 5.287537110468125
+              },
+              "modelGoal": {
+                "x": 2.214503043142111,
+                "z": 0.008461410999655694
+              },
+              "rulesGoal": {
+                "x": 0.5145030431421107,
+                "z": -5.791538589000345
+              }
+            }
+          ]
+        },
+        {
+          "time": 70.51590000000472,
+          "combatTime": 8.809199999999974,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -7.639182447106267,
+                "z": 0.026601464083422524
+              },
+              "modelGoal": {
+                "x": -6.867365666590174,
+                "z": 0.3703741112255381
+              },
+              "rulesGoal": {
+                "x": -1.167365666590174,
+                "z": -5.429625888774462
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 7.259648750671502,
+                "z": 4.763583201265345
+              },
+              "modelGoal": {
+                "x": -6.867365666590174,
+                "z": -5.629625888774462
+              },
+              "rulesGoal": {
+                "x": -1.167365666590174,
+                "z": -5.429625888774462
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -7.125985992389837,
+                "z": 4.979845191286075
+              },
+              "modelGoal": {
+                "x": 3.1326343334098263,
+                "z": 0.3703741112255381
+              },
+              "rulesGoal": {
+                "x": 1.4326343334098262,
+                "z": -5.429625888774462
+              }
+            }
+          ]
+        },
+        {
+          "time": 70.77420000000478,
+          "combatTime": 9.067499999999985,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -7.005994898627308,
+                "z": 0.28995202300750955
+              },
+              "modelGoal": {
+                "x": -5.669464172720412,
+                "z": 0.8510877010461693
+              },
+              "rulesGoal": {
+                "x": 0.03053582727958859,
+                "z": -4.948912298953831
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 6.7117140047455495,
+                "z": 4.351206533203572
+              },
+              "modelGoal": {
+                "x": -5.669464172720412,
+                "z": -5.148912298953831
+              },
+              "rulesGoal": {
+                "x": 0.03053582727958859,
+                "z": -4.948912298953831
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -6.489723447697652,
+                "z": 4.724444885856971
+              },
+              "modelGoal": {
+                "x": 4.330535827279588,
+                "z": 0.8510877010461693
+              },
+              "rulesGoal": {
+                "x": 2.630535827279589,
+                "z": -4.948912298953831
+              }
+            }
+          ]
+        },
+        {
+          "time": 71.05350000000482,
+          "combatTime": 9.346799999999966,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -6.332285349919648,
+                "z": 0.5993898895492771
+              },
+              "modelGoal": {
+                "x": -4.4612423416527935,
+                "z": 1.5480430037534603
+              },
+              "rulesGoal": {
+                "x": 1.2387576583472064,
+                "z": -4.251956996246539
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 6.1269842878601315,
+                "z": 3.895172423489705
+              },
+              "modelGoal": {
+                "x": -4.4612423416527935,
+                "z": -4.4519569962465395
+              },
+              "rulesGoal": {
+                "x": 1.2387576583472064,
+                "z": -4.251956996246539
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -5.7811897290088226,
+                "z": 4.5064786110296975
+              },
+              "modelGoal": {
+                "x": 5.5387576583472065,
+                "z": 1.5480430037534603
+              },
+              "rulesGoal": {
+                "x": 3.8387576583472063,
+                "z": -4.251956996246539
+              }
+            }
+          ]
+        },
+        {
+          "time": 71.28670000000486,
+          "combatTime": 9.57999999999998,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -5.793791816063005,
+                "z": 0.9044868096263879
+              },
+              "modelGoal": {
+                "x": -3.575604968810539,
+                "z": 2.303559108578084
+              },
+              "rulesGoal": {
+                "x": 2.1243950311894606,
+                "z": -3.4964408914219156
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 5.640605418132803,
+                "z": 3.5120579898827167
+              },
+              "modelGoal": {
+                "x": -3.575604968810539,
+                "z": -3.696440891421916
+              },
+              "rulesGoal": {
+                "x": 2.1243950311894606,
+                "z": -3.4964408914219156
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -5.17646229947633,
+                "z": 4.374395396099497
+              },
+              "modelGoal": {
+                "x": 6.42439503118946,
+                "z": 2.303559108578084
+              },
+              "rulesGoal": {
+                "x": 4.724395031189461,
+                "z": -3.4964408914219156
+              }
+            }
+          ]
+        },
+        {
+          "time": 71.56590000000487,
+          "combatTime": 9.859199999999964,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -5.195105192800125,
+                "z": 1.3408999150493257
+              },
+              "modelGoal": {
+                "x": -2.7030760041271638,
+                "z": 3.24051443764281
+              },
+              "rulesGoal": {
+                "x": 2.9969239958728364,
+                "z": -2.5594855623571897
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 5.050281210250474,
+                "z": 3.0637616509071752
+              },
+              "modelGoal": {
+                "x": -2.7030760041271638,
+                "z": -2.75948556235719
+              },
+              "rulesGoal": {
+                "x": 2.9969239958728364,
+                "z": -2.5594855623571897
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -4.441174225614236,
+                "z": 4.282637412533498
+              },
+              "modelGoal": {
+                "x": 7.296923995872836,
+                "z": 3.24051443764281
+              },
+              "rulesGoal": {
+                "x": 5.596923995872836,
+                "z": -2.5594855623571897
+              }
+            }
+          ]
+        },
+        {
+          "time": 71.77430000000494,
+          "combatTime": 10.067599999999988,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -4.754135679408313,
+                "z": 1.6750982659249076
+              },
+              "modelGoal": {
+                "x": -2.6863138030162883,
+                "z": 3.24051443764281
+              },
+              "rulesGoal": {
+                "x": 3.013686196983712,
+                "z": -2.5594855623571897
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 4.891135771923688,
+                "z": 2.957178361275213
+              },
+              "modelGoal": {
+                "x": -2.6863138030162883,
+                "z": -2.75948556235719
+              },
+              "rulesGoal": {
+                "x": 3.013686196983712,
+                "z": -2.5594855623571897
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -3.8900348130179543,
+                "z": 4.233765637153892
+              },
+              "modelGoal": {
+                "x": 7.313686196983712,
+                "z": 3.24051443764281
+              },
+              "rulesGoal": {
+                "x": 5.6136861969837115,
+                "z": -2.5594855623571897
+              }
+            }
+          ]
+        },
+        {
+          "time": 71.96170000000498,
+          "combatTime": 10.25499999999998,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -4.358698833913523,
+                "z": 1.9770559002035362
+              },
+              "modelGoal": {
+                "x": -2.7350589687445517,
+                "z": 3.24051443764281
+              },
+              "rulesGoal": {
+                "x": 2.9649410312554485,
+                "z": -2.5594855623571897
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 4.891135771923688,
+                "z": 2.957178361275213
+              },
+              "modelGoal": {
+                "x": -2.7350589687445517,
+                "z": -2.75948556235719
+              },
+              "rulesGoal": {
+                "x": 2.9649410312554485,
+                "z": -2.5594855623571897
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -3.394437209181549,
+                "z": 4.189765314552564
+              },
+              "modelGoal": {
+                "x": 7.264941031255448,
+                "z": 3.24051443764281
+              },
+              "rulesGoal": {
+                "x": 5.564941031255448,
+                "z": -2.5594855623571897
+              }
+            }
+          ]
+        },
+        {
+          "time": 72.178400000005,
+          "combatTime": 10.471699999999963,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -3.92201086981329,
+                "z": 2.351244710514743
+              },
+              "modelGoal": {
+                "x": -2.9047590367190734,
+                "z": 3.322999929826484
+              },
+              "rulesGoal": {
+                "x": 2.7952409632809267,
+                "z": -2.4770000701735158
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 4.891135771923688,
+                "z": 2.957178361275213
+              },
+              "modelGoal": {
+                "x": -2.9047590367190734,
+                "z": -2.677000070173516
+              },
+              "rulesGoal": {
+                "x": 2.7952409632809267,
+                "z": -2.4770000701735158
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -2.821184479078533,
+                "z": 4.140834055612941
+              },
+              "modelGoal": {
+                "x": 7.095240963280927,
+                "z": 3.322999929826484
+              },
+              "rulesGoal": {
+                "x": 5.395240963280926,
+                "z": -2.4770000701735158
+              }
+            }
+          ]
+        },
+        {
+          "time": 72.38250000000505,
+          "combatTime": 10.675799999999967,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -3.5810649618662302,
+                "z": 2.770250157240781
+              },
+              "modelGoal": {
+                "x": -3.1432386724589065,
+                "z": 3.525036152172362
+              },
+              "rulesGoal": {
+                "x": 2.5567613275410936,
+                "z": -2.274963847827638
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 4.891135771923688,
+                "z": 2.957178361275213
+              },
+              "modelGoal": {
+                "x": -3.1432386724589065,
+                "z": -2.474963847827638
+              },
+              "rulesGoal": {
+                "x": 2.5567613275410936,
+                "z": -2.274963847827638
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -2.280772078491652,
+                "z": 4.100995634730726
+              },
+              "modelGoal": {
+                "x": 6.8567613275410935,
+                "z": 3.525036152172362
+              },
+              "rulesGoal": {
+                "x": 5.156761327541093,
+                "z": -2.274963847827638
+              }
+            }
+          ]
+        },
+        {
+          "time": 72.5617000000051,
+          "combatTime": 10.854999999999979,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -3.4448329545277856,
+                "z": 3.2209392563533714
+              },
+              "modelGoal": {
+                "x": -3.4139197970722512,
+                "z": 3.9014857006462327
+              },
+              "rulesGoal": {
+                "x": 2.2860802029277485,
+                "z": -1.8985142993537671
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 4.891135771923688,
+                "z": 2.957178361275213
+              },
+              "modelGoal": {
+                "x": -3.4139197970722512,
+                "z": -2.0985142993537673
+              },
+              "rulesGoal": {
+                "x": 2.2860802029277485,
+                "z": -1.8985142993537671
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -1.8055458120868342,
+                "z": 4.078925033194877
+              },
+              "modelGoal": {
+                "x": 6.586080202927748,
+                "z": 3.9014857006462327
+              },
+              "rulesGoal": {
+                "x": 4.886080202927749,
+                "z": -1.8985142993537671
+              }
+            }
+          ]
+        },
+        {
+          "time": 72.72420000000514,
+          "combatTime": 11.017499999999982,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -3.498297325628279,
+                "z": 3.6476477657928315
+              },
+              "modelGoal": {
+                "x": -3.7389743125333115,
+                "z": 4.625801424765576
+              },
+              "rulesGoal": {
+                "x": 1.9610256874666885,
+                "z": -1.1741985752344242
+              }
+            },
+            {
+              "id": 178,
+              "position": {
+                "x": 4.891135771923688,
+                "z": 2.957178361275213
+              },
+              "modelGoal": {
+                "x": -3.7389743125333115,
+                "z": -1.3741985752344243
+              },
+              "rulesGoal": {
+                "x": 1.9610256874666885,
+                "z": -1.1741985752344242
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -1.3743972154810804,
+                "z": 4.089533752057709
+              },
+              "modelGoal": {
+                "x": 6.261025687466688,
+                "z": 4.625801424765576
+              },
+              "rulesGoal": {
+                "x": 4.561025687466689,
+                "z": -1.1741985752344242
+              }
+            }
+          ]
+        },
+        {
+          "time": 72.89090000000516,
+          "combatTime": 11.184199999999969,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -3.6411142615314454,
+                "z": 4.066069956553267
+              },
+              "modelGoal": {
+                "x": -4.179644567310078,
+                "z": 5.332250301045425
+              },
+              "rulesGoal": {
+                "x": 1.5203554326899227,
+                "z": -0.4677496989545751
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -0.9353694699155499,
+                "z": 4.143960339810307
+              },
+              "modelGoal": {
+                "x": 5.820355432689922,
+                "z": 5.332250301045425
+              },
+              "rulesGoal": {
+                "x": 4.120355432689923,
+                "z": -0.4677496989545751
+              }
+            }
+          ]
+        },
+        {
+          "time": 73.04920000000521,
+          "combatTime": 11.342499999999987,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -3.8313335278253984,
+                "z": 4.440508501416065
+              },
+              "modelGoal": {
+                "x": -4.703304848932099,
+                "z": 5.924490103034615
+              },
+              "rulesGoal": {
+                "x": 0.9966951510679014,
+                "z": 0.12449010303461527
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": -0.5262883696227713,
+                "z": 4.239437349707133
+              },
+              "modelGoal": {
+                "x": 5.296695151067901,
+                "z": 5.924490103034615
+              },
+              "rulesGoal": {
+                "x": 3.5966951510679017,
+                "z": 0.12449010303461527
+              }
+            }
+          ]
+        },
+        {
+          "time": 73.33270000000525,
+          "combatTime": 11.625999999999982,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -4.347796587460019,
+                "z": 4.978457442738616
+              },
+              "modelGoal": {
+                "x": -5.879225351838384,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -0.17922535183838395,
+                "z": 0.9017948665195061
+              }
+            },
+            {
+              "id": 179,
+              "position": {
+                "x": 0.18626782373506873,
+                "z": 4.481398808978882
+              },
+              "modelGoal": {
+                "x": 4.120774648161616,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": 2.420774648161616,
+                "z": 0.9017948665195061
+              }
+            }
+          ]
+        },
+        {
+          "time": 73.54500000000529,
+          "combatTime": 11.838299999999967,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -4.852012829025532,
+                "z": 5.2277605498938104
+              },
+              "modelGoal": {
+                "x": -6.903833689007283,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -1.2038336890072827,
+                "z": 1.164211896926051
+              }
+            }
+          ]
+        },
+        {
+          "time": 73.76170000000533,
+          "combatTime": 12.054999999999977,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -5.403301371474919,
+                "z": 5.39113179526399
+              },
+              "modelGoal": {
+                "x": -7.899914671705079,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -2.199914671705079,
+                "z": 1.133601349517836
+              }
+            },
+            {
+              "id": 294,
+              "position": {
+                "x": 8.867236861708205,
+                "z": -5.945181482476975
+              },
+              "modelGoal": {
+                "x": -7.899914671705079,
+                "z": 0.9336013495178359
+              },
+              "rulesGoal": {
+                "x": -2.199914671705079,
+                "z": 1.133601349517836
+              }
+            },
+            {
+              "id": 295,
+              "position": {
+                "x": -8.902094590560067,
+                "z": -5.894901969903158
+              },
+              "modelGoal": {
+                "x": 2.100085328294921,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": 0.40008532829492116,
+                "z": 1.133601349517836
+              }
+            }
+          ]
+        },
+        {
+          "time": 73.97840000000537,
+          "combatTime": 12.271699999999958,
+          "targets": [
+            {
+              "id": 74,
+              "position": {
+                "x": -5.96544383490313,
+                "z": 5.513308602617233
+              },
+              "modelGoal": {
+                "x": -8.515409049361125,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -2.8154090493611252,
+                "z": 1.0117803581937306
+              }
+            },
+            {
+              "id": 294,
+              "position": {
+                "x": 8.33304363822463,
+                "z": -5.731543886704817
+              },
+              "modelGoal": {
+                "x": -8.515409049361125,
+                "z": 0.8117803581937304
+              },
+              "rulesGoal": {
+                "x": -2.8154090493611252,
+                "z": 1.0117803581937306
+              }
+            },
+            {
+              "id": 295,
+              "position": {
+                "x": -8.517291284509168,
+                "z": -5.467217994119803
+              },
+              "modelGoal": {
+                "x": 1.484590950638875,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -0.21540904936112515,
+                "z": 1.0117803581937306
+              }
+            }
+          ]
+        },
+        {
+          "time": 74.17840000000541,
+          "combatTime": 12.47169999999996,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 7.8360312587417384,
+                "z": -5.54464720609786
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 0.630444971685026
+              },
+              "rulesGoal": {
+                "x": -3.3578503978247847,
+                "z": 0.8304449716850262
+              }
+            },
+            {
+              "id": 295,
+              "position": {
+                "x": -8.174550780691478,
+                "z": -5.061668054051981
+              },
+              "modelGoal": {
+                "x": 0.9421496021752152,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -0.7578503978247848,
+                "z": 0.8304449716850262
+              }
+            }
+          ]
+        },
+        {
+          "time": 74.39500000000545,
+          "combatTime": 12.688299999999966,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 7.29473594262499,
+                "z": -5.3504747690260075
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 0.3608449759657959
+              },
+              "rulesGoal": {
+                "x": -4.009352729589154,
+                "z": 0.5608449759657961
+              }
+            },
+            {
+              "id": 295,
+              "position": {
+                "x": -7.817613756194161,
+                "z": -4.61080863864728
+              },
+              "modelGoal": {
+                "x": 0.2906472704108456,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -1.4093527295891544,
+                "z": 0.5608449759657961
+              }
+            }
+          ]
+        },
+        {
+          "time": 74.5742000000055,
+          "combatTime": 12.86749999999998,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 6.844694684902138,
+                "z": -5.196131825779368
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 0.1258282125762995
+              },
+              "rulesGoal": {
+                "x": -4.423213597633896,
+                "z": 0.3258282125762997
+              }
+            },
+            {
+              "id": 295,
+              "position": {
+                "x": -7.5338861461429465,
+                "z": -4.228908497326018
+              },
+              "modelGoal": {
+                "x": -0.12321359763389594,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -1.8232135976338955,
+                "z": 0.3258282125762997
+              }
+            }
+          ]
+        },
+        {
+          "time": 74.77420000000555,
+          "combatTime": 13.067499999999985,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 6.339564046183134,
+                "z": -5.032438396662724
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -0.22290107681161642
+              },
+              "rulesGoal": {
+                "x": -4.898334812294074,
+                "z": -0.02290107681161624
+              }
+            },
+            {
+              "id": 295,
+              "position": {
+                "x": -7.228245224724225,
+                "z": -3.794700380406571
+              },
+              "modelGoal": {
+                "x": -0.5983348122940741,
+                "z": 5.777098923188383
+              },
+              "rulesGoal": {
+                "x": -2.2983348122940743,
+                "z": -0.02290107681161624
+              }
+            }
+          ]
+        },
+        {
+          "time": 74.9658000000056,
+          "combatTime": 13.25909999999999,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 5.8525324269707575,
+                "z": -4.885592107197753
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -0.598164308301504
+              },
+              "rulesGoal": {
+                "x": -5.290182835159135,
+                "z": -0.39816430830150384
+              }
+            },
+            {
+              "id": 295,
+              "position": {
+                "x": -6.940877857315862,
+                "z": -3.374948502654503
+              },
+              "modelGoal": {
+                "x": -0.9901828351591355,
+                "z": 5.401835691698496
+              },
+              "rulesGoal": {
+                "x": -2.6901828351591357,
+                "z": -0.39816430830150384
+              }
+            }
+          ]
+        },
+        {
+          "time": 75.15760000000563,
+          "combatTime": 13.450899999999978,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 5.3616133445885605,
+                "z": -4.750314810677183
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -0.9547611363287096
+              },
+              "rulesGoal": {
+                "x": -5.57599713712681,
+                "z": -0.7547611363287094
+              }
+            },
+            {
+              "id": 295,
+              "position": {
+                "x": -6.656480040882321,
+                "z": -2.9525380736349898
+              },
+              "modelGoal": {
+                "x": -1.2759971371268106,
+                "z": 5.04523886367129
+              },
+              "rulesGoal": {
+                "x": -2.975997137126811,
+                "z": -0.7547611363287094
+              }
+            }
+          ]
+        },
+        {
+          "time": 75.31590000000566,
+          "combatTime": 13.60919999999997,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 4.95389709187337,
+                "z": -4.648329245348987
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -1.3052150302357
+              },
+              "rulesGoal": {
+                "x": -5.828862048234746,
+                "z": -1.1052150302356998
+              }
+            }
+          ]
+        },
+        {
+          "time": 75.4617000000057,
+          "combatTime": 13.754999999999992,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 4.5763016782427774,
+                "z": -4.563124701019642
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -1.6191549380023111
+              },
+              "rulesGoal": {
+                "x": -6.0012034743358,
+                "z": -1.419154938002311
+              }
+            }
+          ]
+        },
+        {
+          "time": 75.64500000000574,
+          "combatTime": 13.938299999999984,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 4.0989041764277525,
+                "z": -4.468727700505098
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -2.061241084054473
+              },
+              "rulesGoal": {
+                "x": -6.189960522666112,
+                "z": -1.8612410840544729
+              }
+            }
+          ]
+        },
+        {
+          "time": 75.80340000000577,
+          "combatTime": 14.096699999999977,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 3.6840021436521795,
+                "z": -4.400116456380389
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -2.4943745222845846
+              },
+              "rulesGoal": {
+                "x": -6.256813621278672,
+                "z": -2.2943745222845844
+              }
+            }
+          ]
+        },
+        {
+          "time": 75.9784000000058,
+          "combatTime": 14.27169999999998,
+          "targets": [
+            {
+              "id": 294,
+              "position": {
+                "x": 3.223427221958449,
+                "z": -4.339079906530481
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -2.9421410533230836
+              },
+              "rulesGoal": {
+                "x": -6.296846519496315,
+                "z": -2.7421410533230834
+              }
+            }
+          ]
+        },
+        {
+          "time": 77.82420000000623,
+          "combatTime": 16.117500000000007,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 8.723875223515442,
+                "z": 5.859447504847405
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -3.1623248915085482
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 8.758613728236632,
+                "z": -5.80575128343679
+              },
+              "modelGoal": {
+                "x": -1.9822782010525648,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 377,
+              "position": {
+                "x": 8.693941408854055,
+                "z": 0.048249713657489125
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 78.03670000000628,
+          "combatTime": 16.330000000000002,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 8.221077322890217,
+                "z": 5.603514298164256
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -3.1623248915085482
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 8.319071459601584,
+                "z": -5.452042180868856
+              },
+              "modelGoal": {
+                "x": -1.9822782010525648,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 377,
+              "position": {
+                "x": 8.136636776304728,
+                "z": 0.13610801830372235
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 78.24510000000632,
+          "combatTime": 16.5384,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 7.727980464112368,
+                "z": 5.352519096880648
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -3.1623248915085482
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 7.8880097712084565,
+                "z": -5.1051575833387135
+              },
+              "modelGoal": {
+                "x": -1.9822782010525648,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 377,
+              "position": {
+                "x": 7.5900848449010745,
+                "z": 0.22227117448383768
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 78.44920000000636,
+          "combatTime": 16.742500000000007,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 7.245057868735378,
+                "z": 5.106702779308731
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -3.1623248915085482
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 7.465842349898277,
+                "z": -4.765430393531102
+              },
+              "modelGoal": {
+                "x": -1.9822782010525648,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 377,
+              "position": {
+                "x": 7.054810136650155,
+                "z": 0.3066564920287635
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 78.6492000000064,
+          "combatTime": 16.9425,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 6.7718363152057615,
+                "z": 4.865824467136355
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -3.1623248915085482
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 7.0521555088300065,
+                "z": -4.432527708761282
+              },
+              "modelGoal": {
+                "x": -1.9822782010525648,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 78.86180000000644,
+          "combatTime": 17.1551,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 6.268801803803763,
+                "z": 4.609770821297113
+              },
+              "modelGoal": {
+                "x": -9,
+                "z": -3.1623248915085482
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 6.612406396774425,
+                "z": -4.0786521548509524
+              },
+              "modelGoal": {
+                "x": -1.9822782010525648,
+                "z": 2.8376751084914518
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 79.15340000000646,
+          "combatTime": 17.446699999999975,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 5.923285150043713,
+                "z": 4.190811612879055
+              },
+              "modelGoal": {
+                "x": 4.00929023020022,
+                "z": 0.1320770051115217
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 6.140774067115798,
+                "z": -3.755724591614783
+              },
+              "modelGoal": {
+                "x": -7.3745173880228645,
+                "z": 4.509554635173973
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 79.38260000000652,
+          "combatTime": 17.67589999999998,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 5.75606300462473,
+                "z": 3.8420572239845288
+              },
+              "modelGoal": {
+                "x": 4.001817456897482,
+                "z": 0.2419048436799957
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 5.810072429651023,
+                "z": -3.5551486627037754
+              },
+              "modelGoal": {
+                "x": -7.473714300527411,
+                "z": 4.4397422206062656
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 79.58670000000657,
+          "combatTime": 17.87999999999998,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 5.60309181738155,
+                "z": 3.533476176629198
+              },
+              "modelGoal": {
+                "x": 3.993186520295912,
+                "z": 0.3395920290909841
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            },
+            {
+              "id": 376,
+              "position": {
+                "x": 5.514386557762339,
+                "z": -3.3785312147633793
+              },
+              "modelGoal": {
+                "x": -7.560778012482472,
+                "z": 4.376271990389832
+              },
+              "rulesGoal": {
+                "x": -3.682278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 79.85340000000662,
+          "combatTime": 18.146699999999957,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 5.396208362595991,
+                "z": 3.1337989810629883
+              },
+              "modelGoal": {
+                "x": 3.979106109823265,
+                "z": 0.46703541129504506
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 80.08680000000669,
+          "combatTime": 18.38009999999997,
+          "targets": [
+            {
+              "id": 375,
+              "position": {
+                "x": 5.258744089985717,
+                "z": 2.88666288644399
+              },
+              "modelGoal": {
+                "x": 3.9641834358917167,
+                "z": 0.5783332018636516
+              },
+              "rulesGoal": {
+                "x": -6.282278201052565,
+                "z": -2.962324891508548
+              }
+            }
+          ]
+        },
+        {
+          "time": 81.75750000000697,
+          "combatTime": 20.050799999999924,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.975765544117058,
+                "z": -5.919183364162681
+              },
+              "modelGoal": {
+                "x": 6.781913850017097,
+                "z": 1.732692969592717
+              },
+              "rulesGoal": {
+                "x": -3.2874458100338435,
+                "z": -2.5947947139375787
+              }
+            },
+            {
+              "id": 460,
+              "position": {
+                "x": 8.916428516045713,
+                "z": 5.988383301282517
+              },
+              "modelGoal": {
+                "x": -5.412017881925544,
+                "z": 3.9974224559789944
+              },
+              "rulesGoal": {
+                "x": -0.6874458100338436,
+                "z": -2.5947947139375787
+              }
+            },
+            {
+              "id": 461,
+              "position": {
+                "x": 8.928050626856855,
+                "z": -0.0440725118993028
+              },
+              "modelGoal": {
+                "x": -0.3720720202039664,
+                "z": -5.785730480209493
+              },
+              "rulesGoal": {
+                "x": -3.2874458100338435,
+                "z": -2.5947947139375787
+              }
+            }
+          ]
+        },
+        {
+          "time": 82.04500000000704,
+          "combatTime": 20.338299999999915,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.886545998280168,
+                "z": -5.442965048243809
+              },
+              "modelGoal": {
+                "x": 8.122507245791772,
+                "z": 2.253138450990769
+              },
+              "rulesGoal": {
+                "x": -1.9040780250272344,
+                "z": -2.2073865544955913
+              }
+            },
+            {
+              "id": 460,
+              "position": {
+                "x": 8.435702741725088,
+                "z": 5.922976710687167
+              },
+              "modelGoal": {
+                "x": -4.128964216837172,
+                "z": 4.276895482924952
+              },
+              "rulesGoal": {
+                "x": 0.6959219749727656,
+                "z": -2.2073865544955913
+              }
+            },
+            {
+              "id": 461,
+              "position": {
+                "x": 8.522422981226805,
+                "z": -0.3101330019457408
+              },
+              "modelGoal": {
+                "x": 1.1721400973313274,
+                "z": -5.404319750593536
+              },
+              "rulesGoal": {
+                "x": -1.9040780250272344,
+                "z": -2.2073865544955913
+              }
+            }
+          ]
+        },
+        {
+          "time": 82.28680000000709,
+          "combatTime": 20.580099999999927,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.875230022099766,
+                "z": -5.035354486495093
+              },
+              "modelGoal": {
+                "x": 9,
+                "z": 2.841749615264732
+              },
+              "rulesGoal": {
+                "x": -0.7944727406107921,
+                "z": -1.7299883957738218
+              }
+            },
+            {
+              "id": 460,
+              "position": {
+                "x": 8.03063232975541,
+                "z": 5.873927669570051
+              },
+              "modelGoal": {
+                "x": -3.1014669768007277,
+                "z": 4.662004294528222
+              },
+              "rulesGoal": {
+                "x": 1.805527259389208,
+                "z": -1.7299883957738218
+              }
+            },
+            {
+              "id": 461,
+              "position": {
+                "x": 8.19242481173256,
+                "z": -0.5500715755446154
+              },
+              "modelGoal": {
+                "x": 2.417117597066577,
+                "z": -4.929509829643953
+              },
+              "rulesGoal": {
+                "x": -0.7944727406107921,
+                "z": -1.7299883957738218
+              }
+            }
+          ]
+        },
+        {
+          "time": 82.54080000000715,
+          "combatTime": 20.834099999999918,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.881171118679834,
+                "z": -4.606770963097062
+              },
+              "modelGoal": {
+                "x": 9,
+                "z": 4.981556161610573
+              },
+              "rulesGoal": {
+                "x": 1.8721116666249407,
+                "z": 0.29370861568127493
+              }
+            },
+            {
+              "id": 460,
+              "position": {
+                "x": 7.60267791935044,
+                "z": 5.861302749692387
+              },
+              "modelGoal": {
+                "x": -0.5188733521449711,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": 4.472111666624941,
+                "z": 0.29370861568127493
+              }
+            }
+          ]
+        },
+        {
+          "time": 82.78690000000718,
+          "combatTime": 21.08019999999989,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.886167443806524,
+                "z": -4.191507275127307
+              },
+              "modelGoal": {
+                "x": 9,
+                "z": 5.498795513116485
+              },
+              "rulesGoal": {
+                "x": 1.1209134093262267,
+                "z": 0.6991927233060631
+              }
+            },
+            {
+              "id": 460,
+              "position": {
+                "x": 7.18743870827156,
+                "z": 5.868030740951959
+              },
+              "modelGoal": {
+                "x": -1.3492091627962157,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": 3.7209134093262266,
+                "z": 0.6991927233060631
+              }
+            }
+          ]
+        },
+        {
+          "time": 83.12430000000727,
+          "combatTime": 21.417599999999904,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.892689678261391,
+                "z": -3.6221821418475266
+              },
+              "modelGoal": {
+                "x": 9,
+                "z": 5.96895471619937
+              },
+              "rulesGoal": {
+                "x": 0.19344723591816004,
+                "z": 1.0174052460352292
+              }
+            },
+            {
+              "id": 460,
+              "position": {
+                "x": 6.618137087670882,
+                "z": 5.876351171581042
+              },
+              "modelGoal": {
+                "x": -2.3815308854223343,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": 2.79344723591816,
+                "z": 1.0174052460352292
+              }
+            }
+          ]
+        },
+        {
+          "time": 83.38260000000732,
+          "combatTime": 21.67589999999988,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.897551080246036,
+                "z": -3.186328002405604
+              },
+              "modelGoal": {
+                "x": 9,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -0.5827081036963679,
+                "z": 1.13567613968501
+              }
+            }
+          ]
+        },
+        {
+          "time": 83.64090000000736,
+          "combatTime": 21.93419999999986,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.890053757182958,
+                "z": -2.7506482771378895
+              },
+              "modelGoal": {
+                "x": 8.333035048125698,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -1.3921375922517452,
+                "z": 1.1995347543254726
+              }
+            }
+          ]
+        },
+        {
+          "time": 83.96590000000742,
+          "combatTime": 22.259199999999847,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.821041064723664,
+                "z": -2.2069353119903883
+              },
+              "modelGoal": {
+                "x": 7.314720122378339,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -2.3360616657904614,
+                "z": 1.12601061502968
+              }
+            }
+          ]
+        },
+        {
+          "time": 84.31590000000749,
+          "combatTime": 22.60919999999983,
+          "targets": [
+            {
+              "id": 459,
+              "position": {
+                "x": 8.67305349123872,
+                "z": -1.63556242955188
+              },
+              "modelGoal": {
+                "x": 6.146720438443394,
+                "z": 6
+              },
+              "rulesGoal": {
+                "x": -3.419148709808442,
+                "z": 0.8229916747406789
+              }
+            }
+          ]
+        }
+      ],
+      "result": {
+        "status": "waveclear",
+        "score": 3525,
+        "kills": 34,
+        "player": {
+          "x": -2.6149613768907924,
+          "z": -2.9436770311607052,
+          "hp": 91,
+          "maxHp": 100,
+          "shield": 20,
+          "maxShield": 35,
+          "aim": 0.6804331274787324,
+          "shot": 0.10580000000001745,
+          "dash": 1.766600000000005,
+          "dashTime": 0,
+          "pulse": 0,
+          "invincible": 0
+        },
+        "stats": {
+          "shots": 211,
+          "hits": 128,
+          "dashes": 12,
+          "pulses": 3
+        },
+        "dynamicEncounter": {
+          "elapsed": 46.5912000000006,
+          "duration": 45,
+          "maxEnemies": 3,
+          "spawnInterval": 4,
+          "nextSpawnAt": 48,
+          "reinforcements": 31,
+          "batches": 11
+        }
+      }
+    }
+  ],
+  "comparisonNote": "灰色虚线为同一时刻、相同位置的普通电脑导航目标，不是另跑一局的轨迹。模型返回与本地应用状态分别记录。"
+}
