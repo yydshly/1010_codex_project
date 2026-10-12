@@ -1,0 +1,9 @@
+Create a complete 75-second beginner introduction to Google Vids in six scenes. Audience: Chinese-speaking professionals who have never used Vids. All on-screen headlines and short supporting text must be Simplified Chinese. The narration script must be English, about 150 to 170 words total, suitable for an English AI voiceover. Use a calm, clear educational tone and a clean green-and-white visual style. Do not claim the whole process is automatic or that the product is unlimited or free. Do not invent product screenshots, prices, or features.
+Story structure:
+1. Google Vids 入门 — 从想法到可编辑的视频. Explain that Vids is Google's browser-based video creation and editing app.
+2. 先明确目标 — 受众、用途、参考材料. Explain that a clear brief and reliable source material guide the draft.
+3. AI 先出初稿 — 大纲、场景、素材建议. Explain that Gemini can organize a storyboard and draft with suggested media and voiceover. Suggested stock media is not necessarily AI-generated video.
+4. 你来完成编辑 — 改文字、调顺序、统一样式. Explain that the creator checks facts, edits wording, rearranges scenes and adapts brand styles.
+5. 英文 AI 配音 — 审听后再确认. Explain that AI voiceover can read an English script; creators should listen for pronunciation and pacing. This demonstration uses Chinese on-screen text and English narration.
+6. 预览并导出 — 分享协作或输出 MP4. Close with the message: AI saves drafting and production effort, while people own the content and final review.
+Use six coherent editable scenes with restrained transitions and relevant stock media or simple illustrations. Keep text large and concise. Target total duration around 75 seconds.

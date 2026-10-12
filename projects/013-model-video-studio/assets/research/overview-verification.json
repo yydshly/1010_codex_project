@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-12",
+  "checks": [
+    {
+      "url": "http://127.0.0.1:4317/assets/research-overview.png",
+      "status": 200,
+      "contentType": "image/png",
+      "sha256": "cc0515ea5cb34db6e1109f99ae11cd24760f6d3d9e2d9654c64d3c0b17527330",
+      "bytes": 2258752
+    },
+    {
+      "url": "http://127.0.0.1:4323/research-media/research-poster",
+      "status": 200,
+      "contentType": "image/png",
+      "sha256": "cc0515ea5cb34db6e1109f99ae11cd24760f6d3d9e2d9654c64d3c0b17527330",
+      "bytes": 2258752
+    }
+  ],
+  "catalogResources": 35,
+  "downloadLink": true,
+  "staticBuildAssetMatches": true,
+  "provenanceMatches": true,
+  "overviewCallPresent": true,
+  "existingMixedFilmUnchanged": true,
+  "projectTests": 16,
+  "rootCatalogCheck": "14 项目通过",
+  "browserVerification": "未完成：现有浏览器标签停在网络错误页，绑定标签时被浏览器 URL 协议策略拒绝；没有绕过限制。已验证本机 HTTP 图片、页面入口、目录、构建产物与哈希。",
+  "imageVisualReview": "图像工具返回后目视检查九个区域、重要数字和状态标签；经一次修正，四个效果缩图均标注为视觉参考。"
+}

@@ -1,0 +1,51 @@
+{
+  "requestId": "708f89c1-07e8-4654-a311-5cb801ded532",
+  "protocol": "studio-generation/v1",
+  "kind": "lipsync",
+  "sceneId": "scene-4",
+  "story": {
+    "logline": "从一个想法出发，依次完成分镜、素材、中文配音、画布编辑，最后交付完整视频。",
+    "style": "延续已有奶油纸色、柔和紫色和青绿色插画；人物镜头接入前保留当前图文成片。",
+    "notes": "沿用现有成片与真实配音。人物设定与动态镜头是待制作计划，不代表已经生成新的视频。"
+  },
+  "shot": {
+    "mode": "lipsync",
+    "characterIds": [
+      "presenter"
+    ],
+    "speakerId": "",
+    "goal": "说明中文配音与未来人物口型",
+    "location": "映序视频工作台的产品介绍场景",
+    "action": "讲解员面对镜头自然讲述，嘴部动作随中文配音同步。",
+    "camera": "正面中景，固定镜头",
+    "mood": "自然、清晰、友好，句末轻轻点头",
+    "prompt": "待人物参考图准备后，让中文讲解员用当前镜头配音介绍配音功能，保持自然表情与口型同步。",
+    "negativePrompt": "避免额外文字、闪烁和风格突变"
+  },
+  "characters": [
+    {
+      "id": "presenter",
+      "name": "工作台讲解员",
+      "description": "面向初学者的中文讲解员，浅色上衣、自然自信的表情。人物参考图待上传，生成时保持外观与服装一致。",
+      "voice": "",
+      "reference": ""
+    }
+  ],
+  "prompt": "待人物参考图准备后，让中文讲解员用当前镜头配音介绍配音功能，保持自然表情与口型同步。",
+  "negativePrompt": "避免额外文字、闪烁和风格突变",
+  "duration": 10.266666666666667,
+  "aspectRatio": "16:9",
+  "referenceImage": "scene-4-import-1791690923199.png",
+  "referenceVideo": null,
+  "audio": "scene-4-voice-1791690930236.mp3",
+  "narration": "配音模块可连接语音服务，为各段口播生成自然中文声音。画面与声音按场景对应，预览时更容易检查节奏和表达。",
+  "audioText": "配音模块可连接语音服务，为各段口播生成自然中文声音。画面与声音按场景对应，预览时更容易检查节奏和表达。",
+  "silent": false,
+  "timing": {
+    "audioIn": 0,
+    "delay": 0.2,
+    "volume": 1,
+    "videoIn": 0
+  },
+  "mediaTransfer": "references are project-local names; submission embeds base64 media. Never fetch these names as URLs."
+}

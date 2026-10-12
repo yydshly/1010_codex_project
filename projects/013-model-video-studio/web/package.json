@@ -1,0 +1,17 @@
+{
+  "name": "model-video-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check public/composition.js && node --check lib/render.mjs && node --check lib/editor.mjs && node --check lib/production.mjs && node --check public/production-ui.js && node --check public/creator-ui.js && node --check public/audio-mix.js && node --check lib/mix.mjs && node --check lib/research.mjs && node --check public/research-data.js && node --check public/research-ui.js && node --test tests/*.test.mjs",
+    "research:sync": "node scripts/sync-research.mjs",
+    "build:research": "node --check publication/research.js && node scripts/build-research.mjs",
+    "publication:check": "node scripts/check-publication.mjs"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.80"
+  }
+}

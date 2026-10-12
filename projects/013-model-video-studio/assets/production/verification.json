@@ -1,0 +1,60 @@
+{
+  "at": "2026-10-11T09:15:29.212Z",
+  "projectId": "043e1793-a873-4915-a703-25d857bdc135",
+  "sourceId": "9e5697fa-f9ed-4406-8023-918a0166bf25",
+  "taskId": "5695a364-f4bd-441c-b5b2-c4b6783cb6d8",
+  "offlineGuard": {
+    "status": 400,
+    "error": "模型待配置"
+  },
+  "modelGeneration": "not-run; video and lipsync providers disabled",
+  "originalNarrationRetained": true,
+  "metadata": {
+    "duration": 67.354362,
+    "bytes": 4022715,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "sampleRate": "48000"
+      }
+    ]
+  },
+  "sha256": "f01341575a263821cd1a603fba5de28369ef172b935fdb3b001b3a8a4ec48e03",
+  "fullDecode": "passed",
+  "preserved": {
+    "snapshotFiles": 57,
+    "allHashesMatch": true,
+    "controlPlaneFilmUnchanged": true
+  },
+  "browser": {
+    "sceneMood": "自然、清晰、友好，句末轻轻点头",
+    "characterName": "中文讲解员",
+    "requestDownloadedAndMatched": true,
+    "manualVideoApplied": true,
+    "staleRequestDetected": true,
+    "player": {
+      "width": 1920,
+      "height": 1080,
+      "duration": 67.354362,
+      "paused": false,
+      "currentTimeObserved": 0.051948
+    },
+    "consoleErrors": []
+  },
+  "tests": {
+    "passed": 10,
+    "kind": "local unit and controlled HTTP contract; no real video or lipsync model"
+  },
+  "limitations": [
+    "视频与口型模型均未配置，任务准备不调用模型",
+    "沿用已有插画、MiniMax中文配音与程序化缩放视频",
+    "自定义协议需映射供应商API；未实测真实生成效果"
+  ]
+}

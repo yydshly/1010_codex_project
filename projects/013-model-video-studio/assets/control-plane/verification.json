@@ -1,0 +1,85 @@
+{
+  "at": "2026-10-11T05:48:41.041Z",
+  "projectId": "9e5697fa-f9ed-4406-8023-918a0166bf25",
+  "exportRevision": 11,
+  "metadata": {
+    "duration": 67.354362,
+    "bytes": 4010299,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "sampleRate": "48000"
+      }
+    ]
+  },
+  "sha256": "057ac5589c9c1c77c7f1af0fe75e01c6866314c73dd2de875049c9461ea8ff3b",
+  "fullDecode": "passed",
+  "snapshot": {
+    "files": 57,
+    "allHashesMatch": true,
+    "oldFilmsUnchanged": true
+  },
+  "browser": {
+    "title": "把想法，变成作品",
+    "titlePosition": {
+      "x": 110,
+      "y": 285
+    },
+    "fontSize": 74,
+    "firstSceneSeconds": 13.2,
+    "firstSceneVolume": 0.85,
+    "dragMove": {
+      "before": {
+        "x": 110,
+        "y": 285
+      },
+      "after": {
+        "x": 161,
+        "y": 336
+      },
+      "undone": true
+    },
+    "dragResize": {
+      "before": {
+        "w": 720,
+        "h": 222
+      },
+      "after": {
+        "w": 658,
+        "h": 273
+      },
+      "undone": true
+    },
+    "dragReorder": "first scene moved after second; undone",
+    "edgeTrim": "13.2s → 15.2s; undone",
+    "split": {
+      "at": 5,
+      "secondDuration": 8.2,
+      "audioIn": 4.8,
+      "undone": true
+    },
+    "videoUpload": "animated-illustration.mp4",
+    "videoIn": 0.3,
+    "waveformCount": 6,
+    "exportPlayer": {
+      "width": 1920,
+      "height": 1080,
+      "currentTimeObserved": 30.378589,
+      "paused": false
+    },
+    "downloadedR8HashMatches": true,
+    "downloadedFinalHashMatches": true
+  },
+  "limitations": [
+    "单场景一个视频对象；视频原声静音，使用独立旁白轨道",
+    "无背景音乐混音、关键帧动画、协作、录屏、逐词字幕或动态视频生成模型",
+    "本次沿用已验证的 Codex 分镜、Imagegen 图片与 MiniMax 配音，没有新增模型调用"
+  ]
+}

@@ -1,0 +1,10 @@
+import {mkdir,copyFile,readdir,cp} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=fileURLToPath(new URL('../',import.meta.url)), dist=path.join(root,'dist');
+await mkdir(path.join(dist,'assets'),{recursive:true});
+for(const name of ['index.html','styles.css','app.js','data.js','actual.html','actual.css','actual.js']) await copyFile(path.join(root,name),path.join(dist,name));
+const assetRoot=path.resolve(root,'../assets');
+for(const name of await readdir(assetRoot)) if(/\.(jpe?g|png|webp|svg)$/i.test(name)) await copyFile(path.join(assetRoot,name),path.join(dist,'assets',name));
+await cp(path.join(assetRoot,'actual-production'),path.join(dist,'assets','actual-production'),{recursive:true});
+console.log('静态观看页已构建到 web/dist');

@@ -1,0 +1,10 @@
+{
+  "requestId": "7012589a-d262-4443-953a-4be9bf814edf",
+  "protocol": "studio-generation/v1",
+  "kind": "music",
+  "prompt": "轻柔、温暖的器乐背景音乐，适合介绍视频，无人声，和弦与简洁琶音，配合中文讲解。",
+  "duration": 67.33333333333333,
+  "characters": [],
+  "outputFormat": "mp3",
+  "instrumental": true
+}

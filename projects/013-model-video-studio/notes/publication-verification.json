@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-12",
+  "status": "local-verified-awaiting-deployment",
+  "scope": "静态研究与作品；制作服务仍在本机",
+  "sourceBranch": "codex/vids-research-publish",
+  "local": {
+    "rootCheck": true,
+    "projectTests": 16,
+    "publicationFiles": 134,
+    "resourcesPerSite": 48,
+    "summarySections": 9,
+    "summaryParagraphs": 27,
+    "sourceModels": 6,
+    "capabilities": 12,
+    "modules": 7,
+    "browser": {
+      "guideZoom": "150%，原图1024×1536",
+      "musicChapter": 33.333333,
+      "mixComparisonRetainedTime": 33.333333,
+      "googleChapter": 37.12,
+      "googleDuration": 69.032925,
+      "musicDuration": 67.354362,
+      "pendingModels": [
+        "AI音乐",
+        "动态视频",
+        "口型"
+      ],
+      "searchAndModelDetail": true,
+      "sourceDocumentRead": true,
+      "faqs": 14,
+      "errors": [],
+      "viewportWidth": 1265,
+      "horizontalOverflow": false,
+      "mediaStoppedAfterNavigation": true
+    },
+    "secretsScan": {
+      "files": 309,
+      "credentialFindings": 0,
+      "privateRuntimeIncluded": false
+    }
+  },
+  "online": null
+}

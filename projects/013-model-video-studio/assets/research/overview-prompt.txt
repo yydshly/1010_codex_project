@@ -1,0 +1,98 @@
+Use case: infographic-diagram.
+Create ONE publication-quality, highly legible Chinese research overview infographic, portrait 2:3, 2304 × 3456 pixels or higher native resolution with same aspect ratio. Use polished editorial information design: warm ivory paper, dark charcoal text, forest green for Google Vids, lavender for our studio, amber for pending capabilities. Crisp professional Chinese sans-serif typography, no handwriting, no tiny low-contrast text. A restrained blend of precise diagram lines and softly lit paper-craft forms from reference 3. Dense but thoughtfully organized; the text is the subject. Spend pixels on readability, not empty decoration. No mockup, desk, frame, watermark or QR codes.
+
+Input images:
+1 = contact sheet of actual Google Vids export; use selected recognizable green/cream frames as small visual references under the Vids evidence section. Do not include its empty black lower-right cell.
+2 = actual Google Vids editor screenshot; small visual reference showing central canvas + scene timeline.
+3 = our actual exported introduction frame; use its elegant paper-craft lightbulb and lavender/sage scene in the custom studio evidence section and subtle corner background.
+4 = our actual editor screenshot; small visual reference for the unified sidebar + preview + timeline. Preserve the distinction between the source product and our own editor; do not invent video/lipsync results.
+The little effect pictures are visual references, not new evidentiary screenshots. Include the footer qualification specified below.
+
+Overall structure: a large title and thesis; two rich side-by-side evidence panels with visual thumbnails occupying about a quarter of the image; a full-width process diagram; three compact engineering/creative responsibility panels; then a two-column value and roadmap section; a narrow boundary/source footer. Nine numbered sections, all clearly linked and aligned. Preserve ALL the substantive Chinese text below exactly, while fitting with sensible line wrapping. Use arrows meaningfully, status badges and three model-row badges. Avoid duplicate paragraphs.
+
+EXACT CHINESE CONTENT TO RENDER:
+
+Title:
+从 Google Vids 到映序
+副标题：视频创作工作台 · 效果、原理、价值与扩展全景
+核心结论：模型提供文案与素材，工作台负责组织、编辑、混音和导出；人决定内容与最终质量。
+图例：● 已实测   ◇ 接口已预留   ○ 后续方向
+
+01｜Google Vids：源平台的实际效果
+闭源云产品；无公开源码或 tag / commit
+AI 初稿 117.957 秒 / 14 场景 → 编辑成品 69.033 秒 / 7 场景
+中文画面 + 英文 Nyla AI 配音 · 1080p MP4
+AI：大纲、标题、脚本、场景初稿、配音与素材建议
+人工：选模板、删重复与空白、改 6 处标题、清理 6 段残留旁白
+视频来自 Getty Images，音乐来自 Shutterstock；本次未实测 Veo 或 AI 人物。
+Prompt 要求 75 秒 / 6 场景，初稿仍需检查。
+
+02｜映序：我们已经跑通的扩展
+原创本机实现，借鉴编辑器结构
+62.021 秒初稿 → 65.321 秒编辑版 → 67.354 秒混音成片
+中文画面 + 中文口播 · 六场景 · 1080p MP4
+Codex 文案 + Imagegen 插画 + MiniMax 配音
+中央画布编辑 / 侧边故事、角色、音乐、口播 / 底部时间轴
+已支持素材导入、局部修改、项目副本、版本播放与导出
+配乐为原创程序合成；末镜头是插画缩放，未调用视频模型。
+
+03｜共同的创作流程
+创作目标 → 故事与分镜 → 准备素材 → 画布与时间轴 → 审核与混音 → 导出成片
+受众、用途、时长 → 标题、台词、镜头 → 图片 / 视频 / 声音 → 排版、裁剪、节奏 → 事实、音量、字幕 → MP4 + 可编辑项目
+模型生成、素材库选取、手工导入，可以组合使用。
+Google 部分是公开功能与实测流程的抽象，非内部源码还原。
+
+04｜我们的底层实现
+项目 JSON：场景、对象、角色、音频与模型任务
+模型适配层：文案 / 图片 / 配音 / 音乐 / 视频 / 口型
+生成链路：请求快照 → 提交 / 轮询 → 预览审核 → 应用到场景
+编辑与合成：共享排版逻辑 → 时间控制 → FFmpeg 渲染与混音
+混音：口播 + 多条音乐 → 循环 / 淡入淡出 / 口播避让 → H.264 / AAC
+素材和项目保存在本机；视频导出文件不等于可编辑工程。
+
+05｜AI、编辑器与人的分工
+AI 负责：起草内容、生成图片与声音
+编辑器负责：状态、时间轴、画面合成、存储与导出
+人负责：事实、选材、节奏、品牌风格、版权与发布审核
+改版式：无需重新生成素材
+改口播：重配对应段落
+改镜头或角色：重建相关模型请求
+故事规划 ≠ 自动剧情演绎
+角色参考 ≠ 已保证跨镜头一致性
+
+06｜模型能力：状态要分清
+● 文案：Codex CLI 已实跑
+● 图片：对话内 Imagegen 生成后导入
+● 口播：MiniMax 中文配音已实跑
+◇ 音乐 / 视频 / 口型：独立接口已预留，真实模型待接入
+图片 API 可配置；对话图片工具未直接接成网页 API。
+每路可选不同服务；不兼容协议需要适配器。
+已有接口 ≠ 已有模型效果
+
+07｜价值与适用场景
+项目介绍 / 开源研究 / 产品演示 / 教程培训 / 阶段汇报
+减少从空白到初稿的组织工作
+统一风格，复用素材，局部修改后重新导出
+可追溯 AI 生成、素材导入与编辑的来源
+可独立替换模型，便于比较质量、成本与速度
+已有作品可复制复用；正式参数化模板仍待实现。
+模板建议：项目是什么 → 解决什么 → 实际效果 → 核心能力 → 使用流程 → 限制与入口
+
+08｜扩展路线与依赖
+近期：项目介绍模板、品牌预设、真实截图 / 录屏素材槽
+接模型：AI 音乐 → 动态镜头 → 人物口型
+人物口播：角色参考 + 已生成配音 + 口型模型
+剧情短片：故事 + 角色 + 分镜 + 视频模型 + 连续性审核
+编辑增强：逐词字幕、关键帧、多视频轨、更多画幅
+产品化：录屏、云存储、协作、权限与发布
+每一步都需验证质量、耗时、费用与失败恢复。
+
+09｜当前边界与证据
+最多 24 场景 / 每段 1–120 秒 / 每场景 1 视频 + 1 旁白 / 8 条音乐
+固定 1920×1080、30fps；导入视频原声静音。尚无实时协作或云端部署。
+Google 的语言、套餐与额度以官方当前规则为准；不把一次实测当成稳定性保证。
+实测：2026-10-11｜整理：2026-10-12｜来源：项目 007 / 013 的原始视频、制作记录与验证文件
+官方产品：workspace.google.com/products/vids/
+效果缩图参考真实样片，由 AI 排版重绘；实测以原始文件为准。
+
+Constraints: high-density but readable, exact numbers, exact Simplified Chinese characters, all 9 sections. Explicitly visually distinguish verified results from future work. Include REAL recognizable effect references, not just text cards. Clear hierarchy with confident title and generous section spacing. Do not imply the custom application is Google code or that lipsync/music/video AI has already been run. No false benchmark, fabricated prices or business ROI.

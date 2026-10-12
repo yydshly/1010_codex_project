@@ -1,0 +1,231 @@
+{
+  "at": "2026-10-11T10:01:34.593Z",
+  "checks": [
+    {
+      "id": "studio-final",
+      "type": "video",
+      "head": 200,
+      "range": 206
+    },
+    {
+      "id": "studio-draft",
+      "type": "video",
+      "head": 200,
+      "range": 206
+    },
+    {
+      "id": "studio-music",
+      "type": "video",
+      "head": 200,
+      "range": 206
+    },
+    {
+      "id": "studio-poster",
+      "type": "image",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-editor",
+      "type": "video",
+      "head": 200,
+      "range": 206
+    },
+    {
+      "id": "original-music",
+      "type": "audio",
+      "head": 200,
+      "range": 206
+    },
+    {
+      "id": "google-final",
+      "type": "video",
+      "head": 200,
+      "range": 206
+    },
+    {
+      "id": "google-screen",
+      "type": "image",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "google-sheet",
+      "type": "image",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-screen",
+      "type": "image",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "google-draft",
+      "type": "video",
+      "head": 200,
+      "range": 206
+    },
+    {
+      "id": "studio-readme",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-architecture",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-adapters",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-control",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-runtime",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-mixing",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-verification",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "editor-verification",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "music-verification",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-project",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "production-verification",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "image-provenance",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "studio-outline",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "music-request",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "lipsync-request",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "preserved-music",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "preserved-original",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "google-readme",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "google-process",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "google-metadata",
+      "type": "json",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "google-license",
+      "type": "document",
+      "head": 200,
+      "get": 200
+    },
+    {
+      "id": "chinese-voice",
+      "type": "audio",
+      "head": 200,
+      "range": 206
+    }
+  ],
+  "resourceCount": 33,
+  "mediaCount": 8,
+  "readOnly": true,
+  "unknownResourceDenied": true,
+  "existingMusicFilmUnchanged": true,
+  "testsPassed": 16,
+  "preservedFilesVerified": 91,
+  "browser": {
+    "mainSectionsOpened": 8,
+    "musicChapterTime": 33.333333,
+    "comparePreservedTime": 33.333333,
+    "googleFinal": {
+      "duration": 69.032925,
+      "currentTime": 37.149595,
+      "paused": false
+    },
+    "searchAndStatusFilter": true,
+    "openSpecificModelSettings": true,
+    "sidebarHelpLinked": true,
+    "readOriginalVerification": true,
+    "exampleCopyId": "f17aabfd-4d89-464e-87c3-46d43aed1f68",
+    "deepLinkReload": true,
+    "downloadHashMatches": true,
+    "mediaStoppedOnNavigation": true,
+    "horizontalOverflow": false,
+    "consoleErrors": []
+  },
+  "scope": "已有研究及作品汇总；未新增模型调用，未重新验证远端官方视频播放或所有厂商API"
+}

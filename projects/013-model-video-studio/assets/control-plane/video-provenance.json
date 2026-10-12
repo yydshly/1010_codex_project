@@ -1,0 +1,8 @@
+{
+  "file": "animated-illustration.mp4",
+  "source": "../demo/scene-6.png",
+  "sourceKind": "此前实际 Imagegen 插画",
+  "motion": "FFmpeg zoompan，12秒，缓慢放大，960×540，30fps",
+  "modelGeneratedMotion": false,
+  "reason": "验证本地视频素材导入、入点裁剪和画布合成"
+}

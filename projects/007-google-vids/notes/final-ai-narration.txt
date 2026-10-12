@@ -1,0 +1,45 @@
+		784 container AI voiceover
+			785 button Gemini in Workspace can make mistakes.
+			786 heading Description: AI voiceover, Value: 2
+				787 text AI voiceover
+			788 button Close
+			789 tab group
+				790 tab (selectable, settable, boolean) Current scene, Value: 0
+Current scene
+				791 tab (selected, settable, boolean) All scenes, Value: 1
+					836 text All scenes
+			792 button Edit script
+			837 container
+				838 button Scene 1 Welcome to this beginner's guide to Google Vids. Today, we'll explore how this browser-based app helps you transform ideas into professional video content.
+					839 text Scene 1
+					840 text Welcome to this beginner's guide to Google Vids. Today, we'll explore how this browser-based app helps you transform ideas into professional video content.
+				841 button Scene 2 Google Vids is a specialized browser-based application designed for structured video creation and editing, streamlining your workflow directly in the cloud.
+					842 text Scene 2
+					843 text Google Vids is a specialized browser-based application designed for structured video creation and editing, streamlining your workflow directly in the cloud.
+				844 button Scene 3 Before you start, define your project. Clarify your target audience, the video's core purpose, and gather all your essential source materials.
+					845 text Scene 3
+					846 text Before you start, define your project. Clarify your target audience, the video's core purpose, and gather all your essential source materials.
+				847 button Scene 4 Use AI as your co-pilot. It helps generate a structured storyboard, organizes your scenes, and suggests appropriate stock media to build your initial draft.
+					848 text Scene 4
+					849 text Use AI as your co-pilot. It helps generate a structured storyboard, organizes your scenes, and suggests appropriate stock media to build your initial draft.
+				850 button Scene 5 Now, take the reins. Human-led editing is crucial. Review the draft to ensure factual accuracy, perfect the narrative flow, and align the video with your brand style.
+					851 text Scene 5
+					852 text Now, take the reins. Human-led editing is crucial. Review the draft to ensure factual accuracy, perfect the narrative flow, and align the video with your brand style.
+				853 button Scene 6 Finally, add and review the English AI voiceover for natural pacing. Once satisfied, preview your project, collaborate with your team, and export your final MP4 video.
+					854 text Scene 6
+					855 text Finally, add and review the English AI voiceover for natural pacing. Once satisfied, preview your project, collaborate with your team, and export your final MP4 video.
+				856 button Scene 7 AI handles the drafting heavy-lifting, but you maintain full creative control. Collaborate, preview, and export your professional video whenever you are ready.
+					857 text Scene 7
+					858 text AI handles the drafting heavy-lifting, but you maintain full creative control. Collaborate, preview, and export your professional video whenever you are ready.
+			826 heading Voiceover, Value: 1
+				827 text Voiceover
+			828 button Language info
+			829 button Change the voice
+			830 button Preview
+				831 image
+			832 container
+				833 text Nyla
+				834 text Soft, higher pitch
+			835 button Update all voiceovers
+
+The focused UI element is 791 tab (selected, settable, boolean) All scenes, Value: 1

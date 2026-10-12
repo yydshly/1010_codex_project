@@ -1,0 +1,3 @@
+Browser tab: 4, Title: "Untitled video - Google Vids", URL: "https://docs.google.com/videos/d/1oyHS23x97Ps3gZJxRa-GLx9pk-n8vRcvj8ErHmu8Ctg/edit?scene=id.p#scene=id.p".
+There has been no change in the accessibility tree.
+The focused UI element is 0 AXWebArea Untitled video - Google Vids, URL: docs.google.com/videos/d/1oyHS23x97Ps3gZJxRa-GLx9pk-n8vRcvj8ErHmu8Ctg/edit?scene=id.p#scene=id.p

@@ -1,5 +1,14 @@
 # Web 部署与发布范围
 
+## 2026-10-12 · 007 / 013 视频工作台研究
+
+沿用既有研究总图，新增九维完整摘要、六份实际成片、章节与混音对照、12项能力、七个模块、六路模型协议及48份资料。公开版独立生成到两个项目的 `web/dist-public/`，固定路径为 `007-google-vids/research.html` 与 `013-model-video-studio/research.html`。Google原始制作对照与官方样片拆解保留为 `actual.html`、`official.html`。
+
+在013的web目录运行 `npm ci`、`npm run check`、`npm run build:research` 和 `npm run publication:check`，再运行根 `npm run catalog:sync`、`npm run check`、`npm run site:assemble`。CI运行相同发布检查并准备FFmpeg与中文字体。白名单打包134项文件（007 79项、013 55项），逐项保留SHA-256；资料与模型能力交叉引用校验通过。
+
+公开页只读，不上传本机运行目录、密钥、个人配置或Codex认证。创作工作台源码与研究资料提交远端；真实模型调用、编辑保存、渲染仍在本机。线上结果待Actions部署后核验，记录到013的 `notes/publication-verification.json`，确认后再登记demo地址。
+
+
 ## 2026-10-12 · 005 静态研究发布接入
 
 005 使用已有桃源理解总图作为引导，增加九维完整摘要、原版真实效果对照、模块位置、统一时间线图、001 已有导览入口和 15 项资料页内阅读。共用 `notes/research-summary.json` 同步网页、完整摘要笔记和根索引；所有 39 段正文保留。

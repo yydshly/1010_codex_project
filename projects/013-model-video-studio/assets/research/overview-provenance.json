@@ -1,0 +1,89 @@
+{
+  "title": "从 Google Vids 到映序：视频创作工作台研究全景",
+  "date": "2026-10-12",
+  "evidenceDate": "2026-10-11",
+  "method": "内置 image_gen 图像生成和一次针对性标注修正；未使用 CLI，未对生成结果插值放大",
+  "asset": "assets/research/research-overview.png",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "cc0515ea5cb34db6e1109f99ae11cd24760f6d3d9e2d9654c64d3c0b17527330",
+  "prompt": "assets/research/overview-prompt.txt",
+  "correctionPrompt": "assets/research/overview-correction-prompt.txt",
+  "referenceImages": [
+    {
+      "path": "projects/007-google-vids/assets/actual-production/edited-contact-sheet.jpg",
+      "sha256": "c5e224c761a1f0906f529149b7c30c18854a387324f71ac384ed71456ecda35d",
+      "role": "图像生成的视觉参考，生成图不是原始截图"
+    },
+    {
+      "path": "projects/007-google-vids/assets/actual-production/04-edited-video.jpg",
+      "sha256": "37953fa6420f6ac190e30ae6ef1e11a253ee41c4bbe131bd02cb48d66f9fd149",
+      "role": "图像生成的视觉参考，生成图不是原始截图"
+    },
+    {
+      "path": "projects/013-model-video-studio/assets/music/frames/scene-1.png",
+      "sha256": "671a6a3cdba0adfe4084e8a1a9ef11f31f6a9771310e1bff32c7b4c855a0d704",
+      "role": "图像生成的视觉参考，生成图不是原始截图"
+    },
+    {
+      "path": "projects/013-model-video-studio/assets/music/editor.jpg",
+      "sha256": "421c7c539b0a93aac0eb7c805deb8289d2329d54561326fb6b0a8018be380dfe",
+      "role": "图像生成的视觉参考，生成图不是原始截图"
+    }
+  ],
+  "sections": [
+    "Google Vids 实测效果",
+    "映序已跑通的扩展",
+    "共同创作流程",
+    "我们的底层实现",
+    "AI、编辑器与人的分工",
+    "六路模型状态",
+    "价值与适用场景",
+    "扩展路线与依赖",
+    "当前边界与证据"
+  ],
+  "evidenceFiles": [
+    "projects/007-google-vids/README.md",
+    "projects/007-google-vids/notes/actual-production.md",
+    "projects/007-google-vids/notes/export-metadata.json",
+    "projects/013-model-video-studio/README.md",
+    "projects/013-model-video-studio/notes/research-guide.md",
+    "projects/013-model-video-studio/notes/generation-adapters.md",
+    "projects/013-model-video-studio/notes/music-and-creation.md"
+  ],
+  "existingVideos": [
+    {
+      "path": "projects/007-google-vids/assets/actual-production/ai-draft.mp4",
+      "bytes": 10670095,
+      "sha256": "ede63a554b1f25668a724aeb16cb695acd93f942d44bf7f49f1aeb247f61b1a5"
+    },
+    {
+      "path": "projects/007-google-vids/assets/actual-production/edited-final.mp4",
+      "bytes": 5999262,
+      "sha256": "ce70e16c3ced268e08be8aaee9dee99c0de0fc20ee7c4a810de3cacb02176496"
+    },
+    {
+      "path": "projects/013-model-video-studio/assets/demo/ai-draft.mp4",
+      "bytes": 3264344,
+      "sha256": "ea3798c131f913f83d3a3a33834db6d93dbb0400f733ae21ced44bff6ed6491e"
+    },
+    {
+      "path": "projects/013-model-video-studio/assets/demo/final.mp4",
+      "bytes": 3379430,
+      "sha256": "b0e5518d772a651cd0ff2c362d621628c6028db1f95a596e176ca36ab9db685e"
+    },
+    {
+      "path": "projects/013-model-video-studio/assets/music/final.mp4",
+      "bytes": 4405763,
+      "sha256": "f0a6dba8920448876e3af2ad5f30f6cbae00df8061eb237e72ddcdee91098d19"
+    }
+  ],
+  "officialReference": "https://workspace.google.com/products/vids/",
+  "limitations": [
+    "图中的成片与编辑器缩图由 AI 参考实际素材重绘，不是像素级原始截图。原视频和原始截图单独保留。",
+    "Google Vids 为闭源云产品，流程图仅为公开功能与实测的抽象，不描述未公开架构。",
+    "图片尺寸为工具实际返回值1024×1536，原始提示词尺寸并未生效。",
+    "Google Vids 与映序的数字基于已有实测；未在本轮重新生成或导出任何视频。",
+    "音乐、视频和口型模型没有新的实跑效果；参数化介绍模板尚未实现。"
+  ]
+}

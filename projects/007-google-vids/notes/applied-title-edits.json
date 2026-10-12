@@ -1,0 +1,32 @@
+[
+  {
+    "scene": 2,
+    "before": "从想法到成品",
+    "after": "从想法到可编辑初稿"
+  },
+  {
+    "scene": 3,
+    "before": "先明确目标",
+    "after": "明确受众、用途与材料"
+  },
+  {
+    "scene": 4,
+    "before": "AI 辅助生成初稿",
+    "after": "AI 先出初稿"
+  },
+  {
+    "scene": 5,
+    "before": "你来完成最终编辑",
+    "after": "你来核对与编辑"
+  },
+  {
+    "scene": 6,
+    "before": "AI 配音与导出",
+    "after": "英文 AI 配音与导出"
+  },
+  {
+    "scene": 7,
+    "before": "你的创作，由你掌控",
+    "after": "AI 起草，你来把关"
+  }
+]

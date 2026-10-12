@@ -1,0 +1,54 @@
+{
+  "title": "映序 Studio 多模型视频工作台",
+  "scenes": [
+    {
+      "title": "打开创作入口",
+      "body": "从主题出发，串联三类模型完成视频",
+      "narration": "打开映序，输入一个视频主题，就能从创作入口规划全片。文案、画面与声音汇入清晰流程，初次使用也能轻松开始。",
+      "imagePrompt": "A premium editorial illustration of a creative video workspace beginning from one central idea and branching into script, image, and audio modules, elegant interface-inspired composition, soft purple and teal green palette, creamy paper background, gentle depth, refined lighting, no people, no logo, no text, no letters"
+    },
+    {
+      "title": "生成文案分镜",
+      "body": "复用本机Codex或OpenAI兼容接口生成分镜",
+      "narration": "文案模块可复用本机创作能力，或连接开放兼容的模型服务，把主题整理成多个场景，并生成标题、要点和自然口播。",
+      "imagePrompt": "A high-quality editorial illustration of story ideas transforming into an ordered sequence of storyboard cards, modular writing engine connected to a timeline, soft purple and teal green, creamy paper texture, sophisticated clean design, no people, no logo, no text, no letters"
+    },
+    {
+      "title": "准备图片素材",
+      "body": "导入图片，或连接兼容接口与MiniMax图片服务",
+      "narration": "每个场景都能导入自己的图片，也可通过兼容服务生成画面。聊天内置图片工具需先完成生成，再把成品导入工作台。",
+      "imagePrompt": "A refined editorial illustration of image assets flowing from an import tray and an external creative engine into six storyboard frames, layered picture cards with abstract landscapes, soft purple and teal green, creamy paper background, no people, no logo, no text, no letters"
+    },
+    {
+      "title": "生成中文配音",
+      "body": "接入MiniMax或兼容Speech接口生成中文配音",
+      "narration": "配音模块可连接语音服务，为各段口播生成自然中文声音。画面与声音按场景对应，预览时更容易检查节奏和表达。",
+      "imagePrompt": "A polished editorial illustration of smooth audio waveforms aligning with storyboard frames and a video timeline, symbolic voice synthesis controls, soft purple and teal green palette, creamy paper background, warm balanced lighting, no people, no logo, no text, no letters"
+    },
+    {
+      "title": "细调每个场景",
+      "body": "可改标题要点口播排序，并重生成单场景素材",
+      "narration": "生成之后仍由你掌控，可以修改标题、要点和口播，拖动调整场景顺序；若某段不满意，只重新生成该场景素材。",
+      "imagePrompt": "A premium editorial illustration of hands-free visual editing symbols: rearranged storyboard cards, adjustment sliders, refresh icon on one selected scene, precise modular timeline, soft purple and teal green, creamy paper texture, no people, no logo, no text, no letters"
+    },
+    {
+      "title": "导出成片交付",
+      "body": "本机FFmpeg合成并导出1080p MP4文件",
+      "narration": "确认分镜后，映序会在本机合成画面、配音与节奏，导出清晰的一千零八十像素视频文件，成片可直接下载和交付。",
+      "imagePrompt": "A sophisticated editorial illustration of storyboard frames, audio waves, and a timeline converging into a finished high-definition video file with a download symbol, soft purple and teal green, creamy paper background, celebratory subtle glow, no people, no logo, no text, no letters"
+    }
+  ],
+  "evidence": {
+    "provider": "codex",
+    "model": "gpt-5.6-sol",
+    "usage": {
+      "totalTokens": 6533,
+      "inputTokens": 5349,
+      "cachedInputTokens": 0,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 1184,
+      "reasoningOutputTokens": 404
+    },
+    "at": "2026-10-11T03:48:31.190Z"
+  }
+}

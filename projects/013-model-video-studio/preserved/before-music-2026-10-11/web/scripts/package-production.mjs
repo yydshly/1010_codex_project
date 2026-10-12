@@ -1,0 +1,31 @@
+import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { hash } from '../lib/providers.mjs';
+import { probe, command } from '../lib/render.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),dest=path.resolve(root,'../assets/production');
+const state=await(await fetch('http://127.0.0.1:4323/api/state')).json();
+const p=structuredClone(state.projects.find(p=>p.title==='映序 · 剧情与模型接入示例'));
+if(!p||p.busy||!p.exports.length)throw new Error('示例尚未完成导出');
+const source=path.join(root,'.local/projects',p.id),exp=p.exports.at(-1);
+await mkdir(dest,{recursive:true});await cp(path.join(source,exp.file),path.join(dest,'final.mp4'));
+await command(process.env.STUDIO_FFMPEG||'ffmpeg',['-v','error','-i',path.join(dest,'final.mp4'),'-f','null','-']);
+const files=new Set(['ai-draft.json']);
+for(const s of p.scenes){for(const key of ['image','audio','video'])if(s[key])files.add(s[key]);if(s.poster){await mkdir(path.join(dest,'frames'),{recursive:true});const to='frames/'+s.id+'.png';await cp(path.join(source,s.poster),path.join(dest,to));s.poster=to;}}
+for(const a of p.assets||[]){files.add(a.file);if(a.poster)files.add(a.poster);}
+for(const c of p.characters||[])if(c.reference)files.add(c.reference);
+for(const f of files)await cp(path.join(source,f),path.join(dest,f));
+delete p.archivedScenes;p.busy=false;p.exports=[{...exp,file:'final.mp4',label:'剧情工作流回归成片（沿用原素材）'}];
+await writeFile(path.join(dest,'project.json'),JSON.stringify(p,null,2));
+const requestDownload=JSON.parse(await readFile('C:/Users/yun68/Downloads/generation-708f89c1-07e8-4654-a311-5cb801ded532.json','utf8'));
+await writeFile(path.join(dest,'lipsync-request.json'),JSON.stringify(requestDownload,null,2));
+const savedRequest=p.generationTasks.find(t=>t.id===requestDownload.requestId);
+if(!savedRequest||savedRequest.request.narration!==requestDownload.narration)throw new Error('下载请求与服务端任务不一致');
+const preserveRoot=path.resolve(root,'../preserved/v1-2026-10-11'),manifest=JSON.parse(await readFile(path.join(preserveRoot,'manifest.json'),'utf8'));
+for(const f of manifest.files)if(hash(await readFile(path.join(preserveRoot,f.file)))!==f.sha256)throw new Error('快照发生变化：'+f.file);
+const controlHash=hash(await readFile(path.resolve(root,'../assets/control-plane/final.mp4')));
+if(controlHash!=='057ac5589c9c1c77c7f1af0fe75e01c6866314c73dd2de875049c9461ea8ff3b')throw new Error('原控制面成片发生变化');
+const verification=JSON.parse(await readFile(path.join(dest,'verification.json'),'utf8'));
+Object.assign(verification,{at:new Date().toISOString(),metadata:await probe(path.join(dest,'final.mp4')),sha256:hash(await readFile(path.join(dest,'final.mp4'))),fullDecode:'passed',preserved:{snapshotFiles:manifest.files.length,allHashesMatch:true,controlPlaneFilmUnchanged:true},browser:{sceneMood:p.scenes[3].shot.mood,characterName:p.characters[0].name,requestDownloadedAndMatched:true,manualVideoApplied:p.generationTasks.some(t=>t.kind==='video'&&t.state==='applied'&&t.source==='manual'),staleRequestDetected:savedRequest.stale,player:{width:1920,height:1080,duration:67.354362,paused:false,currentTimeObserved:.051948},consoleErrors:[]},tests:{passed:10,kind:'local unit and controlled HTTP contract; no real video or lipsync model'},limitations:['视频与口型模型均未配置，任务准备不调用模型','沿用已有插画、MiniMax中文配音与程序化缩放视频','自定义协议需映射供应商API；未实测真实生成效果']});
+await writeFile(path.join(dest,'verification.json'),JSON.stringify(verification,null,2));
+console.log(JSON.stringify({projectId:p.id,duration:verification.metadata.duration,fullDecode:verification.fullDecode,preservedFiles:manifest.files.length,manualVideoApplied:verification.browser.manualVideoApplied}));

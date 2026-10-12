@@ -1,0 +1,92 @@
+{
+  "at": "2026-10-11T09:40:29.971Z",
+  "projectId": "ef3e1f43-2173-4021-bfad-271e00fa9f3f",
+  "revision": 13,
+  "metadata": {
+    "duration": 67.354362,
+    "bytes": 4405763,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "sampleRate": "48000"
+      }
+    ]
+  },
+  "sha256": "f0a6dba8920448876e3af2ad5f30f6cbae00df8061eb237e72ddcdee91098d19",
+  "fullDecode": "passed",
+  "downloadHashMatches": true,
+  "preserved": {
+    "sourceSnapshots": 28,
+    "existingArtifacts": 6,
+    "originalSnapshot": 57,
+    "allHashesMatch": true
+  },
+  "audioMix": {
+    "master": 1,
+    "narration": 1,
+    "music": 1,
+    "ducking": 0.45,
+    "tracks": [
+      {
+        "id": "46448c68-c702-4d01-9ef9-445bee1e33fe",
+        "asset": "asset-77f3c2ed-c329-46ce-ab2b-894ad5ac6299.wav",
+        "loop": true,
+        "muted": false,
+        "start": 0,
+        "duration": 67.33333333333333,
+        "sourceIn": 0,
+        "volume": 0.35,
+        "fadeIn": 1.2,
+        "fadeOut": 2
+      }
+    ]
+  },
+  "musicSource": {
+    "kind": "original-programmatic-synthesis",
+    "file": "soft-studio-original.wav",
+    "duration": 16,
+    "generator": "web/scripts/compose-demo-music.py",
+    "aiModelUsed": false
+  },
+  "browser": {
+    "importFromMusicSidebar": true,
+    "settingsPersistAfterReload": true,
+    "undoRedo": true,
+    "loopObserved": {
+      "timeline": 24.7,
+      "sourceTime": 8.672726,
+      "sourceDuration": 16
+    },
+    "independentMusicMute": true,
+    "storySidebarSaved": true,
+    "characterAndNarrationPanelsOpened": true,
+    "exportPlayer": {
+      "duration": 67.354362,
+      "width": 1920,
+      "height": 1080,
+      "paused": false
+    },
+    "consoleErrors": []
+  },
+  "models": {
+    "music": "not-configured",
+    "video": "not-configured",
+    "lipsync": "not-configured"
+  },
+  "tests": {
+    "count": 14,
+    "kind": "unit, real FFmpeg audio analysis, local HTTP adapter contracts"
+  },
+  "limitations": [
+    "口播避让按音频有效区间计算，不是逐词语音活动检测",
+    "音乐预览使用浏览器音频，导出使用 FFmpeg AAC 与限制器",
+    "音乐、视频、口型接口未接真实模型，合同测试使用本地模拟服务"
+  ]
+}

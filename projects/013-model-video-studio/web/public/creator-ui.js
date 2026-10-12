@@ -1,0 +1,53 @@
+import {mixOf,newMusicTrack,durationOf} from './audio-mix.js';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const options=(items,value,empty='暂不指定')=>`<option value="">${empty}</option>`+items.map(([id,name])=>`<option value="${esc(id)}" ${id===value?'selected':''}>${esc(name)}</option>`).join('');
+const field=(label,path,value,rows=0)=>`<label>${label}${rows?`<textarea data-create-field="${path}" rows="${rows}" maxlength="${path==='musicBrief'?2000:1000}">${esc(value)}</textarea>`:`<input data-create-field="${path}" value="${esc(value)}" maxlength="${path.endsWith('.name')?40:120}">`}</label>`;
+const number=(label,path,value,max=2880)=>`<label>${label}<input type="number" min="0" max="${max}" step="0.1" data-create-field="${path}" value="${Number(value).toFixed(1)}"></label>`;
+const range=(label,path,value)=>`<label class="mix-fader"><span>${label}<output>${Math.round(value*100)}%</output></span><input aria-label="${label}" type="range" min="0" max="100" step="1" data-create-field="${path}" data-percent="true" value="${Math.round(value*100)}"></label>`;
+const check=(label,path,value)=>`<label class="creator-check"><input type="checkbox" data-create-field="${path}" ${value?'checked':''}>${label}</label>`;
+const button=(action,label,extra='')=>`<button class="panel-button" data-create-action="${action}" ${extra}>${label}</button>`;
+export function creatorUI(h) {
+  const host=document.getElementById('libraryContent');
+  function render(panel){const p=h.project(),s=h.scene();if(!p||!s)return null;
+    p.story||={};p.characters||=[];p.audioMix=mixOf(p);s.shot||={mode:'illustration',characterIds:[],speakerId:''};
+    const shot=s.shot,cfg=h.config(),intro=(title,description)=>`<div class="creator-intro"><small>创作 · 场景 ${h.index()+1}</small><strong>${title}</strong><p>${description}</p></div>`;
+    let html;
+    if(panel==='story')html=intro('让每个镜头接上故事','故事与角色贯穿全片，镜头设定对应当前画布。')+field('故事梗概','story.logline',p.story.logline,3)+field('统一视觉风格','story.style',p.story.style,2)+`<div class="creator-section"><h3>当前镜头 · ${esc(s.title)}</h3><label>制作方式<select data-create-field="scene.shot.mode">${[['illustration','图文镜头'],['video','动态视频'],['lipsync','人物口型']].map(([id,name])=>`<option value="${id}" ${shot.mode===id?'selected':''}>${name}</option>`).join('')}</select></label>${field('叙事目的','scene.shot.goal',shot.goal,2)}${field('动作与环境','scene.shot.action',shot.action,2)}${field('景别与运镜','scene.shot.camera',shot.camera,2)}${field('生成提示词','scene.shot.prompt',shot.prompt,3)}</div>`+button('prepare-shot','准备当前镜头任务',shot.mode==='illustration'?'disabled':'')+button('overview','分镜总览与连续性')+button('tasks','查看生成任务')+`<p class="muted">${shot.mode==='illustration'?'当前使用图片、文字与旁白。':'视频／口型：'+(cfg[shot.mode]?.provider==='studio'?'适配器已配置，实际模型待验证':'模型待配置，可先准备请求或导入结果。')}</p>`;
+    if(panel==='characters')html=intro('角色设定与镜头绑定','参考图、人物描述和音色随镜头组合使用。')+button('add-character','＋ 添加角色')+p.characters.map((c,i)=>`<details class="creator-card" ${i===0?'open':''}><summary>♙ ${esc(c.name)}</summary>${field('角色名',`characters.${i}.name`,c.name)}${field('外观、服装与性格',`characters.${i}.description`,c.description,3)}<label>参考图片<select data-create-field="characters.${i}.reference">${options(h.assets().filter(a=>a.type==='image').map(a=>[a.file,a.name]),c.reference)}</select></label>${c.reference?`<img class="cast-reference" src="/media/${p.id}/${esc(c.reference)}" alt="${esc(c.name)}的参考图">`:''}${field('音色 ID（留空用默认）',`characters.${i}.voice`,c.voice)}<label class="creator-check"><input type="checkbox" data-cast-id="${c.id}" ${(shot.characterIds||[]).includes(c.id)?'checked':''}>在当前镜头出场</label>${button('delete-character','移除角色',`data-id="${c.id}"`)}</details>`).join('')+`<p class="muted">人物外观一致性、表情与口型效果取决于接入的生成模型。当前可保存设定、指定音色并导入人物素材。</p>`;
+    if(panel==='voice')html=intro('把台词变成声音','口播与字幕共用文本，当前镜头单独生成。')+`<div class="creator-status"><i></i>${esc(cfg.voice?.model||'选择配音模型')}</div><label>当前讲述者<select data-create-field="scene.shot.speakerId">${options(p.characters.filter(c=>(shot.characterIds||[]).includes(c.id)).map(c=>[c.id,c.name]),shot.speakerId,'旁白 · 默认音色')}</select></label>`+field('当前镜头口播','scene.narration',s.narration,6)+check('静音当前旁白','scene.silent',s.silent)+`<p class="voice-readiness muted">${s.audio&&s.voiceEvidence?.text===s.narration?'✓ 已有与台词对应的配音':'台词或角色修改后，需要重新生成配音。'}</p>`+button('voice','♫ 生成当前口播')+range('当前旁白音量','scene.timing.volume',s.timing.volume)+`<div class="creator-grid">${number('音频入点 / 秒','scene.timing.audioIn',s.timing.audioIn)}${number('开始延迟 / 秒','scene.timing.delay',s.timing.delay,120)}</div>`+button('fit-audio','按口播长度调整镜头')+button('music','进入音乐与混音');
+    if(panel==='music'){
+      const m=p.audioMix,audio=h.assets().filter(a=>a.type==='audio');
+      html=intro('为故事加一层声音','导入音乐、选择时间段，再与中文口播一起预览和导出。')+button('import-music','＋ 导入背景音乐')+`<div class="creator-add"><select id="musicAsset" aria-label="选择背景音乐素材">${options(audio.map(a=>[a.file,`${a.name} · ${a.duration.toFixed(1)}s`]),'','从音频素材库选择')}</select>${button('add-music','加入音乐轨')}</div><div class="creator-section"><h3>全片混音 <small>${m.tracks.length} / 8 条音乐</small></h3>${range('总输出','audioMix.master',m.master)}${range('旁白总音量','audioMix.narration',m.narration)}${range('音乐总音量','audioMix.music',m.music)}${range('口播期间音乐保留','audioMix.ducking',m.ducking)}<p class="muted">有口播时提前 0.2 秒压低音乐，结束后 0.4 秒恢复。100% 表示不压低。</p></div>`;
+      html+=m.tracks.map((t,i)=>{const asset=audio.find(a=>a.file===t.asset),prefix=`audioMix.tracks.${i}`;return `<details class="creator-card" open><summary>♫ ${i+1}. ${esc(asset?.name||'音乐')}</summary>${range('音乐 '+(i+1)+' 音量',prefix+'.volume',t.volume)}<div class="creator-grid">${number('全片开始 / 秒',prefix+'.start',t.start)}${number('播放长度 / 秒',prefix+'.duration',t.duration)}${number('素材入点 / 秒',prefix+'.sourceIn',t.sourceIn,Math.max(0,(asset?.duration||1)-.05))}${number('淡入 / 秒',prefix+'.fadeIn',t.fadeIn)}${number('淡出 / 秒',prefix+'.fadeOut',t.fadeOut)}</div>${check('循环至片段结束',prefix+'.loop',t.loop)}${check('静音这条音乐',prefix+'.muted',t.muted)}${button('remove-music','移除音乐',`data-id="${t.id}"`)}</details>`;}).join('');
+      html+=`<div class="creator-section"><h3>AI 音乐 <span class="pending-badge">${cfg.music?.provider==='studio'?'适配器已配置':'模型待配置'}</span></h3>${field('音乐创作说明','musicBrief',p.musicBrief,3)}${button('prepare-music','准备音乐生成任务')}${button('tasks','查看任务与导入结果')}${button('config','配置音乐模型')}<p class="muted">准备任务会保存请求。接入模型后可提交生成；当前可使用导入音乐完成制作。</p></div>`;
+    }
+    if(panel==='motion')html=intro('视频与人物口型','从当前镜头的设定和参考素材准备生成任务。')+`<div class="creator-status">视频 ${cfg.video?.provider==='studio'?'已配置':'待配置'} · 口型 ${cfg.lipsync?.provider==='studio'?'已配置':'待配置'}</div><p class="muted">动态视频使用图片和镜头描述。人物口型额外使用角色参考图及对齐后的口播。原始素材保留，审核结果后再应用。</p>`+button('prepare-video','准备动态视频任务')+button('prepare-lipsync','准备人物口型任务')+button('tasks','审核任务与外部结果')+button('config','配置生成模型')+`<p class="muted">尚未连接的模型不会被调用。可先导入已有视频，再关联任务并应用到镜头。</p>`;
+    return html===undefined?null:`<div class="creator-content">${html}</div>`;
+  }
+  function addMusic(asset){if(!asset)throw new Error('请选择或导入音频素材');if(mixOf(h.project()).tracks.length>=8)throw new Error('最多添加8条音乐');h.mutate(()=>h.project().audioMix.tracks.push(newMusicTrack(asset,durationOf(h.project()),crypto.randomUUID())));}
+  async function prepare(kind){await h.save();const p=h.project(),result=await h.api(`/api/projects/${p.id}/generation`,{method:'POST',body:JSON.stringify({revision:p.revision,sceneId:h.scene().id,kind})});h.adopt(result.project);await h.refresh();h.tasks();h.toast('已保存生成请求，尚未调用模型');}
+  const update=h.safe(e=>{
+    const el=e.target,path=el.dataset.createField,cast=el.dataset.castId;if((!path&&!cast)||h.project().busy)return;
+    const signature=el.type==='checkbox'?String(el.checked):el.value;if(el.dataset.lastValue===signature)return;el.dataset.lastValue=signature;
+    if(!el.dataset.started){if(!h.checkpoint())return;el.dataset.started='true';}h.stop();const p=h.project(),s=h.scene();
+    if(cast){const ids=new Set(s.shot.characterIds||[]);el.checked?ids.add(cast):ids.delete(cast);s.shot.characterIds=[...ids];if(!ids.has(s.shot.speakerId)){s.shot.speakerId='';if(s.voiceEvidence)s.voiceEvidence.text='';}}
+    else{let value=el.type==='checkbox'?el.checked:['number','range'].includes(el.type)?Number(el.value):el.value;if(el.type==='number'){if(!el.value||!Number.isFinite(value))return;value=Math.max(Number(el.min),Math.min(Number(el.max),value));if(path.endsWith('.duration'))value=Math.max(.05,value);}
+      if(el.dataset.percent){value/=100;el.parentElement.querySelector('output').textContent=Math.round(value*100)+'%';}
+      const parts=path.split('.');let target=parts[0]==='scene'?s:p;if(parts[0]==='scene')parts.shift();for(const key of parts.slice(0,-1))target=target[key];target[parts.at(-1)]=value;
+      if(path==='scene.shot.speakerId'||/^characters\.\d+\.voice$/.test(path)){const affected=path.startsWith('characters')?p.scenes.filter(s=>s.shot?.speakerId===p.characters[Number(parts[1])].id):[s];for(const sc of affected)if(sc.voiceEvidence)sc.voiceEvidence.text='';}
+    }
+    h.changed(false);h.timeline();if(el.tagName==='SELECT'||cast)h.render();
+    const readiness=host.querySelector('.voice-readiness');if(readiness)readiness.textContent=s.audio&&s.voiceEvidence?.text===s.narration?'✓ 已有与台词对应的配音':'台词或角色修改后，需要重新生成配音。';
+  });
+  host.addEventListener('input',update);host.addEventListener('change',update);host.addEventListener('focusout',e=>delete e.target.dataset.started);
+  host.addEventListener('click',h.safe(async e=>{const b=e.target.closest('[data-create-action]');if(!b||b.disabled||h.project().busy)return;
+    const action=b.dataset.createAction,p=h.project();
+    if(action==='add-music')return addMusic(h.assets().find(a=>a.file===document.getElementById('musicAsset').value));
+    if(action==='remove-music')return h.mutate(()=>p.audioMix.tracks=p.audioMix.tracks.filter(t=>t.id!==b.dataset.id));
+    if(action==='add-character'){if(p.characters.length>=12)throw new Error('最多添加12位角色');return h.mutate(()=>p.characters.push({id:crypto.randomUUID(),name:'新角色',description:'',voice:'',reference:''}));}
+    if(action==='delete-character')return h.mutate(()=>{p.characters=p.characters.filter(c=>c.id!==b.dataset.id);for(const s of p.scenes)if(s.shot){s.shot.characterIds=s.shot.characterIds.filter(id=>id!==b.dataset.id);if(s.shot.speakerId===b.dataset.id){s.shot.speakerId='';if(s.voiceEvidence)s.voiceEvidence.text='';}}});
+    if(action.startsWith('prepare-'))return prepare(action==='prepare-shot'?h.scene().shot.mode:action.slice(8));
+    await h.action(action);
+  }));
+  return {render,addMusic};
+}
