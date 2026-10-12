@@ -88,6 +88,7 @@ export const research = {
     ['网页上可以直接调用平台 OpenAI 吗？', '本次部署的是静态研究与证据页。已有登录通过本机官方 Codex CLI 接入实验，不是可公开转发的平台 API。真实游戏仍需本机服务；公开调用需要独立后端与权限/预算设计。']
   ],
   docs: [
+    ['publication-verification.json', '部署与线上验证', 'GitHub Actions、公开入口、文件哈希和实拍记录'],
     ['research-summary.md', '本次完整摘要', '统一结论、能力、模块、原理、案例与路线'],
     ['research.md', '上游六问研究', '固定版本的源码与机制分析'],
     ['ai-battle.md', '真实模型对战', '逐步/实时模式、延迟与失败记录'],
@@ -95,7 +96,7 @@ export const research = {
     ['showcase.md', '效果页验证', '响应布局、交互与素材说明'],
     ['reuse-roadmap.md', '最初的复用路线', '保留 10 月 10 日阶段方案，进展见本汇总'],
     ['references/003-fog-harbor/README.md', '机甲扩展说明', '动态策略、动作、接口与局限'],
-    ['references/001-sakura-crossing/notes/ai-town.md', 'AI 小镇设计', '角色能力、胜负、模型与执行器'],
+    ['references/001-sakura-crossing/notes/ai-town.md', 'AI 小镇设计', '角色能力、NPC、胜负、模型与执行器'],
     ['references/001-sakura-crossing/notes/ai-town-verification.md', '小镇验证', 'OpenAI 完整局与 MiniMax 错误边界'],
     ['references/001-sakura-crossing/notes/ai-town-minimax-boundary.json', 'MiniMax 原始边界记录', '成功首轮与拒绝的定时策略'],
     ['THIRD_PARTY.md', '来源与授权', '上游 commit、截图、跨项目材料来源'],

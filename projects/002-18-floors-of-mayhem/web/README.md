@@ -4,6 +4,8 @@
 
 ## 完整研究手册
 
+正式入口：[在线研究手册](https://yydshly.github.io/1010_codex_project/002-18-floors-of-mayhem/research.html)。已验证 HTTPS 页面、高清总图、资料搜索和原文阅读。
+
 2026-10-12 新增 `research.html`，作为公开研究主入口；`index.html` 保留原效果展示。新增六类摘要、八类模块、AI 五步、三组实测、六种角色方向、场景/价值/路线、问答和资料阅读。支持案例筛选、资料搜索、原文弹窗、图片放大与 PNG/SVG/JSON 下载。静态发布不调用模型，不包含房间后端或凭据。
 
 总图以确定性 SVG 排版，嵌入六张已有画面，导出高清 PNG 与网页 WebP。数据源 `src/research-content.js` 同步网页、文字摘要、总图及根索引摘要；跨项目材料固定为 `references/` 快照，避免部署依赖未提交的其他应用。
@@ -56,7 +58,7 @@ npm.cmd run preview
 npm.cmd run preview:path
 ```
 
-打开 `http://127.0.0.1:5184/1010_codex_project/002-18-floors-of-mayhem/`。该路径本次已实际验证，当前未发布到公网。
+打开 `http://127.0.0.1:5184/1010_codex_project/002-18-floors-of-mayhem/`。该路径本次已实际验证，静态页面当前已发布到 GitHub Pages。
 
 ## 结构与证据
 
@@ -68,7 +70,7 @@ npm.cmd run preview:path
 - [多 Web 部署约定](../../../docs/web-deployment.md)
 - [返回项目说明](../README.md)
 
-部署尚未启用，登记表 `demo` 保持 `null`。真实模型决策与执行已验证，模型胜率、完整通关和公网联机待验证；三条产品扩展路线尚未实现。
+静态研究与效果页已发布；真实模型决策与执行在本机验证，胜率、完整通关和公网联机待验证。守灯夜任务/NPC 与机甲动态指挥已独立实现；多人小镇仍为方案。
 
 ## 真实 AI 对战观察室
 

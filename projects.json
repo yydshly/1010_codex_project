@@ -77,7 +77,7 @@
       "name": "18 Floors of Mayhem · 像素下落与妖王战",
       "summary": "游戏玩法与 AI 接入的完整研究：涵盖能力、模块、原理、用途、价值与扩展；用像素对战、机甲动态指挥、行动 NPC 小镇三组实测和六张效果总图，说明模型如何通过规则改变真实行动。",
       "source": "https://github.com/andyhuo520/18-floors-of-mayhem",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "Canvas 2D",
         "游戏玩法",
@@ -89,7 +89,7 @@
         "path": "projects/002-18-floors-of-mayhem/assets/research-overview.png",
         "alt": "项目 002 研究总图：像素游戏、模型观察室、原创机甲与 AI 小镇六张效果，以及能力、模块、原理、场景、价值和扩展边界"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/002-18-floors-of-mayhem/research.html",
       "summarySections": [
         {
           "title": "能力：可运行的游戏与模型参与机制",

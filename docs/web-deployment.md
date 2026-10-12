@@ -1,6 +1,8 @@
 # Web 部署与发布范围
 
-## 2026-10-12 · 扩展到 002（发布验证进行中）
+## 2026-10-12 · 002 已发布并验证
+
+首次部署 Actions 38217076338 成功；HTTPS 页面、3840×14460 总图及原始资料已实际核对，记录见 002 的 `notes/publication-verification.json`。
 
 在既有 GitHub Pages 站点新增 `002-18-floors-of-mayhem/research.html`，保留 001 路径。站点首页改为两个研究入口。002 原效果页位于同目录 `index.html`；图像、中文资料与必要跨项目证据快照由其独立构建复制。
 
