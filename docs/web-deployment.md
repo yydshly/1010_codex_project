@@ -6,7 +6,7 @@
 
 公开产物单独放在 `projects/005-taohuayuan/web/dist-public/`。在其 web 目录运行 `npm ci`、`npm run research:sync`、`npm test`、`npm run build:research` 和 `npm run publication:check`，再在根运行 `npm run site:assemble`。005 的原版三维缓存、人物与朗读不随静态研究页发布，CI 不下载上游。既有 001、002、004 路径继续保留。
 
-当前处于发布准备与本地验证阶段；实际 HTTPS 地址、Actions 与逐文件检查结果以 005 的 `notes/publication-verification.json` 为准。引导图和旧笔记保留其制作时状态，不将历史记录改写为新实测。
+已实际发布 [005 完整中文研究手册](https://yydshly.github.io/1010_codex_project/005-taohuayuan/research.html)，首次部署 [Actions 38232072056](https://github.com/yydshly/1010_codex_project/actions/runs/38232072056) 成功。34 项初次发布资源逐文件核对 HTTPS、SHA-256 与已提交源文件一致；线上确认九维 39 段摘要、高清图缩放、Markdown/JSON 资料阅读、搜索和 001 导览导航，保留桌面与窄屏实拍。实际版本和范围以 005 的 `notes/publication-verification.json` 为准。引导图和旧笔记保留其制作时状态，不将历史记录改写为新实测。
 
 ## 2026-10-12 · 004 发布接入
 

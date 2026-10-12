@@ -317,7 +317,7 @@
       "slug": "taohuayuan",
       "name": "桃源 · 豁然开朗",
       "source": "https://github.com/JimLiu/taohuayuan",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "Three.js",
         "文学叙事",
@@ -328,7 +328,7 @@
         "path": "projects/005-taohuayuan/assets/research-overview.png",
         "alt": "005 桃源中文研究总览：原版桃林与山洞揭示、统一时间线原理、001 语音导览扩展、复用价值与后续方向"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/005-taohuayuan/research.html",
       "summary": "桃源文学三维叙事的完整中文研究：涵盖 28 幕导览与十处景致、世界/渲染/导演/内容/漫游模块、程序化造景与音频时间线原理、桃林—山洞—田野的真实效果、001 MiniMax 一分钟导览迁移、使用场景、个人价值、复用与扩展路线；以既有总览图引导，保留笔记、截图、来源授权与实测边界，原版三维复现继续用于本地学习。",
       "summarySections": [
         {

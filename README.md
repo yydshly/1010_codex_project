@@ -20,7 +20,7 @@
 | 001 | [Sakura Crossing · 樱花小街](projects/001-sakura-crossing/README.md) · [上游](https://github.com/Kenton-GMI/sakura-crossing) | 动画风格场景与产品复用研究：统一汇总源库能力、分层模块、渲染与交互原理、真实体验、个人价值及扩展路线；包含研究街、三场景实验、搭建器、中文导览、晴雨漫游与本机 AI 守灯证据。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html) |
 | 002 | [18 Floors of Mayhem · 像素下落与妖王战](projects/002-18-floors-of-mayhem/README.md) · [上游](https://github.com/andyhuo520/18-floors-of-mayhem) | 游戏玩法与 AI 接入的完整研究：涵盖能力、模块、原理、用途、价值与扩展；用像素对战、机甲动态指挥、行动 NPC 小镇三组实测和六张效果总图，说明模型如何通过规则改变真实行动。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/002-18-floors-of-mayhem/research.html) |
 | 004 | [Muster · 场景与协同任务研究](projects/004-muster-ww2/README.md) · [上游](https://github.com/Kenton-GMI/muster-ww2) | Muster 程序化资产系统的完整中文研究与可玩扩展：74 条素材、七类资源、配置约束、场景编辑与六视图，深入资产协议、几何/SDF、材质渲染、路径/IK、规则战斗和任务状态机；以原始效果与总览图引导，首页接入动态营地、陆空协同与机场四阶段任务，完整保留笔记、授权、截图、声音与实测，说明使用场景、现有项目价值、复用与扩展路线及验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/004-muster-ww2/) |
-| 005 | [桃源 · 豁然开朗](projects/005-taohuayuan/README.md) · [上游](https://github.com/JimLiu/taohuayuan) | 桃源文学三维叙事的完整中文研究：涵盖 28 幕导览与十处景致、世界/渲染/导演/内容/漫游模块、程序化造景与音频时间线原理、桃林—山洞—田野的真实效果、001 MiniMax 一分钟导览迁移、使用场景、个人价值、复用与扩展路线；以既有总览图引导，保留笔记、截图、来源授权与实测边界，原版三维复现继续用于本地学习。 | 研究中 | — |
+| 005 | [桃源 · 豁然开朗](projects/005-taohuayuan/README.md) · [上游](https://github.com/JimLiu/taohuayuan) | 桃源文学三维叙事的完整中文研究：涵盖 28 幕导览与十处景致、世界/渲染/导演/内容/漫游模块、程序化造景与音频时间线原理、桃林—山洞—田野的真实效果、001 MiniMax 一分钟导览迁移、使用场景、个人价值、复用与扩展路线；以既有总览图引导，保留笔记、截图、来源授权与实测边界，原版三维复现继续用于本地学习。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/005-taohuayuan/research.html) |
 
 ### 项目预览
 
@@ -346,7 +346,7 @@ Muster 中文理解总览：上游资源与能力、原理、营地和协同任�
 
 005 桃源中文研究总览：原版桃林与山洞揭示、统一时间线原理、001 语音导览扩展、复用价值与后续方向
 
-[研究说明](projects/005-taohuayuan/README.md) · [上游仓库](https://github.com/JimLiu/taohuayuan)
+[研究说明](projects/005-taohuayuan/README.md) · [上游仓库](https://github.com/JimLiu/taohuayuan) · [在线演示](https://yydshly.github.io/1010_codex_project/005-taohuayuan/research.html)
 
 
 <!-- PROJECTS:END -->

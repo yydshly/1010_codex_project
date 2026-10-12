@@ -2,10 +2,17 @@
   "version": 1,
   "projectId": 5,
   "updatedAt": "2026-10-12",
-  "status": "local-verified",
-  "publicUrl": null,
+  "status": "deployed-verified",
+  "publicUrl": "https://yydshly.github.io/1010_codex_project/005-taohuayuan/research.html",
   "scope": "静态研究网页、总览图、真实截图、中文笔记和必要的 001 导览证据；桃源上游三维构建继续仅供本地学习。",
-  "deployment": null,
+  "deployment": {
+    "provider": "GitHub Pages",
+    "sourceCommit": "5611be10454b2e0c2ba836332c727605b10f7370",
+    "actionsRunId": 38232072056,
+    "actionsUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38232072056",
+    "conclusion": "success",
+    "scope": "首次部署与线上验收；后续记录与实拍提交另由同一工作流发布。"
+  },
   "checks": [
     {
       "name": "根索引检查",
@@ -33,7 +40,6 @@
     }
   ],
   "limitations": [
-    "尚未实际部署，线上可用性待验证。",
     "窄屏为桌面浏览器尺寸测试，不代表真实手机。",
     "原版交互实测沿用 2026-10-11 记录；未重新验证完整全篇、听感或学习效果。"
   ],
@@ -95,6 +101,342 @@
         "errors": 0,
         "warnings": 0
       }
+    ]
+  },
+  "onlineResources": {
+    "checkedAt": "2026-10-12T09:56:49.447Z",
+    "sourceCommit": "5611be10454b2e0c2ba836332c727605b10f7370",
+    "responses": [
+      {
+        "path": "research.html",
+        "status": 200
+      },
+      {
+        "path": "index.html",
+        "status": 200
+      },
+      {
+        "path": "documents.json",
+        "status": 200
+      },
+      {
+        "path": "manifest.json",
+        "status": 200
+      }
+    ],
+    "resources": 34,
+    "sha256AndCommittedBytesMatch": true,
+    "checks": [
+      {
+        "url": "materials/notes/research.md",
+        "status": 200,
+        "bytes": 7437,
+        "sha256": "f09915c5df941b86046086851c9d15d1e2b814c5814557db4677b0211c46bbf8",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/notes/research-summary.md",
+        "status": 200,
+        "bytes": 12014,
+        "sha256": "2735043f8753e21cb8dfa9dc42b2a5d23ef826543729b8d061238600c1b2fbfe",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/notes/experiment.md",
+        "status": 200,
+        "bytes": 4328,
+        "sha256": "7c713d8bec905956d7bd2a1e5c7c1982d6ebaae878ed8928f4f0783884bd1ee5",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/notes/provenance.json",
+        "status": 200,
+        "bytes": 767,
+        "sha256": "d3d26e0a269517b6ba550864179f61d610b4769b8902efb090c48873ebde3015",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/THIRD_PARTY.md",
+        "status": 200,
+        "bytes": 2780,
+        "sha256": "2bbdb4d5b26c0d3732fd5b4ba1fc71b3cb762a9886ab9b3288a92882d52bcc7d",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/notes/overview-content.json",
+        "status": 200,
+        "bytes": 11944,
+        "sha256": "54bad329baec3fc377791e41d7531e212c972f2036c4b44e732000b2c5cfa673",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/assets/research-overview-manifest.json",
+        "status": 200,
+        "bytes": 4920,
+        "sha256": "8be6ba505fd8425be7ba1a515553ea2dbab48920e402cb11df8de459b655c776",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/notes/overview-verification.json",
+        "status": 200,
+        "bytes": 2134,
+        "sha256": "eeaa0e6da261372ca206f8f6a0dedc2d3c808034474c725c231db26d22f9f918",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/references/001-sakura-crossing/notes/tour.md",
+        "status": 200,
+        "bytes": 8512,
+        "sha256": "e273a8a6bb51f196518a2dc04f31d1416625a51ef42559896191abb5b914b908",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/references/001-sakura-crossing/notes/tour-voice-generation.json",
+        "status": 200,
+        "bytes": 12871,
+        "sha256": "da2b86454d0c5f8d63081b586fef9a6d5ecf5924398627a8619ab1cb815191fc",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/references/001-sakura-crossing/notes/tour-voice-browser.json",
+        "status": 200,
+        "bytes": 468,
+        "sha256": "c03ca1de58acd7660f3eb1b68a58e9d3d1dc04775452a8edc501373c624e8a43",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/assets/README.md",
+        "status": 200,
+        "bytes": 4784,
+        "sha256": "1a79d9dc0c401111a92a8723e5a4e724b3f0d2a378caca726e2789c961b94b2e",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/web/README.md",
+        "status": 200,
+        "bytes": 4891,
+        "sha256": "640ff9302a0f16ff8b0f62690c5c0fd20d1d5f4be3e29d98a900f56e0c15596c",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/README.md",
+        "status": 200,
+        "bytes": 6312,
+        "sha256": "aa1af918fe577d004157132429def5bf342c648e51b8982512ff6958d0044cdb",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "materials/notes/publication-verification.json",
+        "status": 200,
+        "bytes": 2513,
+        "sha256": "402975f256a2ed8ef53283d6407369e76d154daf77845db8c87ca507589db2bc",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/cave-desktop.jpg",
+        "status": 200,
+        "bytes": 53678,
+        "sha256": "f998f4605e932cd52d7f77c97c069bfeddde7a56a811df14cf6a1d472204058c",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/effect-0.webp",
+        "status": 200,
+        "bytes": 50702,
+        "sha256": "be8eebbfc182d4dd9bcc9f802d79e011c9ea0541f9657e277cd00b357b11891f",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/effect-1.webp",
+        "status": 200,
+        "bytes": 4558,
+        "sha256": "16ed0fadeac80b935454c7e590ad9d659b5763f0b4e8cc7c7bfcc2068a5b9164",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/effect-2.webp",
+        "status": 200,
+        "bytes": 28980,
+        "sha256": "8a19224c004985b798a916a6456e74436eff733f7af23f338641a77e0ea5e7e8",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/effect-before.webp",
+        "status": 200,
+        "bytes": 7834,
+        "sha256": "2d79cab5d4f8294a0d29af14216a3a933bc29d5e30119dee8e10e9a0bd64e205",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/extension-complete.webp",
+        "status": 200,
+        "bytes": 37822,
+        "sha256": "1fd3b30c304294db466e00291f35061b75ee234a55a44d69f00b02387afe72ba",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/forest-desktop.jpg",
+        "status": 200,
+        "bytes": 100817,
+        "sha256": "8275d00997028b73d66fe906ea637e56beb32ce469a8ba280e4c9e7d3b8b4413",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/preview-desktop.jpg",
+        "status": 200,
+        "bytes": 83670,
+        "sha256": "a1300452604713eec3e97baf0aaf72e00600aec9b6b05bd559d45ddc001c500c",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/research-guide.webp",
+        "status": 200,
+        "bytes": 385730,
+        "sha256": "0a48cbf9cbbfc20ff8a57cf95137428722e97fc7c9ebb5213ccd9a7d680cd61a",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/research-overview.png",
+        "status": 200,
+        "bytes": 10894798,
+        "sha256": "3f91cf4f9944e6698edb1f27789e73fec53cb261fad09a42dfe253926b908462",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/research-overview.svg",
+        "status": 200,
+        "bytes": 1059435,
+        "sha256": "5ad1409c980745a6e1d312b3ead914e3b7f9b31f8f052b03340fe641c3e8377a",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/reveal-before.jpg",
+        "status": 200,
+        "bytes": 54599,
+        "sha256": "6a79bae5e0f504a6346b7afc4f780147aea0a8f9a4ab13363ef8cdaadd91c1fc",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/reveal-desktop.jpg",
+        "status": 200,
+        "bytes": 79106,
+        "sha256": "b86c112db4f3993fc7a934268d63dac3b17c484ee99532cbbe46d4535ae73b9b",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/references/001-tour-shop.jpg",
+        "status": 200,
+        "bytes": 83722,
+        "sha256": "05074c4676ccfb760f28ac80f533aa5834ed294e3fb8920b4b9e8a2b67dc16eb",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/references/001-tour-street.jpg",
+        "status": 200,
+        "bytes": 78115,
+        "sha256": "bd51d49f80c3c06237a88c5561ac4fbb2e2a40b2e3d3add84c758cfb9071f2aa",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/references/001-tour-voice-complete.jpg",
+        "status": 200,
+        "bytes": 63730,
+        "sha256": "c15a56c1c19ef6dd672106471784fad2cf006d53b306b109dab8ed47661799d5",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "media/references/001-tour-voice-pavilion.jpg",
+        "status": 200,
+        "bytes": 76440,
+        "sha256": "42996c29ea8fca081afcdf2701370db805433bd928addea09e6c74e450eaf72a",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "research.css",
+        "status": 200,
+        "bytes": 16737,
+        "sha256": "7dea5aee2997d631c54c1479b8d9ee1b5cbde7fa4713b6a8656c1f623b3f938a",
+        "committedSourceMatches": true
+      },
+      {
+        "url": "research.js",
+        "status": 200,
+        "bytes": 5084,
+        "sha256": "f79b08f2965c69841f1e1e6527279ca0fc428aaf4bb352eb77784e63b6a35724",
+        "committedSourceMatches": true
+      }
+    ]
+  },
+  "onlineBrowser": {
+    "url": "https://yydshly.github.io/1010_codex_project/005-taohuayuan/research.html",
+    "checkedAt": "2026-10-12",
+    "checks": [
+      {
+        "name": "完整摘要",
+        "passed": true,
+        "sections": 9,
+        "paragraphs": 39,
+        "documents": 15
+      },
+      {
+        "name": "高清图加载与缩放",
+        "passed": true,
+        "naturalSize": [
+          4000,
+          16308
+        ],
+        "zoom": "100% → 125%"
+      },
+      {
+        "name": "资料搜索",
+        "passed": true,
+        "query": "MiniMax",
+        "matches": 2
+      },
+      {
+        "name": "Markdown 与 JSON 页内阅读",
+        "passed": true,
+        "documents": [
+          {
+            "path": "notes/research-summary.md",
+            "renderedCharacters": 4357
+          },
+          {
+            "path": "references/001-sakura-crossing/notes/tour-voice-generation.json",
+            "renderedCharacters": 10822
+          },
+          {
+            "path": "THIRD_PARTY.md",
+            "renderedCharacters": 1076
+          }
+        ]
+      },
+      {
+        "name": "001 在线导览导航",
+        "passed": true,
+        "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/index.html",
+        "title": "春日研究街 · Sakura Research Lane",
+        "tourControlsPresent": true
+      },
+      {
+        "name": "窄屏无横向溢出",
+        "passed": true,
+        "viewport": [
+          390,
+          844
+        ],
+        "documentWidth": 375
+      },
+      {
+        "name": "本次 005 控制台",
+        "passed": true,
+        "errors": 0,
+        "warnings": 0
+      }
+    ],
+    "screenshots": [
+      "assets/research-online-desktop.png",
+      "assets/research-online-narrow.png"
     ]
   }
 }
