@@ -4,7 +4,7 @@
 
 - `012-threejs-conference/`：27 份手册资料中引用的 Rain Kit API、安装和 GPU 记录、来源说明，以及九张实际运行截图。
 - `005-taohuayuan/README.md`：中文镜头导览所参考的统一时间线研究说明。
-- `manifest.json`：每份必要文件的原始项目路径、字节数与 SHA-256。
+- `manifest.json`：每份必要文件的原始项目路径、快照字节数与 SHA-256，以及原文件 SHA-256。文本统一 LF 和结尾换行，保持内容，确保 Windows 与 Linux 构建一致。
 
 在完整研究仓库中更新原始资料后，运行 `npm run references:sync`。发布克隆中无需其他子项目，`npm run references:check` 直接校验快照。包归档位于 `web/packages/`，仍按自身 PROVENANCE 与各项许可使用。
 

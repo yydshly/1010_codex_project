@@ -120,5 +120,3 @@ export async function miniMaxDecision(config, system, prompt, signal) {
   return { text, model: data.model || config.model, provider: 'minimax', ms: Math.round(performance.now() - start),
     usage: { in: data.usage?.prompt_tokens || 0, out: data.usage?.completion_tokens || 0 } };
 }
-
-

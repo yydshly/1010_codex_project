@@ -25,11 +25,15 @@ if (process.argv.includes('--check')) {
   console.log(`引用快照检查通过：${paths.length} 个必要文件。`);
 } else {
   const files = paths.map(relative => {
-    const bytes = fs.readFileSync(path.join(projects, relative));
+    const original = fs.readFileSync(path.join(projects, relative));
+    // Match the repository's eol=lf policy so Linux CI verifies the same bytes.
+    const bytes = /\.(md|json)$/.test(relative)
+      ? Buffer.from(original.toString('utf8').replace(/\r\n/g, '\n').trimEnd() + '\n')
+      : original;
     const target = path.join(destination, relative);
     fs.mkdirSync(path.dirname(target), { recursive: true });
     fs.writeFileSync(target, bytes);
-    return { path: relative, bytes: bytes.length, sha256: digest(bytes) };
+    return { path: relative, bytes: bytes.length, sha256: digest(bytes), originalSha256: digest(original) };
   });
   fs.writeFileSync(path.join(destination, 'manifest.json'), JSON.stringify({
     schemaVersion: 1, capturedAt: '2026-10-12',
