@@ -8,6 +8,8 @@
 
 实时Cadence训练、手动搬奖励、新种子与原3D场景需本机Python，后台尚未云端部署。正式HTTPS、全部资源SHA-256和浏览器验收成功后才登记demo-ready与实际URL，结果记录在010的 `notes/publication-verification.json`；现有十个发布项目路径保持。
 
+已实际发布 [010完整中文研究](https://yydshly.github.io/1010_codex_project/010-cadence-foraging/research.html) 与 [真实计算回放](https://yydshly.github.io/1010_codex_project/010-cadence-foraging/replay.html)。首次提交 fabba59ff7664f27a86afd5c203bf082fd2a0f27、Actions 38263097566 构建和部署成功；154项初次发布资源HTTP、大小与SHA-256全部一致，根入口和既有十个项目HTTP200。正式网页核对9主题36段、12机制、原图缩放、检索、原文、冷/训练后鱼、独立随机边界、三控制器结算、NPC非零更新、EP播放器和390px窄屏；实拍及逐项记录保留在010资料中。验收后登记正式地址，原图内历史制作状态原样保留。
+
 ## 2026-10-12 · 009 Jevclip 视频研究发布接入
 
 009使用既有2400×7397中文全景图作为网页导读，统一九主题32段完整摘要、九组固定源码职责、两条模型与工具输出分工、源库与演示对照、场景、个人价值和扩展验证路线。15份研究、原始测试、浏览器记录及MIT资料可页内完整阅读和下载；原字幕导入、关键词筛选、时间线、人工取舍、摘要回查与Markdown导出工作台保留。

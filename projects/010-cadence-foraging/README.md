@@ -10,7 +10,7 @@
 | 研究日期 | 2026-10-10 至 2026-10-12 |
 | 许可证与来源 | 上游 GPL-3.0；渲染片段 MIT；见 [来源清单](THIRD_PARTY.md) |
 | 当前状态 | 三个本地场景、NPC 算法可视化；新增历史位置捕鱼预测与两条件四种子对照，见各验证记录 |
-| 在线演示 | 正在接入既有 GitHub Pages；部署与线上验收后登记实际地址。公开研究和真实记录回放，新训练需要本机 Python 服务 |
+| 在线演示 | [正式中文研究](https://yydshly.github.io/1010_codex_project/010-cadence-foraging/research.html) / [真实计算回放](https://yydshly.github.io/1010_codex_project/010-cadence-foraging/replay.html)，已部署并实际验收；新训练需要本机 Python 服务 |
 
 ## 完整中文研究与公开回放
 
@@ -20,7 +20,7 @@
 
 公开网页只播放已完成的真实Python计算，不新建模型或训练；源3D实验、手动搬奖励和新种子仍在本机运行。图稿与历史笔记中的“未部署”和localhost地址属于制作阶段，当前发布状态以验收记录为准；原SVG点击链接保留本机含义，在线使用图旁导航。
 
-在 `web` 执行 `npm.cmd ci`、`npm.cmd run check`、`npm.cmd run build:public`、`npm.cmd run publication:check` 生成独立 `dist-public/`。CI校验已有数据与源代码SHA-256、七项EP数值测试和逐文件发布清单，不重训、不重新生成图、不需要Python或密钥。`npm.cmd run build` 继续生成本机API版。正式HTTPS与浏览器实际验收记录保存在 `notes/publication-verification.json`（发布成功后生成）。
+在 `web` 执行 `npm.cmd ci`、`npm.cmd run check`、`npm.cmd run build:public`、`npm.cmd run publication:check` 生成独立 `dist-public/`。CI校验已有数据与源代码SHA-256、七项EP数值测试和逐文件发布清单，不重训、不重新生成图、不需要Python或密钥。`npm.cmd run build` 继续生成本机API版。正式HTTPS与浏览器实际验收记录保存在 [publication-verification.json](notes/publication-verification.json) 与 [逐文件资源验收](notes/publication-resource-verification.json)；`npm.cmd run publication:verify` 可在对应已发布版本构建后复验全部资源。
 
 ## 统一研究入口与中文理解指南
 
@@ -32,7 +32,7 @@ EP 分步教学和无人机输入选择器属于明确标注的概念示意，�
 
 新增 **[一条鱼的 EP 实际数字单步](http://127.0.0.1:8190/fish-ep.html#ep-player)**：同一条训练鱼依次展示位置差分输入、自由态、真实答案与误差、正／负扰动、7 时刻的连接局部量、参数更新和无答案重算。数字直接取自真实 `TemporalPatchNet.observe()` 的返回值与参数前后数组；由 [记录器](runtime/record_fish_ep.py) 生成 [完整 JSON](notes/fish-ep-sample.json)。这是一条训练鱼、独立冷模型的一次更新检查，区别于主实验每批 8 条鱼及 48 条留出评估；点击只回看，不改当前捕鱼会话。
 
-[首页资料库](http://127.0.0.1:8190/#resources) 按类型检索研究原文、完整 JSON、项目说明、运行源码与配置、实拍截图及许可证，支持全文查看／下载。构建自动复制本项目的声明资源并生成大小与 SHA256，不公开虚拟环境、依赖目录或凭据；大轨迹按需加载。页面保留本机运行要求，尚未公开部署。
+[首页资料库](http://127.0.0.1:8190/#resources) 按类型检索研究原文、完整 JSON、项目说明、运行源码与配置、实拍截图及许可证，支持全文查看／下载。构建自动复制本项目的声明资源并生成大小与 SHA256，不公开虚拟环境、依赖目录或凭据；大轨迹按需加载。实时训练保留本机运行要求；公开研究与真实回放已按上方范围部署。
 
 同页新增 **[EP 理解汇总与独立核验](http://127.0.0.1:8190/fish-ep.html#ep-understanding)**：九章整理活动／权重／输出／标签、正负目标、Newton 求解、局部导数的负号与七时刻求和、中心对比的梯度理由、直接改变一个权重的数值核验、参数接受与无答案重算、实际场景和十个常见疑问。④⑤⑥播放器也补上随查看选择变化的代入推导；固定汇总保持同一个 C[2,0] 例子，回看按钮可恢复该例子的选择器。独立旧快照复算写入原始 JSON，新增测试后共 49 项通过。
 
@@ -164,6 +164,6 @@ flowchart LR
 - 捕鱼新增已完成：真实 TemporalPatchNet 监督时序预测、两种随机运动与三模型/零位移校验、8 次完整四种子实验、42 项 Python/API 测试、三入口构建、两条件真实浏览器导出与全部预测/误差/碰撞核对。
 - EP 数字新增已完成：固定训练鱼的 8 步播放器、真实正负活动与 Newton 步、全部 288 项参数更新、无答案重算及 JSON 下载；48 项 Python/API 测试、五入口构建、29 个查看选项和八步窄屏验证，详见 [记录](notes/fish-verification.md)。
 - 待研究：更多种子与公平调参、更多任务与未见组合、连续路径学习、长延迟、存档恢复。
-- 待验证：真实手机硬件、低性能设备、公开部署；Vite 构建仍提示主包超过 500 kB。
+- 待验证：真实手机硬件、低性能设备与实时训练后台的云端部署；Vite 构建仍提示主包超过 500 kB。
 
 [笔记索引](notes/README.md) · [截图说明](assets/README.md) · [运行引擎](runtime/README.md) · [总项目索引](../../README.md)

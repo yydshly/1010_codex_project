@@ -1,0 +1,41 @@
+{
+  "schema": "cadence-publication-verification/1",
+  "date": "2026-10-12",
+  "firstDeployment": {
+    "commit": "fabba59ff7664f27a86afd5c203bf082fd2a0f27",
+    "workflowRun": 38263097566,
+    "workflowURL": "https://github.com/yydshly/1010_codex_project/actions/runs/38263097566",
+    "build": "success",
+    "deploy": "success",
+    "resources": 154,
+    "allHTTPSSizeAndSHA256Match": true,
+    "preservedProjectsHTTP200": 10,
+    "rootEntryPresent": true
+  },
+  "url": "https://yydshly.github.io/1010_codex_project/010-cadence-foraging/research.html",
+  "replayURL": "https://yydshly.github.io/1010_codex_project/010-cadence-foraging/replay.html",
+  "scope": "完整中文研究、概念说明与已完成的真实Python计算回放；不在线训练，不云端执行原3D/API实验。",
+  "browserChecks": [
+    "正式HTTPS标题正确，9主题36段与12机制均呈现",
+    "两幅原图加载完成，均为3200×6700；PNG下载资源SHA与原图一致",
+    "原图弹窗打开与关闭，摘要关键词检索后恢复完整内容",
+    "原文弹窗显示research-summary.md正文和SHA来源，读取完成后关闭",
+    "捕鱼种子7同一留出鱼：冷Cadence平均误差103.492px、落空；训练后31.240px、命中",
+    "鱼时间轴揭示到+1.20秒，实际位置(330.14,210.77)，预测仍使用同一端点记录",
+    "独立随机种子7全部48鱼：训练后Cadence20.467px、38/48；零位移20.106px、40/48",
+    "NPC第22帧连接1：权重0.2058230750→0.2060256320，实际Δw0.0002025570，全图386/450条连接变化",
+    "四店种子7第600轮：Cadence512、规则596、Q532次命中，与完整记录一致",
+    "街区第24运行（种子43、短暂线索、途中反馈、Trace0）第360趟：Cadence244、规则353、Q301",
+    "原EP播放器加载固定样本：模型种子7、训练鱼1、轨迹1007000、Cadence0.80.0",
+    "能力与业务地图入口呈现12机制、14场景，导航已映射到在线回放",
+    "390px正式研究页内容宽375px含滚动条，无横向溢出；视口已恢复",
+    "正式研究、回放、EP和能力地图检查期间捕获错误日志为空"
+  ],
+  "screenshots": ["assets/publication-live-map.png", "assets/publication-live-mobile.png"],
+  "resourceReceipt": "notes/publication-resource-verification.json",
+  "limitations": [
+    "完整鱼记录按需加载，首次打开需要下载；加载时控件禁用并显示提示。",
+    "公开原SVG内部链接与旧笔记保留本机语境；PNG导览和当前网页导航用于线上查看。",
+    "本次发布没有新增模型训练或真实无人机/业务验证，先前开发留出集不成为独立确认集。"
+  ]
+}

@@ -1,0 +1,1134 @@
+{
+  "schema": "cadence-publication-resource-verification/1",
+  "verifiedAt": "2026-10-12T14:31:34.451Z",
+  "baseURL": "https://yydshly.github.io/1010_codex_project/010-cadence-foraging/",
+  "sections": 9,
+  "paragraphs": 36,
+  "files": [
+    {
+      "path": "applications.html",
+      "status": 200,
+      "bytes": 22402,
+      "sha256": "cde558e60134c3356522af8d6236155546d57054a7b433fd1a34f3c93619a134",
+      "match": true
+    },
+    {
+      "path": "assets/applications-BQ0wxdaO.css",
+      "status": 200,
+      "bytes": 5927,
+      "sha256": "6815d97c5ae7236d1e652111bca73a9f25c03f9d97d9a619dbba90d1e03abfd1",
+      "match": true
+    },
+    {
+      "path": "assets/applications-DcolTMtV.js",
+      "status": 200,
+      "bytes": 5374,
+      "sha256": "f3845840ba9993b9f7383673b50d92d3c7ff3f1a1250d02da50021fcfc5902a2",
+      "match": true
+    },
+    {
+      "path": "assets/cadence-understanding-map-DvocRwg1.png",
+      "status": 200,
+      "bytes": 3235241,
+      "sha256": "e7a01f496facb50ea3edfa774969ebd8202a606f1d6abccccb504dadc329ead9",
+      "match": true
+    },
+    {
+      "path": "assets/capabilities-data-xHYH8s83.js",
+      "status": 200,
+      "bytes": 32773,
+      "sha256": "900cfb887356d07c20b1adff9cbe79569dfbbcffee9e00310380a3cca9cc2b49",
+      "match": true
+    },
+    {
+      "path": "assets/fishEp-BAjnu6-S.js",
+      "status": 200,
+      "bytes": 51046,
+      "sha256": "09268087b6403c458a99015204de6be00b43699319e2546726033ffef3e338ce",
+      "match": true
+    },
+    {
+      "path": "assets/fishEp-BR-HMsqy.css",
+      "status": 200,
+      "bytes": 17536,
+      "sha256": "81cd7973c02e61eac83361b095f18273c1476c54a24c8a816e25abd49b36b9ab",
+      "match": true
+    },
+    {
+      "path": "assets/guide-DwQhhyOZ.js",
+      "status": 200,
+      "bytes": 12462,
+      "sha256": "7bd4908042ae45daf8a9901992a81e9bc65d60c9e34fb56d65c44e4494cb49d6",
+      "match": true
+    },
+    {
+      "path": "assets/guide-style-Ci-KnVw1.css",
+      "status": 200,
+      "bytes": 24814,
+      "sha256": "1452f3748397f3cb127df2fe657b09852e617a9e380ba6e4411f329e44b5737d",
+      "match": true
+    },
+    {
+      "path": "assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "status": 200,
+      "bytes": 670,
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "match": true
+    },
+    {
+      "path": "assets/replay-BPB5Bggy.js",
+      "status": 200,
+      "bytes": 10171,
+      "sha256": "4ff4b3729fa5ed0b7703528f8092fb8ecb3ce3e298bd6d38c6cdb88db0b98e48",
+      "match": true
+    },
+    {
+      "path": "assets/research-DLOstUA5.js",
+      "status": 200,
+      "bytes": 53178,
+      "sha256": "5a5c88b3ce8e33dc801ec327cab6d29892ec9394d4cd21b3fc71dca808b35a7a",
+      "match": true
+    },
+    {
+      "path": "assets/research-style-P7oAAbjl.css",
+      "status": 200,
+      "bytes": 4290,
+      "sha256": "4e4561b6a891df97d20cd1dcddf3026939d584cd048cb18251904d93cdfa6ba3",
+      "match": true
+    },
+    {
+      "path": "fish-ep.html",
+      "status": 200,
+      "bytes": 25461,
+      "sha256": "0aa45712540cebd1ae708b83d532fe2b127e820a6b551b5126a92deba1694865",
+      "match": true
+    },
+    {
+      "path": "guide.html",
+      "status": 200,
+      "bytes": 30425,
+      "sha256": "bf82741a794d816d5e14716304b00d3ed46a522f98960dca388307d19f816fba",
+      "match": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 5794,
+      "sha256": "197ec57b313d4acfb53855e7a3fb019f12bb10d613979b93e015022b9393bd58",
+      "match": true
+    },
+    {
+      "path": "replay.html",
+      "status": 200,
+      "bytes": 6581,
+      "sha256": "ee449b301fd032777b0e80cc518fc8a1e7988229f7e900802a682d0074c9b9b9",
+      "match": true
+    },
+    {
+      "path": "research.html",
+      "status": 200,
+      "bytes": 5794,
+      "sha256": "197ec57b313d4acfb53855e7a3fb019f12bb10d613979b93e015022b9393bd58",
+      "match": true
+    },
+    {
+      "path": "research/assets/algorithm-mobile.png",
+      "status": 200,
+      "bytes": 110444,
+      "sha256": "b9116ba6594bb1cca7cf1d2715a23858c5de301b5d6b91e33c9daf67c1f42066",
+      "match": true
+    },
+    {
+      "path": "research/assets/algorithm-update.png",
+      "status": 200,
+      "bytes": 148903,
+      "sha256": "06984ea2a9caefbe90b2de1d72714a109e2535bdf01a818c9cf30467ee1312b2",
+      "match": true
+    },
+    {
+      "path": "research/assets/cadence-understanding-map.png",
+      "status": 200,
+      "bytes": 3235241,
+      "sha256": "e7a01f496facb50ea3edfa774969ebd8202a606f1d6abccccb504dadc329ead9",
+      "match": true
+    },
+    {
+      "path": "research/assets/cadence-understanding-map.svg",
+      "status": 200,
+      "bytes": 686467,
+      "sha256": "f4bbe4ac749cbbcb5bc176f8d926639959f9ce24bd56e4902119d36381b01648",
+      "match": true
+    },
+    {
+      "path": "research/assets/capabilities-explorer-desktop.jpg",
+      "status": 200,
+      "bytes": 58576,
+      "sha256": "0a4a225a218790c8b4503c7931901d115e24fd7a0ae72990e4a3da679b799e4e",
+      "match": true
+    },
+    {
+      "path": "research/assets/capabilities-loop-mobile.jpg",
+      "status": 200,
+      "bytes": 31683,
+      "sha256": "fbada51af0202e1afe9aaed03ec6f4045fccd06edbf5abe07182c1689d7de4d4",
+      "match": true
+    },
+    {
+      "path": "research/assets/capabilities-overview-desktop.jpg",
+      "status": 200,
+      "bytes": 63434,
+      "sha256": "1094ace379db56ea54cb7c4f5b26d35a579eebd8eaafadeb252be9fdd5fa2dc2",
+      "match": true
+    },
+    {
+      "path": "research/assets/cover.jpg",
+      "status": 200,
+      "bytes": 76483,
+      "sha256": "1450348a498aad88863be3c664e337e662c40ec350e2fc6d9453f016dc2fe43f",
+      "match": true
+    },
+    {
+      "path": "research/assets/desktop-complete.jpg",
+      "status": 200,
+      "bytes": 206840,
+      "sha256": "8e832241e21c9c3bf6a9568b5f1ebe770c07a90337f7e4715df174a435eb04e9",
+      "match": true
+    },
+    {
+      "path": "research/assets/ep-beta-approx-mobile.png",
+      "status": 200,
+      "bytes": 45022,
+      "sha256": "8ff58560385b37fffa397a9bbc496d407f3876bcfb219eb0fcaa3b72c3af5939",
+      "match": true
+    },
+    {
+      "path": "research/assets/ep-beta-factor-desktop.png",
+      "status": 200,
+      "bytes": 100865,
+      "sha256": "4b8a0795db4a3579bbda398b298fbda043b5da3b57ca25a7bd3933cc4119dcf2",
+      "match": true
+    },
+    {
+      "path": "research/assets/ep-contrast-average-mobile.png",
+      "status": 200,
+      "bytes": 37834,
+      "sha256": "74025e545a7b694b933a91b5e2730cbe4c5e2576f2fcb15150b19f9a3f23b80f",
+      "match": true
+    },
+    {
+      "path": "research/assets/ep-contrast-scale-desktop.png",
+      "status": 200,
+      "bytes": 98325,
+      "sha256": "5ced447a4209d9e8422aea74a6ae8710373b3fc3f7ab6af2c6069d9541c1247c",
+      "match": true
+    },
+    {
+      "path": "research/assets/ep-understanding-desktop.png",
+      "status": 200,
+      "bytes": 74724,
+      "sha256": "5353c8cae11734f398b0d96f233e57f98f712ed1000f7fd74f0f8efda8cf6162",
+      "match": true
+    },
+    {
+      "path": "research/assets/ep-understanding-mobile.png",
+      "status": 200,
+      "bytes": 46624,
+      "sha256": "5cfd4e515aa30615ae5e004cdba2628c889dd234f61ce3c7e1fd8411a2eaaff0",
+      "match": true
+    },
+    {
+      "path": "research/assets/ep-weight-check.png",
+      "status": 200,
+      "bytes": 82451,
+      "sha256": "d9be3c63bd1a293e6ad32e2e43cc8c3b2eb22a0e5cc8b82caa276d2a42e27fde",
+      "match": true
+    },
+    {
+      "path": "research/assets/fish-ep-mobile.png",
+      "status": 200,
+      "bytes": 151824,
+      "sha256": "21c9163374ed1e54ab7a5a54b595ab7138ab0dcebb498abdd5b93acced2d32a6",
+      "match": true
+    },
+    {
+      "path": "research/assets/fish-ep-update.png",
+      "status": 200,
+      "bytes": 70172,
+      "sha256": "21f2c6153b4a46010e789c863432ce75e5f005702d8b1e11805215de598d1536",
+      "match": true
+    },
+    {
+      "path": "research/assets/fish-independent-desktop.jpg",
+      "status": 200,
+      "bytes": 292790,
+      "sha256": "f691e1dcc8142c2f1b2af66d676b49af4fbb22e9415b13d6ba08c4ca5efbe222",
+      "match": true
+    },
+    {
+      "path": "research/assets/fish-inertia-desktop.jpg",
+      "status": 200,
+      "bytes": 285620,
+      "sha256": "2250890f88fb832d84ea527a70c6c69488d5c949954ea1b5e817f55915948efb",
+      "match": true
+    },
+    {
+      "path": "research/assets/fish-mobile.jpg",
+      "status": 200,
+      "bytes": 226468,
+      "sha256": "668d219b1550cedce70fe57cd42ef8cb7e3c9567e83dd54c83542af1ef54887a",
+      "match": true
+    },
+    {
+      "path": "research/assets/guide-mobile.png",
+      "status": 200,
+      "bytes": 44037,
+      "sha256": "148b559aacd65e8c7df18223318fdad9136d4fba736f56e6c088bc70941bd787",
+      "match": true
+    },
+    {
+      "path": "research/assets/hub-home.png",
+      "status": 200,
+      "bytes": 87825,
+      "sha256": "e742160668ac5d2d739c329526ff32ff1a083feb6fce1290370e28ebeb1428dd",
+      "match": true
+    },
+    {
+      "path": "research/assets/mobile.jpg",
+      "status": 200,
+      "bytes": 145050,
+      "sha256": "4af2835914140f2e0ab9627cbb42b0470736a9a542a2f1d334ef7a14ce7e78f3",
+      "match": true
+    },
+    {
+      "path": "research/assets/README.md",
+      "status": 200,
+      "bytes": 6074,
+      "sha256": "2f691c34fffd6326e0e0d361820a27de6846aeed2cf0c0f7339d0648e0402618",
+      "match": true
+    },
+    {
+      "path": "research/assets/return-learning.jpg",
+      "status": 200,
+      "bytes": 205555,
+      "sha256": "44e493bed8659a53eb93c413105952d5fafa66e108aca8f01e23e42df9e8d24a",
+      "match": true
+    },
+    {
+      "path": "research/assets/route-cover.jpg",
+      "status": 200,
+      "bytes": 60181,
+      "sha256": "aebe36a78763aaf45984177d903e2fd6dec7bd193f97f26e8757a3f51ec0eda0",
+      "match": true
+    },
+    {
+      "path": "research/assets/route-desktop-complete.jpg",
+      "status": 200,
+      "bytes": 317059,
+      "sha256": "fcbe66aa0b8facc5284cf922a19ba553dfe44b9bfae32fde3e7ba239bafeb14a",
+      "match": true
+    },
+    {
+      "path": "research/assets/route-mobile.jpg",
+      "status": 200,
+      "bytes": 223060,
+      "sha256": "269d38e650bdff29f9d94a9a4b0420b15f524aad77b1af04c6ac957ae4a5b97d",
+      "match": true
+    },
+    {
+      "path": "research/assets/route-sparse-complete.jpg",
+      "status": 200,
+      "bytes": 318952,
+      "sha256": "28505626e56262978cdc85da0866830b029fa1366af46dbd3284addb58a86602",
+      "match": true
+    },
+    {
+      "path": "research/licenses/cadence-GPL-3.0.txt",
+      "status": 200,
+      "bytes": 35823,
+      "sha256": "230184f60bae2feaf244f10a8bac053c8ff33a183bcc365b4d8b876d2b7f4809",
+      "match": true
+    },
+    {
+      "path": "research/licenses/sakura-crossing-MIT.txt",
+      "status": 200,
+      "bytes": 1089,
+      "sha256": "4d842dfde1ff03125b123934836ee1194cf7c9aea2fc91bdd1de38622b77f65f",
+      "match": true
+    },
+    {
+      "path": "research/notes/algorithm-browser-frames.json",
+      "status": 200,
+      "bytes": 404065,
+      "sha256": "49ded903dc3f2b7530cedade980a2eee15ac6356a6bb41a4aa96adff44cba741",
+      "match": true
+    },
+    {
+      "path": "research/notes/algorithm-browser-verification.json",
+      "status": 200,
+      "bytes": 1833,
+      "sha256": "f86d9ec027466ad3ab5572b2683b1d707dc6abf7b8a417b300f2ecf4eb001538",
+      "match": true
+    },
+    {
+      "path": "research/notes/algorithm-implementation.md",
+      "status": 200,
+      "bytes": 24609,
+      "sha256": "3fe16bd866626d8a970b485f67fcf335ef6e82189213274287ba627b346dfa0f",
+      "match": true
+    },
+    {
+      "path": "research/notes/algorithm-inspection.json",
+      "status": 200,
+      "bytes": 19785,
+      "sha256": "1b2ed05f64eef27cdd059d60738bcfdff2acad8e75a37c7ee92f90fce4308d38",
+      "match": true
+    },
+    {
+      "path": "research/notes/algorithm-visualization.md",
+      "status": 200,
+      "bytes": 5066,
+      "sha256": "67b0dd831aab88a130308af5cc5f2efc659e63ec2ec1274805d8e481a4db368c",
+      "match": true
+    },
+    {
+      "path": "research/notes/browser-fish-independent-seed-7.json",
+      "status": 200,
+      "bytes": 967407,
+      "sha256": "49c101900e8201ac703ee574201394ddf8855e805f219c5d25f45da22a70f6d1",
+      "match": true
+    },
+    {
+      "path": "research/notes/browser-fish-inertia-seed-7.json",
+      "status": 200,
+      "bytes": 968635,
+      "sha256": "0fac001f78522e312f42616184eb26aa2d765799204bf950e052caf9261d3984",
+      "match": true
+    },
+    {
+      "path": "research/notes/browser-route-brief-sparse-seed-7-360.json",
+      "status": 200,
+      "bytes": 3006434,
+      "sha256": "574a9a075e182211fe9143efe828296d51aac630e17778812580133b37f76973",
+      "match": true
+    },
+    {
+      "path": "research/notes/browser-route-brief-waypoints-seed-7-360.json",
+      "status": 200,
+      "bytes": 3010985,
+      "sha256": "099c8e302ae54ca3363b532c9389bc3cf601652d102167039c01d0e140c74b4f",
+      "match": true
+    },
+    {
+      "path": "research/notes/browser-seed-7-600.json",
+      "status": 200,
+      "bytes": 133258,
+      "sha256": "40a0fe93850dd76a9e48e485cf488ceff2be1e1cae0c44d545c82ebebec366ac",
+      "match": true
+    },
+    {
+      "path": "research/notes/capabilities-browser-verification.json",
+      "status": 200,
+      "bytes": 26061,
+      "sha256": "276ae3d0b90e7847d7935976d4e854351cbababe1c5666036f97bc89588fa50b",
+      "match": true
+    },
+    {
+      "path": "research/notes/capabilities-scenarios.md",
+      "status": 200,
+      "bytes": 44131,
+      "sha256": "bb64877ff23e9e371b06d6c049b1b004b8e32a576c52c82f8deffcf0943f35f3",
+      "match": true
+    },
+    {
+      "path": "research/notes/capabilities-verification.md",
+      "status": 200,
+      "bytes": 4372,
+      "sha256": "bc7f0f65f964c11219eb8414d4eeb7f85e396461e4c5e19e48b8be988ad17784",
+      "match": true
+    },
+    {
+      "path": "research/notes/earlier-odor-receipt.json.gz",
+      "status": 200,
+      "bytes": 8728,
+      "sha256": "333eedf3e850cefcd4142c7d8ab66c479bfa39ed7e85ba6194d9ddd36e8788d5",
+      "match": true
+    },
+    {
+      "path": "research/notes/evaluation-results.json",
+      "status": 200,
+      "bytes": 709426,
+      "sha256": "be580c346e295c4a76545a9ee377d190ca28bc44f61edd0d00ebc28b1cea38e4",
+      "match": true
+    },
+    {
+      "path": "research/notes/fish-browser-verification.json",
+      "status": 200,
+      "bytes": 1445,
+      "sha256": "822bf8bd3870bf2170a93b0cd8e1d5f895fbb8b8c091dbf74862c27d69152694",
+      "match": true
+    },
+    {
+      "path": "research/notes/fish-ep-sample.json",
+      "status": 200,
+      "bytes": 183279,
+      "sha256": "0d63d3d131fb7c32556e635a7b4d8160291ac4aa2d62b5b003a41092b8fd9c0e",
+      "match": true
+    },
+    {
+      "path": "research/notes/fish-evaluation-results.json",
+      "status": 200,
+      "bytes": 10232448,
+      "sha256": "e22f748f76d5ad41cb4ee5b0fdd901a3ce64e7a909a7a0c653f9569b39bcce4e",
+      "match": true
+    },
+    {
+      "path": "research/notes/fish-layout-verification.json",
+      "status": 200,
+      "bytes": 348,
+      "sha256": "19d0dc440fbfea999002a4034a63e2e292c1157aca7c08d0f22953e2dca96249",
+      "match": true
+    },
+    {
+      "path": "research/notes/fish-research.md",
+      "status": 200,
+      "bytes": 25287,
+      "sha256": "d72daa946eaa9f57f7441128a4e866354ac8358af6c4b3a5bde106a2d79f40e7",
+      "match": true
+    },
+    {
+      "path": "research/notes/fish-verification.md",
+      "status": 200,
+      "bytes": 16300,
+      "sha256": "d588050e8e83d9a14d5383c1e787a991fdc3433f5f7c27d405afb492c14ffbe7",
+      "match": true
+    },
+    {
+      "path": "research/notes/pre-algorithm-completed-session.json",
+      "status": 200,
+      "bytes": 3321740,
+      "sha256": "b0b81ce73e53390b822d1a9f87dafaa341c51d830a1dacab74e289ba4cf5c642",
+      "match": true
+    },
+    {
+      "path": "research/notes/publication-preflight.md",
+      "status": 200,
+      "bytes": 1822,
+      "sha256": "61ad620e70fcf4bb5234092a7e86d7340c8e9c8131d68bcd6b69ee95ee8900d3",
+      "match": true
+    },
+    {
+      "path": "research/notes/README.md",
+      "status": 200,
+      "bytes": 5730,
+      "sha256": "bf46084354c1f2afa9710cfaee1c614564d91e86c18e26b8399f38430e421c11",
+      "match": true
+    },
+    {
+      "path": "research/notes/research-summary.json",
+      "status": 200,
+      "bytes": 14154,
+      "sha256": "63d072fbae2a966835cf879729fbbe35f0c978eac9ee99947c8cc9c091f1ed4c",
+      "match": true
+    },
+    {
+      "path": "research/notes/research-summary.md",
+      "status": 200,
+      "bytes": 13001,
+      "sha256": "16375a653c7953809c6bfc1e7fceda7ded97a29d09c6a831b3d89a49d705c84e",
+      "match": true
+    },
+    {
+      "path": "research/notes/research.md",
+      "status": 200,
+      "bytes": 8745,
+      "sha256": "aa6c766dcbbf941768b165ef0b863be5309f22f45cbe5a2adeb5f79672f5a5d6",
+      "match": true
+    },
+    {
+      "path": "research/notes/route-browser-verification.json",
+      "status": 200,
+      "bytes": 1589,
+      "sha256": "feaacb44d2faecda5b912fd1b44b80a86f8c14d46f7759283b5a65921710f5d4",
+      "match": true
+    },
+    {
+      "path": "research/notes/route-evaluation-results.json",
+      "status": 200,
+      "bytes": 3881146,
+      "sha256": "ab2940a38dbd1252a18ebcbe3cf277ce7b8967fbe1ecc0426e7d2498727b5807",
+      "match": true
+    },
+    {
+      "path": "research/notes/route-research.md",
+      "status": 200,
+      "bytes": 13075,
+      "sha256": "f04d7abce1b7031b20fb70335788a95cf050651c8f420b3b981d57d636adb4a4",
+      "match": true
+    },
+    {
+      "path": "research/notes/route-verification.md",
+      "status": 200,
+      "bytes": 5429,
+      "sha256": "d478883282836d006638d14eecfedae87f0729c39b55d42b79db01586c381c8f",
+      "match": true
+    },
+    {
+      "path": "research/notes/understanding-map-source.json",
+      "status": 200,
+      "bytes": 5438,
+      "sha256": "41fc1ce776a663f7f8a2a10de51b2dc91895283114f4ad27d0e37b5a23964495",
+      "match": true
+    },
+    {
+      "path": "research/notes/understanding-map.md",
+      "status": 200,
+      "bytes": 6388,
+      "sha256": "6ab803f57addc225ce8a2b5d6d30fc4dda3cdf0c42ab7ad55d177fb5ce5bfc6f",
+      "match": true
+    },
+    {
+      "path": "research/notes/verification.md",
+      "status": 200,
+      "bytes": 8772,
+      "sha256": "89918c503e6245a53497e00aa84844c34af067ff848e5ea725ba4026575261dc",
+      "match": true
+    },
+    {
+      "path": "research/README.md",
+      "status": 200,
+      "bytes": 18783,
+      "sha256": "61778b0f25f1eb26138d35dcc3c62579d57fde705a9515ae06614e8b2040ce25",
+      "match": true
+    },
+    {
+      "path": "research/runtime/algorithm_trace.py",
+      "status": 200,
+      "bytes": 14499,
+      "sha256": "3b2c8fa6b15b9783aefc35f3da24fc15ec13e0b11fe052aeba0153b11ae6b4ef",
+      "match": true
+    },
+    {
+      "path": "research/runtime/evaluate_fish.py",
+      "status": 200,
+      "bytes": 2464,
+      "sha256": "06504b73ae1fe12ed9a3d200b952ff3fa0b0d0845e40c5022b08168f5b503f83",
+      "match": true
+    },
+    {
+      "path": "research/runtime/evaluate_routes.py",
+      "status": 200,
+      "bytes": 3393,
+      "sha256": "ea6bb81be5901ad36fcb825b130293c8674e5d955c961889cad3dc854c0084c3",
+      "match": true
+    },
+    {
+      "path": "research/runtime/evaluate.py",
+      "status": 200,
+      "bytes": 3039,
+      "sha256": "16192a7d21a603b7362124edc02f52590b12af0f12e2308d2856c27a54d47206",
+      "match": true
+    },
+    {
+      "path": "research/runtime/experiment.py",
+      "status": 200,
+      "bytes": 8357,
+      "sha256": "f6d886d4c8c3dc664d8efdf283dd5c2716a73012ee18ad5b982da8764ebe1921",
+      "match": true
+    },
+    {
+      "path": "research/runtime/fish_experiment.py",
+      "status": 200,
+      "bytes": 12413,
+      "sha256": "c8d5d4bd6a57bceddc58bcce96fc8c39d634009663b711b6241fdf735d115e30",
+      "match": true
+    },
+    {
+      "path": "research/runtime/inspect_algorithm.py",
+      "status": 200,
+      "bytes": 6042,
+      "sha256": "394212914248ad68dabfe17633d501e4eb047564f80769171fbbdfd983864ee5",
+      "match": true
+    },
+    {
+      "path": "research/runtime/pyproject.toml",
+      "status": 200,
+      "bytes": 423,
+      "sha256": "e809dccc1c8764c33a3840ce38f287ad801b3a5d82c5c216f2eac780be0fdea9",
+      "match": true
+    },
+    {
+      "path": "research/runtime/README.md",
+      "status": 200,
+      "bytes": 7801,
+      "sha256": "b7d4fc43f48c351e2ea40ba04b8faeaa0d9a989c20f30db0e334c646655b8428",
+      "match": true
+    },
+    {
+      "path": "research/runtime/record_fish_ep.py",
+      "status": 200,
+      "bytes": 11638,
+      "sha256": "98a8c00da7c223fb63c4889b2d758bec3e9f181f8cf54a96831c0c71b1c17b46",
+      "match": true
+    },
+    {
+      "path": "research/runtime/route_experiment.py",
+      "status": 200,
+      "bytes": 15768,
+      "sha256": "c14ec22fad4564e11f7b05954e800c4ce6c8ccbed702290ebd9e732499aad07b",
+      "match": true
+    },
+    {
+      "path": "research/runtime/server.py",
+      "status": 200,
+      "bytes": 8288,
+      "sha256": "b51c82f30704c9c13b14f1ae4a3ba022e1e68391400b003c339edd0b7a94ae66",
+      "match": true
+    },
+    {
+      "path": "research/runtime/uv.lock",
+      "status": 200,
+      "bytes": 26011,
+      "sha256": "d0ebf04769185a2002f4b0406eedfbcce61f5566507a6cbd3e3f05688538bcbf",
+      "match": true
+    },
+    {
+      "path": "research/runtime/verify_fish_browser.py",
+      "status": 200,
+      "bytes": 2942,
+      "sha256": "3906e39757b30bfce20490412f05af04f1d62f53519e03ce9d318cf701fd42a6",
+      "match": true
+    },
+    {
+      "path": "research/runtime/verify_route_receipts.py",
+      "status": 200,
+      "bytes": 5008,
+      "sha256": "ae368ab4f112a9634c9290f4c71326f84636b5a99741f95c6cdff25a036aea0a",
+      "match": true
+    },
+    {
+      "path": "research/THIRD_PARTY.md",
+      "status": 200,
+      "bytes": 2688,
+      "sha256": "074f182d1751d0deb5d2b8fb9d753379087f71dd4381e6284bf055fbc42c27bf",
+      "match": true
+    },
+    {
+      "path": "research/web/applications.html",
+      "status": 200,
+      "bytes": 22016,
+      "sha256": "083dbb57022463645d26f5d5034fe81e045990ea06804112add5a99a370e5233",
+      "match": true
+    },
+    {
+      "path": "research/web/fish-ep.html",
+      "status": 200,
+      "bytes": 25256,
+      "sha256": "77e80225046877bdeb0ef34c0c3b9068f1b67ff050d519320b6d419ffbf96a57",
+      "match": true
+    },
+    {
+      "path": "research/web/fishing.html",
+      "status": 200,
+      "bytes": 346,
+      "sha256": "df57eaf69ccb7cb3c16a96149d6300f4012e1c91a4e3f827250a7a82080cdabf",
+      "match": true
+    },
+    {
+      "path": "research/web/guide.html",
+      "status": 200,
+      "bytes": 30194,
+      "sha256": "14ee46f15a0b3761fb440ad1542f35f6b9ed43841a0282becb9e89101f67e002",
+      "match": true
+    },
+    {
+      "path": "research/web/index.html",
+      "status": 200,
+      "bytes": 16206,
+      "sha256": "0297ae20d5a6dbd475d1f54698bae5f9f439ffea7befdcad92cf6327f89b994b",
+      "match": true
+    },
+    {
+      "path": "research/web/package-lock.json",
+      "status": 200,
+      "bytes": 25385,
+      "sha256": "a3df0683e0ae8211529ef66e410aa2514a12ff784c7a4bfc7e6438008a6aa532",
+      "match": true
+    },
+    {
+      "path": "research/web/package.json",
+      "status": 200,
+      "bytes": 1174,
+      "sha256": "e4d1e5ad22de15eedfa1d32e09a98144be45b1e05295aeeef837d41691066078",
+      "match": true
+    },
+    {
+      "path": "research/web/README.md",
+      "status": 200,
+      "bytes": 12674,
+      "sha256": "fcc367ee34202974fe8a78bf4093f6e1e783eb65e00b149d90d4a832d3817cab",
+      "match": true
+    },
+    {
+      "path": "research/web/replay.html",
+      "status": 200,
+      "bytes": 6385,
+      "sha256": "ecb4beb0a6cb9d9775642120a27812b5ae7ab6b34eece9872a75bb4ac64a2e28",
+      "match": true
+    },
+    {
+      "path": "research/web/research.html",
+      "status": 200,
+      "bytes": 5511,
+      "sha256": "5ddf3ac73027268bd1fa3a4d76344bbd8b81f11229b0a6b2c82d1606771c4644",
+      "match": true
+    },
+    {
+      "path": "research/web/route.html",
+      "status": 200,
+      "bytes": 9335,
+      "sha256": "72c3afc708a833868a53c48462548f5cff15a4a4997a28a528dc25f6c8a94061",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/build-publication.mjs",
+      "status": 200,
+      "bytes": 2124,
+      "sha256": "8d8fbb2021a5921d94fad257b6fd71e02beaf9faa63f13438d2ddad9429ece19",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/build-understanding-map.py",
+      "status": 200,
+      "bytes": 28847,
+      "sha256": "0368b04fc1b06e2ae1963c7542502e6d3035cdb7ac9c9417e79f8b056f1a076b",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/check-ep-sample.mjs",
+      "status": 200,
+      "bytes": 905,
+      "sha256": "8b1c1719b265adb1358262222674140f5403abe1c3b793d7bf8cb0e090291d8d",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/check-replay-data.mjs",
+      "status": 200,
+      "bytes": 2133,
+      "sha256": "115d73f6fb991d8adb1560619a9e87e5ce41aec3a4ab14a6c4db56500628c604",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/fish-ep-animation.test.mjs",
+      "status": 200,
+      "bytes": 4017,
+      "sha256": "db00592e7c6eb702ab138b5f80c455bb23d54d9d00368be8f6c6f0803d79decf",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/publication-check.mjs",
+      "status": 200,
+      "bytes": 2044,
+      "sha256": "16bc945c787bbd380ca2edfd7662ad618e6f0b03521be9916f43326ad48974c1",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/sync-capabilities.mjs",
+      "status": 200,
+      "bytes": 8704,
+      "sha256": "dc606b464d4aa8a5d8537fd4b46c98d91bf319f1174e66599dccaf84abb64b9f",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/sync-catalog-entry.mjs",
+      "status": 200,
+      "bytes": 1322,
+      "sha256": "5bf1b2236cc740298433d0c0b657e3a00dd470ef9779467bda338dfba360ba5c",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/sync-fish-results.mjs",
+      "status": 200,
+      "bytes": 960,
+      "sha256": "b2dcfed377df41aff1c319a5ee990bbaab6cad1bba90d74bb7cd42d36b923177",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/sync-research.mjs",
+      "status": 200,
+      "bytes": 992,
+      "sha256": "a0e734069a0dfa3a9adea79953922ed6c7602c5419ead91473e1952649a9b40f",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/sync-resources.mjs",
+      "status": 200,
+      "bytes": 4979,
+      "sha256": "8206e097be4065a3361e670435b35e5febd871250f1ddc218c8b7d6e944e631d",
+      "match": true
+    },
+    {
+      "path": "research/web/scripts/sync-route-results.mjs",
+      "status": 200,
+      "bytes": 1998,
+      "sha256": "aaf60b42a17fc9beb32fcfb264ac02bf241d44fd250bd0f21dd9246c1a2468a5",
+      "match": true
+    },
+    {
+      "path": "research/web/src/algorithm-player.js",
+      "status": 200,
+      "bytes": 19605,
+      "sha256": "a53f2e45f57c18accd7b3deb9f604f9be54d63da780b001f67007a7e3d9a19f9",
+      "match": true
+    },
+    {
+      "path": "research/web/src/algorithm-style.css",
+      "status": 200,
+      "bytes": 8629,
+      "sha256": "53590f10e7e6bd95449775b1110f9c49ea9f059fffc0918bde010cb5051a53d2",
+      "match": true
+    },
+    {
+      "path": "research/web/src/applications-main.js",
+      "status": 200,
+      "bytes": 7266,
+      "sha256": "901c06f47b423c09c55ffeeb6c647af0abe66880c4ff2a96ab72aff208b8bbf1",
+      "match": true
+    },
+    {
+      "path": "research/web/src/applications-style.css",
+      "status": 200,
+      "bytes": 5963,
+      "sha256": "f920564e4f64b20a393c8b264dd9b6699073e5d3ee8595999035771dbb51ca7f",
+      "match": true
+    },
+    {
+      "path": "research/web/src/capabilities-data.js",
+      "status": 200,
+      "bytes": 35090,
+      "sha256": "88dfc6f7656ec695ff9f1db65866c500b296d09fcb1e650f0d40727e740019f0",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fish-ep-beta-bridge.js",
+      "status": 200,
+      "bytes": 8762,
+      "sha256": "a454fcfb00bb429a6a6dc1facd68827cb8b158303490525a508f1d69581a7d18",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fish-ep-contrast-animation.css",
+      "status": 200,
+      "bytes": 4660,
+      "sha256": "d543e93ed25a810ce3c6f306447752d681fc623d35db0c8cbdc642c30e2a9067",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fish-ep-contrast-animation.js",
+      "status": 200,
+      "bytes": 21206,
+      "sha256": "e2d72fd087086f4a838cb21c060a23aefffb09251bbb3158ecf5eef6bd17c5a2",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fish-ep-contrast-model.js",
+      "status": 200,
+      "bytes": 2805,
+      "sha256": "92db486df20a6ae51689cd5a120b974858f0ff3422a6acd670c4bb5ac3e23841",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fish-ep-explainer.js",
+      "status": 200,
+      "bytes": 7146,
+      "sha256": "580f88c43e5b4cb2948fb18da91cd2b3f046ba73e347e123871c0284231139fa",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fish-ep-main.js",
+      "status": 200,
+      "bytes": 24714,
+      "sha256": "b77ad9bf75ff1ab0b2b1280d4106f236b163e1cef3fc7ce3500cfb5daab67ea7",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fish-ep-style.css",
+      "status": 200,
+      "bytes": 6325,
+      "sha256": "3ac29a3912088de489a86f14eb837b04dabcaa7bd5e5d4109bfb0de2abc818e2",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fishing-main.js",
+      "status": 200,
+      "bytes": 24218,
+      "sha256": "edf510a62fcfe4d90a0fa07c972193dfedbfd4d0d4620c3979a065ef86029af5",
+      "match": true
+    },
+    {
+      "path": "research/web/src/fishing-style.css",
+      "status": 200,
+      "bytes": 6651,
+      "sha256": "b7fc6eb74269df868d1b628549511f10c0975c25a53448035d08ce0c499867ee",
+      "match": true
+    },
+    {
+      "path": "research/web/src/guide-main.js",
+      "status": 200,
+      "bytes": 13757,
+      "sha256": "9f91972dbf483100ac65570ed135e110a02f5d3da6de87345e26c84041a780e3",
+      "match": true
+    },
+    {
+      "path": "research/web/src/guide-style.css",
+      "status": 200,
+      "bytes": 6166,
+      "sha256": "2e962f6c1e795ffe08c7cdf11e22a115ec83f0d65ec78bd2eefb2eca0abce73f",
+      "match": true
+    },
+    {
+      "path": "research/web/src/hub-style.css",
+      "status": 200,
+      "bytes": 5887,
+      "sha256": "286367aa9cc40ea251076bd8f6d138b2ec536a36dca2b2f739ee8982e165c3ed",
+      "match": true
+    },
+    {
+      "path": "research/web/src/hub.js",
+      "status": 200,
+      "bytes": 93,
+      "sha256": "e2ece0b9ca9de6fb798cfdf05e0d9a3cfd112ad2875b3e283c6ac2f2844f61b6",
+      "match": true
+    },
+    {
+      "path": "research/web/src/main.js",
+      "status": 200,
+      "bytes": 11731,
+      "sha256": "c71dd479671666421e08a6fde910b3ab0c13b1d89b6c71151754a8c3048be27d",
+      "match": true
+    },
+    {
+      "path": "research/web/src/rendering/palette.js",
+      "status": 200,
+      "bytes": 477,
+      "sha256": "c250bbd3f0a5c2cf5d66f2a8eb155f2e77263c043228e70d5ad5aa2c7511ae81",
+      "match": true
+    },
+    {
+      "path": "research/web/src/rendering/toon.js",
+      "status": 200,
+      "bytes": 5597,
+      "sha256": "8bf914e8d1e938cf581db960be59574fcc9f5b3969801c9b59940f12eb7a6dc7",
+      "match": true
+    },
+    {
+      "path": "research/web/src/replay-main.js",
+      "status": 200,
+      "bytes": 11387,
+      "sha256": "db63674851e3717dbfbae88197d501325c8455e0199f2033fd52619838d267f1",
+      "match": true
+    },
+    {
+      "path": "research/web/src/research-main.js",
+      "status": 200,
+      "bytes": 2159,
+      "sha256": "ca5445bfd3a42fde79f12069a3e378b1bdda58273e475f0a50d99d05ecc95544",
+      "match": true
+    },
+    {
+      "path": "research/web/src/research-style.css",
+      "status": 200,
+      "bytes": 4297,
+      "sha256": "c524da65cc5190700399b733545cb12b44d1c32796e2b1387a30016a5244524d",
+      "match": true
+    },
+    {
+      "path": "research/web/src/resources.js",
+      "status": 200,
+      "bytes": 4457,
+      "sha256": "b18c7a84f100c77869670b29793c4c706c6c45702993b9a103591a649fe6f383",
+      "match": true
+    },
+    {
+      "path": "research/web/src/route-main.js",
+      "status": 200,
+      "bytes": 16001,
+      "sha256": "89195a570255894382d9e5971649588425d559e18b57c38fcd9a108bbc9231e0",
+      "match": true
+    },
+    {
+      "path": "research/web/src/route-style.css",
+      "status": 200,
+      "bytes": 4474,
+      "sha256": "61c6913f10098c67d0e47594cf0828cc039bad4eb8768054fb65c92452e0770d",
+      "match": true
+    },
+    {
+      "path": "research/web/src/street.js",
+      "status": 200,
+      "bytes": 14141,
+      "sha256": "0d82c9fb5968104e9cbe0e3d563d97c6fefd4fcecf12757a6a1948e6b70ede85",
+      "match": true
+    },
+    {
+      "path": "research/web/src/style.css",
+      "status": 200,
+      "bytes": 12840,
+      "sha256": "5eb3e3feca4a37a454dde8d769f8145de9360cd757a2c38936329a627611627c",
+      "match": true
+    },
+    {
+      "path": "research/web/vite.config.js",
+      "status": 200,
+      "bytes": 952,
+      "sha256": "15cba500737143cf543d08e83967a7a6fcbf0e89674a62282283ab0bb32a87b9",
+      "match": true
+    }
+  ],
+  "preservedProjects": [
+    {
+      "slug": "001-sakura-crossing",
+      "status": 200
+    },
+    {
+      "slug": "002-18-floors-of-mayhem",
+      "status": 200
+    },
+    {
+      "slug": "004-muster-ww2",
+      "status": 200
+    },
+    {
+      "slug": "005-taohuayuan",
+      "status": 200
+    },
+    {
+      "slug": "006-telegram-media-downloader",
+      "status": 200
+    },
+    {
+      "slug": "007-google-vids",
+      "status": 200
+    },
+    {
+      "slug": "008-pdoom-video",
+      "status": 200
+    },
+    {
+      "slug": "009-jevclip",
+      "status": 200
+    },
+    {
+      "slug": "013-model-video-studio",
+      "status": 200
+    },
+    {
+      "slug": "014-print-bench",
+      "status": 200
+    }
+  ],
+  "rootEntry": {
+    "status": 200,
+    "cadenceEntry": true
+  },
+  "allMatch": true
+}

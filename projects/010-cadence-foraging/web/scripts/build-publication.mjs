@@ -10,7 +10,10 @@ for(const p of await filesBelow(dist)){
  const rel=path.relative(dist,p).split(path.sep).join('/');
  if(rel.startsWith('research/'))continue;
  if(!/\.(html|js)$/.test(rel))continue;
- let s=await fs.readFile(p,'utf8');for(const [old,next]of links)s=s.replaceAll(old,next);await fs.writeFile(p,s);
+ let s=await fs.readFile(p,'utf8');for(const [old,next]of links)s=s.replaceAll(old,next);
+ if(['guide.html','applications.html','fish-ep.html'].includes(rel))s=s.replace('</header>','</header><aside style="padding:14px 4vw;background:#e8f0e8;color:#23483f;font:14px/1.7 system-ui">公开研究版：模型计算记录回放与概念说明。新训练、手动变化及原SVG内部链接需要本机服务；原图与历史笔记保留制作阶段状态。<a href="./research.html">完整摘要、当前入口与发布范围 →</a></aside>');
+ if(rel==='applications.html')s=s.replace('SVG 中九处截图可进入对应演示。','SVG 中九处截图保留本机链接；在线查看请使用上方回放入口。');
+ await fs.writeFile(p,s);
 }
 await fs.copyFile(path.join(dist,'research.html'),path.join(dist,'index.html'));
 const summary=JSON.parse(await fs.readFile(path.join(web,'../notes/research-summary.json'),'utf8'));

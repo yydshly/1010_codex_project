@@ -13,6 +13,7 @@
     "build": "vite build",
     "build:public": "npm run prebuild && vite build --mode public --outDir dist-public && node scripts/build-publication.mjs",
     "publication:check": "node scripts/publication-check.mjs",
+    "publication:verify": "node scripts/verify-deployment.mjs",
     "preview": "vite preview --host 127.0.0.1 --port 5191 --strictPort"
   },
   "dependencies": { "three": "0.180.0" },
