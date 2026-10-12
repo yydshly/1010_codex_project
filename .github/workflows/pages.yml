@@ -8,6 +8,7 @@ on:
       - 'projects/002-18-floors-of-mayhem/**'
       - 'projects/004-muster-ww2/**'
       - 'projects/005-taohuayuan/**'
+      - 'projects/006-telegram-media-downloader/**'
       - 'projects/007-google-vids/**'
       - 'projects/013-model-video-studio/**'
       - 'projects.json'
@@ -60,6 +61,9 @@ jobs:
         working-directory: projects/004-muster-ww2/web
       - run: npm ci && npm run research:sync && npm test && npm run build:research && npm run publication:check
         working-directory: projects/005-taohuayuan/web
+      - name: Build and verify Telegram media research
+        run: npm run research:sync && npm run check && npm run build && npm run publication:check
+        working-directory: projects/006-telegram-media-downloader/web
       - name: Prepare video verification tools
         run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-cjk
       - name: Verify studio and build Vids research publication

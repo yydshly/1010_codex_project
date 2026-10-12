@@ -1,0 +1,7 @@
+# Preserve upstream source and license bytes across Windows/Linux publication.
+experiments/upstream/telegram-media-downloader.user.js -text -whitespace
+licenses/UPSTREAM-GPL-3.0.txt -text -whitespace
+web/src/*.js text eol=lf
+web/src/*.html text eol=lf
+web/src/*.css text eol=lf
+*.py text eol=lf

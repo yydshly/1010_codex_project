@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-12",
+  "asset": "understanding-summary-20261012.png",
+  "size": [
+    3840,
+    2880
+  ],
+  "renderer": "Pillow + Microsoft YaHei; original deterministic diagram, not an edit of existing images",
+  "generationAttempt": "Built-in image_gen failed with a network error; no output was returned. No CLI/API fallback was used.",
+  "upstream": "https://github.com/Neet-Nestor/Telegram-Media-Downloader",
+  "commit": "169a678627cec090ce1fa8b6eaac250547f0121a",
+  "scriptVersion": "1.212",
+  "upstreamLicense": "GPL-3.0",
+  "evidence": [
+    "../notes/research.md",
+    "../notes/download-testing.md",
+    "../experiments/results/controlled-results.json"
+  ],
+  "scope": "源库与扩展效果均为自绘界面示意；无用户聊天内容；受控实验不替代真实 Telegram 下载。",
+  "textBoundsOutsideCanvas": 0
+}

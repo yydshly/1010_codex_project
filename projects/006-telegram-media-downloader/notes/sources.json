@@ -1,0 +1,19 @@
+{
+  "researchedAt": "2026-10-11",
+  "repository": "https://github.com/Neet-Nestor/Telegram-Media-Downloader",
+  "commit": "169a678627cec090ce1fa8b6eaac250547f0121a",
+  "committedAt": "2026-03-09T06:52:49Z",
+  "scriptVersion": "1.212",
+  "license": "GPL-3.0",
+  "sources": [
+    { "title": "上游 README", "url": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/blob/169a678627cec090ce1fa8b6eaac250547f0121a/README.md" },
+    { "title": "核心源码", "url": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/blob/169a678627cec090ce1fa8b6eaac250547f0121a/src/tel_download.js" },
+    { "title": "下载完整性反馈 #164", "url": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/issues/164" },
+    { "title": "批量下载提案 #159", "url": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/issues/159" },
+    { "title": "多分辨率反馈 #130", "url": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/issues/130" },
+    { "title": "MDN · HTTP Range", "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Range", "verifiedAt": "2026-10-11" },
+    { "title": "MDN · showSaveFilePicker", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/showSaveFilePicker", "verifiedAt": "2026-10-11" }
+  ],
+  "telegramTested": false,
+  "deployed": false
+}

@@ -1,5 +1,13 @@
 # Web 部署与发布范围
 
+## 2026-10-12 · 006 Telegram 媒体研究发布接入
+
+沿用既有 3840×2880 理解总图，在首页提供放大与下载，统一九主题27段完整摘要及九组固定源码职责。覆盖能力与 WebK/WebA 差异、原有效果、双路径与 Range/Blob 原理、账号和网页及脚本分工、用途、个人价值、五阶段扩展、来源许可与验证边界。保留原观察台交互、12项受控实验和正常/截断媒体；用户已取消继续真实 Telegram 下载实测。
+
+固定路径为 `006-telegram-media-downloader/research.html`，`index.html` 为同页别名；公开静态研究网页，不执行下载器或连接 Telegram。无后台、登录、模型或第三方运行依赖。执行子项目 `npm run research:sync`、`npm run check`、`npm run build`、`npm run publication:check`，再执行根 `npm run catalog:sync`、`npm run check` 与 `npm run site:assemble`。38项静态资源由逐文件 SHA-256 清单记录，CI不生成总图、不操作 Telegram 账号。上游原样脚本和 GPL-3.0 保留。
+
+本节记录接入配置。实际部署状态与线上浏览器、逐文件验收见006的 `notes/publication-verification.json`，只有确认发布后才登记项目演示地址。既有001、002、004、005、007和013发布路径保留。
+
 ## 2026-10-12 · 007 / 013 视频工作台研究
 
 沿用既有研究总图，新增九维完整摘要、六份实际成片、章节与混音对照、12项能力、七个模块、六路模型协议及48份资料。公开版独立生成到两个项目的 `web/dist-public/`，固定路径为 `007-google-vids/research.html` 与 `013-model-video-studio/research.html`。Google原始制作对照与官方样片拆解保留为 `actual.html`、`official.html`。

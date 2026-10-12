@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-12",
+  "status": "prepared",
+  "publicUrl": null,
+  "scope": "中文静态研究页；不连接 Telegram，不执行账号下载或模型调用。",
+  "summary": {
+    "topics": 9,
+    "paragraphs": 27,
+    "modules": 9,
+    "source": "notes/understanding-summary.json"
+  },
+  "poster": {
+    "path": "assets/understanding-summary-20261012.png",
+    "width": 3840,
+    "height": 2880,
+    "kind": "沿用既有说明总图；源库与扩展界面均为示意。"
+  },
+  "checks": {
+    "rootCatalog": "passed",
+    "childSyntax": "passed",
+    "build": "passed",
+    "publicationResources": 38,
+    "localBrowser": {
+      "url": "http://127.0.0.1:5186/",
+      "topics": 9,
+      "paragraphs": 27,
+      "modules": 9,
+      "expandAll": 9,
+      "collapseAll": 0,
+      "posterNaturalSize": [
+        3840,
+        2880
+      ],
+      "zoom": "100% → 150%；图片1761px、视口1174px，可滚动",
+      "viewportOverflow": [
+        {
+          "width": 390,
+          "documentWidth": 375,
+          "result": "passed"
+        },
+        {
+          "width": 320,
+          "documentWidth": 305,
+          "result": "passed"
+        }
+      ],
+      "consoleErrors": [],
+      "brokenImages": [],
+      "subpath": {
+        "url": "http://127.0.0.1:5188/1010_codex_project/006-telegram-media-downloader/research.html",
+        "topics": 9,
+        "modules": 9,
+        "posterWidth": 3840,
+        "consoleErrors": [],
+        "escapeClosesDialog": true,
+        "focusRestored": "open-guide"
+      }
+    }
+  },
+  "screenshots": [
+    "assets/publication-desktop-20261012.png",
+    "assets/publication-mobile-20261012.png"
+  ],
+  "upstream": {
+    "repository": "https://github.com/Neet-Nestor/Telegram-Media-Downloader",
+    "commit": "169a678627cec090ce1fa8b6eaac250547f0121a",
+    "version": "1.212",
+    "license": "GPL-3.0",
+    "sha256": "80167ae47412eba6030c470a387e4e3e546e3b7a663e99b8dac92cb7d1d30ecf"
+  },
+  "limitations": [
+    "真实 Telegram 图片、视频、语音、Stories 未实测，用户已取消继续测试。",
+    "12项受控实验不推算真实账号成功率；9项完整、2项中止、1项截断。",
+    "队列、自动归档、来源索引、AI、断点续传属于未实现扩展。",
+    "窄屏检查是桌面浏览器视口模拟，手机真机未验证。",
+    "线上部署与资源验收待执行。"
+  ]
+}

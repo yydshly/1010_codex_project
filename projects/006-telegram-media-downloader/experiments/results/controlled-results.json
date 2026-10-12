@@ -1,0 +1,3796 @@
+{
+  "testedAt": "2026-10-11T02:31:52.860Z",
+  "revision": "169a678627cec090ce1fa8b6eaac250547f0121a",
+  "scriptVersion": "1.212",
+  "sourceSha256": "80167ae47412eba6030c470a387e4e3e546e3b7a663e99b8dac92cb7d1d30ecf",
+  "environment": {
+    "node": "v22.15.0",
+    "platform": "win32",
+    "network": "localhost real HTTP",
+    "dom": "minimal test double",
+    "save": "anchor adapter / queued writable test double"
+  },
+  "scope": "受控源码实验；没有连接 Telegram，没有真实浏览器下载，不证明 Telegram DOM、权限、原图、最高画质或 Stories 当前兼容性。图片 HTTP 读取由保存适配器执行。",
+  "instrumentation": "VM 内仅在 IIFE 结束前追加三个函数的测试导出；原下载函数、定时器与 Stories 路由代码未改。",
+  "fixtures": {
+    "image": {
+      "file": "test-image.jpeg",
+      "bytes": 17802,
+      "sha256": "ca3d329f8714db5fa23cfcec5ed2abab8d34e4cb7fb2071e70d2190d3b4e43b8"
+    },
+    "video": {
+      "file": "test-video.mp4",
+      "bytes": 382362,
+      "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e"
+    },
+    "voice": {
+      "file": "test-voice.ogg",
+      "bytes": 36731,
+      "sha256": "4377a5f0eee3aa60e05bac62ca0d5e498f6d479d38cebed75cd679dde831ff5f"
+    }
+  },
+  "results": [
+    {
+      "id": "image-anchor",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "image",
+      "responseMode": "range",
+      "route": "image",
+      "writableMode": false,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-image.jpeg",
+        "bytes": 17802,
+        "sha256": "ca3d329f8714db5fa23cfcec5ed2abab8d34e4cb7fb2071e70d2190d3b4e43b8"
+      },
+      "saved": [
+        {
+          "file": "image-anchor.jpeg",
+          "suggestedName": "3ty7x3xn.jpeg",
+          "bytes": 17802,
+          "sha256": "ca3d329f8714db5fa23cfcec5ed2abab8d34e4cb7fb2071e70d2190d3b4e43b8",
+          "matchesOriginal": true,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": null,
+          "status": 200,
+          "contentRange": null,
+          "bytes": 17802
+        }
+      ],
+      "buttonInjected": null,
+      "timeline": [],
+      "progress": null,
+      "durationMs": 45,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 3ty7x3xn.jpeg: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "video-range",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "video",
+      "responseMode": "range",
+      "route": "video",
+      "writableMode": false,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-video.mp4",
+        "bytes": 382362,
+        "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e"
+      },
+      "saved": [
+        {
+          "file": "video-range.mp4",
+          "suggestedName": "1nd7phh.mp4",
+          "bytes": 382362,
+          "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e",
+          "matchesOriginal": true,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 206,
+          "contentRange": "bytes 0-8191/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=8192-",
+          "status": 206,
+          "contentRange": "bytes 8192-16383/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=16384-",
+          "status": 206,
+          "contentRange": "bytes 16384-24575/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=24576-",
+          "status": 206,
+          "contentRange": "bytes 24576-32767/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=32768-",
+          "status": 206,
+          "contentRange": "bytes 32768-40959/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=40960-",
+          "status": 206,
+          "contentRange": "bytes 40960-49151/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=49152-",
+          "status": 206,
+          "contentRange": "bytes 49152-57343/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=57344-",
+          "status": 206,
+          "contentRange": "bytes 57344-65535/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=65536-",
+          "status": 206,
+          "contentRange": "bytes 65536-73727/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=73728-",
+          "status": 206,
+          "contentRange": "bytes 73728-81919/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=81920-",
+          "status": 206,
+          "contentRange": "bytes 81920-90111/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=90112-",
+          "status": 206,
+          "contentRange": "bytes 90112-98303/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=98304-",
+          "status": 206,
+          "contentRange": "bytes 98304-106495/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=106496-",
+          "status": 206,
+          "contentRange": "bytes 106496-114687/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=114688-",
+          "status": 206,
+          "contentRange": "bytes 114688-122879/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=122880-",
+          "status": 206,
+          "contentRange": "bytes 122880-131071/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=131072-",
+          "status": 206,
+          "contentRange": "bytes 131072-139263/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=139264-",
+          "status": 206,
+          "contentRange": "bytes 139264-147455/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=147456-",
+          "status": 206,
+          "contentRange": "bytes 147456-155647/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=155648-",
+          "status": 206,
+          "contentRange": "bytes 155648-163839/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=163840-",
+          "status": 206,
+          "contentRange": "bytes 163840-172031/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=172032-",
+          "status": 206,
+          "contentRange": "bytes 172032-180223/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=180224-",
+          "status": 206,
+          "contentRange": "bytes 180224-188415/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=188416-",
+          "status": 206,
+          "contentRange": "bytes 188416-196607/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=196608-",
+          "status": 206,
+          "contentRange": "bytes 196608-204799/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=204800-",
+          "status": 206,
+          "contentRange": "bytes 204800-212991/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=212992-",
+          "status": 206,
+          "contentRange": "bytes 212992-221183/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=221184-",
+          "status": 206,
+          "contentRange": "bytes 221184-229375/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=229376-",
+          "status": 206,
+          "contentRange": "bytes 229376-237567/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=237568-",
+          "status": 206,
+          "contentRange": "bytes 237568-245759/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=245760-",
+          "status": 206,
+          "contentRange": "bytes 245760-253951/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=253952-",
+          "status": 206,
+          "contentRange": "bytes 253952-262143/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=262144-",
+          "status": 206,
+          "contentRange": "bytes 262144-270335/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=270336-",
+          "status": 206,
+          "contentRange": "bytes 270336-278527/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=278528-",
+          "status": 206,
+          "contentRange": "bytes 278528-286719/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=286720-",
+          "status": 206,
+          "contentRange": "bytes 286720-294911/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=294912-",
+          "status": 206,
+          "contentRange": "bytes 294912-303103/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=303104-",
+          "status": 206,
+          "contentRange": "bytes 303104-311295/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=311296-",
+          "status": 206,
+          "contentRange": "bytes 311296-319487/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=319488-",
+          "status": 206,
+          "contentRange": "bytes 319488-327679/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=327680-",
+          "status": 206,
+          "contentRange": "bytes 327680-335871/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=335872-",
+          "status": 206,
+          "contentRange": "bytes 335872-344063/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=344064-",
+          "status": 206,
+          "contentRange": "bytes 344064-352255/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=352256-",
+          "status": 206,
+          "contentRange": "bytes 352256-360447/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=360448-",
+          "status": 206,
+          "contentRange": "bytes 360448-368639/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=368640-",
+          "status": 206,
+          "contentRange": "bytes 368640-376831/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=376832-",
+          "status": 206,
+          "contentRange": "bytes 376832-382361/382362",
+          "bytes": 5530
+        }
+      ],
+      "buttonInjected": null,
+      "timeline": [],
+      "progress": "Completed",
+      "durationMs": 61,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: URL: http://127.0.0.1:64787/video-range"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 0-8191/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 2%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 8192-16383/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 4%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 16384-24575/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 6%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 24576-32767/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 9%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 32768-40959/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 11%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 40960-49151/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 13%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 49152-57343/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 15%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 57344-65535/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 17%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 65536-73727/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 19%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 73728-81919/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 21%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 81920-90111/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 24%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 90112-98303/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 26%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 98304-106495/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 28%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 106496-114687/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 30%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 114688-122879/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 32%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 122880-131071/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 34%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 131072-139263/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 36%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 139264-147455/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 39%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 147456-155647/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 41%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 155648-163839/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 43%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 163840-172031/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 45%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 172032-180223/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 47%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 180224-188415/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 49%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 188416-196607/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 51%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 196608-204799/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 54%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 204800-212991/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 56%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 212992-221183/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 58%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 221184-229375/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 60%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 229376-237567/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 62%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 237568-245759/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 64%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 245760-253951/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 66%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 253952-262143/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 69%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 262144-270335/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 71%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 270336-278527/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 73%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 278528-286719/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 75%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 286720-294911/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 77%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 294912-303103/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 79%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 303104-311295/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 81%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 311296-319487/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 84%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 319488-327679/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 86%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 327680-335871/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 88%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 335872-344063/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 90%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 344064-352255/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 92%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 352256-360447/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 94%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 360448-368639/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 96%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 8192 bytes data from bytes 368640-376831/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 99%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Get response: 5530 bytes data from bytes 376832-382361/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Progress: 100%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Finish downloading blobs"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Concatenating blobs and downloading..."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Final blob size: 382362 bytes"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1nd7phh.mp4: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "voice-range",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "voice",
+      "responseMode": "range",
+      "route": "audio",
+      "writableMode": false,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-voice.ogg",
+        "bytes": 36731,
+        "sha256": "4377a5f0eee3aa60e05bac62ca0d5e498f6d479d38cebed75cd679dde831ff5f"
+      },
+      "saved": [
+        {
+          "file": "voice-range.ogg",
+          "suggestedName": "1550abg.ogg",
+          "bytes": 36731,
+          "sha256": "4377a5f0eee3aa60e05bac62ca0d5e498f6d479d38cebed75cd679dde831ff5f",
+          "matchesOriginal": true,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 206,
+          "contentRange": "bytes 0-8191/36731",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=8192-",
+          "status": 206,
+          "contentRange": "bytes 8192-16383/36731",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=16384-",
+          "status": 206,
+          "contentRange": "bytes 16384-24575/36731",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=24576-",
+          "status": 206,
+          "contentRange": "bytes 24576-32767/36731",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=32768-",
+          "status": 206,
+          "contentRange": "bytes 32768-36730/36731",
+          "bytes": 3963
+        }
+      ],
+      "buttonInjected": null,
+      "timeline": [],
+      "progress": null,
+      "durationMs": 15,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Get response: 8192 bytes data from bytes 0-8191/36731"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Get response: 8192 bytes data from bytes 8192-16383/36731"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Get response: 8192 bytes data from bytes 16384-24575/36731"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Get response: 8192 bytes data from bytes 24576-32767/36731"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Get response: 3963 bytes data from bytes 32768-36730/36731"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1550abg.ogg: Finish downloading blobs. Concatenating blobs and downloading..."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1550abg.ogg: Final blob size in bytes: 36731"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1550abg.ogg: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "story-k-image",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "image",
+      "responseMode": "range",
+      "route": "story-k-image",
+      "writableMode": false,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-image.jpeg",
+        "bytes": 17802,
+        "sha256": "ca3d329f8714db5fa23cfcec5ed2abab8d34e4cb7fb2071e70d2190d3b4e43b8"
+      },
+      "saved": [
+        {
+          "file": "story-k-image.jpeg",
+          "suggestedName": "e2rydu0u.jpeg",
+          "bytes": 17802,
+          "sha256": "ca3d329f8714db5fa23cfcec5ed2abab8d34e4cb7fb2071e70d2190d3b4e43b8",
+          "matchesOriginal": true,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": null,
+          "status": 200,
+          "contentRange": null,
+          "bytes": 17802
+        }
+      ],
+      "buttonInjected": true,
+      "timeline": [],
+      "progress": null,
+      "durationMs": 15,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] e2rydu0u.jpeg: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "story-k-video",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "video",
+      "responseMode": "range",
+      "route": "story-k-video",
+      "writableMode": false,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-video.mp4",
+        "bytes": 382362,
+        "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e"
+      },
+      "saved": [
+        {
+          "file": "story-k-video.mp4",
+          "suggestedName": "11zr0d7.mp4",
+          "bytes": 382362,
+          "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e",
+          "matchesOriginal": true,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 206,
+          "contentRange": "bytes 0-8191/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=8192-",
+          "status": 206,
+          "contentRange": "bytes 8192-16383/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=16384-",
+          "status": 206,
+          "contentRange": "bytes 16384-24575/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=24576-",
+          "status": 206,
+          "contentRange": "bytes 24576-32767/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=32768-",
+          "status": 206,
+          "contentRange": "bytes 32768-40959/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=40960-",
+          "status": 206,
+          "contentRange": "bytes 40960-49151/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=49152-",
+          "status": 206,
+          "contentRange": "bytes 49152-57343/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=57344-",
+          "status": 206,
+          "contentRange": "bytes 57344-65535/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=65536-",
+          "status": 206,
+          "contentRange": "bytes 65536-73727/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=73728-",
+          "status": 206,
+          "contentRange": "bytes 73728-81919/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=81920-",
+          "status": 206,
+          "contentRange": "bytes 81920-90111/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=90112-",
+          "status": 206,
+          "contentRange": "bytes 90112-98303/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=98304-",
+          "status": 206,
+          "contentRange": "bytes 98304-106495/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=106496-",
+          "status": 206,
+          "contentRange": "bytes 106496-114687/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=114688-",
+          "status": 206,
+          "contentRange": "bytes 114688-122879/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=122880-",
+          "status": 206,
+          "contentRange": "bytes 122880-131071/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=131072-",
+          "status": 206,
+          "contentRange": "bytes 131072-139263/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=139264-",
+          "status": 206,
+          "contentRange": "bytes 139264-147455/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=147456-",
+          "status": 206,
+          "contentRange": "bytes 147456-155647/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=155648-",
+          "status": 206,
+          "contentRange": "bytes 155648-163839/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=163840-",
+          "status": 206,
+          "contentRange": "bytes 163840-172031/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=172032-",
+          "status": 206,
+          "contentRange": "bytes 172032-180223/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=180224-",
+          "status": 206,
+          "contentRange": "bytes 180224-188415/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=188416-",
+          "status": 206,
+          "contentRange": "bytes 188416-196607/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=196608-",
+          "status": 206,
+          "contentRange": "bytes 196608-204799/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=204800-",
+          "status": 206,
+          "contentRange": "bytes 204800-212991/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=212992-",
+          "status": 206,
+          "contentRange": "bytes 212992-221183/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=221184-",
+          "status": 206,
+          "contentRange": "bytes 221184-229375/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=229376-",
+          "status": 206,
+          "contentRange": "bytes 229376-237567/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=237568-",
+          "status": 206,
+          "contentRange": "bytes 237568-245759/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=245760-",
+          "status": 206,
+          "contentRange": "bytes 245760-253951/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=253952-",
+          "status": 206,
+          "contentRange": "bytes 253952-262143/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=262144-",
+          "status": 206,
+          "contentRange": "bytes 262144-270335/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=270336-",
+          "status": 206,
+          "contentRange": "bytes 270336-278527/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=278528-",
+          "status": 206,
+          "contentRange": "bytes 278528-286719/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=286720-",
+          "status": 206,
+          "contentRange": "bytes 286720-294911/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=294912-",
+          "status": 206,
+          "contentRange": "bytes 294912-303103/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=303104-",
+          "status": 206,
+          "contentRange": "bytes 303104-311295/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=311296-",
+          "status": 206,
+          "contentRange": "bytes 311296-319487/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=319488-",
+          "status": 206,
+          "contentRange": "bytes 319488-327679/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=327680-",
+          "status": 206,
+          "contentRange": "bytes 327680-335871/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=335872-",
+          "status": 206,
+          "contentRange": "bytes 335872-344063/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=344064-",
+          "status": 206,
+          "contentRange": "bytes 344064-352255/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=352256-",
+          "status": 206,
+          "contentRange": "bytes 352256-360447/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=360448-",
+          "status": 206,
+          "contentRange": "bytes 360448-368639/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=368640-",
+          "status": 206,
+          "contentRange": "bytes 368640-376831/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=376832-",
+          "status": 206,
+          "contentRange": "bytes 376832-382361/382362",
+          "bytes": 5530
+        }
+      ],
+      "buttonInjected": true,
+      "timeline": [],
+      "progress": "Completed",
+      "durationMs": 61,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: URL: http://127.0.0.1:64787/story-k-video"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 0-8191/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 2%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 8192-16383/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 4%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 16384-24575/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 6%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 24576-32767/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 9%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 32768-40959/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 11%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 40960-49151/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 13%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 49152-57343/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 15%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 57344-65535/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 17%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 65536-73727/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 19%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 73728-81919/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 21%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 81920-90111/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 24%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 90112-98303/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 26%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 98304-106495/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 28%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 106496-114687/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 30%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 114688-122879/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 32%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 122880-131071/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 34%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 131072-139263/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 36%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 139264-147455/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 39%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 147456-155647/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 41%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 155648-163839/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 43%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 163840-172031/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 45%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 172032-180223/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 47%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 180224-188415/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 49%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 188416-196607/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 51%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 196608-204799/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 54%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 204800-212991/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 56%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 212992-221183/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 58%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 221184-229375/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 60%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 229376-237567/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 62%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 237568-245759/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 64%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 245760-253951/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 66%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 253952-262143/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 69%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 262144-270335/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 71%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 270336-278527/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 73%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 278528-286719/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 75%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 286720-294911/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 77%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 294912-303103/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 79%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 303104-311295/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 81%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 311296-319487/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 84%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 319488-327679/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 86%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 327680-335871/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 88%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 335872-344063/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 90%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 344064-352255/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 92%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 352256-360447/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 94%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 360448-368639/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 96%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 8192 bytes data from bytes 368640-376831/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 99%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Get response: 5530 bytes data from bytes 376832-382361/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Progress: 100%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Finish downloading blobs"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Concatenating blobs and downloading..."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Final blob size: 382362 bytes"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 11zr0d7.mp4: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "story-a-image",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "image",
+      "responseMode": "range",
+      "route": "story-a-image",
+      "writableMode": false,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-image.jpeg",
+        "bytes": 17802,
+        "sha256": "ca3d329f8714db5fa23cfcec5ed2abab8d34e4cb7fb2071e70d2190d3b4e43b8"
+      },
+      "saved": [
+        {
+          "file": "story-a-image.jpeg",
+          "suggestedName": "osb7rx05.jpeg",
+          "bytes": 17802,
+          "sha256": "ca3d329f8714db5fa23cfcec5ed2abab8d34e4cb7fb2071e70d2190d3b4e43b8",
+          "matchesOriginal": true,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": null,
+          "status": 200,
+          "contentRange": null,
+          "bytes": 17802
+        }
+      ],
+      "buttonInjected": true,
+      "timeline": [],
+      "progress": null,
+      "durationMs": 15,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "storiesContainer"
+        },
+        {
+          "level": "info",
+          "message": "storyHeader"
+        },
+        {
+          "level": "info",
+          "message": "createDownloadButton"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] osb7rx05.jpeg: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "story-a-video",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "video",
+      "responseMode": "range",
+      "route": "story-a-video",
+      "writableMode": false,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-video.mp4",
+        "bytes": 382362,
+        "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e"
+      },
+      "saved": [
+        {
+          "file": "story-a-video.mp4",
+          "suggestedName": "xa0a35.mp4",
+          "bytes": 382362,
+          "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e",
+          "matchesOriginal": true,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 206,
+          "contentRange": "bytes 0-8191/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=8192-",
+          "status": 206,
+          "contentRange": "bytes 8192-16383/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=16384-",
+          "status": 206,
+          "contentRange": "bytes 16384-24575/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=24576-",
+          "status": 206,
+          "contentRange": "bytes 24576-32767/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=32768-",
+          "status": 206,
+          "contentRange": "bytes 32768-40959/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=40960-",
+          "status": 206,
+          "contentRange": "bytes 40960-49151/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=49152-",
+          "status": 206,
+          "contentRange": "bytes 49152-57343/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=57344-",
+          "status": 206,
+          "contentRange": "bytes 57344-65535/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=65536-",
+          "status": 206,
+          "contentRange": "bytes 65536-73727/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=73728-",
+          "status": 206,
+          "contentRange": "bytes 73728-81919/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=81920-",
+          "status": 206,
+          "contentRange": "bytes 81920-90111/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=90112-",
+          "status": 206,
+          "contentRange": "bytes 90112-98303/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=98304-",
+          "status": 206,
+          "contentRange": "bytes 98304-106495/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=106496-",
+          "status": 206,
+          "contentRange": "bytes 106496-114687/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=114688-",
+          "status": 206,
+          "contentRange": "bytes 114688-122879/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=122880-",
+          "status": 206,
+          "contentRange": "bytes 122880-131071/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=131072-",
+          "status": 206,
+          "contentRange": "bytes 131072-139263/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=139264-",
+          "status": 206,
+          "contentRange": "bytes 139264-147455/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=147456-",
+          "status": 206,
+          "contentRange": "bytes 147456-155647/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=155648-",
+          "status": 206,
+          "contentRange": "bytes 155648-163839/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=163840-",
+          "status": 206,
+          "contentRange": "bytes 163840-172031/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=172032-",
+          "status": 206,
+          "contentRange": "bytes 172032-180223/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=180224-",
+          "status": 206,
+          "contentRange": "bytes 180224-188415/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=188416-",
+          "status": 206,
+          "contentRange": "bytes 188416-196607/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=196608-",
+          "status": 206,
+          "contentRange": "bytes 196608-204799/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=204800-",
+          "status": 206,
+          "contentRange": "bytes 204800-212991/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=212992-",
+          "status": 206,
+          "contentRange": "bytes 212992-221183/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=221184-",
+          "status": 206,
+          "contentRange": "bytes 221184-229375/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=229376-",
+          "status": 206,
+          "contentRange": "bytes 229376-237567/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=237568-",
+          "status": 206,
+          "contentRange": "bytes 237568-245759/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=245760-",
+          "status": 206,
+          "contentRange": "bytes 245760-253951/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=253952-",
+          "status": 206,
+          "contentRange": "bytes 253952-262143/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=262144-",
+          "status": 206,
+          "contentRange": "bytes 262144-270335/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=270336-",
+          "status": 206,
+          "contentRange": "bytes 270336-278527/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=278528-",
+          "status": 206,
+          "contentRange": "bytes 278528-286719/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=286720-",
+          "status": 206,
+          "contentRange": "bytes 286720-294911/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=294912-",
+          "status": 206,
+          "contentRange": "bytes 294912-303103/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=303104-",
+          "status": 206,
+          "contentRange": "bytes 303104-311295/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=311296-",
+          "status": 206,
+          "contentRange": "bytes 311296-319487/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=319488-",
+          "status": 206,
+          "contentRange": "bytes 319488-327679/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=327680-",
+          "status": 206,
+          "contentRange": "bytes 327680-335871/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=335872-",
+          "status": 206,
+          "contentRange": "bytes 335872-344063/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=344064-",
+          "status": 206,
+          "contentRange": "bytes 344064-352255/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=352256-",
+          "status": 206,
+          "contentRange": "bytes 352256-360447/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=360448-",
+          "status": 206,
+          "contentRange": "bytes 360448-368639/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=368640-",
+          "status": 206,
+          "contentRange": "bytes 368640-376831/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=376832-",
+          "status": 206,
+          "contentRange": "bytes 376832-382361/382362",
+          "bytes": 5530
+        }
+      ],
+      "buttonInjected": true,
+      "timeline": [],
+      "progress": "Completed",
+      "durationMs": 47,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "storiesContainer"
+        },
+        {
+          "level": "info",
+          "message": "storyHeader"
+        },
+        {
+          "level": "info",
+          "message": "createDownloadButton"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: URL: http://127.0.0.1:64787/story-a-video"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 0-8191/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 2%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 8192-16383/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 4%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 16384-24575/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 6%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 24576-32767/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 9%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 32768-40959/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 11%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 40960-49151/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 13%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 49152-57343/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 15%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 57344-65535/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 17%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 65536-73727/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 19%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 73728-81919/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 21%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 81920-90111/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 24%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 90112-98303/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 26%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 98304-106495/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 28%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 106496-114687/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 30%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 114688-122879/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 32%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 122880-131071/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 34%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 131072-139263/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 36%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 139264-147455/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 39%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 147456-155647/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 41%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 155648-163839/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 43%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 163840-172031/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 45%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 172032-180223/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 47%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 180224-188415/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 49%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 188416-196607/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 51%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 196608-204799/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 54%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 204800-212991/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 56%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 212992-221183/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 58%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 221184-229375/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 60%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 229376-237567/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 62%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 237568-245759/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 64%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 245760-253951/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 66%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 253952-262143/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 69%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 262144-270335/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 71%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 270336-278527/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 73%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 278528-286719/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 75%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 286720-294911/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 77%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 294912-303103/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 79%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 303104-311295/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 81%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 311296-319487/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 84%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 319488-327679/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 86%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 327680-335871/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 88%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 335872-344063/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 90%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 344064-352255/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 92%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 352256-360447/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 94%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 360448-368639/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 96%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 8192 bytes data from bytes 368640-376831/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 99%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Get response: 5530 bytes data from bytes 376832-382361/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Progress: 100%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Finish downloading blobs"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Concatenating blobs and downloading..."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Final blob size: 382362 bytes"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] xa0a35.mp4: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "video-full200",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "video",
+      "responseMode": "full200",
+      "route": "video",
+      "writableMode": false,
+      "outcome": "aborted-without-file",
+      "original": {
+        "file": "test-video.mp4",
+        "bytes": 382362,
+        "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e"
+      },
+      "saved": [],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 200,
+          "contentRange": null,
+          "bytes": 382362
+        }
+      ],
+      "buttonInjected": null,
+      "timeline": [],
+      "progress": "Aborted",
+      "durationMs": 14,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1obr1hn.mp4: URL: http://127.0.0.1:64787/video-full200"
+        },
+        {
+          "level": "error",
+          "message": "[Tel Download] 1obr1hn.mp4: TypeError: Cannot read properties of null (reading 'match')"
+        }
+      ]
+    },
+    {
+      "id": "voice-full200",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "voice",
+      "responseMode": "full200",
+      "route": "audio",
+      "writableMode": false,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-voice.ogg",
+        "bytes": 36731,
+        "sha256": "4377a5f0eee3aa60e05bac62ca0d5e498f6d479d38cebed75cd679dde831ff5f"
+      },
+      "saved": [
+        {
+          "file": "voice-full200.ogg",
+          "suggestedName": "gvcnia.ogg",
+          "bytes": 36731,
+          "sha256": "4377a5f0eee3aa60e05bac62ca0d5e498f6d479d38cebed75cd679dde831ff5f",
+          "matchesOriginal": true,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 200,
+          "contentRange": null,
+          "bytes": 36731
+        }
+      ],
+      "buttonInjected": null,
+      "timeline": [],
+      "progress": null,
+      "durationMs": 16,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Get response: 36731 bytes data from null"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] gvcnia.ogg: Finish downloading blobs. Concatenating blobs and downloading..."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] gvcnia.ogg: Final blob size in bytes: 36731"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] gvcnia.ogg: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "video-mismatch",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "video",
+      "responseMode": "mismatch",
+      "route": "video",
+      "writableMode": false,
+      "outcome": "aborted-without-file",
+      "original": {
+        "file": "test-video.mp4",
+        "bytes": 382362,
+        "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e"
+      },
+      "saved": [],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 206,
+          "contentRange": "bytes 1-8191/382362",
+          "bytes": 8192
+        }
+      ],
+      "buttonInjected": null,
+      "timeline": [],
+      "progress": "Aborted",
+      "durationMs": 15,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1gapd1i.mp4: URL: http://127.0.0.1:64787/video-mismatch"
+        },
+        {
+          "level": "error",
+          "message": "[Tel Download] 1gapd1i.mp4: Gap detected between responses."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1gapd1i.mp4: Last offset: 0"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1gapd1i.mp4: New start offset 1"
+        },
+        {
+          "level": "error",
+          "message": "[Tel Download] 1gapd1i.mp4: Gap detected between responses."
+        }
+      ]
+    },
+    {
+      "id": "voice-mismatch",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "voice",
+      "responseMode": "mismatch",
+      "route": "audio",
+      "writableMode": false,
+      "outcome": "incomplete-file",
+      "original": {
+        "file": "test-voice.ogg",
+        "bytes": 36731,
+        "sha256": "4377a5f0eee3aa60e05bac62ca0d5e498f6d479d38cebed75cd679dde831ff5f"
+      },
+      "saved": [
+        {
+          "file": "voice-mismatch.ogg",
+          "suggestedName": "1irgd4f.ogg",
+          "bytes": 8192,
+          "sha256": "a99664ac3150e5564958adfae59f094a15aa6a3837b85252f9bff2995889ff8a",
+          "matchesOriginal": false,
+          "adapter": "anchor-save-adapter"
+        }
+      ],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 206,
+          "contentRange": "bytes 1-8191/36731",
+          "bytes": 8192
+        }
+      ],
+      "buttonInjected": null,
+      "timeline": [],
+      "progress": null,
+      "durationMs": 15,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "error",
+          "message": "[Tel Download] Gap detected between responses."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Last offset: 0"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] New start offset 1"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Get response: 8192 bytes data from bytes 1-8191/36731"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1irgd4f.ogg: Finish downloading blobs. Concatenating blobs and downloading..."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1irgd4f.ogg: Final blob size in bytes: 8192"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] 1irgd4f.ogg: Download triggered"
+        }
+      ]
+    },
+    {
+      "id": "video-write-timing",
+      "environment": "Node VM + real localhost HTTP + minimal DOM / save adapters",
+      "kind": "video",
+      "responseMode": "range",
+      "route": "video",
+      "writableMode": true,
+      "outcome": "complete-file",
+      "original": {
+        "file": "test-video.mp4",
+        "bytes": 382362,
+        "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e"
+      },
+      "saved": [
+        {
+          "file": "video-write-timing.mp4",
+          "bytes": 382362,
+          "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e",
+          "matchesOriginal": true,
+          "adapter": "queued-writable-test-double"
+        }
+      ],
+      "requests": [
+        {
+          "range": "bytes=0-",
+          "status": 206,
+          "contentRange": "bytes 0-8191/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=8192-",
+          "status": 206,
+          "contentRange": "bytes 8192-16383/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=16384-",
+          "status": 206,
+          "contentRange": "bytes 16384-24575/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=24576-",
+          "status": 206,
+          "contentRange": "bytes 24576-32767/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=32768-",
+          "status": 206,
+          "contentRange": "bytes 32768-40959/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=40960-",
+          "status": 206,
+          "contentRange": "bytes 40960-49151/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=49152-",
+          "status": 206,
+          "contentRange": "bytes 49152-57343/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=57344-",
+          "status": 206,
+          "contentRange": "bytes 57344-65535/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=65536-",
+          "status": 206,
+          "contentRange": "bytes 65536-73727/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=73728-",
+          "status": 206,
+          "contentRange": "bytes 73728-81919/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=81920-",
+          "status": 206,
+          "contentRange": "bytes 81920-90111/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=90112-",
+          "status": 206,
+          "contentRange": "bytes 90112-98303/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=98304-",
+          "status": 206,
+          "contentRange": "bytes 98304-106495/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=106496-",
+          "status": 206,
+          "contentRange": "bytes 106496-114687/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=114688-",
+          "status": 206,
+          "contentRange": "bytes 114688-122879/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=122880-",
+          "status": 206,
+          "contentRange": "bytes 122880-131071/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=131072-",
+          "status": 206,
+          "contentRange": "bytes 131072-139263/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=139264-",
+          "status": 206,
+          "contentRange": "bytes 139264-147455/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=147456-",
+          "status": 206,
+          "contentRange": "bytes 147456-155647/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=155648-",
+          "status": 206,
+          "contentRange": "bytes 155648-163839/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=163840-",
+          "status": 206,
+          "contentRange": "bytes 163840-172031/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=172032-",
+          "status": 206,
+          "contentRange": "bytes 172032-180223/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=180224-",
+          "status": 206,
+          "contentRange": "bytes 180224-188415/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=188416-",
+          "status": 206,
+          "contentRange": "bytes 188416-196607/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=196608-",
+          "status": 206,
+          "contentRange": "bytes 196608-204799/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=204800-",
+          "status": 206,
+          "contentRange": "bytes 204800-212991/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=212992-",
+          "status": 206,
+          "contentRange": "bytes 212992-221183/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=221184-",
+          "status": 206,
+          "contentRange": "bytes 221184-229375/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=229376-",
+          "status": 206,
+          "contentRange": "bytes 229376-237567/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=237568-",
+          "status": 206,
+          "contentRange": "bytes 237568-245759/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=245760-",
+          "status": 206,
+          "contentRange": "bytes 245760-253951/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=253952-",
+          "status": 206,
+          "contentRange": "bytes 253952-262143/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=262144-",
+          "status": 206,
+          "contentRange": "bytes 262144-270335/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=270336-",
+          "status": 206,
+          "contentRange": "bytes 270336-278527/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=278528-",
+          "status": 206,
+          "contentRange": "bytes 278528-286719/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=286720-",
+          "status": 206,
+          "contentRange": "bytes 286720-294911/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=294912-",
+          "status": 206,
+          "contentRange": "bytes 294912-303103/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=303104-",
+          "status": 206,
+          "contentRange": "bytes 303104-311295/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=311296-",
+          "status": 206,
+          "contentRange": "bytes 311296-319487/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=319488-",
+          "status": 206,
+          "contentRange": "bytes 319488-327679/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=327680-",
+          "status": 206,
+          "contentRange": "bytes 327680-335871/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=335872-",
+          "status": 206,
+          "contentRange": "bytes 335872-344063/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=344064-",
+          "status": 206,
+          "contentRange": "bytes 344064-352255/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=352256-",
+          "status": 206,
+          "contentRange": "bytes 352256-360447/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=360448-",
+          "status": 206,
+          "contentRange": "bytes 360448-368639/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=368640-",
+          "status": 206,
+          "contentRange": "bytes 368640-376831/382362",
+          "bytes": 8192
+        },
+        {
+          "range": "bytes=376832-",
+          "status": 206,
+          "contentRange": "bytes 376832-382361/382362",
+          "bytes": 5530
+        }
+      ],
+      "buttonInjected": null,
+      "timeline": [
+        {
+          "event": "write-called",
+          "pending": 1
+        },
+        {
+          "event": "write-called",
+          "pending": 2
+        },
+        {
+          "event": "write-called",
+          "pending": 3
+        },
+        {
+          "event": "write-called",
+          "pending": 4
+        },
+        {
+          "event": "write-called",
+          "pending": 5
+        },
+        {
+          "event": "write-called",
+          "pending": 6
+        },
+        {
+          "event": "write-called",
+          "pending": 7
+        },
+        {
+          "event": "write-called",
+          "pending": 8
+        },
+        {
+          "event": "write-called",
+          "pending": 9
+        },
+        {
+          "event": "write-called",
+          "pending": 10
+        },
+        {
+          "event": "write-called",
+          "pending": 11
+        },
+        {
+          "event": "write-called",
+          "pending": 12
+        },
+        {
+          "event": "write-called",
+          "pending": 13
+        },
+        {
+          "event": "write-called",
+          "pending": 14
+        },
+        {
+          "event": "write-called",
+          "pending": 15
+        },
+        {
+          "event": "write-called",
+          "pending": 16
+        },
+        {
+          "event": "write-called",
+          "pending": 17
+        },
+        {
+          "event": "write-called",
+          "pending": 18
+        },
+        {
+          "event": "write-called",
+          "pending": 19
+        },
+        {
+          "event": "write-called",
+          "pending": 20
+        },
+        {
+          "event": "write-called",
+          "pending": 21
+        },
+        {
+          "event": "write-called",
+          "pending": 22
+        },
+        {
+          "event": "write-resolved",
+          "pending": 21
+        },
+        {
+          "event": "write-called",
+          "pending": 22
+        },
+        {
+          "event": "write-called",
+          "pending": 23
+        },
+        {
+          "event": "write-called",
+          "pending": 24
+        },
+        {
+          "event": "write-called",
+          "pending": 25
+        },
+        {
+          "event": "write-called",
+          "pending": 26
+        },
+        {
+          "event": "write-called",
+          "pending": 27
+        },
+        {
+          "event": "write-called",
+          "pending": 28
+        },
+        {
+          "event": "write-called",
+          "pending": 29
+        },
+        {
+          "event": "write-called",
+          "pending": 30
+        },
+        {
+          "event": "write-called",
+          "pending": 31
+        },
+        {
+          "event": "write-called",
+          "pending": 32
+        },
+        {
+          "event": "write-called",
+          "pending": 33
+        },
+        {
+          "event": "write-called",
+          "pending": 34
+        },
+        {
+          "event": "write-called",
+          "pending": 35
+        },
+        {
+          "event": "write-called",
+          "pending": 36
+        },
+        {
+          "event": "write-called",
+          "pending": 37
+        },
+        {
+          "event": "write-called",
+          "pending": 38
+        },
+        {
+          "event": "write-called",
+          "pending": 39
+        },
+        {
+          "event": "write-called",
+          "pending": 40
+        },
+        {
+          "event": "write-called",
+          "pending": 41
+        },
+        {
+          "event": "write-called",
+          "pending": 42
+        },
+        {
+          "event": "write-called",
+          "pending": 43
+        },
+        {
+          "event": "write-called",
+          "pending": 44
+        },
+        {
+          "event": "write-called",
+          "pending": 45
+        },
+        {
+          "event": "write-called",
+          "pending": 46
+        },
+        {
+          "event": "close-called",
+          "pending": 46,
+          "progress": "100%"
+        },
+        {
+          "event": "write-resolved",
+          "pending": 45
+        },
+        {
+          "event": "completed-before-close-resolved"
+        },
+        {
+          "event": "write-resolved",
+          "pending": 44
+        },
+        {
+          "event": "write-resolved",
+          "pending": 43
+        },
+        {
+          "event": "write-resolved",
+          "pending": 42
+        },
+        {
+          "event": "write-resolved",
+          "pending": 41
+        },
+        {
+          "event": "write-resolved",
+          "pending": 40
+        },
+        {
+          "event": "write-resolved",
+          "pending": 39
+        },
+        {
+          "event": "write-resolved",
+          "pending": 38
+        },
+        {
+          "event": "write-resolved",
+          "pending": 37
+        },
+        {
+          "event": "write-resolved",
+          "pending": 36
+        },
+        {
+          "event": "write-resolved",
+          "pending": 35
+        },
+        {
+          "event": "write-resolved",
+          "pending": 34
+        },
+        {
+          "event": "write-resolved",
+          "pending": 33
+        },
+        {
+          "event": "write-resolved",
+          "pending": 32
+        },
+        {
+          "event": "write-resolved",
+          "pending": 31
+        },
+        {
+          "event": "write-resolved",
+          "pending": 30
+        },
+        {
+          "event": "write-resolved",
+          "pending": 29
+        },
+        {
+          "event": "write-resolved",
+          "pending": 28
+        },
+        {
+          "event": "write-resolved",
+          "pending": 27
+        },
+        {
+          "event": "write-resolved",
+          "pending": 26
+        },
+        {
+          "event": "write-resolved",
+          "pending": 25
+        },
+        {
+          "event": "write-resolved",
+          "pending": 24
+        },
+        {
+          "event": "write-resolved",
+          "pending": 23
+        },
+        {
+          "event": "write-resolved",
+          "pending": 22
+        },
+        {
+          "event": "write-resolved",
+          "pending": 21
+        },
+        {
+          "event": "write-resolved",
+          "pending": 20
+        },
+        {
+          "event": "write-resolved",
+          "pending": 19
+        },
+        {
+          "event": "write-resolved",
+          "pending": 18
+        },
+        {
+          "event": "write-resolved",
+          "pending": 17
+        },
+        {
+          "event": "write-resolved",
+          "pending": 16
+        },
+        {
+          "event": "write-resolved",
+          "pending": 15
+        },
+        {
+          "event": "write-resolved",
+          "pending": 14
+        },
+        {
+          "event": "write-resolved",
+          "pending": 13
+        },
+        {
+          "event": "write-resolved",
+          "pending": 12
+        },
+        {
+          "event": "write-resolved",
+          "pending": 11
+        },
+        {
+          "event": "write-resolved",
+          "pending": 10
+        },
+        {
+          "event": "write-resolved",
+          "pending": 9
+        },
+        {
+          "event": "write-resolved",
+          "pending": 8
+        },
+        {
+          "event": "write-resolved",
+          "pending": 7
+        },
+        {
+          "event": "write-resolved",
+          "pending": 6
+        },
+        {
+          "event": "write-resolved",
+          "pending": 5
+        },
+        {
+          "event": "write-resolved",
+          "pending": 4
+        },
+        {
+          "event": "write-resolved",
+          "pending": 3
+        },
+        {
+          "event": "write-resolved",
+          "pending": 2
+        },
+        {
+          "event": "write-resolved",
+          "pending": 1
+        },
+        {
+          "event": "write-resolved",
+          "pending": 0
+        },
+        {
+          "event": "close-resolved",
+          "progress": "Completed"
+        }
+      ],
+      "progress": "Completed",
+      "durationMs": 824,
+      "logs": [
+        {
+          "level": "info",
+          "message": "[Tel Download] Initialized"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] Completed script setup."
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: URL: http://127.0.0.1:64787/video-write-timing"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 0-8191/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 2%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 8192-16383/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 4%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 16384-24575/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 6%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 24576-32767/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 9%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 32768-40959/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 11%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 40960-49151/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 13%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 49152-57343/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 15%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 57344-65535/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 17%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 65536-73727/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 19%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 73728-81919/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 21%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 81920-90111/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 24%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 90112-98303/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 26%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 98304-106495/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 28%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 106496-114687/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 30%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 114688-122879/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 32%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 122880-131071/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 34%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 131072-139263/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 36%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 139264-147455/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 39%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 147456-155647/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 41%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 155648-163839/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 43%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 163840-172031/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 45%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 172032-180223/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 47%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 180224-188415/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 49%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 188416-196607/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 51%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 196608-204799/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 54%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 204800-212991/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 56%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 212992-221183/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 58%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 221184-229375/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 60%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 229376-237567/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 62%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 237568-245759/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 64%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 245760-253951/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 66%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 253952-262143/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 69%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 262144-270335/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 71%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 270336-278527/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 73%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 278528-286719/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 75%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 286720-294911/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 77%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 294912-303103/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 79%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 303104-311295/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 81%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 311296-319487/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 84%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 319488-327679/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 86%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 327680-335871/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 88%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 335872-344063/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 90%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 344064-352255/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 92%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 352256-360447/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 94%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 360448-368639/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 96%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 8192 bytes data from bytes 368640-376831/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 99%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Get response: 5530 bytes data from bytes 376832-382361/382362"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Progress: 100%"
+        },
+        {
+          "level": "info",
+          "message": "[Tel Download] smj1io.mp4: Download finished"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "date": "2026-10-11",
+  "telegramTested": false,
+  "illustrationOnly": true,
+  "checks": [
+    {
+      "case": "video_success",
+      "status": "示意完成 · 已展示保存路径，未下载或写入真实文件。",
+      "progress": "100"
+    },
+    {
+      "case": "video_failure",
+      "status": "Aborted · 异常示意。真实失败原因与恢复能力仍需实测；没有保存文件。",
+      "progress": "40"
+    },
+    {
+      "case": "before",
+      "disabled": true,
+      "status": "原页面示意：媒体可见，保存入口被隐藏。未连接真实 Telegram。"
+    },
+    {
+      "case": "media_image",
+      "title": "山间的一次日落",
+      "caption": "读取当前图片地址，触发浏览器保存。"
+    },
+    {
+      "case": "media_audio",
+      "title": "一段值得留下的讲解",
+      "caption": "WebK 已加载的语音来源可进入音频保存流程。"
+    },
+    {
+      "case": "media_story",
+      "title": "短暂的画面，也有保存入口",
+      "caption": "识别故事中的图片或视频，选择对应保存路径。"
+    },
+    {
+      "case": "audio_weba",
+      "disabled": true,
+      "status": "源码边界：WebA 主线未提供同等语音下载入口，可切换到 WebK 查看示意。"
+    },
+    {
+      "case": "audio_webk",
+      "progressHidden": true,
+      "status": "示意完成 · 已展示保存路径，未下载或写入真实文件。"
+    },
+    {
+      "case": "play_illustration",
+      "pressed": "true",
+      "label": "动态示意 · 无真实音视频"
+    },
+    {
+      "case": "stop_illustration",
+      "status": "示意已停止。本页只停止动画，不代表上游具有取消下载功能。"
+    },
+    {
+      "case": "principle_1",
+      "title": "先有网页访问，再有保存入口。",
+      "source": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/blob/169a678627cec090ce1fa8b6eaac250547f0121a/README.md"
+    },
+    {
+      "case": "principle_2",
+      "title": "网页结构，是脚本的观察入口。",
+      "source": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/blob/169a678627cec090ce1fa8b6eaac250547f0121a/src/tel_download.js#L485-L831"
+    },
+    {
+      "case": "principle_3",
+      "title": "两条保存路径，体验有所不同。",
+      "source": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/blob/169a678627cec090ce1fa8b6eaac250547f0121a/src/tel_download.js#L740-L805"
+    },
+    {
+      "case": "principle_4",
+      "title": "分段读取，不等于断点续传。",
+      "source": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/blob/169a678627cec090ce1fa8b6eaac250547f0121a/src/tel_download.js#L176-L265"
+    },
+    {
+      "case": "principle_5",
+      "title": "浏览器能力决定保存方式。",
+      "source": "https://github.com/Neet-Nestor/Telegram-Media-Downloader/blob/169a678627cec090ce1fa8b6eaac250547f0121a/src/tel_download.js#L267-L320"
+    },
+    {
+      "case": "scenario_1",
+      "title": "给自己的媒体，留一份本地副本。"
+    },
+    {
+      "case": "scenario_2",
+      "title": "把讲解留住，把来源一起记下。"
+    },
+    {
+      "case": "scenario_3",
+      "title": "为参考素材，建立清晰的来路。"
+    },
+    {
+      "case": "scenario_4",
+      "title": "学习如何给现有网页，加一层能力。"
+    },
+    {
+      "case": "roadmap_2",
+      "open": [
+        false,
+        true,
+        false
+      ]
+    },
+    {
+      "case": "roadmap_3",
+      "open": [
+        false,
+        false,
+        true
+      ]
+    },
+    {
+      "case": "issues_expand",
+      "visible": true
+    },
+    {
+      "case": "subpath_success",
+      "url": "http://127.0.0.1:5188/1010_codex_project/006-telegram-media-downloader/",
+      "status": "示意完成 · 已展示保存路径，未下载或写入真实文件。"
+    },
+    {
+      "case": "mobile_390",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "anchorTop": -364.8333435058594
+    },
+    {
+      "case": "mobile_320",
+      "overflow": false
+    },
+    {
+      "case": "tablet_768",
+      "overflow": false
+    }
+  ],
+  "console": [],
+  "expandedEdition": {
+    "date": "2026-10-11",
+    "telegramTested": false,
+    "checks": [
+      {
+        "case": "range_last",
+        "code": "请求 Range: bytes=800-\n响应 HTTP 206\nContent-Range: bytes 800-999/1000\n本段 = 999 − 800 + 1 = 200 字节\n累计 = 1000 字节 · 100%\n全部字节已读 · 仍需等待写入和关闭"
+      },
+      {
+        "case": "range_second",
+        "code": "请求 Range: bytes=200-\n响应 HTTP 206\nContent-Range: bytes 200-399/1000\n本段 = 399 − 200 + 1 = 200 字节\n累计 = 400 字节 · 40%\n下一偏移 = 400"
+      },
+      {
+        "case": "range_200",
+        "code": "请求 Range: bytes=200-\n响应 HTTP 200 · 完整文件\nContent-Range: 未提供\n示例响应体：1,000 字节",
+        "explanation": "服务端可能忽略 Range 返回完整资源。200 与 206 要分开处理；后续段若把全文件继续追加，会造成重复内容。所查主线仍强制解析范围头，不能把本示意当成它已正确支持该情况。"
+      },
+      {
+        "case": "range_mismatch",
+        "code": "请求 Range: bytes=200-\n响应 HTTP 206\nContent-Range: bytes 210-399/1000\n预期起点 200 ≠ 实际起点 210",
+        "explanation": "返回起点与预期不一致，不能直接拼接。需要停止并报告范围错误；实际影响和后续恢复能力需要真实网络与写入测试。"
+      },
+      {
+        "case": "range_206",
+        "code": "请求 Range: bytes=200-\n响应 HTTP 206\nContent-Range: bytes 200-399/1000\n本段 = 399 − 200 + 1 = 200 字节\n累计 = 400 字节 · 40%\n下一偏移 = 400",
+        "explanation": "字节位置从 0 开始，结束位置也在本段内，因此长度要加 1。下一次从 end + 1 继续；分段读取本身没有保存刷新后的任务状态。"
+      },
+      {
+        "case": "value_research",
+        "heading": "最有价值的增量，是来源与检索。",
+        "priority": "投入顺序：可靠保存 → 来源卡与去重 → 按需检索"
+      },
+      {
+        "case": "value_developer",
+        "heading": "把它当作浏览器增强工具的研究样本。",
+        "priority": "投入顺序：固定版本 → 跟踪两条路径 → 修可靠性 → 拆适配层"
+      },
+      {
+        "case": "value_occasional",
+        "heading": "先用一个小样例，判断是否省事。",
+        "priority": "投入顺序：检查官方入口 → 试一个获授权样例 → 核验输出"
+      },
+      {
+        "case": "roadmap_0",
+        "open": [
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "roadmap_1",
+        "open": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "roadmap_2",
+        "open": [
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "case": "roadmap_3",
+        "open": [
+          false,
+          false,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "case": "roadmap_4",
+        "open": [
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "case": "faq_0",
+        "open": ""
+      },
+      {
+        "case": "faq_1",
+        "open": ""
+      },
+      {
+        "case": "faq_2",
+        "open": ""
+      },
+      {
+        "case": "faq_3",
+        "open": ""
+      },
+      {
+        "case": "faq_4",
+        "open": ""
+      },
+      {
+        "case": "faq_5",
+        "open": ""
+      },
+      {
+        "case": "faq_6",
+        "open": ""
+      },
+      {
+        "case": "faq_7",
+        "open": ""
+      },
+      {
+        "case": "chapter_overview",
+        "navHeight": 55,
+        "top": 75.19792175292969
+      },
+      {
+        "case": "chapter_capabilities",
+        "navHeight": 55,
+        "top": 74.86458587646484
+      },
+      {
+        "case": "chapter_principle",
+        "navHeight": 55,
+        "top": 74.91667175292969
+      },
+      {
+        "case": "chapter_usage",
+        "navHeight": 55,
+        "top": 74.89583587646484
+      },
+      {
+        "case": "chapter_scenarios",
+        "navHeight": 55,
+        "top": 74.67708587646484
+      },
+      {
+        "case": "chapter_value",
+        "navHeight": 55,
+        "top": 74.69792175292969
+      },
+      {
+        "case": "chapter_extensions",
+        "navHeight": 55,
+        "top": 74.79167175292969
+      },
+      {
+        "case": "chapter_validation",
+        "navHeight": 55,
+        "top": 75.10417175292969
+      },
+      {
+        "case": "expanded_video_success",
+        "progress": "100"
+      },
+      {
+        "case": "expanded_video_failure",
+        "progress": "40"
+      },
+      {
+        "case": "final_mobile_320",
+        "overflow": false,
+        "visibleChapters": 8
+      }
+    ],
+    "responsive": [
+      {
+        "case": "responsive",
+        "height": 844,
+        "overflow": false,
+        "pageWidth": 375,
+        "wide": [],
+        "width": 390
+      },
+      {
+        "case": "responsive",
+        "height": 740,
+        "overflow": false,
+        "pageWidth": 305,
+        "wide": [],
+        "width": 320
+      },
+      {
+        "case": "responsive",
+        "height": 1024,
+        "overflow": false,
+        "pageWidth": 753,
+        "wide": [],
+        "width": 768
+      }
+    ],
+    "mobileNavigation": [
+      {
+        "active": "#overview",
+        "hash": "#overview",
+        "navHeight": 61,
+        "top": 80.95833587646484
+      },
+      {
+        "active": "#capabilities",
+        "hash": "#capabilities",
+        "navHeight": 61,
+        "top": 80.97917175292969
+      },
+      {
+        "active": "#principle",
+        "hash": "#principle",
+        "navHeight": 61,
+        "top": 80.67708587646484
+      },
+      {
+        "active": "#usage",
+        "hash": "#usage",
+        "navHeight": 61,
+        "top": 81.11458587646484
+      },
+      {
+        "active": "#scenarios",
+        "hash": "#scenarios",
+        "navHeight": 61,
+        "top": 81.0625
+      },
+      {
+        "active": "#value",
+        "hash": "#value",
+        "navHeight": 61,
+        "top": 80.84375
+      },
+      {
+        "active": "#extensions",
+        "hash": "#extensions",
+        "navHeight": 61,
+        "top": 81.1875
+      },
+      {
+        "active": "#validation",
+        "hash": "#validation",
+        "navHeight": 61,
+        "top": 81
+      }
+    ],
+    "console": []
+  }
+}

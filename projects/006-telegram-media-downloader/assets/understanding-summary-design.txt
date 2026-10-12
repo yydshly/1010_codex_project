@@ -1,0 +1,119 @@
+最终交付采用本地精确图表排版，实际布局、文案与图形见 render-understanding-summary.py。
+内置 image_gen 首次尝试因网络错误失败，没有返回图片；未使用 CLI/API 图像生成回退。
+以下保留生成尝试时的设计提示词，作为内容与视觉意图记录；实际成图以 PNG 与排版源为准。
+
+Use case: infographic-diagram
+Asset type: one comprehensive Chinese technical overview poster for the Telegram Media Downloader repository.
+Create ONE finished, very high resolution landscape infographic, preferably 3840 × 2160, rich but readable, coherent editorial design. This is an explanatory image, NOT an authentic screenshot. Crisp correctly written Simplified Chinese typography, large clear main headings, consistent modular grid, well routed arrows, generous whitespace. Off-white paper background, deep navy text, Telegram-like soft blue for existing capability, teal for controlled evidence, amber for future concepts and limitations. Flat polished diagrams with small realistic media thumbnails and illustrative browser UI scenes; no decorative clutter. Keep ALL important text accurate and legible. Put illustrative source-library effects in one area and future extension effects in a separate amber area, each explicitly labeled. Fit all content within safe margins. Avoid duplicate boxes and random text.
+
+MAIN TITLE (exact):
+“Telegram 媒体下载器 · 一张图理解”
+Subtitle (exact):
+“复用已登录网页能力，补充保存入口与下载流程”
+Primary conclusion banner (exact):
+“定位：浏览器增强封装。既复用官方下载，也实现自己的媒体读取与保存流程。”
+Legend (exact): “蓝色：源码确认” “青色：受控实验” “橙色：扩展设想”
+Avoid implying that this is a new Telegram protocol implementation, an independent login backend, or that signing in alone activates this script.
+
+LAYOUT:
+Top 12%: title, subtitle, conclusion and small legend.
+Next 24%: two panels, approximately 60% / 40%.
+Middle 31%: a large full-width mechanism diagram with two correctly separated download branches.
+Bottom 26%: three panels for usage/value, controlled evidence/limitations, and extension roadmap with small future output UI.
+Footer 7%: concise boundaries, version/license and provenance. Can adjust height allocation slightly to ensure readable Chinese.
+
+TOP LEFT: title “01 / 源库效果”
+Badge exact: “效果示意 · 真实 Telegram 下载未实测”
+Draw a visual triptych: a browser media viewer with a small fictional sunset photograph/video and waveform, first with hidden/absent save entry; then same viewer with a highlighted added download button; then local JPEG / MP4 / OGG file cards. Use arrows. This visually demonstrates the intended upstream effect without claiming authentic screenshots.
+Labels exact:
+“查看媒体” → “恢复或新增保存入口” → “保存本地文件”
+Small explanatory text:
+“Telegram 原生支持下载；本库补充入口与保存流程。”
+“图片 / 视频 / 语音 / Stories 的入口各有差异。”
+“没有画质增强或转码；保存质量取决于网页提供的媒体。”
+“内置浏览器提供环境，登录不等于脚本已启用。”
+
+TOP RIGHT: title “02 / 能力范围”
+Use a neat 4-row capability matrix titled “固定版本源码入口”, columns “媒体” “WebK” “WebA”.
+Rows exact:
+“图片” | “有入口” | “有入口”
+“视频 / GIF” | “有入口” | “有入口”
+“语音” | “有入口” | “未覆盖”
+“Stories” | “有入口” | “有入口”
+Below:
+“Stories 按图片或视频分流。”
+“GIF 类动画可能保存为视频。”
+“未具备成熟整频道归档、持久队列、断点续传或 AI 处理。”
+
+MIDDLE: title “03 / 底层原理：谁在做什么？”
+Diagram accurate flow, first a short role row:
+“账号：决定访问范围” → “Telegram 网页：会话与媒体取数” → “用户脚本：识别与组织保存” → “浏览器：执行与文件落盘”
+Show a small account/person icon, cloud/server, browser window, file/folder, with no credentials shown.
+Main entry node:
+“已登录且能查看媒体”
+then
+“DOM 扫描 · 约 500 ms”
+“WebK / WebA 分别适配”
+then split distinctly into two horizontal branches, with labeled arrows:
+Branch A, title exact “A / 复用官方路径”
+nodes:
+“找到隐藏下载按钮” → “恢复入口并调用按钮” → “Telegram 原有下载逻辑”
+Branch B, title exact “B / 自有保存路径”
+nodes:
+“读取当前媒体地址” → “图片：下载链接；视频 / 语音：Range 分段读取” → “检查范围并推进偏移”
+Small clean code labels on Branch B:
+“Range: bytes=offset-”
+“Content-Range: bytes start-end/total”
+Show a segmented byte bar with start→end+1; this is conceptual, not a measurement.
+Converge appropriately to a final save area:
+“文件系统 API：分段写入”
+“Blob 回退：累积数据后触发保存”
+“本地媒体文件”
+Important: only Branch B should be shown choosing custom file API / Blob logic, official branch should independently reach local save via official logic. Do not route official branch through script Range fetch. Keep arrow connections unambiguous.
+Caption exact:
+“协议、登录与媒体访问由 Telegram 网页复用；脚本没有独立实现 MTProto。”
+
+BOTTOM LEFT: title “04 / 使用场景与价值”
+Three small icon rows:
+“个人备份 / 离线学习：保存自有或获授权素材”
+“持续研究 / 创作参考：把媒体与来源、标签、项目笔记关联”
+“工具开发：学习 DOM 适配、异步流程、Range 与文件写入”
+Highlighted judgment:
+“原生下载已够用时，额外价值有限。”
+“持续整理资料时，来源与检索比增加文件数量更有价值。”
+Small exact note:
+“节省时间、效率和商业收益尚未测量。”
+
+BOTTOM CENTER: title “05 / 已知限制与证据”
+Teal badge “12 项受控源码实验”
+Small infographic “9 完整输出” “2 中止” “1 截断”
+Caption exact:
+“本机 HTTP + DOM / 保存适配器，不是 Telegram 账号实测。”
+Three concise findings, ideally with tiny warning icons:
+“正常视频 / 语音：保存前后哈希一致”
+“视频 200 无范围头：中止；语音起点错配：仍保存首段”
+“Completed 可早于关闭；可播放不等于文件完整”
+Small warning line:
+“页面改版可能使入口失效；大文件内存、最高画质、跨浏览器仍未测。”
+Another small line:
+“关闭进度框只移除界面，不等于取消下载。”
+
+BOTTOM RIGHT: title “06 / 可扩展方向”
+Badge “扩展效果设想 · 尚未实现”
+Draw a polished tiny conceptual media research hub mockup with a landscape thumbnail, a source/date/tag card, a short transcribed text block and search box, representing future output (NOT a current feature).
+Labels under the mockup:
+“媒体文件 + 来源卡 + 可检索文本”
+Five compact roadmap stages, numbered horizontally or vertically to fit:
+“P0 可靠性：等待写入 / 关闭，完整性、取消、重试”
+“P1 任务队列：用户选择、并发限制、失败恢复”
+“P2 来源整理：命名、标签、哈希去重、本地索引”
+“P3 知识处理：OCR、转写、摘要、搜索与原文回查”
+“P4 平台适配：拆分 WebK / WebA，维护回归样例”
+Caption exact:
+“扩展应先保证可靠保存，再扩大采集与知识处理。”
+
+FOOTER exact:
+“边界：账号可访问 ≠ 保存入口可用；本库不扩大账号访问权限。当前网站兼容性与真实下载效果未实测。”
+“上游：Neet-Nestor/Telegram-Media-Downloader · 1.212 · commit 169a6786 · GPL-3.0”
+“理解汇总：2026-10-12 · 所有界面和扩展画面均为说明示意”
+Constraints: All Chinese sentences above should be included accurately, with hierarchy and wrapping rather than tiny unreadable text. Source effects and future concepts MUST remain explicitly distinguished. No false real screenshots, no personal account data, no measured Telegram success-rate claim, no invented app capabilities, no deployment URL. No watermarks. Create only one image.

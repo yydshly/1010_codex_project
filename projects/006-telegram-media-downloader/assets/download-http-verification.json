@@ -1,0 +1,93 @@
+{
+  "testedAt": "2026-10-11T02:38:24.711Z",
+  "entries": [
+    {
+      "file": "experiments/image-anchor.jpeg",
+      "status": 200,
+      "type": "image/jpeg",
+      "bytes": 17802,
+      "sha256": "ca3d329f8714db5fa23cfcec5ed2abab8d34e4cb7fb2071e70d2190d3b4e43b8"
+    },
+    {
+      "file": "experiments/video-range.mp4",
+      "status": 200,
+      "type": "video/mp4",
+      "bytes": 382362,
+      "sha256": "4a04900953b7f52e4f513cbadd4afc0ef7f6ecb7da50aa23ee2bec0235e68b5e"
+    },
+    {
+      "file": "experiments/voice-range.ogg",
+      "status": 200,
+      "type": "audio/ogg",
+      "bytes": 36731,
+      "sha256": "4377a5f0eee3aa60e05bac62ca0d5e498f6d479d38cebed75cd679dde831ff5f"
+    },
+    {
+      "file": "experiments/voice-mismatch.ogg",
+      "status": 200,
+      "type": "audio/ogg",
+      "bytes": 8192,
+      "sha256": "a99664ac3150e5564958adfae59f094a15aa6a3837b85252f9bff2995889ff8a"
+    },
+    {
+      "file": "experiments/telegram-media-downloader.user.js",
+      "status": 200,
+      "type": "text/javascript; charset=utf-8",
+      "bytes": 31244,
+      "sha256": "80167ae47412eba6030c470a387e4e3e546e3b7a663e99b8dac92cb7d1d30ecf"
+    },
+    {
+      "file": "experiments/controlled-results.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8",
+      "bytes": 111827,
+      "sha256": "116b883d0930cf949a0247308b4eb10f06015b1c985473c3d2375d8555a3b390"
+    },
+    {
+      "file": "experiments/media-verification.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8",
+      "bytes": 1757,
+      "sha256": "2741032be65da1f078c8e61b634c38d52a0a972d4d4b120b5f867c4cbb63e82f"
+    },
+    {
+      "file": "docs/download-testing.md",
+      "status": 200,
+      "type": "text/plain; charset=utf-8",
+      "bytes": 6307,
+      "sha256": "0f8818a5a4d1ef1a85bf5f0d83af9b2d87b4eedf3d0b07a03b29231bd382aa1f"
+    }
+  ],
+  "ranges": [
+    {
+      "range": "bytes=0-99",
+      "status": 206,
+      "contentRange": "bytes 0-99/36731",
+      "bytes": 100
+    },
+    {
+      "range": "bytes=100-",
+      "status": 206,
+      "contentRange": "bytes 100-36730/36731",
+      "bytes": 36631
+    },
+    {
+      "range": "bytes=-25",
+      "status": 206,
+      "contentRange": "bytes 36706-36730/36731",
+      "bytes": 25
+    },
+    {
+      "range": "bytes=999999-",
+      "status": 416,
+      "contentRange": "bytes */36731",
+      "bytes": 0
+    },
+    {
+      "range": "bytes=0-1,4-5",
+      "status": 416,
+      "contentRange": "bytes */36731",
+      "bytes": 0
+    }
+  ]
+}
