@@ -11,7 +11,7 @@ Telegram 网页媒体增强工具的完整中文理解：用既有总图引导�
 | 研究日期 | 2026-10-11 |
 | 上游许可证 | GPL-3.0，原文保存在 [licenses](licenses/UPSTREAM-GPL-3.0.txt) |
 | 研究状态 | 源码分析与 12 项受控实验完成；真实 Telegram 下载未实测，用户已停止继续测试 |
-| 在线演示 | 正在接入 GitHub Pages（发布确认见 notes/publication-verification.json） |
+| 在线演示 | [完整中文研究网页](https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html) |
 
 ## 为什么研究
 
@@ -27,7 +27,7 @@ Telegram 网页媒体增强工具的完整中文理解：用既有总图引导�
 - 真实 Telegram 下载未实测；用户已取消继续该测试。
 - [ ] 验证多分辨率、大文件、文件完整性及跨浏览器兼容性。
 - [x] 添加完整九主题摘要、九组模块与既有总图引导，接入静态发布检查。
-- 发布成功及线上验收后登记公网地址。
+- [x] GitHub Pages 部署成功；38项资源逐文件哈希一致，线上摘要、模块和总图交互已验证。
 
 ## 运行与复现
 
@@ -74,7 +74,7 @@ node --check projects/006-telegram-media-downloader/vendor/upstream/src/tel_down
 
 ![本地媒体观察台扩充版：能力、效果、原理、场景、扩展与价值六问速览](assets/research-overview.png)
 
-截图与验证范围见 [图片说明](assets/README.md)。网页里的风景是自有 SVG 示意素材；截图记录的是本地中文展示页，不是 Telegram 下载实测。正在接入 GitHub Pages（发布确认见 notes/publication-verification.json），不能将本机地址当作公网演示。
+截图与验证范围见 [图片说明](assets/README.md)。网页里的风景是自有 SVG 示意素材；截图记录的是本地中文展示页，不是 Telegram 下载实测。[完整中文研究网页](https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html)。当前公网入口以页面顶部地址和发布记录为准。
 
 ## 研究材料
 

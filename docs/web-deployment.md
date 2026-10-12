@@ -6,7 +6,7 @@
 
 固定路径为 `006-telegram-media-downloader/research.html`，`index.html` 为同页别名；公开静态研究网页，不执行下载器或连接 Telegram。无后台、登录、模型或第三方运行依赖。执行子项目 `npm run research:sync`、`npm run check`、`npm run build`、`npm run publication:check`，再执行根 `npm run catalog:sync`、`npm run check` 与 `npm run site:assemble`。38项静态资源由逐文件 SHA-256 清单记录，CI不生成总图、不操作 Telegram 账号。上游原样脚本和 GPL-3.0 保留。
 
-本节记录接入配置。实际部署状态与线上浏览器、逐文件验收见006的 `notes/publication-verification.json`，只有确认发布后才登记项目演示地址。既有001、002、004、005、007和013发布路径保留。
+已实际发布 [006 完整中文研究](https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html)，首次 Actions 38241355803 成功。38项资源的 HTTP、大小与 SHA-256 全部一致；线上确认九主题27段、九组模块、12项实验记录、总图放大与摘要展开，并保留桌面与窄屏实拍。实际版本、浏览器和逐文件验收见006的 `notes/publication-verification.json`；已确认后登记项目演示地址。既有001、002、004、005、007和013发布路径保留。
 
 ## 2026-10-12 · 007 / 013 视频工作台研究
 

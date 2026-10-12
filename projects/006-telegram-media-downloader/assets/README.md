@@ -27,3 +27,6 @@
 
 
 2026-10-12 完整研究发布沿用 `understanding-summary-20261012.png` 作为首页引导图，增加放大阅读、九主题27段完整摘要和九组源码职责。新浏览器检查与线上状态见 `../notes/publication-verification.json`；旧截图仍为历史阶段，不能当作 Telegram 真实下载结果。
+
+
+`publication-live-desktop-20261012.png` 与 `publication-live-mobile-20261012.png` 是已部署 HTTPS 页的实际浏览器截图；手机尺寸为390×844视口模拟，不是手机真机结果。旧截图与总图的内容证据口径不变。

@@ -1,7 +1,7 @@
 {
   "date": "2026-10-12",
-  "status": "prepared",
-  "publicUrl": null,
+  "status": "published-verified",
+  "publicUrl": "https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html",
   "scope": "中文静态研究页；不连接 Telegram，不执行账号下载或模型调用。",
   "summary": {
     "topics": 9,
@@ -55,11 +55,36 @@
         "escapeClosesDialog": true,
         "focusRestored": "open-guide"
       }
+    },
+    "onlineResources": {
+      "passed": 38,
+      "failed": 0,
+      "method": "HTTP状态、大小、SHA-256与本地已提交字节构建一致",
+      "record": "notes/publication-resource-verification.json"
+    },
+    "onlineBrowser": {
+      "url": "https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html",
+      "topics": 9,
+      "paragraphs": 27,
+      "modules": 9,
+      "experimentRows": 12,
+      "posterWidth": 3840,
+      "expandAll": 9,
+      "zoom": "150%",
+      "closeDialog": "passed",
+      "viewport390": {
+        "documentWidth": 375,
+        "overflow": false
+      },
+      "brokenImages": 0,
+      "consoleErrors": []
     }
   },
   "screenshots": [
     "assets/publication-desktop-20261012.png",
-    "assets/publication-mobile-20261012.png"
+    "assets/publication-mobile-20261012.png",
+    "assets/publication-live-desktop-20261012.png",
+    "assets/publication-live-mobile-20261012.png"
   ],
   "upstream": {
     "repository": "https://github.com/Neet-Nestor/Telegram-Media-Downloader",
@@ -72,7 +97,12 @@
     "真实 Telegram 图片、视频、语音、Stories 未实测，用户已取消继续测试。",
     "12项受控实验不推算真实账号成功率；9项完整、2项中止、1项截断。",
     "队列、自动归档、来源索引、AI、断点续传属于未实现扩展。",
-    "窄屏检查是桌面浏览器视口模拟，手机真机未验证。",
-    "线上部署与资源验收待执行。"
-  ]
+    "窄屏检查是桌面浏览器视口模拟，手机真机未验证。"
+  ],
+  "deployment": {
+    "commit": "e55762cd88499b3ea9cd0d60c00206ab0c8e2d2b",
+    "actionsRun": 38241355803,
+    "actionsUrl": "https://github.com/yydshly/1010_codex_project/actions/runs/38241355803",
+    "conclusion": "success"
+  }
 }

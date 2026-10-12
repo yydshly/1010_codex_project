@@ -480,7 +480,7 @@
       "name": "Telegram Media Downloader · 媒体观察台",
       "summary": "Telegram 网页媒体增强工具的完整中文理解：用既有总图引导，涵盖四类媒体、WebK/WebA 差异、九个逻辑模块、账号与网页及脚本分工、官方下载与自有 Range/Blob 保存路径、输出与使用边界、资料和开发价值、五阶段扩展；保留交互示意、12项受控实验、原始文件及来源许可，真实 Telegram 下载未实测，队列与 AI 尚未实现。",
       "source": "https://github.com/Neet-Nestor/Telegram-Media-Downloader",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "浏览器脚本",
         "媒体下载",
@@ -491,7 +491,7 @@
         "path": "projects/006-telegram-media-downloader/assets/understanding-summary-20261012.png",
         "alt": "Telegram 媒体下载器理解总图：能力、效果、九组模块、双路径原理、价值、限制与五阶段扩展"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/006-telegram-media-downloader/research.html",
       "summarySections": [
         {
           "title": "定位：复用网页能力的浏览器增强封装",
