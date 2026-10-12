@@ -21,3 +21,9 @@
 真实HTTPS已验证完整摘要、跨项目入口、检索、16份原文及API、四张效果图、SVG加载与PNG下载、WebGPU雨夜、雨/反射开关、2.2m第一人称移动、模块释放/重新接入，以及有棚/无棚/恢复三个GPU状态。原PNG/SVG/tgz摘要保持不变。173项初次发布资源中172项HTTP/大小/SHA-256完全一致；清单的46项记录内容一致，平台排序差异已修复并将随验收后发布再次核对。
 
 完整结果见 [网页验收JSON](publication-scene-verification.json)、[逐资源记录](publication-scene-resources.json) 和 [真实GPU结果](../../012-threejs-conference/notes/publication-gpu-online.json)。本轮验收为1280×720桌面，未据此声称手机真机或长期性能通过；图内历史制作状态保留，当前发布范围以网页及本记录为准。
+
+## 验收后发布与最终逐文件复核
+
+最终网页部署提交 `f48f16234905cc0a09fb68c5dd61aabb615e601d`，[Actions 38276107756](https://github.com/yydshly/1010_codex_project/actions/runs/38276107756) 构建与部署均成功。001/012全部177项产物的HTTPS状态、字节数与SHA-256均一致；清单顺序和Windows/Linux换行差异已消除。根站点包含联合图与雨夜专题入口，012页面最终显示9主题36段、19份完整资料，公开锚点不指向localhost。
+
+[最终网页验收](publication-scene-final-verification.json) · [177项完整资源清单](publication-scene-final-resources.json)。线上原文保留首次验收快照；最终验收结果在仓库资料中保存，不反复发布自我引用的校验文件。

@@ -8,6 +8,8 @@
 
 不部署原完整城市、独立授权素材、访问者本机服务或模型后端。图内制作时的发布状态不改写，实际发布结果和资源/网页验收见 001 `notes/scene-publication.md`。已实际发布 [001联合研究](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html)、[全图](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/scene-map.html) 和 [012完整研究](https://yydshly.github.io/1010_codex_project/012-threejs-conference/research.html)；012原创雨夜、最小例子和GPU检查也均可在线运行。首次提交 `9016bef7ac61e58ffde220cf6aaf23fb7aec93bd`，Actions 38272909139 构建与部署成功，完整摘要/原图/原文/跨项目入口及真实WebGPU三状态已在线验证。初次资源173项中172项完全一致，剩余清单46项记录内容相同、仅平台排序不同；已固定排序并准备验收后的状态更新。实际记录与正式实拍保存在001和012项目资料中，验收后登记012正式地址。
 
+验收后网页提交 `f48f16234905cc0a09fb68c5dd61aabb615e601d`，Actions 38276107756 构建与部署成功；001/012全部177项资源的HTTPS、大小与SHA-256完全一致。根入口、9主题36段/19份原文及公开链接已复核，完整最终记录见001 `notes/publication-scene-final-verification.json` 和 `notes/publication-scene-final-resources.json`。
+
 ## 2026-10-12 · 010 Cadence 研究与真实计算回放接入
 
 010使用已有3200×6700理解总图，原PNG/SVG不改，统一九主题36段摘要、12组机制、14个场景与业务、用法、价值和六阶段扩展。公开六个入口：完整研究（index同页）、真实回放、能力地图、中文指南和EP数字/动画。四店2400轮、街区8640趟、捕鱼8次运行的全部留出鱼以及NPC28帧内部分步均来自已有Python记录；点击不进行新训练。

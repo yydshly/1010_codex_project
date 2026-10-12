@@ -1,0 +1,31 @@
+{
+  "verifiedAt": "2026-10-12T16:19:49.466Z",
+  "deployedCommit": "f48f16234905cc0a09fb68c5dd61aabb615e601d",
+  "workflow": {
+    "runId": 38276107756,
+    "url": "https://github.com/yydshly/1010_codex_project/actions/runs/38276107756",
+    "build": "success",
+    "deploy": "success"
+  },
+  "status": "final-publication-verified",
+  "resources": {
+    "count": 177,
+    "passed": 177,
+    "failed": 0,
+    "checks": "逐文件HTTPS状态、字节数与SHA-256，177/177完全一致；此前清单顺序和换行差异已消除",
+    "record": "publication-scene-final-resources.json"
+  },
+  "unchanged": "既有联合PNG/SVG和Rain Kit tgz原样保留",
+  "finalBrowserChecks": {
+    "rootTitle": "项目研究集",
+    "rootRainEntry": true,
+    "rootMapEntry": true,
+    "rainSections": 9,
+    "rainParagraphs": 36,
+    "rainDocuments": 19,
+    "localhostAnchors": 0,
+    "passed": true
+  },
+  "interactiveChecks": "WebGPU实际渲染、雨/反射开关、第一人称2.2m、最小模块释放与重挂、GPU有棚/无棚/恢复已在首次正式HTTPS操作验证，详见publication-scene-verification.json与012 publication-gpu-online.json",
+  "note": "本记录保存到仓库；线上资料保留首次发布验收快照。最终网页由上述部署提交生成，不以之后记录提交替代产物版本。"
+}
