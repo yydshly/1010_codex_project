@@ -1,5 +1,14 @@
 # Web 部署与发布范围
 
+## 2026-10-12 · 008 PDoomVideo 与纸间 MV 研究发布接入
+
+沿用已生成的 1024×1536 中文总览图作为首页引导，统一九主题37段完整摘要、九组模块、六步执行链、源库原图、本地工具截图、三画风和两支可播放真实成片。21份研究、实现、实验、工程示例和 MIT 资料可页内阅读及下载；源库能力、本地验证与产品目标分别标注。
+
+静态产物位于 projects/008-pdoom-video/web/dist-public/，固定路径 008-pdoom-video/research.html，index.html 为同页别名。执行子项目 npm ci、npm test、npm run build、npm run build:research 和 npm run publication:check，再执行根 npm run catalog:sync、npm run check、npm run site:assemble。预生成引导图原样发布，CI不调用图片生成或真实模型。逐文件白名单与 SHA-256 清单保护原图、原文和样片；影片规格与完整解码重新核验。
+
+公开静态研究与原创样片；参数化创作、音乐上传、模型请求、Chrome逐帧和ffmpeg编码仍通过本地服务运行。上游歌曲不随网站发布，动作改编保留 MIT。只有实际线上 HTTP、资源哈希与浏览器验收完成后才登记公开入口，结果保存在008的发布记录。
+
+
 ## 2026-10-12 · 014 print-bench 研究发布接入
 
 014以既有总图引导，提供九主题31段完整摘要、九组固定源码模块、六步执行分工、Issue #398 / PR #424 与本机孔洞复现、对话比较、场景判断、现有项目用途和Codex扩展。23项原始资料可读可下载；图稿和原文件完整保留，39项静态资源逐文件SHA-256登记。

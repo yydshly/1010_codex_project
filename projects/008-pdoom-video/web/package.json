@@ -1,0 +1,42 @@
+{
+  "name": "pdoom-mv-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "npm run demo",
+    "dev": "tsx server/index.ts",
+    "start": "tsx server/index.ts --production",
+    "prebuild": "npm run demo",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test tests/*.test.ts",
+    "demo": "tsx scripts/demo.ts",
+    "test:e2e": "tsx scripts/e2e.ts",
+    "test:integration": "tsx scripts/integration.ts",
+    "research:sync": "node scripts/sync-research.mjs --catalog",
+    "build:research": "node scripts/sync-research.mjs && node scripts/build-research.mjs",
+    "publication:check": "node scripts/check-publication.mjs",
+    "preview:research": "node scripts/preview-research.mjs",
+    "publication:verify": "node scripts/verify-live.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "puppeteer-core": "^25.11.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  }
+}

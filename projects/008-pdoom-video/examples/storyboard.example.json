@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "design-example",
+  "description": "人工设计的数据契约示例；没有配套音频，模板执行器尚未实现。",
+  "project": {
+    "title": "小星的舞台",
+    "durationSec": 12,
+    "seed": 42,
+    "styleId": "watercolor_storybook",
+    "output": { "width": 1280, "height": 720, "fps": 24 }
+  },
+  "audio": {
+    "assetId": "example-audio-not-provided",
+    "sourceStartSec": 0,
+    "durationSec": 12,
+    "bpm": 120,
+    "beatOffsetSec": 0,
+    "timingSource": "manual"
+  },
+  "characters": [
+    {
+      "id": "lead",
+      "name": "小星",
+      "templateId": "block_mascot",
+      "appearance": { "bodyColor": "#E88E66", "accentColor": "#FFF0C9", "hat": "star" }
+    }
+  ],
+  "lyrics": [
+    { "id": "line-1", "startSec": 1, "endSec": 3.5, "text": "点亮一颗小小星", "timingSource": "manual" },
+    { "id": "line-2", "startSec": 4.5, "endSec": 7.5, "text": "穿过花园向前行", "timingSource": "manual" },
+    { "id": "line-3", "startSec": 8.5, "endSec": 11.5, "text": "把快乐唱给你听", "timingSource": "manual" }
+  ],
+  "shots": [
+    {
+      "id": "shot-1",
+      "startSec": 0,
+      "endSec": 4,
+      "purpose": "介绍主角并点亮舞台上的星星",
+      "templateId": "stage_intro",
+      "lyricIds": ["line-1"],
+      "actors": [{ "characterId": "lead", "action": "wave", "emotion": "happy", "x": 0.5, "y": 0.75, "scale": 1 }],
+      "camera": { "motion": "push_in", "zoomStart": 1, "zoomEnd": 1.1 },
+      "transitionOut": { "type": "brush_wipe", "durationSec": 0.3 }
+    },
+    {
+      "id": "shot-2",
+      "startSec": 4,
+      "endSec": 8,
+      "purpose": "主角沿花园前进，星星随动作闪烁",
+      "templateId": "garden_walk",
+      "lyricIds": ["line-2"],
+      "actors": [{ "characterId": "lead", "action": "walk", "emotion": "curious", "x": 0.4, "y": 0.75, "scale": 1 }],
+      "camera": { "motion": "pan_right", "zoomStart": 1, "zoomEnd": 1 },
+      "transitionOut": { "type": "cut", "durationSec": 0 }
+    },
+    {
+      "id": "shot-3",
+      "startSec": 8,
+      "endSec": 12,
+      "purpose": "回到舞台按节拍跳舞并收束故事",
+      "templateId": "stage_dance",
+      "lyricIds": ["line-3"],
+      "actors": [{ "characterId": "lead", "action": "bounce", "emotion": "happy", "x": 0.5, "y": 0.75, "scale": 1.1 }],
+      "camera": { "motion": "static", "zoomStart": 1, "zoomEnd": 1 },
+      "transitionOut": { "type": "fade", "durationSec": 0.5 }
+    }
+  ]
+}

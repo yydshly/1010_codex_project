@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "title": "把星光唱给你",
+  "durationSec": 15,
+  "seed": 42,
+  "styleId": "watercolor_storybook",
+  "resolution": "720p",
+  "fps": 24,
+  "character": {
+    "name": "小桃",
+    "bodyColor": "#DC9278",
+    "accentColor": "#F4C95E",
+    "bodyRatio": 1,
+    "eyeSize": 1,
+    "hat": "beanie",
+    "expression": "happy"
+  },
+  "audio": {
+    "assetId": "592f9b74-2952-4b86-b1b5-2c604911f9e9",
+    "name": "demo.wav",
+    "duration": 30,
+    "sourceStartSec": 0,
+    "bpm": 120,
+    "beatOffsetSec": 0
+  },
+  "lyrics": [
+    {
+      "id": "line-1",
+      "start": 0,
+      "end": 3.75,
+      "text": "带着一颗小小星，走进清晨里",
+      "timingSource": "lrc"
+    },
+    {
+      "id": "line-2",
+      "start": 3.75,
+      "end": 7.5,
+      "text": "风吹过花园，梦想开始旅行",
+      "timingSource": "lrc"
+    },
+    {
+      "id": "line-3",
+      "start": 7.5,
+      "end": 11.25,
+      "text": "把快乐唱给你，跟着节拍一起",
+      "timingSource": "lrc"
+    },
+    {
+      "id": "line-4",
+      "start": 11.25,
+      "end": 15,
+      "text": "就让这一束光，照亮我们的心",
+      "timingSource": "lrc"
+    }
+  ],
+  "shots": [
+    {
+      "id": "shot-1",
+      "start": 0,
+      "end": 4,
+      "purpose": "小星登场，建立音乐的情绪",
+      "templateId": "stage_intro",
+      "action": "hop",
+      "emotion": "curious",
+      "camera": "push_in",
+      "transition": "fade",
+      "lyricIds": [
+        "line-1",
+        "line-2"
+      ]
+    },
+    {
+      "id": "shot-2",
+      "start": 4,
+      "end": 7.5,
+      "purpose": "回应歌词：风吹过花园，梦想开始旅行",
+      "templateId": "garden_walk",
+      "action": "walk",
+      "emotion": "curious",
+      "camera": "pan_right",
+      "transition": "fade",
+      "lyricIds": [
+        "line-2"
+      ]
+    },
+    {
+      "id": "shot-3",
+      "start": 7.5,
+      "end": 11.5,
+      "purpose": "回应歌词：把快乐唱给你，跟着节拍一起 就让这一束光，照亮我们的心",
+      "templateId": "prop_interaction",
+      "action": "wave",
+      "emotion": "happy",
+      "camera": "static",
+      "transition": "fade",
+      "lyricIds": [
+        "line-3",
+        "line-4"
+      ]
+    },
+    {
+      "id": "shot-4",
+      "start": 11.5,
+      "end": 15,
+      "purpose": "以星光和谢幕收束短片",
+      "templateId": "curtain_call",
+      "action": "sway",
+      "emotion": "happy",
+      "camera": "push_in",
+      "transition": "cut",
+      "lyricIds": [
+        "line-4"
+      ]
+    }
+  ],
+  "planner": "manual",
+  "story": "小星跟随音乐出发，在片段中经历变化，最后向观众谢幕。"
+}

@@ -1,0 +1,30 @@
+import { z } from 'zod';
+export const styles = ['watercolor_storybook', 'ink_sketch', 'flat_cartoon'] as const;
+export const scenes = ['stage_intro','garden_walk','prop_interaction','emotion_reaction','stage_dance','curtain_call'] as const;
+export const actions = ['idle','wave','walk','bounce','hop','sway'] as const;
+export const emotions = ['happy','curious','sad','excited','calm'] as const;
+export const cameras = ['static','push_in','pan_right'] as const;
+export const sceneNames: Record<string,string> = {stage_intro:'主角登场',garden_walk:'花园漫步',prop_interaction:'拾起星光',emotion_reaction:'心情片刻',stage_dance:'节拍舞台',curtain_call:'星空谢幕'};
+export const actionNames: Record<string,string> = {idle:'呼吸',wave:'挥手',walk:'行走',bounce:'律动',hop:'跳跃',sway:'摇摆'};
+export const emotionNames: Record<string,string> = {happy:'开心',curious:'好奇',sad:'低落',excited:'兴奋',calm:'平静'};
+export const styleNames: Record<string,string> = {watercolor_storybook:'水彩绘本',ink_sketch:'墨线素描',flat_cartoon:'平涂卡通'};
+const time = z.number().finite().min(0).max(86400);
+export const lyricSchema = z.object({id:z.string().max(80),start:time,end:time,text:z.string().min(1).max(300),timingSource:z.enum(['lrc','srt','estimated','manual'])}).strict().refine(v=>v.end>v.start,'歌词结束必须晚于开始');
+export const shotSchema = z.object({id:z.string().max(80),start:time,end:time,purpose:z.string().min(1).max(300),templateId:z.enum(scenes),action:z.enum(actions),emotion:z.enum(emotions),camera:z.enum(cameras),transition:z.enum(['cut','fade']),lyricIds:z.array(z.string()).max(50)}).strict();
+export const projectSchema = z.object({schemaVersion:z.literal('1.0.0'),title:z.string().min(1).max(60),durationSec:z.number().int().min(15).max(30),seed:z.number().int().min(0).max(100000),styleId:z.enum(styles),resolution:z.enum(['720p','1080p']),fps:z.literal(24),character:z.object({name:z.string().min(1).max(20),bodyColor:z.string().regex(/^#[\da-f]{6}$/i),accentColor:z.string().regex(/^#[\da-f]{6}$/i),bodyRatio:z.number().min(.7).max(1.3),eyeSize:z.number().min(.7).max(1.4),hat:z.enum(['none','star','beanie']),expression:z.enum(emotions)}).strict(),audio:z.object({assetId:z.string().regex(/^[\da-f-]{36}$/i),name:z.string().max(200),duration:time,sourceStartSec:time,bpm:z.number().min(40).max(220),beatOffsetSec:z.number().finite().min(-10).max(10)}).strict(),lyrics:z.array(lyricSchema).max(100),shots:z.array(shotSchema).min(2).max(20),planner:z.enum(['rules','model','manual']),story:z.string().max(1000)}).strict();
+export type Project = z.infer<typeof projectSchema>;
+export type Shot = z.infer<typeof shotSchema>;
+export type Lyric = z.infer<typeof lyricSchema>;
+export type Character = Project['character'];
+export function validateProject(input:unknown):Project {
+  const p=projectSchema.parse(input);
+  const near=(a:number,b:number)=>Math.abs(a-b)<.001;
+  if(p.audio.sourceStartSec+p.durationSec>p.audio.duration+.025) throw new Error('选段超出音乐时长，请调整开始位置或短片长度');
+  if(!near(p.shots[0].start,0)||!near(p.shots.at(-1)!.end,p.durationSec)) throw new Error('分镜必须从 0 秒完整覆盖短片');
+  const ids=new Set(p.lyrics.map(l=>l.id));
+  if(ids.size!==p.lyrics.length||new Set(p.shots.map(s=>s.id)).size!==p.shots.length) throw new Error('歌词或镜头 ID 重复');
+  p.lyrics.forEach((l,i)=>{if(l.end>p.durationSec+.001||(i>0&&l.start<p.lyrics[i-1].end-.001))throw new Error('歌词必须按时间排序、不重叠且位于片段内');});
+  p.shots.forEach((s,i)=>{if(s.end-s.start<.5||s.end>p.durationSec+.001||(i>0&&!near(s.start,p.shots[i-1].end)))throw new Error('镜头时间有空隙、重叠或过短');if(s.lyricIds.some(id=>!ids.has(id)))throw new Error('镜头引用了不存在的歌词');});
+  return p;
+}
+export const defaultCharacter:Character = {name:'小星',bodyColor:'#DC9278',accentColor:'#F4C95E',bodyRatio:1,eyeSize:1,hat:'star',expression:'happy'};

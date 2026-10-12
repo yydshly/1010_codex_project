@@ -10,6 +10,7 @@ on:
       - 'projects/005-taohuayuan/**'
       - 'projects/006-telegram-media-downloader/**'
       - 'projects/007-google-vids/**'
+      - 'projects/008-pdoom-video/**'
       - 'projects/013-model-video-studio/**'
       - 'projects/014-print-bench/**'
       - 'projects.json'
@@ -67,6 +68,9 @@ jobs:
         working-directory: projects/006-telegram-media-downloader/web
       - name: Prepare video verification tools
         run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-noto-cjk
+      - name: Verify local MV tool and build PDoomVideo research
+        run: npm ci && npm test && npm run build && npm run build:research && npm run publication:check
+        working-directory: projects/008-pdoom-video/web
       - name: Verify studio and build Vids research publication
         run: npm ci && npm run check && npm run build:research && npm run publication:check
         working-directory: projects/013-model-video-studio/web

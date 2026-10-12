@@ -1,0 +1,67 @@
+{
+  "upstream": {
+    "repository": "https://github.com/JohnHeibel/PDoomVideo",
+    "commit": "fa546a38092e75f2b079e6a86d6abc54dd525d17"
+  },
+  "baseReview": {
+    "repository": "https://github.com/JohnHeibel/ClaudeAnimationBase",
+    "commit": "0ac8bf2b31942376cb6b8c4074715595d512acd2",
+    "license": "MIT",
+    "execution": "not-run"
+  },
+  "environment": {
+    "os": "Windows",
+    "node": "v22.15.0",
+    "npm": "10.9.2",
+    "chrome": "154.0.8037.99",
+    "ffmpeg": "n6.1.3-20250831",
+    "gpu": "not-recorded"
+  },
+  "contactSheet": {
+    "date": "2026-10-10",
+    "exitCode": 0,
+    "path": "assets/upstream-contact-sheet.jpg",
+    "width": 1440,
+    "height": 810,
+    "internalWidth": 1920,
+    "internalHeight": 1080,
+    "bytes": 293273,
+    "sha256": "b369461cd45f3d48b8a99819b853bc3b6f97cdbac683130b3fe426ee9f6f59d5",
+    "timesSec": [4.7, 24, 39.5, 61.5, 74.5, 96.5, 119.5, 130.7, 145],
+    "reportedFrameMs": [548, 12200, 7749, 7961, 15295, 5157, 6224, 1472, 13877]
+  },
+  "failedStillAttempt": {
+    "date": "2026-10-11",
+    "exitCode": 1,
+    "error": "Navigation timeout of 30000 ms exceeded",
+    "stage": "openPage page.goto networkidle0",
+    "rootCause": "not-confirmed"
+  },
+  "clip": {
+    "date": "2026-10-11",
+    "sourceStartSec": 4.5,
+    "sourceEndSec": 5,
+    "path": "out/upstream-clip.mp4",
+    "tracked": false,
+    "renderExitCode": 0,
+    "probeExitCode": 0,
+    "decodeExitCode": 0,
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "decodedVideoFrames": 12,
+    "videoDurationSec": 0.5,
+    "audioDurationSec": 0.5,
+    "containerDurationSec": 0.5,
+    "bytes": 1016833,
+    "reportedFirstAverageMs": 40317,
+    "reportedFinalAverageMs": 9017
+  },
+  "toolStatus": "design-only",
+  "fullVideoVerified": false,
+  "realModelStoryboardVerified": false,
+  "lyricsAlignmentVerified": false,
+  "deployed": false
+}
