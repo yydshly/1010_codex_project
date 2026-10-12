@@ -2,7 +2,7 @@
 
 从 [Kenton-GMI/muster-ww2](https://github.com/Kenton-GMI/muster-ww2) 的固定 commit `7d2fa86ebc3b999eaf085831cdcd5dccefea63d4` 引入。保留上游程序化模型、展柜界面与模型审查工具，修复 TypeScript 构建错误，增加浏览器验收脚本与相对资源路径。
 
-这是本地可运行的上游衍生演示。默认首页为中文研究与体验总入口；“1944 野战机场与集结营地”保留为 `camp.html`，原版英文展柜移至 `archive.html`；机场保卫战任务为 `airport.html`，协同自由演习为 `battle.html`。中文能力分析、操作说明与实测结果位于项目 README 和 `../notes/`；本次加入完整静态发布，线上状态见 `../notes/publication-verification.json`。
+这是本地可运行的上游衍生演示。默认首页为中文研究与体验总入口；“1944 野战机场与集结营地”保留为 `camp.html`，原版英文展柜移至 `archive.html`；机场保卫战任务为 `airport.html`，协同自由演习为 `battle.html`。中文能力分析、操作说明与实测结果位于项目 README 和 `../notes/`；已发布 [研究与体验首页](https://yydshly.github.io/1010_codex_project/004-muster-ww2/)，线上状态见 `../notes/publication-verification.json`。
 
 ## 安装与启动
 
@@ -31,7 +31,7 @@ npm.cmd run preview
 
 ### 研究首页与完整资料
 
-首页有第一次访问路线、六问理解、五个真实体验、截图对照、实际声音采样、原理、应用与扩展路线。`research.html`提供全文阅读器和目录搜索；`evidence.html`提供全部截图、阶段过滤、原始JSON报告和下载。资料与图片的相对引用会映射到网页，不要求浏览器访问项目目录外的文件。
+首页使用已有总览图并展开九维完整摘要，保留第一次访问路线、六问理解、五个真实体验、截图对照、实际声音采样、原理、应用与扩展路线。`research.html`提供全文阅读器和目录搜索；`evidence.html`提供全部截图、阶段过滤、原始JSON报告和下载。资料与图片的相对引用会映射到网页，不要求浏览器访问项目目录外的文件。
 
 每次只加载一个内嵌应用，切换会重新开始；可独立打开或全屏使用。启动演示后首页按钮可暂停 / 继续，滚离体验区或切到后台也会暂停，返回后手动继续。声音跟随同一暂停链路。营地和展柜的浏览器布局仍独立保存。
 
@@ -184,3 +184,9 @@ Vite 的 `base: './'` 使构建资源使用相对路径，为子目录托管准�
 
 
 
+
+## 公开发布与复验
+
+八个页面和完整资料包已接入 GitHub Pages，首次成功 Actions 为38220631396；HTTP及逐文件哈希、五个实际应用与窄屏共11项浏览器检查通过，详见上级notes发布记录。当前根站点保留001、002、004路径。
+
+`npm run publication:check`适用于CI静态产物核对；`test:battle -- --no-report`与`test:airport -- --no-report`执行规则并保留原始报告。公开验收先将 `BASE_URL` 设置为上述完整HTTPS项目目录，再运行 `npm run publication:verify`、`npm run verify:online`。常规阅读不启动三维场景；WebGL2体验在用户选入口后加载，声音需要操作启动。

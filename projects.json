@@ -177,7 +177,7 @@
       "name": "Muster · 场景与协同任务研究",
       "summary": "Muster 程序化资产系统的完整中文研究与可玩扩展：74 条素材、七类资源、配置约束、场景编辑与六视图，深入资产协议、几何/SDF、材质渲染、路径/IK、规则战斗和任务状态机；以原始效果与总览图引导，首页接入动态营地、陆空协同与机场四阶段任务，完整保留笔记、授权、截图、声音与实测，说明使用场景、现有项目价值、复用与扩展路线及验证边界。",
       "source": "https://github.com/Kenton-GMI/muster-ww2",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "Three.js",
         "程序化资产",
@@ -191,7 +191,7 @@
         "path": "projects/004-muster-ww2/assets/research-hub-overview.png",
         "alt": "Muster 中文理解总览：上游资源与能力、原理、营地和协同任务效果、使用场景、价值、扩展路线与验证边界"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/004-muster-ww2/",
       "summarySections": [
         {
           "title": "能力：可配置、可编辑的程序化资产系统",

@@ -21,7 +21,9 @@
     "test:airport": "node scripts/test-airport.mjs",
     "verify:airport": "node scripts/verify-airport.mjs",
     "verify:hub": "node scripts/verify-hub.mjs",
-    "publication:check": "node scripts/check-publication.mjs"
+    "publication:check": "node scripts/check-publication.mjs",
+    "publication:verify": "node scripts/verify-publication-assets.mjs",
+    "verify:online": "node scripts/verify-hub.mjs --online"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.3.0",

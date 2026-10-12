@@ -104,5 +104,5 @@ check('标准模式真实规则电脑能击败不操作的蓝队全部三车，�
   assert.ok(g.history.some(e => e.kind === 'switch' && e.unit === 4)); assert.ok(g.history.some(e => e.kind === 'switch' && e.unit === 5));
   assert.ok(g.history.some(e => e.kind === 'airstrike' && e.unit === -1)); return { time: g.time, selectedId: g.selectedId, vehicles: g.units };
 });
-report.passed = true; fs.writeFileSync(new URL('../../notes/combined-arms-unit-results.json', import.meta.url), JSON.stringify(report, null, 2));
+report.passed = true; if(!process.argv.includes('--no-report')) fs.writeFileSync(new URL('../../notes/combined-arms-unit-results.json', import.meta.url), JSON.stringify(report, null, 2));
 console.log(`${report.checks.length} 项协同规则验证通过。`);

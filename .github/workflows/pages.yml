@@ -53,7 +53,7 @@ jobs:
         working-directory: projects/002-18-floors-of-mayhem/web
       - run: npm ci
         working-directory: projects/004-muster-ww2/web
-      - run: npm run test:battle && npm run test:airport && npm run build && npm run publication:check
+      - run: npm run test:battle -- --no-report && npm run test:airport -- --no-report && npm run build && npm run publication:check
         working-directory: projects/004-muster-ww2/web
       - run: npm run site:assemble
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5

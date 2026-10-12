@@ -23,9 +23,11 @@ for (const resource of ['assets/research-hub-overview.png', 'assets/research-hub
   assert.ok(manifest.items.some(item => item.path === resource), '缺少发布材料：' + resource);
 }
 const summaries = JSON.parse(fs.readFileSync('src/hub/summary.json', 'utf8'));
+const fullSummary = fs.readFileSync('../notes/research-hub-publication.md', 'utf8');
 assert.equal(summaries.length, 9);
 for (const summary of summaries) {
   assert.equal(summary.labels.length, summary.body.length);
+  assert.ok(fullSummary.includes(summary.title) && summary.body.every(text => fullSummary.includes(text)), '完整研究笔记遗漏摘要：' + summary.title);
   assert.ok(manifest.items.some(item => item.path === summary.doc), '缺少摘要依据：' + summary.doc);
 }
 console.log(`发布检查通过：${html.length} 个页面、${summaries.length} 个摘要模块、${manifest.items.length} 项原始资料，资源与 SHA-256 一致。`);

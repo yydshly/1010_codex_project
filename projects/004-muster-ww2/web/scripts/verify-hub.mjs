@@ -6,7 +6,7 @@ import http from 'node:http';
 import crypto from 'node:crypto';
 import {parseArgs} from 'node:util';
 import puppeteer from 'puppeteer-core';
-const {values}=parseArgs({options:{prefix:{type:'boolean',default:false},light:{type:'boolean',default:false},online:{type:'boolean',default:false}}});
+const {values}=parseArgs({options:{prefix:{type:'boolean',default:false},light:{type:'boolean',default:false},online:{type:'boolean',default:false},resume:{type:'boolean',default:false}}});
 let server;
 const prefix='/1010_codex_project/004-muster-ww2/';
 if(values.prefix){
@@ -29,12 +29,19 @@ if(values.prefix){
 const base=server?'http://127.0.0.1:'+server.address().port+prefix:(process.env.BASE_URL??'http://127.0.0.1:5198/');
 if(values.online)assert.ok(base.startsWith('https://'),'线上验收必须显式配置 HTTPS BASE_URL');
 const report={date:new Date().toISOString(),base,scope:values.light?'网页资料、入口、全文与窄屏（不重复3D）':'网页资料、入口、全文、五个真实内嵌体验与窄屏',checks:[],errors:[],failures:[],warnings:[],passed:false};
+if(values.resume){
+ assert.ok(values.online&&!values.light,'续验仅用于同一线上完整验收');
+ const prior=JSON.parse(fs.readFileSync('../notes/publication-hub-browser-results.json','utf8'));
+ assert.equal(prior.base,base);assert.deepEqual(prior.errors,[]);assert.deepEqual(prior.failures,[]);
+ report.checks=prior.checks;report.materialCounts=prior.materialCounts;report.warnings=prior.warnings;report.sessions=[{date:prior.date,finished:prior.finished,checks:prior.checks.map(x=>x.name),failure:prior.failure},{date:report.date,scope:'仅重试未完成项目；模型页面未改变，等待改为定时轮询'}];
+}
 const executablePath=[process.env.BROWSER_PATH,'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'].filter(Boolean).find(fs.existsSync);
 assert.ok(executablePath);
 let browser,page;
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
-async function check(name,fn){const start=Date.now();const detail=await fn();report.checks.push({name,passed:true,ms:Date.now()-start,detail});console.log('通过：'+name);}
+async function check(name,fn){if(values.resume&&report.checks.some(x=>x.name===name)){console.log('保留已实测：'+name);return;}const start=Date.now();const detail=await fn();report.checks.push({name,passed:true,ms:Date.now()-start,detail});console.log('通过：'+name);}
 const url=relative=>new URL(relative,base).href;
+const readManifest=async()=>values.online?(await fetch(url('research/manifest.json'))).json():JSON.parse(fs.readFileSync('dist/research/manifest.json','utf8'));
 async function shot(name,fullPage=false){if(values.prefix)return;const output=values.online?name.replace('research-hub-','research-hub-publication-'):name;await page.screenshot({path:path.resolve('../assets/'+output),fullPage});}
 async function goto(relative){await page.goto(url(relative),{waitUntil:'load',timeout:120000});await page.bringToFront();}
 async function frame(){await page.waitForSelector('#live-frame');return (await page.$('#live-frame')).contentFrame();}
@@ -46,15 +53,15 @@ try{
  page.on('response',res=>{if(res.status()>=400&&res.url().startsWith(base))report.failures.push(res.status()+' '+res.url());});
  page.on('requestfailed',req=>{if(req.url().startsWith(base)&&!req.failure()?.errorText.includes('ERR_ABORTED'))report.failures.push(req.url()+' '+req.failure()?.errorText);});
  page.on('console',msg=>{if(msg.type()==='error')report.errors.push(msg.text());if(msg.type()==='warn'&&!report.warnings.includes(msg.text()))report.warnings.push(msg.text());});
- await check('资料清单覆盖源目录，所有打包文件保持原始 SHA-256',async()=>{
-  const manifest=JSON.parse(fs.readFileSync('dist/research/manifest.json','utf8'));
+ await check(values.online?'线上全部资料与研究源一致，文本兼容 Git LF':'资料清单覆盖源目录，所有打包文件保持原始 SHA-256',async()=>{
+  const manifest=await readManifest();
   assert.equal(manifest.items.length,new Set(manifest.items.map(i=>i.path)).size);
   const walk=dir=>fs.readdirSync(path.resolve('..',dir),{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(dir+'/'+x.name):[dir+'/'+x.name]);
-  for(const dir of ['notes','assets','web/docs','web/licenses'])for(const file of walk(dir))if(/\.(md|json|png|jpg|jpeg|webp|svg|wav|txt)$/i.test(file))assert.ok(manifest.items.some(i=>i.path===file),file);
-  for(const item of manifest.items){const source=fs.readFileSync(path.resolve('..',item.path)),packed=fs.readFileSync('dist/'+item.url);assert.deepEqual(packed,source,item.path);assert.equal(crypto.createHash('sha256').update(packed).digest('hex'),item.sha256);}
+  if(!values.online)for(const dir of ['notes','assets','web/docs','web/licenses'])for(const file of walk(dir))if(/\.(md|json|png|jpg|jpeg|webp|svg|wav|txt)$/i.test(file))assert.ok(manifest.items.some(i=>i.path===file),file);
+  for(const item of manifest.items){const source=fs.readFileSync(path.resolve('..',item.path));if(values.online){const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');const text=item.type==='document'||item.type==='report'||item.path.endsWith('.svg');assert.ok(sha(source)===item.sha256||(text&&sha(Buffer.from(source.toString('utf8').replace(/\r\n/g,'\n')))===item.sha256),item.path);}else{const packed=fs.readFileSync('dist/'+item.url);assert.deepEqual(packed,source,item.path);assert.equal(crypto.createHash('sha256').update(packed).digest('hex'),item.sha256);}}
   report.materialCounts=manifest.counts;return{files:manifest.items.length,counts:manifest.counts};
  });
- const manifest=JSON.parse(fs.readFileSync('dist/research/manifest.json','utf8'));
+ const manifest=await readManifest();
  await check('首页引导、六问、五个体验入口与全部资料 HTTP 可达',async()=>{
   await goto('./');await page.waitForFunction(()=>document.querySelectorAll('.material-counts strong').length===4);
   assert.equal(await page.$$eval('iframe',els=>els.length),0,'默认不启动重型模型');
@@ -128,8 +135,9 @@ try{
   assert.equal(s.catalog,74);assert.equal(s.rendered,1);assert.deepEqual(s.issues,[]);assert.equal(await f.$eval('.brand',a=>a.target),'_top');return s;
  });
  await check('首页六视图审查与真实侧裙配置，配置后几何统计改变',async()=>{
+  await goto('./');
   let f=await live('harness',()=>window.__ready&&!window.__error);const fitted=await f.evaluate(()=>window.__stats);assert.equal(fitted.config.schuerzen,'fitted');assert.ok(fitted.triangles>1000);
-  await page.click('#harness-skirts');await page.click('#harness-apply');f=await frame();await f.waitForFunction(()=>window.__ready&&!window.__error,{timeout:180000});
+  await page.click('#harness-skirts');await page.click('#harness-apply');f=await frame();await f.waitForFunction(()=>window.__ready&&!window.__error,{polling:250,timeout:180000});
   const removed=await f.evaluate(()=>window.__stats);assert.equal(removed.config.schuerzen,'removed');assert.notEqual(fitted.triangles,removed.triangles);
   await page.click('#live-close');return{fitted:fitted.triangles,removed:removed.triangles};
  });
@@ -145,9 +153,9 @@ try{
   return widths;
  });
  assert.deepEqual(report.errors,[]);assert.deepEqual(report.failures,[]);report.passed=true;
-}catch(error){report.failure=String(error.stack??error);console.error(report.failure);process.exitCode=1;if(page&&!values.prefix)await page.screenshot({path:path.resolve('../assets/research-hub-failure.png')}).catch(()=>{});}
+}catch(error){report.failure=String(error.stack??error);console.error(report.failure);process.exitCode=1;if(page&&!values.prefix&&page.url()!=='about:blank')await page.screenshot({path:path.resolve('../assets/'+(values.online?'research-hub-publication-failure.png':'research-hub-failure.png'))}).catch(()=>{});}
 finally{
- report.finished=new Date().toISOString();fs.writeFileSync(path.resolve('../notes/'+(values.online?'publication-hub-browser-results.json':values.prefix?'research-hub-subpath-results.json':values.light?'research-hub-content-results.json':'research-hub-browser-results.json')),JSON.stringify(report,null,2));
+ report.finished=new Date().toISOString();fs.writeFileSync(path.resolve('../notes/'+(values.online?(values.light?'publication-content-browser-results.json':'publication-hub-browser-results.json'):values.prefix?'research-hub-subpath-results.json':values.light?'research-hub-content-results.json':'research-hub-browser-results.json')),JSON.stringify(report,null,2));
  await browser?.close();await new Promise(r=>server?server.close(r):r());
 }
 

@@ -1,0 +1,858 @@
+{
+  "date": "2026-10-12T07:58:46.017Z",
+  "base": "https://yydshly.github.io/1010_codex_project/004-muster-ww2/",
+  "scope": "公开八个页面、站点入口、完整资料包逐文件字节与哈希、原始引导图",
+  "checks": [
+    {
+      "name": "公开资料清单与上游固定来源一致",
+      "passed": true,
+      "files": 137
+    },
+    {
+      "name": "八个真实 HTML 和研究站首页入口可达，无本地地址依赖",
+      "passed": true,
+      "pages": 8
+    },
+    {
+      "name": "公开资料包每个文件的实际字节和 SHA-256 与发布清单一致",
+      "passed": true,
+      "files": 137
+    },
+    {
+      "name": "公开首页引导 PNG 与可编辑 SVG 保持原图完整 SHA-256",
+      "passed": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/airport-air-support.png",
+      "bytes": 463550,
+      "sha256": "a8c6e62941c7061c8ea33d67478af5596dbb1d5ca753f690ab8a48f9f4420815",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-briefing.png",
+      "bytes": 396046,
+      "sha256": "fe88b5a9af7517a0d3bb4495e67b00ca1f1be42b7c9c506da163a2f3dd704e10",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-counterattack-complete.png",
+      "bytes": 476061,
+      "sha256": "22b37eadfd4ad732f160eba941fa0775f2bba724a0713ef8e968cf73b59144cd",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-deployed.png",
+      "bytes": 533533,
+      "sha256": "6387f293fc7bab22839bbd9b145806690ad1b6227aea5ef99481329bbee6959e",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-mobile-briefing.png",
+      "bytes": 111606,
+      "sha256": "af3f66e2575dbb3f82351c4fdbae95352b96f0f3e0030951babe36875e65944d",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-mobile-playing.png",
+      "bytes": 131708,
+      "sha256": "1dee1ce34969b7b780a92708c82e94087ab3f20583f335aa6c4505759bd61736",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-paused.png",
+      "bytes": 380886,
+      "sha256": "6a8f5adfc09da8aea372fc1bd93c3beecee9975cc6b7202702ec5670aed84a50",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-recon-complete.png",
+      "bytes": 491146,
+      "sha256": "66ebc47aafa59dca92a8321d511958a25534891f8737f53d1edef46221c95ad5",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-recon-north.png",
+      "bytes": 484675,
+      "sha256": "fb8885bbe763e1b3b14383f886e621c58cd6fafcd5eceb6e75df242f8dade2a8",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-squad-orders.png",
+      "bytes": 488602,
+      "sha256": "393c755ccb8e1b36ed52ab7d89c52aa6099fff0fb006bc5660edebd3e77a5779",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-supply-loaded.png",
+      "bytes": 483757,
+      "sha256": "802c368bed5880eb0474223f29d8d10b7938652dbb1a6a2ce68679bbf9d00b0e",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-victory.png",
+      "bytes": 361664,
+      "sha256": "82a5bb19f519fd52c89ea49245b782e2b8db97f2b9c2b0d58538938c2b03c456",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-wave-one.png",
+      "bytes": 463603,
+      "sha256": "4707adff8516d5a13b8968e70247e852d48d591df6ae9b0bcdb19c9bf3986640",
+      "status": 200
+    },
+    {
+      "path": "assets/airport-wave-two.png",
+      "bytes": 540107,
+      "sha256": "dd667197f5b4c52471aecb8a2ecdcdf941b48192e29a334dd69ebf08dc435280",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-airstrike-flight.png",
+      "bytes": 680980,
+      "sha256": "40e5871e3c970ff28118e4f6d31c564ce76e2608decb8941bf3d38796fb92b90",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-airstrike-impact.png",
+      "bytes": 704574,
+      "sha256": "0e6a6eaa3a21c3d53797e6fd0c14cc86096fe6009993a67ffe36f853c202a6b0",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-capture.png",
+      "bytes": 619630,
+      "sha256": "366291d3989698441a4310df7afe12770016d9cf5eeec4f8b6a4e7eb92ca7cfa",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-combat.png",
+      "bytes": 585722,
+      "sha256": "ad976f7bd13829b22b6430329b12d0fbabf4a14d65326c0d97641668583c7652",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-combined-combat.png",
+      "bytes": 680661,
+      "sha256": "6ef14af91e428030da582c348c313e197a3c2642ed88d39854d275e33fa46bd3",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-combined-mobile-ready.png",
+      "bytes": 106757,
+      "sha256": "0977ddb0ba3ad15740868282146f8e764431667a1707da0598489edf8c818793",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-combined-mobile.png",
+      "bytes": 145320,
+      "sha256": "3efe1474a8ce9b7f533258ec4eebb32562a5544eff3a3b94a393511d8334acf5",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-combined-paused.png",
+      "bytes": 459167,
+      "sha256": "84d489e14a41bd58bf8748c3b790d4f36d1803832171e8c252ad4f66839da885",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-combined-ready.png",
+      "bytes": 479122,
+      "sha256": "acd2404bfac619a53c2c49d83aac5b82a4b6b3c40e9974516890a7717ab865e3",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-combined-victory.png",
+      "bytes": 458162,
+      "sha256": "40f228996d50619073210bc6a33b4328f5ae5e62f37e8feb3d1832f283d23e3a",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-cover.png",
+      "bytes": 618868,
+      "sha256": "a0398f1e06567e531990b555aa3f2c4c573bb261c0a3455268d0423ed8e9399a",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-defeat.png",
+      "bytes": 437741,
+      "sha256": "f6cf7871b06b1ac88665c38354d62bec89b0c2c44295c2d2be0ae7813c44e2d4",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-driving.png",
+      "bytes": 617604,
+      "sha256": "28a73a249cfbca876e832f12cdcdbed217341c775200cf1e407b56a209b6f41a",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-enemy-air-raid.png",
+      "bytes": 713717,
+      "sha256": "12545ecc6daf8fc6cd7c0c8d7efc12d3f9cefb541bcf5a35ba6685afeb7bee57",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-infantry-combat.png",
+      "bytes": 738619,
+      "sha256": "f21df6d119ab0f6f477ca3fb8e1e52eb927c7fd70e35a83819f782ee0d6c7479",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-jeep-driving.png",
+      "bytes": 765274,
+      "sha256": "f41ed2e7052819a26db14b7384bfa7deec7ebff6a9a85693189c50fb8c9d6ec6",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-mobile-ready.png",
+      "bytes": 101200,
+      "sha256": "aa715560c7a7b3174af9fe9250c70553753718908f2810b0b3db021f96e11b28",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-mobile.png",
+      "bytes": 110601,
+      "sha256": "42adabb8aebe5095c1829877fbcdaf9d75cc97a02d075ed810d47c47b6c274ee",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-objective-victory.png",
+      "bytes": 419999,
+      "sha256": "e4a8f9bdcadea2d2a590c29a87ec74dff9c0746f64166dc5e07a8c7bd147ecea",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-paused.png",
+      "bytes": 413081,
+      "sha256": "02538418aa6f3046b5757ad6cfe758ed3524a5f43b41893a1813eea1f2c660d3",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-ready.png",
+      "bytes": 425976,
+      "sha256": "8fb34f2dcd26678b85d0b9ecb0e29fd6a7e2f84fede2ed080902a156898dcfb5",
+      "status": 200
+    },
+    {
+      "path": "assets/battle-victory.png",
+      "bytes": 399297,
+      "sha256": "803ef3bdd2077f9723534103db5f39ef1802de9c6672c51c7bdd4a7b9181312b",
+      "status": 200
+    },
+    {
+      "path": "assets/configured-grid.png",
+      "bytes": 791894,
+      "sha256": "0491decb6dd10df8bd0d46a24e43370cdc67609a0cdc8e52096da1d28b3f3a52",
+      "status": 200
+    },
+    {
+      "path": "assets/cover.png",
+      "bytes": 628209,
+      "sha256": "efb128010eaa05d2bf3f17f5cafd7c02cbd2b488de6f29e1547625b5854af6e0",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-armor.png",
+      "bytes": 839436,
+      "sha256": "7bb9758b1eec2cd97064f8ff698ccd5542e2eff19b2d14866a75237fb41b28e1",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-battery.png",
+      "bytes": 824401,
+      "sha256": "9f5e7542f776517b1fccaa2ed6c0ca7bb54d5af58830a7a1ef3e303339320b7c",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-edited-layout.json",
+      "bytes": 6165,
+      "sha256": "b26ab294dc95d5b5b9ae286bc75cab2a7db8d780a835782d4068317bafa627c9",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-evening.png",
+      "bytes": 565730,
+      "sha256": "bc8bf744944557b68c4d41c851e39cf80b26606d9c2196c4ccf3595a690763b2",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-flight.png",
+      "bytes": 478058,
+      "sha256": "4b1a202a040b87716def995b90837ab380d9728a9ad2f2d0fbaf8c5991c60724",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-mobile.png",
+      "bytes": 128171,
+      "sha256": "4b0f7814e004f1fffd5ca21e70609cae678d560b51ca051d62324d69fe0d43fe",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-motion-approach.png",
+      "bytes": 245123,
+      "sha256": "32619e48d5e5a77c581688a7a66dd8bad3c94257f563b46123615e08af63fa56",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-motion-convoy.png",
+      "bytes": 872857,
+      "sha256": "2c5d2334f6596f70a8fe90cd61943920ec9b790f8c6691296cdabfc42d4904ea",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-motion-flight.png",
+      "bytes": 282171,
+      "sha256": "16030eb6de3e6a8fbfd702f975eb977204ad93e7b1abfb144014d37848ffd8e2",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-motion-landing.png",
+      "bytes": 411469,
+      "sha256": "5ca18ffe6d48746a0ee353f56fbbe6a6dfdc294554604af7da0a12b8590b74dc",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-motion-mobile.png",
+      "bytes": 71269,
+      "sha256": "eec19727d40d52df23e0dd8d9fa0853c4ecae056c7ced0ea4d9a8a22b445e0cc",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-motion-patrol.png",
+      "bytes": 796047,
+      "sha256": "82bc857fdd65eda9ad8da5f2612994f5360befa3dedf878ed4b77c40dfad29be",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-motion-takeoff.png",
+      "bytes": 489954,
+      "sha256": "8ef3cc7af6b71d98e51ac4688015a437d822e79540877c3384100d5d7a9d0a68",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-overview.png",
+      "bytes": 597292,
+      "sha256": "d69992b31b754386c2164291593a0eff7d88897935ea0d1e9688e6f24a6492d1",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-realism-audio.wav",
+      "bytes": 252716,
+      "sha256": "912129e0ef442ec7a67d36dde5572f33e1a70875606781555a6102fa69b2db64",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-realism-convoy.png",
+      "bytes": 959818,
+      "sha256": "3fd457fd916a6534d5b1752cc2e75706999cbdc1df6f766882062caac92e4ef4",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-realism-gear-down.png",
+      "bytes": 270858,
+      "sha256": "5f3d83949512286fec74e13f88b986379f98a06ca45ca8750c6532742e7579c5",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-realism-gear-folding.png",
+      "bytes": 251258,
+      "sha256": "22c7ab20f531e50dfcdbdce6970d09dfd0ec90b436b350ff0ee41ce6630780bf",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-realism-gear-up.png",
+      "bytes": 577650,
+      "sha256": "f6627decb52aeb63fc4f84aeb75af65dcc24b057b8fa68bee661e0a114a36dcb",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-realism-mobile.png",
+      "bytes": 134370,
+      "sha256": "55e5dd3eaede31eedc3aa4ea61c845513900f09ef9d0796e10e077277390d010",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-realism-patrol.png",
+      "bytes": 820774,
+      "sha256": "a80b234fdb770fb2fed06d5421fb52e6069c95fa75a056e5a8ed4c912573fffd",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-restored.png",
+      "bytes": 594866,
+      "sha256": "2757c7ecc1967056347dd149bf9b857124b2a2e46f96c2f34ce5c61601822a3b",
+      "status": 200
+    },
+    {
+      "path": "assets/fieldcamp-squad.png",
+      "bytes": 773623,
+      "sha256": "ecfbcb73da1290741d48450bd82a57c2356c55859b246fad76b5f2edb24ca91f",
+      "status": 200
+    },
+    {
+      "path": "assets/panzer-fitted.png",
+      "bytes": 743776,
+      "sha256": "c90f00f3334fcebe8042009242dba8d6be62d372ee94663426c8e728d4ebee3b",
+      "status": 200
+    },
+    {
+      "path": "assets/panzer-removed.png",
+      "bytes": 748282,
+      "sha256": "b409b83fe0ce8f2a80e6450369843905cb924c64884aef2f8eeed8e0cfdc2112",
+      "status": 200
+    },
+    {
+      "path": "assets/README.md",
+      "bytes": 14271,
+      "sha256": "93d9ccc752e8e4b653ce054bd104ccb1a1f4d0d12283bd6911f1af4243292656",
+      "status": 200
+    },
+    {
+      "path": "assets/research-hub-evidence.png",
+      "bytes": 313774,
+      "sha256": "afa0089957d12373d91b11739e1679f22fed9356e9aac2bd46a413ee9a2435b3",
+      "status": 200
+    },
+    {
+      "path": "assets/research-hub-home.png",
+      "bytes": 225476,
+      "sha256": "0ffd457fcd4d95ef439ce76ccc18289fa11525e2485be3f0f5819fb9e46edc06",
+      "status": 200
+    },
+    {
+      "path": "assets/research-hub-live-airport.png",
+      "bytes": 257960,
+      "sha256": "c02154462bde0405edd0cfaaec005f79cfb46552fe62c3608e7eaba9e0f81a2f",
+      "status": 200
+    },
+    {
+      "path": "assets/research-hub-live-camp.png",
+      "bytes": 182406,
+      "sha256": "8611d7cc8ddd76c43872b230b46dec11ac29e977d48d39ecfcf42bb6cff4a8a8",
+      "status": 200
+    },
+    {
+      "path": "assets/research-hub-mobile.png",
+      "bytes": 87482,
+      "sha256": "8b5a254cf62119e36c4362dad2423b354df73422706effbc6ec95d91bbd26a08",
+      "status": 200
+    },
+    {
+      "path": "assets/research-hub-overview-source.svg",
+      "bytes": 8424755,
+      "sha256": "e51dcf07c3989a7dd42be8d10f34389cd5e20453b937216774559c4682563aed",
+      "status": 200
+    },
+    {
+      "path": "assets/research-hub-overview.png",
+      "bytes": 3250040,
+      "sha256": "c83b72a0b575c66886586d6ba3cbe8025da478f6f88e20f71593ce3bde8b5e8b",
+      "status": 200
+    },
+    {
+      "path": "assets/research-hub-reader.png",
+      "bytes": 119859,
+      "sha256": "2d9c5c8e0aeb783e9c5a1384aabc3701a68e10af7aa13c29e534bf0f3aae5fd4",
+      "status": 200
+    },
+    {
+      "path": "assets/restored-layout.png",
+      "bytes": 782237,
+      "sha256": "873841a790895c122b89142a8ec48913309006d265d52c44bcbffc53720aff5a",
+      "status": 200
+    },
+    {
+      "path": "notes/airport-browser-results.json",
+      "bytes": 27529,
+      "sha256": "a120c733ded7e77eefa22d6dc4d06c87675c915a9ff1119ad63a04ba8c7c4e7e",
+      "status": 200
+    },
+    {
+      "path": "notes/airport-defense.md",
+      "bytes": 8570,
+      "sha256": "79af42b816c947b21ee13c641f57bc5853249470ec7d4e62b6ff1c852259c6cf",
+      "status": 200
+    },
+    {
+      "path": "notes/airport-mobile-results.json",
+      "bytes": 3396,
+      "sha256": "319f0dccfb44aaa87ee59396baad53de7e732bc53cf990d31eb42b337e5849bf",
+      "status": 200
+    },
+    {
+      "path": "notes/airport-subpath-results.json",
+      "bytes": 219787,
+      "sha256": "04ea842665f8839c9107a20bc42bb014ed8782b7ee9ac06fb285d7d8d32b3322",
+      "status": 200
+    },
+    {
+      "path": "notes/airport-unit-results.json",
+      "bytes": 2160,
+      "sha256": "b90767683cc2d25d27c7931582672aae6a2fa6e5ef5930d6308d8f8ba0dfc0c4",
+      "status": 200
+    },
+    {
+      "path": "notes/archive-regression-results.json",
+      "bytes": 51842,
+      "sha256": "4ccfc91744a8ea9e319ee7dca562c83444ae83001c72de28fbcd4220f573785a",
+      "status": 200
+    },
+    {
+      "path": "notes/battle-browser-results.json",
+      "bytes": 12561,
+      "sha256": "d252f4890692c6ec3290175f168ca26eebbb5b521dc9f07113e4ea3ddb1584ac",
+      "status": 200
+    },
+    {
+      "path": "notes/battle-camp-regression-results.json",
+      "bytes": 12770,
+      "sha256": "49e22c59c1f60bfb07187b1ec80d711a23bd0b22f8ae687282978ee45b91ed9d",
+      "status": 200
+    },
+    {
+      "path": "notes/battle-game.md",
+      "bytes": 8156,
+      "sha256": "a58981021a571e33258eaf90687c39b0f976da9c7f16e866920c1fdaa7e8f00e",
+      "status": 200
+    },
+    {
+      "path": "notes/battle-objective-results.json",
+      "bytes": 9697,
+      "sha256": "851d5eb29074e29980f0f366457080698af77ac311cf8cc5ec300fd569d64657",
+      "status": 200
+    },
+    {
+      "path": "notes/battle-subpath-results.json",
+      "bytes": 131911,
+      "sha256": "17d82a3730298dee3de0e0fc8f04e426f0b9b75e6a537cc23a6d42528f68bfa1",
+      "status": 200
+    },
+    {
+      "path": "notes/battle-unit-results.json",
+      "bytes": 2286,
+      "sha256": "1b10a0973481d7947b2e99757de817b266f3ea07360cb747a868c4fa5c7904ee",
+      "status": 200
+    },
+    {
+      "path": "notes/build-fix.md",
+      "bytes": 1807,
+      "sha256": "a647fbf39fb4edfbde2bf61ede5d522f99b19c4c7a0750377e1fbea6851a6b03",
+      "status": 200
+    },
+    {
+      "path": "notes/combined-arms-browser-results.json",
+      "bytes": 30641,
+      "sha256": "f9bcd01de8c140897e2d4735be73f3dbdfaebb7244b9e28e13a05d662c33a2ee",
+      "status": 200
+    },
+    {
+      "path": "notes/combined-arms-mobile-results.json",
+      "bytes": 8680,
+      "sha256": "7af8c669612f7623f13b0e34819c0ab15f103ea956a70cdee1415385f29a855b",
+      "status": 200
+    },
+    {
+      "path": "notes/combined-arms-subpath-results.json",
+      "bytes": 157662,
+      "sha256": "0fa1f8db6c8c22fcc4be326c2e9d7f7cbc855b8194c695a95c6a5c839e9be533",
+      "status": 200
+    },
+    {
+      "path": "notes/combined-arms-unit-results.json",
+      "bytes": 8474,
+      "sha256": "9cbd188572b17479d04cf574a9737cba53aa7dbe180ee982d4161356005dda4d",
+      "status": 200
+    },
+    {
+      "path": "notes/combined-arms.md",
+      "bytes": 9420,
+      "sha256": "a78c30ebcf6479d2b2a673e64fc80d7954fac02b4ae4ca0c5458583a28c45937",
+      "status": 200
+    },
+    {
+      "path": "notes/experiment.md",
+      "bytes": 6074,
+      "sha256": "7ef95d8a075ab63edadd4fcc91f90909b3cb2084317949c55841dedc432de01c",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-editor-baseline-results.json",
+      "bytes": 9043,
+      "sha256": "b691d74459e2c372883fb0ebdf957b44b4ffebcaead7b92bd9844be96b52c7b9",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-motion-baseline-results.json",
+      "bytes": 15134,
+      "sha256": "3bd4cb595df41a799c6d5d3a07dc0006db87b0643a4cb224e76f080fbbb7bdef",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-motion-results.json",
+      "bytes": 67525,
+      "sha256": "17d583ebb0ae9e243097cef85d8eeb8c0beee19481d2290662044507154067bb",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-motion-subpath-results.json",
+      "bytes": 18495,
+      "sha256": "87c92a30cee2bd2f4d4d8d1200ddd68b18ce28d860486bac1b5f06b37ab7e7ab",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-motion.md",
+      "bytes": 7319,
+      "sha256": "45401e38a898b01eb9f1a5e3a58519349a7d832895bbfd7eef05635f7cdd3fc8",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-realism-results.json",
+      "bytes": 12594,
+      "sha256": "5bdf2a6db4a9ce6f3269fc233c595371dd160bd468d290924f5ac90fbf487279",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-realism-subpath-results.json",
+      "bytes": 94012,
+      "sha256": "3c5eaa30817c648c5ccea5eff3147c07786e5901fed79caa4096df61770f39be",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-realism.md",
+      "bytes": 7755,
+      "sha256": "cc33e2004b0c159d55de05ce0ea0bc39b9f40b9feac0eeeb5aa80b8c1ef2197e",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-results.json",
+      "bytes": 9043,
+      "sha256": "53b53fc7dc696c29ffc62e427a91136b51207452abb45ef51d215ce2d135dc06",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp-subpath-results.json",
+      "bytes": 1071,
+      "sha256": "3d400b5d6d3a51eeae02f1c941ff54e0900ec0970813fc726f5c992ddd0ae9c0",
+      "status": 200
+    },
+    {
+      "path": "notes/fieldcamp.md",
+      "bytes": 9142,
+      "sha256": "ead9e6dd8ae16e0eb28f8ffecdcbed2ff62bf687d95e8c840e9ce09f6526f1b4",
+      "status": 200
+    },
+    {
+      "path": "notes/model-stats.json",
+      "bytes": 1034,
+      "sha256": "bbb090d489f5fa34abb0b9d53c20d076f661a085cac025466d158e4fb0f33caa",
+      "status": 200
+    },
+    {
+      "path": "notes/publication-verification.json",
+      "bytes": 218,
+      "sha256": "5fb858596bbb1db3026d140e92dcee0eeac4d4e5325dade577edc7f05f62a584",
+      "status": 200
+    },
+    {
+      "path": "notes/README.md",
+      "bytes": 2907,
+      "sha256": "abc4955384e293a8ac2fb41c597460e5778cde28814bbee2dc68fb0ba7b372fb",
+      "status": 200
+    },
+    {
+      "path": "notes/research-hub-browser-results.json",
+      "bytes": 4913,
+      "sha256": "80bcba4b83d0583806a8709c46cca742a52d96ad4451cecc5d8007372a452d89",
+      "status": 200
+    },
+    {
+      "path": "notes/research-hub-content-results.json",
+      "bytes": 2060,
+      "sha256": "6467e911a9f2322af71bf20a80688f1d3ee9911b38269504fd821cedfabbade6",
+      "status": 200
+    },
+    {
+      "path": "notes/research-hub-infographic-results.json",
+      "bytes": 2933,
+      "sha256": "9b3b1c0f0df5c8fc98b106dd3c484e7f51a313cecc916037a85bf2b6a3ba3bce",
+      "status": 200
+    },
+    {
+      "path": "notes/research-hub-infographic.md",
+      "bytes": 14056,
+      "sha256": "d740f2ed13a4f7a1789176587ea360b886fdd12eb9681b6769ff9040c343a0c6",
+      "status": 200
+    },
+    {
+      "path": "notes/research-hub-publication.md",
+      "bytes": 11174,
+      "sha256": "edfde53a599d0c1ae545b181cb1b6aa54819270d08bc62dde13f9021f01cfcda",
+      "status": 200
+    },
+    {
+      "path": "notes/research-hub-subpath-results.json",
+      "bytes": 4937,
+      "sha256": "82ec34d3b5281922f130ef06ccd441ad8b8dfadeb8a49bf3e91b7d6fc967276a",
+      "status": 200
+    },
+    {
+      "path": "notes/research-hub.md",
+      "bytes": 9672,
+      "sha256": "ce0af2b3f0e08fb85482a80ad5985a9a643f813572f9fcadd61c4a959a61348d",
+      "status": 200
+    },
+    {
+      "path": "notes/research.md",
+      "bytes": 8230,
+      "sha256": "89e41dd21f823f3a22216872ff878e0493e50abbc6210ffec700210551e8a48d",
+      "status": 200
+    },
+    {
+      "path": "notes/subpath-results.json",
+      "bytes": 319,
+      "sha256": "5d08a3d8898239f0196c9a824457f4134f08c0cc559634001fefb0dadb391ffe",
+      "status": 200
+    },
+    {
+      "path": "notes/verification-results.json",
+      "bytes": 51841,
+      "sha256": "a362dc1420656e84b49f3d7cd6f5bb7aad7ddff2561a0720f31d2508482b0a87",
+      "status": 200
+    },
+    {
+      "path": "README.md",
+      "bytes": 14114,
+      "sha256": "ef1640a27eb31c8d5f1d746d53d0aadf06956a9266d12ed5b25f2aa02fffa409",
+      "status": 200
+    },
+    {
+      "path": "web/docs/ASSET_GUIDE.md",
+      "bytes": 9932,
+      "sha256": "79431c9136d62a832df1670351cf56250df84a44123b88ccb117a36c44c5129e",
+      "status": 200
+    },
+    {
+      "path": "web/docs/briefs/app.md",
+      "bytes": 8574,
+      "sha256": "cdfe5756e51edaef5231c62a4a71518d42e7c521d81e5a08db4297317b9d86e0",
+      "status": 200
+    },
+    {
+      "path": "web/docs/briefs/assets.md",
+      "bytes": 8711,
+      "sha256": "9763f99ce2f0c49620096cb7c3392a8b900bbbedfd08bfa4a5322dfd7931f17f",
+      "status": 200
+    },
+    {
+      "path": "web/docs/briefs/gear.md",
+      "bytes": 4412,
+      "sha256": "5938598b9c0ae09fc0db76689c66fb5f1e80f272550088b171c3ea012187b8c2",
+      "status": 200
+    },
+    {
+      "path": "web/docs/briefs/human-base.md",
+      "bytes": 6805,
+      "sha256": "66d551e7e0e849421bfcc04d446b8039dbf43839d1184651117dc0111faceabe",
+      "status": 200
+    },
+    {
+      "path": "web/docs/briefs/infantry.md",
+      "bytes": 4764,
+      "sha256": "5247b8e89aea83c2fcfd276a10113df7686056486b6c8217e3ffd2b618eeb8c4",
+      "status": 200
+    },
+    {
+      "path": "web/docs/briefs/stage.md",
+      "bytes": 2644,
+      "sha256": "c80da47ccc6f613e4356e89a71ca57916bc7dc5e1131de676d76d470445834e2",
+      "status": 200
+    },
+    {
+      "path": "web/docs/PROVENANCE.md",
+      "bytes": 108121,
+      "sha256": "9b3b64983778446cd6873246a2ee64d1b8c3e6bf72f94ba129b59a664662baa3",
+      "status": 200
+    },
+    {
+      "path": "web/docs/ROADMAP.md",
+      "bytes": 5104,
+      "sha256": "0838238e595fced7d3dcbad4835cdd5547c3af0bbec71bdcea223add00008727",
+      "status": 200
+    },
+    {
+      "path": "web/docs/SPEC.md",
+      "bytes": 10940,
+      "sha256": "89a33c1772af0ef982d6c47a1d54086b77ec4fe171b89ff066527d757cf29f6e",
+      "status": 200
+    },
+    {
+      "path": "web/LICENSE",
+      "bytes": 1068,
+      "sha256": "470c4fbbdb2ae5fa3c4b6cc11cfed01e1848dbe40e947897f1fb7897cbc334f6",
+      "status": 200
+    },
+    {
+      "path": "web/licenses/Inter-OFL.txt",
+      "bytes": 4477,
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+      "status": 200
+    },
+    {
+      "path": "web/licenses/n8ao-LICENSE.txt",
+      "bytes": 7047,
+      "sha256": "6d489af6292662d9e36d34ce49423784984a5f6e41d7b58f49b01264df59fa03",
+      "status": 200
+    },
+    {
+      "path": "web/licenses/n8ao-package.json",
+      "bytes": 1308,
+      "sha256": "e06553780a6696c0f0cfb1ee52e6086f259b5ead474f6dac01974a4204ca17d9",
+      "status": 200
+    },
+    {
+      "path": "web/licenses/postprocessing-LICENSE.md",
+      "bytes": 858,
+      "sha256": "b7650918449bd5fb011ce30ce0e5bcda27aa9639db1fb3aef8c67c32945237f2",
+      "status": 200
+    },
+    {
+      "path": "web/licenses/three-MIT.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "status": 200
+    },
+    {
+      "path": "web/README.md",
+      "bytes": 15424,
+      "sha256": "fc7c0ee63bcd9b693a6ca3a70704e65cfea276bc03c3641ea015b3d92068b143",
+      "status": 200
+    },
+    {
+      "path": "web/src/assets/shared/human/README.md",
+      "bytes": 19736,
+      "sha256": "2fd5f6ece7c066075b9c4cf5baf5096a2048d78e54c5054d148817882f8e322b",
+      "status": 200
+    },
+    {
+      "path": "web/THIRD_PARTY.md",
+      "bytes": 6981,
+      "sha256": "ea4ec31cf3774cfc70480792dc4abbfbcaebbb2a0d90e098accfbaaeba773653",
+      "status": 200
+    },
+    {
+      "path": "web/UPSTREAM_README.md",
+      "bytes": 3581,
+      "sha256": "4229d4b21ddf2d7106125739d1b8de9e34ab07346a1c170abb43bb3d255c9c42",
+      "status": 200
+    }
+  ],
+  "passed": true,
+  "materialCounts": {
+    "document": 34,
+    "image": 70,
+    "audio": 1,
+    "report": 32
+  },
+  "finished": "2026-10-12T07:59:12.891Z"
+}

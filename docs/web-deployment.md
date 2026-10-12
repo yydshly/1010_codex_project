@@ -6,7 +6,7 @@
 
 在 004 的 web 目录执行 `npm ci`、`npm run test:battle`、`npm run test:airport`、`npm run build`、`npm run publication:check`。Pages 工作流增加其路径和步骤，根组装器新增固定项目目录及首页入口。预生成 PNG/SVG 随资料发布，CI 不生成图片。
 
-本轮整理时尚待首次部署与 HTTPS 实测；实际成功版本、地址及范围记录在 `projects/004-muster-ww2/notes/publication-verification.json`。验证后才登记公开演示地址。图及旧笔记保留制作时状态。
+已实际发布 [004 完整研究与体验](https://yydshly.github.io/1010_codex_project/004-muster-ww2/)。成功 Actions 38220631396；八页面和137项资料逐文件哈希一致，五个实际应用等11项浏览器验收通过。线上实拍与续验记录已保留，实际版本、地址及范围记录在 `projects/004-muster-ww2/notes/publication-verification.json`。验证后才登记公开演示地址。图及旧笔记保留制作时状态。
 
 ## 2026-10-12 · 002 已发布并验证
 

@@ -163,7 +163,7 @@ node scripts/snap.mjs germany/panzer-iv-h --base http://127.0.0.1:5198 --config 
 
 | 文件 | 实际画面 |
 | --- | --- |
-| [research-hub-home.png](research-hub-home.png) | 研究首页、真实营地截图与首次访问路线；当前研究索引封面 |
+| [research-hub-home.png](research-hub-home.png) | 研究首页、真实营地截图与首次访问路线；早期研究索引封面，当前使用中文总览图 |
 | [research-hub-live-camp.png](research-hub-live-camp.png) | 首页中实际运行的营地演示与父页面控制栏 |
 | [research-hub-live-airport.png](research-hub-live-airport.png) | 首页中实际开始机场任务、部署二班与切换谢尔曼 |
 | [research-hub-reader.png](research-hub-reader.png) | 完整文档阅读器、目录检索与机场任务全文 |
@@ -172,3 +172,17 @@ node scripts/snap.mjs germany/panzer-iv-h --base http://127.0.0.1:5198 --config 
 
 截图显示采集时的资料数量。资料包在构建时自动更新，最新数量以网页清单为准。早期效果及其时间、玩法和限制均继续保留；不是把旧画面改称为最新版本。
 
+
+## 2026-10-12 · 公开HTTPS实拍
+
+以下图片从已部署的GitHub Pages实际截取。记录见 `../notes/publication-hub-browser-results.json`；窄屏为桌面模拟，历史超时画面与最终通过结果分别保留。
+
+| 文件 | 实际画面 |
+| --- | --- |
+| [research-hub-publication-home.png](research-hub-publication-home.png) | 公开首页总图与首次访问路线 |
+| [research-hub-publication-reader.png](research-hub-publication-reader.png) | 公开研究全文与资料检索 |
+| [research-hub-publication-evidence.png](research-hub-publication-evidence.png) | 公开效果档案与机场阶段过滤 |
+| [research-hub-publication-live-camp.png](research-hub-publication-live-camp.png) | 公开首页实际运行营地与暂停控制 |
+| [research-hub-publication-live-airport.png](research-hub-publication-live-airport.png) | 公开首页实际指挥小队并切换装甲 |
+| [research-hub-publication-mobile.png](research-hub-publication-mobile.png) | 390×844 桌面模拟视口公开首页，非手机真机 |
+| [research-hub-publication-first-attempt.png](research-hub-publication-first-attempt.png) | 公开六视图实际拆除侧裙；首次等待超时阶段画面，后续续验已通过 |

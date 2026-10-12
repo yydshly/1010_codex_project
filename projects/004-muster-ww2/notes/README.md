@@ -2,6 +2,11 @@
 
 初次研究于 2026-10-10；2026-10-11 固定上游版本、引入源码、修复构建并开展浏览器实验。上游 commit 为 `7d2fa86ebc3b999eaf085831cdcd5dccefea63d4`，所有记录围绕这个版本和明确列出的本地修改。
 
+- [九维完整摘要与公开发布说明](research-hub-publication.md)
+- [公开发布与真实HTTPS验收总记录](publication-verification.json)
+- [公开资料包逐文件字节与哈希结果](publication-asset-results.json)
+- [公开五个实际应用与全文、音频、窄屏验收](publication-hub-browser-results.json)
+- [首次线上浏览器验收：历史超时记录](publication-hub-browser-first-attempt.json)
 - [协同演习：步兵、空袭与三种驾驶席](combined-arms.md)
 - [网页研究总入口：完整理解、页面、内嵌体验与证据覆盖](research-hub.md)
 - [研究首页完整浏览器验收](research-hub-browser-results.json)

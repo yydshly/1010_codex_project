@@ -26,4 +26,4 @@ try {
   check('补给事件只接收坐标，车辆kind不会覆盖事件类别',()=>{const g=create();Object.assign(g.player,AIRPORT.depot,{speed:0});g.interact();const event=g.history.at(-1);assert.equal(event.kind,'supply');assert.equal(event.unit,5);assert.equal('ammo'in event,false);assert.equal('hp'in event,false);});
   report.passed=true;console.log(`${report.checks.length} 项机场任务规则通过。`);
 }catch(e){report.failure=String(e.stack??e);process.exitCode=1;console.error(report.failure);}
-fs.writeFileSync(new URL('../../notes/airport-unit-results.json',import.meta.url),JSON.stringify(report,null,2));
+if(!process.argv.includes('--no-report')) fs.writeFileSync(new URL('../../notes/airport-unit-results.json',import.meta.url),JSON.stringify(report,null,2));

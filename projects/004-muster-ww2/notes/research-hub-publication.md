@@ -6,7 +6,7 @@
 
 首页用我们已生成的总览图引导，先读完整摘要，再在首页运行动态营地或机场保卫战；研究页保留全部笔记与来源，效果页保留全部原图、声音和原始报告。八个页面都随独立构建发布。引导图保留制作时内容，当前发布状态以 `publication-verification.json` 为准。
 
-本记录整理时发布流程正在准备，尚未将线上地址登记为已验证；完成 HTTPS 实测后补充原始发布记录。
+公开首页：[Muster 研究与体验](https://yydshly.github.io/1010_codex_project/004-muster-ww2/)。首次成功部署 Actions 38220631396，版本 `8766d08`；八个页面及137项源文件实际可达并逐一核对字节和哈希，五个真实内嵌应用与资料、音频、窄屏合计11项浏览器验收通过。完整结果见 [发布记录](publication-verification.json)、[逐文件 HTTPS 结果](publication-asset-results.json) 和 [浏览器原始结果](publication-hub-browser-results.json)。
 
 ## 能力：可配置、可编辑的程序化资产系统
 
@@ -85,3 +85,19 @@
 在本项目 web 目录执行 `npm ci`、`npm run test:battle`、`npm run test:airport`、`npm run build`。根目录执行 `npm run check`。以 `node scripts/verify-hub.mjs --prefix` 核对固定子路径、五个实际应用和资料；预生成总图直接随资料包发布，CI 不调用图片服务，也不需要浏览器生成总图。
 
 根部署工作流构建 001、002、004 并组装到 `_site/`；main 更新触发 Pages。先核验 Actions 与实际 HTTPS 页面、模型、声音和资源，再登记在线演示；旧本地记录保留原日期及范围。
+
+## 线上实测与记录说明
+
+首次发布触发001的生成目录检查，已补上自动同步。首次完整浏览器验收前九项通过，最后六视图重新加载的动画帧等待超时；实际模型画面已生成，改用250ms定时轮询后单独完成剩余两项。原始失败报告、实际画面与两次会话均保留，不把续验描述成单次无失败执行。
+
+公开页面的机场和自由演习运行完整浏览器规则电脑；本轮没有在线打一整局标准模式。CI校验使用 `--no-report` 保持归档测试报告原始字节，本次将第一次成功CI实际生成的14/18项报告收录回来，并复验两组规则及报告字节不变。
+
+在web目录复现公开验收（需要本机 Edge，独立设置 `BROWSER_PATH` 可使用其他 Chromium）：
+
+```powershell
+$env:BASE_URL="https://yydshly.github.io/1010_codex_project/004-muster-ww2/"
+npm.cmd run publication:verify
+npm.cmd run verify:online
+```
+
+`publication:verify`逐项检查公开页面和整个资料包；`verify:online`实际操作五个应用并记录截图。图像为HTTPS页面的真实截取，不使用合成场景代替验证。

@@ -7,10 +7,10 @@
 | 固定编号 | `004` |
 | 上游仓库 | [Kenton-GMI/muster-ww2](https://github.com/Kenton-GMI/muster-ww2) |
 | 固定研究版本 | [`7d2fa86ebc3b999eaf085831cdcd5dccefea63d4`](https://github.com/Kenton-GMI/muster-ww2/tree/7d2fa86ebc3b999eaf085831cdcd5dccefea63d4)，未使用 tag |
-| 研究日期 | 初次分析 2026-10-10；收录、修复与本轮验证 2026-10-11 |
+| 研究日期 | 初次分析 2026-10-10；收录、修复与本轮验证 2026-10-11；完整摘要和公开发布 2026-10-12 |
 | 上游许可证 | MIT；保留 Kenton Wang 版权与完整原文，字体和依赖另见授权说明 |
-| 研究状态 | 本地构建与浏览器验收通过；GitHub Pages 发布与 HTTPS 实测准备中 |
-| 在线演示 | 本次接入既有 GitHub Pages，实际 HTTPS 验证后登记公开地址 |
+| 研究状态 | 已发布；本地构建、规则、固定子路径及公开 HTTPS 验收通过 |
+| 在线演示 | [完整研究与体验首页](https://yydshly.github.io/1010_codex_project/004-muster-ww2/)；[机场保卫战](https://yydshly.github.io/1010_codex_project/004-muster-ww2/airport.html) |
 
 ## 研究与体验首页
 
@@ -143,7 +143,7 @@ npm.cmd run dev
 
 侧裙拆除对照、刷新恢复截图、生成命令与几何统计见 [图片说明](assets/README.md)。模型内部简化以资产来源记录为准。
 
-Web 应用已引入 [web](web/README.md)，默认提供研究与体验首页，中文营地保留在 `/camp.html`，完整上游资产与英文展柜保留在 `/archive.html`。中文说明和实测记录放在研究集对应目录。本地运行继续保留；本次接入 GitHub Pages，实际状态见发布记录。
+Web 应用已引入 [web](web/README.md)，默认提供研究与体验首页，中文营地保留在 `/camp.html`，完整上游资产与英文展柜保留在 `/archive.html`。中文说明和实测记录放在研究集对应目录。本地运行继续保留；已发布完整研究与浏览器玩法，实际状态见发布记录。
 
 ## 研究材料
 
