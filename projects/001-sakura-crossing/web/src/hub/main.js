@@ -5,12 +5,12 @@ import measurements from '../../../notes/lab-measurements.json';
 import registry from '../../../../../projects.json';
 import kitUrl from '../../packages/research-rain-kit-0.1.0.tgz?url&no-inline';
 import summaryUrl from '../../../notes/research-summary.md?url&no-inline';
-import guideUrl from '../../../assets/scene-map-preview.webp?url&no-inline';
+import guideUrl from '../../../assets/research-guide.webp?url&no-inline';
 
 // Vite copies referenced material into this project's production assets. Text is
 // fetched on demand; the research reader does not depend on another dev server.
 const imageImports = import.meta.glob([
-  '../../../../001-sakura-crossing/assets/{hub-sunny,hub-rainy,business-cover,tour-shop,lab-street,builder-desktop,directions-overview,cover,ink-off}.jpg',
+  '../../../../001-sakura-crossing/assets/{hub-sunny,hub-rainy,business-cover,tour-shop,lab-street,builder-desktop,directions-overview,cover,ink-off,grade-off}.jpg',
   '../../../../001-sakura-crossing/assets/{ai-town-decisions,overview-banner}.png',
   '../../../assets/scene-map-preview.webp',
   '../../../references/012-threejs-conference/assets/{upstream-controls,desktop,modules-minimal,modules-gpu-check,reflection-off,reflection-on,modules-droplets-off,modules-droplets-on,upstream-bloom-off}.jpg',
@@ -38,16 +38,19 @@ const images = new Map([...imageFiles].map(([path, url]) => [`${path.startsWith(
 const $ = selector => document.querySelector(selector);
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const entry = id => research.entries.find(item => item.id === id);
-const groupLabels = { all: '全部入口', sakura: '樱花小街', rain: '雨夜场景', modules: '可复用模块', reading: '研究说明' };
+const groupLabels = { project: '001 樱花小街', related: '跨项目参考', all: '全部（含参考）', sakura: '001 樱花小街', rain: '012 雨夜参考', modules: '012 模块参考', reading: '001 研究说明' };
+const mainEntries = research.entries.filter(item => item.scope === 'project');
+const mainDocuments = research.documents.filter(item => item.scope === 'project');
+let docGroup = 'project';
 const reader = $('#reader');
 const docs = new Map(research.documents.map(doc => [doc.id, doc]));
 let readerRequest = 0;
-let entryGroup = 'all';
+let entryGroup = 'project';
 let comparisonId = research.comparisons[0].id;
 let liveFrame = null;
 
-$('#entry-count').textContent = research.entries.length;
-$('#doc-count').textContent = research.documents.length;
+$('#entry-count').textContent = mainEntries.length;
+$('#doc-count').textContent = mainDocuments.length;
 $('#updated-at').textContent = `更新于 ${research.updatedAt}`;
 $('#conclusion').textContent = research.conclusion;
 $('#hero-image').src = guideUrl;
@@ -56,7 +59,8 @@ const onlineEntry = item => Boolean(item.publicHref) || (item.href.startsWith('.
 const entryHref = item => localHost ? item.href : onlineEntry(item) ? item.publicHref || item.href : '#local-services';
 const entryService = item => !localHost && onlineEntry(item) ? '在线静态页面 / 三维效果依设备能力' : item.service;
 $('#executive-summary').innerHTML = research.executiveSummary.map((item, index) => `<article class="summary-card" id="summary-${item.id}"><span class="summary-number">${String(index + 1).padStart(2, '0')}</span><h3>${escape(item.title)}</h3>${item.paragraphs.map(text => `<p>${escape(text)}</p>`).join('')}</article>`).join('');
-$('#publication-note').textContent = localHost ? '当前为本地预览。公开内容包括联合全图、完整摘要、资料、001静态场景与012原创雨夜/最小例子/GPU现场；原库完整城市和模型游戏仍在本机。' : '在线提供联合全图、完整摘要与资料、001静态场景，以及012原创雨夜、最小例子和GPU检查页。原库完整城市/独立素材与AI模型服务仍在本机。图内制作时的发布状态原样保留，当前范围以本网页为准。';
+$('#publication-note').textContent = '本页是 001 Sakura Crossing 的独立研究。源库能力、本地产品扩展与跨项目接入分别注明；引导图沿用原樱花总览，导览、AI 游戏和晴雨接入由正文补充。012 与联合图只在扩展参考中出现。';
+$('#sakura-modules').innerHTML = research.sakuraModules.map(item => `<article class="summary-card"><span class="entry-kicker">${escape(item.origin)}</span><h3>${escape(item.title)}</h3><p>${escape(item.body)}</p><p><b>怎样复用：</b>${escape(item.reuse)}</p><p><b>边界：</b>${escape(item.limit)}</p><button class="text-link" data-doc="${item.doc}">阅读对应笔记 ↗</button></article>`).join('');
 $('#kit-download').href = kitUrl;
 $('#summary-download').href = summaryUrl;
 
@@ -67,7 +71,7 @@ function runCommand(item) {
 
 function renderEntries() {
   const query = $('#entry-search').value.trim().toLocaleLowerCase();
-  const filtered = research.entries.filter(item => (entryGroup === 'all' || item.group === entryGroup)
+  const filtered = research.entries.filter(item => (entryGroup === 'all' || item.scope === entryGroup)
     && `${item.title} ${item.subtitle} ${item.description} ${item.observe} ${item.renderer}`.toLocaleLowerCase().includes(query));
   $('#directory-result').textContent = `显示 ${filtered.length} / ${research.entries.length} 个入口 · ${groupLabels[entryGroup]}${query ? ` · 搜索“${query}”` : ''}`;
   $('#entry-empty').hidden = filtered.length > 0;
@@ -77,7 +81,7 @@ function renderEntries() {
     <div class="entry-actions"><a class="button" href="${escape(entryHref(item))}">${localHost || onlineEntry(item) ? '打开体验 ↗' : '查看本机运行说明 ↓'}</a>${item.live && (localHost || onlineEntry(item)) ? `<button class="text-link" data-live="${item.id}">在本页体验 ↓</button>` : ''}</div>
     <details><summary>观察方法与启动方式</summary><p>${escape(item.observe)}</p><p>${escape(entryService(item))} · ${onlineEntry(item) ? '可静态发布' : '需本机服务'}</p><pre>${escape(runCommand(item))}</pre></details></div></article>`).join('');
 }
-$('#entry-filters').innerHTML = Object.entries(groupLabels).map(([key, name]) => `<button data-filter="${key}" aria-pressed="${key === entryGroup}">${name}</button>`).join('');
+$('#entry-filters').innerHTML = Object.entries(groupLabels).filter(([key]) => ['project','related','all'].includes(key)).map(([key, name]) => `<button data-filter="${key}" aria-pressed="${key === entryGroup}">${name}</button>`).join('');
 $('#entry-filters').addEventListener('click', event => {
   const button = event.target.closest('[data-filter]'); if (!button) return;
   entryGroup = button.dataset.filter;
@@ -97,7 +101,7 @@ document.addEventListener('click', event => {
 function selectComparison(id) {
   comparisonId = id;
   const item = research.comparisons.find(item => item.id === id);
-  $('#compare-tabs').querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.compare === id)));
+  document.querySelectorAll('[data-compare]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.compare === id)));
   for (const side of ['before', 'after']) {
     $(`#compare-${side}`).src = images.get(item[side]);
     $(`#compare-${side}`).alt = `${item[`${side}Label`]} · ${item.kind}`;
@@ -116,7 +120,9 @@ function setSplit(value) {
   $('#compare-stage').style.setProperty('--split', `${value}%`);
   $('#compare-output').textContent = `分隔位置 ${value}%`;
 }
-$('#compare-tabs').innerHTML = research.comparisons.map(item => `<button data-compare="${item.id}" aria-pressed="false">${escape(item.label)}</button>`).join('');
+$('#compare-tabs').innerHTML = research.comparisons.filter(item => item.scope === 'project').map(item => `<button data-compare="${item.id}" aria-pressed="false">${escape(item.label)}</button>`).join('');
+$('#related-compare-tabs').innerHTML = research.comparisons.filter(item => item.scope === 'related').map(item => `<button data-compare="${item.id}" aria-pressed="false">${escape(item.label)}</button>`).join('');
+$('#related-compare-tabs').addEventListener('click', event => { const button = event.target.closest('[data-compare]'); if (button) selectComparison(button.dataset.compare); });
 $('#compare-tabs').addEventListener('click', event => { const button = event.target.closest('[data-compare]'); if (button) selectComparison(button.dataset.compare); });
 $('#compare-range').addEventListener('input', event => setSplit(event.target.value));
 $('#compare-principle').addEventListener('click', () => {
@@ -126,7 +132,7 @@ $('#compare-principle').addEventListener('click', () => {
 selectComparison(comparisonId);
 
 const liveSelect = $('#live-select');
-liveSelect.innerHTML = research.entries.filter(item => item.live && (localHost || onlineEntry(item))).map(item => `<option value="${item.id}">${escape(item.title)} / ${escape(item.renderer)}</option>`).join('');
+liveSelect.innerHTML = [['project', '001 樱花小街'], ['related', '012 跨项目参考']].map(([scope, label]) => `<optgroup label="${label}">${research.entries.filter(item => item.scope === scope && item.live && (localHost || onlineEntry(item))).map(item => `<option value="${item.id}">${escape(item.title)} / ${escape(item.renderer)}</option>`).join('')}</optgroup>`).join('');
 function refreshLive() {
   const item = entry(liveSelect.value);
   $('#live-preview').src = images.get(item.image);
@@ -174,11 +180,11 @@ function selectPrinciple(id) {
     button.setAttribute('aria-selected', String(selected)); button.tabIndex = selected ? 0 : -1;
   });
   $('#principle-panel').setAttribute('aria-labelledby', `principle-${id}`);
-  $('#principle-panel').innerHTML = `<p class="eyebrow">${escape(item.tag)}</p><h3>${escape(item.name)}</h3><p class="principle-summary">${escape(item.summary)}</p><ol>${item.steps.map(text => `<li>${escape(text)}</li>`).join('')}</ol>
+  $('#principle-panel').innerHTML = `${item.scope === 'related' ? '<p class="scope-label">跨项目扩展 / 012 来源，非 Sakura 原库能力</p>' : '<p class="scope-label">001 / 源库方法或本地扩展</p>'}<p class="eyebrow">${escape(item.tag)}</p><h3>${escape(item.name)}</h3><p class="principle-summary">${escape(item.summary)}</p><ol>${item.steps.map(text => `<li>${escape(text)}</li>`).join('')}</ol>
     <div class="explanation-row"><b>怎样观察</b><p>${escape(item.observe)}</p></div><div class="explanation-row"><b>可复用价值</b><p>${escape(item.value)}</p></div><div class="explanation-row"><b>边界与成本</b><p>${escape(item.limit)}</p></div>
     <div class="principle-actions"><a class="button" data-local-entry="${item.entry}" href="${escape(entryHref(entry(item.entry)))}">打开对应演示 ↗</a><button class="text-link" data-doc="${item.doc}">阅读全文研究笔记 ↗</button></div>`;
 }
-$('#principle-tabs').innerHTML = research.principles.map((item, index) => `<button role="tab" id="principle-${item.id}" data-principle="${item.id}" aria-controls="principle-panel" aria-selected="false" tabindex="-1"><span>${String(index + 1).padStart(2, '0')}</span>${escape(item.name)}</button>`).join('');
+$('#principle-tabs').innerHTML = research.principles.map((item, index) => `<button role="tab" id="principle-${item.id}" data-principle="${item.id}" aria-controls="principle-panel" aria-selected="false" tabindex="-1"><span>${String(index + 1).padStart(2, '0')}</span>${item.scope === 'related' ? '扩展 · ' : ''}${escape(item.name)}</button>`).join('');
 $('#principle-tabs').addEventListener('click', event => { const button = event.target.closest('[data-principle]'); if (button) selectPrinciple(button.dataset.principle); });
 $('#principle-tabs').addEventListener('keydown', event => {
   const buttons = [...$('#principle-tabs').querySelectorAll('button')];
@@ -221,7 +227,7 @@ $('#copy-code').addEventListener('click', async () => {
 });
 
 $('#product-directions').innerHTML = directions.directions.map((item, index) => {
-  const supplement = item.id === 'exploration-game' ? '后续已有 AI 守灯游戏、规则与漫游实践' : item.id === 'research-town' ? '当前新增两项目汇总、搜索与笔记阅读' : item.stage;
+  const supplement = item.id === 'exploration-game' ? '后续已有 AI 守灯游戏、规则与漫游实践' : item.id === 'research-town' ? '已有研究街阅读、收藏与资料发现' : item.stage;
   return `<article class="direction-row"><span>${String(index + 1).padStart(2, '0')}</span><div><h3>${escape(item.title)}</h3><small>${escape(supplement)}</small></div><p>${escape(item.scenario)}</p><div class="direction-needs"><b>继续补：</b>${escape(item.additions.map(addition => addition.title).join(' / '))}<br /><a class="text-link" href="./directions.html#${item.id}">完整方案 ↗</a></div></article>`;
 }).join('');
 $('#questions').innerHTML = research.questions.map((item, index) => `<details${index === 0 ? ' open' : ''}><summary>${escape(item.q)}</summary><p>${escape(item.a)}</p></details>`).join('');
@@ -231,11 +237,13 @@ $('#measurement-body').innerHTML = measurements.records.map(record => `<tr><td>$
 
 function renderDocuments() {
   const query = $('#doc-search').value.trim().toLocaleLowerCase();
-  const filtered = research.documents.filter(doc => `${doc.title} ${doc.category} ${doc.project}`.toLocaleLowerCase().includes(query));
+  const filtered = research.documents.filter(doc => (docGroup === 'all' || doc.scope === docGroup) && `${doc.title} ${doc.category} ${doc.project}`.toLocaleLowerCase().includes(query));
   $('#library-result').textContent = `显示 ${filtered.length} / ${research.documents.length} 份资料`;
   $('#doc-empty').hidden = filtered.length > 0;
   $('#document-list').innerHTML = filtered.map(doc => `<div class="document-row"><div><small>${doc.project} / ${escape(doc.category)}</small><button data-doc="${doc.id}">${escape(doc.title)}</button></div><a href="${escape(files.get(doc.path))}" download="${escape(doc.path.split('/').pop())}">下载 ↓</a></div>`).join('');
 }
+$('#doc-filters').innerHTML = [['project','001 本项目资料'],['related','跨项目参考资料'],['all','全部资料']].map(([id,label]) => `<button data-doc-group="${id}" aria-pressed="${id === docGroup}">${label}</button>`).join('');
+$('#doc-filters').addEventListener('click', event => { const button = event.target.closest('[data-doc-group]'); if (!button) return; docGroup = button.dataset.docGroup; $('#doc-filters').querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button))); renderDocuments(); });
 $('#doc-search').addEventListener('input', renderDocuments); renderDocuments();
 $('#repository-count').textContent = `${registry.projects.length} 个子项目`;
 $('#repository-list').innerHTML = registry.projects.map(project => {

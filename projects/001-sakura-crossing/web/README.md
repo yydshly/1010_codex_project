@@ -1,19 +1,10 @@
 # 春日研究街 · 三渲二业务场景演示
 
-## 最新联合研究全图
+## 樱花小街独立研究入口 · 2026-10-13
 
-`scene-map.html` 将 001 × 012 的效果、原理、模块、跨项目复用、真实扩展、个人价值和边界汇总为一张长图，已接入研究首屏与目录。十章跳转、适应宽度/1.5×/2×/3× 放大、高清 PNG 和 SVG 下载；SVG 内嵌实拍，正文文字保持可编辑。完整图 3840 × 20042 PNG / 1920 × 10021 SVG；首页只加载轻量封面预览。原图保留制作时状态，本次发布范围与结果见项目发布记录。
+`research.html` 聚焦 001：专属原总览图、六组完整摘要、三渲二对照、研究街、三布局、搭建器、导览、职责模块与扩展。默认体验和资料均为本项目；012 Rain Kit 与联合图在单独的跨项目参考中保留。
 
-数据 `../notes/scene-map-content.json`，生成器 `scripts/render-scene-map.mjs`；题图由内置 ImageGen 生成，提示词与概念标签保留。真实效果均复用原始实拍/作者发布图，不使用生成图片作为功能证据。
-
-```powershell
-node scripts/render-scene-map.mjs --png --sharp-module '<absolute-path-to-sharp>'
-npm.cmd run scene-map:check
-npm.cmd run research:sync
-npm.cmd run build
-```
-
-使用可用的 sharp 路径导出 PNG/预览，未新增项目依赖；`scene-map:check` 已加入 prebuild，检查数据、实拍摘要、SVG/PNG/预览、尺寸与来源引用。维护与实际验收见 [全图说明](../notes/scene-map.md)。
+原图 `../assets/research-overview.png` / SVG 与轻量 `research-guide.webp` 保持原文件；首页放大入口是 `overview.html`。`scene-map.html` 仍可从扩展参考打开，不再用作 001 首图。
 
 ## 统一研究手册
 

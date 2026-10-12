@@ -10,6 +10,18 @@ const outputPath = path.join(projectRoot, 'notes', 'research-summary.md');
 const data = JSON.parse(fs.readFileSync(notesPath, 'utf8'));
 const registry = JSON.parse(fs.readFileSync(path.join(repoRoot, 'projects.json'), 'utf8'));
 const errors = [];
+// Keep the independent project identity consistent through every publication surface.
+if (data.primaryProject !== '001' || data.sources[0]?.url !== 'https://github.com/Kenton-GMI/sakura-crossing') errors.push('001 主项目与来源必须指向 Sakura Crossing。');
+if (data.guide?.original !== 'assets/research-overview.png' || data.guide?.preview !== 'assets/research-guide.webp' || data.guide?.page !== './overview.html') errors.push('001 引导图必须使用樱花小街专属总览。');
+if (registry.projects.find(item => item.id === 1)?.cover?.path !== 'projects/001-sakura-crossing/assets/research-overview.png') errors.push('001 登记封面与专属总览不一致。');
+if (!data.executiveSummary?.[0]?.paragraphs?.[0]?.startsWith('Sakura Crossing')) errors.push('001 能力摘要必须先说明 Sakura Crossing。');
+if (!data.sakuraModules?.length) errors.push('001 职责模块缺失。');
+for (const item of [...data.entries, ...data.documents, ...data.principles, ...data.comparisons]) {
+  if (!['project', 'related'].includes(item.scope)) errors.push(`归属未标明：${item.id}`);
+  if (item.project === '012' && item.scope !== 'related') errors.push(`012 资料误归属于 001：${item.id}`);
+}
+const mainSource = fs.readFileSync(path.join(projectRoot, 'web/src/hub/main.js'), 'utf8');
+if (!mainSource.includes("import guideUrl from '../../../assets/research-guide.webp?url&no-inline'")) errors.push('网页首图引用与001专属总览不一致。');
 const requireFile = (relative, root = projectsRoot) => {
   const snapshot = path.join(projectRoot, 'references', relative);
   const file = root === projectsRoot && relative.startsWith('012-') ? snapshot : path.join(root, relative);
@@ -44,6 +56,7 @@ for (const item of data.principles) {
   if (!entries.has(item.entry) || !documents.has(item.doc)) errors.push(`原理引用无效：${item.id}`);
 }
 for (const item of data.evidence) if (!documents.has(item.doc)) errors.push(`证据引用无效：${item.type}`);
+for (const item of data.sakuraModules) if (!documents.has(item.doc)) errors.push(`001 模块笔记引用无效：${item.id}`);
 for (const item of data.documents) requireFile(item.path);
 for (const source of data.sources) if (!/^[0-9a-f]{40}$/.test(source.commit)) errors.push(`来源 commit 无效：${source.name}`);
 for (const project of registry.projects) requireFile(`${String(project.id).padStart(3, '0')}-${project.slug}/README.md`);
@@ -57,31 +70,33 @@ const table = (headers, rows) => [
   ...rows.map(row => `| ${row.map(cell => String(cell).replace(/\|/g, '\\|').replace(/\n/g, '<br>')).join(' | ')} |`),
 ].join('\n');
 const lines = [
-  '# 场景研究统一汇总', '',
+  '# 001 · Sakura Crossing · 樱花小街完整研究汇总', '',
   '> 此文件由 `web/scripts/sync-research.mjs` 根据 `notes/research-hub.json` 生成。请修改数据后运行 `npm run research:sync`，不要手动改写生成文件。', '',
   `更新：${data.updatedAt}。${data.scope}`, '',
-  `统一入口：[场景研究手册](../web/research.html)。本机启动后访问 http://127.0.0.1:5188/research.html；静态体验可由 GitHub Pages 托管，模型游戏和 012 独立演示需本机服务。`, '',
+  `独立入口：[樱花小街研究手册](../web/research.html)。本机启动后访问 http://127.0.0.1:5180/research.html。静态研究与001场景已在 GitHub Pages 提供；模型游戏需本机服务，012公开原创实验通过独立项目入口访问。`, '',
   '## 完整摘要：能力、模块、原理、场景、价值与扩展', '',
   ...data.executiveSummary.flatMap(item => [`### ${item.title}`, '', ...item.paragraphs.flatMap(text => [text, ''])]),
   '## 1. 我们的核心理解', '', data.conclusion, '',
   ...data.questions.flatMap(item => [`### ${item.q}`, '', item.a, '']),
   '## 2. 完整体验入口', '',
   ...data.entries.flatMap(item => [
-    `### ${item.title}`, '', `${item.subtitle}。${item.status}；${item.renderer}。`, '', item.description, '',
+    `### ${item.scope === 'related' ? '跨项目参考 / ' : '001 / '}${item.title}`, '', `${item.subtitle}。${item.status}；${item.renderer}。`, '', item.description, '',
     `观察：${item.observe}`, '',
-    `入口：${item.href}。${item.service}；${item.href.startsWith('./') && item.id !== 'sakura-game' ? '可静态发布的体验' : '需要本机服务，不在本次静态发布范围内'}。`, '',
+    `入口：${item.publicHref || item.href}。${item.service}；${item.publicHref || (item.href.startsWith('./') && item.id !== 'sakura-game') ? '在线静态体验' : '需要本机服务'}。`, '',
     '```powershell', `cd projects/${item.project === '012' ? '012-threejs-conference' : '001-sakura-crossing'}/web`, item.command, '```', '',
   ]),
   '## 3. 真实效果对照', '',
-  ...data.comparisons.flatMap(item => [`### ${item.label}`, '', item.title, '', item.text, '', `截图类型：${item.kind}。${item.beforeLabel} / ${item.afterLabel}。`, '']),
+  ...data.comparisons.flatMap(item => [`### ${item.scope === 'related' ? '跨项目参考 / ' : '001 / '}${item.label}`, '', item.title, '', item.text, '', `截图类型：${item.kind}。${item.beforeLabel} / ${item.afterLabel}。`, '']),
   '## 4. 技术底层与可复用价值', '',
-  '更新顺序：宿主场景与输入 → 相机和世界矩阵 → 高度图 / GPU 雨滴 → 材质时间与镜像反射 → 宿主最终渲染。观察与漫游控制器互斥。', '',
+  'Sakura 主线：几何 / Canvas 纹理 → 量化光照 → 场景颜色 / 深度 → 描线 / 调色 → sRGB / FXAA。012 高度图、GPU 雨与镜像仅用于单独的晴雨扩展。', '',
   ...data.principles.flatMap(item => [
-    `### ${item.name}`, '', `**${item.summary}**`, '', `计算路径：${item.tag}`, '',
+    `### ${item.scope === 'related' ? '跨项目扩展 / ' : '001 / '}${item.name}`, '', `**${item.summary}**`, '', `计算路径：${item.tag}`, '',
     ...item.steps.map((step, index) => `${index + 1}. ${step}`), '',
     `观察方法：${item.observe}`, '', `复用价值：${item.value}`, '', `边界与成本：${item.limit}`, '', `详见：${reference(item.doc)}。`, '',
   ]),
-  '## 5. 跨项目接入与资源所有权', '',
+  '## 5. 樱花小街职责模块与复用', '',
+  ...data.sakuraModules.flatMap(item => [`### ${item.title}`, '', `来源：${item.origin}。`, '', item.body, '', `复用：${item.reuse}`, '', `边界：${item.limit}`, '', `笔记：${reference(item.doc)}。`, '']),
+  '### 单独的跨项目扩展：012 Rain Kit', '',
   '实际接入：001 原场景 / 动画风格 + 012 Rain Kit 天气、湿地与漫游 → 晴雨樱花街。水珠在独立最小场景中体验。', '',
   table(['层', '负责', '可沿用', '边界'], data.ownership.map(item => [item.layer, item.owns, item.reuse, item.boundary])), '',
   ...data.modules.flatMap(item => [`### ${item.name}`, '', `\`${item.api}\``, '', `配置：${item.options}`, '', `接口：${item.methods}`, '', `宿主提供：${item.host}`, '', `成本：${item.cost}`, '']),
