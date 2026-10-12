@@ -1,6 +1,8 @@
 # 001 · Sakura Crossing 研究笔记
 
-[最新联合研究全图](scene-map.md) 说明 001 × 012 的十个部分、12 张效果图、来源、维护与实测；[完整内容 JSON](scene-map-content.json) 为生成器的数据来源，[概念题图提示词](scene-map-imagegen-prompt.txt) 保留 ImageGen 使用记录。阅读入口为 `../web/scene-map.html`，并已接入统一手册；旧阶段长图继续保留。
+当前主线是 [樱花小街完整研究](research-summary.md)，首图使用 001 专属 [研究总览图](../assets/research-overview.png)，放大入口为 `../web/overview.html`。六组正文分别说明源库、本地扩展和跨项目接入，纠正原因与实际验证见 [页面归属纠正](scope-correction.md)。
+
+[联合研究全图](scene-map.md) 作为 001 × 012 跨项目参考，保留十个部分、12 张效果图、来源、维护与实测；[完整内容 JSON](scene-map-content.json) 为联合图生成器的数据来源，[概念题图提示词](scene-map-imagegen-prompt.txt) 保留 ImageGen 使用记录。阅读入口为 `../web/scene-map.html`，不作为 001 的封面或能力定义。
 
 研究日期：2026-10-10。固定上游版本：`de01898e89c7f6ab3fad93fa802f0f5ac66fbd81`。
 
