@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-10-12T15:31:36.795Z",
+  "status": "passed",
+  "scope": "静态研究网页与原创几何示意的线上验收；非上游模型推理复现。",
+  "initialContentCommit": "d141f0e6dab3f76c3736c042f92c2936cc52d58b",
+  "initialWorkflowRun": "https://github.com/yydshly/1010_codex_project/actions/runs/38268786874",
+  "initialWorkflow": {
+    "build": "success",
+    "deploy": "success"
+  },
+  "researchUrl": "https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html",
+  "observatoryUrl": "https://yydshly.github.io/1010_codex_project/011-segment-snap/index.html",
+  "content": {
+    "topics": 9,
+    "paragraphs": 36,
+    "modules": 11,
+    "documents": 13,
+    "extensionStages": 5
+  },
+  "http": {
+    "status": "passed",
+    "files": 32,
+    "checks": [
+      "HTTP 200",
+      "完整字节大小",
+      "SHA-256"
+    ],
+    "report": "publication-http.json"
+  },
+  "siteRoutes": {
+    "status": "passed",
+    "routes": 13,
+    "publishedProjects": 12,
+    "rootHas011": true,
+    "report": "publication-routes.json"
+  },
+  "browser": {
+    "surface": "Codex in-app browser / 正式 GitHub Pages HTTPS",
+    "desktopViewport": {
+      "width": 1280,
+      "height": 720,
+      "horizontalOverflow": false
+    },
+    "narrowViewport": {
+      "width": 390,
+      "height": 844,
+      "horizontalOverflow": false,
+      "realDevice": false
+    },
+    "tests": [
+      {
+        "name": "内容数量与引导图载入",
+        "status": "passed",
+        "detail": "九主题36段、11模块、13份资料；原PNG自然宽3600。"
+      },
+      {
+        "name": "总图弹窗缩放",
+        "status": "passed",
+        "detail": "自适应宽344.875px，放大后517.3125px；关闭正常。"
+      },
+      {
+        "name": "收起、展开与检索",
+        "status": "passed",
+        "detail": "全部收起0主题；Agent检索显示3主题；清空并展开恢复9主题。"
+      },
+      {
+        "name": "完整原文页内阅读",
+        "status": "passed",
+        "detail": "完整理解摘要6216字符，包含末尾复杂机构与机器人内容。"
+      },
+      {
+        "name": "柜门与把手关系",
+        "status": "passed",
+        "detail": "把手在左→右侧铰链；最大展示90°；关闭引导、无把手均中心回退。"
+      },
+      {
+        "name": "抽屉平移与复位",
+        "status": "passed",
+        "detail": "抽屉最大展示60 cm，轴采用前表面法线；复位返回初始柜门0°。"
+      }
+    ],
+    "observatoryConsoleErrors": [],
+    "screenshots": [
+      "assets/publication-desktop.jpg",
+      "assets/publication-mobile.jpg",
+      "assets/publication-lab.jpg"
+    ],
+    "downloadSave": {
+      "status": "not-confirmed",
+      "detail": "原生下载辅助操作超时，未取得保存路径；公开PNG/SVG的HTTP、大小、哈希已通过。"
+    }
+  },
+  "guide": {
+    "pngSHA256": "51851e5dd02140a973f5095956c03b0c99e5926ee9088741b56328d2e3a11106",
+    "svgSHA256": "c63ca99da1611df5b885292376ad36815126f2396f638c44710c9b8a6873f912",
+    "unchanged": true
+  },
+  "unverified": [
+    "上游训练与GPU推理",
+    "真实手机",
+    "跨项目动作接口和NPC任务",
+    "机器人抓取、碰撞与力控",
+    "所有原作者外部媒体的持续可达性"
+  ]
+}

@@ -133,4 +133,4 @@ AI 守灯游戏使用本机 `town-server.mjs`、官方 CLI 登录或本机模型
 
 固定路径为 `011-segment-snap/research.html`，原观察台为同目录 `index.html`。子项目执行 `npm run research:sync`、`npm run check`、`npm run build`、`npm run publication:check`；根目录同步登记、检查并组装。32项静态文件含逐文件SHA-256清单，CI不生成图、不下载模型、不训练。现有11个项目发布路径保留。
 
-仅发布静态研究与自有几何交互，不部署上游GPU推理、数据上传或机器人执行。旧图及笔记保留阶段状态；正式HTTPS与资源验收通过后才登记实际demo。实际部署及验证见011的 `notes/publication-verification.json`。
+仅发布静态研究与自有几何交互，不部署上游GPU推理、数据上传或机器人执行。旧图及笔记保留阶段状态。正式HTTPS与32项资源哈希验收已通过，011登记 `demo-ready`；[完整研究入口](https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html)，[原观察台](https://yydshly.github.io/1010_codex_project/011-segment-snap/index.html)。首次内容发布 commit `d141f0e`，Actions `38268786874` 的构建与部署均成功；浏览器原图缩放、检索、原文阅读、窄屏和门抽屉示意已验证。实际版本与范围见011的 `notes/publication-verification.json`。

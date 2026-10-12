@@ -22,7 +22,7 @@ npm.cmd run publication:check
 npm.cmd run preview
 ```
 
-构建输出为 `web/dist/`，构建预览为 `http://127.0.0.1:5192/`。预览服务器还支持计划路径 `http://127.0.0.1:5192/1010_codex_project/011-segment-snap/`；页面资源采用相对路径。尚未部署，登记表 `demo` 为 `null`。
+构建输出为 `web/dist/`，构建预览为 `http://127.0.0.1:5192/`。预览服务器还支持发布子目录 `http://127.0.0.1:5192/1010_codex_project/011-segment-snap/`；页面资源采用相对路径。[正式研究网页](https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html) 已通过 GitHub Pages 部署；实际验收见 [发布记录](../notes/publication.md)。
 
 可在运行前设置 `$env:PORT = '5211'`。若默认端口被其他项目占用，选择空闲端口，不停止其他项目。本次构建预览实际使用 5211，默认 5192 已被其他进程占用。服务器只绑定 `127.0.0.1`；不需要凭据或环境密钥。
 
@@ -57,5 +57,6 @@ npm.cmd run preview
 
 - [项目说明](../README.md)
 - [本地验证](../notes/verification.md)
+- [正式发布与线上验证](../notes/publication.md)
 - [来源与授权](../THIRD_PARTY.md)
 - [部署约定](../../../docs/web-deployment.md)

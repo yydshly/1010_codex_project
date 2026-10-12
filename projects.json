@@ -1020,7 +1020,7 @@
       "name": "Segment–Snap · 三维交互理解观察台",
       "summary": "Segment–Snap 三维交互理解的完整中文研究：以既有总图引导，涵盖点云部件、运动轴与把手能力、11组职责模块、三个独立学习预测器与固定几何及语义规则、作者AP与实际柜门抽屉示意、训练推理分工、应用场景、个人项目价值和五阶段扩展；保留固定版本、原图、笔记、授权及验证边界。公开网页可阅读研究和操作示意，未运行上游GPU模型，跨项目动作接口与机器人执行尚未接入。",
       "source": "https://github.com/HyoKong/Segment-Snap",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "3D 点云",
         "场景理解",
@@ -1031,7 +1031,7 @@
         "path": "projects/011-segment-snap/assets/research-overview.png",
         "alt": "Segment–Snap 八部分研究总图：作者预测、本地门抽屉效果、学习与几何原理、价值、现有项目迁移建议和扩展边界"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html",
       "summarySections": [
         {
           "title": "能力与本质：给三维表面增加操作线索",

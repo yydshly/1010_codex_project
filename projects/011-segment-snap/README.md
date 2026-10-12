@@ -8,7 +8,7 @@
 
 新增 `web/research.html`，以我们已有的总图作为引导，提供九主题36段完整摘要、11组模块职责、训练与推理分工、几何和语义信息流、作者 AP 与本地截图对照、现有项目价值、五阶段扩展及13份原文阅读和下载。原观察台继续提供作者场景切换和柜门、抽屉操作，两页互相导航。
 
-正文统一由 [research-summary.json](notes/research-summary.json) 生成，网页、[完整摘要](notes/research-summary.md) 和登记表详细摘要保持一致。原引导 PNG/SVG 字节不变，网页提供缩放、滚动和原图下载。固定公开路径为 `011-segment-snap/research.html`；实际发布状态以 [发布记录](notes/publication.md) 为准，验收后再登记演示地址。
+正文统一由 [research-summary.json](notes/research-summary.json) 生成，网页、[完整摘要](notes/research-summary.md) 和登记表详细摘要保持一致。原引导 PNG/SVG 字节不变，网页提供缩放、滚动和原图下载。[完整研究已发布](https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html)，实际版本与线上验证见 [发布记录](notes/publication.md)。
 
 ![Segment–Snap 中文研究总览：作者效果、本地柜门与抽屉示意、输入输出、底层原理、价值、扩展路线与验证边界](assets/research-overview.png)
 
@@ -24,8 +24,8 @@
 | 研究日期 | 2026-10-11 |
 | 论文 | [arXiv:2609.25247 v2](https://arxiv.org/html/2609.25247v2) |
 | 上游许可证 | 主仓库 MIT；第三方实现与数据另按各自条款 |
-| 当前状态 | 原理与价值研究；中文说明与本地示意已完成，模型推理未执行 |
-| 在线演示 | 尚未部署；登记表 `demo` 为 `null` |
+| 当前状态 | 原理与价值研究、完整网页发布和线上示意验证已完成；模型推理未执行 |
+| 在线演示 | [完整研究网页](https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html) · [原观察台与操作示意](https://yydshly.github.io/1010_codex_project/011-segment-snap/index.html) |
 
 ## 这个库能做什么
 
@@ -99,8 +99,9 @@ npm.cmd run dev
 - [x] 本地页面验证、构建与真实截图。
 - [x] 原理本质与对现有三维场景、Agent 的复用价值分析。
 - [x] 一张完整研究总图，嵌入实际截图，保留来源、版本与应用边界。
+- [x] 完整研究网页、GitHub Pages 部署、逐文件线上核对与主要交互验证。
 
-当前研究不要求模型安装或复现。对象与动作接口、扫描资产校正、泛化验证和部署是按实际应用需求选择的后续方向。
+当前研究不要求模型安装或复现。对象与动作接口、扫描资产校正和泛化验证是按实际应用需求选择的后续方向；本轮仅发布研究与自有几何示意。
 
 ## 研究材料
 

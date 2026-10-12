@@ -10,3 +10,6 @@
 - [完整理解摘要](research-summary.md)
 - [统一内容数据](research-summary.json)
 - [网页发布与验收](publication.md)
+- [结构化线上验收](publication-verification.json)
+- [全部公开文件 HTTP 与哈希核对](publication-http.json)
+- [站点与已发布项目入口核对](publication-routes.json)

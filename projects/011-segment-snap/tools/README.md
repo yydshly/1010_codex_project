@@ -21,3 +21,15 @@ node tools/build-overview.mjs --sharp-dir '<包含 sharp 的 node_modules 绝对
 绿色用于作者效果与方法，橙色用于已验证的本地示意，紫色用于应用推断和扩展规划。算法图保持三个独立预测器的实际依赖，不能把最终把手画成运动解码的反馈输入。作者 AP 来自固定验证报告，柜门 90° 与抽屉 60 cm 是展示参数。
 
 更新结果或流程时，先核对固定版本来源，并同步项目说明、来源记录与验证边界。总图对已有项目的建议尚未接入；来源和授权见 [THIRD_PARTY.md](../THIRD_PARTY.md)。
+
+## 正式发布验证
+
+`prepare-publication.mjs --checkout <独立工作树绝对路径>` 只复制011源码与登记，并补齐已有 Pages 工作流和站点入口，不复制其他项目改动。开始前应从最新远端准备独立检出；发布时保留其他项目目录与编号。
+
+先在 `web/` 构建并执行发布检查，再运行：
+
+```powershell
+node tools/verify-publication.mjs --base https://yydshly.github.io/1010_codex_project/011-segment-snap/
+```
+
+验证器依据本地发布清单获取全部32项公开文件，比对HTTP状态、完整字节大小与SHA-256，成功后保存 `notes/publication-http.json`。它不执行模型，也不替代浏览器交互验证；实际范围见 [发布记录](../notes/publication.md)。

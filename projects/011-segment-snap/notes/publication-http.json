@@ -1,0 +1,200 @@
+{
+  "checkedAt": "2026-10-12T15:22:34.766Z",
+  "base": "https://yydshly.github.io/1010_codex_project/011-segment-snap/",
+  "status": "passed",
+  "fileCount": 32,
+  "files": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "bytes": 3648,
+      "sha256": "b631b3cb60c2c4ddca7bb7cefbb8595502024919a88f8dae75df2f5e9a9440fe"
+    },
+    {
+      "path": "assets/lab-door.png",
+      "status": 200,
+      "bytes": 64974,
+      "sha256": "6ea88539432fa0bed549491bb914f4a384518c744b64ffdbc8be52d29a8ef7c1"
+    },
+    {
+      "path": "assets/lab-drawer.png",
+      "status": 200,
+      "bytes": 68002,
+      "sha256": "0f16789ed34df414130b922fca731093eec7772e8f7f3b856c4cf0b0d70b6ed8"
+    },
+    {
+      "path": "assets/research-overview-preview.png",
+      "status": 200,
+      "bytes": 997151,
+      "sha256": "1ce0409f906ba5ed236e4c2112ff7ec071835eab08535b51713812633b4d318f"
+    },
+    {
+      "path": "assets/research-overview.png",
+      "status": 200,
+      "bytes": 2018780,
+      "sha256": "51851e5dd02140a973f5095956c03b0c99e5926ee9088741b56328d2e3a11106"
+    },
+    {
+      "path": "assets/research-overview.svg",
+      "status": 200,
+      "bytes": 295101,
+      "sha256": "c63ca99da1611df5b885292376ad36815126f2396f638c44710c9b8a6873f912"
+    },
+    {
+      "path": "assets/showcase-desktop.png",
+      "status": 200,
+      "bytes": 67141,
+      "sha256": "a139040b5cb84d202bce403ae7ed82d38becacbe049168ae52027e8421605b0f"
+    },
+    {
+      "path": "assets/UPSTREAM-LICENSE.txt",
+      "status": 200,
+      "bytes": 1381,
+      "sha256": "ebde96723b13fe4f457a2b9fc9071ee402bb04f0502ea5940dc514d1f8306319"
+    },
+    {
+      "path": "assets/upstream-teaser.svg",
+      "status": 200,
+      "bytes": 2641101,
+      "sha256": "f92aeb66b24a895aef968fd4c5457791f2ab858b4bdefb247fe2aa4639cb896d"
+    },
+    {
+      "path": "data/evidence.json",
+      "status": 200,
+      "bytes": 3175,
+      "sha256": "26ccbec9b43cdb9d7e8cb23bc45fc33458e55bbe9424137407b8e35406636a8b"
+    },
+    {
+      "path": "data/library.json",
+      "status": 200,
+      "bytes": 2539,
+      "sha256": "b94bb523a41cc152f26cc5cba140ba7c7f38984758435740b67fa700bf68bd60"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 24776,
+      "sha256": "9e2e1306ca8bdd497426f487066023cf7e06793bdfe859cdb07634b773fedd79"
+    },
+    {
+      "path": "lab.js",
+      "status": 200,
+      "bytes": 10935,
+      "sha256": "b47551adf0cba9cdb2db54c5f79fe280c284ed34641d9a5814f5f40d11357155"
+    },
+    {
+      "path": "publication-manifest.json",
+      "status": 200,
+      "bytes": 4983,
+      "sha256": "c9c72dd2076e6c1cb237ecf2482938c6205666ef66a1047adb15bacbeaee6f79"
+    },
+    {
+      "path": "research.css",
+      "status": 200,
+      "bytes": 13658,
+      "sha256": "0b33918f053c03041d6721d7c37da9178acbdd412b975de4fbb8d644175fe189"
+    },
+    {
+      "path": "research.html",
+      "status": 200,
+      "bytes": 40148,
+      "sha256": "3d7d4245f21c36277d03536822627300486296dffba127372201af9ee6ab97a5"
+    },
+    {
+      "path": "research.js",
+      "status": 200,
+      "bytes": 4018,
+      "sha256": "8f3b355ea6a2b0219fa5bab9c359f62a0d92582659a35197e08328e854efae01"
+    },
+    {
+      "path": "research/assets/README.md",
+      "status": 200,
+      "bytes": 2075,
+      "sha256": "9d7e1661e08f0a761e75a30f6d0a168167a175571c2d011254d0e2b22e598dc5"
+    },
+    {
+      "path": "research/assets/research-overview-layout.json",
+      "status": 200,
+      "bytes": 27930,
+      "sha256": "0be94a926949a31cad8214c71335d19c8957c0523d47f9c1f354d66b4e0112b5"
+    },
+    {
+      "path": "research/assets/UPSTREAM-LICENSE.txt",
+      "status": 200,
+      "bytes": 1381,
+      "sha256": "ebde96723b13fe4f457a2b9fc9071ee402bb04f0502ea5940dc514d1f8306319"
+    },
+    {
+      "path": "research/notes/capabilities.md",
+      "status": 200,
+      "bytes": 5042,
+      "sha256": "565bcb6f3ca9e3c58351cf3257d2af89a2bc5ec9caaa2766a0fbe4913387d0ca"
+    },
+    {
+      "path": "research/notes/essence-and-value.md",
+      "status": 200,
+      "bytes": 6008,
+      "sha256": "2f86bfbcef945592c3c217e17dbda0b0dd5dda44b29deb40e90c1fc425ea369a"
+    },
+    {
+      "path": "research/notes/research-summary.json",
+      "status": 200,
+      "bytes": 17436,
+      "sha256": "daa44a40719f7be3189f965c70db493c2d587d7e92f13dfb391291602fbb19e9"
+    },
+    {
+      "path": "research/notes/research-summary.md",
+      "status": 200,
+      "bytes": 15413,
+      "sha256": "00fa50a84a26efa2f85e15cb90337e0a8392035da51de14365570e0533748ca4"
+    },
+    {
+      "path": "research/notes/verification.md",
+      "status": 200,
+      "bytes": 9119,
+      "sha256": "e656a5c4f696cb4ada2c2eba6514e1b311490fa97d6aa65441c515ba49b544bc"
+    },
+    {
+      "path": "research/publication.json",
+      "status": 200,
+      "bytes": 1127,
+      "sha256": "d834df0b5578e7af7f4f3b5cd36038b710b18351b170e8c57424c52a32cf299c"
+    },
+    {
+      "path": "research/README.md",
+      "status": 200,
+      "bytes": 8565,
+      "sha256": "5fe7818849c4ffda02c53f499c2507eece691418451602fc32d65ba7f68e89b2"
+    },
+    {
+      "path": "research/THIRD_PARTY.md",
+      "status": 200,
+      "bytes": 2243,
+      "sha256": "746c2f54d69e0158f6a8439c99868346a93fa198e3b69d331f8efe851cb35431"
+    },
+    {
+      "path": "research/tools/build-overview.mjs",
+      "status": 200,
+      "bytes": 16519,
+      "sha256": "fbf15d1d152c9ae77d34ad95aeb565259129367316ef3d539d455a87c46b67c7"
+    },
+    {
+      "path": "research/tools/README.md",
+      "status": 200,
+      "bytes": 1778,
+      "sha256": "579b871cba6c1ff975cc0a73e19ae4341c205296796d134e61565ec4eb7b24fa"
+    },
+    {
+      "path": "research/web/data/evidence.json",
+      "status": 200,
+      "bytes": 3175,
+      "sha256": "26ccbec9b43cdb9d7e8cb23bc45fc33458e55bbe9424137407b8e35406636a8b"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 20885,
+      "sha256": "9b73444bac964f20657252dd1a7bb82899ae13876fdc1a793bd4ab7dcf69ac10"
+    }
+  ]
+}

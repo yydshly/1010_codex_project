@@ -25,4 +25,12 @@ npm.cmd run publication:check
 
 ## 当前验收
 
-网页、完整摘要和登记详细描述已生成。正式部署及线上验收正在进行；完成后在本文件和 `publication-verification.json` 保存实际版本、Actions、地址、资源与浏览器范围。不得将产物生成等同于已部署，也不得将网页运行等同于上游算法推理。
+首次内容版本 [`d141f0e`](https://github.com/yydshly/1010_codex_project/commit/d141f0e6dab3f76c3736c042f92c2936cc52d58b) 已推送 main；[GitHub Actions 38268786874](https://github.com/yydshly/1010_codex_project/actions/runs/38268786874) 的 build 与 deploy 均成功。正式入口为 [完整研究](https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html) 和 [原观察台](https://yydshly.github.io/1010_codex_project/011-segment-snap/index.html)。验收后登记状态为 `demo-ready`，演示地址指向完整研究。
+
+32项公开文件的 HTTP 200、字节大小和 SHA-256 与发布清单全部一致；包含原 PNG/SVG、13份资料、双页代码及发布清单。既有总图的 PNG SHA-256 为 `51851e5dd02140a973f5095956c03b0c99e5926ee9088741b56328d2e3a11106`，SVG 为 `c63ca99da1611df5b885292376ad36815126f2396f638c44710c9b8a6873f912`，均未改写。初次线上核对发现原观察台样式有一处换行字节差异，已统一本项目样式换行后重新构建并通过；上游图、引导图与原始证据未改动。站点首页及12个实际发布项目入口均返回 HTTP 200，首页含011入口。
+
+正式网页实际浏览器验证：九主题36段与11模块、总图载入和缩放、全部收起和展开、关键词检索与清空恢复、完整摘要页内阅读（6,216字符且包含末尾内容）；390 × 844视口无页面横向溢出。原观察台验证左把手选择右侧铰链、柜门展示到90°、关闭引导及无把手的中心回退、抽屉展示到60 cm、复位；观察台无捕获到的控制台错误。截图见 `assets/publication-desktop.jpg`、`publication-mobile.jpg` 和 `publication-lab.jpg`。
+
+结构化记录见 [publication-verification.json](publication-verification.json)、[publication-http.json](publication-http.json) 与 [publication-routes.json](publication-routes.json)。记录分别保存首轮验收与最终发布文件检查的时间、版本和范围；不把记录提交版本自动当作部署版本。
+
+窄屏为浏览器视口验证，未测试真实手机。浏览器原生下载辅助操作超时，未据此宣称下载保存成功；同一公开下载资源的HTTP、完整大小和哈希已核验。原作者外部媒体不是静态文件完整性清单的一部分，继续保留原站入口。没有下载或运行上游模型，也没有跨项目动作接入与机器人执行。
