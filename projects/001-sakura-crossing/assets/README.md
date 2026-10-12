@@ -11,7 +11,7 @@
 | [scene-map-export.json](scene-map-export.json) | 图稿尺寸、章节坐标、全部来源图片和 PNG/SVG/预览 SHA-256 |
 | [scene-map-browser.jpg](scene-map-browser.jpg) | 默认 1280 × 720 桌面视口下的全页实拍，包含阅读工具栏和完整图稿；不是移动端验证 |
 
-雨夜完整城市图使用固定上游本机实拍，中文面板由本地新增；樱花道口图来自固定作者版本；晴雨对照与八项扩展使用对应原实拍。正文排版和遮雨/镜像示意为 SVG 代码生成，保持准确中文。完整提示词见 [scene-map-imagegen-prompt.txt](../notes/scene-map-imagegen-prompt.txt)，数据见 [scene-map-content.json](../notes/scene-map-content.json)，维护/验收见 [scene-map.md](../notes/scene-map.md)。新全图尚未更新到线上版本。
+雨夜完整城市图使用固定上游本机实拍，中文面板由本地新增；樱花道口图来自固定作者版本；晴雨对照与八项扩展使用对应原实拍。正文排版和遮雨/镜像示意为 SVG 代码生成，保持准确中文。完整提示词见 [scene-map-imagegen-prompt.txt](../notes/scene-map-imagegen-prompt.txt)，数据见 [scene-map-content.json](../notes/scene-map-content.json)，维护/验收见 [scene-map.md](../notes/scene-map.md)。联合全图已原样发布，当前状态见 [正式发布记录](../notes/scene-publication.md)。
 
 ## 完整摘要与线上发布（2026-10-12）
 
@@ -175,3 +175,7 @@
 - `weather-style-off.jpg`：晴天关闭描线与调色的实际对照，之后已恢复默认风格。
 
 全部为本地浏览器截图，未使用生成图片代替功能验证。操作、碰撞与包摘要检查见 [接入记录](../notes/weather-reuse.md)。
+
+## 联合新版正式网页实拍
+
+[scene-public-online.png](scene-public-online.png) 来自正式HTTPS联合首页，1280×720桌面视口，六组34段摘要与既有联合全图引导。本次没有修改原图字节。上述18段记录属于较早版本，新版完整验收见 [publication-scene-verification.json](../notes/publication-scene-verification.json)。

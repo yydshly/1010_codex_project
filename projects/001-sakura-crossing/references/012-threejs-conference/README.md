@@ -112,7 +112,7 @@ AI 可在受约束范围生成场景配置草案、建议预设或 NPC 策略；
 | 来源与授权 | 六个算法/控制模块按 MIT 改编；原库与独立授权素材只在忽略的 `vendor/` 本机运行，见 [逐项说明](web/THIRD_PARTY.md) |
 | 实际状态 | 原库街区已本机运行；原创实验支持第一人称漫游与效果对照；兼容改动均有记录 |
 | 本地演示 | [雨夜研究台](http://127.0.0.1:5192/) · [最小模块接入](http://127.0.0.1:5192/minimal.html) · [直接进入原库](http://127.0.0.1:5195/) · [GPU 碰撞检查](http://127.0.0.1:5192/verification.html) |
-| 在线演示 | 尚未部署 |
+| 在线演示 | [完整研究](https://yydshly.github.io/1010_codex_project/012-threejs-conference/research.html) · [原创雨夜](https://yydshly.github.io/1010_codex_project/012-threejs-conference/index.html) · [四模块最小接入](https://yydshly.github.io/1010_codex_project/012-threejs-conference/minimal.html) · [GPU现场](https://yydshly.github.io/1010_codex_project/012-threejs-conference/verification.html) |
 
 ## 能力与演示场景
 
@@ -185,7 +185,7 @@ npm.cmd run dev
 
 已实际验证四视角、四层开关、粒子数量、导览启停、重置、原理标签键盘切换、笔记下载，以及 390 × 844 手机尺寸布局。真实 GPU 检查在加入、移除和恢复雨棚三种状态均通过，保留 [回读结果](notes/gpu-verification.json)。构建与根目录完整性检查通过，详细过程和限制见 [实验记录](notes/experiment.md)。
 
-新增漫游的五项碰撞测试与原库控制桥的五项检查通过。原库中文面板已实际验证四项对照、开关后的键盘移动、P 快捷键、三机位、参数输入与 390 × 844 布局，详见 [漫游升级记录](notes/walk-upgrade.md) 和 [中文面板验收](notes/upstream-controls.md)。页面 FPS 只表示当前窗口采样，不能作为跨设备基准。真实手机设备、WebGL2 兼容后端与公开部署仍待验证。
+新增漫游的五项碰撞测试与原库控制桥的五项检查通过。原库中文面板已实际验证四项对照、开关后的键盘移动、P 快捷键、三机位、参数输入与 390 × 844 布局，详见 [漫游升级记录](notes/walk-upgrade.md) 和 [中文面板验收](notes/upstream-controls.md)。页面 FPS 只表示当前窗口采样，不能作为跨设备基准。真实手机设备与 WebGL2 兼容后端仍待验证。原创研究与三项实时入口已实际部署，并通过HTTPS与WebGPU验收，见 [正式发布记录](notes/publication-verification.json)。原完整城市仍为本机研究。
 
 模块提取后共有 15 项自动检查通过，GPU 雨棚三状态回读、独立场景四项操作、释放再接入、tgz 独立安装与构建已实测，见 [模块提取与验收](notes/module-extraction.md)。打包使用 `npm.cmd run pack:kit`，独立消费者检查使用 `npm.cmd run test:kit-consumer`；包没有发布到 npm。
 

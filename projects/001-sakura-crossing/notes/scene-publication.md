@@ -16,4 +16,8 @@
 
 ## 发布状态
 
-当前正在进行本地构建与发布准备。远端提交、Actions、真实 HTTPS、资源摘要和浏览器验收完成后记录实际结果；本文件不以预定 URL 冒充部署成功。
+已实际发布 [联合研究手册](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html)、[完整引导图](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/scene-map.html)、[雨夜完整研究](https://yydshly.github.io/1010_codex_project/012-threejs-conference/research.html)、[原创实时体验](https://yydshly.github.io/1010_codex_project/012-threejs-conference/index.html)、[四模块最小接入](https://yydshly.github.io/1010_codex_project/012-threejs-conference/minimal.html) 与 [GPU现场](https://yydshly.github.io/1010_codex_project/012-threejs-conference/verification.html)。首次提交 `9016bef7ac61e58ffde220cf6aaf23fb7aec93bd`，[Actions 38272909139](https://github.com/yydshly/1010_codex_project/actions/runs/38272909139) 的构建和部署均成功。
+
+真实HTTPS已验证完整摘要、跨项目入口、检索、16份原文及API、四张效果图、SVG加载与PNG下载、WebGPU雨夜、雨/反射开关、2.2m第一人称移动、模块释放/重新接入，以及有棚/无棚/恢复三个GPU状态。原PNG/SVG/tgz摘要保持不变。173项初次发布资源中172项HTTP/大小/SHA-256完全一致；清单的46项记录内容一致，平台排序差异已修复并将随验收后发布再次核对。
+
+完整结果见 [网页验收JSON](publication-scene-verification.json)、[逐资源记录](publication-scene-resources.json) 和 [真实GPU结果](../../012-threejs-conference/notes/publication-gpu-online.json)。本轮验收为1280×720桌面，未据此声称手机真机或长期性能通过；图内历史制作状态保留，当前发布范围以网页及本记录为准。

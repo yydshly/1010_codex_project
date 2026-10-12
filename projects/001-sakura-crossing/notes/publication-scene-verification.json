@@ -1,0 +1,124 @@
+{
+  "taskDate": "2026-10-12",
+  "verifiedAt": "2026-10-12T16:14:14.374Z",
+  "status": "published-and-browser-verified",
+  "commit": "9016bef7ac61e58ffde220cf6aaf23fb7aec93bd",
+  "workflow": {
+    "runId": 38272909139,
+    "url": "https://github.com/yydshly/1010_codex_project/actions/runs/38272909139",
+    "build": "success",
+    "deploy": "success"
+  },
+  "urls": {
+    "joint": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html",
+    "map": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/scene-map.html",
+    "rain": "https://yydshly.github.io/1010_codex_project/012-threejs-conference/research.html",
+    "experience": "https://yydshly.github.io/1010_codex_project/012-threejs-conference/index.html",
+    "minimal": "https://yydshly.github.io/1010_codex_project/012-threejs-conference/minimal.html",
+    "gpu": "https://yydshly.github.io/1010_codex_project/012-threejs-conference/verification.html"
+  },
+  "scope": "001联合研究全图/摘要/所有入口与既有静态体验；012完整研究/原创雨夜/独立模块/GPU检查。原库城市独立授权素材与模型服务仅本机。",
+  "sourceCommits": {
+    "rain": "8cc20593b2270e2ce832e7b7b44356705daddec4",
+    "sakura": "de01898e89c7f6ab3fad93fa802f0f5ac66fbd81"
+  },
+  "browser": {
+    "name": "Codex in-app browser",
+    "viewport": [
+      1280,
+      720
+    ],
+    "device": "桌面；本轮未验证手机真机或WebGL2后端"
+  },
+  "checks": [
+    {
+      "name": "001六组完整摘要",
+      "sections": 6,
+      "paragraphs": 34,
+      "passed": true
+    },
+    {
+      "name": "001完整入口与资料",
+      "entries": 13,
+      "documents": 30,
+      "liveOptions": 7,
+      "passed": true
+    },
+    {
+      "name": "012九主题完整摘要",
+      "sections": 9,
+      "paragraphs": 36,
+      "passed": true
+    },
+    {
+      "name": "公开页未链接localhost，跨项目链接指向真实HTTPS",
+      "passed": true
+    },
+    {
+      "name": "012检索“宿主”",
+      "matchingSections": 4,
+      "totalSections": 9,
+      "passed": true
+    },
+    {
+      "name": "012原文阅读",
+      "documents": 16,
+      "apiCharacters": 4858,
+      "passed": true
+    },
+    {
+      "name": "全图SVG加载",
+      "dimensions": [
+        1920,
+        10021
+      ],
+      "passed": true
+    },
+    {
+      "name": "全图PNG实际下载，字节摘要与原图一致",
+      "sha256": "4abb63c2ec1823e5e9bfc2efae91182fa7bcbc5e1b466898e52c8d3518a826fd",
+      "passed": true
+    },
+    {
+      "name": "原创雨夜实际WebGPU渲染，雨/反射开关关闭后恢复",
+      "passed": true
+    },
+    {
+      "name": "第一人称W移动后可见HUD",
+      "text": "X 3.0 · Y 1.65 · Z 6.8 / 已行走 2.2 m",
+      "passed": true
+    },
+    {
+      "name": "最小示例释放并重新挂载",
+      "disposed": "模块已释放 · 宿主模型与灯光保留",
+      "mounted": "四个模块已接入 · 可独立控制",
+      "passed": true
+    },
+    {
+      "name": "真实GPU高度图与粒子回读，有棚/无棚/恢复",
+      "report": "publication-gpu-online.json",
+      "passed": true
+    }
+  ],
+  "unchangedAssets": {
+    "png": "4abb63c2ec1823e5e9bfc2efae91182fa7bcbc5e1b466898e52c8d3518a826fd",
+    "svg": "ba711d609b41dd5d2f0aa4793b7aa322a4f2f4b0fa7a9a08234399f15587dcbb",
+    "kit": "e72613d271757f8b17c641fd61cdec3f8085bd9a79304ba8990d88a489008643"
+  },
+  "screenshots": [
+    "projects/001-sakura-crossing/assets/scene-public-online.png",
+    "projects/012-threejs-conference/assets/research-public-online.png",
+    "projects/012-threejs-conference/assets/rain-public-online.png"
+  ],
+  "resourceVerification": {
+    "report": "projects/001-sakura-crossing/notes/publication-scene-resources.json",
+    "exactByteMatches": 172,
+    "total": 173,
+    "manifestSemanticCheck": {
+      "files": 46,
+      "changedRecords": 0,
+      "passed": true
+    },
+    "note": "首次清单只有Windows/Linux的文件顺序不同，46项内容一致；已修正排序，后续部署将完整逐字节复核。"
+  }
+}

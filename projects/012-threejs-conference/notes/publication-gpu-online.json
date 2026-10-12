@@ -1,0 +1,30 @@
+{
+  "verifiedAt": "2026-10-12T16:14:14.374Z",
+  "url": "https://yydshly.github.io/1010_codex_project/012-threejs-conference/verification.html",
+  "method": "真实HTTPS页面点击运行GPU检查，读取页面公开结果；不是模拟数据",
+  "backend": "WebGPU",
+  "passed": true,
+  "cases": [
+    {
+      "roof": true,
+      "height": 3.1,
+      "particlesInside": 25,
+      "below": 0,
+      "passed": true
+    },
+    {
+      "roof": false,
+      "height": 0,
+      "particlesInside": 28,
+      "below": 3,
+      "passed": true
+    },
+    {
+      "roof": true,
+      "height": 3.1,
+      "particlesInside": 36,
+      "below": 0,
+      "passed": true
+    }
+  ]
+}

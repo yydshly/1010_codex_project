@@ -1,0 +1,1749 @@
+{
+  "taskDate": "2026-10-12",
+  "verifiedAt": "2026-10-12T15:59:11.461Z",
+  "revision": "9016bef7ac61e58ffde220cf6aaf23fb7aec93bd",
+  "base": "https://yydshly.github.io/1010_codex_project/",
+  "count": 173,
+  "passed": 172,
+  "failed": 1,
+  "scope": "001联合理解与全图、012完整研究/原创实验/模块/资料；逐文件HTTP、字节和SHA-256",
+  "files": [
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/ai-town-C_qvjH9r.md",
+      "bytes": 7007,
+      "sha256": "c79f8f3c17140d2e0b372835c02a702b209b94b2eeceaa19c85ea90c6bdb0539",
+      "status": 200,
+      "receivedBytes": 7007,
+      "receivedSha256": "c79f8f3c17140d2e0b372835c02a702b209b94b2eeceaa19c85ea90c6bdb0539",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/ai-town-decisions-BCEP3gnO.png",
+      "bytes": 94725,
+      "sha256": "5928740f17828989982fc5bd40cd37cba91f839362b3f45db3bed064810b682f",
+      "status": 200,
+      "receivedBytes": 94725,
+      "receivedSha256": "5928740f17828989982fc5bd40cd37cba91f839362b3f45db3bed064810b682f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/ai-town-minimax-boundary-DnevMcU1.json",
+      "bytes": 27657,
+      "sha256": "d1200e3aff2a33eb5125ed7edb7cc037c140b28bb95ba3adb49fb96a8d9b0937",
+      "status": 200,
+      "receivedBytes": 27657,
+      "receivedSha256": "d1200e3aff2a33eb5125ed7edb7cc037c140b28bb95ba3adb49fb96a8d9b0937",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/ai-town-openai-ready-mcyh5G8b.json",
+      "bytes": 9604,
+      "sha256": "b4c2f3a989b951d94088eb58068753d350661af647335d816ac7bdfff34e028f",
+      "status": 200,
+      "receivedBytes": 9604,
+      "receivedSha256": "b4c2f3a989b951d94088eb58068753d350661af647335d816ac7bdfff34e028f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/ai-town-openai-session-q-bYH-W_.json",
+      "bytes": 30015,
+      "sha256": "6b9443129eba560941e51d3c57a071665e4ce5e067c57f0df413cd184ea9bbe3",
+      "status": 200,
+      "receivedBytes": 30015,
+      "receivedSha256": "6b9443129eba560941e51d3c57a071665e4ce5e067c57f0df413cd184ea9bbe3",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/ai-town-rules-session-DFbEAz1D.json",
+      "bytes": 17879,
+      "sha256": "6f7379a1c36a11013d317de20864f345ed2c30330e82d5d838655a425f3873dd",
+      "status": 200,
+      "receivedBytes": 17879,
+      "receivedSha256": "6f7379a1c36a11013d317de20864f345ed2c30330e82d5d838655a425f3873dd",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/ai-town-verification-CtdHzCWk.md",
+      "bytes": 2660,
+      "sha256": "52bbc4699d21071c9ce2c58e72e095cd5c610da1c6f9be942f2b321f63a85303",
+      "status": 200,
+      "receivedBytes": 2660,
+      "receivedSha256": "52bbc4699d21071c9ce2c58e72e095cd5c610da1c6f9be942f2b321f63a85303",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/API-BWBKy0K6.md",
+      "bytes": 7521,
+      "sha256": "ce5d66328c1f7045b56cb5bf0ec07caecb1dbb0622b78a3cd58ed120c4d6a211",
+      "status": 200,
+      "receivedBytes": 7521,
+      "receivedSha256": "ce5d66328c1f7045b56cb5bf0ec07caecb1dbb0622b78a3cd58ed120c4d6a211",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/builder-BlYJyg67.js",
+      "bytes": 17738,
+      "sha256": "c26fcc4345bdd75a5951a85fe73d5d29d45e964ff277028374d5fb7ecbfcb58c",
+      "status": 200,
+      "receivedBytes": 17738,
+      "receivedSha256": "c26fcc4345bdd75a5951a85fe73d5d29d45e964ff277028374d5fb7ecbfcb58c",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/builder-D6xRKocQ.md",
+      "bytes": 6433,
+      "sha256": "d85afe89506ef116cd95860a8f3380fbe4dcb1a988eb99a6375b19ddaff2124f",
+      "status": 200,
+      "receivedBytes": 6433,
+      "receivedSha256": "d85afe89506ef116cd95860a8f3380fbe4dcb1a988eb99a6375b19ddaff2124f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/builder-desktop-DmZDmG-C.jpg",
+      "bytes": 62058,
+      "sha256": "6524c0ed3aeb283f465f372e9870aa69beaa7918d453987ee7105f9cfca89694",
+      "status": 200,
+      "receivedBytes": 62058,
+      "receivedSha256": "6524c0ed3aeb283f465f372e9870aa69beaa7918d453987ee7105f9cfca89694",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/builder-DVlDsL5_.css",
+      "bytes": 12899,
+      "sha256": "0fc2033617252d003fa83e9d7f8b73dcd2748bdf9e783dfa8947293fc6996214",
+      "status": 200,
+      "receivedBytes": 12899,
+      "receivedSha256": "0fc2033617252d003fa83e9d7f8b73dcd2748bdf9e783dfa8947293fc6996214",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/business-C7QSYrFK.md",
+      "bytes": 5371,
+      "sha256": "49489bed5f12f15fa5f5bc577f89dccd5a39023e07e43328dfa49d65e473cf47",
+      "status": 200,
+      "receivedBytes": 5371,
+      "receivedSha256": "49489bed5f12f15fa5f5bc577f89dccd5a39023e07e43328dfa49d65e473cf47",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/business-cover-DH3GnUxX.jpg",
+      "bytes": 86969,
+      "sha256": "d15665ff3a5d6104214611060f97aeba7d7ba73be859ab61b86d2eb050abcbd2",
+      "status": 200,
+      "receivedBytes": 86969,
+      "receivedSha256": "d15665ff3a5d6104214611060f97aeba7d7ba73be859ab61b86d2eb050abcbd2",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/catalog-Bh7eSyig.js",
+      "bytes": 1119,
+      "sha256": "62ce24d41e7bb8e340aca016a8d6fbc26e42464f7e6e977ac5aa33df4fedea70",
+      "status": 200,
+      "receivedBytes": 1119,
+      "receivedSha256": "62ce24d41e7bb8e340aca016a8d6fbc26e42464f7e6e977ac5aa33df4fedea70",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/components-Cd_T5hs9.js",
+      "bytes": 10962,
+      "sha256": "2750412959cabfc747252fe0d6f9c2564718af3538fc1145e48d9e84897f7a20",
+      "status": 200,
+      "receivedBytes": 10962,
+      "receivedSha256": "2750412959cabfc747252fe0d6f9c2564718af3538fc1145e48d9e84897f7a20",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/cover-DzScsAZf.jpg",
+      "bytes": 91477,
+      "sha256": "65ff921f9c45d1b4647f9ea0e61054c86596674ed6772483054b7314d411946e",
+      "status": 200,
+      "receivedBytes": 91477,
+      "receivedSha256": "65ff921f9c45d1b4647f9ea0e61054c86596674ed6772483054b7314d411946e",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/desktop-bkDceuAa.jpg",
+      "bytes": 87839,
+      "sha256": "06ac6c4f9adac65540888213bf69fdf77f8955eccba0697360d2f3937544e76e",
+      "status": 200,
+      "receivedBytes": 87839,
+      "receivedSha256": "06ac6c4f9adac65540888213bf69fdf77f8955eccba0697360d2f3937544e76e",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/directions-BfixrFzq.js",
+      "bytes": 6391,
+      "sha256": "b912df255854dc31260456e4a8ff180657c97d24dbb065fe490877207a8af156",
+      "status": 200,
+      "receivedBytes": 6391,
+      "receivedSha256": "b912df255854dc31260456e4a8ff180657c97d24dbb065fe490877207a8af156",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/directions-CjGyV247.css",
+      "bytes": 15039,
+      "sha256": "34b1c40c202b86d00d9bf38956a2a9adb0b2adedba980a733657252134a5f363",
+      "status": 200,
+      "receivedBytes": 15039,
+      "receivedSha256": "34b1c40c202b86d00d9bf38956a2a9adb0b2adedba980a733657252134a5f363",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/directions-overview-CMK14fns.jpg",
+      "bytes": 63997,
+      "sha256": "cd2369549d1d39c64d0b151c74cb73c1ad9f91378d91e0e6dc568b71d3159bb1",
+      "status": 200,
+      "receivedBytes": 63997,
+      "receivedSha256": "cd2369549d1d39c64d0b151c74cb73c1ad9f91378d91e0e6dc568b71d3159bb1",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/experiment-8x2R3qgx.md",
+      "bytes": 6369,
+      "sha256": "ee577b0da75db56b3278dc73aa747e0b9705b7f2d2df556d87bc1062ccb77219",
+      "status": 200,
+      "receivedBytes": 6369,
+      "receivedSha256": "ee577b0da75db56b3278dc73aa747e0b9705b7f2d2df556d87bc1062ccb77219",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/experiment-nnp8FrI9.md",
+      "bytes": 5369,
+      "sha256": "613eeacc627480ab0c08dac9f65af427457867d0b5e97748bef362c9e18cc711",
+      "status": 200,
+      "receivedBytes": 5369,
+      "receivedSha256": "613eeacc627480ab0c08dac9f65af427457867d0b5e97748bef362c9e18cc711",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/game-CviID97w.css",
+      "bytes": 10229,
+      "sha256": "76e357808a8de751a3407338830c7414c6642a2963a3bce8de6a8f8441d2bc0f",
+      "status": 200,
+      "receivedBytes": 10229,
+      "receivedSha256": "76e357808a8de751a3407338830c7414c6642a2963a3bce8de6a8f8441d2bc0f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/game-Cy0gRCBH.js",
+      "bytes": 21083,
+      "sha256": "c7d8c3067a5da392a00ce8c2a1cad7a4b759f94cc25c980c10baf51cbe38e114",
+      "status": 200,
+      "receivedBytes": 21083,
+      "receivedSha256": "c7d8c3067a5da392a00ce8c2a1cad7a4b759f94cc25c980c10baf51cbe38e114",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/grade-off-Dxt5WqdH.jpg",
+      "bytes": 89593,
+      "sha256": "3d9859bce00ccf11a16ec3c705d882cf184dcbab5f2210b1962694b99033827f",
+      "status": 200,
+      "receivedBytes": 89593,
+      "receivedSha256": "3d9859bce00ccf11a16ec3c705d882cf184dcbab5f2210b1962694b99033827f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/hub-Clw1z4VL.js",
+      "bytes": 292980,
+      "sha256": "3f17781617f0e7f2c6d1345e5d366dca67c512014e9f8f452c3157e97e1fd9a6",
+      "status": 200,
+      "receivedBytes": 292980,
+      "receivedSha256": "3f17781617f0e7f2c6d1345e5d366dca67c512014e9f8f452c3157e97e1fd9a6",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/hub-DTIucffB.css",
+      "bytes": 31799,
+      "sha256": "734c93afda67e6ab9e12059bc3857062a132314c922ebf6b6effc4c75d38b46b",
+      "status": 200,
+      "receivedBytes": 31799,
+      "receivedSha256": "734c93afda67e6ab9e12059bc3857062a132314c922ebf6b6effc4c75d38b46b",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/hub-rainy-ksiApxVt.jpg",
+      "bytes": 65351,
+      "sha256": "7d76714f7fe277452b547d7b42145211bce0ddd9af7c12d3ab4ee96553dfed6e",
+      "status": 200,
+      "receivedBytes": 65351,
+      "receivedSha256": "7d76714f7fe277452b547d7b42145211bce0ddd9af7c12d3ab4ee96553dfed6e",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/hub-sunny-B-lizo0c.jpg",
+      "bytes": 62778,
+      "sha256": "7a9e38502a923ea76c039f06ca5f6e4bc587d8726fc5833eefe8ebe467d155d0",
+      "status": 200,
+      "receivedBytes": 62778,
+      "receivedSha256": "7a9e38502a923ea76c039f06ca5f6e4bc587d8726fc5833eefe8ebe467d155d0",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/ink-off-DOhpUxsu.jpg",
+      "bytes": 77714,
+      "sha256": "b1062d6c7c6284fccb6d147fb2066fc6e50073dca09f98395d798cfc48bfc787",
+      "status": 200,
+      "receivedBytes": 77714,
+      "receivedSha256": "b1062d6c7c6284fccb6d147fb2066fc6e50073dca09f98395d798cfc48bfc787",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-BF2i_0QQ.css",
+      "bytes": 12870,
+      "sha256": "51f9705ad0f30274e85f267bf9051d1dba535bd9daf84b82c1092754dc2341a4",
+      "status": 200,
+      "receivedBytes": 12870,
+      "receivedSha256": "51f9705ad0f30274e85f267bf9051d1dba535bd9daf84b82c1092754dc2341a4",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-D_y88e1a.md",
+      "bytes": 8000,
+      "sha256": "6180c84e384758774df2f5d271fdfb45e35a3e4d682007c9e05cb5ea2ef45792",
+      "status": 200,
+      "receivedBytes": 8000,
+      "receivedSha256": "6180c84e384758774df2f5d271fdfb45e35a3e4d682007c9e05cb5ea2ef45792",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-d8LEz3G2.js",
+      "bytes": 12534,
+      "sha256": "fa1f3c7ea644a1a5a210912a093bbbde7598e94d7f1425ccf62d5bff85a56b2b",
+      "status": 200,
+      "receivedBytes": 12534,
+      "receivedSha256": "fa1f3c7ea644a1a5a210912a093bbbde7598e94d7f1425ccf62d5bff85a56b2b",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-forest-DXDd5Nk3.jpg",
+      "bytes": 71652,
+      "sha256": "b91b9cd798c6afc35e8e847efe812454953d91633509650d7e05d7363e3ad842",
+      "status": 200,
+      "receivedBytes": 71652,
+      "receivedSha256": "b91b9cd798c6afc35e8e847efe812454953d91633509650d7e05d7363e3ad842",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-measurements-DQyE6xDD.json",
+      "bytes": 136696,
+      "sha256": "faef132a9a69de145df2cc3b3dab96bfb224e3fd3dca431e8b7dd8555f04cd0a",
+      "status": 200,
+      "receivedBytes": 136696,
+      "receivedSha256": "faef132a9a69de145df2cc3b3dab96bfb224e3fd3dca431e8b7dd8555f04cd0a",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-resource-audit-DKw_uOeA.json",
+      "bytes": 4827,
+      "sha256": "6b1f1f83851bdfaa7d06d559b8145c17e790d71d19a609122378638b35335b4f",
+      "status": 200,
+      "receivedBytes": 4827,
+      "receivedSha256": "6b1f1f83851bdfaa7d06d559b8145c17e790d71d19a609122378638b35335b4f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-square-config-C2p6rLTi.json",
+      "bytes": 6982,
+      "sha256": "3caec1fc3f7a64344effec216c1370cb726340f2bbdace5ba7f110200f345ce3",
+      "status": 200,
+      "receivedBytes": 6982,
+      "receivedSha256": "3caec1fc3f7a64344effec216c1370cb726340f2bbdace5ba7f110200f345ce3",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-square-D_mQxay-.jpg",
+      "bytes": 71718,
+      "sha256": "c15e8cf0730b931657a3794dd065c3a7ffbd6976030d4b4631252bd52ddcea02",
+      "status": 200,
+      "receivedBytes": 71718,
+      "receivedSha256": "c15e8cf0730b931657a3794dd065c3a7ffbd6976030d4b4631252bd52ddcea02",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/lab-street-BwWDE1QY.jpg",
+      "bytes": 75016,
+      "sha256": "2a2f37d63233042a461ff7fc61a1515c9a569d9f211028288d1d33ddf6d530d1",
+      "status": 200,
+      "receivedBytes": 75016,
+      "receivedSha256": "2a2f37d63233042a461ff7fc61a1515c9a569d9f211028288d1d33ddf6d530d1",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/mobile-B9sApnAQ.jpg",
+      "bytes": 33341,
+      "sha256": "493ee2ac06cb15a84956c3af67f274e10d8fc631b0fbfef13576d6e9c6132e57",
+      "status": 200,
+      "receivedBytes": 33341,
+      "receivedSha256": "493ee2ac06cb15a84956c3af67f274e10d8fc631b0fbfef13576d6e9c6132e57",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/module-consumer-check-DP8lbGwB.json",
+      "bytes": 485,
+      "sha256": "5032b92986a41a22941a37a54dcb0d4ac0e62fe6a570609136dd5d51091c7d3c",
+      "status": 200,
+      "receivedBytes": 485,
+      "receivedSha256": "5032b92986a41a22941a37a54dcb0d4ac0e62fe6a570609136dd5d51091c7d3c",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/module-extraction-CheAR88V.md",
+      "bytes": 5609,
+      "sha256": "46ad874b64f1661f5cbd0d61074e6f0304a12307da9734538a968c7a1ad1763e",
+      "status": 200,
+      "receivedBytes": 5609,
+      "receivedSha256": "46ad874b64f1661f5cbd0d61074e6f0304a12307da9734538a968c7a1ad1763e",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/module-gpu-check-BGD4NJlp.json",
+      "bytes": 549,
+      "sha256": "10c38e14480e7da7b4aa0502a24ac20c18589346dfc7f00d06a129be9b668419",
+      "status": 200,
+      "receivedBytes": 549,
+      "receivedSha256": "10c38e14480e7da7b4aa0502a24ac20c18589346dfc7f00d06a129be9b668419",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "bytes": 670,
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "status": 200,
+      "receivedBytes": 670,
+      "receivedSha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/modules-droplets-off-BGyvGIbm.jpg",
+      "bytes": 67624,
+      "sha256": "8a7de6b98d06c840b6db5017d94c276efd5e7fb6b8773a6d6bf1ccaea0978b6f",
+      "status": 200,
+      "receivedBytes": 67624,
+      "receivedSha256": "8a7de6b98d06c840b6db5017d94c276efd5e7fb6b8773a6d6bf1ccaea0978b6f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/modules-droplets-on-DUO8GzAq.jpg",
+      "bytes": 66060,
+      "sha256": "0e8f61e9f3a8637c1a3c0c285d2cd3ae2c5692265b3da5e0f25aa4aa0974a718",
+      "status": 200,
+      "receivedBytes": 66060,
+      "receivedSha256": "0e8f61e9f3a8637c1a3c0c285d2cd3ae2c5692265b3da5e0f25aa4aa0974a718",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/modules-gpu-check-D8pGJPyv.jpg",
+      "bytes": 43425,
+      "sha256": "b5f1acbfe310121b77b0d8a0562b24e0a381516d6280a4e55d000202f460e831",
+      "status": 200,
+      "receivedBytes": 43425,
+      "receivedSha256": "b5f1acbfe310121b77b0d8a0562b24e0a381516d6280a4e55d000202f460e831",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/modules-minimal-BY8Trgqj.jpg",
+      "bytes": 95803,
+      "sha256": "dde5933911a69ad03d0e8932de5d0f4c777da82ddde49e7a6d193ab3005b0b7b",
+      "status": 200,
+      "receivedBytes": 95803,
+      "receivedSha256": "dde5933911a69ad03d0e8932de5d0f4c777da82ddde49e7a6d193ab3005b0b7b",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/overview-banner-DbIshLp8.png",
+      "bytes": 1782079,
+      "sha256": "69f5da54da3cfc091f9e3e0528d04cab2377f6ec9dc0976c65d271cc3a291d72",
+      "status": 200,
+      "receivedBytes": 1782079,
+      "receivedSha256": "69f5da54da3cfc091f9e3e0528d04cab2377f6ec9dc0976c65d271cc3a291d72",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/overview-content-B-x8ZZED.json",
+      "bytes": 8767,
+      "sha256": "3cade19638e9efc17630b502f464d96b5b3c6f6fad350280221095ab7ce11ab6",
+      "status": 200,
+      "receivedBytes": 8767,
+      "receivedSha256": "3cade19638e9efc17630b502f464d96b5b3c6f6fad350280221095ab7ce11ab6",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/overview-DeiT6tGd.js",
+      "bytes": 608,
+      "sha256": "7cd8f18b696af1622db4c0caba7037bed5868ed99021db49e86a24f022788721",
+      "status": 200,
+      "receivedBytes": 608,
+      "receivedSha256": "7cd8f18b696af1622db4c0caba7037bed5868ed99021db49e86a24f022788721",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/post-DJvpm3l0.js",
+      "bytes": 8152,
+      "sha256": "a9ee4b497a3169d1db6db674fa8032c3f4e482bec14f569db121935e1b3af0bf",
+      "status": 200,
+      "receivedBytes": 8152,
+      "receivedSha256": "a9ee4b497a3169d1db6db674fa8032c3f4e482bec14f569db121935e1b3af0bf",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/product-directions-B8DHwsKJ.js",
+      "bytes": 153,
+      "sha256": "c05166878163598a9fb71452570c48840df08292de4c04884c5644046eebfd2a",
+      "status": 200,
+      "receivedBytes": 153,
+      "receivedSha256": "c05166878163598a9fb71452570c48840df08292de4c04884c5644046eebfd2a",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/product-directions-BkRXjcNa.md",
+      "bytes": 19169,
+      "sha256": "3a74ad8ca394de4a70fc0a77403543feda88285863a268586cc1a6888ed83424",
+      "status": 200,
+      "receivedBytes": 19169,
+      "receivedSha256": "3a74ad8ca394de4a70fc0a77403543feda88285863a268586cc1a6888ed83424",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/product-directions-DNFK0LpZ.json",
+      "bytes": 21695,
+      "sha256": "db633356e270be5dd158c4389bdec1315c2d999dbe71dfacc8f0892143e8171f",
+      "status": 200,
+      "receivedBytes": 21695,
+      "receivedSha256": "db633356e270be5dd158c4389bdec1315c2d999dbe71dfacc8f0892143e8171f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/product-directions-validation-CeRgLYx9.md",
+      "bytes": 3331,
+      "sha256": "10f85e76b9afed22e8653f76e77840da8a32f56656dabe965dc622f0676e1033",
+      "status": 200,
+      "receivedBytes": 3331,
+      "receivedSha256": "10f85e76b9afed22e8653f76e77840da8a32f56656dabe965dc622f0676e1033",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/product-directions-Z45NgEXi.js",
+      "bytes": 17298,
+      "sha256": "22af6b026cc2df7e2086d1f88394da26f2d8db5681d0f961f539bc12417d2331",
+      "status": 200,
+      "receivedBytes": 17298,
+      "receivedSha256": "22af6b026cc2df7e2086d1f88394da26f2d8db5681d0f961f539bc12417d2331",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/PROVENANCE-JhKnKB9V.md",
+      "bytes": 2092,
+      "sha256": "3afba9ff533af922c54f9a964f2fac23e860e24b385514e53c2e192b49161b00",
+      "status": 200,
+      "receivedBytes": 2092,
+      "receivedSha256": "3afba9ff533af922c54f9a964f2fac23e860e24b385514e53c2e192b49161b00",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/publication-verification-bcVuI16P.json",
+      "bytes": 1943,
+      "sha256": "a90faf26014d1233e21ff498f664ced6ae65c5fed9fbcdcef0b651575ddc877c",
+      "status": 200,
+      "receivedBytes": 1943,
+      "receivedSha256": "a90faf26014d1233e21ff498f664ced6ae65c5fed9fbcdcef0b651575ddc877c",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-B1mp9gQA.md",
+      "bytes": 19129,
+      "sha256": "91111b769b0a0f473f0986fa8518c8cfa389a97f19752cea9ad1bf8a32ea4659",
+      "status": 200,
+      "receivedBytes": 19129,
+      "receivedSha256": "91111b769b0a0f473f0986fa8518c8cfa389a97f19752cea9ad1bf8a32ea4659",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-B7cPvvpv.md",
+      "bytes": 12275,
+      "sha256": "aac8d2a1236b2e5970524d4754567be4e0abeba176ceb05b9e398d1121c10e54",
+      "status": 200,
+      "receivedBytes": 12275,
+      "receivedSha256": "aac8d2a1236b2e5970524d4754567be4e0abeba176ceb05b9e398d1121c10e54",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-BkujwdwS.md",
+      "bytes": 19879,
+      "sha256": "1e93872757a474b96dacb862ff9e7b18388284844f60ce21f7ea36a0cb69e578",
+      "status": 200,
+      "receivedBytes": 19879,
+      "receivedSha256": "1e93872757a474b96dacb862ff9e7b18388284844f60ce21f7ea36a0cb69e578",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-BrTrEogH.md",
+      "bytes": 2088,
+      "sha256": "e525cbca828d8f66a7d69e9466f6b56bfd27338fe04eb0efce8201107be53902",
+      "status": 200,
+      "receivedBytes": 2088,
+      "receivedSha256": "e525cbca828d8f66a7d69e9466f6b56bfd27338fe04eb0efce8201107be53902",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-Bz9MPIgy.md",
+      "bytes": 5732,
+      "sha256": "58616f7708127542a667ab4d47fd2fd3641c390698ccdb6f5bde83baa3dca11a",
+      "status": 200,
+      "receivedBytes": 5732,
+      "receivedSha256": "58616f7708127542a667ab4d47fd2fd3641c390698ccdb6f5bde83baa3dca11a",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-c13iXg-p.md",
+      "bytes": 22829,
+      "sha256": "d882f6679baaf01a6a865d61e843adf0833215bc4f4412e3899fbf32bed6e3d9",
+      "status": 200,
+      "receivedBytes": 22829,
+      "receivedSha256": "d882f6679baaf01a6a865d61e843adf0833215bc4f4412e3899fbf32bed6e3d9",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-C61TUQsy.md",
+      "bytes": 6384,
+      "sha256": "054552f5d71a631fd31d16fda85c36bfea6a61612f6dd63d355b60cc19dc3e50",
+      "status": 200,
+      "receivedBytes": 6384,
+      "receivedSha256": "054552f5d71a631fd31d16fda85c36bfea6a61612f6dd63d355b60cc19dc3e50",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-CdOef0O3.md",
+      "bytes": 5797,
+      "sha256": "5c326ba5441e1d560fefcf9d026ff0aa063892b6a23990cf3b1d3938edfd90a8",
+      "status": 200,
+      "receivedBytes": 5797,
+      "receivedSha256": "5c326ba5441e1d560fefcf9d026ff0aa063892b6a23990cf3b1d3938edfd90a8",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-ChpGi8fU.md",
+      "bytes": 6645,
+      "sha256": "8b6eb19ec08658f2d74205f2b1bd57b91d7ec3f7db518620483d7f7b7dbd6356",
+      "status": 200,
+      "receivedBytes": 6645,
+      "receivedSha256": "8b6eb19ec08658f2d74205f2b1bd57b91d7ec3f7db518620483d7f7b7dbd6356",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-CTY0sFpd.md",
+      "bytes": 8315,
+      "sha256": "43c5d5e6914bf8978286e1b5580087a34999530de57f23d4d7c9f3d90116a440",
+      "status": 200,
+      "receivedBytes": 8315,
+      "receivedSha256": "43c5d5e6914bf8978286e1b5580087a34999530de57f23d4d7c9f3d90116a440",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-D_7XoYMr.md",
+      "bytes": 14276,
+      "sha256": "8a2931ad65b7a0f76a3b103d4c4a70901e67314e9d8496fbb594356dab0159dc",
+      "status": 200,
+      "receivedBytes": 14276,
+      "receivedSha256": "8a2931ad65b7a0f76a3b103d4c4a70901e67314e9d8496fbb594356dab0159dc",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-D7LVEBIO.md",
+      "bytes": 10280,
+      "sha256": "da37943a2d509f0b0ab59e8d2f05a898e616bba0f90237ee9689a8aa4a063346",
+      "status": 200,
+      "receivedBytes": 10280,
+      "receivedSha256": "da37943a2d509f0b0ab59e8d2f05a898e616bba0f90237ee9689a8aa4a063346",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-DEF-Dzw9.md",
+      "bytes": 6924,
+      "sha256": "35646ca55991fc2969960cbba7dbd0b335864b5dc257353ca4b89c3dfa2ee8b1",
+      "status": 200,
+      "receivedBytes": 6924,
+      "receivedSha256": "35646ca55991fc2969960cbba7dbd0b335864b5dc257353ca4b89c3dfa2ee8b1",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-DSY6Y1it.md",
+      "bytes": 8885,
+      "sha256": "50c8b5833342c78b60950e2269963774919ef14db9726b12243e55494f697fa9",
+      "status": 200,
+      "receivedBytes": 8885,
+      "receivedSha256": "50c8b5833342c78b60950e2269963774919ef14db9726b12243e55494f697fa9",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/README-Dut-SIos.md",
+      "bytes": 7684,
+      "sha256": "f4ea4020e81f6f3a4c80f4292a31e9ba9193f29ee36e121b71fca6d5a89acaee",
+      "status": 200,
+      "receivedBytes": 7684,
+      "receivedSha256": "f4ea4020e81f6f3a4c80f4292a31e9ba9193f29ee36e121b71fca6d5a89acaee",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/reflection-off-BsoJ53hL.jpg",
+      "bytes": 79124,
+      "sha256": "9e270c1b229d64a5ef450be8df809dc646890cca739d4b18ffa7c557dbd3633f",
+      "status": 200,
+      "receivedBytes": 79124,
+      "receivedSha256": "9e270c1b229d64a5ef450be8df809dc646890cca739d4b18ffa7c557dbd3633f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/reflection-on-MdDUyc_P.jpg",
+      "bytes": 83101,
+      "sha256": "316df651bc6daaf1a0d0cf14261910b67d1b29ab971e7df39b5e4bd8871d0d03",
+      "status": 200,
+      "receivedBytes": 83101,
+      "receivedSha256": "316df651bc6daaf1a0d0cf14261910b67d1b29ab971e7df39b5e4bd8871d0d03",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-B8ikuqst.css",
+      "bytes": 22533,
+      "sha256": "ae76cdaadc87674cb1807679206354574c37aa5fcf32271c8efdd592f32bf41a",
+      "status": 200,
+      "receivedBytes": 22533,
+      "receivedSha256": "ae76cdaadc87674cb1807679206354574c37aa5fcf32271c8efdd592f32bf41a",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-Cxm2bCzV.js",
+      "bytes": 48829,
+      "sha256": "d80de3ba7f2307e96397495dd7a24cff278da5ccf2f83cf4c2cad6673fe25475",
+      "status": 200,
+      "receivedBytes": 48829,
+      "receivedSha256": "d80de3ba7f2307e96397495dd7a24cff278da5ccf2f83cf4c2cad6673fe25475",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-DDRL0vs-.md",
+      "bytes": 6899,
+      "sha256": "333297ce524639669c992d733a39a63e367f4886b43a6e3b437c3ca282b2c968",
+      "status": 200,
+      "receivedBytes": 6899,
+      "receivedSha256": "333297ce524639669c992d733a39a63e367f4886b43a6e3b437c3ca282b2c968",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-hub-DttXQllC.json",
+      "bytes": 54189,
+      "sha256": "efa01ac3ff7b2c8b7eccc4506d961a526414f178aa7c29d26e45199214eb5bf9",
+      "status": 200,
+      "receivedBytes": 54189,
+      "receivedSha256": "efa01ac3ff7b2c8b7eccc4506d961a526414f178aa7c29d26e45199214eb5bf9",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-hub-validation-B_RGWSnj.md",
+      "bytes": 6143,
+      "sha256": "5e29555a4cda4f2a03d17f805f1bf325c1f13cc18437f61cc9e721a61b05f68e",
+      "status": 200,
+      "receivedBytes": 6143,
+      "receivedSha256": "5e29555a4cda4f2a03d17f805f1bf325c1f13cc18437f61cc9e721a61b05f68e",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-overview-bpWzcu8T.svg",
+      "bytes": 3112825,
+      "sha256": "d9ac33da370c8baccf555c2aad06b4f7a44a6e1fb74c06d8484f08114bd222d9",
+      "status": 200,
+      "receivedBytes": 3112825,
+      "receivedSha256": "d9ac33da370c8baccf555c2aad06b4f7a44a6e1fb74c06d8484f08114bd222d9",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-overview-D1Q0Efoq.png",
+      "bytes": 7348613,
+      "sha256": "d59bd3fb4aac64bb9a8554509c75a9c34abc8c4ec66ee0676260beeb3b114497",
+      "status": 200,
+      "receivedBytes": 7348613,
+      "receivedSha256": "d59bd3fb4aac64bb9a8554509c75a9c34abc8c4ec66ee0676260beeb3b114497",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-rain-kit-0.1.0-C_73o5LB.tgz",
+      "bytes": 28348,
+      "sha256": "e72613d271757f8b17c641fd61cdec3f8085bd9a79304ba8990d88a489008643",
+      "status": 200,
+      "receivedBytes": 28348,
+      "receivedSha256": "e72613d271757f8b17c641fd61cdec3f8085bd9a79304ba8990d88a489008643",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-summary-Bj9BySxl.md",
+      "bytes": 11934,
+      "sha256": "db6a97d487cb5cd71e7d69311d1e61258178cbc26d5c848b20d12bdb655756a5",
+      "status": 200,
+      "receivedBytes": 11934,
+      "receivedSha256": "db6a97d487cb5cd71e7d69311d1e61258178cbc26d5c848b20d12bdb655756a5",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-summary-DD6XKBZz.md",
+      "bytes": 52781,
+      "sha256": "106ffeea1a160226162e5b1aa3cea7f9653053ef0bdbfad623908271be86cd6b",
+      "status": 200,
+      "receivedBytes": 52781,
+      "receivedSha256": "106ffeea1a160226162e5b1aa3cea7f9653053ef0bdbfad623908271be86cd6b",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/research-v8axqWED.md",
+      "bytes": 7993,
+      "sha256": "cb0328c30c33660b0b8ef37eb5198f7be88ff592ccccaf65ce7e564c5e1978d2",
+      "status": 200,
+      "receivedBytes": 7993,
+      "receivedSha256": "cb0328c30c33660b0b8ef37eb5198f7be88ff592ccccaf65ce7e564c5e1978d2",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/roadmap-Dzm9rTfC.md",
+      "bytes": 9793,
+      "sha256": "fc1ac12fdcd2cf09e8a92fb87f68b5bbee8bad4f68d566ee69a376cc6a4dc870",
+      "status": 200,
+      "receivedBytes": 9793,
+      "receivedSha256": "fc1ac12fdcd2cf09e8a92fb87f68b5bbee8bad4f68d566ee69a376cc6a4dc870",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/sakura-crossing-MIT-BjCh0Zrc.js",
+      "bytes": 86,
+      "sha256": "e737486e9edf310d220c07c4f308a15ba4a55a3a86bf97d16d227481f49c86fd",
+      "status": 200,
+      "receivedBytes": 86,
+      "receivedSha256": "e737486e9edf310d220c07c4f308a15ba4a55a3a86bf97d16d227481f49c86fd",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/sakura-crossing-MIT-Pk26TUMX.txt",
+      "bytes": 1068,
+      "sha256": "470c4fbbdb2ae5fa3c4b6cc11cfed01e1848dbe40e947897f1fb7897cbc334f6",
+      "status": 200,
+      "receivedBytes": 1068,
+      "receivedSha256": "470c4fbbdb2ae5fa3c4b6cc11cfed01e1848dbe40e947897f1fb7897cbc334f6",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/scene-map-9r5m-9Qa.md",
+      "bytes": 6792,
+      "sha256": "4d43f45296eafb92ff6cc84ebd057b0585df2647f646861526c607af2240032d",
+      "status": 200,
+      "receivedBytes": 6792,
+      "receivedSha256": "4d43f45296eafb92ff6cc84ebd057b0585df2647f646861526c607af2240032d",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/scene-map-content-a0_Dd1Z9.json",
+      "bytes": 17300,
+      "sha256": "64832e8f4f1fca0fe6d05eb45004cb19a677371b597a8aab5bc60058d28a42a4",
+      "status": 200,
+      "receivedBytes": 17300,
+      "receivedSha256": "64832e8f4f1fca0fe6d05eb45004cb19a677371b597a8aab5bc60058d28a42a4",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/scene-map-preview-DGBObiTd.webp",
+      "bytes": 98290,
+      "sha256": "50cafc11a7abf3b501e2f71c161bb226085b9590974721cef57beb7478f16da3",
+      "status": 200,
+      "receivedBytes": 98290,
+      "receivedSha256": "50cafc11a7abf3b501e2f71c161bb226085b9590974721cef57beb7478f16da3",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/scene-publication-Cx8n6pkU.md",
+      "bytes": 1735,
+      "sha256": "890ef2eaee616bab52912acc727555f3cfd5cf16a10b2640c804e95966e864d6",
+      "status": 200,
+      "receivedBytes": 1735,
+      "receivedSha256": "890ef2eaee616bab52912acc727555f3cfd5cf16a10b2640c804e95966e864d6",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/scene-research-map-Dgwpkdnw.png",
+      "bytes": 15487866,
+      "sha256": "4abb63c2ec1823e5e9bfc2efae91182fa7bcbc5e1b466898e52c8d3518a826fd",
+      "status": 200,
+      "receivedBytes": 15487866,
+      "receivedSha256": "4abb63c2ec1823e5e9bfc2efae91182fa7bcbc5e1b466898e52c8d3518a826fd",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/scene-research-map-DOpaLhZ7.svg",
+      "bytes": 5187869,
+      "sha256": "ba711d609b41dd5d2f0aa4793b7aa322a4f2f4b0fa7a9a08234399f15587dcbb",
+      "status": 200,
+      "receivedBytes": 5187869,
+      "receivedSha256": "ba711d609b41dd5d2f0aa4793b7aa322a4f2f4b0fa7a9a08234399f15587dcbb",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/sceneMap-DDvEcIo6.js",
+      "bytes": 20667,
+      "sha256": "161bc1a89c256d2af0a5e1dfca613c448288f9025c3b71587056e6958877ed17",
+      "status": 200,
+      "receivedBytes": 20667,
+      "receivedSha256": "161bc1a89c256d2af0a5e1dfca613c448288f9025c3b71587056e6958877ed17",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/street-Bi3eIaXa.js",
+      "bytes": 10591,
+      "sha256": "c5994a12c663d5983aea624a629d72930f06d48830ba299ec7bc5561985bcd0f",
+      "status": 200,
+      "receivedBytes": 10591,
+      "receivedSha256": "c5994a12c663d5983aea624a629d72930f06d48830ba299ec7bc5561985bcd0f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/THIRD_PARTY-C_LrgJvM.md",
+      "bytes": 4818,
+      "sha256": "9dc9b7e5aa85412b5c6eb721c471c43d5dd3b0476d5c2f1446ab9d07086da109",
+      "status": 200,
+      "receivedBytes": 4818,
+      "receivedSha256": "9dc9b7e5aa85412b5c6eb721c471c43d5dd3b0476d5c2f1446ab9d07086da109",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/THIRD_PARTY-D3i-sFGb.md",
+      "bytes": 7398,
+      "sha256": "80d35d8d3f7fdd3e1b5f6ef5f00ad7115f60e581789827d104a785a4bc0db505",
+      "status": 200,
+      "receivedBytes": 7398,
+      "receivedSha256": "80d35d8d3f7fdd3e1b5f6ef5f00ad7115f60e581789827d104a785a4bc0db505",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/three-D-2KzKeQ.js",
+      "bytes": 635695,
+      "sha256": "fb1eaca3986070596048dcc41b608058ad6ef0a12dbc1c23b1b371c05a6b7bad",
+      "status": 200,
+      "receivedBytes": 635695,
+      "receivedSha256": "fb1eaca3986070596048dcc41b608058ad6ef0a12dbc1c23b1b371c05a6b7bad",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/three-webgpu-C4CARMQW.js",
+      "bytes": 649127,
+      "sha256": "ddcecfd41a30dc9f66124a4947af1444753461c298e2aec5140d8678efa5f116",
+      "status": 200,
+      "receivedBytes": 649127,
+      "receivedSha256": "ddcecfd41a30dc9f66124a4947af1444753461c298e2aec5140d8678efa5f116",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/toon-DFFhu2WB.js",
+      "bytes": 4419,
+      "sha256": "dc14aefe9b71600b49059a01fd7d7a5b3bc8a8c5d054c7f41dc74279446ceb5f",
+      "status": 200,
+      "receivedBytes": 4419,
+      "receivedSha256": "dc14aefe9b71600b49059a01fd7d7a5b3bc8a8c5d054c7f41dc74279446ceb5f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/tour-QH1BpZbf.md",
+      "bytes": 8512,
+      "sha256": "e273a8a6bb51f196518a2dc04f31d1416625a51ef42559896191abb5b914b908",
+      "status": 200,
+      "receivedBytes": 8512,
+      "receivedSha256": "e273a8a6bb51f196518a2dc04f31d1416625a51ef42559896191abb5b914b908",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/tour-shop-CfF8WRVc.jpg",
+      "bytes": 83722,
+      "sha256": "05074c4676ccfb760f28ac80f533aa5834ed294e3fb8920b4b9e8a2b67dc16eb",
+      "status": 200,
+      "receivedBytes": 83722,
+      "receivedSha256": "05074c4676ccfb760f28ac80f533aa5834ed294e3fb8920b4b9e8a2b67dc16eb",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/tour-voice-browser-CZIzo85P.json",
+      "bytes": 468,
+      "sha256": "c03ca1de58acd7660f3eb1b68a58e9d3d1dc04775452a8edc501373c624e8a43",
+      "status": 200,
+      "receivedBytes": 468,
+      "receivedSha256": "c03ca1de58acd7660f3eb1b68a58e9d3d1dc04775452a8edc501373c624e8a43",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/tour-voice-generation-jn7fU1xR.json",
+      "bytes": 12871,
+      "sha256": "da2b86454d0c5f8d63081b586fef9a6d5ecf5924398627a8619ab1cb815191fc",
+      "status": 200,
+      "receivedBytes": 12871,
+      "receivedSha256": "da2b86454d0c5f8d63081b586fef9a6d5ecf5924398627a8619ab1cb815191fc",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/tour-zh-B7JjCGd5.mp3",
+      "bytes": 961389,
+      "sha256": "c848db31e1e5026b860e29b4aca2cf6745708581226fcb74962b795983316814",
+      "status": 200,
+      "receivedBytes": 961389,
+      "receivedSha256": "c848db31e1e5026b860e29b4aca2cf6745708581226fcb74962b795983316814",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/upstream-bloom-off-B0NZczBg.jpg",
+      "bytes": 147952,
+      "sha256": "6702988c233b2399741f5e0c3b7762ecd3cb38dde0b20353bd32361df1bb3430",
+      "status": 200,
+      "receivedBytes": 147952,
+      "receivedSha256": "6702988c233b2399741f5e0c3b7762ecd3cb38dde0b20353bd32361df1bb3430",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/upstream-controls-Bu4Nahbo.jpg",
+      "bytes": 147771,
+      "sha256": "42a6074aea95d55e3d1af0d69e8e3ef6fb215929cce295dfd06e9c158fc030b0",
+      "status": 200,
+      "receivedBytes": 147771,
+      "receivedSha256": "42a6074aea95d55e3d1af0d69e8e3ef6fb215929cce295dfd06e9c158fc030b0",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/upstream-controls-DdZkuur2.md",
+      "bytes": 4821,
+      "sha256": "57c92ac5d1334c972b89942cc85e1d8cc5d050bc1c4ae2ecf8ddc0bba9268399",
+      "status": 200,
+      "receivedBytes": 4821,
+      "receivedSha256": "57c92ac5d1334c972b89942cc85e1d8cc5d050bc1c4ae2ecf8ddc0bba9268399",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/walk-upgrade-FONseLQ9.md",
+      "bytes": 4762,
+      "sha256": "f2452dc1a3dfc302c887344dfcb2a1c4b4c7df84c0d8d0f7bc51c0528d2913bb",
+      "status": 200,
+      "receivedBytes": 4762,
+      "receivedSha256": "f2452dc1a3dfc302c887344dfcb2a1c4b4c7df84c0d8d0f7bc51c0528d2913bb",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/weather-BcURpBc8.css",
+      "bytes": 11519,
+      "sha256": "b100138da1dd3c648a5fdadd283d2135dd79004304b589831846d10ece0d5668",
+      "status": 200,
+      "receivedBytes": 11519,
+      "receivedSha256": "b100138da1dd3c648a5fdadd283d2135dd79004304b589831846d10ece0d5668",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/weather-DXVTO6pf.js",
+      "bytes": 85651,
+      "sha256": "53f77f2f0157bdc382175632f0bc989cabf7ef78764048716f65f0556db66571",
+      "status": 200,
+      "receivedBytes": 85651,
+      "receivedSha256": "53f77f2f0157bdc382175632f0bc989cabf7ef78764048716f65f0556db66571",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/weather-reuse-DRCntTnj.js",
+      "bytes": 79,
+      "sha256": "287478a3d27ecfa512e038739fdaec116166d5ac307f7a93b32ee7c360a39282",
+      "status": 200,
+      "receivedBytes": 79,
+      "receivedSha256": "287478a3d27ecfa512e038739fdaec116166d5ac307f7a93b32ee7c360a39282",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "assets/weather-reuse-DwJNU55z.md",
+      "bytes": 6703,
+      "sha256": "a13078439c858498fc80719411212ac3175fdd8c49c4567d4e66636404722030",
+      "status": 200,
+      "receivedBytes": 6703,
+      "receivedSha256": "a13078439c858498fc80719411212ac3175fdd8c49c4567d4e66636404722030",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "builder.html",
+      "bytes": 8816,
+      "sha256": "51d67fb2622f903d175b050395c2bc849f8c51f917ddb162d43ca49a969ceb44",
+      "status": 200,
+      "receivedBytes": 8816,
+      "receivedSha256": "51d67fb2622f903d175b050395c2bc849f8c51f917ddb162d43ca49a969ceb44",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "directions.html",
+      "bytes": 7108,
+      "sha256": "cd453e2e7404fefa3204a73b86c5b5725803c207bfd00d41203efc9448ba9b95",
+      "status": 200,
+      "receivedBytes": 7108,
+      "receivedSha256": "cd453e2e7404fefa3204a73b86c5b5725803c207bfd00d41203efc9448ba9b95",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "game.html",
+      "bytes": 6135,
+      "sha256": "c4b67d874bb01079c4ea6ea2f3744164752f566aa868e77af0bee5270aece347",
+      "status": 200,
+      "receivedBytes": 6135,
+      "receivedSha256": "c4b67d874bb01079c4ea6ea2f3744164752f566aa868e77af0bee5270aece347",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "index.html",
+      "bytes": 11718,
+      "sha256": "efcdcb846f50e32f0d5bd3f8d4d755a55127aa6adca0d2c36681de2ac1722738",
+      "status": 200,
+      "receivedBytes": 11718,
+      "receivedSha256": "efcdcb846f50e32f0d5bd3f8d4d755a55127aa6adca0d2c36681de2ac1722738",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "lab.html",
+      "bytes": 10313,
+      "sha256": "e4c8dde08863d494b4c6236df95763f4fd379e77972de9a2cac76f2c0be3180f",
+      "status": 200,
+      "receivedBytes": 10313,
+      "receivedSha256": "e4c8dde08863d494b4c6236df95763f4fd379e77972de9a2cac76f2c0be3180f",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "overview.html",
+      "bytes": 3403,
+      "sha256": "43d2b28767091b2dcb447b04714f558148a2e62dce371bc9eee28d071d7f590a",
+      "status": 200,
+      "receivedBytes": 3403,
+      "receivedSha256": "43d2b28767091b2dcb447b04714f558148a2e62dce371bc9eee28d071d7f590a",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "research.html",
+      "bytes": 17477,
+      "sha256": "c063e13cfbea7428ed58034843f9a6c98e7f076f329e62b16fbf10c8dc826844",
+      "status": 200,
+      "receivedBytes": 17477,
+      "receivedSha256": "c063e13cfbea7428ed58034843f9a6c98e7f076f329e62b16fbf10c8dc826844",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "scene-map.html",
+      "bytes": 5035,
+      "sha256": "abb75577562493478c832798ce1bd494a05f1eb15342b2d95a9b1ebd86febb89",
+      "status": 200,
+      "receivedBytes": 5035,
+      "receivedSha256": "abb75577562493478c832798ce1bd494a05f1eb15342b2d95a9b1ebd86febb89",
+      "ok": true
+    },
+    {
+      "project": "001-sakura-crossing",
+      "file": "weather.html",
+      "bytes": 7984,
+      "sha256": "0e2d4ca21e5b3b801c6a597b50696123a98df147adfd6a6016ba12b1cbf22757",
+      "status": 200,
+      "receivedBytes": 7984,
+      "receivedSha256": "0e2d4ca21e5b3b801c6a597b50696123a98df147adfd6a6016ba12b1cbf22757",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/API-BWBKy0K6.md",
+      "bytes": 7521,
+      "sha256": "ce5d66328c1f7045b56cb5bf0ec07caecb1dbb0622b78a3cd58ed120c4d6a211",
+      "status": 200,
+      "receivedBytes": 7521,
+      "receivedSha256": "ce5d66328c1f7045b56cb5bf0ec07caecb1dbb0622b78a3cd58ed120c4d6a211",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/desktop-bkDceuAa.jpg",
+      "bytes": 87839,
+      "sha256": "06ac6c4f9adac65540888213bf69fdf77f8955eccba0697360d2f3937544e76e",
+      "status": 200,
+      "receivedBytes": 87839,
+      "receivedSha256": "06ac6c4f9adac65540888213bf69fdf77f8955eccba0697360d2f3937544e76e",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/experiment-nnp8FrI9.md",
+      "bytes": 5369,
+      "sha256": "613eeacc627480ab0c08dac9f65af427457867d0b5e97748bef362c9e18cc711",
+      "status": 200,
+      "receivedBytes": 5369,
+      "receivedSha256": "613eeacc627480ab0c08dac9f65af427457867d0b5e97748bef362c9e18cc711",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/gpu-verification-Dpaf6Xdq.json",
+      "bytes": 548,
+      "sha256": "be716434386da4bb99f0363b30f439d7e16f0e3c23425653a20205f58ce1244d",
+      "status": 200,
+      "receivedBytes": 548,
+      "receivedSha256": "be716434386da4bb99f0363b30f439d7e16f0e3c23425653a20205f58ce1244d",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/gpu-verification-upgrade-C0QYQB_P.json",
+      "bytes": 549,
+      "sha256": "db20fdb2cf3b8097485abd99abb91e9fb3b2bdf1d1b59bbda3dae2afd38bc55d",
+      "status": 200,
+      "receivedBytes": 549,
+      "receivedSha256": "db20fdb2cf3b8097485abd99abb91e9fb3b2bdf1d1b59bbda3dae2afd38bc55d",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/hub-rainy-ksiApxVt.jpg",
+      "bytes": 65351,
+      "sha256": "7d76714f7fe277452b547d7b42145211bce0ddd9af7c12d3ab4ee96553dfed6e",
+      "status": 200,
+      "receivedBytes": 65351,
+      "receivedSha256": "7d76714f7fe277452b547d7b42145211bce0ddd9af7c12d3ab4ee96553dfed6e",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/main-DZQoXpKr.js",
+      "bytes": 53151,
+      "sha256": "cda017cd23672431cf5c8c1b29b5d1dd38a06000eca0d5598b2e8ee67a9421cb",
+      "status": 200,
+      "receivedBytes": 53151,
+      "receivedSha256": "cda017cd23672431cf5c8c1b29b5d1dd38a06000eca0d5598b2e8ee67a9421cb",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/main-SmUW5uKO.css",
+      "bytes": 16656,
+      "sha256": "4621d2bf5bd8a44915d71a368fa0481846fbd725c9073d4cb76629c23dbba1f1",
+      "status": 200,
+      "receivedBytes": 16656,
+      "receivedSha256": "4621d2bf5bd8a44915d71a368fa0481846fbd725c9073d4cb76629c23dbba1f1",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/minimal-Bv2ag-nJ.js",
+      "bytes": 6936,
+      "sha256": "9da9047477385ba7eda024d46357d713be4aa6c7b9ae0f65449204b003e20f19",
+      "status": 200,
+      "receivedBytes": 6936,
+      "receivedSha256": "9da9047477385ba7eda024d46357d713be4aa6c7b9ae0f65449204b003e20f19",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/minimal-Co5r7ss3.css",
+      "bytes": 4716,
+      "sha256": "487970283a2105e2950eca6892aecaeb5fd65ae5fe4b17ea4dba90d5a0cd89ff",
+      "status": 200,
+      "receivedBytes": 4716,
+      "receivedSha256": "487970283a2105e2950eca6892aecaeb5fd65ae5fe4b17ea4dba90d5a0cd89ff",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/module-consumer-check-DP8lbGwB.json",
+      "bytes": 485,
+      "sha256": "5032b92986a41a22941a37a54dcb0d4ac0e62fe6a570609136dd5d51091c7d3c",
+      "status": 200,
+      "receivedBytes": 485,
+      "receivedSha256": "5032b92986a41a22941a37a54dcb0d4ac0e62fe6a570609136dd5d51091c7d3c",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/module-extraction-CheAR88V.md",
+      "bytes": 5609,
+      "sha256": "46ad874b64f1661f5cbd0d61074e6f0304a12307da9734538a968c7a1ad1763e",
+      "status": 200,
+      "receivedBytes": 5609,
+      "receivedSha256": "46ad874b64f1661f5cbd0d61074e6f0304a12307da9734538a968c7a1ad1763e",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/module-gpu-check-0QmhXrse.json",
+      "bytes": 548,
+      "sha256": "0623361694ea6dac3919968f508796b3118e63244802f25abec77a11b7894d9c",
+      "status": 200,
+      "receivedBytes": 548,
+      "receivedSha256": "0623361694ea6dac3919968f508796b3118e63244802f25abec77a11b7894d9c",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/modulepreload-polyfill-P2Xu9kJm.js",
+      "bytes": 670,
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "status": 200,
+      "receivedBytes": 670,
+      "receivedSha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/modules-minimal-BY8Trgqj.jpg",
+      "bytes": 95803,
+      "sha256": "dde5933911a69ad03d0e8932de5d0f4c777da82ddde49e7a6d193ab3005b0b7b",
+      "status": 200,
+      "receivedBytes": 95803,
+      "receivedSha256": "dde5933911a69ad03d0e8932de5d0f4c777da82ddde49e7a6d193ab3005b0b7b",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/PROVENANCE-JhKnKB9V.md",
+      "bytes": 2092,
+      "sha256": "3afba9ff533af922c54f9a964f2fac23e860e24b385514e53c2e192b49161b00",
+      "status": 200,
+      "receivedBytes": 2092,
+      "receivedSha256": "3afba9ff533af922c54f9a964f2fac23e860e24b385514e53c2e192b49161b00",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/rain-DClSJwaq.js",
+      "bytes": 894980,
+      "sha256": "4bd5735a38dec64d3bffd918098ea87a9d86ef4832a8f9541ed633da3a2f41fe",
+      "status": 200,
+      "receivedBytes": 894980,
+      "receivedSha256": "4bd5735a38dec64d3bffd918098ea87a9d86ef4832a8f9541ed633da3a2f41fe",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/rain-kit-5unYdm-K.js",
+      "bytes": 64631,
+      "sha256": "d985209d3a7178d9b06a5dd64622a9e345c180c670bd987b9854d8f61be35459",
+      "status": 200,
+      "receivedBytes": 64631,
+      "receivedSha256": "d985209d3a7178d9b06a5dd64622a9e345c180c670bd987b9854d8f61be35459",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/README-DC7afFKo.md",
+      "bytes": 1015,
+      "sha256": "cb2018e4ef17b1500ddfe3107ed128827a28197bfc8f85869ca9259b5bbbe979",
+      "status": 200,
+      "receivedBytes": 1015,
+      "receivedSha256": "cb2018e4ef17b1500ddfe3107ed128827a28197bfc8f85869ca9259b5bbbe979",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/README-DEF-Dzw9.md",
+      "bytes": 6924,
+      "sha256": "35646ca55991fc2969960cbba7dbd0b335864b5dc257353ca4b89c3dfa2ee8b1",
+      "status": 200,
+      "receivedBytes": 6924,
+      "receivedSha256": "35646ca55991fc2969960cbba7dbd0b335864b5dc257353ca4b89c3dfa2ee8b1",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/research-DDRL0vs-.md",
+      "bytes": 6899,
+      "sha256": "333297ce524639669c992d733a39a63e367f4886b43a6e3b437c3ca282b2c968",
+      "status": 200,
+      "receivedBytes": 6899,
+      "receivedSha256": "333297ce524639669c992d733a39a63e367f4886b43a6e3b437c3ca282b2c968",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/research-DLTu3vxP.css",
+      "bytes": 5927,
+      "sha256": "c4cee7a9de441a2ea959c4f1e486e9d66d91bb2408558329bec980f4efabc444",
+      "status": 200,
+      "receivedBytes": 5927,
+      "receivedSha256": "c4cee7a9de441a2ea959c4f1e486e9d66d91bb2408558329bec980f4efabc444",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/research-REY3LM4k.js",
+      "bytes": 17777,
+      "sha256": "7db8f3f16b396d6dd50ee75869e64341b4edd8e1898a4a8896b676dbcd036e10",
+      "status": 200,
+      "receivedBytes": 17777,
+      "receivedSha256": "7db8f3f16b396d6dd50ee75869e64341b4edd8e1898a4a8896b676dbcd036e10",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/research-summary-Bj9BySxl.md",
+      "bytes": 11934,
+      "sha256": "db6a97d487cb5cd71e7d69311d1e61258178cbc26d5c848b20d12bdb655756a5",
+      "status": 200,
+      "receivedBytes": 11934,
+      "receivedSha256": "db6a97d487cb5cd71e7d69311d1e61258178cbc26d5c848b20d12bdb655756a5",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/research-summary-rob0QZx1.json",
+      "bytes": 13232,
+      "sha256": "7653a0fb99eed9b13cc1283b2c86eb2ab3cfbb3f863c16b9bedb08676d49723b",
+      "status": 200,
+      "receivedBytes": 13232,
+      "receivedSha256": "7653a0fb99eed9b13cc1283b2c86eb2ab3cfbb3f863c16b9bedb08676d49723b",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/researchLinks-DXwTzDfb.js",
+      "bytes": 343,
+      "sha256": "a551af2829db7f21fba235b960042e2a063489ee6ca4aa33e1c73fb244c150d8",
+      "status": 200,
+      "receivedBytes": 343,
+      "receivedSha256": "a551af2829db7f21fba235b960042e2a063489ee6ca4aa33e1c73fb244c150d8",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/scene-map-guide-DGBObiTd.webp",
+      "bytes": 98290,
+      "sha256": "50cafc11a7abf3b501e2f71c161bb226085b9590974721cef57beb7478f16da3",
+      "status": 200,
+      "receivedBytes": 98290,
+      "receivedSha256": "50cafc11a7abf3b501e2f71c161bb226085b9590974721cef57beb7478f16da3",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/THIRD_PARTY-C_LrgJvM.md",
+      "bytes": 4818,
+      "sha256": "9dc9b7e5aa85412b5c6eb721c471c43d5dd3b0476d5c2f1446ab9d07086da109",
+      "status": 200,
+      "receivedBytes": 4818,
+      "receivedSha256": "9dc9b7e5aa85412b5c6eb721c471c43d5dd3b0476d5c2f1446ab9d07086da109",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/upstream-controls-Bu4Nahbo.jpg",
+      "bytes": 147771,
+      "sha256": "42a6074aea95d55e3d1af0d69e8e3ef6fb215929cce295dfd06e9c158fc030b0",
+      "status": 200,
+      "receivedBytes": 147771,
+      "receivedSha256": "42a6074aea95d55e3d1af0d69e8e3ef6fb215929cce295dfd06e9c158fc030b0",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/upstream-controls-DdZkuur2.md",
+      "bytes": 4821,
+      "sha256": "57c92ac5d1334c972b89942cc85e1d8cc5d050bc1c4ae2ecf8ddc0bba9268399",
+      "status": 200,
+      "receivedBytes": 4821,
+      "receivedSha256": "57c92ac5d1334c972b89942cc85e1d8cc5d050bc1c4ae2ecf8ddc0bba9268399",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/verification-BZbSN5G_.js",
+      "bytes": 2171,
+      "sha256": "d28231fadae018694956bb82f1d2563c1ff2254295f663ec2f42156a47a9f6dd",
+      "status": 200,
+      "receivedBytes": 2171,
+      "receivedSha256": "d28231fadae018694956bb82f1d2563c1ff2254295f663ec2f42156a47a9f6dd",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "assets/walk-upgrade-FONseLQ9.md",
+      "bytes": 4762,
+      "sha256": "f2452dc1a3dfc302c887344dfcb2a1c4b4c7df84c0d8d0f7bc51c0528d2913bb",
+      "status": 200,
+      "receivedBytes": 4762,
+      "receivedSha256": "f2452dc1a3dfc302c887344dfcb2a1c4b4c7df84c0d8d0f7bc51c0528d2913bb",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "docs/rain-kit-API.md",
+      "bytes": 7521,
+      "sha256": "ce5d66328c1f7045b56cb5bf0ec07caecb1dbb0622b78a3cd58ed120c4d6a211",
+      "status": 200,
+      "receivedBytes": 7521,
+      "receivedSha256": "ce5d66328c1f7045b56cb5bf0ec07caecb1dbb0622b78a3cd58ed120c4d6a211",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "docs/rain-kit-PROVENANCE.md",
+      "bytes": 2092,
+      "sha256": "3afba9ff533af922c54f9a964f2fac23e860e24b385514e53c2e192b49161b00",
+      "status": 200,
+      "receivedBytes": 2092,
+      "receivedSha256": "3afba9ff533af922c54f9a964f2fac23e860e24b385514e53c2e192b49161b00",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "docs/rain-kit-README.md",
+      "bytes": 6924,
+      "sha256": "35646ca55991fc2969960cbba7dbd0b335864b5dc257353ca4b89c3dfa2ee8b1",
+      "status": 200,
+      "receivedBytes": 6924,
+      "receivedSha256": "35646ca55991fc2969960cbba7dbd0b335864b5dc257353ca4b89c3dfa2ee8b1",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "downloads/research-rain-kit-0.1.0.tgz",
+      "bytes": 28348,
+      "sha256": "e72613d271757f8b17c641fd61cdec3f8085bd9a79304ba8990d88a489008643",
+      "status": 200,
+      "receivedBytes": 28348,
+      "receivedSha256": "e72613d271757f8b17c641fd61cdec3f8085bd9a79304ba8990d88a489008643",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "index.html",
+      "bytes": 14326,
+      "sha256": "d4909af1a6725770a7dbf2f581ff5c003cc4fdd935aed2fd6f37341126deb8d4",
+      "status": 200,
+      "receivedBytes": 14326,
+      "receivedSha256": "d4909af1a6725770a7dbf2f581ff5c003cc4fdd935aed2fd6f37341126deb8d4",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "minimal.html",
+      "bytes": 5600,
+      "sha256": "dad16e0a0e3b9a6ac1e1c384fdaa803ee04f8e4c6daeeb50446740477bb699c6",
+      "status": 200,
+      "receivedBytes": 5600,
+      "receivedSha256": "dad16e0a0e3b9a6ac1e1c384fdaa803ee04f8e4c6daeeb50446740477bb699c6",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "notes/module-consumer-check.json",
+      "bytes": 485,
+      "sha256": "5032b92986a41a22941a37a54dcb0d4ac0e62fe6a570609136dd5d51091c7d3c",
+      "status": 200,
+      "receivedBytes": 485,
+      "receivedSha256": "5032b92986a41a22941a37a54dcb0d4ac0e62fe6a570609136dd5d51091c7d3c",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "notes/module-extraction.md",
+      "bytes": 5609,
+      "sha256": "46ad874b64f1661f5cbd0d61074e6f0304a12307da9734538a968c7a1ad1763e",
+      "status": 200,
+      "receivedBytes": 5609,
+      "receivedSha256": "46ad874b64f1661f5cbd0d61074e6f0304a12307da9734538a968c7a1ad1763e",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "notes/module-gpu-check.json",
+      "bytes": 548,
+      "sha256": "0623361694ea6dac3919968f508796b3118e63244802f25abec77a11b7894d9c",
+      "status": 200,
+      "receivedBytes": 548,
+      "receivedSha256": "0623361694ea6dac3919968f508796b3118e63244802f25abec77a11b7894d9c",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "notes/research.md",
+      "bytes": 6899,
+      "sha256": "333297ce524639669c992d733a39a63e367f4886b43a6e3b437c3ca282b2c968",
+      "status": 200,
+      "receivedBytes": 6899,
+      "receivedSha256": "333297ce524639669c992d733a39a63e367f4886b43a6e3b437c3ca282b2c968",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "notes/upstream-controls.md",
+      "bytes": 4821,
+      "sha256": "57c92ac5d1334c972b89942cc85e1d8cc5d050bc1c4ae2ecf8ddc0bba9268399",
+      "status": 200,
+      "receivedBytes": 4821,
+      "receivedSha256": "57c92ac5d1334c972b89942cc85e1d8cc5d050bc1c4ae2ecf8ddc0bba9268399",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "notes/walk-upgrade.md",
+      "bytes": 4762,
+      "sha256": "f2452dc1a3dfc302c887344dfcb2a1c4b4c7df84c0d8d0f7bc51c0528d2913bb",
+      "status": 200,
+      "receivedBytes": 4762,
+      "receivedSha256": "f2452dc1a3dfc302c887344dfcb2a1c4b4c7df84c0d8d0f7bc51c0528d2913bb",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "publication-manifest.json",
+      "bytes": 7888,
+      "sha256": "598695335d182a0135ca4106bea72933bd367973c84469da68252bb19e16aa8c",
+      "status": 200,
+      "receivedBytes": 7888,
+      "receivedSha256": "52b1c08afa413cb1010e3b8f0e0c3881e7cdea57df9264ebebaae2a18b44eb6c",
+      "ok": false
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "research.html",
+      "bytes": 6225,
+      "sha256": "5d28632af552a532867a72355382ff7098cc54e11194e61649e0f5366f57b9e0",
+      "status": 200,
+      "receivedBytes": 6225,
+      "receivedSha256": "5d28632af552a532867a72355382ff7098cc54e11194e61649e0f5366f57b9e0",
+      "ok": true
+    },
+    {
+      "project": "012-threejs-conference",
+      "file": "verification.html",
+      "bytes": 1180,
+      "sha256": "d62c09b09160af4a6cabae38ead2eb1e7950edfe81cedb156227933838993d46",
+      "status": 200,
+      "receivedBytes": 1180,
+      "receivedSha256": "d62c09b09160af4a6cabae38ead2eb1e7950edfe81cedb156227933838993d46",
+      "ok": true
+    }
+  ],
+  "manifestSemanticVerification": {
+    "verifiedAt": "2026-10-12T16:14:14.374Z",
+    "files": 46,
+    "changedRecords": 0,
+    "passed": true,
+    "note": "字节顺序不同，所有46项path/bytes/SHA-256内容一致。check-publication已加入固定排序。"
+  }
+}

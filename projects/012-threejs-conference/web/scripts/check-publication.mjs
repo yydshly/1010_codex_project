@@ -5,6 +5,7 @@ for(const page of ['research.html','index.html','minimal.html','verification.htm
 const files=[];
 function visit(directory){for(const item of fs.readdirSync(directory,{withFileTypes:true})){const file=path.join(directory,item.name),relative=path.relative(dist,file).split(path.sep).join('/');if(item.isDirectory())visit(file);else{if(/(^|\/)(vendor|node_modules|\.env|\.cache|\.kit-smoke)(\/|$)/.test(relative)||/\.(?:glb|gltf|hdr|mp3|mp4)$/i.test(relative))throw Error('意外发布上游素材/本机文件 '+relative);const bytes=fs.readFileSync(file);files.push({path:relative,bytes:bytes.length,sha256:hash(bytes)});}}}
 visit(dist);
+files.sort((a,b)=>a.path<b.path?-1:a.path>b.path?1:0);
 const packageBytes=fs.readFileSync(path.join(dist,'downloads/research-rain-kit-0.1.0.tgz'));
 if(hash(packageBytes)!=='e72613d271757f8b17c641fd61cdec3f8085bd9a79304ba8990d88a489008643')throw Error('模块安装包发生变化');
 const guide=fs.readFileSync(path.join(project,'assets/scene-map-guide.webp'));

@@ -27,7 +27,7 @@
 | 009 | [Jevclip · 视频研究助手](projects/009-jevclip/README.md) · [上游](https://github.com/cclank/jevclip) | Jevclip 字幕驱动视频粗剪与研究证据的完整中文理解：以既有全景图引导，汇总精选与保守去水、带引用摘要、九组源码模块、Jev 结构化判断与代码策略及 FFmpeg 分工、场景与个人价值、缓存和人工校准、模型接入与多模态及资料库扩展；保留原创字幕研究工作台、原始笔记、来源许可与实测。真实 Jev 与摘要模型未调用，网页不导出剪辑成品。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/009-jevclip/research.html) |
 | 010 | [Cadence · 学习与记忆实验](projects/010-cadence-foraging/README.md) · [上游](https://github.com/muellerberndt/cadence) | Cadence 学习与记忆框架的完整中文研究：以既有总图引导，区分预测、奖励决策、事件记忆与动作规划四类能力；汇总12组机制与模块、EP正负扰动及真实数字、Actor–Critic/TD/资格迹、14个场景、个人价值和六阶段扩展。保留四店、街区与捕鱼的真实对照、原始资料、固定源码和授权；公开网页可回放计算与成绩，实时训练通过本机Python运行，未证明整体优于简单基线。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/010-cadence-foraging/research.html) |
 | 011 | [Segment–Snap · 三维交互理解观察台](projects/011-segment-snap/README.md) · [上游](https://github.com/HyoKong/Segment-Snap) | Segment–Snap 三维交互理解的完整中文研究：以既有总图引导，涵盖点云部件、运动轴与把手能力、11组职责模块、三个独立学习预测器与固定几何及语义规则、作者AP与实际柜门抽屉示意、训练推理分工、应用场景、个人项目价值和五阶段扩展；保留固定版本、原图、笔记、授权及验证边界。公开网页可阅读研究和操作示意，未运行上游GPU模型，跨项目动作接口与机器人执行尚未接入。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/011-segment-snap/research.html) |
-| 012 | [Threejs-Punk · 雨夜渲染研究台](projects/012-threejs-conference/README.md) · [上游](https://github.com/ektogamat/threejs-conference) | Threejs-Punk 雨夜渲染的完整中文研究：以既有联合全图引导，汇总源库雨丝/遮雨/倒影/水珠/后处理与 BVH 探索、九组职责、WebGPU/TSL计算路径、四个 Rain Kit API、真实晴雨樱花街迁移、用途、个人价值、资源责任、扩展和授权边界；保留原城市场景实拍、独立消费者及GPU回读，公开原创实验/最小例子/GPU现场，原城市素材和模型后端仍在本机。 | 研究中 | — |
+| 012 | [Threejs-Punk · 雨夜渲染研究台](projects/012-threejs-conference/README.md) · [上游](https://github.com/ektogamat/threejs-conference) | Threejs-Punk 雨夜渲染的完整中文研究：以既有联合全图引导，汇总源库雨丝/遮雨/倒影/水珠/后处理与 BVH 探索、九组职责、WebGPU/TSL计算路径、四个 Rain Kit API、真实晴雨樱花街迁移、用途、个人价值、资源责任、扩展和授权边界；保留原城市场景实拍、独立消费者及GPU回读，公开原创实验/最小例子/GPU现场，原城市素材和模型后端仍在本机。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/012-threejs-conference/research.html) |
 | 013 | [映序 · 多模型视频工作台](projects/013-model-video-studio/README.md) · [官方产品](https://workspace.google.com/products/vids/) | 完整中文研究与真实成片对照：Google Vids 的可编辑初稿、映序的六路独立模型与场景编辑、故事和角色、中文口播、音乐混音、渲染导出、使用价值、项目介绍模板及视频与口型扩展；以既有研究总图引导，保留原始视频、截图、笔记、接口协议和验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html) |
 | 014 | [print-bench · Issue 驱动的 3D 模型自动化](projects/014-print-bench/README.md) · [上游](https://github.com/shaiss/print-bench) | Issue 驱动的参数化 3D 自动化完整中文研究：以既有理解总图引导，涵盖源库能力与模型效果、九个模块、任务筛选与代理/工具/CI 分工、真实 Issue #398 / PR #424 与本机几何复现、直接对话价值比较、适用场景、现有项目候选流程、Codex 接入与工具扩展；保留固定源码、许可证、原图、实验与验证边界。公开网页用于研究阅读，自有仓库的 AI 修改模型流程尚未接入。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/014-print-bench/research.html) |
 
@@ -942,7 +942,7 @@ Threejs-Punk 雨夜渲染的完整中文研究：以既有联合全图引导，�
 
 既有联合研究全图引导：Threejs-Punk效果、九组职责、原理、四模块与跨项目价值
 
-[研究说明](projects/012-threejs-conference/README.md) · [上游仓库](https://github.com/ektogamat/threejs-conference)
+[研究说明](projects/012-threejs-conference/README.md) · [上游仓库](https://github.com/ektogamat/threejs-conference) · [在线演示](https://yydshly.github.io/1010_codex_project/012-threejs-conference/research.html)
 
 #### 013 · 映序 · 多模型视频工作台
 

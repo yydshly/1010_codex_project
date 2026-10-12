@@ -40,3 +40,10 @@
 手机截图属于桌面浏览器的尺寸验证，不能解释为真实手机 GPU 性能测试。
 
 [返回项目说明](../README.md)
+
+## 正式HTTPS发布实拍
+
+- [research-public-online.png](research-public-online.png)：九主题36段研究首页，使用既有联合图预览。
+- [rain-public-online.png](rain-public-online.png)：已部署的原创雨夜实际WebGPU画面。
+
+1280×720桌面浏览器；不是手机真机验证。正式URL、提交、Actions、操作与GPU证据见 [publication-verification.json](../notes/publication-verification.json)。

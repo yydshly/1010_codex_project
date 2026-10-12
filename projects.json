@@ -1192,7 +1192,7 @@
       "name": "Threejs-Punk · 雨夜渲染研究台",
       "summary": "Threejs-Punk 雨夜渲染的完整中文研究：以既有联合全图引导，汇总源库雨丝/遮雨/倒影/水珠/后处理与 BVH 探索、九组职责、WebGPU/TSL计算路径、四个 Rain Kit API、真实晴雨樱花街迁移、用途、个人价值、资源责任、扩展和授权边界；保留原城市场景实拍、独立消费者及GPU回读，公开原创实验/最小例子/GPU现场，原城市素材和模型后端仍在本机。",
       "source": "https://github.com/ektogamat/threejs-conference",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "Three.js",
         "WebGPU",
@@ -1204,7 +1204,7 @@
         "path": "projects/012-threejs-conference/assets/scene-map-guide.webp",
         "alt": "既有联合研究全图引导：Threejs-Punk效果、九组职责、原理、四模块与跨项目价值"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/012-threejs-conference/research.html",
       "summarySections": [
         {
           "title": "定位与能力：完整雨夜作品，以及可提取的方法",
