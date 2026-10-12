@@ -60,9 +60,83 @@
     ]
   },
   "deployment": {
-    "status": "awaiting-publication",
-    "intendedURL": "https://yydshly.github.io/1010_codex_project/009-jevclip/research.html"
+    "status": "success",
+    "url": "https://yydshly.github.io/1010_codex_project/009-jevclip/research.html",
+    "workbenchURL": "https://yydshly.github.io/1010_codex_project/009-jevclip/index.html#research-workbench",
+    "deployedCommit": "9a94f558ab97e20286b302afbe6707ff12ecfaca",
+    "workflowRun": 38257207227,
+    "workflowURL": "https://github.com/yydshly/1010_codex_project/actions/runs/38257207227",
+    "resourceCount": 39,
+    "resourceChecks": "HTTP, bytes, SHA-256, committed sources: passed",
+    "siteEntryPresent": true,
+    "previousPagesHTTP200": 9,
+    "videoRange": {
+      "status": 206,
+      "bytes": 100
+    }
   },
   "modelApiCalled": false,
-  "clippedVideoExport": false
+  "clippedVideoExport": false,
+  "liveBrowser": {
+    "topics": 9,
+    "paragraphs": 32,
+    "modules": 9,
+    "resources": 15,
+    "guideLoaded": [
+      2400,
+      7397
+    ],
+    "search": "缓存 -> 3/9；清除 -> 9/9",
+    "posterDialog": true,
+    "guideDownloadCompleted": true,
+    "fullMIT": true,
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "documentWidth": 375
+    },
+    "subtitleImport": {
+      "file": "demo.srt",
+      "segments": 10,
+      "kept": 8
+    },
+    "focus": {
+      "name": "方法步骤",
+      "kept": 3,
+      "ids": [
+        "S3",
+        "S5",
+        "S8"
+      ]
+    },
+    "citation": {
+      "id": "S3",
+      "videoTime": 40,
+      "sourceVisible": true
+    },
+    "clearedFocusKept": 8,
+    "consoleWarningsAndErrors": []
+  },
+  "releases": [
+    {
+      "status": "success",
+      "url": "https://yydshly.github.io/1010_codex_project/009-jevclip/research.html",
+      "workbenchURL": "https://yydshly.github.io/1010_codex_project/009-jevclip/index.html#research-workbench",
+      "deployedCommit": "9a94f558ab97e20286b302afbe6707ff12ecfaca",
+      "workflowRun": 38257207227,
+      "workflowURL": "https://github.com/yydshly/1010_codex_project/actions/runs/38257207227",
+      "resourceCount": 39,
+      "resourceChecks": "HTTP, bytes, SHA-256, committed sources: passed",
+      "siteEntryPresent": true,
+      "previousPagesHTTP200": 9,
+      "videoRange": {
+        "status": 206,
+        "bytes": 100
+      }
+    }
+  ],
+  "liveScreenshots": [
+    "assets/research-live-desktop.png",
+    "assets/research-live-mobile.png"
+  ]
 }

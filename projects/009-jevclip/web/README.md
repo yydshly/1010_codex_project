@@ -21,6 +21,10 @@ npm.cmd run preview -- --port 5299 --base /1010_codex_project/009-jevclip/
 
 固定公开路径为 `009-jevclip/research.html` 和 `009-jevclip/index.html`，发布状态以实际线上验收记录为准。GitHub Pages CI 不生成图片、不调用真实模型；无需 Python、FFmpeg 或 API 密钥即可构建此静态研究与工作台。
 
+已实际发布 [完整中文研究](https://yydshly.github.io/1010_codex_project/009-jevclip/research.html) 和 [字幕工作台](https://yydshly.github.io/1010_codex_project/009-jevclip/index.html#research-workbench)。首次部署 Actions 38257207227 成功，39项资源逐文件 HTTP、大小、SHA-256 与实际部署 commit 源文件一致，既有九个公开入口保持 HTTP 200；结果保存在 `../notes/publication-verification.json` 与 `publication-resource-verification.json`。
+
+重新验收正式部署：`npm.cmd run publication:verify -- --commit <实际部署的完整SHA>`。验证器读取线上清单并逐文件比对部署源文件，不接受本机预览地址或虚构版本；会追加历史验收记录，不改写上游效果。
+
 ## 命令
 
 ```powershell

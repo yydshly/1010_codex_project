@@ -97,3 +97,13 @@ python -X utf8 -m unittest discover -s tests
 从首页进入工作台，文件选择器导入原创 `demo.srt`，显示10段、8段保留；关联对应原创视频，添加“方法步骤”保留S3、S5、S8三段；点击S3摘要展开完整原文，视频实际位置40秒。清空关注点恢复8段。本轮浏览器警告与错误日志为空。
 
 本地实拍见 `../assets/research-desktop.png` 与 `../assets/research-mobile.png`；结构化结果见 [发布验证记录](publication-verification.json)。独立发布 checkout 的根检查通过10个项目（仅已提交项目加009），原工作区其他研究未纳入这次发布。线上部署与资源哈希在实际完成后登记。
+
+## 首次正式发布验收（2026-10-12）
+
+已发布 [完整中文研究](https://yydshly.github.io/1010_codex_project/009-jevclip/research.html) 与 [字幕工作台](https://yydshly.github.io/1010_codex_project/009-jevclip/index.html#research-workbench)。实际部署 commit 为 `9a94f558ab97e20286b302afbe6707ff12ecfaca`；Actions `38257207227` 构建与部署成功，包含根检查、009语法检查、15项数据测试、完整站点组装和发布校验。
+
+39项正式资源的HTTP、字节大小与SHA-256均匹配线上发布清单；除构建生成的HTML外还逐文件对照实际部署commit中的源文件。既有全景PNG完整一致，站点首页有009入口，既有九个公开入口均为HTTP200；示例视频Range请求返回206、100字节。
+
+线上浏览器确认9主题32段、9模块15份资料、2400×7397原图，检索与清除、原图放大与实际下载、完整MIT读取均正常。390×844视口下页面宽度375。正式工作台用文件选择器导入原创字幕后10段/8保留，方法步骤保留S3/S5/S8，点击S3展开原文并跳转40秒，清空后恢复8段；警告与错误日志为空。临时视口已恢复。
+
+正式实拍见 `../assets/research-live-desktop.png` 与 `../assets/research-live-mobile.png`。所有试验使用原创样本，仍未调用真实Jev或摘要模型；未将这些交互结果当作模型准确率。后续发布记录保存在结构化验收文件，首次原始记录保留。

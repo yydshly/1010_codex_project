@@ -10,3 +10,4 @@
 视频内容对应 `web/src/sample.mjs`，生成脚本在 `web/scripts/`。素材不代表 Jev 实际识别结果，不含第三方视频或字体文件。
 
 - `research-desktop.png` / `research-mobile.png`：2026-10-12 完整研究页的本地浏览器实拍；手机为 390 × 844 视口的完整页面。使用既有全景图，引导到九主题摘要、模块、原始资料和字幕工作台。不是线上验收截图。
+- `research-live-desktop.png` / `research-live-mobile.png`：2026-10-12 GitHub Pages 正式页面的实际浏览器截图；桌面首页与390px完整窄屏页，部署与验收见 `../notes/publication-verification.json`。

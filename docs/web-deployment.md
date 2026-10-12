@@ -8,6 +8,8 @@
 
 公开静态研究与浏览器本机处理，不接入Jev、摘要模型、ASR、画面理解或FFmpeg后台，不上传导入字幕及视频。CI不生成图片，不需要模型密钥；既有图、笔记、许可与示例按白名单保留，产物逐文件SHA-256登记。实际状态、版本、浏览器与资源验收以009的 `notes/publication-verification.json` 为准。
 
+已实际发布 [009完整中文研究](https://yydshly.github.io/1010_codex_project/009-jevclip/research.html) 和 [字幕研究工作台](https://yydshly.github.io/1010_codex_project/009-jevclip/index.html#research-workbench)。首次提交 `9a94f558ab97e20286b302afbe6707ff12ecfaca`，Actions `38257207227` 成功；39项资源HTTP、大小、SHA-256与部署源文件一致，原图、全图下载、检索、资料读取、窄屏、线上字幕导入与摘要回查均验证，既有九个入口保持HTTP200。实际结果与正式实拍保存在009的发布记录；验收后登记公开地址。
+
 ## 2026-10-12 · 008 PDoomVideo 与纸间 MV 研究发布接入
 
 已实际发布 [008完整中文研究与真实样片](https://yydshly.github.io/1010_codex_project/008-pdoom-video/research.html)。首次部署提交 `2d1d4a71fadf09678fb91b918e981f09525d6260`，Actions `38249354069` 构建与部署均成功；39项资源的HTTP、大小和SHA-256全部一致，正式网页23项浏览器检查通过，包括两支视频实际播放、总图缩放、中文检索、完整MIT阅读和390px窄屏布局。既有八个公开研究入口均为HTTP200，新入口已接入站点首页。记录与线上实拍在008的 `notes/publication-verification.json`、`notes/publication-resource-verification.json` 和 `notes/research-live-verification.json`；登记表在验收后更新。公开原始资料保留首次部署版本快照，最新发布状态与原始验收记录在GitHub项目资料中持续保存。

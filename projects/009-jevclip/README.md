@@ -9,8 +9,8 @@
 | 研究版本 | `3d4b13f6ecbb7f56cf212c5040b4b4e19d83967a`，包版本 `0.1.1`，Alpha |
 | 研究日期 | 2026-10-11 |
 | 上游许可证 | MIT；[许可证副本](licenses/UPSTREAM-MIT.txt)、[来源说明](THIRD_PARTY.md) |
-| 研究状态 | 中文源码分析和本地演示完成；真实模型 API 效果待验证 |
-| 在线演示 | 尚未部署；本地运行方式见下文 |
+| 研究状态 | 完整中文研究与浏览器演示已发布并验证；真实模型 API 效果待验证 |
+| 在线演示 | [完整研究网页](https://yydshly.github.io/1010_codex_project/009-jevclip/research.html) · [字幕研究工作台](https://yydshly.github.io/1010_codex_project/009-jevclip/index.html#research-workbench) |
 
 ## 完整研究网页与工作台
 
@@ -91,6 +91,10 @@ npm.cmd run preview
 输入采用 UTF-8，最多 5 MB / 5,000 条字幕。视频能否播放取决于浏览器编解码器，优先使用 H.264 MP4 或 WebM。未来接入真实 API 时字幕会离开本机，需明确发送目的地，密钥保留服务端。
 
 ## 研究材料
+
+- [发布与线上验收](notes/publication-verification.json)：正式地址、实际部署版本、浏览器结果与实拍。
+- [逐文件资源验收](notes/publication-resource-verification.json)：HTTP、大小、SHA-256、已提交源文件、旧入口与视频 Range。
+- [完整中文摘要](notes/research-summary.md) · [结构化内容](notes/research-summary.json)：九主题32段，网页与根索引同源。
 
 - [研究笔记](notes/research.md)：能力、流程、引用局限、使用场景与扩展路线。
 - [验证记录](notes/verification.md)：命令结果、浏览器操作和待验证边界。

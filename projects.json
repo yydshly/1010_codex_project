@@ -817,7 +817,7 @@
       "slug": "jevclip",
       "name": "Jevclip · 视频研究助手",
       "source": "https://github.com/cclank/jevclip",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "视频粗剪",
         "字幕处理",
@@ -825,7 +825,7 @@
         "Jev",
         "FFmpeg"
       ],
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/009-jevclip/research.html",
       "summary": "Jevclip 字幕驱动视频粗剪与研究证据的完整中文理解：以既有全景图引导，汇总精选与保守去水、带引用摘要、九组源码模块、Jev 结构化判断与代码策略及 FFmpeg 分工、场景与个人价值、缓存和人工校准、模型接入与多模态及资料库扩展；保留原创字幕研究工作台、原始笔记、来源许可与实测。真实 Jev 与摘要模型未调用，网页不导出剪辑成品。",
       "summarySections": [
         {

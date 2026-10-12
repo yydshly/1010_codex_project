@@ -11,6 +11,7 @@
     "test": "node --test tests/*.test.mjs",
     "research:sync": "node scripts/sync-research.mjs --catalog",
     "check": "node --check scripts/build.mjs && node --check scripts/research-page.mjs && node --check src/research.mjs && node --check src/app.mjs && node --check src/core.mjs",
-    "publication:check": "node scripts/publication-check.mjs"
+    "publication:check": "node scripts/publication-check.mjs",
+    "publication:verify": "node scripts/verify-deployment.mjs"
   }
 }
