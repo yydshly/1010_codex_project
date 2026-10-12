@@ -1,0 +1,18 @@
+[
+  {
+    "version": "before",
+    "commit": "6c3bdc031e15d9ae5b614358dcae0fd2dca4f95d",
+    "url": "https://raw.githubusercontent.com/shaiss/print-bench/6c3bdc031e15d9ae5b614358dcae0fd2dca4f95d/lib/printability.scad",
+    "upstreamSha256": "2f8c19159f215f87728feb1ff3a7d679a69211bf64d7ce5226c2c5d7595045fd",
+    "localSha256": "2f8c19159f215f87728feb1ff3a7d679a69211bf64d7ce5226c2c5d7595045fd",
+    "matchesIgnoringCRLF": true
+  },
+  {
+    "version": "after",
+    "commit": "e05e66c77830b1a68a106369b4c66b7e2bff015c",
+    "url": "https://raw.githubusercontent.com/shaiss/print-bench/e05e66c77830b1a68a106369b4c66b7e2bff015c/lib/printability.scad",
+    "upstreamSha256": "98443b538138dd0d63e9425a5d71cf57d6fa02d22cc76b2729887566f207b649",
+    "localSha256": "98443b538138dd0d63e9425a5d71cf57d6fa02d22cc76b2729887566f207b649",
+    "matchesIgnoringCRLF": true
+  }
+]

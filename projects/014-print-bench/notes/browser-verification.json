@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-12",
+  "url": "http://127.0.0.1:5194/1010_codex_project/014-print-bench/research.html",
+  "summaryTopics": 9,
+  "summaryParagraphs": 31,
+  "modules": 9,
+  "documents": 23,
+  "files": 39,
+  "workflowSteps": 6,
+  "decisionChoices": 4,
+  "sourceDocumentsFiltered": 5,
+  "posterZoom": "160%",
+  "downloadedPosterSha256": "46aa7d804124d2e9dbd1ed0a238bed41dd9ecf394e6473e8a2da262416f6c973",
+  "mobileViewport": [
+    390,
+    844
+  ],
+  "mobileClientWidth": 375,
+  "mobileScrollWidth": 375,
+  "consoleErrors": [],
+  "screenshots": [
+    "assets/publication/local-overview.jpg",
+    "assets/publication/local-mobile.jpg",
+    "assets/publication/local-case.jpg",
+    "assets/publication/local-poster.jpg"
+  ]
+}

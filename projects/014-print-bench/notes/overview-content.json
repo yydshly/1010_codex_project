@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "date": "2026-10-12",
+  "title": "从一句需求，到可审查的模型改动",
+  "subtitle": "Issue 驱动的 3D 自动化 · 能力、原理、价值与扩展",
+  "thesis": "远端代码仓库 + 自动化触发 + AI 修改源码 + 工具生成与验证 + PR 交付",
+  "source": {
+    "repo": "shaiss/print-bench",
+    "url": "https://github.com/shaiss/print-bench",
+    "commit": "74b1f94de6ff536cc29ae233ee9929d3249caa85",
+    "license": "CC-BY-SA-4.0",
+    "notice": "原 X 视频的作者与源码未确认；本图用已核验的类似开源项目 print-bench 说明实现。"
+  },
+  "effects": [
+    {
+      "title": "参数化设计 → 可打印模型",
+      "file": "source/nuggs-den-hero.png",
+      "caption": "Nuggs Den · 上游仓库模型预览",
+      "note": "OpenSCAD 描述尺寸与几何；同一源码可重新生成 STL 和多角度预览。此图为作者发布图。"
+    },
+    {
+      "title": "结构零件 → 装配与检查",
+      "file": "source/pip-piano-hinge-hero.png",
+      "caption": "PIP piano hinge · 上游仓库预览",
+      "note": "修改孔位、间隙、支撑角和部件约束；实际制造性能仍需要相应测试与实物验证。"
+    }
+  ],
+  "capability": {
+    "title": "源库真正交付什么？",
+    "points": [
+      "对经过筛选的 Issue，后台尝试修正模型源码、补测试与说明，并创建草稿 PR。",
+      "生成真实几何、模型预览和检查结果；保留需求、改动、验证与版本之间的对应关系。",
+      "另有 design-run 流程处理 design-brief 新设计；新造型仍依赖清楚的约束与验收。"
+    ],
+    "note": "重点是参数化 CAD 工作流。复杂角色、纹理、骨骼和动画需要另外接入建模工具及验收规则。"
+  },
+  "pipeline": [
+    { "title": "提交任务", "owner": "人 → Issue", "text": "写清目标、尺寸、限制与验收；加 autonomy-ok 标签后进入可执行队列。", "detail": "Issue 是需求入口" },
+    { "title": "调度与领取", "owner": "GitHub Actions", "text": "每小时定时或手动运行；Python 选择最旧的未领取任务，随后由代理认领。", "detail": "双开关控制启停" },
+    { "title": "理解并改源码", "owner": "AI 编码代理", "text": "读取规则、写入任务锁，冻结验收条件；建立分支并修改 .scad 与测试。", "detail": "/ship-issue N" },
+    { "title": "生成真实模型", "owner": "OpenSCAD / 脚本", "text": "运行建模程序，输出 STL、固定相机预览；代码与参数决定真实几何。", "detail": "源码 → 几何 / 图像" },
+    { "title": "验证并返修", "owner": "确定性检查 / CI", "text": "几何、约束、网格和试切片检查；失败进入修复或停止，并记录原因。", "detail": "检查结果 ≠ AI 承诺" },
+    { "title": "提交可审查 PR", "owner": "Git / GitHub → 人", "text": "提交源码、说明、预览和验证证据；关联原 Issue，由维护者决定是否合并。", "detail": "保留差异与回滚点" }
+  ],
+  "implementation": [
+    { "title": "GitHub：保存与执行", "text": "仓库存源码和规范；Issue 排队；Actions 的 Runner 跑程序；PR 展示差异。Pages 可选，用来展示网页。" },
+    { "title": "AI：理解需求与选改法", "text": "已查源码使用 Claude Code Action 执行技能，当前配置从 Z.AI GLM 开始，设有后续模型链。模型与代理运行框架分开看。" },
+    { "title": "工具：把代码变成资产", "text": "OpenSCAD 与渲染、检查、切片脚本负责生成和测量。可编辑资产需要源码、参数、依赖与可重复的构建步骤。" }
+  ],
+  "case": {
+    "title": "真实案例：让水滴孔的尖顶朝上",
+    "issue": "Issue #398",
+    "pr": "PR #424 · 2026-08-29 已合并",
+    "before": "rotate([-90,0,0])",
+    "after": "rotate([90,0,0])",
+    "beforeMeasure": "孔壁 Z：−4.80 ～ +3.00 mm",
+    "afterMeasure": "孔壁 Z：−3.00 ～ +4.80 mm",
+    "evidence": [
+      "需求：水滴孔的尖顶误朝 −Z，应改为 +Z，以符合设计的打印朝向。",
+      "改动：修改共享 teardrop_hole 的旋转，并同步铰链孔；CI 重新生成预览。",
+      "远端：定时 Actions #331 成功，运行注释明确关联 #398；对应 PR 和几何 CI 可回查。",
+      "本机：OpenSCAD 2021.01 编译同一最小测试件；STL 测量确认孔顶朝向翻转。"
+    ],
+    "boundary": "图中两张孔洞图是本机最小复现，不是整件产品前后对比。未在你的仓库运行远端 Issue→PR，也未实物打印。"
+  },
+  "values": [
+    { "title": "省掉启动与催办", "text": "需求进入队列后，后台按约定领取、执行和交付；无需每次打开对话、启动环境并追问进度。" },
+    { "title": "省掉重复准备", "text": "仓库规范、依赖、模型文件、测试命令与输出要求固化下来；同类任务沿用同一流程。" },
+    { "title": "省掉手工整理证据", "text": "自动串起分支、源码差异、模型预览、测试结果与 PR；回查哪次需求改变了什么更方便。" },
+    { "title": "减少任务互相干扰", "text": "每项需求有独立状态与可审查版本，便于批量维护、多人协作、暂停、重试和回滚。" }
+  ],
+  "comparison": [
+    { "title": "直接对话也能做到", "text": "理解需求、改代码、生成模型、运行测试、反复优化。模型编辑能力本身可以相同。" },
+    { "title": "自动化增加的价值", "text": "把这些操作固定为可排队、可后台执行、可重复、可追踪的流程；适合稳定任务积累成批。" },
+    { "title": "仍需投入与衡量", "text": "准备可运行环境、验收规则和凭据；支付模型与计算成本，处理失败、审查 PR。看省时、返工率和合格率。" }
+  ],
+  "decision": {
+    "good": "适合：目标清楚 + 输出可验收 + 同类任务经常重复。例如孔位修复、配置兼容、素材维护、导出回归。",
+    "dialogue": "继续对话：探索风格、剧情和玩法，边看边改、目标经常变化，或只有一次的小任务。",
+    "script": "只用脚本：固定参数批量生成、定时跑测试、整理已有数据；步骤确定时无需加入 AI。"
+  },
+  "extensions": [
+    {
+      "title": "004 · Muster 模型库",
+      "file": "extensions/muster-fieldcamp.png",
+      "crop": [240, 95, 1260, 945],
+      "priority": "优先候选 · 资产维护",
+      "issue": "“修复坦克配件比例，兼容旧布局存档。”",
+      "flow": "修改 JS / 配置 → 构建与兼容测试 → 六视图 / 几何统计 → PR。",
+      "save": "少做：逐项启动展台、拍多角度图、整理模型差异。"
+    },
+    {
+      "title": "009 · 字幕研究助手",
+      "file": "extensions/jevclip-workbench.jpg",
+      "crop": null,
+      "priority": "优先候选 · 可复现修复",
+      "issue": "“这种 SRT 时间格式导入失败，请修复。”",
+      "flow": "保留失败字幕 → 修改解析器 → 格式与引用回归 → PR。",
+      "save": "少做：反复描述坏样本、手工测格式和检查引用位置。"
+    },
+    {
+      "title": "008 · 纸间 MV",
+      "file": "extensions/paper-mv.png",
+      "crop": [282, 130, 1158, 750],
+      "priority": "次级候选 · 导出可靠性",
+      "issue": "“修复 30 秒导出卡住，恢复取消与重试。”",
+      "flow": "修改导出任务代码 → 小样本 MP4 / 时长 / 音轨检查 → PR。",
+      "save": "少做：重复跑短片、核对时长、追查后台任务状态。"
+    },
+    {
+      "title": "013 · 映序工作台",
+      "file": "extensions/yingxu-overview.jpg",
+      "crop": [20, 190, 632, 542],
+      "priority": "次级候选 · 接口维护",
+      "issue": "“调整模型适配器，保留已有项目配置。”",
+      "flow": "修改适配 / Schema → 接口契约与存档回归 → PR。",
+      "save": "少做：重复测字段、配置迁移、整理接入说明。"
+    }
+  ],
+  "otherExtensions": "003 机甲：规则与异常命令回归适合排队；游戏手感继续对话。010 Cadence：固定种子实验先用脚本；需要修改实验方法、分析差异时再引入 AI。",
+  "codex": {
+    "title": "Codex 可以替换代理环节 · 尚未接入",
+    "chain": "受控 Issue 事件 / 队列 → Runner 检出仓库 → openai/codex-action@v1 → 建模与验证 → 提交分支和 PR",
+    "text": "官方 Action 安装 CLI 并运行 codex exec。仓库需另行配置 API 凭据、工具依赖、范围与验收规则、GitHub 写入权限及 PR 步骤；桌面登录不会自动成为 Actions 的 API 认证。"
+  },
+  "roadmap": [
+    { "title": "更多建模工具", "text": "把 OpenSCAD 换成 Blender Python、CadQuery / build123d、Three.js；补各自几何、拓扑、材质或动画检查。" },
+    { "title": "更好的审查证据", "text": "固定相机前后对照、尺寸差异、装配与碰撞检查、打印风险报告；让人快速判断改动是否符合要求。" },
+    { "title": "更完整的任务管理", "text": "任务模板、状态、预算、重试上限和失败转人工；由单次修复扩展到资产库维护与多人协作。" }
+  ],
+  "boundaries": [
+    { "title": "画面不等于能力证明", "text": "原视频来源仍未确认。这里核验的是 print-bench，不能据此断言原帖也是同一项目或同一种实现。" },
+    { "title": "过检查仍需判断", "text": "测试覆盖之外仍可能有几何、装配和打印问题；外观与创意由人审查。不要把 PR 或绿色 CI 当作质量保证。" },
+    { "title": "扩展图不代表已自动化", "text": "四张扩展图来自你已有项目实拍；图中 Issue 工作流是适用方案，尚未安装、运行或部署。" }
+  ],
+  "takeaway": "当前结论：先继续对话研究；当清晰、可验证的维护任务反复出现，再把它们接成自动化。",
+  "links": [
+    { "label": "源库 / 固定源码", "url": "https://github.com/shaiss/print-bench/tree/74b1f94de6ff536cc29ae233ee9929d3249caa85" },
+    { "label": "需求 #398", "url": "https://github.com/shaiss/print-bench/issues/398" },
+    { "label": "实现 PR #424", "url": "https://github.com/shaiss/print-bench/pull/424" },
+    { "label": "Actions #331", "url": "https://github.com/shaiss/print-bench/actions/runs/32834359878" },
+    { "label": "几何 CI", "url": "https://github.com/shaiss/print-bench/actions/runs/32846525503" },
+    { "label": "Codex 官方 Action", "url": "https://learn.chatgpt.com/docs/github-action" }
+  ]
+}

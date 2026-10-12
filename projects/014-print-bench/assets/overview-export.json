@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "date": "2026-10-12",
+  "width": 2400,
+  "height": 6779,
+  "pngScale": 1.5,
+  "sourceCommit": "74b1f94de6ff536cc29ae233ee9929d3249caa85",
+  "svgSha256": "37057680839cd43eef20806d0cf40323a226b0df6280ebd87fc1788d2fda523d",
+  "embeddedImages": [
+    {
+      "file": "source/nuggs-den-hero.png",
+      "width": 1400,
+      "height": 1050,
+      "sha256": "aad6fb6a34fc53ef1e8f07bee6a83ddcdc4e59e1fcd6a0945dc47510c23dc04b"
+    },
+    {
+      "file": "source/pip-piano-hinge-hero.png",
+      "width": 1280,
+      "height": 960,
+      "sha256": "a1d93d63a0dadb8849b52b97d880cb899fc6773a6bd11e07e9956647c92fb26d"
+    },
+    {
+      "file": "local/teardrop-before.png",
+      "width": 960,
+      "height": 720,
+      "sha256": "dad094de2c24084872aeda9a0b1aba4d95d4154faa6a84a8a429ca5439749760"
+    },
+    {
+      "file": "local/teardrop-after.png",
+      "width": 960,
+      "height": 720,
+      "sha256": "0ccb4cbd8136f2065cd3ba29c3a3f70a8b927ca5801065e3f7dff41db9e75b51"
+    },
+    {
+      "file": "extensions/muster-fieldcamp.png",
+      "width": 1800,
+      "height": 1100,
+      "sha256": "d69992b31b754386c2164291593a0eff7d88897935ea0d1e9688e6f24a6492d1"
+    },
+    {
+      "file": "extensions/jevclip-workbench.jpg",
+      "width": 1264,
+      "height": 1339,
+      "sha256": "09002b0f38a84e2fa9d7007ef8cc5d1bc0b4fc9c11d57ed1c759b9989cb26036"
+    },
+    {
+      "file": "extensions/paper-mv.png",
+      "width": 1440,
+      "height": 1905,
+      "sha256": "09e0fc56accc026ee95da6949fdb64a7685e31b5dbef58a412b88e41b7ab37bf"
+    },
+    {
+      "file": "extensions/yingxu-overview.jpg",
+      "width": 671,
+      "height": 871,
+      "sha256": "58138f099e73842a92fb1a358a8408ba849ec8adcf9c8853514548b779321570"
+    }
+  ],
+  "textCount": 165,
+  "frameCount": 33,
+  "pngSha256": "46aa7d804124d2e9dbd1ed0a238bed41dd9ecf394e6473e8a2da262416f6c973"
+}

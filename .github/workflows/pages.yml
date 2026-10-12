@@ -11,6 +11,7 @@ on:
       - 'projects/006-telegram-media-downloader/**'
       - 'projects/007-google-vids/**'
       - 'projects/013-model-video-studio/**'
+      - 'projects/014-print-bench/**'
       - 'projects.json'
       - 'scripts/**'
       - '.github/workflows/pages.yml'
@@ -69,6 +70,9 @@ jobs:
       - name: Verify studio and build Vids research publication
         run: npm ci && npm run check && npm run build:research && npm run publication:check
         working-directory: projects/013-model-video-studio/web
+      - name: Build and verify print-bench research
+        run: npm run research:sync && npm run check && npm run build && npm run publication:check
+        working-directory: projects/014-print-bench/web
       - run: npm run site:assemble
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4

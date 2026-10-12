@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-12",
+  "artifact": "assets/research-overview.png",
+  "svgDimensions": [
+    2400,
+    6779
+  ],
+  "pngDimensions": [
+    3600,
+    10169
+  ],
+  "embeddedImages": 8,
+  "checks": [
+    {
+      "command": "node projects/014-print-bench/scripts/render-overview.mjs --check",
+      "result": "passed",
+      "detail": "165 text blocks, 8 embedded originals; bounds, content, SVG/PNG hashes and dimensions agree"
+    },
+    {
+      "command": "python projects/014-print-bench/experiments/teardrop/measure-stl.py",
+      "result": "passed",
+      "detail": "Both binary STL measurements and 0.001 mm assertions passed"
+    },
+    {
+      "command": "pinned upstream module comparison",
+      "result": "passed",
+      "detail": "Before and after match upstream source with CRLF normalized"
+    },
+    {
+      "command": "npm run catalog:sync",
+      "result": "passed",
+      "detail": "README synchronized for 14 projects"
+    },
+    {
+      "command": "npm run check",
+      "result": "passed",
+      "detail": "14 project IDs, directories, covers and generated README agree"
+    },
+    {
+      "command": "visual inspection",
+      "result": "passed",
+      "detail": "Overall preview and detail crops inspected; badge wrapping corrected"
+    }
+  ],
+  "notVerified": [
+    "user repository remote Issue-to-PR automation",
+    "Codex cloud model editing",
+    "full upstream design suite",
+    "physical print",
+    "cloud runner compatibility of extension projects",
+    "deployment",
+    "measured time or cost savings"
+  ]
+}

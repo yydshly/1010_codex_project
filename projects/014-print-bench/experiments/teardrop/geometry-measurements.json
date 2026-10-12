@@ -1,0 +1,18 @@
+[
+  {
+    "version": "before",
+    "facets": 256,
+    "unique_vertices": 128,
+    "bore_vertices": 120,
+    "bore_z_min_mm": -4.799988,
+    "bore_z_max_mm": 3.0
+  },
+  {
+    "version": "after",
+    "facets": 256,
+    "unique_vertices": 128,
+    "bore_vertices": 120,
+    "bore_z_min_mm": -3.0,
+    "bore_z_max_mm": 4.799988
+  }
+]
