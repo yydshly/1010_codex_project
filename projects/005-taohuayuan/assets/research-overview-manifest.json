@@ -1,0 +1,158 @@
+{
+  "updatedAt": "2026-10-12",
+  "width": 2000,
+  "height": 8154,
+  "contentSha256": "54bad329baec3fc377791e41d7531e212c972f2036c4b44e732000b2c5cfa673",
+  "svgSha256": "5ad1409c980745a6e1d312b3ead914e3b7f9b31f8f052b03340fe641c3e8377a",
+  "source": {
+    "repository": "JimLiu/taohuayuan",
+    "url": "https://github.com/JimLiu/taohuayuan",
+    "commit": "61567657a5cffd64461d8e00c5907540b733f8dc",
+    "researchDate": "2026-10-11",
+    "license": "固定版本未找到整体源码许可证；人物与朗读另有来源边界。"
+  },
+  "extensionSource": {
+    "repository": "Kenton-GMI/sakura-crossing",
+    "commit": "de01898e89c7f6ab3fad93fa802f0f5ac66fbd81",
+    "codeLicense": "MIT",
+    "note": "未复制桃源源码、人物或朗读；001 上游音乐未引入。"
+  },
+  "screenshots": [
+    {
+      "file": "reveal-desktop.jpg",
+      "sha256": "b86c112db4f3993fc7a934268d63dac3b17c484ee99532cbbe46d4535ae73b9b",
+      "width": 916,
+      "height": 858,
+      "capturedAt": "2026-10-11"
+    },
+    {
+      "file": "forest-desktop.jpg",
+      "sha256": "8275d00997028b73d66fe906ea637e56beb32ce469a8ba280e4c9e7d3b8b4413",
+      "width": 916,
+      "height": 858,
+      "capturedAt": "2026-10-11"
+    },
+    {
+      "file": "cave-desktop.jpg",
+      "sha256": "f998f4605e932cd52d7f77c97c069bfeddde7a56a811df14cf6a1d472204058c",
+      "width": 916,
+      "height": 858,
+      "capturedAt": "2026-10-11"
+    },
+    {
+      "file": "reveal-before.jpg",
+      "sha256": "6a79bae5e0f504a6346b7afc4f780147aea0a8f9a4ab13363ef8cdaadd91c1fc",
+      "width": 916,
+      "height": 858,
+      "capturedAt": "2026-10-11"
+    },
+    {
+      "file": "references/001-tour-street.jpg",
+      "sha256": "bd51d49f80c3c06237a88c5561ac4fbb2e2a40b2e3d3add84c758cfb9071f2aa",
+      "width": 1265,
+      "height": 712,
+      "capturedAt": "2026-10-11",
+      "sourceFile": "projects/001-sakura-crossing/assets/tour-street.jpg",
+      "byteIdentical": true
+    },
+    {
+      "file": "references/001-tour-shop.jpg",
+      "sha256": "05074c4676ccfb760f28ac80f533aa5834ed294e3fb8920b4b9e8a2b67dc16eb",
+      "width": 1265,
+      "height": 712,
+      "capturedAt": "2026-10-11",
+      "sourceFile": "projects/001-sakura-crossing/assets/tour-shop.jpg",
+      "byteIdentical": true
+    },
+    {
+      "file": "references/001-tour-voice-pavilion.jpg",
+      "sha256": "42996c29ea8fca081afcdf2701370db805433bd928addea09e6c74e450eaf72a",
+      "width": 916,
+      "height": 858,
+      "capturedAt": "2026-10-11",
+      "sourceFile": "projects/001-sakura-crossing/assets/tour-voice-pavilion.jpg",
+      "byteIdentical": true
+    },
+    {
+      "file": "references/001-tour-voice-complete.jpg",
+      "sha256": "c15a56c1c19ef6dd672106471784fad2cf006d53b306b109dab8ed47661799d5",
+      "width": 767,
+      "height": 855,
+      "capturedAt": "2026-10-11",
+      "sourceFile": "projects/001-sakura-crossing/assets/tour-voice-complete.jpg",
+      "byteIdentical": true
+    }
+  ],
+  "evidence": [
+    "005/notes/research.md",
+    "005/notes/experiment.md",
+    "005/THIRD_PARTY.md",
+    "001/notes/tour.md",
+    "001/notes/tour-voice-generation.json",
+    "001/notes/tour-voice-browser.json"
+  ],
+  "layout": {
+    "textBlocks": 180,
+    "frames": 47,
+    "frameBoundsChecked": true,
+    "documentBoundsChecked": true,
+    "sections": [
+      {
+        "number": "01",
+        "title": "原版效果：把文意变成空间与镜头的转折",
+        "start": 774.6
+      },
+      {
+        "number": "02",
+        "title": "底层原理：故事时钟驱动观看，场景系统负责呈现",
+        "start": 1975.1999999999998
+      },
+      {
+        "number": "03",
+        "title": "已实现：001 研究街的一分钟中文导览",
+        "start": 2956.2
+      },
+      {
+        "number": "04",
+        "title": "哪些可以复用，怎样变成自己的能力",
+        "start": 4670.3
+      },
+      {
+        "number": "05",
+        "title": "使用场景：为明确的故事和路线安排观看",
+        "start": 5432.3
+      },
+      {
+        "number": "06",
+        "title": "扩展路线：从一个演示走向可配置的创作工具",
+        "start": 6080.500000000001
+      },
+      {
+        "number": "07",
+        "title": "对你的价值：让研究、空间与讲解连接起来",
+        "start": 6691.500000000001
+      },
+      {
+        "number": "08",
+        "title": "证据、来源与实践边界",
+        "start": 7474.700000000002
+      }
+    ]
+  },
+  "font": "Microsoft YaHei",
+  "screenshotTreatment": "真实截图裁切、等比缩放；没有生成替代画面。",
+  "outputs": {
+    "svg": {
+      "file": "research-overview.svg",
+      "width": 2000,
+      "height": 8154
+    },
+    "png": {
+      "file": "research-overview.png",
+      "width": 4000,
+      "height": 16308,
+      "bytes": 10894798,
+      "sha256": "3f91cf4f9944e6698edb1f27789e73fec53cb261fad09a42dfe253926b908462"
+    }
+  }
+}

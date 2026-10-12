@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "projectId": 5,
+  "updatedAt": "2026-10-12",
+  "status": "local-verified",
+  "publicUrl": null,
+  "scope": "静态研究网页、总览图、真实截图、中文笔记和必要的 001 导览证据；桃源上游三维构建继续仅供本地学习。",
+  "deployment": null,
+  "checks": [
+    {
+      "name": "根索引检查",
+      "status": "passed",
+      "projects": 4
+    },
+    {
+      "name": "005 静态服务器测试",
+      "status": "passed",
+      "tests": 1
+    },
+    {
+      "name": "静态研究构建与发布检查",
+      "status": "passed",
+      "sections": 9,
+      "paragraphs": 39,
+      "documents": 15,
+      "resources": 34,
+      "sourceByteEquality": true
+    },
+    {
+      "name": "文本源密钥标记检查",
+      "status": "passed",
+      "files": 38
+    }
+  ],
+  "limitations": [
+    "尚未实际部署，线上可用性待验证。",
+    "窄屏为桌面浏览器尺寸测试，不代表真实手机。",
+    "原版交互实测沿用 2026-10-11 记录；未重新验证完整全篇、听感或学习效果。"
+  ],
+  "localBrowser": {
+    "url": "http://127.0.0.1:5198/005-taohuayuan/research.html",
+    "scope": "本机静态研究页与组装站点；001/002/004 使用既有本机产物，CI 将独立重新构建。",
+    "checks": [
+      {
+        "name": "完整摘要",
+        "passed": true,
+        "sections": 9,
+        "paragraphs": 39
+      },
+      {
+        "name": "逐项资料阅读",
+        "passed": true,
+        "documents": 15
+      },
+      {
+        "name": "总览图加载与缩放",
+        "passed": true,
+        "naturalSize": [
+          4000,
+          16308
+        ],
+        "zoom": "125% → 100%",
+        "closeRestoresBodyScroll": true
+      },
+      {
+        "name": "资料搜索",
+        "passed": true,
+        "MiniMaxMatches": 2,
+        "missingQueryMatches": 0
+      },
+      {
+        "name": "真实效果图片",
+        "passed": true,
+        "loaded": 6
+      },
+      {
+        "name": "窄屏布局和对话框",
+        "passed": true,
+        "viewport": [
+          390,
+          844
+        ],
+        "documentWidth": 375,
+        "guideDialogWidth": 352,
+        "jsonReaderFits": true
+      },
+      {
+        "name": "站点首页与 001 导览跨页导航",
+        "passed": true,
+        "checkedUsingCompletedNavigation": true
+      },
+      {
+        "name": "005 本次窗口控制台",
+        "passed": true,
+        "errors": 0,
+        "warnings": 0
+      }
+    ]
+  }
+}

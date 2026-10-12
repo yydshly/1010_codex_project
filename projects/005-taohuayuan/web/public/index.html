@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>桃源 · 豁然开朗｜005 本地研究台</title>
+  <meta name="description" content="体验桃花林、山洞与豁然开朗的实时三维导览，研究文学、镜头与程序化场景。">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="./"><span class="seal">005</span><span>GitHub 项目研究集<small>TAOHUAYUAN · LOCAL STUDY</small></span></a>
+    <nav aria-label="页面导航"><a href="#reading">研究笔记</a><a href="https://github.com/JimLiu/taohuayuan" target="_blank" rel="noreferrer">上游仓库 ↗</a></nav>
+  </header>
+  <main>
+    <section class="introduction">
+      <div><p class="eyebrow">陶渊明《桃花源记》 · 实时三维长卷</p><h1>桃源 <span>·</span> 豁然开朗</h1><p class="lede">从落英缤纷，到初极狭，再到一片开阔的田野。让镜头沿着文字，走进同一个世界。</p></div>
+      <p class="study-tag">本地研究演示<span>固定上游版本 · 未部署</span></p>
+    </section>
+
+    <section class="experience" aria-label="桃源体验区">
+      <div class="stage-tabs" role="group" aria-label="三段导览入口">
+        <button class="stage active" data-scene="forest" disabled aria-pressed="true"><span class="ordinal">一</span><span><strong>桃花林</strong><small>落花、水光与春日薄雾</small></span><span class="arrow">↗</span></button>
+        <button class="stage" data-scene="cave" disabled aria-pressed="false"><span class="ordinal">二</span><span><strong>初极狭</strong><small>进入山洞，感受视野收拢</small></span><span class="arrow">↗</span></button>
+        <button class="stage" data-scene="reveal" disabled aria-pressed="false"><span class="ordinal">三</span><span><strong>豁然开朗</strong><small>走向洞口，展开田野村落</small></span><span class="arrow">↗</span></button>
+      </div>
+      <div class="frame-wrap">
+        <iframe id="world" src="./experience/" title="桃花源实时三维场景与原文导览" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+      <div class="transport">
+        <p id="status" role="status" aria-live="polite">正在准备桃林，请稍候…</p>
+        <div class="actions"><button id="play" disabled>暂停导览</button><button id="roam" disabled>自由看景</button><button id="whole" disabled>全篇导览</button><button id="fullscreen">沉浸全屏 ↗</button></div>
+      </div>
+      <div class="scene-note"><p id="quote">忽逢桃花林，夹岸数百步，中无杂树，芳草鲜美，落英缤纷。</p><p id="hint">场景就绪后，点击上方任一入口开始对应导览。拖动画面可以环顾，场景内播放器支持暂停与章节跳转。</p></div>
+      <p class="quiet-link">需要更大的画面？<a href="./experience/" target="_blank" rel="noreferrer">在独立页面打开原版体验 ↗</a></p>
+      <noscript><p>请启用 JavaScript。也可以直接打开<a href="./experience/">原版场景</a>。</p></noscript>
+    </section>
+
+    <section class="reading" id="reading">
+      <div class="section-intro"><p class="eyebrow">从体验到理解</p><h2>这段旅程，如何成为网页？</h2><p>场景来自上游，本地增加三个导览入口与中文研究说明。以下区分已有能力与扩展设想。</p></div>
+      <div class="reading-grid">
+        <article><span class="article-no">01 / 能力与效果</span><h3>让原文拥有空间</h3><p>原版有 28 幕叙事、十处景致、自由漫游、朗读、原文与白话、词语释义。最关键的体验是先收窄视野，再揭开田野，把文章的转折变成镜头的转折。</p></article>
+        <article><span class="article-no">02 / 底层原理</span><h3>一条时间线，统管一切</h3><p>导演根据章节与幕内进度，更新相机、字幕、光照和渔船。预录音频校准故事时钟；镜头路径、曝光与转场使章节能暂停、回看和跳转。</p></article>
+        <article><span class="article-no">03 / 渲染与性能</span><h3>把细节留给近处</h3><p>代码生成树木和建筑，着色器绘制水面、雾与风。近处显示花朵细节，远处简化；实例化、区域隐藏和动态分辨率共同控制绘制成本。</p></article>
+        <article><span class="article-no">04 / 使用与扩展</span><h3>从文学导览，到研究小镇</h3><p>适合古文教学、文化故事和有路线的展览。可将章节、热点与镜头配置化，为现有研究街增加导览，或为小镇搭建器加入参观路线。这些扩展尚未实现。</p></article>
+      </div>
+      <details><summary>体验提示与当前边界</summary><div class="detail-body"><p>导览入口会从对应原文开始，并继续后续章节；点击“自由看景”可停留在该景致漫游。场景内部的目录可到达全篇任意章节。</p><p>鼠标拖动环顾，WASD 行走；请先点击三维画面再使用键盘。声音若被浏览器拦截，点击画面后可接入；“全篇导览”约四分钟。</p><p>整体源码许可证未标明；两个人物模型注明仅供个人学习，朗读音频授权需另行核实。当前仅在本机学习，尚未部署。真实手机性能与 Safari、Firefox 待验证。</p></div></details>
+      <div class="notes-links"><a href="./notes/research.md" target="_blank">阅读完整中文研究笔记 ↗</a><a href="./notes/experiment.md" target="_blank">查看本地验证记录 ↗</a></div>
+    </section>
+  </main>
+  <footer><span>005 · 桃源 · 豁然开朗</span><span>上游 JimLiu/taohuayuan · 6156765 · 本地个人学习</span></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

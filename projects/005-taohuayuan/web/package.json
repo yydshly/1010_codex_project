@@ -1,0 +1,20 @@
+{
+  "name": "taohuayuan-local-study",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "prepare:demo": "node scripts/prepare.mjs",
+    "dev": "node scripts/start.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/start.mjs --preview",
+    "test": "node --test tests/server.test.mjs",
+    "overview:render": "node scripts/render-overview.mjs",
+    "research:sync": "node scripts/sync-research.mjs",
+    "build:research": "node scripts/build-research.mjs",
+    "publication:check": "node scripts/check-publication.mjs",
+    "preview:research": "node scripts/preview-research.mjs",
+    "media:prepare": "node scripts/prepare-web-media.mjs"
+  }
+}

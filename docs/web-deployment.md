@@ -1,5 +1,13 @@
 # Web 部署与发布范围
 
+## 2026-10-12 · 005 静态研究发布接入
+
+005 使用已有桃源理解总图作为引导，增加九维完整摘要、原版真实效果对照、模块位置、统一时间线图、001 已有导览入口和 15 项资料页内阅读。共用 `notes/research-summary.json` 同步网页、完整摘要笔记和根索引；所有 39 段正文保留。
+
+公开产物单独放在 `projects/005-taohuayuan/web/dist-public/`。在其 web 目录运行 `npm ci`、`npm run research:sync`、`npm test`、`npm run build:research` 和 `npm run publication:check`，再在根运行 `npm run site:assemble`。005 的原版三维缓存、人物与朗读不随静态研究页发布，CI 不下载上游。既有 001、002、004 路径继续保留。
+
+当前处于发布准备与本地验证阶段；实际 HTTPS 地址、Actions 与逐文件检查结果以 005 的 `notes/publication-verification.json` 为准。引导图和旧笔记保留其制作时状态，不将历史记录改写为新实测。
+
 ## 2026-10-12 · 004 发布接入
 
 本轮为 `004-muster-ww2/` 新增独立构建与资料打包，继续保留 001、002 路径。首页采用既有中文理解总图，发布完整摘要、五个实际应用、八个页面及全部笔记、图片、音频、布局和报告。机场与演习是浏览器内规则电脑玩法，无服务器、账号或模型密钥。

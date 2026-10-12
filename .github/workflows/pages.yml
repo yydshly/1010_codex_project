@@ -7,6 +7,7 @@ on:
       - 'projects/001-sakura-crossing/**'
       - 'projects/002-18-floors-of-mayhem/**'
       - 'projects/004-muster-ww2/**'
+      - 'projects/005-taohuayuan/**'
       - 'projects.json'
       - 'scripts/**'
       - '.github/workflows/pages.yml'
@@ -55,6 +56,8 @@ jobs:
         working-directory: projects/004-muster-ww2/web
       - run: npm run test:battle -- --no-report && npm run test:airport -- --no-report && npm run build && npm run publication:check
         working-directory: projects/004-muster-ww2/web
+      - run: npm ci && npm run research:sync && npm test && npm run build:research && npm run publication:check
+        working-directory: projects/005-taohuayuan/web
       - run: npm run site:assemble
       - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4

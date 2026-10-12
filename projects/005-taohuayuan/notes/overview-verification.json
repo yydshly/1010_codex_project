@@ -1,0 +1,70 @@
+{
+  "verifiedAt": "2026-10-12",
+  "scope": "研究总览图文件与排版；应用交互证据沿用 2026-10-11 既有实验，不声称重新运行浏览器流程。",
+  "pngDimensions": [
+    4000,
+    16308
+  ],
+  "pngDecodedSuccessfully": true,
+  "actualFontMeasurement": {
+    "font": "Microsoft YaHei regular/bold",
+    "linesChecked": 231,
+    "widthOverflows": []
+  },
+  "layoutBounds": {
+    "textBlocks": 180,
+    "frames": 47,
+    "frameBoundsChecked": true,
+    "documentBoundsChecked": true,
+    "sections": [
+      {
+        "number": "01",
+        "title": "原版效果：把文意变成空间与镜头的转折",
+        "start": 774.6
+      },
+      {
+        "number": "02",
+        "title": "底层原理：故事时钟驱动观看，场景系统负责呈现",
+        "start": 1975.1999999999998
+      },
+      {
+        "number": "03",
+        "title": "已实现：001 研究街的一分钟中文导览",
+        "start": 2956.2
+      },
+      {
+        "number": "04",
+        "title": "哪些可以复用，怎样变成自己的能力",
+        "start": 4670.3
+      },
+      {
+        "number": "05",
+        "title": "使用场景：为明确的故事和路线安排观看",
+        "start": 5432.3
+      },
+      {
+        "number": "06",
+        "title": "扩展路线：从一个演示走向可配置的创作工具",
+        "start": 6080.500000000001
+      },
+      {
+        "number": "07",
+        "title": "对你的价值：让研究、空间与讲解连接起来",
+        "start": 6691.500000000001
+      },
+      {
+        "number": "08",
+        "title": "证据、来源与实践边界",
+        "start": 7474.700000000002
+      }
+    ]
+  },
+  "screenshotSources": {
+    "count": 8,
+    "copied001Images": 4,
+    "hashesAndByteEquality": "见 assets/research-overview-manifest.json"
+  },
+  "visualInspection": "逐段查看全部 8 个主题：文字、照片、标签与流程箭头；修复标签换行后重新导出。",
+  "svgSha256": "5ad1409c980745a6e1d312b3ead914e3b7f9b31f8f052b03340fe641c3e8377a",
+  "pngSha256": "3f91cf4f9944e6698edb1f27789e73fec53cb261fad09a42dfe253926b908462"
+}

@@ -1,0 +1,18 @@
+{
+  "projectId": 5,
+  "researchDate": "2026-10-11",
+  "upstream": {
+    "repository": "https://github.com/JimLiu/taohuayuan",
+    "revision": "61567657a5cffd64461d8e00c5907540b733f8dc",
+    "overallLicense": "未标明",
+    "checkout": "web/.cache/upstream/",
+    "trackedInResearchCollection": false
+  },
+  "localChanges": ["中文研究台与三段入口", "固定上游版本的同源连接层", "Node HTTP 服务器与音频 Range", "缓存内 source-map-js override 为 1.2.2", "中文笔记与验证截图"],
+  "assetRestrictions": {
+    "boatmanAndMonk": "许可未知；上游为个人学习，公开前需替换",
+    "narration": "项目方提供，进一步授权未标明",
+    "polyHavenRocksAndFern": "上游标注 CC0 1.0"
+  },
+  "deployment": null
+}

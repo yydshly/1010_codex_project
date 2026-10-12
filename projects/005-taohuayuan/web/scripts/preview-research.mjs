@@ -1,0 +1,12 @@
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { existsSync } from 'node:fs';
+import { createDemoServer } from './server.mjs';
+const site=process.argv.includes('--site');
+const root=fileURLToPath(new URL(site?'../../../../_site/':'../dist-public/',import.meta.url));
+if(!existsSync(path.join(root,site?'005-taohuayuan/research.html':'research.html')))throw new Error('请先构建研究页；--site 需要完成根 site:assemble。');
+const port=Number(process.argv.find(arg=>arg.startsWith('--port='))?.slice(7)||5197);
+if(!Number.isInteger(port)||port<1||port>65535)throw new Error('端口必须为 1–65535。');
+const server=createDemoServer({shellRoot:root,experienceRoot:root});
+server.on('error',error=>{console.error(error.message);process.exitCode=1;});
+server.listen(port,'127.0.0.1',()=>console.log(`005 静态研究预览：http://127.0.0.1:${port}/${site?'005-taohuayuan/':''}research.html`));
