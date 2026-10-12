@@ -1,0 +1,9 @@
+{
+  "source": "research-overview.png",
+  "sourceSha256": "d59bd3fb4aac64bb9a8554509c75a9c34abc8c4ec66ee0676260beeb3b114497",
+  "width": 1280,
+  "height": 2983,
+  "bytes": 447926,
+  "sha256": "90c57116ff4e48c206d464393cc5e0cadc5e9c73e20bf8756bfbfa055dc0fc8c",
+  "operation": "仅缩放与压缩；完整原图、SVG 和提示词保留"
+}

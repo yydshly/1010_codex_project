@@ -1,10 +1,10 @@
 # Web 部署与发布范围
 
-2026-10-12 为 001 樱花小街配置 GitHub Pages。当前工作流与产物已准备；实际成功状态和在线地址须以 GitHub Actions 与线上验证记录为准。
+2026-10-12 为 001 樱花小街配置 GitHub Pages。GitHub Actions 已成功部署，线上页面和引导图已实际打开；验证记录见 001 的 notes/publication-verification.json。
 
 ## 一个站点，稳定项目路径
 
-仓库站点规划入口为 `https://yydshly.github.io/1010_codex_project/`，001 放在 `001-sakura-crossing/`，首页导航到 `research.html`。本次仅发布 001 静态应用和必要引用资料，不发布其他子项目应用。
+仓库站点入口为 `https://yydshly.github.io/1010_codex_project/`，001 放在 `001-sakura-crossing/`，首页导航到 `research.html`。本次仅发布 001 静态应用和必要引用资料，不发布其他子项目应用。
 
 ```text
 _site/

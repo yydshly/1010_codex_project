@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "status": "prepared",
+  "status": "published",
   "scope": "仅 001 及 22 个必要引用快照",
   "summary": {
     "sections": 6,
@@ -27,6 +27,16 @@
     "test:weather"
   ],
   "online": {
-    "verified": false
-  }
+    "verified": true,
+    "url": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html",
+    "deploymentRun": "https://github.com/yydshly/1010_codex_project/actions/runs/38211615567",
+    "validatedRevision": "fad00c36bf5f1dd7101531c5cb698786c8d89134",
+    "summarySections": 6,
+    "paragraphs": 18,
+    "guideLoaded": true,
+    "localhostAnchorCount": 0,
+    "liveChoices": 4,
+    "scope": "本机模型服务和 012 独立应用不随静态发布上线"
+  },
+  "crossPlatformFix": "引用文本统一 LF，快照与原文件 SHA-256 分别保存；首次失败后已修复并部署成功。"
 }

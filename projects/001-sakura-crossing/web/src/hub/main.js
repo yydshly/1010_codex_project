@@ -5,7 +5,7 @@ import measurements from '../../../notes/lab-measurements.json';
 import registry from '../../../../../projects.json';
 import kitUrl from '../../packages/research-rain-kit-0.1.0.tgz?url&no-inline';
 import summaryUrl from '../../../notes/research-summary.md?url&no-inline';
-import guideUrl from '../../../assets/research-overview.png?url&no-inline';
+import guideUrl from '../../../assets/research-guide.webp?url&no-inline';
 
 // Vite copies referenced material into this project's production assets. Text is
 // fetched on demand; the research reader does not depend on another dev server.
@@ -69,7 +69,7 @@ function renderEntries() {
     && `${item.title} ${item.subtitle} ${item.description} ${item.observe} ${item.renderer}`.toLocaleLowerCase().includes(query));
   $('#directory-result').textContent = `显示 ${filtered.length} / ${research.entries.length} 个入口 · ${groupLabels[entryGroup]}${query ? ` · 搜索“${query}”` : ''}`;
   $('#entry-empty').hidden = filtered.length > 0;
-  $('#entry-grid').innerHTML = filtered.map(item => `<article class="entry-card">
+  $('#entry-grid').innerHTML = filtered.map(item => `<article class="entry-card" data-entry="${item.id}">
     <a class="entry-picture" href="${escape(entryHref(item))}"><img src="${escape(images.get(item.image))}" alt="${escape(item.title)} · ${escape(item.imageNote || '实际运行画面')}" loading="lazy" /><span class="entry-engine">${escape(item.renderer)}${item.imageNote ? ` · ${escape(item.imageNote)}` : ''}</span></a>
     <div class="entry-content"><p class="entry-kicker">${escape(groupLabels[item.group])} / ${escape(item.status)}</p><h3>${escape(item.title)}</h3><p class="entry-subtitle">${escape(item.subtitle)}</p><p class="entry-description">${escape(item.description)}</p>
     <div class="entry-actions"><a class="button" href="${escape(entryHref(item))}">${localHost || onlineEntry(item) ? '打开体验 ↗' : '查看本机运行说明 ↓'}</a>${item.live && (localHost || onlineEntry(item)) ? `<button class="text-link" data-live="${item.id}">在本页体验 ↓</button>` : ''}</div>
@@ -84,6 +84,13 @@ $('#entry-filters').addEventListener('click', event => {
 });
 $('#entry-search').addEventListener('input', renderEntries);
 renderEntries();
+document.addEventListener('click', event => {
+  const anchor = event.target.closest('a[href="#local-services"]');
+  if (!anchor) return;
+  const item = entry(anchor.closest('[data-entry]')?.dataset.entry || anchor.dataset.localEntry);
+  $('#local-services').open = true;
+  if (item) $('#service-command').textContent = runCommand(item);
+});
 
 function selectComparison(id) {
   comparisonId = id;
@@ -99,6 +106,7 @@ function selectComparison(id) {
   $('#compare-text').textContent = item.text;
   $('#compare-kind').textContent = item.kind;
   $('#compare-entry').href = entryHref(entry(item.entry));
+  $('#compare-entry').dataset.localEntry = item.entry;
   setSplit(50);
 }
 function setSplit(value) {
@@ -166,7 +174,7 @@ function selectPrinciple(id) {
   $('#principle-panel').setAttribute('aria-labelledby', `principle-${id}`);
   $('#principle-panel').innerHTML = `<p class="eyebrow">${escape(item.tag)}</p><h3>${escape(item.name)}</h3><p class="principle-summary">${escape(item.summary)}</p><ol>${item.steps.map(text => `<li>${escape(text)}</li>`).join('')}</ol>
     <div class="explanation-row"><b>怎样观察</b><p>${escape(item.observe)}</p></div><div class="explanation-row"><b>可复用价值</b><p>${escape(item.value)}</p></div><div class="explanation-row"><b>边界与成本</b><p>${escape(item.limit)}</p></div>
-    <div class="principle-actions"><a class="button" href="${escape(entry(item.entry).href)}">打开对应演示 ↗</a><button class="text-link" data-doc="${item.doc}">阅读全文研究笔记 ↗</button></div>`;
+    <div class="principle-actions"><a class="button" data-local-entry="${item.entry}" href="${escape(entryHref(entry(item.entry)))}">打开对应演示 ↗</a><button class="text-link" data-doc="${item.doc}">阅读全文研究笔记 ↗</button></div>`;
 }
 $('#principle-tabs').innerHTML = research.principles.map((item, index) => `<button role="tab" id="principle-${item.id}" data-principle="${item.id}" aria-controls="principle-panel" aria-selected="false" tabindex="-1"><span>${String(index + 1).padStart(2, '0')}</span>${escape(item.name)}</button>`).join('');
 $('#principle-tabs').addEventListener('click', event => { const button = event.target.closest('[data-principle]'); if (button) selectPrinciple(button.dataset.principle); });

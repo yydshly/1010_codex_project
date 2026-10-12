@@ -66,7 +66,7 @@ npm.cmd ci
 npm.cmd run dev:weather
 ```
 
-访问 http://127.0.0.1:5188/research.html。当前发布配置已准备，真实在线地址在部署验证后登记；运行和维护见 [Web 说明](web/README.md)，来源与范围见 [引用说明](references/README.md)。
+访问 http://127.0.0.1:5188/research.html。[在线阅读与体验](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html)已部署并实际打开验证。运行和维护见 [Web 说明](web/README.md)，来源与范围见 [引用说明](references/README.md)。
 
 前六个阶段的研究已整理为 [一张总览图](assets/research-overview.png)：能力、原理、真实效果、使用场景、产品扩展与复用价值；第七阶段的镜头导览见下方记录。启动 Web 后可在 `http://127.0.0.1:5180/overview.html` 放大阅读与下载；[SVG 源图](assets/research-overview.svg) 内嵌原图，保留可编辑文字，[内容数据](notes/overview-content.json) 可继续维护。
 
@@ -77,8 +77,8 @@ npm.cmd run dev:weather
 | 固定研究版本 | [`de01898e89c7f6ab3fad93fa802f0f5ac66fbd81`](https://github.com/Kenton-GMI/sakura-crossing/tree/de01898e89c7f6ab3fad93fa802f0f5ac66fbd81) |
 | 研究日期 | 2026-10-10 |
 | 上游许可证 | 源码 MIT；附带音乐另有授权，本地未引入音乐 |
-| 研究状态 | 研究中；本地演示已完成，上游完整漫游未验证 |
-| 在线演示 | 尚未部署，登记表 `demo` 为 `null` |
+| 研究状态 | 静态研究与体验已上线；上游完整漫游仍未验证 |
+| 在线演示 | [完整研究摘要与体验](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html) |
 
 ## 为什么研究
 
@@ -100,7 +100,7 @@ npm.cmd run dev:weather
 - [x] 借鉴 005 桃源的统一时间线思路，加入街口、商店、阅读亭三站的 60 秒中文镜头与字幕导览，支持暂停、回看和自由探索。
 - [ ] 完整操作上游世界，包括漫游、骑行与所有交互。
 - [ ] 在真实触屏设备和低性能设备上验证。
-- [ ] 部署并验证真实在线地址。
+- [x] 部署 001 静态网页，验证真实 HTTPS 地址与必要引用资料。
 
 ## 跨项目模块体验：晴雨漫游
 
@@ -170,9 +170,9 @@ npm.cmd run dev
 
 打开终端打印的 `http://127.0.0.1:5180/`，保持终端运行。完整安装、构建、操作和子目录验证命令见 [Web 说明](web/README.md)。
 
-这是本地验证通过的演示；尚未部署，不能将上述本机地址当作在线演示。
+上述为本机开发地址；在线研究与体验请访问[已验证的 GitHub Pages 网页](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html)。
 
-根索引的 `demo-ready` 状态要求填写真实在线地址，因此目前登记为 `researching`，本地完成情况以上述实验记录为准。
+根索引已登记 `demo-ready` 与真实在线地址。该状态仅指本次静态研究与体验，模型 API 和 012 独立应用仍需本机服务。
 
 ## 关键发现
 

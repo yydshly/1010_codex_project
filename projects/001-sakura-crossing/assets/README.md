@@ -1,4 +1,10 @@
-# 本地演示截图
+# 演示截图与研究图
+
+## 完整摘要与线上发布（2026-10-12）
+
+首页使用已生成总览图作引导；research-guide.webp 仅缩放压缩原 PNG，为网页预览，高清 PNG 与可编辑 SVG 保留。research-guide-export.json 记录尺寸及源图/输出 SHA-256。
+
+网页已有六组摘要、18 个独立段落，线上与本机服务明确区分。实际发布记录见 [publication-verification.json](../notes/publication-verification.json)。
 
 ## 统一研究入口（2026-10-11）
 

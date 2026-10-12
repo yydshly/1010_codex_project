@@ -17,7 +17,7 @@
 
 | 序号 | 项目 | 研究摘要 | 状态 | 演示 |
 | --- | --- | --- | --- | --- |
-| 001 | [Sakura Crossing · 樱花小街](projects/001-sakura-crossing/README.md) · [上游](https://github.com/Kenton-GMI/sakura-crossing) | 动画风格场景与产品复用研究：统一汇总源库能力、分层模块、渲染与交互原理、真实体验、个人价值及扩展路线；包含研究街、三场景实验、搭建器、中文导览、晴雨漫游与本机 AI 守灯证据。 | 研究中 | — |
+| 001 | [Sakura Crossing · 樱花小街](projects/001-sakura-crossing/README.md) · [上游](https://github.com/Kenton-GMI/sakura-crossing) | 动画风格场景与产品复用研究：统一汇总源库能力、分层模块、渲染与交互原理、真实体验、个人价值及扩展路线；包含研究街、三场景实验、搭建器、中文导览、晴雨漫游与本机 AI 守灯证据。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html) |
 
 ### 项目预览
 
@@ -67,7 +67,7 @@
 
 Sakura Crossing 研究总览引导图：能力、原理、真实效果、应用场景、扩展与个人价值（2026-10-10 阶段）
 
-[研究说明](projects/001-sakura-crossing/README.md) · [上游仓库](https://github.com/Kenton-GMI/sakura-crossing)
+[研究说明](projects/001-sakura-crossing/README.md) · [上游仓库](https://github.com/Kenton-GMI/sakura-crossing) · [在线演示](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html)
 
 
 <!-- PROJECTS:END -->

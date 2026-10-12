@@ -13,7 +13,7 @@
     "content:check": "node scripts/sync-directions.mjs --check",
     "research:sync": "node scripts/sync-research.mjs",
     "research:check": "node scripts/sync-research.mjs --check",
-    "prebuild": "npm run content:check && npm run overview:check && npm run research:check && npm run references:check",
+    "prebuild": "npm run content:check && npm run overview:check && npm run research:check && npm run references:check && npm run guide:check",
     "build": "vite build",
     "test:lab": "node scripts/check-lab.mjs",
     "test:builder": "node scripts/check-builder.mjs",
@@ -27,7 +27,8 @@
     "preview": "vite preview --host 127.0.0.1 --port 5181 --strictPort",
     "preview:path": "node scripts/preview-path.mjs",
     "references:sync": "node scripts/snapshot-references.mjs",
-    "references:check": "node scripts/snapshot-references.mjs --check"
+    "references:check": "node scripts/snapshot-references.mjs --check",
+    "guide:check": "node scripts/optimize-guide.mjs --check"
   },
   "dependencies": {
     "@research/rain-kit": "file:packages/research-rain-kit-0.1.0.tgz",

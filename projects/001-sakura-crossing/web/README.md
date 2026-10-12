@@ -217,3 +217,5 @@ npm.cmd run game
 GitHub Pages 仅发布本项目静态内容；线上过滤 localhost 体验选项，AI 游戏页显示本机启动说明并关闭模型/开局按钮。模型服务与 012 独立应用仍在本机运行。部署工作流、产物与实际地址管理见根部署说明。
 
 本次发布构建已实际验证：六组摘要、引导图显示与放大入口、资料阅读、搜索和完整摘要下载；390×844 仿真下摘要没有横向溢出。搭建器、导览、天气与游戏检查通过。真实触屏设备仍待验证。
+
+已验证在线地址：[完整研究与体验](https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html)。网页引导图由原 PNG 缩放压缩为 WebP，原 PNG/SVG 均保留；重新导出原图后运行 `node scripts/optimize-guide.mjs --sharp-module <sharp-module-path>`，再执行 `npm run guide:check`。该检查已纳入构建。

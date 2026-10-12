@@ -7,7 +7,7 @@
       "name": "Sakura Crossing · 樱花小街",
       "summary": "动画风格场景与产品复用研究：统一汇总源库能力、分层模块、渲染与交互原理、真实体验、个人价值及扩展路线；包含研究街、三场景实验、搭建器、中文导览、晴雨漫游与本机 AI 守灯证据。",
       "source": "https://github.com/Kenton-GMI/sakura-crossing",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "Three.js",
         "三渲二",
@@ -19,7 +19,7 @@
         "path": "projects/001-sakura-crossing/assets/research-overview.png",
         "alt": "Sakura Crossing 研究总览引导图：能力、原理、真实效果、应用场景、扩展与个人价值（2026-10-10 阶段）"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/001-sakura-crossing/research.html",
       "summarySections": [
         {
           "title": "能力：构建可探索的动画风格小世界",
