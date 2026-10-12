@@ -21,8 +21,8 @@
 | 002 | [18 Floors of Mayhem · 像素下落与妖王战](projects/002-18-floors-of-mayhem/README.md) · [上游](https://github.com/andyhuo520/18-floors-of-mayhem) | 游戏玩法与 AI 接入的完整研究：涵盖能力、模块、原理、用途、价值与扩展；用像素对战、机甲动态指挥、行动 NPC 小镇三组实测和六张效果总图，说明模型如何通过规则改变真实行动。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/002-18-floors-of-mayhem/research.html) |
 | 004 | [Muster · 场景与协同任务研究](projects/004-muster-ww2/README.md) · [上游](https://github.com/Kenton-GMI/muster-ww2) | Muster 程序化资产系统的完整中文研究与可玩扩展：74 条素材、七类资源、配置约束、场景编辑与六视图，深入资产协议、几何/SDF、材质渲染、路径/IK、规则战斗和任务状态机；以原始效果与总览图引导，首页接入动态营地、陆空协同与机场四阶段任务，完整保留笔记、授权、截图、声音与实测，说明使用场景、现有项目价值、复用与扩展路线及验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/004-muster-ww2/) |
 | 005 | [桃源 · 豁然开朗](projects/005-taohuayuan/README.md) · [上游](https://github.com/JimLiu/taohuayuan) | 桃源文学三维叙事的完整中文研究：涵盖 28 幕导览与十处景致、世界/渲染/导演/内容/漫游模块、程序化造景与音频时间线原理、桃林—山洞—田野的真实效果、001 MiniMax 一分钟导览迁移、使用场景、个人价值、复用与扩展路线；以既有总览图引导，保留笔记、截图、来源授权与实测边界，原版三维复现继续用于本地学习。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/005-taohuayuan/research.html) |
-| 007 | [Google Vids · 实际制作与成品对照](projects/007-google-vids/README.md) · [官方产品](https://workspace.google.com/products/vids/) | Google Vids 与映序的完整中文研究：既有总图引导，保留118秒AI初稿与69秒人工编辑成片，结合原创工作台的中文配音、画布时间轴和音乐混音，完整说明能力、模块、流程原理、人机分工、使用价值、介绍模板、剧情与口型扩展及验证边界。 | 研究中 | — |
-| 013 | [映序 · 多模型视频工作台](projects/013-model-video-studio/README.md) · [官方产品](https://workspace.google.com/products/vids/) | 完整中文研究与真实成片对照：Google Vids 的可编辑初稿、映序的六路独立模型与场景编辑、故事和角色、中文口播、音乐混音、渲染导出、使用价值、项目介绍模板及视频与口型扩展；以既有研究总图引导，保留原始视频、截图、笔记、接口协议和验证边界。 | 研究中 | — |
+| 007 | [Google Vids · 实际制作与成品对照](projects/007-google-vids/README.md) · [官方产品](https://workspace.google.com/products/vids/) | Google Vids 与映序的完整中文研究：既有总图引导，保留118秒AI初稿与69秒人工编辑成片，结合原创工作台的中文配音、画布时间轴和音乐混音，完整说明能力、模块、流程原理、人机分工、使用价值、介绍模板、剧情与口型扩展及验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/007-google-vids/research.html) |
+| 013 | [映序 · 多模型视频工作台](projects/013-model-video-studio/README.md) · [官方产品](https://workspace.google.com/products/vids/) | 完整中文研究与真实成片对照：Google Vids 的可编辑初稿、映序的六路独立模型与场景编辑、故事和角色、中文口播、音乐混音、渲染导出、使用价值、项目介绍模板及视频与口型扩展；以既有研究总图引导，保留原始视频、截图、笔记、接口协议和验证边界。 | 演示可用 | [访问演示](https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html) |
 
 ### 项目预览
 
@@ -408,7 +408,7 @@ Google Vids 与映序的完整中文研究：既有总图引导，保留118秒AI
 
 从 Google Vids 到映序：实际效果、模块原理、模型分工、价值、介绍模板与扩展边界；缩图为 AI 视觉参考
 
-[研究说明](projects/007-google-vids/README.md) · [官方产品](https://workspace.google.com/products/vids/)
+[研究说明](projects/007-google-vids/README.md) · [官方产品](https://workspace.google.com/products/vids/) · [在线演示](https://yydshly.github.io/1010_codex_project/007-google-vids/research.html)
 
 #### 013 · 映序 · 多模型视频工作台
 
@@ -474,7 +474,7 @@ Google Vids 与映序的完整中文研究：既有总图引导，保留118秒AI
 
 从 Google Vids 到映序：实际效果、模块原理、模型分工、价值、介绍模板与扩展边界；缩图为 AI 视觉参考
 
-[研究说明](projects/013-model-video-studio/README.md) · [官方产品](https://workspace.google.com/products/vids/)
+[研究说明](projects/013-model-video-studio/README.md) · [官方产品](https://workspace.google.com/products/vids/) · [在线演示](https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html)
 
 
 <!-- PROJECTS:END -->

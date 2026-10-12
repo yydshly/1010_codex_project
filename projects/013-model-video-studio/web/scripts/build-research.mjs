@@ -33,6 +33,8 @@ for(const [slug,variant] of [['007-google-vids','google'],['013-model-video-stud
  const write=async(url,bytes,source='generated')=>{const target=path.resolve(dist,url);if(!target.startsWith(dist+path.sep))throw new Error('资源路径越界');await fs.mkdir(path.dirname(target),{recursive:true});await fs.writeFile(target,bytes);manifest.items.push({source,url,bytes:Buffer.byteLength(bytes),sha256:digest(bytes)});};
  const copy=async(src,url)=>write(url,await fs.readFile(src),path.relative(root,src).replaceAll('\\','/'));
  const deployed=structuredClone(catalog);deployed.variant=variant;
+ // File-stat completion order differs across platforms; keep the publication reproducible.
+ deployed.assets=Object.fromEntries(Object.entries(deployed.assets).sort(([a],[b])=>a.localeCompare(b,'en')));
  for(const [id,item] of Object.entries(deployed.assets)){
   if(!item.available)throw new Error('资料缺失：'+id);
   const source=extraPath.get(id)||await resolveResearchFile(id);if(!source)throw new Error('白名单中缺少路径：'+id);

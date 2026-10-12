@@ -4,7 +4,7 @@
 
 Google Vids 与映序完整研究已经整理为独立静态网页：九维27段完整摘要、12项能力、七个模块、六路模型、六份实际视频、章节跳转、混音对照、声音试听和48份资料。引导图沿用本次生成的总图，可放大和下载；实际成片与原始截图单独保留。
 
-当前构建与本机浏览器验证已完成，线上地址在部署成功后登记。模型调用、密钥配置、编辑保存与 FFmpeg 渲染仍由本机工作台提供。完整摘要见 [research-summary.json](notes/research-summary.json)，公开范围见 [发布说明](../013-model-video-studio/notes/publication-scope.json)。
+已部署并打开验证：[完整研究网页](https://yydshly.github.io/1010_codex_project/007-google-vids/research.html)。首次部署 [Actions 38236351667](https://github.com/yydshly/1010_codex_project/actions/runs/38236351667) 成功，后续版本与逐项验证记录见 [publication-verification.json](../013-model-video-studio/notes/publication-verification.json)。模型调用、密钥配置、编辑保存与 FFmpeg 渲染仍由本机工作台提供。完整摘要见 [research-summary.json](notes/research-summary.json)，公开范围见 [发布说明](../013-model-video-studio/notes/publication-scope.json)。
 
 在项目013的 web 目录运行 `npm run build:research` 和 `npm run publication:check`，同时生成007与013的 `web/dist-public`；根目录 `npm run site:assemble` 组装全部已发布站点。
 

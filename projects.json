@@ -481,7 +481,7 @@
       "summary": "Google Vids 与映序的完整中文研究：既有总图引导，保留118秒AI初稿与69秒人工编辑成片，结合原创工作台的中文配音、画布时间轴和音乐混音，完整说明能力、模块、流程原理、人机分工、使用价值、介绍模板、剧情与口型扩展及验证边界。",
       "source": "https://workspace.google.com/products/vids/",
       "sourceKind": "product",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "AI 视频",
         "成品拆解",
@@ -492,7 +492,7 @@
         "path": "projects/007-google-vids/assets/research-overview.png",
         "alt": "从 Google Vids 到映序：实际效果、模块原理、模型分工、价值、介绍模板与扩展边界；缩图为 AI 视觉参考"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/007-google-vids/research.html",
       "summarySections": [
         {
           "title": "定位与能力：一个组织创作的工作台",
@@ -567,7 +567,7 @@
       "summary": "完整中文研究与真实成片对照：Google Vids 的可编辑初稿、映序的六路独立模型与场景编辑、故事和角色、中文口播、音乐混音、渲染导出、使用价值、项目介绍模板及视频与口型扩展；以既有研究总图引导，保留原始视频、截图、笔记、接口协议和验证边界。",
       "source": "https://workspace.google.com/products/vids/",
       "sourceKind": "product",
-      "status": "researching",
+      "status": "demo-ready",
       "tags": [
         "视频工作台",
         "多模型接入",
@@ -579,7 +579,7 @@
         "path": "projects/013-model-video-studio/assets/research/research-overview.png",
         "alt": "从 Google Vids 到映序：实际效果、模块原理、模型分工、价值、介绍模板与扩展边界；缩图为 AI 视觉参考"
       },
-      "demo": null,
+      "demo": "https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html",
       "summarySections": [
         {
           "title": "定位与能力：一个组织创作的工作台",

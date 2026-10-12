@@ -6,7 +6,7 @@
 
 在013的web目录运行 `npm ci`、`npm run check`、`npm run build:research` 和 `npm run publication:check`，再运行根 `npm run catalog:sync`、`npm run check`、`npm run site:assemble`。CI运行相同发布检查并准备FFmpeg与中文字体。白名单打包134项文件（007 79项、013 55项），逐项保留SHA-256；资料与模型能力交叉引用校验通过。
 
-公开页只读，不上传本机运行目录、密钥、个人配置或Codex认证。创作工作台源码与研究资料提交远端；真实模型调用、编辑保存、渲染仍在本机。线上结果待Actions部署后核验，记录到013的 `notes/publication-verification.json`，确认后再登记demo地址。
+公开页只读，不上传本机运行目录、密钥、个人配置或Codex认证。创作工作台源码与研究资料提交远端；真实模型调用、编辑保存、渲染仍在本机。已实际发布 [Google Vids 研究](https://yydshly.github.io/1010_codex_project/007-google-vids/research.html) 与 [映序研究](https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html)，首次部署 Actions 38236351667 成功。线上已打开原始成片、资料与引导图下载；项目索引已登记地址。精确版本、逐文件哈希及后续复验记录见013的 `notes/publication-verification.json`。
 
 
 ## 2026-10-12 · 005 静态研究发布接入

@@ -2,6 +2,14 @@
 
 已实际跑通的原创本机视频编辑工作台：独立模型接入、可拖拽的画布对象、真实时间轴、素材库与 MP4 导出。参考 Google Vids 的编辑器交互；Google Vids 是闭源产品，没有可复制的“源库”。本项目没有引入 Google 源码或素材。
 
+## 2026-10-12 · 公开研究网页
+
+从 Google Vids 到映序的完整研究已经整理为独立静态网页：九维27段完整摘要、12项能力、七个模块、六路模型、六份实际视频、章节跳转、混音对照、声音试听和48份资料。引导图沿用本次生成的总图，可放大和下载；实际成片与原始截图单独保留。
+
+已部署并打开验证：[完整研究网页](https://yydshly.github.io/1010_codex_project/013-model-video-studio/research.html)。首次部署 [Actions 38236351667](https://github.com/yydshly/1010_codex_project/actions/runs/38236351667) 成功，后续版本与逐项验证记录见 [publication-verification.json](../013-model-video-studio/notes/publication-verification.json)。模型调用、密钥配置、编辑保存与 FFmpeg 渲染仍由本机工作台提供。完整摘要见 [research-summary.json](notes/research-summary.json)，公开范围见 [发布说明](../013-model-video-studio/notes/publication-scope.json)。
+
+在项目013的 web 目录运行 `npm run build:research` 和 `npm run publication:check`，同时生成007与013的 `web/dist-public`；根目录 `npm run site:assemble` 组装全部已发布站点。
+
 ## 网页内研究与指南
 
 [一张图理解 Google Vids 与映序](assets/research/research-overview.png)：汇总源平台与本机效果、创作流程、底层实现、人机分工、模型状态、价值、模板与扩展路线、当前边界。图中四幅缩图由内置 Imagegen 参考真实素材排版重绘；原始视频和截图仍为实测证据。正式参数化模板、真实音乐／视频／口型模型均明确标为待实现或待验证。
@@ -104,12 +112,3 @@ npm.cmd start
 - Node 依赖 `@napi-rs/canvas`：0.1.80，MIT；FFmpeg 是本机已有工具，本项目没有打包分发其二进制。其许可证取决于对应构建，本机版本包含 GPL 组件。
 
 [实验与架构记录](notes/README.md) · [总项目索引](../../README.md)
-
-## 2026-10-12 · 公开研究网页
-
-从 Google Vids 到映序的完整研究已经整理为独立静态网页：九维27段完整摘要、12项能力、七个模块、六路模型、六份实际视频、章节跳转、混音对照、声音试听和48份资料。引导图沿用本次生成的总图，可放大和下载；实际成片与原始截图单独保留。
-
-当前构建与本机浏览器验证已完成，线上地址在部署成功后登记。模型调用、密钥配置、编辑保存与 FFmpeg 渲染仍由本机工作台提供。完整摘要见 [research-summary.json](notes/research-summary.json)，公开范围见 [发布说明](../013-model-video-studio/notes/publication-scope.json)。
-
-在项目013的 web 目录运行 `npm run build:research` 和 `npm run publication:check`，同时生成007与013的 `web/dist-public`；根目录 `npm run site:assemble` 组装全部已发布站点。
-
