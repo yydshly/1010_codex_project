@@ -1,0 +1,27 @@
+{
+  "schema": "cadence-publication-final-verification/1",
+  "date": "2026-10-12",
+  "productionCommit": "e6c0bcbc9b6a02f10f8103b3069d028db2765f58",
+  "workflowRun": 38264488494,
+  "workflowURL": "https://github.com/yydshly/1010_codex_project/actions/runs/38264488494",
+  "build": "success",
+  "deploy": "success",
+  "resourceReceipt": "notes/publication-final-resource-verification.json",
+  "resources": 159,
+  "allHTTPSSizeAndSHA256Match": true,
+  "previousProjectEntriesHTTP200": 10,
+  "rootEntryPresent": true,
+  "onlineRecheck": {
+    "topics": 9,
+    "paragraphs": 36,
+    "mechanisms": 12,
+    "libraryFiles": 141,
+    "secondaryPagePublicationNotice": true,
+    "errorLogs": [],
+    "researchHomeLeftOpen": true
+  },
+  "url": "https://yydshly.github.io/1010_codex_project/010-cadence-foraging/research.html",
+  "replayURL": "https://yydshly.github.io/1010_codex_project/010-cadence-foraging/replay.html",
+  "recordScope": "这两份最终审计在第二次正式发布后保存到仓库，不重新构建网页。网页保持productionCommit快照，资料库里的首次验收和原图保持原样。",
+  "runtimeScope": "静态研究、概念说明和真实Python记录回放；新训练与原3D/API实验继续本机运行。"
+}
