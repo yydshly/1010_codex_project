@@ -1,0 +1,352 @@
+{
+  "provider": "MiniMax",
+  "endpoint": "https://api.minimax.cn/v1/t2a_v2",
+  "model": "speech-2.8-hd",
+  "voiceId": "Chinese (Mandarin)_Warm_Girl",
+  "voiceName": "温暖少女",
+  "duration": 60,
+  "encodedDuration": 60.048,
+  "sampleRate": 32000,
+  "channels": 1,
+  "finalSha256": "c848db31e1e5026b860e29b4aca2cf6745708581226fcb74962b795983316814",
+  "finalBytes": 961389,
+  "process": "Six original narration segments; tempo fitting without pitch change, silence padding, concatenate, peak limit, MP3 encode. Sentence subtitles use MiniMax timestamps transformed by the identical tempo and segment offsets.",
+  "segments": [
+    {
+      "at": 0,
+      "until": 7,
+      "text": "欢迎来到春日研究街。用一分钟，走过街口、商店和阅读亭。",
+      "generatedAt": "2026-10-11T02:31:56.897Z",
+      "traceId": "071a28190cb1ed3d0474b613a168e049",
+      "extraInfo": {
+        "audio_length": 5247,
+        "audio_sample_rate": 32000,
+        "audio_size": 337018,
+        "bitrate": 128000,
+        "word_count": 27,
+        "invisible_character_ratio": 0,
+        "usage_characters": 50,
+        "audio_format": "wav",
+        "audio_channel": 1
+      },
+      "cues": [
+        {
+          "text": "欢迎来到春日研究街。用一分钟，走过街口、商店和阅读亭。",
+          "pronounce_text": "欢迎来到春日研究街。用一分钟，走过街口、商店和阅读亭。",
+          "time_begin": 0,
+          "time_end": 5147.7097505668935,
+          "text_begin": 0,
+          "text_end": 27,
+          "pronounce_text_begin": 0,
+          "pronounce_text_end": 27,
+          "is_final_segment": true
+        }
+      ],
+      "request": {
+        "model": "speech-2.8-hd",
+        "text": "欢迎来到春日研究街。用一分钟，走过街口、商店和阅读亭。",
+        "stream": false,
+        "language_boost": "Chinese",
+        "output_format": "hex",
+        "voice_setting": {
+          "voice_id": "Chinese (Mandarin)_Warm_Girl",
+          "speed": 1.12,
+          "vol": 1,
+          "pitch": 0,
+          "emotion": "calm"
+        },
+        "audio_setting": {
+          "sample_rate": 32000,
+          "format": "wav",
+          "channel": 1
+        },
+        "subtitle_enable": true,
+        "subtitle_type": "sentence"
+      },
+      "sourceDuration": 5.247719,
+      "tempo": 1,
+      "speechUntil": 5.247719,
+      "sourceSha256": "34787183997fbfee6e6a0ed2fefc85a39eb581fc26227d269b99184ce012695e"
+    },
+    {
+      "at": 7,
+      "until": 20,
+      "text": "先看街口的效果告示牌。少量明暗色阶，配上冷紫暗部和描线，让三维场景拥有动画背景的笔触。拖动镜头，还能看见真实的视差。",
+      "generatedAt": "2026-10-11T02:32:00.067Z",
+      "traceId": "071a281d3f0c903181fd6c2288205a9d",
+      "extraInfo": {
+        "audio_length": 10541,
+        "audio_sample_rate": 32000,
+        "audio_size": 675844,
+        "bitrate": 128000,
+        "word_count": 58,
+        "invisible_character_ratio": 0,
+        "usage_characters": 110,
+        "audio_format": "wav",
+        "audio_channel": 1
+      },
+      "cues": [
+        {
+          "text": "先看街口的效果告示牌。少量明暗色阶，配上冷紫暗部和描线，让三维场景拥有动画背景的笔触。拖动镜头，还能看见真实的视差。",
+          "pronounce_text": "先看街口的效果告示牌。少量明暗色阶，配上冷紫暗部和描线，让三维场景拥有动画背景的笔触。拖动镜头，还能看见真实的视差。",
+          "time_begin": 0,
+          "time_end": 10441.859410430838,
+          "text_begin": 0,
+          "text_end": 58,
+          "pronounce_text_begin": 0,
+          "pronounce_text_end": 58,
+          "is_final_segment": true
+        }
+      ],
+      "request": {
+        "model": "speech-2.8-hd",
+        "text": "先看街口的效果告示牌。少量明暗色阶，配上冷紫暗部和描线，让三维场景拥有动画背景的笔触。拖动镜头，还能看见真实的视差。",
+        "stream": false,
+        "language_boost": "Chinese",
+        "output_format": "hex",
+        "voice_setting": {
+          "voice_id": "Chinese (Mandarin)_Warm_Girl",
+          "speed": 1.12,
+          "vol": 1,
+          "pitch": 0,
+          "emotion": "calm"
+        },
+        "audio_setting": {
+          "sample_rate": 32000,
+          "format": "wav",
+          "channel": 1
+        },
+        "subtitle_enable": true,
+        "subtitle_type": "sentence"
+      },
+      "sourceDuration": 10.541875,
+      "tempo": 1,
+      "speechUntil": 17.541874999999997,
+      "sourceSha256": "e43a433fe9d01ff17a153f4139892cb7eb2a9e9acacaf1c0e59983c4ed9c321a"
+    },
+    {
+      "at": 20,
+      "until": 29,
+      "text": "接下来，走近研究商店。卷帘门开启，灯光亮起。画面中的地点，也成了资料入口。",
+      "generatedAt": "2026-10-11T02:32:04.238Z",
+      "traceId": "071a28204afe772af427d032d39ea792",
+      "extraInfo": {
+        "audio_length": 7082,
+        "audio_sample_rate": 32000,
+        "audio_size": 454418,
+        "bitrate": 128000,
+        "word_count": 37,
+        "invisible_character_ratio": 0,
+        "usage_characters": 68,
+        "audio_format": "wav",
+        "audio_channel": 1
+      },
+      "cues": [
+        {
+          "text": "接下来，走近研究商店。卷帘门开启，灯光亮起。画面中的地点，也成了资料入口。",
+          "pronounce_text": "接下来，走近研究商店。卷帘门开启，灯光亮起。画面中的地点，也成了资料入口。",
+          "time_begin": 0,
+          "time_end": 6982.086167800454,
+          "text_begin": 0,
+          "text_end": 37,
+          "pronounce_text_begin": 0,
+          "pronounce_text_end": 37,
+          "is_final_segment": true
+        }
+      ],
+      "request": {
+        "model": "speech-2.8-hd",
+        "text": "接下来，走近研究商店。卷帘门开启，灯光亮起。画面中的地点，也成了资料入口。",
+        "stream": false,
+        "language_boost": "Chinese",
+        "output_format": "hex",
+        "voice_setting": {
+          "voice_id": "Chinese (Mandarin)_Warm_Girl",
+          "speed": 1.12,
+          "vol": 1,
+          "pitch": 0,
+          "emotion": "calm"
+        },
+        "audio_setting": {
+          "sample_rate": 32000,
+          "format": "wav",
+          "channel": 1
+        },
+        "subtitle_enable": true,
+        "subtitle_type": "sentence"
+      },
+      "sourceDuration": 7.082094,
+      "tempo": 1,
+      "speechUntil": 27.082093999999998,
+      "sourceSha256": "9f3a3fbb181cc84e6f959d3ab200bc0612bc62f4390e0eb9521fd53ef5002ae7"
+    },
+    {
+      "at": 29,
+      "until": 40,
+      "text": "商店里有三个研究章节：能力与价值、渲染原理、实验与验证。打开资料，就能阅读结论，也能收藏灵感。",
+      "generatedAt": "2026-10-11T02:32:07.168Z",
+      "traceId": "071a28257c51ea860951052f2468b7af",
+      "extraInfo": {
+        "audio_length": 8684,
+        "audio_sample_rate": 32000,
+        "audio_size": 556958,
+        "bitrate": 128000,
+        "word_count": 47,
+        "invisible_character_ratio": 0,
+        "usage_characters": 87,
+        "audio_format": "wav",
+        "audio_channel": 1
+      },
+      "cues": [
+        {
+          "text": "商店里有三个研究章节：能力与价值、渲染原理、实验与验证。打开资料，就能阅读结论，也能收藏灵感。",
+          "pronounce_text": "商店里有三个研究章节：能力与价值、渲染原理、实验与验证。打开资料，就能阅读结论，也能收藏灵感。",
+          "time_begin": 0,
+          "time_end": 8584.263038548754,
+          "text_begin": 0,
+          "text_end": 47,
+          "pronounce_text_begin": 0,
+          "pronounce_text_end": 47,
+          "is_final_segment": true
+        }
+      ],
+      "request": {
+        "model": "speech-2.8-hd",
+        "text": "商店里有三个研究章节：能力与价值、渲染原理、实验与验证。打开资料，就能阅读结论，也能收藏灵感。",
+        "stream": false,
+        "language_boost": "Chinese",
+        "output_format": "hex",
+        "voice_setting": {
+          "voice_id": "Chinese (Mandarin)_Warm_Girl",
+          "speed": 1.12,
+          "vol": 1,
+          "pitch": 0,
+          "emotion": "calm"
+        },
+        "audio_setting": {
+          "sample_rate": 32000,
+          "format": "wav",
+          "channel": 1
+        },
+        "subtitle_enable": true,
+        "subtitle_type": "sentence"
+      },
+      "sourceDuration": 8.684281,
+      "tempo": 1,
+      "speechUntil": 37.684281,
+      "sourceSha256": "3856d6efe2be4dd35111f1c8876fb417370faa0d9813794e58720229acc06350"
+    },
+    {
+      "at": 40,
+      "until": 49,
+      "text": "最后，来到阅读亭。收藏保存在当前浏览器，方便下次回来继续阅读，也可以随时取消。",
+      "generatedAt": "2026-10-11T02:32:09.814Z",
+      "traceId": "071a2828e4b45b42421c06495c47ab34",
+      "extraInfo": {
+        "audio_length": 7198,
+        "audio_sample_rate": 32000,
+        "audio_size": 461848,
+        "bitrate": 128000,
+        "word_count": 39,
+        "invisible_character_ratio": 0,
+        "usage_characters": 73,
+        "audio_format": "wav",
+        "audio_channel": 1
+      },
+      "cues": [
+        {
+          "text": "最后，来到阅读亭。收藏保存在当前浏览器，方便下次回来继续阅读，也可以随时取消。",
+          "pronounce_text": "最后，来到阅读亭。收藏保存在当前浏览器，方便下次回来继续阅读，也可以随时取消。",
+          "time_begin": 0,
+          "time_end": 7098.185941043084,
+          "text_begin": 0,
+          "text_end": 39,
+          "pronounce_text_begin": 0,
+          "pronounce_text_end": 39,
+          "is_final_segment": true
+        }
+      ],
+      "request": {
+        "model": "speech-2.8-hd",
+        "text": "最后，来到阅读亭。收藏保存在当前浏览器，方便下次回来继续阅读，也可以随时取消。",
+        "stream": false,
+        "language_boost": "Chinese",
+        "output_format": "hex",
+        "voice_setting": {
+          "voice_id": "Chinese (Mandarin)_Warm_Girl",
+          "speed": 1.12,
+          "vol": 1,
+          "pitch": 0,
+          "emotion": "calm"
+        },
+        "audio_setting": {
+          "sample_rate": 32000,
+          "format": "wav",
+          "channel": 1
+        },
+        "subtitle_enable": true,
+        "subtitle_type": "sentence"
+      },
+      "sourceDuration": 7.198188,
+      "tempo": 1,
+      "speechUntil": 47.198188,
+      "sourceSha256": "8ea3ee916903d9722299a405358ad5a1d74d030045aef64fb20d75282d77e47d"
+    },
+    {
+      "at": 49,
+      "until": 60,
+      "text": "这条街把看效果、读资料、留入口连在一起。现在，把镜头交还给你。拖动环顾，点击地点，自由探索吧。",
+      "generatedAt": "2026-10-11T02:32:12.569Z",
+      "traceId": "071a282a42293181fb93abb63499bf91",
+      "extraInfo": {
+        "audio_length": 8900,
+        "audio_sample_rate": 32000,
+        "audio_size": 570764,
+        "bitrate": 128000,
+        "word_count": 47,
+        "invisible_character_ratio": 0,
+        "usage_characters": 86,
+        "audio_format": "wav",
+        "audio_channel": 1
+      },
+      "cues": [
+        {
+          "text": "这条街把看效果、读资料、留入口连在一起。现在，把镜头交还给你。拖动环顾，点击地点，自由探索吧。",
+          "pronounce_text": "这条街把看效果、读资料、留入口连在一起。现在，把镜头交还给你。拖动环顾，点击地点，自由探索吧。",
+          "time_begin": 0,
+          "time_end": 8800,
+          "text_begin": 0,
+          "text_end": 47,
+          "pronounce_text_begin": 0,
+          "pronounce_text_end": 47,
+          "is_final_segment": true
+        }
+      ],
+      "request": {
+        "model": "speech-2.8-hd",
+        "text": "这条街把看效果、读资料、留入口连在一起。现在，把镜头交还给你。拖动环顾，点击地点，自由探索吧。",
+        "stream": false,
+        "language_boost": "Chinese",
+        "output_format": "hex",
+        "voice_setting": {
+          "voice_id": "Chinese (Mandarin)_Warm_Girl",
+          "speed": 1.12,
+          "vol": 1,
+          "pitch": 0,
+          "emotion": "calm"
+        },
+        "audio_setting": {
+          "sample_rate": 32000,
+          "format": "wav",
+          "channel": 1
+        },
+        "subtitle_enable": true,
+        "subtitle_type": "sentence"
+      },
+      "sourceDuration": 8.9,
+      "tempo": 1,
+      "speechUntil": 57.9,
+      "sourceSha256": "ef71d7a097ac5c9ed8efe0820313df82ecc6c24f7aa62fdb3bf82e83f9987c22"
+    }
+  ]
+}

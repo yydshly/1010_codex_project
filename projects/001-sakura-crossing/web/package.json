@@ -1,0 +1,40 @@
+{
+  "name": "sakura-crossing-mini",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
+    "dev:weather": "vite --host 127.0.0.1 --port 5188 --strictPort",
+    "content:sync": "node scripts/sync-directions.mjs",
+    "content:check": "node scripts/sync-directions.mjs --check",
+    "research:sync": "node scripts/sync-research.mjs",
+    "research:check": "node scripts/sync-research.mjs --check",
+    "prebuild": "npm run content:check && npm run overview:check && npm run research:check && npm run references:check",
+    "build": "vite build",
+    "test:lab": "node scripts/check-lab.mjs",
+    "test:builder": "node scripts/check-builder.mjs",
+    "test:tour": "node scripts/check-tour.mjs",
+    "test:game": "node --test scripts/check-game.mjs scripts/check-director.mjs",
+    "test:weather": "node --test scripts/check-weather.mjs",
+    "game": "node scripts/town-server.mjs",
+    "voice:generate": "node scripts/generate-tour-voice.mjs",
+    "overview:svg": "node scripts/render-overview.mjs",
+    "overview:check": "node scripts/render-overview.mjs --check",
+    "preview": "vite preview --host 127.0.0.1 --port 5181 --strictPort",
+    "preview:path": "node scripts/preview-path.mjs",
+    "references:sync": "node scripts/snapshot-references.mjs",
+    "references:check": "node scripts/snapshot-references.mjs --check"
+  },
+  "dependencies": {
+    "@research/rain-kit": "file:packages/research-rain-kit-0.1.0.tgz",
+    "three": "0.185.1",
+    "three-mesh-bvh": "0.9.13"
+  },
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}

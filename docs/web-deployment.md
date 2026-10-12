@@ -1,45 +1,40 @@
-# 多个 Web 的部署约定
+# Web 部署与发布范围
 
-当前只初始化研究仓库，尚未启用 GitHub Pages，也没有真实演示项目。后续按具体子项目的技术栈添加构建和部署流程。
+2026-10-12 为 001 樱花小街配置 GitHub Pages。当前工作流与产物已准备；实际成功状态和在线地址须以 GitHub Actions 与线上验证记录为准。
 
-## 一个站点，多个项目路径
+## 一个站点，稳定项目路径
 
-GitHub Pages 为每个仓库提供一个项目站点，并托管静态 HTML、CSS 和 JavaScript。多个 Web 可以各自构建，再汇总到同一份站点产物的不同子目录。[GitHub Pages 官方说明](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)
-
-本仓库预计使用以下路径；这些地址是规划，目前不能作为已上线链接：
-
-```text
-https://yydshly.github.io/1010_codex_project/
-├── 001-example-repo/
-├── 002-another-repo/
-└── ...
-```
-
-部署产物的建议布局：
+仓库站点规划入口为 `https://yydshly.github.io/1010_codex_project/`，001 放在 `001-sakura-crossing/`，首页导航到 `research.html`。本次仅发布 001 静态应用和必要引用资料，不发布其他子项目应用。
 
 ```text
 _site/
-├── index.html                  # 演示导航页
-├── 001-example-repo/            # 来自该项目 web 的构建产物
-│   └── index.html
-└── 002-another-repo/
-    └── index.html
+├── index.html
+└── 001-sakura-crossing/
+    ├── research.html           # 完整摘要、引导图、研究手册
+    ├── index.html              # 研究街、内容收藏与中文导览
+    ├── lab.html                # 三场景风格和性能实验
+    ├── builder.html            # 小镇编辑与本机存档
+    ├── weather.html            # WebGPU 晴雨漫游
+    ├── directions.html         # 七种产品方向
+    └── overview.html           # 高清总览图与下载
 ```
 
-目录使用与子项目相同的 `编号-slug`，保持路径稳定。根 README 的研究索引指向源码目录；`demo` 字段单独记录上线后的访问地址。
+## 构建与自动部署
 
-## 子项目需要准备什么
+在根目录执行 `npm run check`，在 `projects/001-sakura-crossing/web/` 执行 `npm ci` 与 `npm run build`，最后回到根执行 `npm run site:assemble`。应用使用相对基础路径 `./`；所有生产资源由 Vite 打包到同一子目录，跨项目说明和截图使用 `references/` 中的快照，不依赖其他项目的开发服务器。
 
-1. 在 `projects/编号-slug/web/` 管理应用代码、依赖、锁文件与构建说明。
-2. 让静态构建产物支持 `/1010_codex_project/编号-slug/` 这个基础路径，验证 JS、CSS 和图片都能加载。
-3. 如果使用单页路由，优先选择 hash 路由，或明确处理 GitHub Pages 的直接访问与刷新行为。
-4. 部署时将每个应用的静态产物复制到 `_site/编号-slug/`，再统一发布 `_site/`。
-5. 验证线上页面与资源后，将实际 HTTPS 地址填入登记表的 `demo`，再同步根 README。
+`.github/workflows/pages.yml` 在 main 的相关内容更新或手动触发时构建 `_site/`，上传 Pages 产物并部署。Actions 版本固定到核验过的 commit。仓库 Pages 构建来源使用 GitHub Actions。首次启用、发布状态与成功 URL 通过 GitHub API/Actions 核验；只有实际线上检查通过后，才将真实 HTTPS 地址写入 `projects.json.demo` 并同步根 README。
 
-纯静态应用适合 GitHub Pages。需要数据库、服务端 API 或常驻进程的项目需独立后端或其他托管平台，登记表同样可以指向该演示地址。
+## 在线与本机体验
 
-## 启用部署时的步骤
+在线提供完整研究摘要、引导图、真实效果对照、笔记与证据阅读、模块下载和 001 的静态场景。收藏和搭建器存档存于当前浏览器，换域名或浏览器不自动同步，可用 JSON 备份。
 
-首次部署时在仓库 **Settings → Pages** 中选择 **GitHub Actions**，再根据真实项目添加工作流：分别安装依赖和构建 → 汇总站点 → 上传 Pages 产物 → 部署。[GitHub 官方自定义工作流说明](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+天气页需要支持 WebGPU 的浏览器与合适设备；普通研究阅读不要求加载三维场景。手机真机和长时性能尚未验证。
 
-仓库初始化只包含目录检查工作流，不自动发布空站点。等第一个可运行 Web 确定后，再补充与它匹配的部署配置。
+AI 守灯游戏使用本机 `town-server.mjs`、官方 CLI 登录或本机模型配置，不包含公开模型 API；012 原城市、技术台和 GPU 现场仍需各自的本机服务。在线手册以说明、截图和原始记录呈现这些入口，避免把 localhost 当成公开演示地址。静态发布不上传密钥、用户存档或本机配置。
+
+## 资料与依据
+
+[GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) · [GitHub Pages REST API](https://docs.github.com/en/rest/pages/pages)
+
+实际发布和线上检查记录保留在 001 笔记中。后续增加项目时继续沿用固定编号路径，并为其增加独立构建、来源授权和验证记录。

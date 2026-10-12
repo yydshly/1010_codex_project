@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f3eb" />
+  <title>樱花小街 · 晴雨漫游</title>
+  <meta name="description" content="同一条三渲二樱花街，体验晴雨切换、实时湿地倒影与第一人称漫游。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='50'%3E🌸%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header><a class="brand" href="./index.html"><span class="flower">✿</span><span>樱花小街<small>SAKURA / WEATHER WALK</small></span></a><nav aria-label="页面导航"><a href="./research.html">完整研究汇总 ↗</a><a href="#reuse">复用说明 ↓</a></nav><span class="local-badge">本地实时体验</span></header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">001 × 012 · CROSS PROJECT REUSE</p><h1>在樱花街，等一场雨。</h1><p>熟悉的粉樱、纸色建筑与动画描线，加上一点新的天气。</p></div><div class="weather-select" role="group" aria-label="天气选择"><button data-weather="sunny" aria-pressed="true" disabled>☀ 晴天</button><button data-weather="rainy" aria-pressed="false" disabled>☂ 雨天</button></div></div>
+    <section class="experience" aria-label="晴雨街景和控制面板">
+      <div class="viewport-wrap" id="viewport-wrap">
+        <canvas id="scene" tabindex="0" aria-label="樱花小街实时场景，观察模式拖动环顾；漫游模式 WASD 移动、拖动转头"></canvas>
+        <div class="scene-top"><span class="scene-tag"><i></i><span id="weather-label">晴天 · 花瓣轻落</span></span><span id="engine">正在准备渲染…</span></div>
+        <div class="scene-caption"><small id="place-label">春日研究街 / 全景</small><h2 id="scene-title">春光里，慢一点。</h2></div>
+        <div class="loading" id="loading" role="status"><span class="flower">✿</span><strong>正在打开樱花小街</strong><p id="loading-detail">准备建筑、色阶与天气模块…</p></div>
+        <div class="crosshair" id="crosshair" hidden aria-hidden="true">+</div>
+        <div class="walk-pad" id="walk-pad" hidden role="group" aria-label="按住移动"><button data-move="forward" aria-label="向前走">↑</button><div><button data-move="left" aria-label="向左走">←</button><button data-move="backward" aria-label="向后走">↓</button><button data-move="right" aria-label="向右走">→</button></div></div>
+        <div class="scene-bottom"><span id="input-hint">拖动环顾 · 滚轮缩放</span><button id="fullscreen" disabled aria-label="全屏体验">⤢ <span>全屏</span></button></div>
+      </div>
+      <aside class="control-panel">
+        <div class="panel-heading"><p class="eyebrow">YOUR LITTLE WEATHER LAB</p><h2>把变化，握在手里。</h2><p>切换一项，就能看到它的作用。</p></div>
+        <div class="effect-row"><label for="rain"><span><strong>雨滴与地面涟漪</strong><small>随视角移动，屋檐会挡雨</small></span><input id="rain" type="checkbox" role="switch" disabled /></label></div>
+        <div class="effect-row"><label for="reflection"><span><strong>湿地反射</strong><small>路面映出樱花、商店与天空</small></span><input id="reflection" type="checkbox" role="switch" disabled /></label></div>
+        <div class="slider-row"><label for="reflection-strength">倒影强度 <output id="reflection-value">55%</output></label><input id="reflection-strength" type="range" min="0" max="1.2" step="0.05" value="0.55" disabled /></div>
+        <div class="style-row" role="group" aria-label="三渲二风格"><label><input id="ink" type="checkbox" checked disabled /> 动画描线</label><label><input id="grade" type="checkbox" checked disabled /> 春日调色</label></div>
+        <div class="walk-section"><small class="numbered">01 / WALK THE SCENE</small><button class="primary" id="walk" aria-pressed="false" disabled>进入第一人称漫游 <span>↗</span></button><p id="walk-help">走进同一条街，近看招牌与湿地。</p><div class="destinations" role="group" aria-label="体验地点"><button data-place="street" disabled>街口</button><button data-place="shop" disabled>商店屋檐</button><button data-place="pavilion" disabled>阅读亭</button></div><button class="reset" id="overview" disabled>↺ 回到街景全景</button></div>
+        <div class="live-state" role="status"><span>实时状态</span><p id="status">正在加载…</p><code id="position">观察模式</code></div>
+      </aside>
+    </section>
+    <div class="experience-foot"><p><span>✧</span> 三段色阶 · 冷紫暗部 · 深度描线 · 程序化樱花街</p><p>漫游：WASD / 方向键 · 拖动转头 · Shift 快走 · C 蹲下 · Esc 返回</p></div>
+    <section class="reuse-section" id="reuse"><div class="section-heading"><div><p class="eyebrow">SAME MODULES, ANOTHER WORLD</p><h2>能力搬过来，风格留下来。</h2></div><p>012 的雨景能力，已经装进 001 的樱花街。<br />换场景，不必重写下雨、倒影和行走。</p></div><div class="principles">
+      <article><span>01 / WEATHER</span><h3>雨会认识屋顶。</h3><p>俯视高度图记录表面高度，GPU 更新雨滴位置；到达表面后重新落下，并绘制循环水花。移动到商店屋檐下，观察近处雨线的变化。</p><small>复用 createWeather · 高度图为 2.5D，复杂多层遮雨需扩展</small></article>
+      <article><span>02 / REFLECTION</span><h3>倒影跟着你移动。</h3><p>在路面下镜像相机，再渲染一次这条街。法线和涟漪轻微扭曲倒影；只覆盖原道路，保留人行道、标线和动画色彩。</p><small>复用 createWetGround · 平面倒影，半分辨率隔帧更新</small></article>
+      <article><span>03 / WALK</span><h3>场景有了人的尺度。</h3><p>共享漫游模块管理拖动视角、加减速、蹲下、地面探测和墙体碰撞。樱花街只需提供自己的地面与静态碰撞代理。</p><small>复用 createWalkControls + buildModelBvh · 无需锁定鼠标</small></article>
+    </div><details><summary>接入方式与复用边界 <span>＋</span></summary><div class="integration-note"><p>本项目安装了与 012 相同的 <code>@research/rain-kit 0.1.0</code> 本地包。天气、湿地与漫游直接调用包 API；街景来自原有 <code>buildStreet()</code>，几何、招牌、樱花和店门动画共用。</p><p>新增节点材质适配器，把原色阶、冷紫暗部、外壳描边与深度二阶差分描线接到 GPU 管线。原研究街、搭建器与 AI 小镇继续使用各自的 WebGL 页面。晴天停止雨滴和涟漪，默认关闭倒影；可以单独开启湿地，模拟雨后晴天。</p><p><a id="notes-link" href="#">阅读完整中文接入笔记 ↗</a> · <a href="./index.html">返回研究街 ↗</a></p></div></details></section>
+  </main>
+  <footer><span>樱花小街 · 晴雨漫游</span><p>Sakura Crossing / MIT · Rain Kit 来源 threejs-conference / MIT<br />本地程序化场景与接入实现 · 尚未部署</p><a href="./directions.html#reuse">查看其他复用方向 ↗</a></footer>
+  <script type="module" src="/src/weather/main.js"></script>
+</body></html>

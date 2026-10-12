@@ -1,0 +1,15 @@
+{
+  "recordedAt": "2026-10-11T02:59:06.644Z",
+  "url": "http://127.0.0.1:5181/",
+  "naturalPlaybackWallSeconds": 82.654,
+  "completion": {
+    "duration": 60,
+    "mode": "complete",
+    "paused": true,
+    "progress": "60",
+    "status": "一分钟导览已完成 · 现在可以自由探索，也可以从头再走。",
+    "time": 60
+  },
+  "logs": [],
+  "scope": "Actual HTML media playback and DOM timeline state; screenshots do not certify listening quality."
+}

@@ -1,0 +1,1564 @@
+{
+  "id": "b778a37d-093f-46f5-8475-dfeaf00602af",
+  "mode": "codex",
+  "phase": "won",
+  "paused": true,
+  "time": 43.097000000000016,
+  "stable": 20.014000000000003,
+  "supply": 26,
+  "calls": 2,
+  "nextPlan": 45.642,
+  "pending": false,
+  "error": "",
+  "actors": {
+    "player": {
+      "id": "player",
+      "name": "你",
+      "x": -7,
+      "z": 3.1,
+      "oil": 2,
+      "task": "wait",
+      "goal": "plaza",
+      "path": [],
+      "job": null,
+      "say": "",
+      "actions": 0
+    },
+    "companion": {
+      "id": "companion",
+      "name": "阿澄",
+      "x": -7,
+      "z": 3.1,
+      "oil": 2,
+      "task": "follow",
+      "goal": "player",
+      "path": [],
+      "job": null,
+      "say": "好，我先不点灯，跟紧你。",
+      "actions": 2,
+      "fetched": false,
+      "returnGoal": null
+    },
+    "shopkeeper": {
+      "id": "shopkeeper",
+      "name": "柚子",
+      "x": 0,
+      "z": -3,
+      "oil": 2,
+      "task": "repair",
+      "goal": "plaza",
+      "path": [],
+      "job": null,
+      "say": "广场灯交给我，我带油过去。",
+      "actions": 3,
+      "fetched": false,
+      "returnGoal": null
+    },
+    "guard": {
+      "id": "guard",
+      "name": "晴",
+      "x": 7,
+      "z": 2,
+      "oil": 1,
+      "task": "guard",
+      "goal": "east",
+      "path": [],
+      "job": null,
+      "say": "我去守东街，纸灵别想靠近。",
+      "actions": 0,
+      "fetched": false,
+      "returnGoal": null
+    }
+  },
+  "lanterns": [
+    {
+      "id": "west",
+      "x": -7,
+      "z": 2,
+      "name": "西街花灯",
+      "charge": 3,
+      "progress": 0
+    },
+    {
+      "id": "plaza",
+      "x": 0,
+      "z": -3,
+      "name": "广场花灯",
+      "charge": 3,
+      "progress": 0
+    },
+    {
+      "id": "east",
+      "x": 7,
+      "z": 2,
+      "name": "东街花灯",
+      "charge": 3,
+      "progress": 0
+    }
+  ],
+  "spirits": [
+    {
+      "id": "paper1",
+      "x": -8.996206861109247,
+      "z": 0.40038032721609634,
+      "cooldown": 0
+    },
+    {
+      "id": "paper2",
+      "x": 12.961103984779928,
+      "z": 0.012965338406690799,
+      "cooldown": 7.821999999999999
+    }
+  ],
+  "rivals": {
+    "goal": "east",
+    "tactic": "steal",
+    "say": "那就去东街试试，看看守得牢不牢！"
+  },
+  "weather": {
+    "kind": "calm",
+    "until": 34.89,
+    "announcement": "萤火涌入街道，东街动向清晰可见。"
+  },
+  "coach": {
+    "goal": "west",
+    "advice": "带阿澄前往西街，你可亲自点亮西街花灯。"
+  },
+  "journal": [
+    {
+      "time": 0,
+      "who": "AI 导演",
+      "text": "观察小镇，调整下一阶段分工",
+      "type": "request"
+    },
+    {
+      "time": 0,
+      "who": "阿澄",
+      "text": "我去点亮西街，晴替我看着！",
+      "type": "dialogue"
+    },
+    {
+      "time": 0,
+      "who": "柚子",
+      "text": "东街交给我，店里的油还充足。",
+      "type": "dialogue"
+    },
+    {
+      "time": 0,
+      "who": "晴",
+      "text": "我守西街，不让纸灵靠近。",
+      "type": "dialogue"
+    },
+    {
+      "time": 0,
+      "who": "AI 导演",
+      "text": "三路点灯，先稳西街 · 你点广场灯，阿澄与柚子分修两侧，晴先拦住偷油的纸灵。",
+      "type": "decision"
+    },
+    {
+      "time": 0,
+      "who": "场景",
+      "text": "夜风安静，正适合分头点灯。",
+      "type": "weather"
+    },
+    {
+      "time": 0,
+      "who": "模型",
+      "text": "gpt-5.6-sol · 18.0秒 · 第1/10轮",
+      "type": "model"
+    },
+    {
+      "time": 0,
+      "who": "你",
+      "text": "进入樱街，开始守灯",
+      "type": "action"
+    },
+    {
+      "time": 0.2,
+      "who": "你",
+      "text": "走向 (-7.0, 3.1)",
+      "type": "move"
+    },
+    {
+      "time": 0.6,
+      "who": "AI 导演",
+      "text": "收到命令：对全体说：阿澄先别点灯，跟着我。柚子去点广场的灯，晴去东街守灯。让纸灵改去东街，让萤火进入街道，便于看清变化。",
+      "type": "request"
+    },
+    {
+      "time": 4.1,
+      "who": "阿澄",
+      "text": "正在点亮西街花灯",
+      "type": "action"
+    },
+    {
+      "time": 6.4,
+      "who": "阿澄",
+      "text": "点亮西街花灯，消耗1份油",
+      "type": "action"
+    },
+    {
+      "time": 7.3,
+      "who": "柚子",
+      "text": "正在点亮东街花灯",
+      "type": "action"
+    },
+    {
+      "time": 8.5,
+      "who": "阿澄",
+      "text": "从杂货铺领取2份灯油",
+      "type": "action"
+    },
+    {
+      "time": 9.6,
+      "who": "柚子",
+      "text": "点亮东街花灯，消耗1份油",
+      "type": "action"
+    },
+    {
+      "time": 11.7,
+      "who": "晴",
+      "text": "守住西街花灯，纸灵退开",
+      "type": "action"
+    },
+    {
+      "time": 16.9,
+      "who": "阿澄",
+      "text": "好，我先不点灯，跟紧你。",
+      "type": "dialogue"
+    },
+    {
+      "time": 16.9,
+      "who": "柚子",
+      "text": "广场灯交给我，我带油过去。",
+      "type": "dialogue"
+    },
+    {
+      "time": 16.9,
+      "who": "晴",
+      "text": "我去守东街，纸灵别想靠近。",
+      "type": "dialogue"
+    },
+    {
+      "time": 16.9,
+      "who": "AI 导演",
+      "text": "按新分工转向 · 已按你的指令重排：阿澄跟随，柚子点广场，晴守东街，纸灵与萤火也转向东街。",
+      "type": "decision"
+    },
+    {
+      "time": 16.9,
+      "who": "场景",
+      "text": "萤火涌入街道，东街动向清晰可见。",
+      "type": "weather"
+    },
+    {
+      "time": 16.9,
+      "who": "模型",
+      "text": "gpt-5.6-sol · 16.2秒 · 第2/10轮",
+      "type": "model"
+    },
+    {
+      "time": 20.6,
+      "who": "晴",
+      "text": "守住东街花灯，纸灵退开",
+      "type": "action"
+    },
+    {
+      "time": 20.9,
+      "who": "柚子",
+      "text": "正在点亮广场花灯",
+      "type": "action"
+    },
+    {
+      "time": 23.2,
+      "who": "柚子",
+      "text": "点亮广场花灯，消耗1份油",
+      "type": "action"
+    },
+    {
+      "time": 26.1,
+      "who": "柚子",
+      "text": "从杂货铺领取2份灯油",
+      "type": "action"
+    },
+    {
+      "time": 31.3,
+      "who": "晴",
+      "text": "守住东街花灯，纸灵退开",
+      "type": "action"
+    },
+    {
+      "time": 31.5,
+      "who": "晴",
+      "text": "守住东街花灯，纸灵退开",
+      "type": "action"
+    },
+    {
+      "time": 34.9,
+      "who": "场景",
+      "text": "天气恢复平静",
+      "type": "weather"
+    },
+    {
+      "time": 41.9,
+      "who": "晴",
+      "text": "守住东街花灯，纸灵退开",
+      "type": "action"
+    },
+    {
+      "time": 43.1,
+      "who": "小镇",
+      "text": "三街花灯齐亮，守灯成功，花灯节开幕！",
+      "type": "result"
+    }
+  ],
+  "decisions": [
+    {
+      "number": 1,
+      "source": "codex",
+      "input": {
+        "time": 0,
+        "phase": "ready",
+        "playerRequest": "",
+        "stableSeconds": 0,
+        "supply": 30,
+        "actors": {
+          "player": {
+            "name": "你",
+            "x": 0,
+            "z": 9,
+            "oil": 2,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          },
+          "companion": {
+            "name": "阿澄",
+            "x": -1.2,
+            "z": 7.5,
+            "oil": 1,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          },
+          "shopkeeper": {
+            "name": "柚子",
+            "x": -10,
+            "z": -3.3,
+            "oil": 2,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          },
+          "guard": {
+            "name": "晴",
+            "x": 1.2,
+            "z": -1,
+            "oil": 1,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          }
+        },
+        "lanterns": [
+          {
+            "id": "west",
+            "x": -7,
+            "z": 2,
+            "name": "西街花灯",
+            "charge": 0,
+            "progress": 0
+          },
+          {
+            "id": "plaza",
+            "x": 0,
+            "z": -3,
+            "name": "广场花灯",
+            "charge": 0,
+            "progress": 0
+          },
+          {
+            "id": "east",
+            "x": 7,
+            "z": 2,
+            "name": "东街花灯",
+            "charge": 0,
+            "progress": 0
+          }
+        ],
+        "rivals": {
+          "goal": "west",
+          "tactic": "steal",
+          "say": "悄悄借一点灯油……"
+        },
+        "weather": {
+          "kind": "calm",
+          "until": 0,
+          "announcement": "花灯节马上开始"
+        },
+        "recentActions": [],
+        "playerMovement": [],
+        "memory": []
+      },
+      "requestedAt": "2026-10-11T02:36:09.324Z",
+      "status": "applied",
+      "raw": "{\"title\":\"三路点灯，先稳西街\",\"why\":\"你点广场灯，阿澄与柚子分修两侧，晴先拦住偷油的纸灵。\",\"coach\":{\"goal\":\"plaza\",\"advice\":\"带油去广场修灯，点亮后先留守。\"},\"companion\":{\"goal\":\"west\",\"task\":\"repair\",\"say\":\"我去点亮西街，晴替我看着！\"},\"shopkeeper\":{\"goal\":\"east\",\"task\":\"repair\",\"say\":\"东街交给我，店里的油还充足。\"},\"guard\":{\"goal\":\"west\",\"task\":\"guard\",\"say\":\"我守西街，不让纸灵靠近。\"},\"rivals\":{\"goal\":\"west\",\"tactic\":\"steal\",\"say\":\"趁花灯还没亮，偷一点油吧。\"},\"director\":{\"weather\":\"calm\",\"duration\":12,\"announcement\":\"夜风安静，正适合分头点灯。\"}}",
+      "plan": {
+        "title": "三路点灯，先稳西街",
+        "why": "你点广场灯，阿澄与柚子分修两侧，晴先拦住偷油的纸灵。",
+        "coach": {
+          "goal": "plaza",
+          "advice": "带油去广场修灯，点亮后先留守。"
+        },
+        "companion": {
+          "goal": "west",
+          "task": "repair",
+          "say": "我去点亮西街，晴替我看着！"
+        },
+        "shopkeeper": {
+          "goal": "east",
+          "task": "repair",
+          "say": "东街交给我，店里的油还充足。"
+        },
+        "guard": {
+          "goal": "west",
+          "task": "guard",
+          "say": "我守西街，不让纸灵靠近。"
+        },
+        "rivals": {
+          "goal": "west",
+          "tactic": "steal",
+          "say": "趁花灯还没亮，偷一点油吧。"
+        },
+        "director": {
+          "weather": "calm",
+          "duration": 12,
+          "announcement": "夜风安静，正适合分头点灯。"
+        }
+      },
+      "model": "gpt-5.6-sol",
+      "ms": 18032,
+      "usage": {
+        "in": 5894,
+        "out": 359
+      },
+      "application": {
+        "appliedAt": 0,
+        "assignments": {
+          "companion": {
+            "task": "repair",
+            "goal": "west"
+          },
+          "shopkeeper": {
+            "task": "repair",
+            "goal": "east"
+          },
+          "guard": {
+            "task": "guard",
+            "goal": "west"
+          }
+        },
+        "rivals": {
+          "goal": "west",
+          "tactic": "steal",
+          "say": "趁花灯还没亮，偷一点油吧。"
+        },
+        "weather": {
+          "kind": "calm",
+          "until": 12,
+          "announcement": "夜风安静，正适合分头点灯。"
+        },
+        "coach": {
+          "goal": "plaza",
+          "advice": "带油去广场修灯，点亮后先留守。"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "source": "codex",
+      "input": {
+        "time": 0.6,
+        "phase": "playing",
+        "playerRequest": "对全体说：阿澄先别点灯，跟着我。柚子去点广场的灯，晴去东街守灯。让纸灵改去东街，让萤火进入街道，便于看清变化。",
+        "stableSeconds": 0,
+        "supply": 30,
+        "actors": {
+          "player": {
+            "name": "你",
+            "x": -1.4,
+            "z": 9,
+            "oil": 2,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          },
+          "companion": {
+            "name": "阿澄",
+            "x": -2,
+            "z": 7,
+            "oil": 1,
+            "task": "repair",
+            "goal": "west",
+            "repairing": null
+          },
+          "shopkeeper": {
+            "name": "柚子",
+            "x": -8,
+            "z": -3,
+            "oil": 2,
+            "task": "repair",
+            "goal": "east",
+            "repairing": null
+          },
+          "guard": {
+            "name": "晴",
+            "x": -0.7,
+            "z": -1,
+            "oil": 1,
+            "task": "guard",
+            "goal": "west",
+            "repairing": null
+          }
+        },
+        "lanterns": [
+          {
+            "id": "west",
+            "x": -7,
+            "z": 2,
+            "name": "西街花灯",
+            "charge": 0,
+            "progress": 0
+          },
+          {
+            "id": "plaza",
+            "x": 0,
+            "z": -3,
+            "name": "广场花灯",
+            "charge": 0,
+            "progress": 0
+          },
+          {
+            "id": "east",
+            "x": 7,
+            "z": 2,
+            "name": "东街花灯",
+            "charge": 0,
+            "progress": 0
+          }
+        ],
+        "rivals": {
+          "goal": "west",
+          "tactic": "steal",
+          "say": "趁花灯还没亮，偷一点油吧。"
+        },
+        "weather": {
+          "kind": "calm",
+          "until": 12,
+          "announcement": "夜风安静，正适合分头点灯。"
+        },
+        "recentActions": [
+          {
+            "time": 0,
+            "who": "AI 导演",
+            "text": "观察小镇，调整下一阶段分工",
+            "type": "request"
+          },
+          {
+            "time": 0,
+            "who": "阿澄",
+            "text": "我去点亮西街，晴替我看着！",
+            "type": "dialogue"
+          },
+          {
+            "time": 0,
+            "who": "柚子",
+            "text": "东街交给我，店里的油还充足。",
+            "type": "dialogue"
+          },
+          {
+            "time": 0,
+            "who": "晴",
+            "text": "我守西街，不让纸灵靠近。",
+            "type": "dialogue"
+          },
+          {
+            "time": 0,
+            "who": "AI 导演",
+            "text": "三路点灯，先稳西街 · 你点广场灯，阿澄与柚子分修两侧，晴先拦住偷油的纸灵。",
+            "type": "decision"
+          },
+          {
+            "time": 0,
+            "who": "场景",
+            "text": "夜风安静，正适合分头点灯。",
+            "type": "weather"
+          },
+          {
+            "time": 0,
+            "who": "模型",
+            "text": "gpt-5.6-sol · 18.0秒 · 第1/10轮",
+            "type": "model"
+          },
+          {
+            "time": 0,
+            "who": "你",
+            "text": "进入樱街，开始守灯",
+            "type": "action"
+          },
+          {
+            "time": 0.2,
+            "who": "你",
+            "text": "走向 (-7.0, 3.1)",
+            "type": "move"
+          }
+        ],
+        "playerMovement": [
+          {
+            "time": 0.1,
+            "x": 0,
+            "z": 9,
+            "oil": 2
+          }
+        ],
+        "memory": [
+          {
+            "title": "三路点灯，先稳西街",
+            "playerRequest": "",
+            "appliedAt": 0
+          }
+        ]
+      },
+      "requestedAt": "2026-10-11T02:36:50.814Z",
+      "status": "applied",
+      "raw": "{\"title\":\"按新分工转向\",\"why\":\"已按你的指令重排：阿澄跟随，柚子点广场，晴守东街，纸灵与萤火也转向东街。\",\"coach\":{\"goal\":\"west\",\"advice\":\"带阿澄前往西街，你可亲自点亮西街花灯。\"},\"companion\":{\"goal\":\"player\",\"task\":\"follow\",\"say\":\"好，我先不点灯，跟紧你。\"},\"shopkeeper\":{\"goal\":\"plaza\",\"task\":\"repair\",\"say\":\"广场灯交给我，我带油过去。\"},\"guard\":{\"goal\":\"east\",\"task\":\"guard\",\"say\":\"我去守东街，纸灵别想靠近。\"},\"rivals\":{\"goal\":\"east\",\"tactic\":\"steal\",\"say\":\"那就去东街试试，看看守得牢不牢！\"},\"director\":{\"weather\":\"fireflies\",\"duration\":18,\"announcement\":\"萤火涌入街道，东街动向清晰可见。\"}}",
+      "plan": {
+        "title": "按新分工转向",
+        "why": "已按你的指令重排：阿澄跟随，柚子点广场，晴守东街，纸灵与萤火也转向东街。",
+        "coach": {
+          "goal": "west",
+          "advice": "带阿澄前往西街，你可亲自点亮西街花灯。"
+        },
+        "companion": {
+          "goal": "player",
+          "task": "follow",
+          "say": "好，我先不点灯，跟紧你。"
+        },
+        "shopkeeper": {
+          "goal": "plaza",
+          "task": "repair",
+          "say": "广场灯交给我，我带油过去。"
+        },
+        "guard": {
+          "goal": "east",
+          "task": "guard",
+          "say": "我去守东街，纸灵别想靠近。"
+        },
+        "rivals": {
+          "goal": "east",
+          "tactic": "steal",
+          "say": "那就去东街试试，看看守得牢不牢！"
+        },
+        "director": {
+          "weather": "fireflies",
+          "duration": 18,
+          "announcement": "萤火涌入街道，东街动向清晰可见。"
+        }
+      },
+      "model": "gpt-5.6-sol",
+      "ms": 16209,
+      "usage": {
+        "in": 6288,
+        "out": 322
+      },
+      "application": {
+        "appliedAt": 16.89,
+        "assignments": {
+          "companion": {
+            "task": "follow",
+            "goal": "player"
+          },
+          "shopkeeper": {
+            "task": "repair",
+            "goal": "plaza"
+          },
+          "guard": {
+            "task": "guard",
+            "goal": "east"
+          }
+        },
+        "rivals": {
+          "goal": "east",
+          "tactic": "steal",
+          "say": "那就去东街试试，看看守得牢不牢！"
+        },
+        "weather": {
+          "kind": "fireflies",
+          "until": 34.89,
+          "announcement": "萤火涌入街道，东街动向清晰可见。"
+        },
+        "coach": {
+          "goal": "west",
+          "advice": "带阿澄前往西街，你可亲自点亮西街花灯。"
+        }
+      }
+    }
+  ],
+  "telemetry": [
+    {
+      "time": 28.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 28.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 28.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 28.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 28.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 28.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 28.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 28.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 28.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 29.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 30.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 31.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 32.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 33.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 34.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 35.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 36.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 37.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 38.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 39.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 40.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.4,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 41.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42.2,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42.3,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42.5,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42.6,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42.7,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42.8,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 42.9,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 43,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    },
+    {
+      "time": 43.1,
+      "x": -7,
+      "z": 3.1,
+      "oil": 2
+    }
+  ],
+  "startedAt": "2026-10-11T02:36:09.322Z",
+  "lastRequestAt": 1791686210814,
+  "seenAt": 1791686282767
+}

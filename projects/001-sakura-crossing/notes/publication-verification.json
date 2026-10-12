@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-12",
+  "status": "prepared",
+  "scope": "仅 001 及 22 个必要引用快照",
+  "summary": {
+    "sections": 6,
+    "paragraphs": 18
+  },
+  "local": {
+    "isolatedInstall": true,
+    "build": true,
+    "catalog": true,
+    "guide": true,
+    "referenceReader": true,
+    "search": true,
+    "summaryDownload": true,
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "mobileHorizontalOverflow": false
+  },
+  "checks": [
+    "test:game",
+    "test:builder",
+    "test:tour",
+    "test:weather"
+  ],
+  "online": {
+    "verified": false
+  }
+}

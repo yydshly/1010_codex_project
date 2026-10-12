@@ -1,0 +1,437 @@
+{
+  "id": "b8a48f76-904f-480d-8fcb-68ef4bc0ea89",
+  "mode": "codex",
+  "phase": "ready",
+  "paused": false,
+  "time": 0,
+  "stable": 0,
+  "supply": 30,
+  "calls": 1,
+  "nextPlan": 45,
+  "pending": false,
+  "error": "",
+  "actors": {
+    "player": {
+      "id": "player",
+      "name": "你",
+      "x": 0,
+      "z": 9,
+      "oil": 2,
+      "task": "wait",
+      "goal": "plaza",
+      "path": [],
+      "job": null,
+      "say": "",
+      "actions": 0
+    },
+    "companion": {
+      "id": "companion",
+      "name": "阿澄",
+      "x": -1.2,
+      "z": 7.5,
+      "oil": 1,
+      "task": "repair",
+      "goal": "west",
+      "path": [
+        {
+          "x": -2,
+          "z": 8
+        },
+        {
+          "x": -2,
+          "z": 7
+        },
+        {
+          "x": -3,
+          "z": 7
+        },
+        {
+          "x": -3,
+          "z": 6
+        },
+        {
+          "x": -4,
+          "z": 6
+        },
+        {
+          "x": -4,
+          "z": 5
+        },
+        {
+          "x": -5,
+          "z": 5
+        },
+        {
+          "x": -5,
+          "z": 4
+        },
+        {
+          "x": -6,
+          "z": 4
+        },
+        {
+          "x": -6,
+          "z": 3
+        },
+        {
+          "x": -7,
+          "z": 3
+        },
+        {
+          "x": -7,
+          "z": 2
+        },
+        {
+          "x": -7,
+          "z": 2
+        }
+      ],
+      "job": null,
+      "say": "我去点亮西街花灯！",
+      "actions": 0,
+      "fetched": false,
+      "returnGoal": null
+    },
+    "shopkeeper": {
+      "id": "shopkeeper",
+      "name": "柚子",
+      "x": -10,
+      "z": -3.3,
+      "oil": 2,
+      "task": "wait",
+      "goal": "shop",
+      "path": [
+        {
+          "x": -10,
+          "z": -3.3
+        }
+      ],
+      "job": null,
+      "say": "我守着油铺，随时补给。",
+      "actions": 0,
+      "fetched": false,
+      "returnGoal": null
+    },
+    "guard": {
+      "id": "guard",
+      "name": "晴",
+      "x": 1.2,
+      "z": -1,
+      "oil": 1,
+      "task": "repair",
+      "goal": "east",
+      "path": [
+        {
+          "x": 2,
+          "z": -1
+        },
+        {
+          "x": 3,
+          "z": -1
+        },
+        {
+          "x": 4,
+          "z": -1
+        },
+        {
+          "x": 5,
+          "z": -1
+        },
+        {
+          "x": 5,
+          "z": 0
+        },
+        {
+          "x": 6,
+          "z": 0
+        },
+        {
+          "x": 6,
+          "z": 1
+        },
+        {
+          "x": 7,
+          "z": 1
+        },
+        {
+          "x": 7,
+          "z": 2
+        },
+        {
+          "x": 7,
+          "z": 2
+        }
+      ],
+      "job": null,
+      "say": "东街交给我，亮灯后回报。",
+      "actions": 0,
+      "fetched": false,
+      "returnGoal": null
+    }
+  },
+  "lanterns": [
+    {
+      "id": "west",
+      "x": -7,
+      "z": 2,
+      "name": "西街花灯",
+      "charge": 0,
+      "progress": 0
+    },
+    {
+      "id": "plaza",
+      "x": 0,
+      "z": -3,
+      "name": "广场花灯",
+      "charge": 0,
+      "progress": 0
+    },
+    {
+      "id": "east",
+      "x": 7,
+      "z": 2,
+      "name": "东街花灯",
+      "charge": 0,
+      "progress": 0
+    }
+  ],
+  "spirits": [
+    {
+      "id": "paper1",
+      "x": -13,
+      "z": 0,
+      "cooldown": 10
+    },
+    {
+      "id": "paper2",
+      "x": 13,
+      "z": 0,
+      "cooldown": 17
+    }
+  ],
+  "rivals": {
+    "goal": "west",
+    "tactic": "distract",
+    "say": "先绕着西街转转……"
+  },
+  "weather": {
+    "kind": "fireflies",
+    "until": 12,
+    "announcement": "萤火升起，照亮三条点灯路线。"
+  },
+  "coach": {
+    "goal": "plaza",
+    "advice": "带油去广场修灯，点亮后先留守。"
+  },
+  "journal": [
+    {
+      "time": 0,
+      "who": "AI 导演",
+      "text": "观察小镇，调整下一阶段分工",
+      "type": "request"
+    },
+    {
+      "time": 0,
+      "who": "阿澄",
+      "text": "我去点亮西街花灯！",
+      "type": "dialogue"
+    },
+    {
+      "time": 0,
+      "who": "柚子",
+      "text": "我守着油铺，随时补给。",
+      "type": "dialogue"
+    },
+    {
+      "time": 0,
+      "who": "晴",
+      "text": "东街交给我，亮灯后回报。",
+      "type": "dialogue"
+    },
+    {
+      "time": 0,
+      "who": "AI 导演",
+      "text": "三路点灯 · 三灯都未点亮，先分路修灯最快，也给你保留广场花灯。",
+      "type": "decision"
+    },
+    {
+      "time": 0,
+      "who": "场景",
+      "text": "萤火升起，照亮三条点灯路线。",
+      "type": "weather"
+    },
+    {
+      "time": 0,
+      "who": "模型",
+      "text": "gpt-5.6-sol · 16.0秒 · 第1/10轮",
+      "type": "model"
+    }
+  ],
+  "decisions": [
+    {
+      "number": 1,
+      "source": "codex",
+      "input": {
+        "time": 0,
+        "phase": "ready",
+        "playerRequest": "",
+        "stableSeconds": 0,
+        "supply": 30,
+        "actors": {
+          "player": {
+            "name": "你",
+            "x": 0,
+            "z": 9,
+            "oil": 2,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          },
+          "companion": {
+            "name": "阿澄",
+            "x": -1.2,
+            "z": 7.5,
+            "oil": 1,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          },
+          "shopkeeper": {
+            "name": "柚子",
+            "x": -10,
+            "z": -3.3,
+            "oil": 2,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          },
+          "guard": {
+            "name": "晴",
+            "x": 1.2,
+            "z": -1,
+            "oil": 1,
+            "task": "wait",
+            "goal": "plaza",
+            "repairing": null
+          }
+        },
+        "lanterns": [
+          {
+            "id": "west",
+            "x": -7,
+            "z": 2,
+            "name": "西街花灯",
+            "charge": 0,
+            "progress": 0
+          },
+          {
+            "id": "plaza",
+            "x": 0,
+            "z": -3,
+            "name": "广场花灯",
+            "charge": 0,
+            "progress": 0
+          },
+          {
+            "id": "east",
+            "x": 7,
+            "z": 2,
+            "name": "东街花灯",
+            "charge": 0,
+            "progress": 0
+          }
+        ],
+        "rivals": {
+          "goal": "west",
+          "tactic": "steal",
+          "say": "悄悄借一点灯油……"
+        },
+        "weather": {
+          "kind": "calm",
+          "until": 0,
+          "announcement": "花灯节马上开始"
+        },
+        "recentActions": [],
+        "playerMovement": [],
+        "memory": []
+      },
+      "requestedAt": "2026-10-11T03:14:13.789Z",
+      "status": "applied",
+      "raw": "{\"title\":\"三路点灯\",\"why\":\"三灯都未点亮，先分路修灯最快，也给你保留广场花灯。\",\"coach\":{\"goal\":\"plaza\",\"advice\":\"带油去广场修灯，点亮后先留守。\"},\"companion\":{\"goal\":\"west\",\"task\":\"repair\",\"say\":\"我去点亮西街花灯！\"},\"shopkeeper\":{\"goal\":\"shop\",\"task\":\"wait\",\"say\":\"我守着油铺，随时补给。\"},\"guard\":{\"goal\":\"east\",\"task\":\"repair\",\"say\":\"东街交给我，亮灯后回报。\"},\"rivals\":{\"goal\":\"west\",\"tactic\":\"distract\",\"say\":\"先绕着西街转转……\"},\"director\":{\"weather\":\"fireflies\",\"duration\":12,\"announcement\":\"萤火升起，照亮三条点灯路线。\"}}",
+      "model": "gpt-5.6-sol",
+      "ms": 16035,
+      "usage": {
+        "in": 6152,
+        "out": 351
+      },
+      "plan": {
+        "title": "三路点灯",
+        "why": "三灯都未点亮，先分路修灯最快，也给你保留广场花灯。",
+        "coach": {
+          "goal": "plaza",
+          "advice": "带油去广场修灯，点亮后先留守。"
+        },
+        "companion": {
+          "goal": "west",
+          "task": "repair",
+          "say": "我去点亮西街花灯！"
+        },
+        "shopkeeper": {
+          "goal": "shop",
+          "task": "wait",
+          "say": "我守着油铺，随时补给。"
+        },
+        "guard": {
+          "goal": "east",
+          "task": "repair",
+          "say": "东街交给我，亮灯后回报。"
+        },
+        "rivals": {
+          "goal": "west",
+          "tactic": "distract",
+          "say": "先绕着西街转转……"
+        },
+        "director": {
+          "weather": "fireflies",
+          "duration": 12,
+          "announcement": "萤火升起，照亮三条点灯路线。"
+        }
+      },
+      "application": {
+        "appliedAt": 0,
+        "assignments": {
+          "companion": {
+            "task": "repair",
+            "goal": "west"
+          },
+          "shopkeeper": {
+            "task": "wait",
+            "goal": "shop"
+          },
+          "guard": {
+            "task": "repair",
+            "goal": "east"
+          }
+        },
+        "rivals": {
+          "goal": "west",
+          "tactic": "distract",
+          "say": "先绕着西街转转……"
+        },
+        "weather": {
+          "kind": "fireflies",
+          "until": 12,
+          "announcement": "萤火升起，照亮三条点灯路线。"
+        },
+        "coach": {
+          "goal": "plaza",
+          "advice": "带油去广场修灯，点亮后先留守。"
+        }
+      }
+    }
+  ],
+  "telemetry": [],
+  "startedAt": "2026-10-11T03:14:13.788Z",
+  "lastRequestAt": 1791688453788,
+  "seenAt": 1791688534529
+}

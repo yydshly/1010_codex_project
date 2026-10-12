@@ -10,6 +10,7 @@
   "scripts": {
     "project:new": "node scripts/new-project.mjs",
     "catalog:sync": "node scripts/sync-readme.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "site:assemble": "node scripts/assemble-site.mjs"
   }
 }

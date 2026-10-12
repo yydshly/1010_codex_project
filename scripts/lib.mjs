@@ -64,7 +64,19 @@ export function validateCatalog(catalog, { checkFiles = true } = {}) {
     const label = directoryFor(project);
     textField(project.name, `${label}.name`);
     textField(project.summary, `${label}.summary`);
-    validateUrl(project.source, `${label}.source`, true);
+    if (project.summarySections !== undefined) {
+      ensure(Array.isArray(project.summarySections) && project.summarySections.length > 0,
+        `${label}.summarySections 必须是非空分区数组`);
+      for (const section of project.summarySections) {
+        textField(section.title, `${label}.summarySections.title`);
+        ensure(Array.isArray(section.body) && section.body.length > 0,
+          `${label}.summarySections.body 必须是非空段落数组`);
+        section.body.forEach(text => textField(text, `${label}.summarySections.body`));
+      }
+    }
+    ensure(project.sourceKind === undefined || ['upstream', 'inspiration', 'product'].includes(project.sourceKind),
+      `${label}.sourceKind 只能是 upstream、inspiration 或 product`);
+    validateUrl(project.source, `${label}.source`, project.sourceKind !== 'product');
     ensure(Object.hasOwn(statuses, project.status), `${label}.status 不在支持的状态列表内`);
     ensure(Array.isArray(project.tags), `${label}.tags 必须是数组`);
     project.tags.forEach((tag) => textField(tag, `${label}.tags`));
@@ -123,18 +135,23 @@ export function renderIndex(catalog) {
     for (const project of projects) {
       const directory = directoryFor(project);
       const demo = project.demo ? `[访问演示](${linkUrl(project.demo)})` : '—';
-      lines.push(`| ${numberFor(project)} | [${markdown(project.name)}](projects/${directory}/README.md) · [上游](${linkUrl(project.source)}) | ${markdown(project.summary)} | ${statuses[project.status]} | ${demo} |`);
+      const sourceLabel = project.sourceKind === 'product' ? '官方产品' : project.sourceKind === 'inspiration' ? '灵感参考' : '上游';
+      lines.push(`| ${numberFor(project)} | [${markdown(project.name)}](projects/${directory}/README.md) · [${sourceLabel}](${linkUrl(project.source)}) | ${markdown(project.summary)} | ${statuses[project.status]} | ${demo} |`);
     }
     lines.push('', '### 项目预览', '');
     for (const project of projects) {
       lines.push(`#### ${numberFor(project)} · ${markdown(project.name)}`, '', markdown(project.summary), '');
+      for (const section of project.summarySections || []) {
+        lines.push(`##### ${markdown(section.title)}`, '', ...section.body.map(text => `- ${markdown(text)}`), '');
+      }
       if (project.tags.length) lines.push(`标签：${project.tags.map(markdown).join(' · ')}`, '');
       if (project.cover) {
         lines.push(`<img src="${project.cover.path}" alt="${html(project.cover.alt)}" width="640" />`, '', markdown(project.cover.alt), '');
       } else {
         lines.push('截图待补充。', '');
       }
-      lines.push(`[研究说明](projects/${directoryFor(project)}/README.md) · [上游仓库](${linkUrl(project.source)})${project.demo ? ` · [在线演示](${linkUrl(project.demo)})` : ''}`, '');
+      const sourceLabel = project.sourceKind === 'product' ? '官方产品' : project.sourceKind === 'inspiration' ? '灵感参考' : '上游仓库';
+      lines.push(`[研究说明](projects/${directoryFor(project)}/README.md) · [${sourceLabel}](${linkUrl(project.source)})${project.demo ? ` · [在线演示](${linkUrl(project.demo)})` : ''}`, '');
     }
   }
   lines.push('', endMarker);

@@ -1,6 +1,7 @@
 # Dependencies and build output (all subprojects)
 node_modules/
 dist/
+_site/
 build/
 .next/
 out/

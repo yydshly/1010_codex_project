@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="用同一组程序化组件切换三种场景，研究三渲二风格与当前浏览器的实际性能。" />
+  <meta name="theme-color" content="#f3f3ec" />
+  <title>Sakura Field Lab · 三渲二技术实验</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./lab.html" aria-label="Sakura Field Lab 技术实验页"><span class="brand-mark" aria-hidden="true">✳</span><span>Sakura <b>Field Lab</b></span><span class="brand-tag">技术实验</span></a>
+    <div class="header-links"><a class="back-link" href="./research.html">研究汇总 <span aria-hidden="true">↗</span></a><a class="back-link" href="./builder.html">小镇搭建器 <span aria-hidden="true">↗</span></a><a class="back-link" href="./directions.html">理解与扩展 <span aria-hidden="true">↗</span></a><a class="back-link" href="./index.html">返回研究街 <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow">SCENE STUDIES / 001</p><h1>同一套组件，三种场景。</h1><p class="intro-copy">换一种布局，保留动画感。调整风格，观察每一帧的变化。</p></div>
+      <div class="shared-note"><span class="status-dot"></span><span>共用组件与渲染管线<br><small>房屋 / 树木 / 道路 / 长椅 / 路灯</small></span></div>
+    </section>
+    <div class="scene-tabs" role="group" aria-label="切换场景">
+      <button type="button" data-scene="street" aria-pressed="true"><span class="tab-number">01</span><span>樱花商业街<small>SAKURA STREET</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+      <button type="button" data-scene="forest" aria-pressed="false"><span class="tab-number">02</span><span>林间村落<small>WOODLAND VILLAGE</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+      <button type="button" data-scene="square" aria-pressed="false"><span class="tab-number">03</span><span>小广场<small>NEIGHBORHOOD SQUARE</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+    </div>
+    <section class="studio" aria-label="场景与风格实验">
+      <div class="stage-column">
+        <div class="stage" id="stage">
+          <canvas id="lab-scene" aria-label="可拖动和缩放的三渲二场景"></canvas>
+          <div class="scene-caption"><span id="scene-number">01</span><div><strong id="scene-name">樱花商业街</strong><small id="scene-subtitle">沿街排布 · 双侧店铺 · 樱花步道</small></div></div>
+          <span class="live-badge"><i></i> LIVE SCENE</span>
+          <button type="button" class="place-marker" id="place-marker" aria-pressed="false">春日杂货 · 开门 <span aria-hidden="true">↗</span></button>
+          <div class="stage-bottom"><span>拖动环顾 · 滚轮缩放</span><button type="button" id="reset-camera">↺ 标准视角</button></div>
+          <div id="scene-error" class="scene-error" role="alert" hidden>场景初始化失败，请检查浏览器是否支持 WebGL。</div>
+        </div>
+        <div class="metrics" aria-label="实时性能数据">
+          <div><span>估算 FPS</span><strong id="metric-fps">—</strong><small>最近 240 帧</small></div>
+          <div><span>帧间隔 P95</span><strong><b id="metric-p95">—</b><em>ms</em></strong><small>含浏览器调度</small></div>
+          <div><span>绘制调用</span><strong id="metric-calls">—</strong><small>含阴影与后处理</small></div>
+          <div><span>三角形提交</span><strong id="metric-triangles">—</strong><small>含重复渲染</small></div>
+        </div>
+        <div class="resource-strip"><span>几何体 <b id="metric-geometries">—</b></span><span>纹理 <b id="metric-textures">—</b></span><span>程序 <b id="metric-programs">—</b></span><span>CPU 提交 <b id="metric-cpu">—</b> ms</span><span id="render-size">正在初始化</span></div>
+      </div>
+      <aside class="control-panel">
+        <div class="panel-title"><h2>风格工作台</h2><span id="patch-status">r180</span></div>
+        <div class="preset-row" role="group" aria-label="风格预设"><button type="button" data-preset="spring" aria-pressed="true">春日柔光</button><button type="button" data-preset="ink" aria-pressed="false">冷调线稿</button></div>
+        <fieldset id="style-controls"><legend class="sr-only">风格参数</legend>
+          <div class="paired-controls"><label>光照色阶<select id="bands"><option value="2">2 段</option><option value="3" selected>3 段</option><option value="4">4 段</option><option value="5">5 段</option></select></label><label>暗部色调<select id="shadow-tint"><option value="#6c5f8c">紫灰</option><option value="#526b88">蓝灰</option><option value="#82715d">茶灰</option></select></label></div>
+          <label class="range-control" for="ink-width"><span>描线宽度 <output id="ink-width-value" for="ink-width">1.20</output></span><input id="ink-width" type="range" min="0.4" max="2.4" step="0.05" value="1.2" /></label>
+          <label class="range-control" for="saturation"><span>色彩饱和度 <output id="saturation-value" for="saturation">1.12</output></span><input id="saturation" type="range" min="0.65" max="1.5" step="0.01" value="1.12" /></label>
+          <label class="range-control" for="warmth"><span>暖色倾向 <output id="warmth-value" for="warmth">0.05</output></span><input id="warmth" type="range" min="0" max="0.2" step="0.01" value="0.05" /></label>
+          <label class="range-control" for="sunlight"><span>日光强度 <output id="sunlight-value" for="sunlight">2.25</output></span><input id="sunlight" type="range" min="1" max="3.5" step="0.05" value="2.25" /></label>
+          <div class="toggle-row"><label><input type="checkbox" id="ink-enabled" checked />描线</label><label><input type="checkbox" id="grade-enabled" checked />调色</label><label><input type="checkbox" id="motion-enabled" checked />飘落</label></div>
+        </fieldset>
+        <div class="panel-divider"></div>
+        <h3>场景配置</h3>
+        <fieldset id="config-controls"><legend class="sr-only">场景配置</legend>
+          <div class="paired-controls"><label>建筑数量<select id="building-count"><option value="10">10 栋</option><option value="50">50 栋</option><option value="100">100 栋</option></select></label><label>渲染倍率<select id="render-scale"><option value="1">1.0×</option><option value="1.5" selected>1.5×</option></select></label></div>
+          <form id="seed-form"><label for="seed">布局种子</label><div class="seed-row"><input id="seed" type="number" min="0" max="999999" step="1" value="2411" required /><button type="submit">重建</button></div></form>
+        </fieldset>
+        <p class="config-note" id="config-note">10 栋建筑 · 10 棵树</p>
+        <div class="panel-actions"><button type="button" id="reset-style">复原风格</button><button type="button" id="export-config">导出配置 ↗</button></div>
+      </aside>
+    </section>
+    <section class="record-section" aria-labelledby="record-title">
+      <div class="record-heading"><div><p class="eyebrow">MEASURE / COMPARE</p><h2 id="record-title">让效果有据可查。</h2><p>记录会回到标准视角，预热 2 秒后采样 8 秒。改变设置或离开页面会取消采样。</p></div><div class="record-actions"><button type="button" class="primary-button" id="record-button">记录 8 秒</button><button type="button" id="export-records" disabled>导出数据 ↗</button></div></div>
+      <p id="record-status" role="status" aria-live="polite">可以先调整场景和风格，再记录当前设置。</p>
+      <div class="record-table-wrap"><table><caption class="sr-only">本次页面的性能采样记录</caption><thead><tr><th>场景 / 建筑</th><th>估算 FPS</th><th>帧间隔 P95</th><th>绘制调用</th><th>渲染尺寸</th><th>配置</th></tr></thead><tbody id="records"><tr class="empty-row"><td colspan="6">尚无采样记录。实时指标来自当前浏览器，不代表所有设备的表现。</td></tr></tbody></table></div>
+      <p class="measure-note">帧间隔包含浏览器调度；CPU 提交耗时不等于 GPU 耗时。资源计数不等于显存字节数。记录仅保留在本次页面，导出可留存；比较时请保持设备、视口和参数一致。</p>
+    </section>
+    <section class="how-it-works" aria-label="技术结构"><div><span>01 / 配置</span><h3>布局描述场景</h3><p>相同种子与参数生成相同布局，三种配置决定排列、朝向与配色。</p></div><div><span>02 / 组件</span><h3>一组积木反复使用</h3><p>重复静态部件采用实例化；可开关的店门独立保留交互。</p></div><div><span>03 / 渲染</span><h3>动画感保持一致</h3><p>分段光照 → 冷色暗部 → 描线 → 调色 → 抗锯齿。</p></div></section>
+    <div class="extension-link"><div><h2>从场景实验，继续到产品方向</h2><p>研究小镇、搭建器、游戏等七种方案：查看当前基础、待补能力与后续复用方式。</p></div><a href="./directions.html">打开理解与扩展 ↗</a></div>
+    <footer><span>Sakura Crossing / 技术实验 001</span><span>上游 <a href="https://github.com/Kenton-GMI/sakura-crossing/tree/de01898e89c7f6ab3fad93fa802f0f5ac66fbd81" target="_blank" rel="noreferrer">de01898 · MIT ↗</a> <a id="license-link" href="./index.html">许可证</a></span></footer>
+  </main>
+  <script type="module" src="./src/lab/main.js"></script>
+</body>
+</html>

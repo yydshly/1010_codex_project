@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f4eb" />
+  <meta name="description" content="一张图汇总 Sakura Crossing 的能力、渲染原理、实际效果、使用场景、扩展方向与研究价值。" />
+  <title>Sakura Crossing · 研究总览图</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#e9ede3;color:#304b3d;font:14px/1.8 "Microsoft YaHei",sans-serif}header{position:sticky;top:0;z-index:2;background:#fffdf6f2;backdrop-filter:blur(8px);border-bottom:1px solid #d6dfce;padding:14px 4%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}header strong{font-size:17px}header small{display:block;color:#819178;font-size:11px}nav,.zoom-tools{display:flex;align-items:center;gap:9px;flex-wrap:wrap}a{color:inherit}nav a{text-decoration:none;padding:5px 9px;font-size:12px}button{font:inherit;font-size:12px;cursor:pointer;border:1px solid #c8d6be;background:#f7f8ef;padding:6px 10px;border-radius:5px;color:inherit}button[aria-pressed=true]{background:#456d54;color:#fffdf7}button:focus-visible,a:focus-visible{outline:3px solid #6d9dac;outline-offset:3px}.viewer{overflow:auto;padding:25px 4% 0}.poster{display:block;width:100%;max-width:none;height:auto;box-shadow:0 7px 30px #4a634321;margin:auto}footer{padding:22px 4% 28px;color:#798a72;font-size:12px}#zoom-status{font-size:11px;min-width:40px;color:#7c8b72}@media(max-width:700px){header{padding:12px 4%}.viewer{padding-top:16px}header strong{font-size:15px}nav a{padding:3px 5px}.zoom-tools{gap:6px}button{font-size:11px;padding:5px 9px}}
+  </style>
+</head>
+<body>
+  <header><div><strong>研究总览 · Sakura Crossing</strong><small>早期研究长图 · 最新成果见统一研究汇总</small></div><nav aria-label="总览入口"><a href="./research.html">完整研究汇总 ↗</a><a href="./directions.html">理解与扩展 ↗</a><a href="./builder.html">小镇搭建器 ↗</a><a id="download-png" download="sakura-research-overview.png">下载高清 PNG ↓</a><a id="download-svg" download="sakura-research-overview.svg">下载 SVG 源图 ↓</a></nav><div class="zoom-tools" role="group" aria-label="总览图缩放"><button type="button" data-zoom="100" aria-pressed="true">适应宽度</button><button type="button" data-zoom="150" aria-pressed="false">放大 1.5×</button><button type="button" data-zoom="200" aria-pressed="false">放大 2×</button><span id="zoom-status" role="status">100%</span></div></header>
+  <main class="viewer"><img class="poster" id="poster" alt="Sakura Crossing 研究总览长图：源库能力、本地扩展、六步三渲二管线、真实截图、七条产品方向与素材复用、个人价值、能力与授权边界。" /></main>
+  <footer>图中文字与数据可继续维护；源库发布图、本地实拍与 AI 概念配景已分别标记。SVG 内嵌原图，可离线查看，文字可编辑。PNG 为 3840 像素宽高清导出。本地演示尚未部署。</footer>
+  <script type="module">
+    import svgUrl from '../assets/research-overview.svg?url&no-inline';
+    import pngUrl from '../assets/research-overview.png?url&no-inline';
+    const image = document.getElementById('poster');
+    image.src = svgUrl;
+    document.getElementById('download-png').href = pngUrl;
+    document.getElementById('download-svg').href = svgUrl;
+    document.querySelectorAll('[data-zoom]').forEach((button) => button.addEventListener('click', () => {
+      const value = Number(button.dataset.zoom); image.style.width = value + '%';
+      document.getElementById('zoom-status').textContent = value + '%';
+      document.querySelectorAll('[data-zoom]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+    }));
+  </script>
+</body>
+</html>

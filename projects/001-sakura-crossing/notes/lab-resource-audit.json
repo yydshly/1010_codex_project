@@ -1,0 +1,253 @@
+{
+  "conditions": {
+    "browserViewport": {
+      "height": 900,
+      "width": 1440
+    },
+    "seed": "2411",
+    "style": {
+      "bands": 3,
+      "grade": true,
+      "ink": true,
+      "inkWidth": 1.2,
+      "motion": true,
+      "saturation": 1.12,
+      "shadowTint": "#6c5f8c",
+      "sunlight": 2.25,
+      "warmth": 0.05
+    }
+  },
+  "observations": [
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 27637
+      },
+      "scene": "street"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 44981
+      },
+      "scene": "forest"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 24,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 24445
+      },
+      "scene": "square"
+    },
+    {
+      "buildings": "50",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 133841
+      },
+      "scene": "street"
+    },
+    {
+      "buildings": "50",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 220481
+      },
+      "scene": "forest"
+    },
+    {
+      "buildings": "50",
+      "resources": {
+        "calls": 24,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 54365
+      },
+      "scene": "square"
+    },
+    {
+      "buildings": "100",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 267313
+      },
+      "scene": "street"
+    },
+    {
+      "buildings": "100",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 440005
+      },
+      "scene": "forest"
+    },
+    {
+      "buildings": "100",
+      "resources": {
+        "calls": 24,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 91765
+      },
+      "scene": "square"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 27637
+      },
+      "scene": "street"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 44981
+      },
+      "scene": "forest"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 24,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 24445
+      },
+      "scene": "square"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 27637
+      },
+      "scene": "street"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 44981
+      },
+      "scene": "forest"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 24,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 24445
+      },
+      "scene": "square"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 27637
+      },
+      "scene": "street"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 44981
+      },
+      "scene": "forest"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 24,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 24445
+      },
+      "scene": "square"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 27637
+      },
+      "scene": "street"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 20,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 44981
+      },
+      "scene": "forest"
+    },
+    {
+      "buildings": "10",
+      "resources": {
+        "calls": 24,
+        "geometries": 8,
+        "programs": 16,
+        "textures": 8,
+        "triangles": 24445
+      },
+      "scene": "square"
+    }
+  ]
+}
